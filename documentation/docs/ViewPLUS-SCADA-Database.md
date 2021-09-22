@@ -16,11 +16,41 @@ For PostgreSQL The tables are seperated by "public" and "logs" schemas. The publ
 
 alarms : This table contains alarm definitions created by SCADA editor
 
+<center>
+
+![dt-alarm](/img/dt-alarm.png)
+
+</center>
+
 channels : Channel definitions contains connection information to the field devices
+
+<center>
+
+![dt-ch](/img/dt-ch.png)
+
+</center>
 
 tags : These are the the tag definitions used to define the tag details in the system
 
+<center>
+
+![dt-tag](/img/dt-tag.png)
+
+</center>
+
 users: Table of authorised users list for the project
+
+<center>
+
+![dt-users](/img/dt-users.png)
+
+</center>
+
+
+
+
+
+
 
 <center>
 
@@ -37,6 +67,12 @@ event_log : It contains event information like user login, user requests etc.
 lcd_table : This is the latest change time table containing the latest read values of the system tags from the field devices.
 
 tag_log : All the raw data gathered from the field is recorded into tag_log table. This table can increase very rapidly in size.
+
+<center>
+
+![database-taglog](/img/database-taglog.png)
+
+</center>
 
 tag_log_agrhour : The hourly statistical table of system tags. The statistics are calculated using tag_log table. The table is updated once a minute.
 
