@@ -31,7 +31,7 @@ established after that.
 
 <center>
 
-![gateway-mdc100-software-01](/img/gateway-mdc100-software-01.png)
+![mdc100-01](/img/mdc100-01.png)  
 
 </center>
 
@@ -46,7 +46,7 @@ can connect the device on the list by double clicking on the device name on the 
 
 <center>
 
-![gateway-mdc100-software-02](/img/gateway-mdc100-software-02.png)
+![mdc100-02](/img/mdc100-02.png) 
 
 </center>
 
@@ -62,7 +62,7 @@ address and port number.
 
 <center>
 
-![gateway-mdc100-software-03](/img/gateway-mdc100-software-03.png)
+![mdc100-03](/img/mdc100-03.png)
 
 </center>
 
@@ -78,7 +78,7 @@ also be loaded to the program.
 
 <center>
 
-![gateway-mdc100-software-04](/img/gateway-mdc100-software-04.png)
+![mdc100-04](/img/mdc100-04.png)
 
 </center>
 
@@ -94,7 +94,7 @@ interface of the device" to access the web interface.
 
 <center>
 
-![gateway-mdc100-software-05](/img/gateway-mdc100-software-05.png)
+![mdc100-05](/img/mdc100-05.png)
 
 </center>
 
@@ -111,8 +111,7 @@ connection" checkbox.
 
 <center>
 
-![gateway-mdc100-software-06](/img/gateway-mdc100-software-06.png)
-
+![mdc100-06](/img/mdc100-06.png)
 </center>
 
 ### MODC General Settings
@@ -124,7 +123,7 @@ are defined.
 
 <center>
 
-![gateway-mdc100-software-07](/img/gateway-mdc100-software-07.png)
+![mdc100-07](/img/mdc100-07.png) 
 
 </center>
 
@@ -133,18 +132,13 @@ are defined.
 Click "Device Management" on the Assistant software to send the configuration settings
 to the device. Then click "Send Configuration" option.
 
-<center>
-
-![gateway-mdc100-software-08](/img/gateway-mdc100-software-08.png)
-
-</center>
 
 After completing the configuration, the device must be rebooted in order to register the
 settings.
 
 <center>
 
-![gateway-mdc100-software-09](/img/gateway-mdc100-software-09.png)
+![mdc100-08](/img/mdc100-08.png) 
 
 </center>
 
@@ -152,11 +146,6 @@ Restart the device by clicking "Restart Device" under "Device Management" on the
 screen of the Assistant program. When the device is rebooted, you may need to remove
 and reinsert the USB cable to reconnect with the serial port. 
 
-<center>
-
-![gateway-mdc100-software-10](/img/gateway-mdc100-software-10.png)
-
-</center>
 
 The TCP connection between the device and the PC will be established automatically after
 the device is rebooted, after waiting approximately 20 seconds to reconnect to the device
@@ -164,7 +153,7 @@ through the TCP connection.
 
 <center>
 
-![gateway-mdc100-software-11](/img/gateway-mdc100-software-11.png)
+![mdc100-09](/img/mdc100-09.png) 
 
 </center>
 
@@ -178,26 +167,34 @@ give serial number for addressing.
 
 <center>
 
-![gateway-mdc100-software-12](/img/gateway-mdc100-software-12.png)
+![mdc100-10](/img/mdc100-10.png)
 
 </center>
 
 <center>
 
-![gateway-mdc100-software-13](/img/gateway-mdc100-software-13.png)
+![mdc100-11](/img/mdc100-11.png)
 
 </center>
 
-After all settings are made, click "Add Meter". If you want to add more than one meter, click
-"Add and Continue Meter" option. Here you can add new meters in succession. If you want to
-make a change on the meter created in the list of defined meters, you can click on the
-parameter to be changed and make changes.
+
+
+Port terminal places might difference according to pcb version of device. To do right
+configuration connect over USB to device and check version with AT commands. Response from device should be like below.
 
 <center>
 
-![gateway-mdc100-software-14](/img/gateway-mdc100-software-14.png)
+![mdc100-17](/img/mdc100-17.png)
 
 </center>
+
+• If pcb version is p55 ;
+o Port 1 -> RS 232 (ROUTE 1)
+o Port 2 -> RS 485 (ROUTE 2)
+
+• If pcb version is p66 ;
+o Port 1 -> RS 485 (ROUTE 1)
+o Port 2 -> RS 232 (ROUTE 2)
 
 ### Adding OBIS Codes
 
@@ -211,7 +208,7 @@ Type" section.
 
 <center>
 
-![gateway-mdc100-software-15](/img/gateway-mdc100-software-15.png)
+![mdc100-12](/img/mdc100-12.png) 
 
 </center>
 
@@ -231,7 +228,7 @@ screen, special command input is entered in the "Command" section.
 
 <center>
 
-![gateway-mdc100-software-16](/img/gateway-mdc100-software-16.png)
+![mdc100-13](/img/mdc100-13.png) 
 
 </center>
 
@@ -248,7 +245,7 @@ modbus addresses.
 
 <center>
 
-![gateway-mdc100-software-17](/img/gateway-mdc100-software-17.png)
+![mdc100-14](/img/mdc100-14.png) 
 
 </center>
 
@@ -261,7 +258,7 @@ next meter after defining all the parameters of the previous meters completely
 
 <center>
 
-![gateway-mdc100-software-18](/img/gateway-mdc100-software-18.png)
+![mdc100-15](/img/mdc100-15.png)
 
 </center>
 
@@ -276,7 +273,7 @@ are displayed on the screen.
 
 <center>
 
-![gateway-mdc100-software-19](/img/gateway-mdc100-software-19.png)
+![mdc100-16](/img/mdc100-16.png) 
 
 </center>
 
