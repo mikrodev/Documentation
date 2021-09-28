@@ -254,7 +254,7 @@ counter added to the table represent error counter and rx counter values.
 When adding new OBIS code definitions it should be noted that; when multiple meters are
 defined on the system, if a new OBIS code value is defined on the first meter, the modbus
 addresses of the latter meters also change. For this reason, it is necessary to go through the
-next meter after defining all the parameters of the previous meters completely
+next meter after defining all the parameters of the previous meters completely.
 
 <center>
 
