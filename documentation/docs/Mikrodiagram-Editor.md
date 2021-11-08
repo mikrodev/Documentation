@@ -52,7 +52,7 @@ In Mikrodiagram menu options "File, Edit, Build, Tools, Window and Help" menus a
 
 <center>
 
-![mikrodiagram-editor-01](/img/mikrodiagram-editor-01.png)
+![editor_01](/img/editor_01.png)
 
 </center>
 
@@ -62,7 +62,7 @@ Basic program filing operations can be done from Mikrodiagram file menu.
 
 <center>
 
-![mikrodiagram-editor-02](/img/mikrodiagram-editor-02.png)
+![editor_02](/img/editor_02.png)
 
 </center>
 
@@ -70,7 +70,7 @@ File menu options are described on the tablature.
 
 <center>
 
-![mikrodiagram-editor-03](/img/mikrodiagram-editor-03.png)
+![editor_03](/img/editor_03.png)
 
 </center>
 
@@ -78,7 +78,7 @@ File menu options are described on the tablature.
 
 <center>
 
-![mikrodiagram-editor-04](/img/mikrodiagram-editor-04.png)
+![editor_04](/img/editor_04.png)
 
 </center>
 
@@ -88,7 +88,7 @@ Edit menu is used for undoing the operation, restoring the undo operation, renam
 
 <center>
 
-![mikrodiagram-editor-05](/img/mikrodiagram-editor-05.png)
+![editor_05](/img/editor_05.png)
 
 </center>
 
@@ -98,7 +98,7 @@ The Build menu is used for compiling the project.
 
 <center>
 
-![mikrodiagram-editor-06](/img/mikrodiagram-editor-06.png)
+![editor_06](/img/editor_06.png)
 
 </center>
 
@@ -108,7 +108,7 @@ From the Tools menu, you can access Mikrodiagram interface configuration setting
 
 <center>
 
-![mikrodiagram-editor-07](/img/mikrodiagram-editor-07.png)
+![editor_07](/img/editor_07.png)
 
 </center>
 
@@ -118,7 +118,7 @@ Window menu is used to Mikrodiagram make to design window settings. There are fe
 
 <center>
 
-![mikrodiagram-editor-08](/img/mikrodiagram-editor-08.png)
+![editor_08](/img/editor_08.png)
 
 </center>
 
@@ -126,7 +126,7 @@ From the help menu you can access Mikrodiagram "help text" and "about Mikrodiagr
 
 <center>
 
-![mikrodiagram-editor-09](/img/mikrodiagram-editor-09.png)
+![editor_09](/img/editor_09.png)
 
 </center>
 
@@ -136,7 +136,7 @@ Information on Mikrodiagram software version can be found on the "About Mikrodia
 
 <center>
 
-![mikrodiagram-editor-10](/img/mikrodiagram-editor-10.png)
+![editor_10](/img/editor_10.png)
 
 </center>
 
@@ -276,7 +276,7 @@ On Mikrodiagram, it is mode of project preparation.
 
 <center>
 
-![mikrodiagram-editor-24](/img/mikrodiagram-editor-24.png)
+![editor_11](/img/editor_11.png)
 
 </center>
 
@@ -427,7 +427,7 @@ Mikrodiagram configuration can be accessed by clicking on "Options" on the "Tool
 
 <center>
 
-![mikrodiagram-editor-39](/img/mikrodiagram-editor-39.png)
+![editor_13](/img/editor_13.png)
 
 </center>
 
@@ -437,13 +437,13 @@ On the environment tab, there are "general, keyboard, external tools, MIME types
 
 <center>
 
-![mikrodiagram-editor-40](/img/mikrodiagram-editor-40.png)
+![editor_14](/img/editor_14.png)
 
 </center>
 
 <center>
 
-![mikrodiagram-editor-41](/img/mikrodiagram-editor-41.png)
+![editor_15](/img/editor_15.png)
 
 </center>
 
@@ -451,7 +451,7 @@ From the General tab, Mikrodiagram interface color can be changed and the color 
 
 <center>
 
-![mikrodiagram-editor-42](/img/mikrodiagram-editor-42.png)
+![editor_16](/img/editor_16.png)
 
 </center>
 
@@ -459,7 +459,7 @@ Mikrodiagram have Turkish and English languages options.
 
 <center>
 
-![mikrodiagram-editor-43](/img/mikrodiagram-editor-43.png)
+![editor_17](/img/editor_17.png)
 
 </center>
 
@@ -469,7 +469,7 @@ Mikrodiagram needs to be restarted when selecting between language options.
 
 <center>
 
-![mikrodiagram-editor-44](/img/mikrodiagram-editor-44.png)
+![editor_18](/img/editor_18.png)
 
 </center>
 
@@ -495,7 +495,7 @@ The shortcut key settings can be changed and the factory default settings can be
 
 <center>
 
-![mikrodiagram-editor-46](/img/mikrodiagram-editor-46.png)
+![editor_19](/img/editor_19.png)
 
 </center>
 
@@ -507,7 +507,7 @@ With the font&colors, behavior, display, generic highlighter, snippets,  complet
 
 <center>
 
-![mikrodiagram-editor-47](/img/mikrodiagram-editor-47.png)
+![editor_20](/img/editor_20.png)
 
 </center>
 
@@ -527,7 +527,7 @@ Page sizes can be set to any size.
 
 <center>
 
-![mikrodiagram-editor-49](/img/mikrodiagram-editor-49.png)
+![editor_21](/img/editor_21.png)
 
 </center>
 
@@ -535,7 +535,7 @@ It is used to make COM port selection from Mikrodiagram to serial port connectio
 
 <center>
 
-![mikrodiagram-editor-50](/img/mikrodiagram-editor-50.png)
+![editor_22](/img/editor_22.png)
 
 </center>
 
@@ -563,7 +563,7 @@ The "logging" to save newly created projects is selected.
 
 <center>
 
-![mikrodiagram-editor-53](/img/mikrodiagram-editor-53.png)
+![editor_23](/img/editor_23.png)
 
 </center>
 
@@ -581,7 +581,7 @@ To create a new project in Mikrodiagram, select "New file or Project open " in t
 
 <center>
 
-![mikrodiagram-editor-55](/img/mikrodiagram-editor-55.png)
+![editor_28](/img/editor_28.png)
 
 </center>
 
@@ -603,7 +603,19 @@ Programming method selection is done.
 
 <center>
 
-![mikrodiagram-editor-57](/img/mikrodiagram-editor-57.png)
+![editor_24](/img/editor_24.png)
+
+</center>
+
+<center>
+
+![editor_25](/img/editor_25.png)
+
+</center>
+
+<center>
+
+![editor_26](/img/editor_26.png)
 
 </center>
 
@@ -613,7 +625,7 @@ The device to be programmed and the expansion unit  if required are selected.
 
 <center>
 
-![mikrodiagram-editor-58](/img/mikrodiagram-editor-58.png)
+![editor_27](/img/editor_27.png)
 
 </center>
 
@@ -623,7 +635,7 @@ Project configuration settings can be changed.
 
 <center>
 
-![mikrodiagram-editor-59](/img/mikrodiagram-editor-59.png)
+![editor_29](/img/editor_29.png)
 
 </center>
 
@@ -639,7 +651,7 @@ Mikrodiagram-specific FBD (function block diagram) can be programmed with door t
 
 <center>
 
-![mikrodiagram-editor-60](/img/mikrodiagram-editor-60.png)
+![editor_30](/img/editor_30.png)
 
 </center>
 
@@ -647,7 +659,7 @@ Mikrodiagram-specific FBD (function block diagram) can be programmed with door t
 
 <center>
 
-![mikrodiagram-editor-61](/img/mikrodiagram-editor-61.png)
+![editor_31](/img/editor_31.png)
 
 </center>
 
@@ -667,7 +679,7 @@ Line labels facilitate the preparation of projects and increase the readability 
 
 <center>
 
-![mikrodiagram-editor-62](/img/mikrodiagram-editor-62.png)
+![editor_32](/img/editor_32.png)
 
 </center>
 
@@ -677,7 +689,7 @@ To move any block output to another point with a line tag, double-click on the b
 
 <center>
 
-![mikrodiagram-editor-63](/img/mikrodiagram-editor-63.png)
+![editor_33](/img/editor_33.png)
 
 </center>
 
@@ -697,7 +709,7 @@ Double-click on the line label to select from line definitions.
 
 <center>
 
-![mikrodiagram-editor-65](/img/mikrodiagram-editor-65.png)
+![editor_34](/img/editor_34.png)
 
 </center>
 
@@ -713,11 +725,17 @@ It is used to add notes to project creation area in Mikrodiagram. The fonts and 
 
 <center>
 
-![mikrodiagram-editor-66](/img/mikrodiagram-editor-66.png)
+![editor_36](/img/editor_36.png)
 
 </center>
 
 If you click on the "insert text" button in Mikrodiagram status bar and then click on the work area, the memo page to be added is moved to the work area. The notes can be written on the note sheet. Font, color, background etc. to change the settings right-click on the note and make selection.
+
+<center>
+
+![editor_35](/img/editor_35.png)
+
+</center>
 
 ### Grinding Of Blocks
 
@@ -725,7 +743,7 @@ Mikrodiagram block grouping feature; it facilitates the follow-up of the functio
 
 <center>
 
-![mikrodiagram-editor-67](/img/mikrodiagram-editor-67.png)
+![editor_37](/img/editor_37.png)
 
 </center>
 
@@ -749,7 +767,7 @@ In Mikrodiagram, it is used to adjust the dimensions of the pages on which the p
 
 <center>
 
-![mikrodiagram-editor-68](/img/mikrodiagram-editor-68.png)
+![editor_38](/img/editor_38.png)
 
 </center>
 
@@ -759,7 +777,7 @@ In the diagram settings, page sizes can be selected from standard A3, A4, A5, A6
 
 <center>
 
-![mikrodiagram-editor-69](/img/mikrodiagram-editor-69.png)
+![editor_39](/img/editor_39.png)
 
 </center>
 
@@ -847,7 +865,7 @@ Connected to device on TCP when, is used for Ip ,port, version etc. settings mak
 
 <center>
 
-![mikrodiagram-editor-76](/img/mikrodiagram-editor-76.png)
+![editor_40](/img/editor_40.png)
 
 </center>
 
@@ -863,7 +881,7 @@ In order for the "Restart device" button to be active, the TCP connection must b
 
 <center>
 
-![mikrodiagram-editor-77](/img/mikrodiagram-editor-77.png)
+![editor_41](/img/editor_41.png)
 
 </center>
 
@@ -873,7 +891,7 @@ After the TCP connection is established, use the name of the device embedded sof
 
 <center>
 
-![mikrodiagram-editor-78](/img/mikrodiagram-editor-78.png)
+![editor_42](/img/editor_42.png)
 
 </center>
 
@@ -889,43 +907,67 @@ After making the settings with "Apply parameters", the device needs to be restar
 
 The devices used in the project are selected.
 
-* Update Main Device
+* Update CPU Module
 
 <center>
 
-![mikrodiagram-editor-79](/img/mikrodiagram-editor-79.png)
+![editor_43](/img/editor_43.png)
 
 </center>
 
-The device to load Mikrodiagram project is selected. The main unit to be used in the project is clicked, the "Update MainDevice" tab is clicked to select from the devices.
+<center>
 
-* Add Selected Device/Remove Selected Device
+![editor_44](/img/editor_44.png)
+
+</center>
+
+The device to load Mikrodiagram project is selected. The main unit to be used in the project is clicked, the "Update CPU Module" tab is clicked to select from the devices.
+
+* Add Extension Module/Remove Selected 
 
 <center>
 
-![mikrodiagram-editor-80](/img/mikrodiagram-editor-80.png)
+![editor_45](/img/editor_45.png)
+
+</center>
+
+<center>
+
+![editor_46](/img/editor_46.png)
+
+</center>
+
+<center>
+
+![editor_47](/img/editor_47.png)
+
+</center>
+
+<center>
+
+![editor_48](/img/editor_48.png)
 
 </center>
 
 If the number of physical inputs / outputs used in the prepared project is more than the number found on the main unit, it is necessary to add expansion units to the project.
 
-Click on the relevant module in the Extension Devices section, click on the "Add Selected Device" tab to add. When the extension unit to be added is desired to be removed, the relevant unit can be clicked and the "Remove Selected Device" or "delete" key can be pressed.
+Click on the relevant module in the Extension Devices section, click on the "Add Extension Module" tab to add. When the extension unit to be added is desired to be removed, the relevant unit can be clicked and the "Remove Selected" or "delete" key can be pressed.
 
-For example, MP201 PLCs have 16 digital inputs (DI). If more than 16 digital inputs are used in the prepared project, it is necessary to add digital input expansion unit (IO200_I32).
+For example, MP211 PLCs have 16 digital inputs (DI). If more than 16 digital inputs are used in the prepared project, it is necessary to add digital input expansion unit (XIO211.I16).
 
-* Incompatible Device Error Code:17
+* Incompatible Device Error Code:18
 
 <center>
 
-![mikrodiagram-editor-81](/img/mikrodiagram-editor-81.png)
+![editor_49](/img/editor_49.png)
 
 </center>
 
 If a mistake is observed in loading the prepared project into the device, the number of physical inputs and outputs used in the project is more than "main unit and selected units".
 
-The MP201 PLC and 32 digital input expansion modules (IO200_I32) have been added to the project in the above line. A total of  "digital input" door types have been added to the project. However, since the digital input expansion module (IO200_I32) "extract the selected unit" was made, the "incompatible device error code: 17" error occurred when loading the project into the device.
+The MP211 PLC and 8 digital input expansion modules (XIO211.I8) have been added to the project in the above line. A total of  "digital input" door types have been added to the project. However, since the digital input expansion module (XIO211.I8) "extract the selected unit" was made, the "incompatible device error code: 18" error occurred when loading the project into the device.
 
-The digital input expansion (IO200_I32) unit must be added again in order to avoid the error.
+The digital input expansion (XIO211.I8) unit must be added again in order to avoid the error.
 
 ## String Table
 
@@ -941,7 +983,7 @@ The definitions in the text table must be selected from "text blocks" for use in
 
 <center>
 
-![mikrodiagram-editor-82](/img/mikrodiagram-editor-82.png)
+![editor_50](/img/editor_50.png)
 
 </center>
 
@@ -955,15 +997,21 @@ No spaces between words when writing text content.
 
 <center>
 
-![mikrodiagram-editor-83](/img/mikrodiagram-editor-83.png)
+![editor_51](/img/editor_51.png)
 
 </center>
 
 Block number of blocks, register addresses and variable types  added to the project prepared in Mikrodiagram are used for easier definition of line definitions, logging and online monitoring situations.
 
-There is also the possibility to export the table to CSV.
+There is also the possibility to export the table to CSV and Excel.
 
-* Select/Export Selected Blocks to CSV
+<center>
+
+![editor_52](/img/editor_52.png)
+
+</center>
+
+* Select/Export Selected Blocks to CSV and Excel
 
 <center>
 
@@ -971,7 +1019,7 @@ There is also the possibility to export the table to CSV.
 
 </center>
 
-It is used to transfer the selected blocks to CSV.
+It is used to transfer the selected blocks to CSV and Excel.
 
 With the "Invert" tab, the selection of blocks is reversed.
 
@@ -1049,7 +1097,7 @@ There are 4 types of variables in Mikrodiagram: logic, word, float, long type. I
 
 <center>
 
-![mikrodiagram-editor-93](/img/mikrodiagram-editor-93.png)
+![editor_53](/img/editor_53.png)
 
 </center>
 
@@ -1059,7 +1107,7 @@ It can be selected from the block object properties and the "Add log record to m
 
 <center>
 
-![mikrodiagram-editor-94](/img/mikrodiagram-editor-94.png)
+![editor_54](/img/editor_54.png)
 
 </center>
 
@@ -1093,7 +1141,7 @@ It is possible to select the blocks to be watched and changed in the program via
 
 <center>
 
-![mikrodiagram-editor-97](/img/mikrodiagram-editor-97.png)
+![editor_57](/img/editor_57.png)
 
 </center>
 
@@ -1103,7 +1151,7 @@ It is used naming  for blocks transferred to the table.
 
 <center>
 
-![mikrodiagram-editor-98](/img/mikrodiagram-editor-98.png)
+![editor_58](/img/editor_58.png)
 
 </center>
 
@@ -1157,17 +1205,17 @@ Object (variable) types that differ in each protocol are selected.
 
 <center>
 
-![mikrodiagram-editor-103](/img/mikrodiagram-editor-103.png)
+![editor_59](/img/editor_59.png)
 
 </center>
 
 Object classification definitions
 
-* Send On Trigger
+* Send Periodically
 
 <center>
 
-![mikrodiagram-editor-104](/img/mikrodiagram-editor-104.png)
+![editor_60](/img/editor_60.png)
 
 </center>
 
@@ -1183,55 +1231,27 @@ In DNP3, IEC 101, IEC104 protocols, the data added to the variable address table
 
 <center>
 
-![mikrodiagram-editor-106](/img/mikrodiagram-editor-106.png)
+![editor_61](/img/editor_61.png)
 
 </center>
 
 <center>
 
-![mikrodiagram-editor-107](/img/mikrodiagram-editor-107.png)
+![editor_62](/img/editor_62.png)
 
 </center>
 
 In DNP3, IEC101, IEC104 protocols, the block values defined in the variable address table are used sending to client  the when the change exceeds the specified value according to the determined change method. For example, if the sending method is "change level" and the change value is 4, then the value client is sent if the difference between the first value and the value to be sent is greater than 4. (If the first value is 15 and the last value is less than 11 or greater than 19, is sent.
 
-* Example 1
+Note: 
 
-<center>
-
-![mikrodiagram-editor-108](/img/mikrodiagram-editor-108.png)
-
-</center>
-
-<center>
-
-![mikrodiagram-editor-109](/img/mikrodiagram-editor-109.png)
-
-</center>
-
-In the sample; RTD block value in which the ambient temperature value is read is defined in the variable address table by the IEC104 protocol. In the variable address table, the address of the address is 12000 and the client will be sent when the temperature value changes by more than 1 ° C (as the value changes). "Send on trigger" is selected in the variable address table, but it is not active because the "Ttk" input of IEC104 slave block is left empty.
-
-* Example 2
-
-<center>
-
-![mikrodiagram-editor-110](/img/mikrodiagram-editor-110.png)
-
-</center>
-
-<center>
-
-![mikrodiagram-editor-111](/img/mikrodiagram-editor-111.png)
-
-</center>
-
-In the sample; The analog input block values are printed in an analog table at the top and read from the address 11000 defined in the variable address table with 5 modbus protocol from the address. If the size of the analog table block is 20 bytes and 1 analog value is 4 bytes, 5 analog values are recorded in the table. Since the tabloda has 5 analogue values, the analogue table is selected as the line tag, so that the data on the tabloda is automatically displayed in the "variable address table" "dot number". The "send on trigger", "sending method" and "exchange value" sections are not active due to the Modbus TCP slave protocol feature.
+IEC101, IEC104, DNP3 protocols are not supported in Mikrodev PLC Devices.
 
 ### Display Options
 
 <center>
 
-![mikrodiagram-editor-112](/img/mikrodiagram-editor-112.png)
+![editor_63](/img/editor_63.png)
 
 </center>
 
@@ -1266,6 +1286,106 @@ Mikrodiagram block colors can be changed, reset to initial settings.
 </center>
 
 It can make block name, block number and modbus register addresses selection of display status on the block.
+
+### MQTT Table
+
+<center>
+
+![editor_64](/img/editor_64.png)
+
+</center>
+
+#### Topics The Publish
+
+In this table, the Publish topic is entered to publish the data to the broker. The topic name is entered on the screen that appears by pressing the Add Topic button in the table. Block definitions where you can enable/disable Qos, Retain, Last Will, Payload settings, send on exchange and periodically send options are also made on this page.
+
+<center>
+
+![editor_65](/img/editor_65.png)
+
+
+</center>
+
+Definitions;
+
+• Topic Name: The field where the topics you will send the messages are determined.
+
+• QoS: Quality of Service refers to the agreement between the sender of a message and the receiver of the message. The QoS levels are as follows;
+
+   o QoS 0: Minimum data transfer is ensured. At this level, each message is forwarded to a subscriber and no confirmation is received that the message has arrived.
+   
+   o QoS 1: The broker tries to transmit the message and waits for an acknowledgment response from the subscriber, if no confirmation is received within a specified time frame, the message is sent again.
+   
+   o QoS 2: The broker receives two acknowledgments to ensure that the subscriber receives the message and only once.
+   
+• Retain: If this option is checked, if the connection between the broker and the subscriber is broken, the last value will be saved in memory.
+
+• Is Last Will Topic: Last will topic. If a topic is created and this option is checked, the message under this topic will be forwarded to the subscribers when the device is disconnected from the broker.
+
+• Payload Type: It is determined in which format the message content will be sent. Subscriber interprets incoming messages with this information. “MJson v1” can be selected if a time stamp is desired to be added to the sent messages.
+
+• On Change Send Enable Block: Block selection added in the diagram to enable or disable the sending feature of the created topic on change.
+
+• Periodic Send Enable Block: Block selection added in the diagram to enable or disable the periodic sending feature of the created topic.
+
+#### Publish Blocks for Topic
+
+In this table, the blocks to be published for the relevant Topic are selected. After clicking the topic in the Publish to topic table, the Add Entry button becomes active and by pressing this button, the block to be published in the project is selected. How to transmit the data can also be selected from the screen.
+
+<center>
+
+![editor_66](/img/editor_66.png)
+
+
+</center>
+
+Definitions;
+
+• Select Block for Subscribe on Topic: The area where the block that you want to send as a message in your project is selected.
+
+• Send On Change: Send selection field on exchange
+
+    o On Level Change: Send when there is a change in the value specified in Change Value, if 0 is written, it will be sent in every change.
+	
+    o On Percent Change: Send when there is a percentage change of value specified in Change Value, for example 10%.
+	
+• Change Value: Change amount input field.
+
+• Send Periodcally: If checked, a message is sent every time a trigger comes to the trg input of the mqtt config block.
+
+• Select Block for Quality Value: The block in which the Quality value included in the message content is selected in MJson v1 payload type.
+
+• Select Trigger Block: Apart from change or periodicity, we can send the message by triggering the block we will specify here.
+
+#### Subscribe to Topic
+
+In this table, the relevant subscribe topic is entered to send data from the broker to the device.
+
+<center>
+
+![editor_67](/img/editor_67.png)
+
+
+</center>
+
+Definitions;
+
+• Subscribe Topic Name: Enter the name of the topic to be subscribed to.
+
+• QoS: Service quality level is selected.
+
+• Parse Format: Select the format in which the messages will be parsed.
+
+#### Subscribed Block Values for Topic
+
+From this screen, the blocks to be associated for the subscribe topic are added. To use line tags, mqtt format should be selected as view and set from the special settings of the relevant block.
+
+<center>
+
+![editor_68](/img/editor_68.png)
+
+
+</center>
 
 ### Simulation
 
@@ -1343,7 +1463,7 @@ The processes to be followed in order to get the project prepared in  Mikrodiagr
 
 <center>
 
-![mikrodiagram-editor-123](/img/mikrodiagram-editor-123.png)
+![editor_69](/img/editor_69.png)
 
 </center>
 
@@ -1415,7 +1535,13 @@ Connetion interface is accessed by clicking the  tab in the build mode options.
 
 <center>
 
-![mikrodiagram-editor-129](/img/mikrodiagram-editor-129.png)
+![editor_73](/img/editor_73.png)
+
+</center>
+
+<center>
+
+![editor_70](/img/editor_70.png)
 
 </center>
 
@@ -1423,7 +1549,7 @@ Connetion interface is accessed by clicking the  tab in the build mode options.
 
 <center>
 
-![mikrodiagram-editor-130](/img/mikrodiagram-editor-130.png)
+![editor_71](/img/editor_71.png)
 
 </center>
 
@@ -1431,7 +1557,7 @@ When the “A USB connection is established between the device and computer on s
 
 <center>
 
-![mikrodiagram-editor-131](/img/mikrodiagram-editor-131.png)
+![editor_72](/img/editor_72.png)
 
 </center>
 
@@ -1455,7 +1581,7 @@ The "Mikroterminal" program must be used to make device IP settings via USB conn
 
 <center>
 
-![mikrodiagram-editor-132](/img/mikrodiagram-editor-132.png)
+![editor_74](/img/editor_74.png)
 
 </center>
 
@@ -1463,23 +1589,17 @@ Mikroterminal application can be accessed from Mikrodiagram "Tools" menu.
 
 <center>
 
-![mikrodiagram-editor-133](/img/mikrodiagram-editor-133.png)
+![editor_75](/img/editor_75.png)
 
 </center>
 
 <center>
 
-![mikrodiagram-editor-134](/img/mikrodiagram-editor-134.png)
+![editor_76](/img/editor_76.png)
 
 </center>
 
 After the device and computer IP settings are complete, the device must be "pinged" from the computer for the "ethernet cable connection test" between the device and the computer.
-
-<center>
-
-![mikrodiagram-editor-135](/img/mikrodiagram-editor-135.png)
-
-</center>
 
 For the "pinging" operation, the computer is typed in the "command window", the device IP is shown in the picture and "ENTER" is clicked.
 
@@ -1489,7 +1609,7 @@ If the result output looks like the following figure, the ping operation is "suc
 
 <center>
 
-![mikrodiagram-editor-136](/img/mikrodiagram-editor-136.png)
+![editor_77](/img/editor_77.png)
 
 </center>
 
@@ -1505,7 +1625,7 @@ To change the default listening port 502;
 
 <center>
 
-![mikrodiagram-editor-137](/img/mikrodiagram-editor-137.png)
+![editor_78](/img/editor_78.png)
 
 </center>
 
@@ -1525,13 +1645,13 @@ After making the necessary settings for Ethernet connection, for TCP connection;
 
 <center>
 
-![mikrodiagram-editor-138](/img/mikrodiagram-editor-138.png)
+![editor_73](/img/editor_73.png)
 
 </center>
 
 <center>
 
-![mikrodiagram-editor-139](/img/mikrodiagram-editor-139.png)
+![editor_79](/img/editor_79.png)
 
 </center>
 
@@ -1539,7 +1659,7 @@ After making the necessary settings for Ethernet connection, for TCP connection;
 
 <center>
 
-![mikrodiagram-editor-140](/img/mikrodiagram-editor-140.png)
+![editor_80](/img/editor_80.png)
 
 </center>
 
@@ -1549,13 +1669,13 @@ After making the necessary settings for Ethernet connection, for TCP connection;
 
 <center>
 
-![mikrodiagram-editor-141](/img/mikrodiagram-editor-141.png)
+![editor_82](/img/editor_82.png)
 
 </center> 
 
 <center>
 
-![mikrodiagram-editor-142](/img/mikrodiagram-editor-142.png)
+![editor_83](/img/editor_83.png)
 
 </center>
 
@@ -1565,7 +1685,7 @@ The link icon is displayed as "Connected" .
 
 <center>
 
-![mikrodiagram-editor-143](/img/mikrodiagram-editor-143.png)
+![editor_81](/img/editor_81.png)
 
 </center>
 
@@ -1591,7 +1711,7 @@ In order to establish a TCP connection from Mikrodiagram to the GSM-enabled devi
 
 <center>
 
-![mikrodiagram-editor-144](/img/mikrodiagram-editor-144.png)
+![editor_84](/img/editor_84.png)
 
 </center>
 
@@ -1621,7 +1741,7 @@ With the USB connection, the device restarts automatically when the project uplo
 
 <center>
 
-![mikrodiagram-editor-146](/img/mikrodiagram-editor-146.png)
+![editor_85](/img/editor_85.png)
 
 </center>
 
@@ -1647,7 +1767,7 @@ Unlike the case of loading the project with USB, device restart is performed man
 
 <center>
 
-![mikrodiagram-editor-149](/img/mikrodiagram-editor-149.png)
+![editor_86](/img/editor_86.png)
 
 </center>
 
@@ -1673,7 +1793,7 @@ On Project Upload: The device will load the “Register Initial Value” into th
 
 <center>
 
-![mikrodiagram-editor-150](/img/mikrodiagram-editor-150.png)
+![editor_87](/img/editor_87.png)
 
 </center>
 
@@ -1688,7 +1808,7 @@ B-    If there are minor changes on the project like parameter update or add/rem
 
 <center>
 
-![mikrodiagram-editor-151](/img/mikrodiagram-editor-151.png)
+![editor_88](/img/editor_88.png)
 
 </center>
 
@@ -1699,7 +1819,7 @@ On Project Upload: “Register Initial Value” will be written on the register
 
 <center>
 
-![mikrodiagram-editor-152](/img/mikrodiagram-editor-152.png)
+![editor_89](/img/editor_89.png)
 
 </center>
 

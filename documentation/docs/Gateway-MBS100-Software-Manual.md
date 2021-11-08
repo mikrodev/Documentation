@@ -31,7 +31,7 @@ established after that.
 
 <center>
 
-![gateway-mdc100-software-01](/img/gateway-mdc100-software-01.png)
+![mbs100-01](/img/mbs100-01.png)
 
 </center>
 
@@ -46,7 +46,7 @@ can connect the device on the list by double clicking on the device name on the 
 
 <center>
 
-![gateway-mdc100-software-02](/img/gateway-mdc100-software-02.png)
+![mbs100-02](/img/mbs100-02.png)
 
 </center>
 
@@ -62,9 +62,43 @@ address and port number.
 
 <center>
 
-![gateway-mdc100-software-03](/img/gateway-mdc100-software-03.png)
+![mbs100-03](/img/mbs100-03.png)
 
 </center>
+
+#### Port Numbering 
+
+Port terminal places might difference according to pcb version of device. To do right configuration connect over USB to device and check version with AT commands.
+
+<center>
+
+![mbs100-04](/img/mbs100-04.png)
+
+</center>
+
+Response from device should be like below.
+
+<center>
+
+![mbs100-05](/img/mbs100-05.png)
+
+</center>
+
+Check the pcb version number placed to last 3 character of response like “pXX”
+
+
+VERSION=MBS100_E_s15.52p66
+
+•	If pcb version is p55 ; 
+
+o	Port 1 -> RS 232 (ROUTE 1)
+o	Port 2 -> RS 485 (ROUTE 2)
+
+•	If pcb version is p66 ;
+
+o	Port 1 -> RS 485 (ROUTE 1)
+o	Port 2 -> RS 232 (ROUTE 2)
+
 
 ### Offline Settings
 
@@ -78,7 +112,7 @@ also be loaded to the program.
 
 <center>
 
-![gateway-mdc100-software-04](/img/gateway-mdc100-software-04.png)
+![mbs100-06](/img/mbs100-06.png)
 
 </center>
 
@@ -94,7 +128,7 @@ interface of the device" to access the web interface.
 
 <center>
 
-![gateway-mbs100-software-01](/img/gateway-mbs100-software-01.png)
+![mbs100-07](/img/mbs100-07.png)
 
 </center>
 
@@ -111,7 +145,7 @@ connection" checkbox.
 
 <center>
 
-![gateway-mbs100-software-02](/img/gateway-mbs100-software-02.png)
+![mbs100-08](/img/mbs100-08.png)
 
 </center>
 
@@ -125,7 +159,13 @@ the Ip setting, port number, baud rate, databit value, parity value and stop bit
 
 <center>
 
-![gateway-mbs100-software-03](/img/gateway-mbs100-software-03.png)
+![mbs100-09](/img/mbs100-09.png)
+
+</center>
+
+<center>
+
+![mbs100-10](/img/mbs100-10.png)
 
 </center>
 
@@ -136,7 +176,7 @@ to the device. Then click "Send Configuration" option.
 
 <center>
 
-![gateway-mbs100-software-04](/img/gateway-mbs100-software-04.png)
+![mbs100-11](/img/mbs100-11.png)
 
 </center>
 
@@ -145,7 +185,7 @@ settings.
 
 <center>
 
-![gateway-mbs100-software-05](/img/gateway-mbs100-software-05.png)
+![mbs100-12](/img/mbs100-12.png)
 
 </center>
 
@@ -155,7 +195,7 @@ and reinsert the USB cable to reconnect with the serial port.
 
 <center>
 
-![gateway-mbs100-software-06](/img/gateway-mbs100-software-06.png)
+![mbs100-13](/img/mbs100-13.png)
 
 </center>
 
@@ -165,7 +205,7 @@ through the TCP connection.
 
 <center>
 
-![gateway-mbs100-software-07](/img/gateway-mbs100-software-07.png)
+![mbs100-14](/img/mbs100-14.png)
 
 </center>
 
@@ -180,34 +220,6 @@ are displayed on the screen..
 
 <center>
 
-![gateway-mbs100-software-08](/img/gateway-mbs100-software-08.png)
+![mbs100-15](/img/mbs100-15.png)
 
 </center>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

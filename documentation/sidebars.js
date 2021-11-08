@@ -34,11 +34,20 @@ module.exports = {
 	"Assistant": [
 		  "Gateway-MBS100-Software-Manual",
 		  "Gateway-MMS100-Software-Manual",
-          "Gateway-MDC100-Software-Manual", 	    
+          "Gateway-MDC100-Software-Manual", 
+		  "Gateway-SC100-Software-Manual",
     ],
 
-  },
-  "PLC": {
+	"Application Notes": [
+		  "MQTT-Application-Notes",
+		  "MODBUS-Application-Notes",
+          "SNMP-Application-Notes",
+		  "DNP3-Application-Notes",
+		  
+    ],
+    },
+     
+	"PLC": {
 	    "PLC Hardware": [
           "PLC-MP110-Series-Hardware-Manual",  
 		  "PLC-MP211-Series-Hardware-Manual",
