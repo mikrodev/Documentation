@@ -43,7 +43,7 @@ module.exports = {
 		  "MODBUS-Application-Notes",
           "SNMP-Application-Notes",
 		  "DNP3-Application-Notes",
-		  
+		  "Block Descriptions",
     ],
     },
      
