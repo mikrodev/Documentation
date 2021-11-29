@@ -1,4 +1,4 @@
----
+      ---
 title: Device Error Codes
 ---
 
@@ -68,21 +68,20 @@ title: Device Error Codes
 |	ERR_FIRMWARE_IDMATCH	|	63	|	Firmware code security Error	|	Contact Manufacturer	|
 |	ERR_FILEPAGES_MISS	|	64	|	File System Error	|	Format filesystem	|
 |	ERR_OUT_OF_RAM	|	65	|	File System Error	|	Firmware Update 	|
-|	ERR_FBD_OK=100	|		|		|		|
-|	ERR_FBD_WRONGNETHEADER	|		|		|		|
-|	ERR_FBD_EXCEEDBLOCKCOUNT	|		|		|		|
-|	ERR_FBD_NETFILESIZE	|		|		|		|
-|	ERR_FBD_WRONGBLOCKORDER	|		|		|		|
-|	ERR_FBD_WRONGBLOCKHEADER	|		|		|		|
-|	ERR_FBD_BLOCKSIZEMISMATCH	|		|		|		|
-|	ERR_FBD_CHECKSUMFAIL	|		|		|		|
-|	ERR_FBD_NEWBLOCKALLOCATIONFAIL	|		|		|		|
-|	ERR_FBD_FILEERROR	|		|		|		|
-|	ERR_FBD_EXCEEDBUFSIZE	|		|		|		|
-|	ERR_FBD_PHYALLOCATIONFAIL	|		|		|		|
-|	ERR_FBD_DEADLOCK	|		|		|		|
-|	ERR_FBD_MODBUSBLOCKCOUNT	|		|		|		|
-|	ERR_FBD_PHYSCNTCOUNT	|		|		|		|
-|	ERR_FBD_WRONGBLOCKTYPE	|		|		|		|
-|	ERR_FBD_MACROSIZE	|		|		|		|
-|	ERR_FBD_RENTETIVESIZE	|		|		|		|
+|	ERR_FBD_WRONGNETHEADER	|	101	| Binary Error |	Re-upload Project	|
+|	ERR_FBD_EXCEEDBLOCKCOUNT	|	102	|	Exceed Block Count	|		|
+|	ERR_FBD_NETFILESIZE	|	103	|	Exceeded File Size	|		|
+|	ERR_FBD_WRONGBLOCKORDER	|	104	|	Binary Error	|	Re-compile and Upload Project	|
+|	ERR_FBD_WRONGBLOCKHEADER	|	105	|	Binary Error	|	Re-compile and Upload Project	|
+|	ERR_FBD_BLOCKSIZEMISMATCH	|	106	|	Binary Error	|	Re-compile and Upload Project	|
+|	ERR_FBD_CHECKSUMFAIL	|	107	|	Binary Error	|	Re-compile and Upload Project	|
+|	ERR_FBD_NEWBLOCKALLOCATIONFAIL	|	108	|	RAM out of size	|		|
+|	ERR_FBD_FILEERROR	|	109	|	File System Error	|		|
+|	ERR_FBD_EXCEEDBUFSIZE	|	110	|	RAM out of size	|		|
+|	ERR_FBD_PHYALLOCATIONFAIL	|	111	|	RAM out of size	|		|
+|	ERR_FBD_DEADLOCK	|	112	|	Loop Error	|		|
+|	ERR_FBD_MODBUSBLOCKCOUNT	|	113	|	Exceeded count of Modbus Block 	|		|
+|	ERR_FBD_PHYSCNTCOUNT	|	114	|	Exceeded PWM, PTO, Fast Counter Input Count	|		|
+|	ERR_FBD_WRONGBLOCKTYPE	|	115	|	There is Unsupported Block	|		|
+|	ERR_FBD_MACROSIZE	|	116	|	Exceeded Count of Macro	Block |		|
+|	ERR_FBD_RENTETIVESIZE	|	117	|	Exceeded Retentive Area Size	|		|
