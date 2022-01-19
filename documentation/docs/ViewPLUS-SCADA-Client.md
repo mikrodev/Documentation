@@ -1,5 +1,5 @@
 ---
-title: ViewPLUS SCADA Client
+title: Scada Client
 ---
 
 ## Client Operator Screen

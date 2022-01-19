@@ -9,7 +9,9 @@ module.exports = {
 		'ViewPLUS-SCADA-Database',
 		'ViewPLUS-SCADA-WebApi',
 		'ViewPLUS-SCADA-Reporting',
+		'ViewPLUS-SCADA-Change-Map-Icons',
 		'ViewPLUS-SCADA-Example-Projects',
+		
 		
     ],
 	"Mikrodiagram": [

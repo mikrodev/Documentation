@@ -1,5 +1,5 @@
 ---
-title: ViewPLUS OPC UA SERVER SERVICE
+title: Opc Ua Server Service
 ---
 
 ## Install OPC UA Server Service

@@ -1,5 +1,5 @@
 ---
-title: ViewPLUS SCADA Database
+title: Database
 ---
 
 ### Database Tables

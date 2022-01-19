@@ -1,5 +1,5 @@
 ---
-title: ViewPLUS SCADA Editor
+title: Editor
 ---
 
 ## Introduction
