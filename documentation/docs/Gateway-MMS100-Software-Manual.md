@@ -31,7 +31,7 @@ established after that.
 
 <center>
 
-![gateway-mdc100-software-01](/img/gateway-mdc100-software-01.png)
+![mbs100-01](/img/mbs100-01.png)
 
 </center>
 
@@ -46,7 +46,7 @@ can connect the device on the list by double clicking on the device name on the 
 
 <center>
 
-![gateway-mdc100-software-02](/img/gateway-mdc100-software-02.png)
+![mbs100-02](/img/mbs100-02.png)
 
 </center>
 
@@ -62,9 +62,43 @@ address and port number.
 
 <center>
 
-![gateway-mdc100-software-03](/img/gateway-mdc100-software-03.png)
+![mbs100-03](/img/mbs100-03.png)
 
 </center>
+
+#### Port Numbering 
+
+Port terminal places might difference according to pcb version of device. To do right configuration connect over USB to device and check version with AT commands.
+
+<center>
+
+![mbs100-04](/img/mbs100-04.png)
+
+</center>
+
+Response from device should be like below.
+
+<center>
+
+![mbs100-05](/img/mbs100-05.png)
+
+</center>
+
+Check the pcb version number placed to last 3 character of response like “pXX”
+
+VERSION=MBS100_E_s15.52p66
+
+
+•	If pcb version is p55 ; 
+
+o	Port 1 -> RS 232 (ROUTE 1)
+o	Port 2 -> RS 485 (ROUTE 2)
+
+•	If pcb version is p66 ;
+
+o	Port 1 -> RS 485 (ROUTE 1)
+o	Port 2 -> RS 232 (ROUTE 2)
+
 
 ### Offline Settings
 
@@ -78,7 +112,7 @@ also be loaded to the program.
 
 <center>
 
-![gateway-mdc100-software-04](/img/gateway-mdc100-software-04.png)
+![mms100-06](/img/mms100-06.png)
 
 </center>
 
@@ -94,7 +128,7 @@ interface of the device" to access the web interface.
 
 <center>
 
-![gateway-mms100-software-01](/img/gateway-mms100-software-01.png)
+![mms100-07](/img/mms100-07.png)
 
 </center>
 
@@ -111,7 +145,7 @@ connection" checkbox.
 
 <center>
 
-![gateway-mms100-software-02](/img/gateway-mms100-software-02.png)
+![mms100-08](/img/mms100-08.png)
 
 </center>
 
@@ -126,7 +160,7 @@ parity value and stop bit are set.
 
 <center>
 
-![gateway-mms100-software-03](/img/gateway-mms100-software-03.png)
+![mms100-09](/img/mms100-09.png)
 
 </center>
 
@@ -137,7 +171,7 @@ to the device. Then click "Send Configuration" option.
 
 <center>
 
-![gateway-mms100-software-04](/img/gateway-mms100-software-04.png)
+![mms100-10](/img/mms100-10.png)
 
 </center>
 
@@ -146,7 +180,7 @@ settings.
 
 <center>
 
-![gateway-mms100-software-05](/img/gateway-mms100-software-05.png)
+![mms100-11](/img/mms100-11.png)
 
 </center>
 
@@ -156,7 +190,7 @@ and reinsert the USB cable to reconnect with the serial port.
 
 <center>
 
-![gateway-mms100-software-06](/img/gateway-mms100-software-06.png)
+![mms100-12](/img/mms100-12.png)
 
 </center>
 
@@ -166,7 +200,7 @@ through the TCP connection.
 
 <center>
 
-![gateway-mms100-software-07](/img/gateway-mms100-software-07.png)
+![mms100-13](/img/mms100-13.png)
 
 </center>
 
@@ -180,7 +214,7 @@ devices (water meters, natural gas meters, calorimeters ...).
 
 <center>
 
-![gateway-mms100-software-08](/img/gateway-mms100-software-08.png)
+![mms100-14](/img/mms100-14.png)
 
 </center>
 
@@ -196,9 +230,12 @@ Modbus addresses are determined according to the device selections.
 
 <center>
 
-![gateway-mms100-software-09](/img/gateway-mms100-software-09.png)
+![mms100-15](/img/mms100-15.png)
 
 </center>
+
+• If the watch serial number is entered, the 2nd address is selected, if not, the 1st address is selected.
+• The update period and the number of devices are selected above.
 
 ### MMS100 Address Table
 
@@ -209,7 +246,7 @@ and the addresses of the modbus are displayed.
 
 <center>
 
-![gateway-mms100-software-10](/img/gateway-mms100-software-10.png)
+![mms100-16](/img/mms100-16.png)
 
 </center>
 
@@ -224,11 +261,13 @@ clear the inquiries on the screen.
 
 <center>
 
-![gateway-mms100-software-11](/img/gateway-mms100-software-11.png)
+![mms100-17](/img/mms100-17.png)
 
 </center>
 
+• AT+DEBUG=  ?from the terminal. it is checked to see if there is a problem, if it turns 0, there is no problem with the device.
 
+• AT+DEBUG=1 M-bus communication is checked from the terminal, if M-bus is -2, it does not communicate.
 
 
 

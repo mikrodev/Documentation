@@ -1,5 +1,5 @@
 ---
-title: ViewPLUS SCADA Web API
+title: Web API
 ---
 
 ## Introduction

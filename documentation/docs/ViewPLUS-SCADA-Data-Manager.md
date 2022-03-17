@@ -1,12 +1,12 @@
 ---
-title: ViewPLUS SCADA Data Manager
+title: Data Manager
 ---
 
 Archives are used to reduce the size in high-dimensional databases and to make a more detailed search between logs. To get to the archive screen, data manager is started from the tools tab.
 
 <center>
 
-![data-manager-01](/img/data-manager-01.png)
+![datamanager1](/img/datamanager1.png)
 
 </center>
 
@@ -14,7 +14,7 @@ Archiving is selected in the window that opens.
 
 <center>
 
-![data-manager-02](/img/data-manager-02.png)
+![datamanager2](/img/datamanager2.png)
 
 </center>
 
@@ -22,7 +22,7 @@ Date is entered in Archieve Data Older Than section. All logs saved in the datab
 
 <center>
 
-![data-manager-03](/img/data-manager-03.png)
+![datamanager3](/img/datamanager3.png)
 
 </center>
 
@@ -30,7 +30,7 @@ When OK is selected for the warning displayed after archiving, archived logs in 
 
 <center>
 
-![data-manager-04](/img/data-manager-04.png)
+![datamanager4](/img/datamanager4.png)
 
 </center>
 
@@ -38,7 +38,7 @@ After seeing the text Archive process completed in the data manager, archiving p
 
 <center>
 
-![data-manager-05](/img/data-manager-05.png)
+![datamanager5](/img/datamanager5.png)
 
 </center>
 
@@ -46,7 +46,7 @@ It is seen that a new database named main database archive has been created.
 
 <center>
 
-![data-manager-06](/img/data-manager-06.png)
+![datamanager6](/img/datamanager6.png)
 
 </center>
 
@@ -54,6 +54,6 @@ Logs before the archiving date determined in the data manager are displayed in t
 
 <center>
 
-![data-manager-07](/img/data-manager-07.png)
+![datamanager7](/img/datamanager7.png)
 
 </center>

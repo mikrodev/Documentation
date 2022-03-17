@@ -1,70 +1,96 @@
 ---
-title: ViewPLUS SCADA Editor
+title: Editor
 ---
 
-## Introduction
+## BAŞLANGIÇ
 
-### What is SCADA?
+### SCADA NEDİR?
 
-SCADA is an abbreviation created by reading the first letters of the words "Supervisory Control and Data Acquisition." SCADA, a comprehensive and integrated database control and monitoring system, provides automatic control, monitoring and reporting of all electronic units of a facility or operation. SCADA systems are expected to perform the functions of monitoring, controlling, collecting data, recording and storing data. The SCADA systems can operate in continuous, intermittent, repetitive or discrete modes in industrial processes, manufacturing, production, power generation, wastewater treatment, oil and gas pipelines, electricity transmission and distribution, wind generators, civil defense siren systems and major communication systems , water treatment and promotion centers in the sectors. May include public and private facilities, including space stations. Access to heating and ventilation systems (HVAC) and control and monitoring of energy consumption may be required. SCADA's maximum benefit will continue to be from the greatest needs of industrial installations in terms of safety and convenience.
+SCADA terimi İngilizce "Supervisory Control and Data Acquisition” kelimelerinin ilk harflerinin okunması 
+ile oluşturulan bir kısaltmadır. Kapsamlı ve bütünleşmiş bir veri tabanlı kontrol ve izleme sistemi olan 
+SCADA ile bir tesise veya işletmeye ait tüm elektronik birimlerin otomatik kontrolü, gözetlenmesi ve 
+sonuçların raporlanması sağlanabilir. Temel olarak SCADA yazılımından izleme, kontrol, veri toplama, 
+verilerin kaydı ve saklanması işlevlerini gerçekleştirmesi beklenmektedir. SCADA sistemleri endüstriyel 
+proseslerde, imalat, üretim, enerji üretimi, imalat ve rafinerilerde sürekli, kesintili, tekrarlayan ya da 
+ayrık modlarda çalışabilir. Altyapı işlemleri, kamu veya özel sektörlerde su arıtma ve terfi merkezlerinde, 
+atık su arıtma, petrol ve gaz boru hatları, elektrik iletim ve dağıtım, rüzgâr jeneratörleri, sivil savunma 
+siren sistemleri ve büyük iletişim sistemlerini içerebilir. Tesis binaları, havaalanları, gemiler ve uzay 
+istasyonları da dahil olmak üzere kamu ve özel tesisleri kapsayabilir. Isıtma ve havalandırma 
+sistemlerinde (HVAC) erişim ve enerji tüketimini kontrol ve izleme gerekebilir. SCADA sağladığı 
+maksimum fayda, güvenlik ve kolaylık bakımından endüstri tesislerinin en büyük ihtiyaçlarından olmaya 
+devam edecektir.
 
 ### Mikrodev ViewPLUS SCADA
 
-ViewPLUS is a SCADA software developped by Mikrodev. While ViewPLUS is being developed, stability, ease of use and visuality are kept in the foreground. With ViewPLUS, it is possible to provide visual monitoring, control and evaluation of any kind of automation unit and system.
+ViewPLUS geliştirilirken stabilite, kullanım kolaylığı ve görsellik prensipleri ön planda tutulmuştur. 
+ViewPLUS ile sahada bulunan her türlü otomasyon biriminin görsel olarak takip, kontrol ve 
+değerlendirilmesi sağlanabilir. 
 
 
-We can summarize some features that ViewPLUS has:
+ViewPLUS’ nın sahip olduğu bazı özellikleri şöyle özetleyebiliriz: 
 
-#### Large Visual Library
+#### Geniş Görsel Kütüphane
 
-Allows users to easily prepare their own SCADA components as well as the large visual library.
-#### Redundant Working Mode
+Geniş görsel kütüphanesinin yanında, kullanıcıların da kendi SCADA bileşenlerini kolaylıkla 
+hazırlamasına imkan verir.
 
-Field data is read and processed by BACKUP server in case of the failure of the primary server.
-No data loss
-Communication status tests (field devices or spare SCADA)
-#### Server / Client Architecture
+#### Paralel Yedekli Çalışma(Redundant Working Mode)
 
-Multi-station support
-Assigning authority level to work stations
-#### Licensed Tag Capacity
+Sahadan veriler her iki SCADA sisteminde okunur ve işlenir.
+Veri kaybı yaşanmaz
+Haberleşme durum testleri (saha cihazları veya yedek SCADA)
 
-Unlimited license (limited to system memory).
-Ability to define alarm tags up to the number of tags
-Ability to identify trends by the number of tags
-#### Operating System Support
+#### Server/Client Mimari 
+
+Çoklu çalışma istasyon desteği
+Çalışma istasyonlarına yetki seviyesi atama
+
+
+#### Lisansa Bağlı Etiket Kapasitesi 
+
+Sınırsız lisans imkanı (Sistem belleği ile sınırlıdır.)
+Etiket sayısı kadar alarm etiketi tanımlayabilme
+Etiket sayısı kadar trend tanımlayabilme
+
+#### İşletim Sistemi Desteği 
 
 Windows 7/8/10
 Windows Server 2008/2012/2016
 Linux (Debian)
 MacOSX
-#### Security
 
-128 different access authorization levels for tags and pages
-Ability to assign 128 different group memberships to users
-Integrated security with operating system
-TLS / SSL versions of layer 7 protocols on comms
-Use explicit SHA256 summaries instead of plain text passwords in the authorization mechanism
-#### Data Transfer
+#### Güvenlik 
 
-SQL compatible data transfer possibility inside and outside
+Etiketlere ve sayfalara 128 farklı erişim yetkisi tanılama
+Kullanıcılara 128 farklı grup üyeliği atayabilme 
+İşletim sistemi ile entegre güvenlik
+Haberleşmede katman 7 protokollerinin TLS/SSL versiyonları
+Yetkilendirme mekanizmasında düz metin şifreler yerine salt eklenmiş SHA256 özetler kullanır
+
+#### Veri Aktarım 
+
+SQL uyumlu dışa ve içe veri aktarım imkanı
+
 #### Alarm
 
-Ability to define alarms for all defined tags
-Alarms can be defined 256 different criticality levels
-Ability to monitor active alarms and alarm history
-Alarm monitoring by date and importance
-Output from alarm list: Excel, printer, pdf
-#### Data Record Trend Monitoring
+Tanımlanmış tüm etiketler için alarm tanımlama imkanı
+Alarmlar 256 farklı kritiklik seviyesi tanımlayabilme
+Aktive alarmları ve alarm geçmişini izleme imkanı
+Tarih ve önem sırasına göre alarm izleme imkanı
+Alarm listesinden çıktı alma imkanı: Excel,printer,pdf
 
-Log recording capability for all defined tags
-Trend defined tags graphical display
-Export of trend defined tags data to excel, pdf or printer
-#### Communication
+#### Veri Kayıt Trend İzleme 
 
-Excellent connection with MikroDev PLC, REMOTE IO and Gateway products
-Compatible with a wide range of industry standard protocols: MODBUS TCP, MODBUS RTU, DNP3, SNMP, IEC- *, BACNET
-#### Database Support
+Tanımlanmış tüm etiketler için log kayıt imkanı
+Trend tanımlanmış etiketler grafiksel gösterim
+Trend tanımlanmış etiket verilerinin excel, pdf veya printer çıktısı
+
+#### Haberleşme
+
+Mikrodev PLC,REMOTE IO ve Gateway ürünleri ile mükemmel bağlantı
+Endüstri standardı çok sayıda protokolle uyum: MODBUS TCP, MODBUS RTU,DNP3,SNMP, IEC-, BACNET
+
+#### Veri Tabanı Desteği 
 
 PgSQL
 
@@ -73,238 +99,263 @@ ORACLE
 SQLite
 
 
-## Architecture
+##  MİMARİ
 
-Mikrodev SCADA server provides real-time monitoring and control of field devices by connecting to this devices via intranet or internet. It saves collected data in the tag, event and alarm database. It also allows users connecting to the server over the internet to monitor and control the devices on the field using the prepared SCADA project. While different combinations can be created according to the network and hardware topology designed with ViewPLUS, the architecture shown below can be used basically.
+Mikrodev SCADA sunucusu intranet ya da internet üzerinden saha cihazlarına bağlanarak bu cihazların 
+gerçek zamanlı izleme ve kontrolünü sağlar. Topladığı verileri etiket, olay ve alarm veri tabanına 
+kaydeder. Aynı zamanda hazırlanmış olan SCADA projesini kullanarak internet üzerinden sunucuya 
+bağlanan kullanıcıların sahadaki cihazları izlemesini ve kontrol etmesini sağlar. ViewPLUS ile tasarlanan 
+ağ ve donanım topolojisine göre çok farklı kombinasyonlar oluşturulabilmekle beraber, temel olarak 
+aşağıdaki şekilde gösterilen mimari kullanılabilir.
 
 <center>
 
 ![introduction-01](/img/introduction-01.png)
-***<center>Figure 1: Add Password</center>***
+
 
 </center>
 
-## Creating New Project
+## YENİ PROJE OLUŞTURMA  
 
-To create a new project:
+Yeni proje oluşturmak için:
 
-Select File>New File or Project > Mikrodev SCA Project
-
-<center>
+ Dosya>Yeni Dosya ya da Proje > Mikrodev SCA Projesi seçilir.,
+ 
+ <center>
 
 ![new-project-01](/img/new-project-01.png)
-***<center>Figure 1: Add Password</center>***
+
 
 </center>
+ 
+  Proje ismi ve nereye kaydedeceği seçilir.
 
-Select project name and location.
-
-<center>
+ <center>
 
 ![new-project-02](/img/new-project-02.png)
-***<center>Figure 1: Add Password</center>***
+
 
 </center>
-
-After entering the database username and password, you can verify the password by clicking the "Test Connection" button (if you will use PostgreSQL database and the PostgreSQL database is not installed on your system, you need to download and install the relevant version by clicking on "Download PgSQL" link.)
+ 
+  Veritabanı kullanıcı adı ve şifrenizi girdikten sonra "Bağlantıyı Test Et" butonuna basılarak şifre 
+doğrulaması yapılır.(Eğer PostgreSQL veritabanı, sisteminizde kurulu değilse " PgSQL ‘i indir" 
+bağlantısına tıklayarak ilgili versiyonu indirip kurmanız gerekir)
 
 <center>
 
 ![new-project-03](/img/new-project-03.png)
-***<center>Figure 1: Add Password</center>***
+
 
 </center>
 
-The visual parameters such as screen color, default page size are set.
-
-<center>
+ Ekran rengi, varsayılan sayfa boyutu gibi görsel parametreler ayarlanır.
+ 
+ <center>
 
 ![new-project-04](/img/new-project-04.png)
-***<center>Figure 1: Add Password</center>***
+
 
 </center>
 
-If you are going to use the SVN version control tool on the next page, the settings will be adjusted accordingly.
+Sonraki sayfada SVN sürüm kontrol aracı kullanacaksak, bununla ilgili ayarlamalar yapılır.
 
 <center>
 
 ![new-project-05](/img/new-project-05.png)
-***<center>Figure 1: Add Password</center>***
+
 
 </center>
 
-A new project is created by pressing the "Finish" button. The newly created project consists of 2 files. These are the files with the extension "scapro" where the project configuration parameters are stored. You do not need to make any changes to this file. The other file that is automatically created is the file named "intro.sca". You can design the main screen on this page.
-
-<center>
+"Finish" butonuna basılarak yeni proje oluşturulmuş olur. Yeni oluşturduğunuz proje 2 adet 
+dosyadan oluşur. Bunlardan ilki proje yapılandırma parametrelerinin saklandığı “scapro” uzantılı 
+dosyadır. Bu dosya üzerinde herhangi bir değişiklik yapmanıza genelde ihtiyaç yoktur. Otomatik 
+oluşturulan diğer dosya ise “intro.sca” ismindeki dosyadır. SCADA sisteminde kullanacağınız ana 
+ekranı bu sayfa üzerinde tasarlayabilirsiniz.
+ 
+ <center>
 
 ![new-project-06](/img/new-project-06.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
-
-On the far left is navigation buttons that allow you to navigate through the editor's basic interfaces. Using these buttons, you can switch between the SCADA Editor view, Projects view and the Tag/channel Editor view. At the bottom of the navigation buttons is the project selector. If more than one project is open at the same time on the editor, this button can be used to switch between projects.
-
-<center>
+ 
+ En solda, editörün temel arayüzlerinde gezinmenizi sağlayan gezinme düğmeleri bulunur. Bu düğmeleri kullanarak SCADA Düzenleyici görünümü, Projeler görünümü ve Etiket/kanal Düzenleyici görünümü arasında geçiş yapabilirsiniz. Gezinme düğmelerinin altında proje seçici bulunur. Editörde aynı anda birden fazla proje açıksa, projeler arasında geçiş yapmak için bu buton kullanılabilir.
+ 
+ <center>
 
 ![new-project-07](/img/new-project-07.png)
-***<center>Figure 1: Add Password</center>***
+
 
 </center>
+ 
+ Detaylı bilgi için:
+[Proje oluşturmak]
+(https://www.youtube.com/watch?v=czQOlx0or2g&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=3).
+ 
 
-## SCADA Editor View
+## SSCADA GÖRSEL BİLEŞENLERİ
 
-### Sidebar
+### Kenar çubuğu
 
-The sidebar is available in the SCADA Editor view. Use the sidebar to browse projects, files and insert components.
+Kenar çubuğu, SCADA Düzenleyici görünümünde mevcuttur. Projelere, dosyalara göz atmak ve bileşenleri eklemek için kenar çubuğunu kullanın.
 
-Project files and components are controlled using panes on the left side of the editor. You can also filter and search the project files via the search box at the bottom of this panel. At the bottom left of the panel is a button that allows you to hide and show panels.
+Proje dosyaları ve bileşenleri, düzenleyicinin sol tarafındaki bölmeler kullanılarak kontrol edilir. Ayrıca bu panelin altındaki arama kutusu aracılığıyla proje dosyalarını filtreleyebilir ve arayabilirsiniz. Panelin sol alt tarafında, panelleri gizlemenizi ve göstermenizi sağlayan bir düğme bulunur.
 
 <center>
 
 ![editor-view-01](/img/editor-view-01.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-You can select the content of the sidebar in the sidebar menu:
+Kenar çubuğu menüsünden kenar çubuğunun içeriğini seçebilirsiniz:
 
-Projects shows a list of projects open in the current session.
-Open Documents shows currently open files.
-File System shows all files in the currently selected directory.
-You can change the view of the sidebar in the following ways:
+Projeler, geçerli oturumda açık olan projelerin bir listesini gösterir.
+Açık Belgeler, o anda açık olan dosyaları gösterir.
+Dosya Sistemi, seçili olan dizindeki tüm dosyaları gösterir.
+Kenar çubuğunun görünümünü aşağıdaki şekillerde değiştirebilirsiniz:
 
-To toggle the sidebar, click ￼ (Hide Sidebar/Show Sidebar) or press Alt+0 (Cmd+0 on macOS).
-To split the sidebar, click ￼ (Split). Select new content to view in the split view.
-To close a sidebar view, click ￼ (Close).
+Kenar çubuğunu değiştirmek için ￼ (Kenar Çubuğunu Gizle/Kenar Çubuğunu Göster) öğesini tıklayın veya Alt+0 (macOS'ta Cmd+0) tuşlarına basın.
+Kenar çubuğunu bölmek için ￼ (Böl) öğesini tıklayın. Bölünmüş görünümde görüntülemek için yeni içerik seçin.
+Bir kenar çubuğu görünümünü kapatmak için ￼ (Kapat) öğesini tıklayın.
 
-### Components
+### BİLEŞENLER
 
-ViewPLUS SCADA offers components in different types for visualization of the displayed data. These are; basic components, timers, graphics, database query and text components.
+ViewPLUS SCADA, görüntülenen verilerin görselleştirilmesi için farklı tiplerde bileşenler sunar. Bunlar; temel bileşenler, zamanlayıcılar, grafikler, veritabanı sorgusu ve metin bileşenleri.
 
-The basic components are located in the "SCADA Components" pane in the left panel of the Editor. The other components can be created using the "components toolbar" on top of the editor window.
+Temel bileşenler, Editörün sol panelindeki "SCADA Bileşenleri" bölmesinde bulunur. Diğer bileşenler, düzenleyici penceresinin üstündeki "bileşenler araç çubuğu" kullanılarak oluşturulabilir.
 
 <center>
 
 ![editor-view-02](/img/editor-view-02.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-#### Basic Components
-Using the "Component Manager", different objects that the user has defined can be added . To insert a component to the current page, press the left mouse button on one of the components in the panel, then press the desired position on the scene with the left mouse button again and the component is added.
+####  Temel Bileşenler 
+
+“Bileşen Yöneticisi” kullanılarak buradaki bileşenlere kullanıcının tanımlamış olduğu farklı nesneler de 
+eklenebilir. Mevcut sayfaya bileşen eklemek için paneldeki bileşenlerden birine sol fare tuşu ile bastıktan 
+sonra, sahnede istenen pozisyona sol fare tuşu ile tekrar basılır ve bileşen eklenmiş olur. 
 
 <center>
 
 ![editor-view-03](/img/editor-view-03.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-To change the size of the added component, you can move the triangle icon in the lower right corner of the component with the mouse. "Object Properties Panel" is used to change the advanced properties of the component.
+Eklenen bileşenin boyutlarını değiştirmek için bileşenin sağ alt köşesindeki üçgen ikonunu fare ile 
+hareket ettirebilirsiniz. Bileşene ait gelişmiş özellikleri değiştirmek için “Bileşen Özellikleri Paneli” 
+kullanılır. 
 
-#### Text Component
+#### Metin Bileşeni 
 
-The text component is used to display text in different fonts, colors, and formats. Used for fixed text. You can change the formatting of the text in the "Format" tab in the toolbar.
+Metin bileşeni, farklı font, renk ve biçimde yazıları ekranda göstermek için kullanılır. Metin bileşeni 
+üzerinde herhangi bir dinamik içerik gösterilmez. Sabit metinler için kullanılır. Metnin format ayarlarını 
+araç çubuğundaki "Format" sekmesinden değiştirebilirsiniz. 
 
 <center>
 
 ![editor-view-04](/img/editor-view-04.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-You can show dynamic content on text component.
-
-You can add dynamic content on some components. To achieve this, you should use the '$' operator and 'braces' ($ {....}):
+Dinamik içeriği metin bileşeninde gösterebilirsiniz.
+Bazı bileşenlere dinamik içerik ekleyebilirsiniz. Bunu başarmak için '$' operatörünü ve 'parantez' kullanmalısınız ($ {....}):
 
  ```
- ${Tag_ID}
+ ${Etiket_ID}
  ```
-As an example, you should write '${1234}' onto your component to display the value of a tag with the tag ID '1234' in your system.
+Örnek olarak, sisteminizde etiket kimliği '1234' olan bir etiketin değerini görüntülemek için bileşeninize '${1234}' yazmalısınız.
 
 ```
-Tank Level is ${1234}
+Depo Seviye degeri ${1234} dir
 ```
-this expression will be shown on the component like:
+bu ifade aşağıdaki gibi bileşende gösterilecektir:
 
 ```
-Tank level is 78
-```
-While working with "double precision" numbers, you can use "printf text format"(see section Object Properties Panel) to change the precision of the displayed value:
-
-```
-Tank Level is ${1234,%.3f}
-```
-If the value of the tag with ID '1234' is a double precision number like "567.123456", this expression will be displayed on the component like:
-
-```
-Tank level is 567.123
+Depo Seviye degeri 78 dir
 ```
 
-#### Timer Component
+"Çift duyarlıklı" sayılarla çalışırken, görüntülenen değerin kesinliğini değiştirmek için "printf metin biçimi"ni (Nesne Özellikleri Paneli bölümüne bakın) kullanabilirsiniz:
 
-You can control the "Timer Blocks" that you have added to the PLC project with Mikrodiagram software via the "Timer" component. By adding "Timer Tags" you have defined in the Tag/ Channel Editor to the timer component, users can change the timing settings through the client software.
+```
+Depo Seviye degeri {1234,%.3f} dir
+```
+'1234' kimliğine sahip etiketin değeri "567.123456" gibi bir çift duyarlıklı sayıysa, bu ifade bileşende şu şekilde görüntülenecektir:
+
+```
+Depo Seviye degeri 567.123 dir
+```
+
+#### Zamanlayıcı Bileşeni 
+
+Mikrodiagram yazılımda PLC projesine eklemiş olduğunuz “Zamanlayıcı Blokları” nın kontrolünü 
+“Zamanlayıcı” bileşeni üzerinden yapabilirsiniz. Etiket/Kanal Editöründe tanımlamış olduğunuz 
+“Zamanlayıcı Etiketleri” ni zamanlayıcı bileşenine ekleyerek, istemci üzerinden kullanıcıların zamanlama 
+ayarlarını değiştirebilmeleri sağlanır. 
+
 
 <center>
 
 ![editor-view-05](/img/editor-view-05.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-#### Chart Component
+#### Grafik Bileşeni 
 
-Using the chart component, you can graphically view the data of the desired tags. Chart object displays graphs as lines or bar graphs. In the chart settings window, the chart's appearance, behavior, and parameters for the tags to be displayed can be set.
+Grafik bileşeni kullanılarak, istediğiniz etikete ait verileri grafiksel olarak izleyebilirsiniz. Grafik nesnesi 
+grafikleri çizgi grafiği şeklinde gösterir. Grafik ayarları penceresinde grafiğin görünümü, davranışı ve 
+gösterilecek etiketlere ait parametreler ayarlanabilir. 
 
-While only the last values of the tags added are shown on the bar chart; historical values of tags can be displayed on the line chart.
+Çubuk grafikte sadece eklenen etiketlerin son değerleri gösterilirken; etiketlerin geçmiş değerleri çizgi grafikte görüntülenebilir.
 
 <center>
 
 ![editor-view-06](/img/editor-view-06.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-Chart View Type: Sets how the chart will work.
-Chart Component : Graphical representation of the added component.   
+Grafik Görünüm Türü: Grafiğin nasıl çalışacağını ayarlar.
+Grafik Bileşeni : Eklenen bileşenin grafiksel gösterimi.
 
-Link to Chart : The added component only acts as a button. A separate window chart display is shown when pressed.
+Grafiğe Bağlantı : Eklenen bileşen yalnızca bir düğme görevi görür. Basıldığında ayrı bir pencere grafiği ekranı gösterilir.
 
-Chart Type: Selective type for chart type
-Line Grid : The trend data of the defined labels are drawn with different colors on the same chart . With new data read from the field, the chart is updated once in a second.   Bar Chart: Defined tags are displayed in bar chart format. The chart is updated once in seconds.
+Grafik Türü: Grafik türü için seçici tür
 
-#### Database Query Component
-This component allows the client to retrieve some specific queries from the database. In the Database query settings window, parameters related to the tag to be queried, query type, range, update frequency, and component visibility can be set.
+Line Grid : Tanımlanan etiketlerin trend verileri aynı grafik üzerinde farklı renklerle çizilir. Sahadan okunan yeni verilerle grafik saniyede bir güncellenir.
+
+Çubuk Grafik: Tanımlı etiketler, çubuk grafik biçiminde görüntülenir. Grafik saniyede bir güncellenir.
+
+#### Veritabanı Sorgu Bileşeni 
+Bu bileşen veritabanından bazı özel sorguların alınarak istemci üzerinde gösterilmesini sağlar. Veritabanı
+sorgu ayarları penceresinde, sorgulanacak etiket, sorgu tipi, aralığı, güncelleme sıklığı ve bileşenin 
+göeünümüyle ilgili parametreler ayarlanabilir.
 
 <center>
 
 ![editor-view-07](/img/editor-view-07.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-#### Table Component
-You can display the data in tabular form on the table component. You can add and remove new columns / rows to table via the table menu .
+#### Tablo Bileşeni
+Tablo bileşeni üzerinde verileri tabular bir formda gösterebilirsiniz. Tablo menüsü üzerinden tabloya yeni 
+kolon/satır ekleyip çıkartabilirsiniz. 
 
 <center>
 
 ![editor-view-08](/img/editor-view-08.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-#### Styling Table
+#### Tablo Şekillendirme
 
-You can set font and color for cell text using the format toolbar on the top of the editor:
+Düzenleyicinin üst kısmındaki biçim araç çubuğunu kullanarak hücre metni için yazı tipini ve rengini ayarlayabilirsiniz:
 
 <center>
 
 ![editor-view-09](/img/editor-view-09.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-You can also change the appearance of the table itself using stylesheets. Here is a sample stylesheet for changing row colors:
+Stil sayfalarını kullanarak tablonun görünümünü de değiştirebilirsiniz. Satır renklerini değiştirmek için örnek bir stil sayfası:
 
 ```
 alternate-background-color:#AACA98;
@@ -312,9 +363,9 @@ background-color: #D3E3D0;
 ```
 
 #### Formulas on Table
-You can use excell like formulation on table cells.
+Tablo hücrelerinde excel benzeri oluşum kullanabilirsiniz.
 
-Supported functions are:
+Desteklenen işlevler şunlardır:
 
 [SIN](https://support.microsoft.com/en-us/office/sin-function-cf0e3432-8b9e-483c-bc55-a76651c95602?ui=en-us&rs=en-us&ad=us) 
 [COS](https://support.microsoft.com/en-us/office/cos-function-0fb808a5-95d6-4553-8148-22aebdce5f05?ui=en-us&rs=en-us&ad=us) 
@@ -336,175 +387,200 @@ Supported functions are:
 [MEDIAN](https://support.microsoft.com/en-us/office/median-function-d0916313-4753-414c-8537-ce85bdd967d2?ui=en-us&rs=en-us&ad=us)
 [MODE](https://support.microsoft.com/en-us/office/mode-function-e45192ce-9122-4980-82ed-4bdc34973120?ui=en-us&rs=en-us&ad=us)
 
-#### Image Component
-You can add images into your view by using image component. You can resize, rotate and flip the added image.
+#### Görüntü Bileşeni
+
+Görüntü bileşenini kullanarak görünümünüze görüntü ekleyebilirsiniz. Eklenen resmi yeniden boyutlandırabilir, döndürebilir ve çevirebilirsiniz.
 
 <center>
 
 ![editor-view-10](/img/editor-view-10.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-#### Web Frame Component
+#### Web Frame Bileşeni 
 
-You can add web content into your view by using Web Frame component. You can resize, rotate and flip the added frame. This component is useful, for example when you need to add a web camera view into your SCADA page.
+Web Frame bileşenini kullanarak görünümünüze web içeriği ekleyebilirsiniz. Eklenen Frame  yeniden boyutlandırabilir, döndürebilir ve çevirebilirsiniz. Bu bileşen, örneğin SCADA sayfanıza bir web kamerası görünümü eklemeniz gerektiğinde kullanışlıdır.
 
 <center>
 
 ![editor-view-11](/img/editor-view-11.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-Web frame view is not supported on mobile versions of OperatorClient.
+Web Frame görünümü, OperatorClient'in mobil sürümlerinde desteklenmez.
 
-### Page Properties Panel
+#### Nesne Ekleme Modu
+
+Nesne Ekleme Modu, son kullanılan scada bileşenini editör ekranına getirmek için kullanılır.
+
+<center>
+
+![add-object](/img/add-object.png)
+
+</center>
+
+### Sayfa Özellikleri Paneli
 
 <center>
 
 ![editor-view-12](/img/editor-view-12.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-The basic settings for the page are set via this panel
+Sayfanın temel ayarları bu panel üzerinden yapılır.
 
-#### Page Name
-The name you want to appear for the page in the left panel on the client screen for pages set as tabs.
-#### PageID 
-System-assigned unique ID for each page.
-#### PageOrder 
-Sets the order in which the page will appear in the left panel on the client screen for pages set as tabs.
-#### PageType 
-There are three different page types. "Tab" type pages appear as full screen on the client. At the same time, a button is created in the left-hand navigation panel that provides access to this page. Unlike the "Tab" for the "Linked Page" type, there is no button on the navigation panel. "Dialog" type pages are pages that are configured as popups to be opened in an action repository.
-#### GeoView 
-Enables Google Maps api and shows the map. You should provide a map API key to be able to use this feature. First login to Google, go to Google API Key Console and select "Google Maps JavaScript API". After you get the key insert this into "Projects > Project File Paths > Map API Key"
-#### GeoCenter 
-This option determines the initial position and zoom level of map when opened. It should be in that format :" Longitude,Latitude,ZoomLevel"
-Scale at startup 
-Set how to scale scaling when the page is first opened on the client screen.
-#### CustomSize 
-This option is checked if a different size will be used in the project settings instead of the default page size.
-#### Page Width 
-Width for custom page size
-#### Page Height 
-Height for custom page size
-#### BackgroundImage
-An image to be displayed on the client screen for the page in the left panel is displayed for the pages set as tabs.
-#### Add Scroll Text 
-Adds a slip at the bottom of the page that allows you to show informative messages.
-#### AccessRights 
-Different access rights can be defined to restrict access to the page. For users who do not have these rights, the page is not displayed.
+#### Sayfa ismi
+Sekme olarak ayarlanmış sayfalar için istemci ekranında sol panelde sayfaya görünmesini istediğiniz isim.
 
-### Layers Panel
+#### Sayfa Kimliği
+Her sayfa için sistem tarafından atanan benzersiz kimlik.
 
-You can create or delete a new layer on the Layers panel. You can create a hierarchical layout on the page by creating components on the layers you create. You can make complex designs easier by hiding / showing layers. Another benefit provided by the layers is that the visibility of the layers at different zoom levels can be changed.
+#### Sayfa sırası
+Sekmeler olarak ayarlanan sayfalar için istemci ekranında sol panelde sayfanın görüneceği sırayı belirler.
 
-#### Hide / Show Layers
-You can hide / show the layers you have added using the "Hide / Show Layer" option on the right-click menu of the mouse.
+#### Sayfa Türü
+Üç farklı sayfa türü vardır. "Sekme" tipi sayfalar istemcide tam ekran olarak görünür. Aynı zamanda sol taraftaki gezinme panelinde bu sayfaya erişim sağlayan bir buton oluşturulur. "Bağlantılı Sayfa" türü için "Sekme"den farklı olarak, gezinme panelinde herhangi bir düğme yoktur. "İletişim kutusu" türü sayfalar, bir eylem havuzunda açılacak şekilde açılır pencereler olarak yapılandırılmış sayfalardır.
+
+#### Coğrafi Görünüm
+Google Haritalar API'sini etkinleştirir ve haritayı gösterir. Bu özelliği kullanabilmek için bir harita API anahtarı sağlamalısınız. Önce Google'a giriş yapın, Google API Anahtar Konsolu'na gidin ve "Google Haritalar JavaScript API"sini seçin. Anahtarı aldıktan sonra bunu "Projeler > Proje Dosya Yolları > Harita API Anahtarı"na ekleyin.
+
+#### GeoCenter
+Bu seçenek, açıldığında haritanın başlangıç ​​konumunu ve yakınlaştırma seviyesini belirler. Şu biçimde olmalıdır: "Boylam, Enlem, Yakınlaştırma Düzeyi" Başlangıçta ölçekle Sayfa istemci ekranında ilk açıldığında ölçeklemenin nasıl ölçekleneceğini ayarlayın.
+
+#### Özel boyut
+Proje ayarlarında varsayılan sayfa boyutu yerine farklı bir boyut kullanılacaksa bu seçenek işaretlenir.
+
+#### Sayfa genişliği
+Özel sayfa boyutu için genişlik
+
+#### Sayfa Yüksekliği
+Özel sayfa boyutu için yükseklik
+
+#### Arka plan görüntüsü
+Sekme olarak ayarlanan sayfalar için sol paneldeki sayfa için istemci ekranında görüntülenecek bir resim görüntülenir.
+
+#### Kaydırma Metni Ekle
+Sayfanın altına bilgilendirici mesajlar göstermenizi sağlayan bir slip ekler.
+
+#### Erişim Hakları
+Sayfaya erişimi kısıtlamak için farklı erişim hakları tanımlanabilir. Bu haklara sahip olmayan kullanıcılar için sayfa görüntülenmez.
+Okuma: Kullanıcıların etiket değerlerini görebilmeleri için sahip olmaları gereken haklardır. Burada 
+ayarlanan haklara sahip olmayan kullanıcılar bu etiket değerini göremezler. 
+Yazma: Kullanıcıların etiket 
+değerlerini değiştirebilmeleri için sahip olmaları gereken haklardır. Burada ayarlanan haklara sahip 
+olmayan kullanıcılar bu etiket değerini değiştiremezler. 
+
+### Katmanlar Paneli
+
+Katmanlar panelinde yeni bir katman oluşturabilir veya silebilirsiniz. Oluşturduğunuz katmanlar üzerinde bileşenler oluşturarak sayfada hiyerarşik bir düzen oluşturabilirsiniz. Katmanları gizleyerek/göstererek karmaşık tasarımları daha kolay hale getirebilirsiniz. Katmanların sağladığı bir diğer fayda ise, farklı yakınlaştırma seviyelerinde katmanların görünürlüğünün değiştirilebilmesidir.
+
+#### Katmanları Gizle / Göster
+Eklemiş olduğunuz katmanları farenin sağ tıklama menüsündeki "Katmanı Gizle / Göster" seçeneğini kullanarak gizleyebilir/gösterebilirsiniz.
 
 <center>
 
 ![editor-view-13](/img/editor-view-13.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-#### Changing the Order of the Components in the Layer
-You can change the order of the layers that you have added using the "Bring Layer Components Front" or "Send Layer Components Back" options on the right mouse button menu.
+#### Katmandaki Bileşenlerin Sırasını Değiştirme
+
+Eklemiş olduğunuz katmanların sırasını farenin sağ tuş menüsündeki "Katman Bileşenlerini Öne Getir" veya "Katman Bileşenlerini Geri Gönder" seçeneklerini kullanarak değiştirebilirsiniz.
 
 
-#### Hide / Show Layers According to Scale Level
-You can hide and show the layers defined on the page according to the scale level of the screen. On this scale, you can display more detailed information components when the scale level increases, but you can reduce the complexity of the design and make it easier to use by showing fewer components when the scale level increases. To do this, first select "Layer Properties" in the "Layers Panel"
+#### Ölçek Düzeyine Göre Katmanları Gizle / Göster
 
-In the dialog that appears, there are two fields showing scale level parameters.
+Ekranın ölçek düzeyine göre sayfada tanımlanan katmanları gizleyebilir ve gösterebilirsiniz. Bu ölçekte, ölçek düzeyi arttığında daha ayrıntılı bilgi bileşenleri görüntüleyebilirsiniz ancak ölçek düzeyi arttığında daha az bileşen göstererek tasarımın karmaşıklığını azaltabilir ve kullanımı daha kolay hale getirebilirsiniz. Bunu yapmak için önce "Katmanlar Paneli"nde "Katman Özellikleri"ni seçin.
+
+Açılan iletişim kutusunda, ölçek düzeyi parametrelerini gösteren iki alan vardır.
 
 <center>
 
 ![editor-view-14](/img/editor-view-14.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-The layer will be visible between the two scale values to be entered here. If you define one of the values as "-1", the layer will be continuously visible in this direction regardless of the scale. For example, if values of "300" and "-1" are considered, the result will be like that: "Make the layer visible if the scale is greater than 3"
+Katman, buraya girilecek iki ölçek değeri arasında görünecektir. Değerlerden birini "-1" olarak tanımlarsanız, katman, ölçekten bağımsız olarak bu yönde sürekli olarak görünür olacaktır. Örneğin, "300" ve "-1" değerleri dikkate alınırsa sonuç şu şekilde olacaktır: "Ölçek 3'ten büyükse katmanı görünür yap"
 
-The scale is smaller than '3':
+Ölçek '3'ten küçüktür:
 
 <center>
 
 ![editor-view-15](/img/editor-view-15.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-The scale is higher than '3':
+Ölçek '3'ten yüksek:
 
 <center>
 
 ![editor-view-16](/img/editor-view-16.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-As you can see in the picture, when the scale value goes up to '3', the layer with the buttons becomes visible.
+Resimde de göreceğiniz gibi skala değeri '3' e çıkınca butonların olduğu katman görünür hale geliyor.
 
-### GIS Objects Panel
+### GIS Nesne Paneli
 
 <center>
 
 ![editor-view-17](/img/editor-view-17.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-You can edit your maps using this panel.
+Bu paneli kullanarak haritalarınızı düzenleyebilirsiniz.
 
-#### Text 
-The marker's name that will show up on map.
-#### Location 
-The marker's location on map. It should be in "Longitude,Latitude" format
-#### Icon 
-Custom marker icon to be used on map
-#### Link to Page 
-Select a page link to go when the marker is clicked. You can enable or disable page linking. When you disable page linking "Go To Page" button will disappear on infowindow. You can also enable/disable of showing alarms of the target page on the marker from this panel.
+#### Metin
+Haritada görünecek olan işaretçinin adı.
+
+#### Konum
+İşaretçinin haritadaki konumu. "Boylam, Enlem" biçiminde olmalıdır
+
+#### Simge
+Haritada kullanılacak özel işaretçi simgesi
+
+#### Sayfa Bağlantısı
+İşaretçi tıklandığında gidilecek sayfa bağlantısını seçin. Sayfa bağlantısını etkinleştirebilir veya devre dışı bırakabilirsiniz. Sayfa bağlantısını devre dışı bıraktığınızda "Sayfaya Git" düğmesi bilgi penceresinde kaybolacaktır. Ayrıca bu panelden işaretçide hedef sayfanın alarmlarının gösterilmesini etkinleştirebilir/devre dışı bırakabilirsiniz.
 
 <center>
 
 ![editor-view-18](/img/editor-view-18.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-#### Info Window 
-Here you can insert any html content to be shown on Info Window for each marker. You can use ${tag_id} and #{operation} syntax inside html elements.
-#### Add Marker Button 
-Click on the map after selecting this button to insert a new marker
-#### Remove Markers Button 
-Click on the map after selecting this button to remove markers
-#### Import Markers from GeoJson Button 
-You can import markers from a geoJson file using this button. 
-Go to [https://geojson.io](https://geojson.io) for more information.
+#### Bilgi Penceresi
+Burada, her işaretçi için Bilgi Penceresinde gösterilecek herhangi bir html içeriğini ekleyebilirsiniz. Html öğelerinin içinde ${tag_id} ve #{process} sözdizimini kullanabilirsiniz.
 
-### Object Properties Panel
+#### İşaretleyici Düğmesi Ekle
+Yeni bir işaretçi eklemek için bu düğmeyi seçtikten sonra haritaya tıklayın
 
-It is a panel that allows you to adjust the SCADA objects added to the page.
+#### İşaretçileri Kaldır Düğmesi
+İşaretçileri kaldırmak için bu düğmeyi seçtikten sonra haritaya tıklayın
+
+#### GeoJson Düğmesinden İşaretleri İçe Aktarma
+Bu düğmeyi kullanarak işaretçileri bir geoJson dosyasından içe aktarabilirsiniz.
+Daha fazla bilgi için [https://geojson.io](https://geojson.io) adresine gidin.
+
+### Nesne Özellikleri Paneli
+Sayfaya eklenen SCADA nesnelerini ayarlamanızı sağlayan bir paneldir.
 
 <center>
 
 ![editor-view-19](/img/editor-view-19.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-#### Object Name 
-A name that makes it easy to distinguish the object.
-#### ObjectType 
-Represents the component type of the object.
-#### Geometry 
-The position of the object on the screen is the parameters related to the scale and rotation. The top leftmost point of the page is positioned by accepting the point (0,0). Position value increases down and to the right.
-#### Constants 
-Contains some settings related to the appearance of the object.
+#### Obje adı
+Nesneyi ayırt etmeyi kolaylaştıran bir ad.
+
+#### Nesne türü
+Nesnenin bileşen türünü temsil eder.
+
+#### Geometri
+Nesnenin ekrandaki konumu, ölçek ve döndürme ile ilgili parametrelerdir. Sayfanın en sol üst noktası (0,0) noktası kabul edilerek konumlandırılır. Konum değeri aşağı ve sağa doğru artar.
+
+#### Sabitler
+Nesnenin görünümüyle ilgili bazı ayarları içerir.
 
 ```
 Font X Offset : Used to add a horizontal offset to the position of the text to be printed on the object, relative to the upper left corner of the object.  
@@ -527,9 +603,7 @@ Date is : 13.05.2017 / 12:24
 Font Style Sheet : By setting the style sheet for the "Font Content" to be displayed.
 Text Width : The maximum width of the text to be displayed on the component.
 ```
-
-Events: Contains user interaction settings.
-
+Olaylar: Kullanıcı etkileşimi ayarlarını içerir.
 ```
 Event Type : The parameter that determines when the event will be fired.             
 MousePressed: Left mouse button press event   
@@ -549,190 +623,229 @@ Go to page : Page selection for "Go to page" action
 (Web)link: If this field is defined as a web link, a menu entry will be created to access the related page from the right-click menu of the component. You can also create direct link to Alarms page by writing ":Alarms" expression or to Reports page by writing ":Reports" to this field or to previous page by writing ":Back". Other than that you can directly create a link to a report query in this field.
 ```
 
-### Tags Panel
+Ayrıntılı bilgi için: [Bileşen Etkinlik Türü ve Etkinlik Eylemleri](https://www.youtube.com/watch?v=l0icsb53-Ng&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=8).
 
-The values read from the labels selected from this panel are constantly updated according to the values read from the field.
+### Etiket Paneli
 
-The labels defined here can also be used in macros. For each label, there are predefined "i, o, s, w" values. (Such as i1, i2, o1, o2 ..). You can see the default variable names of the tags by hovering over them with the mouse.
+Bu panelden seçilen etiketlerden okunan değerler, sahadan okunan değerlere göre sürekli güncellenir.
+
+Burada tanımlanan etiketler makrolarda da kullanılabilir. Her etiket için önceden tanımlanmış "i, o, s, w" değerleri vardır. (i1, i2, o1, o2 .. gibi). Etiketlerin varsayılan değişken adlarını fare ile üzerlerine getirerek görebilirsiniz.
 
 <center>
 
 ![editor-view-20](/img/editor-view-20.png)
-***<center>Figure 1: Add Password</center>***
+
 
 </center>
 
-#### Feature Tags
+#### Özellik Etiketleri
 
-Image Index Tag: Shows the image index of the component to display instantly. Which images is in which index can be changed using the "Component Manager" or can be viewed under "Other Tab".
+Görüntü İndeksi Etiketi: Anında görüntülenecek bileşenin görüntü indeksini gösterir. Hangi resimlerin hangi indekste olduğu "Component Manager" kullanılarak değiştirilebilir veya "Diğer Sekme" altında görüntülenebilir.
 
-Text Tag: The value of the selected tag here is displayed on the component according to the form specified in "Text Content".
+Metin Etiketi: Burada seçilen etiketin değeri, "Metin İçeriği"nde belirtilen forma göre bileşen üzerinde görüntülenir.
 
-X Position: The horizontal position coordinate of the component is taken from this parameter. The top left corner of the page is the (0,0) coordinate. As you go to the right, the X value increases.
+X Konumu: Bileşenin yatay konum koordinatı bu parametreden alınır. Sayfanın sol üst köşesi (0,0) koordinatıdır. Sağa gidildikçe X değeri artar.
 
-Y Position: The vertical position coordinate of the component's screen is taken from this parameter. The top left corner of the page is the (0,0) coordinate. The Y value increases as it goes down.
+Y Konumu: Bileşen ekranının dikey konum koordinatı bu parametreden alınır. Sayfanın sol üst köşesi (0,0) koordinatıdır. Y değeri düştükçe artar.
 
-Width: The width value of the component is read from this label.
+Genişlik: Bileşenin genişlik değeri bu etiketten okunur.
 
-Height: The height value of the component is read from this label.
+Yükseklik: Bileşenin yükseklik değeri bu etiketten okunur.
 
-Rotation Angle: Rotation angle of the component with X axis. Gets value in degrees.
+Dönüş Açısı: Bileşenin X ekseni ile dönüş açısı. Derece cinsinden değer alır.
 
-Text color: The color of the text to be displayed on the component is taken from this parameter. 
+Metin rengi: Bileşen üzerinde görüntülenecek yazının rengi bu parametreden alınır.
 
-Mask color: The color of the mask that will be applied on the component is taken from this parameter. 
+Maske rengi: Bileşene uygulanacak maskenin rengi bu parametreden alınır.
 
-Hex value of "112233" of the RGB color value defined as # 112233 is taken as the integer counter value. You can find some sample hex color values [here](https://www.w3schools.com/colors/colors_picker.asp). And you can use [this](https://www.binaryhexconverter.com/hex-to-decimal-converter) tool to convert the color valueto integer.
+112233 olarak tanımlanan RGB renk değerinin "112233" hex değeri tamsayı sayaç değeri olarak alınır. Bazı örnek onaltılık renk değerlerini [burada](https://www.w3schools.com/colors/colors_picker.asp) bulabilirsiniz. Ve renk değerini tamsayıya dönüştürmek için [bu](https://www.binaryhexconverter.com/hex-to-decimal-converter) aracını kullanabilirsiniz.
 
-Mask transparency: A value from 0-255 is taken from this label for the transparency value of the masquerade to be displayed.
-Custom Labels: The 7 labels you select here will be available to the macros.
+Maske şeffaflığı: Görüntülenecek maskeli baloya ait şeffaflık değeri için bu etiketten 0-255 arası bir değer alınır.
+Özel Etiketler: Burada seçtiğiniz 7 etiket makrolar tarafından kullanılabilir olacaktır.
 
-### Other Settings Panel
+### Diğer Ayarlar Paneli
 
 <center>
 
 ![editor-view-21](/img/editor-view-21.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-Limits: The maximum and minimum values by which users can change the "Target Event Tag" value through the client software are set using these parameters.
-ToolTip: Adjust the content that will be shown when users bring the mouse over the component in the client software. You can show dynamic content on tool-tips . Please refer to Basic Scripting.
-Macro: The script for the component is written in this box . For more information about macros, see the corresponding section.
-Images: The images and index numbers defined for the selected component are displayed in this area. Index number expresses which image to show according to the data value read from the tag value of "Image Index Tag" at "Tags Panel". You can change the index display order of components from this panel
+Limitler: Kullanıcıların istemci yazılımı aracılığıyla "Target Event Tag" değerini değiştirebilecekleri maksimum ve minimum değerler bu parametreler kullanılarak ayarlanır.
+
+Araç İpucu: Kullanıcılar fareyi istemci yazılımındaki bileşenin üzerine getirdiğinde gösterilecek içeriği ayarlayın. Araç ipuçlarında dinamik içeriği gösterebilirsiniz. Lütfen Temel Komut Dosyasına bakın.
+
+Makro: Bileşen için komut dosyası bu kutuya yazılır. Makrolar hakkında daha fazla bilgi için ilgili bölüme bakın.
+
+Görüntüler: Seçilen bileşen için tanımlanan görüntüler ve indeks numaraları bu alanda görüntülenir. İndeks numarası, "Etiketler Paneli"nde bulunan "Görüntü İndeks Etiketi"nin etiket değerinden okunan veri değerine göre hangi resmin gösterileceğini ifade eder. Bileşenlerin indeks görüntüleme sırasını bu panelden değiştirebilirsiniz.
 
 <center>
 
 ![editor-view-22](/img/editor-view-22.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-You can move up or down image indexes from the context menu opened by right clicking on the images.
+Görsellere sağ tıklayarak açılan içerik menüsünden görsel indekslerini yukarı veya aşağı hareket ettirebilirsiniz.
 
-## Projects View
+Detaylı bilgi için: [Limit, Hint, Macro and Index Assignments](https://www.youtube.com/watch?v=7d1n1Myp1Tc&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=9).
 
-### SCADA Pages
+## Proje Görünümü
 
-List of all pages created on the project. This view gives detailed information about the created pages for the project.
+### SCADA Sayfaları
+
+Projede oluşturulan tüm sayfaların listesi. Bu görünüm, proje için oluşturulan sayfalar hakkında ayrıntılı bilgi verir.
 
 <center>
 
 ![project-view-01](/img/project-view-01.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-### Project File Paths
+### Proje Dosya Yolları
 
-Here are some important folder paths related to the SCADA project
+SCADA projesiyle ilgili bazı önemli klasör yolları
 
 <center>
 
 ![project-view-02](/img/project-view-02.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-### View Configuration
+### Yapılandırmayı Görüntüle
 
-Default settings for SCADA pages are configured using this menu.
+SCADA sayfaları için varsayılan ayarlar bu menü kullanılarak yapılandırılır.
 
 <center>
 
 ![project-view-03](/img/project-view-03.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-### Client Options
+### Client Seçenekleri
 
-Various settings related to Client view can be done on this menu.
+Bu menüde Client görünümü ile ilgili çeşitli ayarlar yapılabilir.
 
 <center>
 
 ![project-view-04](/img/project-view-04.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-### Tag and Channel Editor View
+### Etiket ve Kanal Düzenleyici Görünümü
 
-Channels and tags are special definitions that enable the SCADA software to access the data on the field devices. Channels include protocol definitions to provide communication with the device on the field and specific settings for this protocol. Tags consist of address definitions for the registers on the connected device. Alarm management is also done under this view.
+Kanallar ve etiketler, SCADA yazılımının saha cihazlarındaki verilere erişmesini sağlayan özel tanımlardır. Kanallar, cihazla sahada haberleşmeyi sağlayacak protokol tanımlarını ve bu protokole özel ayarları içerir. Etiketler, bağlı cihazdaki kayıtlar için adres tanımlarından oluşur. Alarm yönetimi de bu görünüm altında yapılır.
 
-#### Channels
+#### Kanallar
 
-Channels containing connection definitions can be created with a device in the field, as well as special channels defined by virtual connections such as macros or database queries.
+Alandaki bir cihaz ile bağlantı tanımlarını içeren kanallar oluşturulabileceği gibi, makrolar veya veritabanı sorguları gibi sanal bağlantılarla tanımlanan özel kanallar da oluşturulabilir.
 
-To create a new channel, open the "Tag Channel Editor" tab, press the right mouse button on any channel, and select "New Channel" from the popup menu.
+Yeni bir kanal oluşturmak için "Tag Channel Editor" sekmesini açın, herhangi bir kanal üzerinde farenin sağ tuşuna basın ve açılır menüden "New Channel" öğesini seçin.
 
-In the dialog that is opened, necessary adjustments can be made about the new channel.
+Açılan diyalog penceresinde yeni kanal ile ilgili gerekli ayarlamalar yapılabilmektedir.
 
-#### Tags
+#### Etiketler
 
-"Tag" refers to point data that is read from the scene or created virtually by the system. Tags are defined under the channels and may have different properties depending on the type of channel they are in.
+"Etiket", sahneden okunan veya sistem tarafından sanal olarak oluşturulan nokta verilerini ifade eder. Etiketler kanalların altında tanımlanır ve bulundukları kanalın türüne göre farklı özelliklere sahip olabilir.
 
-#### Creating Tags
-To create a tag, open "Tag/Channel Editor Panel". Tag/Channel pane is on the top left of the screen. On the pane, right click on the channel in which you want to create a tag. On the context menu select "New Tag" action.
+#### Etiketler Oluşturma
+Bir etiket oluşturmak için "Etiket/Kanal Düzenleyici Paneli"ni açın. Etiket/Kanal bölmesi ekranın sol üst kısmındadır. Bölmede, etiket oluşturmak istediğiniz kanala sağ tıklayın. Bağlam menüsünde "Yeni Etiket" eylemini seçin.
 
 <center>
 
 ![project-view-05](/img/project-view-05.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-On the "New Tag" dialog write a name and description for the tag. The "tag name" must be unique; if you select an existing tag name, the system will prompt you a warning.
+"Yeni Etiket" iletişim kutusunda etiket için bir ad ve açıklama yazın. "Etiket adı" benzersiz olmalıdır; mevcut bir etiket adını seçerseniz, sistem size bir uyarı verecektir.
 
 <center>
 
 ![project-view-06](/img/project-view-06.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-All tags created in the system have common properties that can be changed. These features are:
+Sistemde oluşturulan tüm etiketlerin değiştirilebilen ortak özellikleri vardır. Bu özellikler şunlardır:
 
-#### General Tag Parameters
-##### In Use
-Tag is ignored by the SCADA server if the tag is not marked as "in use". The tag only becomes a definition in the system.
-##### Tag Name
-Each tag must have a unique name. Clear words and format should be used to describe the tag briefly
-##### Description
-Give a brief description about the tag
-##### Unit Name
-This is an optional property for the tag. It may be useful if you want to group tags by units on the field
-##### Tag Type
-This is an option for selecting "Schedule Tag" which is a special register reserved for calendar operations on Mikrodev devices. For more details see Mikrodiagram documentation
 
-#### Access Rights
-Reading: These are the rights that users have to have in order to see the tag values. Users who do not have the rights set here will not be able to read this tag value. Writing: It is the right that users have to have in order to change tag values. Users who do not have the rights set here can not change this tag value.
+#### Çoklu Etiket Değişimi
 
-#### Variable
-Variable Type: The mathematical type of the variable.
+Değiştirilecek bileşenlerin üzerindeki etiketlerin ön ekinden sonraki harfler, konulacak etiketlerin ön ekinden sonraki harflerle aynı olmalıdır.
+
+<center>
+
+![multi-label-exchange-1](/img/multi-label-exchange-1.png)
+
+</center>
+
+Birden çok etiketi değiştirmek için Etiketleri Değiştir sekmesine tıklayın.
+
+<center>
+
+![multi-label-exchange-2](/img/multi-label-exchange-2.png)
+
+</center>
+
+Etiketleri Değiştir penceresinde gerekli işlem yapıldığında çoklu etiket değiştirme işlemi tamamlanır.
+
+<center>
+
+![multi-label-exchange-3](/img/multi-label-exchange-3.png)
+
+</center>
+
+Detaylı bilgi için:[Multi-Label Exchange](https://www.youtube.com/watch?v=qyHYIkWGs_k&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=24).
+
+#### Genel Etiket Parametreleri
+
+##### Kullanım
+Etiket "kullanımda" olarak işaretlenmemişse, SCADA sunucusu tarafından yok sayılır. Etiket sadece sistemde bir tanım haline gelir.
+
+##### Etiket adı
+Her etiketin benzersiz bir adı olmalıdır. Etiketi kısaca açıklamak için net kelimeler ve format kullanılmalıdır.
+
+##### Tanım
+Etiket hakkında kısa bir açıklama yapın
+
+##### Birim Adı
+Bu, etiket için isteğe bağlı bir özelliktir. Etiketleri sahadaki birimlere göre gruplamak istiyorsanız faydalı olabilir.
+
+##### Etiket Türü
+Mikrodev cihazlarında takvim işlemleri için ayrılmış özel bir register olan "Schedule Tag" seçimi için bir seçenektir. Daha fazla ayrıntı için Mikrodiyagram belgelerine bakın
+
+#### Erişim Hakları
+Okuma: Kullanıcıların etiket değerlerini görebilmeleri için sahip olmaları gereken haklardır. Burada belirlenen haklara sahip olmayan kullanıcılar bu etiket değerini okuyamayacaktır. Yazma: Etiket değerlerini değiştirmek için kullanıcıların sahip olması gereken haktır. Burada belirlenen haklara sahip olmayan kullanıcılar bu etiket değerini değiştiremezler.
+
+#### Değişken
+Değişken Türü: Değişkenin matematiksel türü.
 
 #### Logging
-##### Log to Database
-If this option is not enabled, the tag value will not be logged on the system and historical values will not be visible. Also, historical values can not be viewed on the graph.
-##### Log on change
-Logging is done in case of tag value change. The type of change can be of the type "Percentage" or "Level" change.
-##### Percentage Change
-If "Percentage Change" is selected as the type of change; Logging is done if the tag value changes by the specified percentage value of the latest logged value. If value is set to "0", all kinds of changes are logged.
-##### Level Change
-If "Level Change" is selected as the type of change; if the tag value has changed by the specified value, logging is done. If value is set to "0", all kinds of changes are logged.
-##### Log Periodically
-If this option is enabled, the tag is continuously logged in the specified time period.
-Note: Logging type and tags to be logged must be carefully selected to avoid unnecessary increase in the size of the data to be stored. For example;
 
-The tags should never be logged if you do not need historical values.
-If a level or percentage change is selected for analog variables, a percentage or level appropriate to the data exchange pattern should be selected.
-For digital values, "log on change" should be used instead of periodic logging.
-##### Data Logging Filter
+##### Veritabanına Giriş Yap
+Bu seçenek etkinleştirilmezse, etiket değeri sistemde günlüğe kaydedilmeyecek ve geçmiş değerler görüntülenmeyecektir. Ayrıca tarihsel değerler grafikte görüntülenemez.
 
-By using the data logging filter, you can prevent the measurement values ??collected from the field from being logged according to the filter you selected. So, you will be able to pick up possible false data
+##### Oturum açma değişikliği
+Etiket değerinin değişmesi durumunda loglama yapılır. Değişiklik türü "Yüzde" veya "Seviye" değişikliği türünde olabilir.
 
-Only log when decreasing by maximum
-This filter only allows logging of descending data below the entered maximum value. For example; If the maximum value is entered as 1000:
+##### Yüzdelik değişimi
+Değişiklik türü olarak "Yüzde Değişim" seçilirse; Etiket değeri, en son kaydedilen değerin belirtilen yüzde değeri kadar değişirse, günlük kaydı yapılır. Değer "0" olarak ayarlanırsa her türlü değişiklik loglanır.
+
+##### Seviye Değişikliği
+Değişiklik türü olarak "Seviye Değişikliği" seçilirse; etiket değeri belirtilen değer kadar değiştiyse, loglama yapılır. Değer "0" olarak ayarlanırsa her türlü değişiklik loglanır.
+
+##### Periyodik Olarak Giriş Yapma
+Bu seçenek etkinleştirilirse, etiket, belirtilen zaman aralığında sürekli olarak günlüğe kaydedilir.
+Not: Kaydedilecek verilerin boyutunu gereksiz yere büyütmemek için, günlüğe kaydetme türü ve günlüğe kaydedilecek etiketler dikkatli bir şekilde seçilmelidir. Örneğin;
+
+Geçmiş değerlere ihtiyacınız yoksa etiketler asla günlüğe kaydedilmemelidir.
+Analog değişkenler için bir seviye veya yüzde değişimi seçilirse, veri alışverişi modeline uygun bir yüzde veya seviye seçilmelidir.
+Dijital değerler için periyodik loglama yerine "log on change" kullanılmalıdır.
+
+##### Veri Kaydı Filtresi
+
+Veri kaydı filtresini kullanarak, sahadan toplanan ölçüm değerlerinin seçtiğiniz filtreye göre loglanmasını engelleyebilirsiniz. Böylece olası yanlış verileri alabileceksiniz.
+
+Yalnızca maksimum değerde azalırken günlüğe kaydet
+Bu filtre, yalnızca girilen maksimum değerin altındaki azalan verilerin günlüğe kaydedilmesine izin verir. Örneğin; Maksimum değer 1000 olarak girilirse:
 
 ```
 188,
@@ -742,287 +855,280 @@ This filter only allows logging of descending data below the entered maximum val
 400  (logged)
 ```
 
-In this example, the value '1500' is 1275 more than the previous value, so it exceeds the maximum value of 1000. Thus, is not logged.
+Bu örnekte, '1500' değeri bir önceki değerden 1275 fazladır, bu nedenle maksimum 1000 değerini aşmaktadır. Bu nedenle, günlüğe kaydedilmez.
 
-Only log when increasing by maximum
-This filter only allows logging of incremental data below the maximum value entered.
+Yalnızca maksimuma çıkarken günlüğe kaydet
+Bu filtre yalnızca girilen maksimum değerin altındaki artımlı verilerin günlüğe kaydedilmesine izin verir.
 
-Only log if value is in range
-This filter allows logging only if the value read from the field is in the specified range.
+Yalnızca değer aralıktaysa günlüğe kaydet
+Bu filtre, yalnızca alandan okunan değer belirtilen aralıktaysa günlüğe kaydetmeye izin verir.
 
-Only log if value is out of range
-This filter allows logging only if the value read from the field is out of the specified range.
+Yalnızca değer aralık dışındaysa günlüğe kaydet
+Bu filtre, yalnızca alandan okunan değer belirtilen aralığın dışındaysa günlüğe kaydetmeye izin verir.
 
-### Alarms
+### Alarmlar
 
-Alarms are an integral part of monitoring systems. ViewPLUS can create alarms for users according to field data and user's access rights.
+Alarmlar, izleme sistemlerinin ayrılmaz bir parçasıdır. ViewPLUS, saha verilerine ve kullanıcı erişim haklarına göre kullanıcılar için alarmlar oluşturabilir.
 
-#### Creating Alarms
-To create an alarm, open "Tag/Channel Editor Panel". Alarms pane is on the bottom left of the screen. Right click on alarm pane. On the context menu select "New Alarm" action.
+#### Alarm Oluşturma
+Bir alarm oluşturmak için "Etiket/Kanal Düzenleyici Paneli"ni açın. Alarmlar bölmesi ekranın sol alt kısmındadır. Alarm bölmesine sağ tıklayın. Bağlam menüsünde "Yeni Alarm" eylemini seçin.
 
 <center>
 
 ![project-view-07](/img/project-view-07.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-On the "New Alarm" dialog write a name and description for the alarm. If you write an existing "class name" into AlarmClass, the alarm will be added to that class; if you write a new "class name" a new AlarmClass will created and the alrm will be added to that class.
+"Yeni Alarm" iletişim kutusunda, alarm için bir ad ve açıklama yazın. AlarmClass'a mevcut bir "sınıf adı" yazarsanız, alarm o sınıfa eklenir; yeni bir "sınıf adı" yazarsanız yeni bir AlarmClass oluşturulacak ve alarm o sınıfa eklenecektir.
 
 <center>
 
 ![project-view-08](/img/project-view-08.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-#### General Alarm Parameters
+#### Genel Alarm Parametreleri
 
 <center>
 
 ![project-view-9](/img/project-view-09.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-##### Alarm Name
-Give an apparent unique name for the alarm
-##### Class Name
-The name of the class which the alarm belongs to. This is useful when grouping the alarms
-##### Description
-Write a human readable explanation about the alarm
-##### Value Tag
-The selected tag is the source of the alarm. Condition check will be made on this tag's value.
+##### Alarm Adı
+Alarm için görünürde benzersiz bir ad verin
 
-#### Condition
-The conditions are evaluated according to the LIMIT and RANGE values on the right side of conditions pane
+##### Sınıf adı
+Alarmın ait olduğu sınıfın adı. Bu, alarmları gruplandırırken kullanışlıdır.
 
-##### VALUE is equal to LIMIT
-The alarm is activated if the value of the tag is equal to "LIMIT" value.
-##### VALUE is smaller than LIMIT
-The alarm is activated if the value of the tag is smaller than "LIMIT" value.
-##### VALUE is greater than LIMIT
-The alarm is activated if the value of the tag is greater than "LIMIT" value.
-##### VALUE is in "RANGE"
-The alarm is activated if the value of the tag is in "RANGE".
-##### VALUE is out of "RANGE"
-The alarm is activated if the value of the tag is out of "RANGE".
+##### Tanım
+Alarm hakkında insan tarafından okunabilir bir açıklama yazın
 
-#### Subscriptions
+##### Değer Etiketi
+Seçilen etiket, alarmın kaynağıdır. Bu etiketin değeri üzerinde durum kontrolü yapılacaktır.
 
-Alarms should be assigned to users. A user can monitor an alarm only if the user is subscribed on that alarm.
+#### Koşul
+Koşullar, koşullar bölmesinin sağ tarafında bulunan LIMIT ve RANGE değerlerine göre değerlendirilir.
 
-To add a user subscription on the alarm click on the Subscribed User Selection button.
+##### VALUE, LIMIT'e eşittir
+Etiketin değeri "LIMIT" değerine eşitse alarm devreye girer.
+##### VALUE, LIMIT değerinden küçük
+Etiketin değeri "LIMIT" değerinden küçükse alarm devreye girer.
+##### VALUE, LIMIT değerinden büyük
+Etiketin değeri "LIMIT" değerinden büyükse alarm devreye girer.
+##### DEĞER "ARALIK" içinde
+Etiketin değeri "RANGE" içindeyse alarm etkinleştirilir.
+##### VALUE, "RANGE" dışında
+Etiketin değeri "RANGE" dışındaysa alarm etkinleştirilir.
+
+#### Abonelikler
+
+Alarmlar kullanıcılara atanmalıdır. Bir kullanıcı, yalnızca kullanıcı o alarma aboneyse bir alarmı izleyebilir.
+
+Alarma bir kullanıcı aboneliği eklemek için Abone Olunan Kullanıcı Seçimi düğmesine tıklayın.
 
 <center>
 
 ![project-view-10](/img/project-view-10.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
 On the opened dialog, select the users which you want to be subscribed on the alarm.
 
-#### Other
-##### Require Acknowledge
-When this option is checked, if a user does not acknowledge the alarm, it will not disappear from alarms list if also alarm condition has gone away
-##### Log into Database
-When this option is checked, the alarm states will be logged into database
-##### Enabled
-This option activates/deactivates the alarm
+#### Diğer
+##### Onay Gerektir
+Bu seçenek işaretlendiğinde, kullanıcı alarmı onaylamazsa, alarm durumu da ortadan kalkmışsa alarmlar listesinden kaybolmaz.
+##### Veritabanına Giriş Yapın
+Bu seçenek işaretlendiğinde alarm durumları veritabanına kaydedilir.
+##### Etkinleştirilmiş
+Bu seçenek alarmı etkinleştirir/devre dışı bırakır
 
-### Associating PLC and SCADA Projects
+Detaylı bilgi için: [Alarm Identification and E-mail Sending](https://www.youtube.com/watch?v=hVc3wrQba3o&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=13).
 
-As you develop your project, it becomes more important to associate channels in SCADA with PLC projects to avoid confusion.To do this, you can specify the PLC project path in the upper right corner of the channel menu.
+### PLC ve SCADA Projelerini İlişkilendirme
+
+Projenizi geliştirirken SCADA'daki kanalları PLC projeleri ile ilişkilendirmek kafa karışıklığını önlemek için daha önemli hale geliyor. Bunun için kanal menüsünün sağ üst köşesinden PLC proje yolunu belirtebilirsiniz.
 
 <center>
 
 ![project-view-11](/img/project-view-11.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-## Import and Export Operations
+## İçe/Dışa Aktarma İşlemleri
 
-There are different options for importing/exporting data from/to the project.
+Projeden/projeye veri almak/vermek için farklı seçenekler vardır.
 
-### Importing/Exporting Projects
+### Projeleri İçe/Dışa Aktarma
 
-This wizard allows the user to import/export tags, channels, alarms, users and pages using a special file format(.scaexp).
+Bu sihirbaz, kullanıcının özel bir dosya formatı (.scaexp) kullanarak etiketleri, kanalları, alarmları, kullanıcıları ve sayfaları içe/dışa aktarmasına olanak tanır.
 
-#### Exporting Project
-After opening the project on ViewPLUS, on the File menu select "Export Project" option:
+#### Projeyi Dışa Aktarma
+Projeyi ViewPLUS üzerinde açtıktan sonra Dosya menüsünden "Projeyi Dışa Aktar" seçeneğini seçin:
 
 <center>
 
 ![import-export-01](/img/import-export-01.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-On the wizard window, select an output folder path for the ".scaexp" file to be generated. After that, when you push on the "Start Export" button, the wizard will create the ".scaexp" file
+Sihirbaz penceresinde, oluşturulacak ".scaexp" dosyası için bir çıktı klasörü yolu seçin. Bundan sonra, "Dışa Aktarmayı Başlat" düğmesine bastığınızda, sihirbaz ".scaexp" dosyasını oluşturacaktır.
 
 <center>
 
 ![import-export-02](/img/import-export-02.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-#### Importing Project
-On the File menu select "Import Project" option:
+#### Projeyi İçe Aktarma
+Dosya menüsünde "Projeyi İçe Aktar" seçeneğini seçin:
 
 <center>
 
 ![import-export-03](/img/import-export-03.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-On the wizard window, select the exported ".scaexp" file and a destination folder for the project files to be extracted:
+Sihirbaz penceresinde, dışa aktarılan ".scaexp" dosyasını ve ayıklanacak proje dosyaları için bir hedef klasör seçin:
 
 <center>
 
 ![import-export-04](/img/import-export-04.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-After that, when you push on the "Import Project" option, the wizard will ask for database connection settings. The project database will be extracted into the configured database.
+Bundan sonra, "Projeyi İçe Aktar" seçeneğine bastığınızda, sihirbaz veritabanı bağlantı ayarlarını isteyecektir. Proje veritabanı, yapılandırılmış veritabanına çıkarılacaktır.
 
 <center>
 
 ![import-export-05](/img/import-export-05.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
-When the operation is complete succesfully, the project is ready to be used.
+Operasyon başarıyla tamamlandığında proje kullanıma hazırdır.
 
-### Importing/Exporting Tags/Channels/Alarms
+### Etiketleri/Kanalları/Alarmları İçe/Dışa Aktarma
 
-Users can import/export tag/channel/alarm definitions from/to other projects.
+Kullanıcılar, etiket/kanal/alarm tanımlarını diğer projelere/projelerden içe/dışa aktarabilir.
 
-#### Exporting Tags/Channels/Alarms
-After opening the project on ViewPLUS, on the Tools menu select "Export Tag/Channel Definitions" option:
+#### Etiketleri/Kanalları/Alarmları Dışa Aktarma
+Projeyi ViewPLUS üzerinde açtıktan sonra Araçlar menüsünden "Etiket/Kanal Tanımlarını Dışa Aktar" seçeneğini seçin:
 
 <center>
 
-![import-export-06](/img/import-export-06.png)
-***<center>Figure 1: Add Password</center>***
+![exporttag](/img/exporttag.png)
 
 </center>
 
-When you confirm the export file path selection dialog, a file with ".tcf" extension will be created. You can use this file for importing into other projects.
+Dosya yolu seçimi iletişim kutusunu onayladığınızda, ".tcf" uzantılı bir dosya oluşturulacaktır. Bu dosyayı diğer projelere aktarmak için kullanabilirsiniz.
 
-#### Importing Tags/Channels/Alarms
-After opening a project on ViewPLUS, on the Tools menu select "Import Tag/Channel Definitions" option:
+#### Etiketleri/Kanalları/Alarmları İçe Aktarma
+ViewPLUS üzerinde bir proje açtıktan sonra Araçlar menüsünden "Etiket/Kanal Tanımlarını İçe Aktar" seçeneğini seçin:
 
 <center>
 
-![import-export-07](/img/import-export-07.png)
-***<center>Figure 1: Add Password</center>***
+![import-tag](/img/import-tag.png)
 
 </center>
 
-Important Note: This operation will overwrite existing tags. Thus, this operation may damage your project. Be sure that the exported tag id interval and local project's tag id interval do not intersect!
+Önemli Not: Bu işlem mevcut etiketlerin üzerine yazacaktır. Dolayısıyla bu işlem projenize zarar verebilir. Dışa aktarılan etiket kimliği aralığı ile yerel projenin etiket kimliği aralığının kesişmediğinden emin olun!
 
-### Importing/Exporting Users
+### Kullanıcıları İçe/Dışa Aktarma
 
-Users created for a project could be exported to another project. Export/Import users menu could be used for that
+Bir proje için oluşturulan kullanıcılar başka bir projeye aktarılabilir. Kullanıcıları Dışa Aktar/İçe Aktar menüsü bunun için kullanılabilir
 
-#### Exporting Users
-After opening the project on ViewPLUS, on the Tools menu select "Export Users" option:
+#### Kullanıcıları Dışa Aktarma
+Projeyi ViewPLUS üzerinde açtıktan sonra Araçlar menüsünde "Kullanıcıları Dışa Aktar" seçeneğini seçin:
 
 <center>
 
-![import-export-08](/img/import-export-08.png)
-***<center>Figure 1: Add Password</center>***
+![export-users](/img/export-users.png)
 
 </center>
 
-When you confirm the export file path selection dialog, a file with ".usr" extension will be created. You can use this file for importing users into other projects.
+Dosya yolu seçimi iletişim kutusunu onayladığınızda, ".usr" uzantılı bir dosya oluşturulacaktır. Kullanıcıları başka projelere aktarmak için bu dosyayı kullanabilirsiniz.
 
-#### Importing Users
-After opening a project on ViewPLUS, on the Tools menu select "Import Users" option:
+#### Kullanıcıları İçe Aktarma
+ViewPLUS üzerinde bir proje açtıktan sonra Araçlar menüsünde "Kullanıcıları İçe Aktar" seçeneğini seçin:
 
 <center>
 
-![import-export-09](/img/import-export-09.png)
-***<center>Figure 1: Add Password</center>***
+![import-users](/img/import-users.png)
 
 </center>
 
-Important Note: This operation will overwrite existing users. Thus, this operation may damage your project. Be sure that the exported user id interval and local project's user id interval do not intersect!
+Önemli Not: Bu işlem mevcut kullanıcıların üzerine yazacaktır. Dolayısıyla bu işlem projenize zarar verebilir. Dışa aktarılan kullanıcı kimliği aralığı ile yerel projenin kullanıcı kimliği aralığının kesişmediğinden emin olun!
 
-## Macro Guide
+-Detaylı bilgi için:[Channel and User Definitions](https://www.youtube.com/watch?v=cpywPnxuD00&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=22).
 
-ViewPLUS supports macros in different types. Some of these macros work on the server side, while others work on the client side.
+## Makro Kılavuzu
 
-The "macro tags" we define in the Tag/Channel Editor work on the server side. And it acts as a virtual tag. These macros work continuously on the server for the specified period.
+ViewPLUS, farklı türlerdeki makroları destekler. Bu makrolardan bazıları sunucu tarafında, bazıları ise istemci tarafında çalışır.
 
-On the editor, it is possible to write separate macros for each object. These macros affect the display and behavior of that object and are only executed when the user is watching the object.
+Etiket/Kanal Düzenleyicide tanımladığımız "makro etiketler" sunucu tarafında çalışır. Ve sanal bir etiket görevi görür. Bu makrolar belirtilen süre boyunca sunucu üzerinde sürekli çalışır.
 
-### Server Side Macro Tags
+Editör üzerinde her nesne için ayrı makrolar yazmak mümkündür. Bu makrolar, o nesnenin görüntülenmesini ve davranışını etkiler ve yalnızca kullanıcı nesneyi izlerken yürütülür.
 
-Macros can take two processing elements at a time and are written line by line.
+### Sunucu Tarafı Makro Etiketleri
 
-Example:
+Makrolar aynı anda iki işlem öğesi alabilir ve satır satır yazılır.
+
+Örnek olarak:
 
 [ v0 = $1234 * 2]
 
-The operands that can be inserted into the macro are:
+Makroya eklenebilecek işlenenler şunlardır:
 
-200 seperate variables(vo, v1, …., v199)
+200 ayrı değişken eklenebilir(vo, v1, …., v199)
 
-Tag values (in "$1234" format)
+Etiket değerleri ("1234$" biçiminde)
 
-Constant values (Constant decimal values such as "234,12" can be added)
+Sabit değerler ("234,12" gibi sabit ondalık değerler eklenebilir)
 
 [ v0 = $1234 * 2]
 
-v0 : The element to the left of “ = ” is the final result of the operation
+v0 : “ = ” öğesinin solundaki eleman işlemin nihai sonucudur.
 
-* : Operators like “+ , - , * , / , % , & , |, ^ , > , < , e ,b , k , n , ?“ could be used. Here:
+* : “+ , - , * , / , % , & , |, ^ , > , < , e ,b , k , n , ?“ gibi operatörler kullanılabilir. Burada:
 
-e: Equality check. The result is "1" if the operands are equal to each other, and "0" if not..
+e: Eşitlik kontrolü. Sonuç, işlenenler birbirine eşitse "1", değilse "0" olur.
 
-n: Not equal check. If the operands are not equal to each other, the result is "1", otherwise it returns "0".
+n: Eşit değil kontrolü. İşlenenler birbirine eşit değilse sonuç "1", değilse "0" döndürür.
 
-b: Greater than check. If the first operand is greater than the second, the result is "1", otherwise it returns "0".
+b: Kontrolden büyük. İlk işlenen ikinciden büyükse sonuç "1", değilse "0" döndürür.
 
-k: less than check. The result is "1" if the first operand is smaller, and "0" if it is not.
+k: kontrolden daha az. Sonuç, ilk işlenen daha küçükse "1", değilse "0" olur.
 
-?: This is a special operand.
+?: Bu özel bir işlenendir.
 
-[ v0 = 1234 ? 0]  : Returns the "RX Count" value of the tag with id 1234 (Read counter value)
+[ v0 = 1234 ? 0] : 1234 kimliğine sahip etiketin "RX Sayısı" değerini döndürür (Sayaç değerini oku)
 
-[ v0 = 1234 ? 1]  : Returns the "Read Time" value of the tag with id 1234 (the time at which the latest data was read from the field)
+[ v0 = 1234 ? 1] : 1234 kimliğine sahip etiketin "Okuma Süresi" değerini döndürür (alandan en son verilerin okunduğu saat)
 
-[ v0 = 1234 ? 2]  : Checks whether there is communication with the device on which the tag with id 1234 is located
+[ v0 = 1234 ? 2] : 1234 kimlikli etiketin bulunduğu cihaz ile iletişim olup olmadığını kontrol eder.
 
-[ v0 = 1234 ? 3]  : Checks whether there is a valid value in the tag with id 1234.(In general, when a SCADA server is started for the first time, it may be late to write a valid value in the tag, or a valid value of the tag may never be written)
+[ v0 = 1234 ? 3] : 1234 kimlikli etikette geçerli bir değer olup olmadığını kontrol eder.(Genel olarak, bir SCADA sunucusu ilk kez başlatıldığında, etikete geçerli bir değer veya geçerli bir değer yazmak için geç olabilir. etiket asla yazılmayabilir)
 
-[ v0 = v0? 20]  : Writes server datetime into "v0" variable as the number of seconds that have passed since 1970-01-01T00:00:00
+[ v0 = v0? 20] : Sunucu tarih saatini "v0" değişkenine 1970-01-01T00:00:00'dan bu yana geçen saniye sayısı olarak yazar
 
-[ v1 = v0? 21]  : Writes server year into "v1" as "v0" is the number of seconds that have passed since 1970-01-01T00:00:00
+[ v1 = v0? 21] : Sunucu yılını "v1"e yazar, çünkü "v0" 1970-01-01T00:00:00'dan bu yana geçen saniye sayısıdır
 
-[ v2 = v0? 22]  : Writes server month into "v2" as "v0" is the number of seconds that have passed since 1970-01-01T00:00:00
+[ v2 = v0? 22] : Sunucu ayını "v2"ye yazar, çünkü "v0" 1970-01-01T00:00:00'dan bu yana geçen saniye sayısıdır
 
-[ v3 = v0? 23]  : Writes server day into "v3" as "v0" is the number of seconds that have passed since 1970-01-01T00:00:00
+[ v3 = v0? 23] : Sunucu gününü "v3"e yazar, çünkü "v0" 1970-01-01T00:00:00'dan beri geçen saniye sayısıdır
 
-[ v4 = v0? 24]  : Writes server hour into "v4" as "v0" is the number of seconds that have passed since 1970-01-01T00:00:00
+[ v4 = v0? 24] : Sunucu saatini "v4"e yazar, çünkü "v0" 1970-01-01T00:00:00'dan bu yana geçen saniye sayısıdır
 
-[ v5 = v0? 25]  : Writes server minute into "v5" as "v0" is the number of seconds that have passed since 1970-01-01T00:00:00
+[ v5 = v0? 25] : Sunucu dakikasını "v5"e yazar, çünkü "v0" 1970-01-01T00:00:00'dan bu yana geçen saniye sayısıdır
 
-[ v6 = v0? 26]  : Writes server seconds into "v6" as "v0" is the number of seconds that have passed since 1970-01-01T00:00:00
+[ v6 = v0? 26] : Sunucu saniyelerini "v6"ya yazar, çünkü "v0" 1970-01-01T00:00:00'dan bu yana geçen saniye sayısıdır
 
 
-Attention: Here the tag id (1234 in the example) must be entered into the macro as a fixed value without "$" at the beginning
+Dikkat: Burada etiket kimliği (örnekte 1234), başında "$" olmadan makroya sabit bir değer olarak girilmelidir.
 
-Condition check:
+Durum kontrolü:
 
-In the following example, it is checked whether the variable "v0" is equal to 1. If "v0" is equal to 1, the macro executes the command on the bottom line (makes v1 value 555). If it is not equal to 1, the line is moved down by the second parameter ("2") of the "IF" line. In this example, if "v0" is not equal to 1, the macro will go down 2 lines, that is, it will go to the return value ([E]) line and it will be finished.
+Aşağıdaki örnekte, "v0" değişkeninin 1'e eşit olup olmadığı kontrol edilir. "v0" 1'e eşitse, makro en alt satırdaki komutu yürütür (v1 değerini 555 yapar). 1'e eşit değilse, satır "IF" satırının ikinci parametresi ("2") kadar aşağı kaydırılır. Bu örnekte "v0" 1'e eşit değilse, makro 2 satır aşağı inecek yani dönüş değeri ([E]) satırına gidecek ve bitecektir.
 
 [ IF , v0 , 2]
 
@@ -1030,9 +1136,9 @@ In the following example, it is checked whether the variable "v0" is equal to 1.
 
 [ E ]
 
-Another condition control operand is “NI” (NOT IF) . This checks the equality to 0 as the opposite of "IF"..
+Başka bir koşul kontrol işleneni “NI” (NOT IF) 'dir. Bu, "IF" nin tersi olarak eşitliği 0'a kontrol eder.
 
-In the following example, it is checked whether the variable "v0" is equal to 0. If "v0" is equal to 0, the macro executes the command on the bottom line (makes v1 value 555). If it is not equal to 0, the line is down by the second parameter ("2") on the "NI" line. In this example, if "v0" is not equal to 0, the macro will go down 2 lines, that is, it will go to the return value ([E]) line and it will finish
+Aşağıdaki örnekte "v0" değişkeninin 0'a eşit olup olmadığı kontrol edilir. "v0" 0'a eşitse makro en alt satırdaki komutu yürütür (v1 değerini 555 yapar). 0'a eşit değilse, satır "NI" satırındaki ikinci parametre ("2") kadar aşağıdadır. Bu örnekte, "v0" 0'a eşit değilse, makro 2 satır aşağı inecek, yani dönüş değeri ([E]) satırına gidecek ve bitecek.
 
 [ NI , v0 , 2]
 
@@ -1040,62 +1146,62 @@ In the following example, it is checked whether the variable "v0" is equal to 0.
 
 [ E ]
 
-In order for macros to work correctly , a return ([E] </ nowiki> return) must be added.
+Makroların düzgün çalışabilmesi için bir dönüş ([E] </ nowiki> dönüş) eklenmelidir.
 
-### Client Macros
+### Client  Makroları
 
-Client Macros: This macro is written in the same format as the "server macros". However, only tags defined on that object can be used within those macros The tags defined on the tag tab of objects are used as follows:
+Client  Makroları: Bu makro, "sunucu makroları" ile aynı formatta yazılır. Ancak bu makrolar içerisinde sadece o nesne üzerinde tanımlanan etiketler kullanılabilir. Nesnelerin etiket sekmesinde tanımlanan etiketler şu şekilde kullanılır:
 
-For each tag "i, o, s, w" values exist.
-
-```
-i (in) : The raw value of the tag read from the field 
-o (out):The value to display on the screen after the tag has been passed through the macro operations 
-s (set):The value set by the user for the tag 
-w(write): The value to be written to the field device after the value that the user wants to set is passed through the macro operations 
-```
+Her etiket için "i, o, s, w" değerleri mevcuttur.
 
 ```
-i ---Macro---->o , s---Macro---->w 
-If there is no macro operation 'i' is equal to 'o', 's' is equal to 'w'. 
+i (in) : Alandan okunan etiketin ham değeri
+o (out): Etiket makro işlemlerinden geçirildikten sonra ekranda görüntülenecek değer
+s (set): Kullanıcı tarafından etiket için ayarlanan değer
+w(yaz): Kullanıcının ayarlamak istediği değer makro işlemlerden geçtikten sonra saha cihazına yazılacak değer
 ```
 
-## Installing the License File
+```
+i ---Makro---->o , s----Makro---->w
+Makro işlemi yoksa, 'i', 'o'ya eşittir, 's', 'w'ye eşittir.
+```
 
-To get a valid license please send your "hardware id" to sales@mikrodev.com. To learn your hardware id; select Help > User License Generator from the application menu.
+## Lisans Dosyasını Yükleme
+
+Geçerli bir lisans almak için lütfen "donanım kimliğinizi" sales@mikrodev.com adresine gönderin. Donanım kimliğinizi öğrenmek için; uygulama menüsünden Help > User License Generator'ı seçin.
 
 <center>
 
 ![license-file-01](/img/license-file-01.png)
-***<center>Figure 1: Add Password</center>***
+
 
 </center>
 
-After you receive a valid "license.dat" file, copy this file into bin folder of ViewPLUS application
+Geçerli bir "license.dat" dosyası aldıktan sonra bu dosyayı ViewPLUS uygulamasının bin klasörüne kopyalayın.
 
 <center>
 
 ![license-file-02](/img/license-file-02.png)
-***<center>Figure 1: Add Password</center>***
+
 
 </center>
 
-The licence will automatically be loaded when you restart the Editor
+Düzenleyiciyi yeniden başlattığınızda lisans otomatik olarak yüklenecektir.
 
-## Project File Password
+## Proje Dosyası Şifreleme
 
-The password can be used to make the project more reliable. In order to set a password to the project, activate project protection is marked by entering the project configuration from the projects
-tab. Password should contain upper, lower letters, numbers ans symbols. The password should have more than 8 characters.
+Parola, projeyi daha güvenilir hale getirmek için kullanılabilir. Projeye şifre koymak için projelerden proje konfigürasyonu girilerek proje korumayı aktif hale getir işaretlenir.
+sekme. Şifre büyük, küçük harf, rakam ve sembol içermelidir. Şifre 8 karakterden fazla olmalıdır.
 
 <center>
 
 ![password-01](/img/password-01.png)
-***<center>Figure 1: Add Password</center>***
+
 
 </center>
 
-To remove the project file password, the activate project protection is removed and the current
-password is entered.
+Proje dosyası parolasını kaldırmak için projeyi etkinleştirme koruması kaldırılır ve mevcut
+şifre girilir.
 
 <center>
 
@@ -1104,11 +1210,11 @@ password is entered.
 
 </center>
 
-## ArcGIS Map
+## ArcGIS Haritası
 
-ArcGIS technology is a scalable integrated Geographic Information System software that developed by ESRI.
-Software components are built on the common library of ArcObjects. That provides a system.
-In order to use the ArcGIS map, ArcGIS must be selected from the Projects menu under GIS settings.
+ArcGIS teknolojisi, ESRI tarafından geliştirilmiş, ölçeklenebilir bir entegre Coğrafi Bilgi Sistemi yazılımıdır.
+Yazılım bileşenleri, ArcObjects'in ortak kitaplığı üzerine kuruludur. Bu bir sistem sağlar.
+ArcGIS haritasını kullanmak için CBS ayarları altında bulunan Projeler menüsünden ArcGIS seçilmelidir.
 
 <center>
 
@@ -1117,16 +1223,16 @@ In order to use the ArcGIS map, ArcGIS must be selected from the Projects menu u
 
 </center>
 
-ArcGIS map is activated when the "GeoView" parameter is selected from the Page Properties menu on the right side of the page.
-The "GeoCenter" parameter shows the location of the marker on the map. It should be in the form of longitude and latitude.
-Markers can be added on the map with the using marker icon under the "GIS Objects" menu or the markers added on the map can be deleted by using delete marker icon.
+ArcGIS haritası, sayfanın sağ tarafında bulunan Sayfa Özellikleri menüsünden "GeoView" parametresi seçildiğinde aktif hale gelir.
+"GeoCenter" parametresi, işaretçinin haritadaki yerini gösterir. Enlem ve boylam şeklinde olmalıdır.
+"GIS Objects" menüsü altındaki işaretçi ikonu kullanılarak harita üzerine işaretler eklenebilir veya haritaya eklenen işaretler, işaret sil ikonu kullanılarak silinebilir.
 
 ![arcgis-map-02](/img/arcgis-map-02.png)
 ***<center>Figure 2: ArcGIS MAP Visibility Configuration</center>***
 
-Marker icons can be changed by creating new categories and markers can be grouped under a category.
+İşaretçi simgeleri yeni kategoriler oluşturularak değiştirilebilir ve işaretçiler bir kategori altında gruplandırılabilir.
 
-To create a new category, click the Edit button in the Category line from the GIS Object menu. In the window that opens, click "Add New Category" and define "Category Name" and "Category Image".
+Yeni bir kategori oluşturmak için CBS Nesnesi menüsünden Kategori satırında Düzenle düğmesine tıklayın. Açılan pencerede "Yeni Kategori Ekle"ye tıklayın ve "Kategori Adı" ve "Kategori Resmi" tanımlayın.
 
 <center>
 
@@ -1135,7 +1241,7 @@ To create a new category, click the Edit button in the Category line from the GI
 
 </center>
 
-Marker is selected and then Category part of GIS Object, we select the point as new category. Hence icon and category selection are completed.
+CBS Object'in Kategori kısmında Marker seçilip yeni kategori olarak noktayı seçiyoruz. Böylece ikon ve kategori seçimi tamamlanmış olur.
 
 ![arcgis-map-04](/img/arcgis-map-04.png)
 ***<center>Figure 4: Demonstration of New Category Point That is Created as GIS Object.</center>***
@@ -1144,105 +1250,382 @@ Marker is selected and then Category part of GIS Object, we select the point as 
 
 ### Channel: Modbus TCP
 
-You must create a new Modbus Channel to communicate with field devices over TCP using ModBus protocol.
+ModBus protokolünü kullanarak TCP üzerinden saha cihazlarıyla iletişim kurmak için yeni bir Modbus Kanalı oluşturmalısınız.
 
-Select "Modbus TCP" as the "Protocol Type" in the dialog for creating a new channel
+Yeni bir kanal oluşturmak için iletişim kutusunda "Protokol Tipi" olarak "Modbus TCP"yi seçin.
 
-#### Channel Parameters
-#### Server Adress
-The IP address of the device you want to connect to
-#### Server Port  
-Modbus connection port information of the device
-#### Response Timeout  
-It is time value, the Modbus slave waiting for the device to respond after each modbus request, in milliseconds. If no response is received from the slave device during this time, a new request is sent.
-#### Connection Timeout  
-It is the time value in milliseconds to wait until a new connection attempt is made after the request to connect to the device is sent. Typically in GPRS or 3G networks this time may be slightly longer than TCP.
-#### Frame Timeout  
-It is the time value in miliseconds to be waited until the next request is sent, after receiving a response from a Modbus request.
+Detaylı bilgi için:[Modbus TCP Definitions](https://www.youtube.com/watch?v=9CHtYTDdAIc&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=7).
 
-#### Tag Parameters
-#### Function Code 
-The IP address of the device you want to connect to
-#### Device Address 
-Modbus protocol device address
-#### Variable Address 
-Modbus variable address
-#### Variable Size 
-The size of the variable in the identified address
-#### Variable Type  
-The type of the variable in the identified address
+#### Max. Read Size
 
-### Channel: IEC 104
+<center>
 
-You must create a new IEC 104 Channel to communicate with the field devices over TCP using the IEC 104 protocol.
+![max.read-size](/img/max.read-size.png)
 
-#### Channel Parameters
-#### W  
-ACK(acknowledge message) sending frequency(sends ACK after W packets)
-#### K   
-The maximum allowed number of unacknowledged packets
-#### T1
-ACK timeout duration for ASDU packet
-#### T2   
-If no new data will be sent after this time, an ACK is sent
-#### T3   
-Timeout period for test frame
-#### General Interrogation  
-GI message sending frequency
-#### Clock Synchronisation  
-CS message sending frequency
-#### Timezone GMT  
-Timezone information of server computer
-Tag Parameters
-#### Object Type
-...
-#### InfoObjectAddress 
-...
+</center>
 
-### Channel: DNP3 
 
-You must create a new DNP3 Channel to communicate with the field devices over TCP using the DNP3 protocol.
+ViewPLUS'ta Etiket Kanalı Düzenleyicisi sekmesinin Kanal bölümünde "Maksimum Okuma Boyutu" alanı vardır.
 
-#### Channel Parameters
+<center>
 
-#### W  
-ACK(acknowledge message) sending frequency(sends ACK after W packets)
-#### K  
+![modbus-read-address](/img/modbus-read-address.png)
 
-### Channel: SNMP
-This channel is used to connect to SNMP devices. The NetSnmp library must be installed on your system in order for this channel type to work. You can download NetSnmp library from here
+</center>
 
-#### Parameters
-#### Server Address
-The IP address of the device you want to connect to
-#### Read Comunity
-The "Read Community" information that will be used to access device information.
-#### Tag Parameters
-#### Macro Channel
-This channel is used to create virtual tags and modify them with scripts.
+Modbus Protokolü, modbus adresi için 125 yazmaca kadar okuma/yazmayı destekler.
 
-#### Channel Parameters
-#### Frame Timeout
-The time in milliseconds that expresses the frequency of operation of the macro.
-#### Tag Parameters
 
-### Channel: Database
-This is the type of channel used to make queries from SCADA's own database
+#### Kanal Parametreleri
 
-#### Channel Parameters
-#### Response Timeout
-The number of milliseconds that represents the frequency at which the database query is executed.
+<center>
 
-### Channel: Global Database
-It is the type of channel used to connect to different databases to create custom queries and to pass these query results to project tags.
+![modbuskanal](/img/modbuskanal.png)
+***<center>Figure 1: Modbus Channel Screen</center>***
 
-#### Channel Parameters
-#### Response Timeout
-The number of milliseconds that represents the frequency at which the database query is executed.
-#### Tag Parameters
-#### Query 
-The query expression to be executed in the database. This tag allows retrieving the first line returned from the query. The return values ??for this first row are written into tags respectively into the tags defined in the form of :{${32}, ${33} , ${34}, ${35},....}:
-An example "Query" expression:
+</center>
+
+
+#### Sunucu Adresi
+Bağlanmak istediğiniz cihazın IP adresi
+#### Sunucu Portu  
+Cihazın modbus bağlantı port bilgisi
+#### Yanıt Zaman Aşımı  
+Herbir modbus sorgusundan sonra Modbus Slave cihazın yanıt vermesi için 
+beklenecek milisaniye cinsinden süredir. Bu süre içerisinde slave cihazdan yanıt gelmezse yeni 
+bir sorgu gönderilir.
+#### Bağlantı Zaman Aşımı  
+Cihaza bağlanma talebi gönderildikten sonra yeni bir bağlantı denemesi 
+yapılacağı ana kadar beklenecek olan milisaniye cinsinden süredir. Tipik olarak GPRS veya 3G 
+şebekelerinde bu süre TCP ye göre biraz daha uzun olabilir.
+#### Çerçeve Zaman Aşımı  
+Modbus sorgusuna yanıt geldikten sonra bir sonraki sorgunun yapılması 
+için beklenecek milisaniye cinsinden süredir
+
+
+#### Etiket Parametreleri
+
+<center>
+
+![modbustag](/img/modbustag.png)
+***<center>Figure 2: Modbus Tag Screen</center>***
+
+</center>
+
+#### Fonksiyon Kodu
+Bağlanmak istediğiniz cihazın IP adresi
+#### Cihaz Adresi
+Modbus protokolü cihaz adresi
+#### Değişken Adresi
+Modbus değişken adresi
+#### Değişken Boyutu
+Tanımlanan adresteki değişkenin boyutu
+#### Değişken Tipi
+Tanımlanan adresteki değişkenin tipi
+
+
+### IEC 104 Protokolü
+
+Sahadaki cihazlarla TCP üzerinden IEC 104 protokolü kullanarak haberleşmek için yeni bir IEC 104 Kanalı 
+oluşturmalısınız.
+
+#### Kanal Parametreleri
+
+<center>
+
+![kanal-104](/img/kanal-104.png)
+***<center>Figure 1: IEC 104 Channel Screen</center>***
+
+</center>
+
+#### Sunucu Adresi
+Bağlanmak istediğiniz cihazın IP adresi
+#### Sunucu Portu  
+Cihazın IEC 104 port bağlantı bilgisi
+#### W : 
+ACK(onay mesajı) gönderme sıklığı(W adet paketten sonra ACK gönderilir)
+#### K : 
+Maksimum izin verilen ACK alınmamış paket sayısı
+#### T1 : 
+ASDU paketi için ACK zamanaşımı süresi
+#### T2 : 
+Bu süre sonunda hala yeni data gönderilmeyecekse ACK gönderilir
+#### T3 : 
+Test frame için zamanaşımı süresi
+#### General Interrogation : 
+GI mesajı gönderme sıklığı
+#### Clock Synchronisation : 
+CS mesajı gönderme sıklığı
+#### Timezone GMT : 
+Sunucu bilgisayarın timezone bildgisi
+
+
+#### Etiket Parametreleri
+
+<center>
+
+![tag-104](/img/tag-104.png)
+***<center>Figure 2: IEC 104 Tag Screen</center>***
+
+</center>
+
+#### ASDU Adresi
+RTU, cihazın IEC 104 üzerinden haberleşeceği adresi belirtir.
+
+#### Nesne türü
+
+IEC 104 Adres Listesi:
+
+- Tek nokta bilgisi (Tip=1)
+- Çift nokta bilgisi (Tip=3)
+- Kademe konum bilgisi (Tip=5)
+- 32 bitlik bit dizisi (Tür=7)
+- Ölçülen değer, normalleştirilmiş değer (Tip=9)
+- Ölçülen değer, ölçeklenen değer (Tip=11)
+- Ölçülen değer, kısa kayan noktalı sayı (Tip=13)
+- Entegre toplamlar (Tür=15)
+- Durum değişikliği algılamalı paketlenmiş tek nokta bilgisi (Tip=20)
+- Ölçülen değer, kalite tanımlayıcısı olmayan normalleştirilmiş değer (Tip=21)
+- CP56Time2a zaman etiketli tek nokta bilgisi (Tip=30)
+- CP56Time2a zaman etiketli çift nokta bilgisi (Tip=31)
+- CP56Time2a zaman etiketli adım konum bilgisi (Tip=32)
+- CP56Time2a zaman etiketli 32 bit bit dizisi (Tür=33)
+- Ölçülen değer, zaman etiketi CP56Time2a (Tip=34) ile normalleştirilmiş değer
+- Ölçülen değer, CP56Time2a zaman etiketli ölçeklenmiş değer (Tip=35)
+- Ölçülen değer, CP56Time2a zaman etiketli kısa kayan noktalı sayı (Tip=36)
+- CP56Time2a zaman etiketi ile entegre toplamlar (Tür=37)
+- CP56Time2a zaman etiketli koruma ekipmanı olayı (Tip=38)
+- CP56Time2a (Tip=39) zaman etiketli koruma ekipmanının paketlenmiş başlatma olayları
+- CP56Time2a zaman etiketli koruma ekipmanının paket çıkış devresi bilgisi (Tip=40)
+- Tek komut (Tip=45)
+- Çift komut (Tip=46)
+- Kademe düzenleme komutu (Tip=47)
+- Ayar noktası Komutu, normalleştirilmiş değer (Tip=48)
+- Ayar noktası Komutu, ölçeklenmiş değer (Tip=49)
+- Ayar noktası Komutu, kısa kayan nokta sayısı (Tip=50)
+- Bitstring 32 bit komutu (Tip=51)
+- CP56Time2a zaman etiketli tek komut (Tip=58)
+- CP56Time2a zaman etiketli çift komut (Tip=59)
+- CP56Time2a zaman etiketi ile adım komutunun düzenlenmesi (Tip=60)
+- Ölçülen değer, zaman etiketi CP56Time2a ile normalleştirilmiş değer komutu (Tip=61)
+- Ölçülen değer, zaman etiketi CP56Time2a ile ölçeklenmiş değer komutu (Tip=62)
+- Ölçülen değer, CP56Time2a zaman etiketli kısa kayan noktalı sayı komutu (Tip=63)
+- CP56Time2a zaman etiketli 32 bit komutun bit dizisi (Tür=64)
+- Sorgulama komutu (Tip=100)
+- Sayaç sorgulama komutu (Tip=101)
+- Okuma komutu (Tip=102)
+- Saat senkronizasyon komutu (Tip=103)
+- İşlemi sıfırla komutu (Tip=105)
+
+#### BilgiNesnesiAdresi
+
+Okunacak RTU cihazından etiketin adres bilgisi girilir.
+
+<center>
+
+![variable-iec](/img/variable-iec.png)
+***<center>Figure 3: Telediagram Variable Addresses Field</center>***
+
+</center>
+
+
+
+### Kanal: DNP3
+
+DNP3 protokolünü kullanarak TCP üzerinden saha cihazlarıyla iletişim kurmak için yeni bir DNP3 Kanalı oluşturmalısınız.
+
+#### Kanal Parametreleri
+
+<center>
+
+![dnp3-ch](/img/dnp3-ch.png)
+***<center>Figure 1: DNP3 Channel Screen</center>***
+</center>
+
+
+#### Sunucu portu
+DNP3 Sunucu Bağlantı Noktası varsayılanı 20000.
+#### Saat Senkronizasyonu
+Saat Senkronizasyon mesajı gönderme frekansı.
+#### Saat Dilimi GMT
+Sunucu bilgisayarın saat dilimi bilgisi.
+#### İstek zaman aşımına uğradı
+Sunucunun bir istek mesajı alma sıklığını belirtir.
+#### Sınıf 1,2,3 Anket Aralığı(sn)
+Belirli zaman aralıklarında sınıflara ayrı sorgular gönderir.
+#### Bütünlük Anket Aralığı(sn)
+Belirtilen zaman aralıklarında sorguyu bir bütün olarak gerçekleştirir.
+
+#### Etiket Parametreleri
+
+<center>
+
+![dnp3-tag](/img/dnp3-tag.png)
+***<center>Figure 2: DNP3 Tag Screen</center>***
+</center>
+
+
+### Kanal: SNMP
+Bu kanal SNMP cihazlarına bağlanmak için kullanılır. Bu kanal türünün çalışabilmesi için sisteminizde NetSnmp kitaplığının kurulu olması gerekir. NetSnmp kitaplığını buradan indirebilirsiniz: [Buradan](http://www.net-snmp.org/download.html).
+
+#### Kanal Parametreleri
+
+<center>
+
+![snmp-ch](/img/snmp-ch.png)
+***<center>Figure 1: SNMP Channel Screen</center>***
+</center>
+
+#### Sunucu IP'si
+Bağlanmak istediğiniz cihazın IP adresi.
+#### Sunucu portu
+SNMP Sunucu Bağlantı Noktası varsayılanı 161.
+#### Etiket Parametreleri
+
+<center>
+
+![snmp-tag](/img/snmp-tag.png)
+***<center>Figure 2: SNMP Tag Screen</center>***
+</center>
+
+
+
+### Makro Kanalı
+Bu kanal, sanal etiketler oluşturmak ve bunları komut dosyalarıyla değiştirmek için kullanılır.
+
+Ayrıntılı bilgi için: [Makro Kanal Tanımları](https://www.youtube.com/watch?v=oA8lWr3p_wc&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=25).
+
+#### Kanal Parametreleri
+
+<center>
+
+![macro-kanal](/img/macro-kanal.png)
+***<center>Figure 1: Macro Channel Screen</center>***
+</center>
+
+
+#### Kare Zaman Aşımı
+Makronun çalışma sıklığını ifade eden milisaniye cinsinden süre.
+#### Etiket Parametreleri
+
+<center>
+
+![macro-channel](/img/macro-channel.png)
+***<center>Figure 2: Macro Programming Screen</center>***
+
+</center>
+
+
+<center>
+
+![macro-komut](/img/macro-komut.png)
+***<center>Figure 3: Macro Commands</center>***
+
+</center>
+
+- "+" : Ekle
+- "-" : Çıkar
+- "*"  : Çarpmak
+- "/"  : Bölmek
+- "%" : Modlama
+- "&" : Mantıksal ve işlem
+- "|" : Mantıksal veya işlem
+- "?" : Özel işlenen
+- "^" : Mantıksal özel veya işlem
+- ">" : şundan büyüktür
+- "<" : daha küçüktür
+- "e" : Eşittir
+- "b" : Daha büyük veya eşittir
+- "k" : Küçük veya eşit
+- "n" : Eşit değil
+
+
+### Kanal: Veritabanı
+SCADA'nın kendi veri tabanından sorgulama yapmak için kullanılan kanal türüdür. ViewPLUS SCADA'da bir veritabanı kanalı oluşturularak, sunucunun çalıştığı veritabanı üzerinde işlemler gerçekleştirilir.
+Bu, kanalın altında oluşturulan etiketlere bir sorgu yazılarak yapılır.
+Sorgu penceresine sorgular girilir. Sorguya verilen yanıtlar yine aynı etikette görüntülenir.
+
+
+#### Kanal Parametreleri
+
+<center>
+
+![database-channel](/img/database-channel.png)
+***<center>Figure 1: Database Channel Screen</center>***
+
+</center>
+
+#### Yanıt Zaman Aşımı
+Veritabanı sorgusunun yürütülme sıklığını temsil eden milisaniye sayısı.
+
+<center>
+
+![database-tag](/img/database-tag.png)
+***<center>Figure 2: Database Tag Screen</center>***
+
+</center>
+
+<center>
+
+![database-query](/img/database-query.png)
+***<center>Figure 3: Database Query Screen</center>***
+
+</center>
+
+
+```
+
+Select data_value from logs.tag_log where tag_id=1 order by logtime  desc limit 1  \\  Indicates the last value for tag_id=1.
+Select data_value from logs.tag_log where tag_id=1 order by logtime  limit 1 \\  Indicates the first value for tag_id=1.
+Select*from logs.tag_log \\ Shows all values.
+
+
+```
+
+
+Detaylı bilgi için: [Database Channel Definitions](https://www.youtube.com/watch?v=73F15MW64eo&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=23).
+
+### Kanal: Küresel Veritabanı
+Farklı veritabanlarına bağlanarak özel sorgular oluşturmak ve bu sorgu sonuçlarını proje etiketlerine geçirmek için kullanılan kanal türüdür.
+
+#### Kanal Parametreleri
+
+<center>
+
+![global-channel](/img/global-channel.png)
+***<center>Figure 1: GlobalDatabase Channel Screen</center>***
+
+</center>
+
+<center>
+
+![db-user](/img/db-user.png)
+***<center>Figure 2: Database Name</center>***
+
+</center>
+
+#### Yanıt Zaman Aşımı
+Veritabanı sorgusunun yürütülme sıklığını temsil eden milisaniye sayısı.
+#### Etiket Parametreleri
+
+<center>
+
+![globaldatabase-tag](/img/globaldatabase-tag.png)
+***<center>Figure 3: GlobalDatabase Tag Screen</center>***
+
+</center>
+
+#### Sorgu
+
+<center>
+
+![database-query](/img/database-query.png)
+***<center>Figure 4: GlobalDatabase Query Screen</center>***
+
+</center>
+
+Veritabanında yürütülecek sorgu ifadesi. Bu etiket, sorgudan döndürülen ilk satırın alınmasına izin verir. Bu ilk satır için ??dönüş değerleri etiketlere sırasıyla :{${32}, ${33} , ${34}, ${35},....} biçiminde tanımlanan etiketlere yazılır:
+Örnek bir "Sorgu" ifadesi:
 
 ```
  WITH
@@ -1260,19 +1643,26 @@ An example "Query" expression:
  
  :{${32}, ${33} , ${34}, ${35}}:
 ```
+Yukarıdaki PostgreSQL veritabanı sorgusunda 19, 20, 29 ve 26 etiketlerinin en son kaydedilen veritabanı değerleri sırasıyla 32, 33, 34, 35 kimlikli etiketlere yazılır.
 
-In the above PostgreSQL database query, the latest recorded database values of the tags 19, 20, 29, and 26 are written into the tags with 32, 33, 34, 35 IDs, respectively.
+### Kanal: JavaScript Kanalı
+JavaScript fonksiyonları JavaScript kanalı tanımlanabilir. Komut dosyanızda çeşitli Matematik işlevlerini çağırabilirsiniz. [Referans](https://www.w3schools.com/jsref/jsref_obj_math.asp). Sistem etiketlerinin değerlerini "${123}" biçiminde de kullanabilirsiniz. İşlev sonucunun "JavaScript Etiketi" üzerine yazılması için sayısal bir değer "döndürmeniz" gerekir.
 
-### Channel: JavaScript Channel
-JavaScript functions could be defined JavaScript channel. You can call various Math functions in your script[Reference](https://www.w3schools.com/jsref/jsref_obj_math.asp). You can also use the values of system tags in the form of "${123}". You need to "return" a numeric value for the function result to be written on the "JavaScript Tag"
+#### Kanal Parametreleri
 
-#### Channel Parameters
-#### Response Timeout
-The number of milliseconds that represents the frequency at which the JavaScript function is called.
-Tag Parameters
-#### Query 
-The JavaScript expression to be called. :
-An example "JavaScript" expression:
+<center>
+
+![jv-ch](/img/jv-ch.png)
+***<center>Figure 1: JavaScript Channel Screen</center>***
+
+</center>
+
+#### Yanıt Zaman Aşımı
+JavaScript işlevinin çağrıldığı frekansı temsil eden milisaniye sayısı.
+Etiket Parametreleri
+#### Sorgu
+Çağrılacak JavaScript ifadesi. :
+Örnek bir "JavaScript" ifadesi:
 
 ```
 var1 = 5 + ${19};   //In the first  line : define a variable "var1" and assign "the value of tag with id 19" plus "5"
@@ -1287,16 +1677,31 @@ You cannot set the values of other system tags in JavaScript tag. You need to us
 ${20}= 3 + var1 ;
 ```
 
-### Channel: SOAP API Channel
-It is the type of channel used to connect to a SOAP Web Service and to pass the query results into project tags.
+Detaylı bilgi için: [Javascript Channel Definitions](https://www.youtube.com/watch?v=YKGy4F4Z8-I&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=28).
 
-#### Channel Parameters
-#### Response Timeout
-The number of milliseconds that represents the frequency at which the query is executed.
-Tag Parameters
-#### Query 
-The API expression to be send to SOAP service. The query result is parsed and the relevant return values are written into tags:
-The query expression is composed of 3 parts. The first part identifies the WSDL path of the SOAP server. The second part is the actual SOAP query envelope. And the last part is the tag binding expression for the results to be written into correct tag values. An example "Query" expression:
+### Kanal: SABUN API Kanalı
+Bir SOAP Web Hizmetine bağlanmak ve sorgu sonuçlarını proje etiketlerine iletmek için kullanılan kanal türüdür.
+
+#### Kanal Parametreleri
+
+<center>
+
+![webapi-ch](/img/webapi-ch.png)
+***<center>Figure 1: SOAP API Channel Screen</center>***
+</center>
+
+<center>
+
+![webapi-tag](/img/webapi-tag.png)
+***<center>Figure 1: SOAP API Tag Screen</center>***
+</center>
+
+#### Yanıt Zaman Aşımı
+Sorgunun yürütüldüğü frekansı temsil eden milisaniye sayısı.
+Etiket Parametreleri
+#### Sorgu
+SOAP servisine gönderilecek API ifadesi. Sorgu sonucu ayrıştırılır ve ilgili dönüş değerleri etiketlere yazılır:
+Sorgu ifadesi 3 bölümden oluşur. İlk kısım, SOAP sunucusunun WSDL yolunu tanımlar. İkinci kısım, gerçek SABUN sorgu zarfıdır. Ve son kısım, sonuçların doğru etiket değerlerine yazılması için etiket bağlama ifadesidir. Örnek bir "Sorgu" ifadesi:
 
 ```
 WSDL_PATH = https://minosxcloud.umpi.it/ws/wsminos.php?wsdl; 
@@ -1321,7 +1726,7 @@ WSDL_PATH = https://minosxcloud.umpi.it/ws/wsminos.php?wsdl;
   ${33}, <stato><statoingresso num=17 stato> }:
 ```
 
-And the response from the server is as following:
+Ve sunucudan gelen yanıt aşağıdaki gibidir:
 
 ```
 <SOAP-ENV:Envelope SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
@@ -1350,48 +1755,48 @@ And the response from the server is as following:
 </SOAP-ENV:Envelope>
 ```
 
-The method to write the result of the response into the tags is as follows:
+Yanıtın sonucunu etiketlere yazma yöntemi aşağıdaki gibidir:
 
 <center>
 
 ![soap-channel-01](/img/soap-channel-01.png)
-***<center>Figure 1: Create Database Channel Screen</center>***
+***<center>Figure 3: Create Database Channel Screen</center>***
 
 </center>
 
-The parser is defined in the form of 
+Ayrıştırıcı şeklinde tanımlanır
 ```
 :{${tag1 ID}, <child1> <child2>; ${tag2 ID} , <child1> <child2> <child3 filterAttribute returnAttribute> }:
 ```
 
- On the last 3 lines of the query, the first parameter is the target tag. The latter part defines how to parse the response. The last element of this part could be used to create an attribute filter for the XML document. The remaining parts are the node hierarchy filter.
+Sorgunun son 3 satırında ilk parametre hedef etiketidir. İkinci kısım, yanıtın nasıl ayrıştırılacağını tanımlar. Bu bölümün son öğesi, XML belgesi için bir öznitelik filtresi oluşturmak için kullanılabilir. Kalan kısımlar, düğüm hiyerarşi filtresidir.
 
-If no returnAttribute or filterAttribute is defined, the text value of the node is cast into number and written into tag.
+returnAttribute veya filterAttribute tanımlı değilse, düğümün metin değeri sayıya dönüştürülür ve etikete yazılır.
 
-If returnAttribute is defined but no filterAttribute ; the first element of multiple elements is selected and "returnAttribute" attribute's value is returned.
+returnAttribute tanımlanmışsa ancak filterAttribute yoksa; birden çok öğenin ilk öğesi seçilir ve "returnAttribute" özniteliğinin değeri döndürülür.
 
-If both returnAttribute and filterAttribute are defined; multiple elements are filtered according to filterAttribute and "returnAttribute" of that node is returned.
+Hem returnAttribute hem de filterAttribute tanımlanmışsa; birden çok öğe filterAttribute'a göre filtrelenir ve bu düğümün "returnAttribute" değeri döndürülür.
 
 
-### Channel: MQTT Client
+### Kanal: MQTT İstemcisi
 
-Mikrodev Client receives messages from publisher units and transmits messages to subscribed units. When sending messages, it uses topics to filter client units that will receive the message.
+Mikrodev Client, yayıncı birimlerinden gelen mesajları alır ve abone olunan birimlere iletir. Mesaj gönderirken, mesajı alacak olan müşteri birimlerini filtrelemek için konuları kullanır.
 
-The working structure of Mikrodev Client is described in the picture below.
+Mikrodev Client'ın çalışma yapısı aşağıdaki resimde anlatılmaktadır.
 
 ![mqtt client](/img/mqtt-client.png)
 ***<center>Figure 1: General Structure of Mikrodev Client</center>***
 
-Mikrodev Client supports the following data types.
+Mikrodev Client aşağıdaki veri türlerini destekler.
 
 | Number | Variable Type |
 | ------ | ------ |
 | 1 | BOOLEAN |
 | 2 | DOUBLE |
 
-#### Structure of Subscriber Unit
+#### Abone Biriminin Yapısı
 
-Subscribers are units that receive messages according to topics which they inform Mikrodev Client.
+Aboneler Mikrodev Client'a bildirdikleri konulara göre mesaj alan birimlerdir.
 
 <center>
 
@@ -1401,7 +1806,7 @@ Subscribers are units that receive messages according to topics which they infor
 
 </center>
 
-Topical names can contain one or more words and numbers. Sample topi-cal names can be listed as below.
+Konu adları bir veya daha fazla kelime ve sayı içerebilir. Örnek topikal isimler aşağıdaki gibi listelenebilir.
 
 | Number | Topical Names |
 | ------ | ------ |
@@ -1411,8 +1816,8 @@ Topical names can contain one or more words and numbers. Sample topi-cal names c
 | 4 | 587251468 |
 | 5 | 587251468/Temperature |
 
-Payload structure is sent to Mikrodev Client by publisher units are as below.
-#### Example 1:
+Yayıncı birimleri tarafından Mikrodev Client'a gönderilen payload yapısı aşağıdaki gibidir.
+#### Örnek 1:
 ```
 { 
 	"421453435": {
@@ -1422,17 +1827,17 @@ Payload structure is sent to Mikrodev Client by publisher units are as below.
 }
 ```
 
-The phrase "421453435" indicates an ID of the device. "Humidity" and "Pressure" expressions in the ID indicate the labels. The "V" expression in the label indicates the value of the label. The expression "T" indicates the time information when the data was sent. The publisher may not send this time information.
+"421453435" ifadesi, cihazın kimliğini belirtir. ID'deki "Nem" ve "Basınç" ifadeleri etiketleri belirtir. Etiketteki "V" ifadesi, etiketin değerini belirtir. "T" ifadesi, verilerin gönderildiği zaman bilgisini belirtir. Yayıncı bu kez bilgi gönderemez.
 
-#### Structure of Publisher Unit
+#### Yayıncı Biriminin Yapısı
 
-Publishers are the units that broadcast messages and transmit the mes-sage they want to publish to the broker unit, along with the topical information. Mikrodev Client transmits the message to subscriber units that are members of the relevant topic.
+Yayıncılar, mesaj yayınlayan ve yayınlamak istedikleri mesajı güncel bilgilerle birlikte aracı birime ileten birimlerdir. Mikrodev Client, mesajı ilgili konuya üye olan abone birimlerine iletir.
 
 ![structure publisher](/img/structure-of-publisher.png)
 ***<center>Figure 3: Structure of Mikrodev Client for Publishing Data</center>***
 
-Payload structures that transmitted to subscriber units by Mikrodev Client are as below.
-#### Example 1: 
+Mikrodev Client tarafından abone birimlerine iletilen payload yapıları aşağıdaki gibidir.
+#### Örnek 1:
 ```
 { 
 	"": {
@@ -1440,7 +1845,7 @@ Payload structures that transmitted to subscriber units by Mikrodev Client are a
 	}	
 }
 ```
-#### Example 2:
+#### Örnek 2:
 ```
 { 
 	"434523": {
@@ -1449,31 +1854,30 @@ Payload structures that transmitted to subscriber units by Mikrodev Client are a
 }
 ```
 
-In the payload structure in Example 1, Because of Device ID is not defined, it is specified as "0". "LampCommand": "1" information was sent to the device with {"V": 1} payload structure.
+Örnek 1'deki payload yapısında Cihaz Kimliği tanımlanmadığından "0" olarak belirtilmiştir. {"V": 1} payload yapısı olan cihaza "LampCommand": "1" bilgisi gönderilmiştir.
 
-The payload structure in Example 2 has been published with the identity information of the device.
+Örnek 2'deki faydalı yük yapısı, cihazın kimlik bilgileri ile birlikte yayınlanmıştır.
 
 
+## Bileşen Metin İçeriği
 
-## Component Text Content
-
-Label and channel parameter texts can be written on some components and functions.
-The following functions are defined on the component that provides to dis-play text information on screen.
+Bazı bileşenler ve fonksiyonlar üzerine etiket ve kanal parametre metinleri yazılabilir.
+Metin bilgilerinin ekranda görüntülenmesini sağlayan bileşen üzerinde aşağıdaki fonksiyonlar tanımlanmıştır.
 
 ``` 
-:CHNAME: shows the name of the channel where tag is located.
-:CHDESC: shows the "Identification" information on the channel where the tag is located.
-:CHSTATION: shows the “Station” information on the channel where the tag is located.
-:CHSERVERIP: shows the “Server IP” information on the channel where the tag is located.
-:TAGNAME: shows the “TagName” information.
-:TAGDESC: shows the “Description” information of tag.
-:TAGLOCATION: shows the “Location” information of tag.
-:TAGDESC function provides to display tag definition information on the component with the following method.
+:CHNAME: etiketin bulunduğu kanalın adını gösterir.
+:CHDESC: Etiketin bulunduğu kanal üzerinde "Kimlik" bilgisini gösterir.
+:CHSTATION: Etiketin bulunduğu kanal üzerindeki “İstasyon” bilgisini gösterir.
+:CHSERVERIP: Etiketin bulunduğu kanal üzerindeki “Sunucu IP” bilgisini gösterir.
+:TAGNAME: “TagName” bilgilerini gösterir.
+:TAGDESC: etiketin “Açıklama” bilgisini gösterir.
+:TAGLOCATION: etiketin “Location” bilgisini gösterir.
+:TAGDESC işlevi, aşağıdaki yöntemle bileşen üzerinde etiket tanımlama bilgilerinin görüntülenmesini sağlar.
 ```
-A text value is entered in the "Description" parameter of the tag.
+Etiketin "Açıklama" parametresine bir metin değeri girilir.
 
 
-The "Run Function" parameter is defined in the relevant object for the dy-namic page which is needed restricted access. The "data1 = data2" information changes the tag names starting with data 1 in the directed page to the tag named data2. The information used after the semicolon indicates the access numbers for the page to be redirected.
+Kısıtlı erişim gerektiren dinamik sayfa için ilgili nesnede "Run Function" parametresi tanımlanır. "data1 = data2" bilgisi, yönlendirilen sayfada data 1 ile başlayan tag isimlerini data2 isimli tag ile değiştirir. Noktalı virgülden sonra kullanılan bilgiler, yönlendirilecek sayfanın erişim numaralarını gösterir.
 
 <center>
 
@@ -1482,7 +1886,7 @@ The "Run Function" parameter is defined in the relevant object for the dy-namic 
 
 </center>
 
-In order to display the description text,:TAGDESC function is written into the "Text Content" in the component "Object Properties".
+Açıklama metnini görüntülemek için, "Nesne Özellikleri" bileşenindeki "Metin İçeriği"ne:TAGDESC işlevi yazılır.
 
 <center>
 
@@ -1491,7 +1895,7 @@ In order to display the description text,:TAGDESC function is written into the "
 
 </center>
 
-The created label is defined in the "Label Text" section under the "Tags" menu of the component.
+Oluşturulan etiket, bileşenin "Etiketler" menüsü altındaki "Etiket Metni" bölümünde tanımlanır.
 
 <center>
 
@@ -1500,7 +1904,7 @@ The created label is defined in the "Label Text" section under the "Tags" menu o
 
 </center>
 
-According to the defined operations of :TAGDESC function, the "Descrip-tion" parameter of the label data appears on the component.
+TAGDESC fonksiyonunun tanımlanan işlemlerine göre, bileşen üzerinde etiket verilerinin "Descrip-tion" parametresi görünür.
 
 <center>
 
@@ -1509,11 +1913,11 @@ According to the defined operations of :TAGDESC function, the "Descrip-tion" par
 
 </center>
 
-## Dynamic Page
+## Dinamik Sayfa
 
-Instead of preparing multiple pages in the same format, we can create a reference page and show different tags on a single page.
+Birden fazla sayfayı aynı formatta hazırlamak yerine referans sayfası oluşturup farklı etiketleri tek sayfada gösterebiliyoruz.
 
-In the picture below, the references of the labels divided into two channels and to be interchanged can be listed as Phase1Voltage, Phase2Voltage, Phase3Voltage.
+Aşağıdaki resimde iki kanala ayrılmış ve değiştirilecek olan etiketlerin referansları Faz1Voltaj, Faz2Voltaj, Faz3Voltaj olarak listelenebilir.
 
 <center>
 
@@ -1522,7 +1926,7 @@ In the picture below, the references of the labels divided into two channels and
 
 </center>
 
-Reference tags are assigned to the components within the reference page.
+Referans etiketleri, referans sayfasındaki bileşenlere atanır.
 
 <center>
 
@@ -1531,12 +1935,12 @@ Reference tags are assigned to the components within the reference page.
 
 </center>
 
-In the “Run Function” parameter, the “RegionA = RegionB” information replaces the tag names that start with “RegionA” in the redirected page, with the names of the tags that start with “RegionB”.
+“Run Function” parametresinde “RegionA = RegionB” bilgisi, yönlendirilen sayfada “RegionA” ile başlayan tag adlarını “RegionB” ile başlayan tag isimleri ile değiştirir.
 
 ![dynamic-pages-03](/img/dynamic-pages-03.png)
 ***<center>Figure 3: Run Function Configuration for Desired Components</center>***
 
-When the Region A button is clicked, the pop-up page named Region is opened and the reference tag information defined on the components appears.
+A Bölgesi butonuna tıklandığında Bölge isimli açılır sayfa açılır ve bileşenler üzerinde tanımlanan referans etiket bilgileri ekrana gelir.
 
 <center>
 
@@ -1544,7 +1948,8 @@ When the Region A button is clicked, the pop-up page named Region is opened and 
 ***<center>Figure 4: Displaying The Pop-Up Page That Shows Run Function Configuration for Region A</center>***
 
 </center>
-When the Region B button is clicked, a pop-up page named Regions is opened and the reference labels written in the "Run Function" parameter are replaced with the labels starting with the RegionB.
+
+Bölge B butonuna tıklandığında Bölgeler isimli bir açılır sayfa açılır ve "Run Function" parametresinde yazılan referans etiketleri, RegionB ile başlayan etiketlerle değiştirilir.
 
 <center>
 
@@ -1553,7 +1958,7 @@ When the Region B button is clicked, a pop-up page named Regions is opened and t
 
 </center>
 
-"$ {Parent}" function should be written into the "Run Function" parameter on the components that used in redirecting to different pages from the ref-erence page in order to maintain the dynamic structure when redirecting to different pages from the dynamic page.
+Dinamik sayfadan farklı sayfalara yönlendirme yapılırken dinamik yapının korunabilmesi için referans sayfasından farklı sayfalara yönlendirmede kullanılan bileşenler üzerindeki "Run Function" parametresine "$ {Parent}" fonksiyonu yazılmalıdır.
 
 <center>
 
@@ -1562,11 +1967,11 @@ When the Region B button is clicked, a pop-up page named Regions is opened and t
 
 </center>
 
-## Navigation Panel
+## Navigasyon Paneli
 
-Created pages within the SCADA project can be displayed on the naviga-tion panel as pages or in folders.
+SCADA projesi içerisinde oluşturulan sayfalar, Navigasyon panelinde sayfalar veya klasörler halinde görüntülenebilir.
 
-The area that is marked in red, shows the navigation panel. The panel size can be increased or decreased from the right side of the navigation panel.
+Kırmızı ile işaretlenmiş alan, Navigasyon panelini gösterir. Panel boyutu, Navigasyon panelinin sağ tarafından büyütülebilir veya küçültülebilir.
 
 <center>
 
@@ -1575,7 +1980,7 @@ The area that is marked in red, shows the navigation panel. The panel size can b
 
 </center>
 
-In order to perform operations on the navigation panel, right click with the mouse and select the operation to be performed in the displayed window.
+Navigasyon panelinde işlem yapmak için mouse ile sağ tıklayın ve görüntülenen pencerede yapılacak işlemi seçin.
 
 <center>
 
@@ -1584,9 +1989,9 @@ In order to perform operations on the navigation panel, right click with the mou
 
 </center>
 
-To create a folder on the navigation panel, "Add Folder" is marked and the folder name is written on the screen that appears.
+Navigasyon panelinde klasör oluşturmak için “Klasör Ekle” işaretlenir ve çıkan ekranda klasör adı yazılır.
 
-In order to perform operations on the created folder, right click on the se-lected folder and select the desired action.
+Oluşturulan klasör üzerinde işlem yapmak için seçilen klasöre sağ tıklayın ve istediğiniz işlemi seçin.
 
 <center>
 
@@ -1595,14 +2000,14 @@ In order to perform operations on the created folder, right click on the se-lect
 
 </center>
 
-To move SCADA pages into the folder, right click on the folder and select “Add Pagelink”. The page to be added is selected in the appeared window.
+SCADA sayfalarını klasöre taşımak için klasöre sağ tıklayın ve “Sayfa Bağlantısı Ekle” seçeneğini seçin. Açılan pencerede eklenecek sayfa seçilir.
 
-The name of the page can be defined with the "Display Text" parameter and the dynamic structure can be used with the "Run Template Function" parameter.
+"Görüntü Metni" parametresi ile sayfanın adı tanımlanabilir ve "Şablon Fonksiyonunu Çalıştır" parametresi ile dinamik yapı kullanılabilir.
 
 ![navigation-panel-04](/img/navigation-panel-04.png)
 ***<center>Figure 4: Configuration for Page Link</center>***
 
-In figure 5, you can see The "Page1.sca" page which is added to the folder in the navigation panel.
+Şekil 5'te gezinme panelindeki klasöre eklenen "Page1.sca" sayfasını görebilirsiniz.
 
 <center>
 
@@ -1611,9 +2016,231 @@ In figure 5, you can see The "Page1.sca" page which is added to the folder in th
 
 </center>
 
-Navigation panel can be opened or closed within the window tab on the Client screen.
+Navigasyon paneli Client ekranındaki pencere sekmesinden açılıp kapatılabilir.
 
 ![navigation-panel-06](/img/navigation-panel-06.png)
 ***<center>Figure 6: Navigation Panel Display Option on ViewPLUS Client</center>***
 
+## Sunucu Yazılımı
 
+Sunucu yazılımının çalışabilmesi için bir proje ile ilişkilendirilmesi gerekir. Editör menüsünden çalıştırıldığında, o anda açık olan proje sunucu tarafından kullanılır. Sunucuyu editörden bağımsız olarak çalıştırmak için "Editör > Araçlar > Sunucu Dosyaları Oluştur" seçilerek bir klasör belirlenir ve sunucu dosyaları bu klasöre kopyalanır. Sunucuyu başlatmak için "ServerEngine" widget'ı kullanılır. Varsayılan olarak, "ServerEngine" pencere öğesi, kendisiyle aynı klasörde "Proje" adlı bir klasörü arar.
+
+“Proje” klasörü, editör tarafından oluşturulan özel dosyaları içerir. Başlıcaları; “MikrodevScada.ini”, “Project.zip”, “.sca uzantılı proje sayfaları” ve bileşen dosyalarıdır. Sunucu, “MikrodevScada.ini” dosyasında hangi veritabanına bağlanılacağı ve kayıtların nerede tutulacağı gibi bilgileri okur.
+
+SCADA sunucusu ilk kez başlatıldığında, kullanıcıdan veritabanı bağlantı bilgilerini girmesi istenebilir. Sunucu ayrıca aşağıdaki komut satırı parametrelerini kullanarak bir projeyi farklı bir klasörde açabilir.
+
+“ServerEngine –dir “C:\Users\yg\Desktop\server\projectname“ ” 
+-dir : Proje klasörü 
+
+<center>
+
+![server1](/img/server1.png)
+***<center>Server Main Page</center>***
+
+</center>
+
+Sunucunun ana ekranında genel sistem loglarının izlenebileceği bir konsol bulunur. Bu konsol üzerinde 
+sunucu ile ilgili önemli değişimler gösterilir. Daha detaylı sunucu logları ayrı bir dosyada kaydedilir. 
+“Başlat” butonuna basıldığında sunucu saha cihazlarıyla bağlantı kurar. Bağlantı kurulduktan sonra 
+sunucu istemcilerin bağlanabileceği bir port açar ve gelen bağlantıları bekler. Sunucu sahadan veri
+okumaya başladığında, proje ayarlarında belirtildiği şekilde bu verileri veritabanı sunucusuna göndererek 
+kaydeder. Etiket izleme ekranında sahadan okunan verilerin anlık değerleri izlenebilir.
+
+<center>
+
+![server2](/img/server2.png)
+***<center>Server Tag Monitoring Screen</center>***
+
+</center>
+
+
+Etiket izleme ekranındaki anlık değerler üzerinde etiketId, etiket adı, kanal adı, cihaz adresi gibi 
+parametrelere göre filtreleme yapılabilir. 
+“Değer” alanında gösterilen sayısal verinin yanında “dced” şeklinde bir metin 
+bulunuyorsa, bu durum cihaz ile SCADA sunucu arasında bir bağlantı problemi 
+olduğunu gösterir
+Sürücü izleme ekranında çalışan protokol sürücüleriyle ilgili bilgiler verilir. Bu konsoldan cihaz bağlantı 
+problemleriyle ilgili bilgiler elde edilebilir. 
+Alarm ekranı ise, sistemde oluşmuş olan alarmların geçmişi ve mevcut alarmların gözlemlenebilmesini 
+sağlar. 
+
+### Sunucuyu Otomatik Başlatma
+
+#### Windows Platformu
+
+Sunucuyu otomatik başlatmak için şu adımları takip ediniz ("TestProjesi" isimli örnek bir proje icin ):
+• ViewPLUS' ün kurulum klasörü içindeki "ServerEngine.exe" programcığı için masaüstüne bir 
+kısayol oluşturun.
+
+
+<center>
+
+![create-shortcut](/img/create-shortcut.png)
+
+</center>
+
+Kısayol Oluşturma
+• Oluşturulan kısayola sağ tıklayıp "Özellikler"i seçin.
+• "Target" yazan alanı şu şekilde değiştirin (Dosya yolunu kendi sisteminize göre değiştirin):
+"C:\Program Files (x86)\ViewPLUS\bin\ServerEngine.exe" -dir "C:\Users\User Name\TestProjesi"-start • Sonra bu kısayolu "C:\Users\User Name  \AppData\Roaming\Microsoft\Windows\Start 
+Menu\Programs\Startup" altına kopyalayın. Artık kullanıcı sisteme giriş yapınca sunucu otomatik olarak başlayacaktır.
+• OperatorClient kısayolunu da "C:\Users\UserName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup" altına 
+kopyalayarak açılışta otomatik başlaması sağlanabilir.
+
+
+### Sunucu Runtime Oluşturma
+
+Geliştirilen SCADA projesini farklı bir bilgisayarda ViewPLUS kurmadan da çalıştırabilirsiniz. Bunun için 
+"Araçlar" menüsünden "Sunucu Dosyalarını Oluştur" u seçerek, proje ve sunucunun çalışması için gerek 
+dosyaları bir klasör içerisinde toplayabilirsiniz. Bu klasörü taşıyarak, projenizi farklı sunucu makineleri 
+üzerinde çalıştırmanız mümkündür. 
+
+Detaylı bilgi için: [Autostart The Server](https://www.youtube.com/watch?v=CAR2qN3Xe_k&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=15).
+
+## İstemci Yazılımı
+
+stemci yazılımı; uç kullanıcıların SCADA sunucusuna internet ya da intranet üzerinden bağlanarak, 
+hazırlanan projeyi izlemelerini ve kontrol edebilmelerini sağlar. 
+
+<center>
+
+![clienthome](/img/clienthome.png)
+***<center>Client Login Screen</center>***
+
+</center>
+
+SCADA sunucuya bağlanabilmek için kullanıcı, şifre, sunucu adresi ve portu bilgilerini istemci yazılımına 
+girmeniz gerekir. Yeni bir kullanıcı oluşturmak için "Kullanıcı Yöneticisi" ni kullanmanız gerekir. Bu bilgiler 
+doğru bir şekilde girildiğinde sunucu ile istemci yazılımı arasında şifrelenmiş bir bağlantı oluşturulur ve 
+sunucudan gönderilen proje giriş ekranı istemcide gösterilir. 
+İstemci ekranının sol tarafında yer alan “sayfa seçici” de, editörde “SCADA Sekmesi” olarak tanımlanan 
+sayfalar için kısayollar gösterilir. Burada gösterilen kısayolların görünümü ve sırası editör üzerinde 
+ayarlanabilir. Bu kısayollar yanında alarm paneli ve web görünüm paneli kısayolları bulunur. 
+
+<center>
+
+![client-screen](/img/client-screen.png)
+***<center>Client Screen</center>***
+
+</center>
+
+İstemci üzerinde gösterilen içerik; kullanıcının, sayfaların ve tanımlı etiketlerin erişim yetkilerine bağlı 
+olarak değişiklik gösterebilir. Kullanıcının erişim yetkisi olmayan sayfalar “sayfa seçici” de gösterilmez ya 
+da bu sayfalara doğru olan bağlantılar çalışmaz. Eğer sayfadaki bir görsel öğe, kullanıcının erişim yetkisi 
+olmayan bir etiket içeriyorsa kullanıcının bu öğeyi izlemesi veya kontrolü engellenir. 
+
+## Yeni Kullanıcı Oluşturma
+
+<center>
+
+![new-user-1](/img/new-user-1.png)
+
+</center>
+
+ViewPLUS'ta kullanıcı oluşturmak ve gerekli konfigürasyonları yapmak için Araçlar sekmesi altında Kullanıcı Yöneticisini Başlat seçilir.
+
+<center>
+
+![usernew](/img/usernew.png)
+
+</center>
+
+Yeni Kullanıcı sekmesine tıklanır ve açılan sayfada parametreler doldurularak yeni bir kullanıcı oluşturulur. Oluşturulan kullanıcı, Kullanıcılar sekmesi altındaki kullanıcı adının altında görüntülenir.
+
+Detaylı bilgi için:[User Definitions and Page Authorizations](https://www.youtube.com/watch?v=x-ySrdmeHJI&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=20).
+
+## Raporlama Yazılımı 
+
+SCADA yazılımının loglamış olduğu trend verilerini görmek ve analiz etmek için Raporlayıcı 'yı 
+kullanabilirsiniz. Raporlayıcı üç temel log verisi ile ilgili raporlama yapmanızı sağlar. Bunlar etiket logları, 
+alarm logları ve olay loglarıdır. 
+
+### Raporlama Komutu Oluşturma
+
+Oluşturulan filtrelerin raporlayıcı komut satırı üzerinden çağrılarak istenilen formatta rapor çıktısı 
+oluşturmak mümkündür. Bunun için raporlama uygulamasına gerekli komutsatırı parametrelerini 
+vermek yeterlidir. Bu özellik kullanılarak, Windows işletim sisteminin "Görev Zamanlayıcısı" üzerinden 
+belli zaman aralıklarında otomatik raporlar oluşturmak mümkündür.
+
+
+ScadaReporter.exe -database modpollread -user postgres -password laqhd -server localhost -port 5432 -query twohours -format csv -output "C:\Users\yg\Documents\Reports\Son2saat" 
+
+-database          Proje veritabanının adı(proje ile aynı isimdedir)
+-user              Veritabanı kullanıcı adı
+-password          Veritabanı kullanıcı şifresi
+-server            Veritabanı ip adresi
+-port              Veritabanı bağlantı portu
+-tnsname           Oracle veritabanları için tns adı
+-format            Rapor çıktı Formatı. Olası değerler html,csv,xlsx,xml dir 
+-query             Raporlayıcıda kaydedilmiş olan filtrenin adı. Bu parametre 
+raporlama komutu için gereklidir. Verilmezse bir rapor üretimez; raporlayıcı 
+arayüzü açılır
+-output           Çıktının oluşturulacağı doayanın yolu ve adı
+
+Detaylı bilgi için: [Reporter Screen](https://www.youtube.com/watch?v=iLUgWksTYjA&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=19).
+
+## Bileşen Yöneticisi
+
+Yeni görsel bileşenler ve animasyonlar eklemek için "comx" bileşen dosyaları oluşturmanız gerekir. Bunun için "Bileşen Yöneticisi"ni kullanabilirsiniz.
+
+<center>
+
+![component-manager-1](/img/component-manager-1.png)
+
+</center>
+
+Araçlar menüsünden ViewPLUS başlatıldığında ilgili projenin bileşen klasöründeki bileşenler görüntülenir.
+
+<center>
+
+![component-manager-2](/img/component-manager-2.png)
+
+</center>
+
+Yeni Bileşen eklemek için "Yeni Bileşen Ekle" seçeneğini seçerek eklenecek görseli veya görselleri seçin. Resimler (.png,.jpeg,.gif,.svg) formatlarında olabilir.
+
+<center>
+
+![component-manager-3](/img/component-manager-3.png)
+
+</center>
+
+
+Bileşen Adı = Bileşenin adını girin.
+
+Bileşen Kategorisi = Bileşenin olmasını istediğimiz kategori adı yazılır.
+Birden fazla bileşenin aynı kategori altında olması isteniyorsa aynı işlemler tekrarlanır, önemli olan kategori adının aynı olması aksi halde bileşen farklı bir kategoriye eklenir.
+
+İlk görselin boyutunu kullama = Bu komut, eklenen nesneyi orijinal boyutuna ayarlamak için kullanılır. Verilere göre değiştirmek istediğimiz nesneleri eklerken diğerlerini ilk resmin boyutlarına göre yeniden boyutlandırır.
+
+Detaylı bilgi için: [Add New Component](https://www.youtube.com/watch?v=1w3nwg0BCN0&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=21).
+
+## Gelişmiş Ayarlar
+
+log_server.txt:
+Windows sistemlerde şu klasör içinde bulunur:
+C:\Users\username\AppData\Roaming\Mikrodev\ScadaServer\proje adı
+Sunucuya ait detaylı logların bulunduğu dosyadır 
+log_serverstarter.txt : 
+Sunucu izleyici yazılımına ait logların bulunduğu dosyadır 
+OperatorClient.ini :
+ServerEngine.ini:
+Windows sistemlerde şu klasör içinde bulunur: 
+C:\Users\kullanıcı adı\AppData\Mikrodev\ScadaServer\proje adı 
+[Login] ServerAdr: Veritabanı adresi 
+[Login] DbName: Veritabanı adı 
+[Login] DbUserName: Veritabanı kullanıcı adı 
+[Login] DbPassword: Veritabanı şifresi 
+[Connection] Port: Varsayılan sunucu portu 560 dır. Farklı bir port bu parametre değiştirilerek seçilebilir. 
+[Logging]  IsLogging: Veri loglama aktif/pasif yapılabilir(true/false) 
+[Logging]  IsLoggingDısconnections: Bağlantı kopmalarının loglanıp loglanmayacağı seçilebilir 
+[REDUNDANCY] ServerMode: Yedekli çalışma modunu belirler. Bu değer PRIMARY ya da BACKUP olabilir. Bu mod backup olarak ayarlandığında,sunucu PRIMARY sunucu ile haberleşerek redundant bir yapı oluştururlar. 
+[REDUNDANCY] PrimaryIP: BACKUP moddaki sunucunun bağlanacağı PRIMARY sunucu IP adresi bu alana yazılır. 
+[REDUNDANCY] PrimaryPORT: BACKUP moddaki sunucunun bağlanacağı PRIMARY sunucunun port numarası bu alana yazılır. 
+[REDUNDANCY] Timeout: PRIMARY sunucunun ne kadar sürelik bir devredışı kalma durumunda BACKUP sunucunun aktif olacağını belirleyen saniye cinsinden değerdir. 
+
+Daha fazla bilgi almak için:
+
+[Mikrodev Website](https://www.mikrodev.com/en/index.php).
+
+[Mikrodev Bilişim Youtube Channel](https://www.youtube.com/channel/UC-67KqN9lzKKQUuZaMt3Zhg/featured).

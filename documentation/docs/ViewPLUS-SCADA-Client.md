@@ -1,5 +1,5 @@
 ---
-title: ViewPLUS SCADA Client
+title: Scada Client
 ---
 
 ## Client Operator Screen
@@ -52,24 +52,65 @@ ViewPLUS Client is used to connect to an open ViewPLUS SCADA server. Visual oper
 | 12.1 | DebugWin | Shows Tag ID and Data Value information of the labels on the page screen|
 | 12.2 | About ViewPLUSClient | Shows client version information |
 
-## Client Help Content
+<center>
 
+![client2](/img/client2.png)
+
+
+</center>
+
+### Access Rights
+
+Content shown on the client may differ depending on the access privileges of the user, the pages and the defined tags. Pages that do not corresponds with the access rights of the user will not be shown in the "page selector", or links that are directed to those pages will not work. If a visual element on the page contains a tag that the user does not have access to, the user is prevented from watching or controlling this item.
+
+## Alarm Management
+To be able to access alarm management, the user needs to have related access right.
+
+## Report Management
+To be able to access report management, the user needs to have related access right. Report Manager for Operator Client provides same functionality as "SCADA Reporter" tool. For details please refer to ViewPLUS Reporting
+
+<center>
+
+![client3](/img/client3.png)
+
+
+</center>
+
+## Controlling Field Data
+According to the project structure, there are different types of objects you can control over client application. To be able to manipulate a field data, you need to have associated access rights for writing on the tag related with that object.
+
+### Buttons
+Buttons work in a boolean style. They may work in toggle mode or only set/unset mode.
+Value settable Widgets
+You can set some field values by right clicking and selecting "Set Value" option from menu.
+
+### Switches
+There are switches that can be used in on-off and multi-way format.
+
+## Client Help Content
 Defined Help Content Link on Client program can be changed on Pro-jects>>Client Options menu by using "Custom Help Link for Clients" sec-tion. If you would like to disable this option on Client program you can se-lect "Disable Page Selector Panel" option.
 
 <center>
 
-![viewplus-client-help-content-01](/img/viewplus-client-help-content-01.png)
+![client4](/img/client4.png)
+
 
 </center>
 
-When the "Help Contents" option is clicked under the "Help" tab on the Cli-ent Program, it redirects to the link that defined in the Editor Program.
+When the "Help Contents" option is clicked under the "Help" tab on the Client Program, it redirects to the link that defined in the Editor Program.
 
 <center>
 
-![viewplus-client-help-content-02](/img/viewplus-client-help-content-02.png)
+![client5](/img/client5.png)
+
 
 </center>
 
 When the "Help Contents" option is clicked as above, the link defined in the editor is opened over the internet browser.
 
-![viewplus-client-help-content-03](/img/viewplus-client-help-content-03.png)
+<center>
+
+![client6](/img/client6.png)
+
+
+</center>

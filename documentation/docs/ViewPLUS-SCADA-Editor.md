@@ -1,5 +1,5 @@
 ---
-title: ViewPLUS SCADA Editor
+title: Editor
 ---
 
 ## Introduction
@@ -150,6 +150,8 @@ On the far left is navigation buttons that allow you to navigate through the edi
 
 
 </center>
+
+For detailed information: [Creating the project](https://www.youtube.com/watch?v=czQOlx0or2g&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=3).
 
 ## SCADA Editor View
 
@@ -359,6 +361,17 @@ You can add web content into your view by using Web Frame component. You can res
 
 Web frame view is not supported on mobile versions of OperatorClient.
 
+#### Add Objects Mode
+
+Object Insertion Mode is used to bring the last used scada component to the editor screen.
+
+<center>
+
+![add-object](/img/add-object.png)
+
+</center>
+
+
 ### Page Properties Panel
 
 <center>
@@ -549,6 +562,8 @@ Go to page : Page selection for "Go to page" action
 (Web)link: If this field is defined as a web link, a menu entry will be created to access the related page from the right-click menu of the component. You can also create direct link to Alarms page by writing ":Alarms" expression or to Reports page by writing ":Reports" to this field or to previous page by writing ":Back". Other than that you can directly create a link to a report query in this field.
 ```
 
+For detailed information: [Component Event Type and Event Actions](https://www.youtube.com/watch?v=l0icsb53-Ng&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=8).
+
 ### Tags Panel
 
 The values read from the labels selected from this panel are constantly updated according to the values read from the field.
@@ -609,6 +624,8 @@ Images: The images and index numbers defined for the selected component are disp
 </center>
 
 You can move up or down image indexes from the context menu opened by right clicking on the images.
+
+For detailed information: [Limit, Hint, Macro and Index Assignments](https://www.youtube.com/watch?v=7d1n1Myp1Tc&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=9).
 
 ## Projects View
 
@@ -692,6 +709,35 @@ On the "New Tag" dialog write a name and description for the tag. The "tag name"
 </center>
 
 All tags created in the system have common properties that can be changed. These features are:
+
+
+#### Multi-Label Exchange
+
+The letters after the prefix of the labels on the components to be changed must be the same as the letters after the prefix of the labels to be put.
+
+<center>
+
+![multi-label-exchange-1](/img/multi-label-exchange-1.png)
+
+</center>
+
+To change multiple labels, click the Change Labels tab.
+
+<center>
+
+![multi-label-exchange-2](/img/multi-label-exchange-2.png)
+
+</center>
+
+When the necessary action is taken in the Change Labels window, the multi-label change process is completed.
+
+<center>
+
+![multi-label-exchange-3](/img/multi-label-exchange-3.png)
+
+</center>
+
+For detailed information: [Multi-Label Exchange](https://www.youtube.com/watch?v=qyHYIkWGs_k&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=24).
 
 #### General Tag Parameters
 ##### In Use
@@ -831,6 +877,8 @@ When this option is checked, the alarm states will be logged into database
 ##### Enabled
 This option activates/deactivates the alarm
 
+For detailed information: [Alarm Identification and E-mail Sending](https://www.youtube.com/watch?v=hVc3wrQba3o&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=13).
+
 ### Associating PLC and SCADA Projects
 
 As you develop your project, it becomes more important to associate channels in SCADA with PLC projects to avoid confusion.To do this, you can specify the PLC project path in the upper right corner of the channel menu.
@@ -908,7 +956,7 @@ After opening the project on ViewPLUS, on the Tools menu select "Export Tag/Chan
 
 <center>
 
-![import-export-06](/img/import-export-06.png)
+![exporttag](/img/exporttag.png)
 
 
 </center>
@@ -920,7 +968,7 @@ After opening a project on ViewPLUS, on the Tools menu select "Import Tag/Channe
 
 <center>
 
-![import-export-07](/img/import-export-07.png)
+![import-tag](/img/import-tag.png)
 
 
 </center>
@@ -936,7 +984,7 @@ After opening the project on ViewPLUS, on the Tools menu select "Export Users" o
 
 <center>
 
-![import-export-08](/img/import-export-08.png)
+![export-users](/img/export-users.png)
 
 
 </center>
@@ -948,12 +996,14 @@ After opening a project on ViewPLUS, on the Tools menu select "Import Users" opt
 
 <center>
 
-![import-export-09](/img/import-export-09.png)
+![import-users](/img/import-users.png)
 
 
 </center>
 
 Important Note: This operation will overwrite existing users. Thus, this operation may damage your project. Be sure that the exported user id interval and local project's user id interval do not intersect!
+
+-For detailed information: [Channel and User Definitions](https://www.youtube.com/watch?v=cpywPnxuD00&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=22).
 
 ## Macro Guide
 
@@ -1146,10 +1196,41 @@ Marker is selected and then Category part of GIS Object, we select the point as 
 
 You must create a new Modbus Channel to communicate with field devices over TCP using ModBus protocol.
 
-Select "Modbus TCP" as the "Protocol Type" in the dialog for creating a new channel
+Select "Modbus TCP" as the "Protocol Type" in the dialog for creating a new channel.
+
+For detailed information: [Modbus TCP Definitions](https://www.youtube.com/watch?v=9CHtYTDdAIc&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=7).
+
+#### Max. Read Size
+
+<center>
+
+![max.read-size](/img/max.read-size.png)
+
+</center>
+
+
+There is a "Maximum Reading Size" field in the Channel section of the Label Channel Editor tab in ViewPLUS.
+
+<center>
+
+![modbus-read-address](/img/modbus-read-address.png)
+
+</center>
+
+Modbus Protocol supports read/write up to 125 registers for modbus address.
+
 
 #### Channel Parameters
-#### Server Adress
+
+<center>
+
+![modbuskanal](/img/modbuskanal.png)
+***<center>Figure 1: Modbus Channel Screen</center>***
+
+</center>
+
+
+#### Server IP
 The IP address of the device you want to connect to
 #### Server Port  
 Modbus connection port information of the device
@@ -1161,6 +1242,14 @@ It is the time value in milliseconds to wait until a new connection attempt is m
 It is the time value in miliseconds to be waited until the next request is sent, after receiving a response from a Modbus request.
 
 #### Tag Parameters
+
+<center>
+
+![modbustag](/img/modbustag.png)
+***<center>Figure 2: Modbus Tag Screen</center>***
+
+</center>
+
 #### Function Code 
 The IP address of the device you want to connect to
 #### Device Address 
@@ -1177,6 +1266,18 @@ The type of the variable in the identified address
 You must create a new IEC 104 Channel to communicate with the field devices over TCP using the IEC 104 protocol.
 
 #### Channel Parameters
+
+<center>
+
+![kanal-104](/img/kanal-104.png)
+***<center>Figure 1: IEC 104 Channel Screen</center>***
+
+</center>
+
+#### Server IP
+The IP address of the device you want to connect to
+#### Server Port  
+IEC 104 connection port information of the device
 #### W  
 ACK(acknowledge message) sending frequency(sends ACK after W packets)
 #### K   
@@ -1188,16 +1289,81 @@ If no new data will be sent after this time, an ACK is sent
 #### T3   
 Timeout period for test frame
 #### General Interrogation  
-GI message sending frequency
+General Interrogation message sending frequency
 #### Clock Synchronisation  
-CS message sending frequency
+Clock Synchronisation message sending frequency
 #### Timezone GMT  
 Timezone information of server computer
-Tag Parameters
+
+#### Tag Parameters
+
+<center>
+
+![tag-104](/img/tag-104.png)
+***<center>Figure 2: IEC 104 Tag Screen</center>***
+
+</center>
+
+#### ASDU Address
+RTU specifies the address where the device will communicate over IEC 104.
+
 #### Object Type
-...
+
+IEC 104 Adress List:
+
+- Single-point information  (Type=1)
+- Double-point information (Type=3)
+- Step position information (Type=5)
+- Bitstring of 32 bit  (Type=7)
+- Measured value, normalised value (Type=9)
+- Measured value, scaled value (Type=11)
+- Measured value, short floating point number (Type=13)
+- Integrated totals (Type=15)
+- Packed single point information with status change detection (Type=20)
+- Measured value, normalized value without quality descriptor (Type=21)
+- Single-point information with time tag CP56Time2a (Type=30)
+- Double-point information with time tag CP56Time2a (Type=31)
+- Step position information with time tag CP56Time2a (Type=32)
+- Bitstring of 32 bit with time tag CP56Time2a (Type=33)
+- Measured value, normalised value with time tag CP56Time2a (Type=34)
+- Measured value, scaled value with time tag CP56Time2a (Type=35)
+- Measured value, short floating point number with time tag CP56Time2a (Type=36)
+- Integrated totals with time tag CP56Time2a (Type=37)
+- Event of protection equipment with time tag CP56Time2a (Type=38)
+- Packed start events of protection equipment with time tag CP56Time2a (Type=39)
+- Packed output circuit information of protection equipment with time tag CP56Time2a (Type=40)
+- Single command (Type=45)
+- Double command (Type=46)
+- Regulating step command (Type=47)
+- Set-point Command, normalised value (Type=48)
+- Set-point Command, scaled value (Type=49)		
+- Set-point Command, short floating point number (Type=50)
+- Bitstring 32 bit command (Type=51)
+- Single command with time tag CP56Time2a (Type=58)
+- Double command with time tag CP56Time2a (Type=59)
+- Regulating step command with time tag CP56Time2a (Type=60)
+- Measured value, normalised value command with time tag CP56Time2a (Type=61)
+- Measured value, scaled value command with time tag CP56Time2a (Type=62)
+- Measured value, short floating point number command with time tag CP56Time2a (Type=63)
+- Bitstring of 32 bit command with time tag CP56Time2a (Type=64)
+- Interrogation command (Type=100)
+- Counter interrogation command (Type=101)
+- Read command (Type=102)
+- Clock synchronisation command (Type=103)
+- Reset process command (Type=105)
+
 #### InfoObjectAddress 
-...
+
+From the RTU device to be read, the address information of the label is entered.
+
+<center>
+
+![variable-iec](/img/variable-iec.png)
+***<center>Figure 3: Telediagram Variable Addresses Field</center>***
+
+</center>
+
+
 
 ### Channel: DNP3 
 
@@ -1205,42 +1371,196 @@ You must create a new DNP3 Channel to communicate with the field devices over TC
 
 #### Channel Parameters
 
-#### W  
-ACK(acknowledge message) sending frequency(sends ACK after W packets)
-#### K  
+<center>
+
+![dnp3-ch](/img/dnp3-ch.png)
+***<center>Figure 1: DNP3 Channel Screen</center>***
+</center>
+
+
+#### Server Port
+DNP3 Server Port default 20000.
+#### Clock Synchronisation  
+Clock Synchronisation message sending frequency.
+#### Timezone GMT  
+Timezone information of server computer.
+#### Request Timeout
+Indicates the frequency with which the server receives a request message.
+#### Class 1,2,3 Poll Interval(secs)
+It sends seperate queriesto the classes at sspecified time intervals.
+#### Integrity Poll Interval(secs)
+It performs the query as a whole at specified time intervals.
+
+#### Tag Parameters
+
+<center>
+
+![dnp3-tag](/img/dnp3-tag.png)
+***<center>Figure 2: DNP3 Tag Screen</center>***
+</center>
+
 
 ### Channel: SNMP
-This channel is used to connect to SNMP devices. The NetSnmp library must be installed on your system in order for this channel type to work. You can download NetSnmp library from here
-
-#### Parameters
-#### Server Address
-The IP address of the device you want to connect to
-#### Read Comunity
-The "Read Community" information that will be used to access device information.
-#### Tag Parameters
-#### Macro Channel
-This channel is used to create virtual tags and modify them with scripts.
+This channel is used to connect to SNMP devices. The NetSnmp library must be installed on your system in order for this channel type to work. You can download NetSnmp library from here : [Here](http://www.net-snmp.org/download.html).
 
 #### Channel Parameters
+
+<center>
+
+![snmp-ch](/img/snmp-ch.png)
+***<center>Figure 1: SNMP Channel Screen</center>***
+</center>
+
+#### Server IP
+The IP address of the device you want to connect to.
+#### Server Port
+SNMP Server Port default 161.
+#### Tag Parameters
+
+<center>
+
+![snmp-tag](/img/snmp-tag.png)
+***<center>Figure 2: SNMP Tag Screen</center>***
+</center>
+
+
+
+### Macro Channel
+This channel is used to create virtual tags and modify them with scripts.
+
+For detailed information: [Macro Channel Definitions](https://www.youtube.com/watch?v=oA8lWr3p_wc&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=25).
+
+#### Channel Parameters
+
+<center>
+
+![macro-kanal](/img/macro-kanal.png)
+***<center>Figure 1: Macro Channel Screen</center>***
+</center>
+
+
 #### Frame Timeout
 The time in milliseconds that expresses the frequency of operation of the macro.
 #### Tag Parameters
 
+<center>
+
+![macro-channel](/img/macro-channel.png)
+***<center>Figure 2: Macro Programming Screen</center>***
+
+</center>
+
+
+<center>
+
+![macro-komut](/img/macro-komut.png)
+***<center>Figure 3: Macro Commands</center>***
+
+</center>
+
+- "+"  : Add
+- "-"  : Substract
+- "*"  : Multiply
+- "/"  : Divide
+- "%"  : Modding
+- "&"  : Logical and operation
+- "|"  : Logical or operation
+- "?"  : Special operand
+- "^"  : Logical private or operation
+- ">"  : is greater than
+- "<"  : is less than
+- "e"  : Equal to
+- "b"  : More than or equal to
+- "k"  : Less than or equal to
+- "n"  : Not equal to
+
+
 ### Channel: Database
-This is the type of channel used to make queries from SCADA's own database
+This is the type of channel used to make queries from SCADA's own database. By creating a database channel in ViewPLUS SCADA, operations are performed on the database where the server is running.
+This is done by writing a query to the tags created under the channel.
+Queries are entered into the query window. The answers to the query are still displayed in the same label.
+
 
 #### Channel Parameters
+
+<center>
+
+![database-channel](/img/database-channel.png)
+***<center>Figure 1: Database Channel Screen</center>***
+
+</center>
+
 #### Response Timeout
 The number of milliseconds that represents the frequency at which the database query is executed.
+
+
+
+<center>
+
+![database-tag](/img/database-tag.png)
+***<center>Figure 2: Database Tag Screen</center>***
+
+</center>
+
+<center>
+
+![database-query](/img/database-query.png)
+***<center>Figure 3: Database Query Screen</center>***
+
+</center>
+
+
+```
+
+Select data_value from logs.tag_log where tag_id=1 order by logtime  desc limit 1  \\  Indicates the last value for tag_id=1.
+Select data_value from logs.tag_log where tag_id=1 order by logtime  limit 1 \\  Indicates the first value for tag_id=1.
+Select*from logs.tag_log \\ Shows all values.
+
+
+```
+
+
+For detailed information: [Database Channel Definitions](https://www.youtube.com/watch?v=73F15MW64eo&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=23).
 
 ### Channel: Global Database
 It is the type of channel used to connect to different databases to create custom queries and to pass these query results to project tags.
 
 #### Channel Parameters
+
+<center>
+
+![global-channel](/img/global-channel.png)
+***<center>Figure 1: GlobalDatabase Channel Screen</center>***
+
+</center>
+
+<center>
+
+![db-user](/img/db-user.png)
+***<center>Figure 2: Database Name</center>***
+
+</center>
+
 #### Response Timeout
 The number of milliseconds that represents the frequency at which the database query is executed.
 #### Tag Parameters
+
+<center>
+
+![globaldatabase-tag](/img/globaldatabase-tag.png)
+***<center>Figure 3: GlobalDatabase Tag Screen</center>***
+
+</center>
+
 #### Query 
+
+<center>
+
+![database-query](/img/database-query.png)
+***<center>Figure 4: GlobalDatabase Query Screen</center>***
+
+</center>
+
 The query expression to be executed in the database. This tag allows retrieving the first line returned from the query. The return values ??for this first row are written into tags respectively into the tags defined in the form of :{${32}, ${33} , ${34}, ${35},....}:
 An example "Query" expression:
 
@@ -1267,6 +1587,14 @@ In the above PostgreSQL database query, the latest recorded database values of t
 JavaScript functions could be defined JavaScript channel. You can call various Math functions in your script[Reference](https://www.w3schools.com/jsref/jsref_obj_math.asp). You can also use the values of system tags in the form of "${123}". You need to "return" a numeric value for the function result to be written on the "JavaScript Tag"
 
 #### Channel Parameters
+
+<center>
+
+![jv-ch](/img/jv-ch.png)
+***<center>Figure 1: JavaScript Channel Screen</center>***
+
+</center>
+
 #### Response Timeout
 The number of milliseconds that represents the frequency at which the JavaScript function is called.
 Tag Parameters
@@ -1287,10 +1615,25 @@ You cannot set the values of other system tags in JavaScript tag. You need to us
 ${20}= 3 + var1 ;
 ```
 
+For detailed information: [Javascript Channel Definitions](https://www.youtube.com/watch?v=YKGy4F4Z8-I&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=28).
+
 ### Channel: SOAP API Channel
 It is the type of channel used to connect to a SOAP Web Service and to pass the query results into project tags.
 
 #### Channel Parameters
+
+<center>
+
+![webapi-ch](/img/webapi-ch.png)
+***<center>Figure 1: SOAP API Channel Screen</center>***
+</center>
+
+<center>
+
+![webapi-tag](/img/webapi-tag.png)
+***<center>Figure 1: SOAP API Tag Screen</center>***
+</center>
+
 #### Response Timeout
 The number of milliseconds that represents the frequency at which the query is executed.
 Tag Parameters
@@ -1355,7 +1698,7 @@ The method to write the result of the response into the tags is as follows:
 <center>
 
 ![soap-channel-01](/img/soap-channel-01.png)
-***<center>Figure 1: Create Database Channel Screen</center>***
+***<center>Figure 3: Create Database Channel Screen</center>***
 
 </center>
 
@@ -1615,5 +1958,222 @@ Navigation panel can be opened or closed within the window tab on the Client scr
 
 ![navigation-panel-06](/img/navigation-panel-06.png)
 ***<center>Figure 6: Navigation Panel Display Option on ViewPLUS Client</center>***
+
+## Server Software
+
+Server software must be associated with a project in order to run. When run from the editor menu, the currently open project is used by the server. To run the server independently of the editor, a folder is specified by selecting "Editor > Tools > Create Server Files" and the server files are copied to this folder. The "ServerEngine" widget is used to start the server. By default, the "ServerEngine" widget searches for a folder named "Project" in the same folder as itself.
+
+The “Project” folder contains special files created by the editor. The main ones are; “MikrodevScada.ini” is “Project.zip”, “project pages with .sca extension” and component files. The server reads the information such as which database to connect to and where to keep the records in the “MikrodevScada.ini” file.
+
+When the SCADA server is started for the first time, the user may be prompted to enter database connection information. The server can also open a project in a different folder using the following command line parameters.
+
+“ServerEngine –dir “C:\Users\yg\Desktop\server\projectname“ ” 
+-dir : Proje klasörü 
+
+<center>
+
+![server1](/img/server1.png)
+***<center>Server Main Page</center>***
+
+</center>
+
+On the main screen of the server, there is a console where general system logs can be viewed. Important changes related to the server are shown on this console. More detailed server logs are saved in a separate file. When the “Start” button is pressed, the server establishes a connection with the field devices. After the connection is established, the server opens a port that clients can connect to and waits for incoming connections. When the server starts reading data from the field, it saves this data by sending it to the database server as specified in the project settings. Instant values ​​of the data read from the field can be monitored on the label monitoring screen.
+
+<center>
+
+![server2](/img/server2.png)
+***<center>Server Tag Monitoring Screen</center>***
+
+</center>
+
+
+Filtering can be made on the instant values ​​on the tag monitoring screen according to parameters such as tagId, tag name, channel name, device address.
+If there is a text in the form of "dced" next to the numerical data displayed in the "Value" field, this indicates that there is a connection problem between the device and the SCADA server.
+Information about device connection problems can be obtained from this console.
+The alarm screen, on the other hand, provides the history of the alarms that have occurred in the system and the current alarms to be observed.
+
+### Autostart The Server
+
+#### Windows Platform
+
+To start the server automatically, follow these steps (for a sample project called "TestProject"):
+• Create a shortcut to the desktop for the "ServerEngine.exe" program in the installation folder of ViewPLUS.
+
+<center>
+
+![create-shortcut](/img/create-shortcut.png)
+
+</center>
+
+Creating a Shortcut
+• Right click on the created shortcut and select "Properties".
+• Change the "Target" field as follows (Change the file path according to your system):
+
+"C:\Program Files (x86)\ViewPLUS\bin\ServerEngine.exe" -dir "C:\Users\username\TestProjesi" -start  
+
+• Then this shortcut "C:\Users\username\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup" copy below. Now the server will start automatically when the user logs in to the system.
+
+• OperatorClient shortcut "C:\Users\username\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup" It can be automatically started at boot by copying it below.
+
+### Creating a Server Runtime
+
+You can run the developed SCADA project on a different computer without installing ViewPLUS. For this, by selecting "Create Server Files" from the "Tools" menu, you can collect the necessary files for the project and server to work in a folder. By moving this folder, it is possible to run your project on different server machines.
+
+For detailed information: [Autostart The Server](https://www.youtube.com/watch?v=CAR2qN3Xe_k&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=15).
+
+## Client Software
+
+Client Software; It allows end users to monitor and control the prepared project by connecting to the SCADA server over the internet or intranet.
+<center>
+
+![clienthome](/img/clienthome.png)
+***<center>Client Login Screen</center>***
+
+</center>
+
+
+
+In order to connect to the SCADA server, you need to enter the user, password, server address and port information into the client software. You have to use the "User Manager" to create a new user. When this information is entered correctly, an encrypted connection is created between the server and the client software and the project entry screen sent from the server is displayed on the client.
+
+In the "page selector" on the left side of the client screen, shortcuts for pages defined as "SCADA Tab" in the editor are displayed. The appearance and order of the shortcuts shown here can be adjusted in the editor. Besides these shortcuts, there are alarm panel and web view panel shortcuts.
+
+<center>
+
+![client-screen](/img/client-screen.png)
+***<center>Client Screen</center>***
+
+</center>
+
+Content displayed on the client; may vary depending on the access rights of the user, pages and defined tags. Pages that the user does not have access to are not shown in the "page selector" or the links to these pages will not work. If a visual element on the page contains a tag that the user does not have access to, the user is prevented from watching or controlling this element.
+
+## Create New User
+
+<center>
+
+![new-user-1](/img/new-user-1.png)
+
+</center>
+
+In order to create a user and make the necessary configurations in ViewPLUS, Start User Manager is selected under the Tools tab.
+
+<center>
+
+![usernew](/img/usernew.png)
+
+</center>
+
+The New User tab is clicked and a new user is created by filling in the parameters on the page that opens. The created user is displayed under the username under the Users tab.
+
+For detailed information: [User Definitions and Page Authorizations](https://www.youtube.com/watch?v=x-ySrdmeHJI&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=20).
+
+## Reporting Software 
+
+You can use the Reporter to see and analyze the trend data logged by the SCADA software. The reporter allows you to report on three basic log data. These are tag logs, alarm logs and event logs.
+
+### Creating A Reporting Command 
+
+It is possible to generate report output in the desired format by calling the created filters via the reporter command line. For this, it is sufficient to give the necessary command line parameters to the reporting application. By using this feature, it is possible to generate automatic reports at certain time intervals via the "Task Scheduler" of the Windows operating system.
+
+ScadaReporter.exe -database modpollread -user postgres -password laqhd -server localhost -port 5432 -query twohours -format csv -output "C:\Users\yg\Documents\Reports\Son2saat" 
+
+-database          Name of the project database (same as the project)
+-user              Database Username
+-password          Database Username Password
+-server            Database IP Address
+-port              Database Connection Port
+-tnsname           tns name for Oracle Databases
+-format            Report output Format. Possible values: html,csv,xlsx,xml 
+-query             The name of the filter saved in the reporter. This parameter is required for the reporting command. If not, a report cannot be   produced; The reporter interface opens.
+-output           Path and name of the file to output
+
+For detailed information: [Reporter Screen](https://www.youtube.com/watch?v=iLUgWksTYjA&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=19).
+
+## Component Manager
+
+To add new visual components and animations, you need to create "comx" component files. You can use the "Component Manager" for this.
+
+<center>
+
+![component-manager-1](/img/component-manager-1.png)
+
+</center>
+
+When ViewPLUS is started from the Tools menu, the components in the component folder of the relevant project are displayed.
+
+<center>
+
+![component-manager-2](/img/component-manager-2.png)
+
+</center>
+
+To add a New Component, select the image or images to be added by selecting "Add New Component". Images can be in (.png,.jpeg,.gif,.svg) formats.
+
+<center>
+
+![component-manager-3](/img/component-manager-3.png)
+
+</center>
+
+
+Component Name = Enter the name of the component.
+
+Componet Category = The category name we want the component to be is written.
+If more than one component is desired to be under the same category, the same operations are repeated, the important thing is that the category name is the same, otherwise the component is added to a different category.
+
+Use First image's size = This command is used to set the added object to its original size. While adding the objects that we want to change according to the data, it resizes the others according to the dimensions of the first picture.
+
+For detailed information: [Add New Component](https://www.youtube.com/watch?v=1w3nwg0BCN0&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=21).
+
+## Advanced Settings
+
+log_server.txt: 
+
+On Windows systems it is located in the following folder:
+
+"C:\Users\username\AppData\Roaming\Mikrodev\ScadaServer\proje adı"
+
+It is the file containing the detailed logs of the server.
+
+log_serverstarter.txt : 
+
+It is the file containing the logs of the server monitor software.
+
+OperatorClient.ini : 
+
+ServerEngine.ini: 
+
+On Windows systems it is located in the following folder:
+
+"C:\Users\username\AppData\Mikrodev\ScadaServer\proje adı" 
+
+[Login]> ServerAdr: Database Address 
+[Login]> DbName: Database Name
+[Login]> DbUserName: Database Username
+[Login]> DbPassword: Database Password
+[Connection] > Port: The default server port is 560. A different port can be selected by changing this parameter.
+[Logging] > IsLogging:Data logging can be enabled/disabled(true/false) 
+[Logging] > IsLoggingDısconnections: It can be selected whether to log disconnections or not.
+[REDUNDANCY]> ServerMode: It determines the redundant operation mode. This value can be PRIMARY or BACKUP. When this mode is set to backup, the server communicates with the PRIMARY server and creates a redundant file.
+[REDUNDANCY]> PrimaryIP: The PRIMARY server IP address to which the server in BACKUP mode will connect is written in this field.
+[REDUNDANCY]> PrimaryPORT:The port number of the PRIMARY server to which the server in BACKUP mode will connect is written in this field.
+[REDUNDANCY]> Timeout: It is the value in seconds that determines how long the BACKUP server will be active after the PRIMARY server is inactive.
+
+
+
+
+To get more information:
+
+[Mikrodev Website](https://www.mikrodev.com/en/index.php).
+
+[Mikrodev Bilişim Youtube Channel](https://www.youtube.com/channel/UC-67KqN9lzKKQUuZaMt3Zhg/featured).
+
+
+
+
+
+
+
+
+
 
 
