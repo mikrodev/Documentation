@@ -2,18 +2,18 @@
 title: ViewPLUS SCADA Web API
 ---
 
-## Introduction
+## Tanıtım
 
-You can access and control the devices on the field by using ViewPLUS SCADA Node WebAPI.
+ViewPLUS SCADA Node WebAPI kullanarak sahadaki cihazlara erişebilir ve kontrol edebilirsiniz.
 
-Download ViewPLUS SCADA Node WebAPI from the following link:
+Aşağıdaki bağlantıdan ViewPLUS SCADA Node WebAPI'yi indirin:
 
 [SCADA Node Web API](https://www.mikrodev.com/downloads/viewplus/windows/ScadaNodeWebApi_v1.2.zip)
-### Database Connection
+### Veritabanı Bağlantısı
 
-The database type that the project is working on must be specified with the HR_DBTYPE environmental variable (POSTGRES / ORACLE)
-For a project on the Postgresql database, the HR_PGCONNECTIONSTRING environmental variable must be set in the format given in the example below.
-For a project on Oracle database, HR_CONNECTIONSTRING, HR_USER and HR_PASSWORD environmental variables should be set in the following format.
+Projenin üzerinde çalıştığı veritabanı tipi HR_DBTYPE çevre değişkeni ile belirtilmelidir (POSTGRES / ORACLE)
+Postgresql veritabanındaki bir proje için, HR_PGCONNECTIONSTRING çevresel değişkeni aşağıdaki örnekte verilen biçimde ayarlanmalıdır.
+Oracle veritabanı üzerinde bir proje için HR_CONNECTIONSTRING, HR_USER ve HR_PASSWORD çevresel değişkenleri aşağıdaki formatta ayarlanmalıdır.
 
 <center>
 
@@ -21,11 +21,11 @@ For a project on Oracle database, HR_CONNECTIONSTRING, HR_USER and HR_PASSWORD e
 
 </center>
 
-### Starting the Server
+### Sunucuyu Başlatma
 
 * Install node.js
 * Install dependencies:
-	In the application folder type "npm install"
+	Uygulama klasörüne "npm install" yazın
 * Set enviromental variables for:
     HR_DBTYPE : POSTGRES or ORACLE
 	HR_CONNECTIONSTRING : Oracle DB connection string(example : 127.0.0.1/orcl)
@@ -36,11 +36,11 @@ For a project on Oracle database, HR_CONNECTIONSTRING, HR_USER and HR_PASSWORD e
 * Change application secret for JWT on ./config.js
 * Start server by typing "node ."
 
-### For taking an Access token
+### Erişim belirteci almak için
 
-A new user is created in the SCADA. The user must have the "Can Access Reports" authority.
-Inside the body, a POST query is sent to   http://localhost:3000/api/auth/login with the keys "username" and "password". 
-A token is taken as follows:
+SCADA'da yeni bir kullanıcı oluşturulur. Kullanıcı "Raporlara Erişebilir" yetkisine sahip olmalıdır.
+Gövde içinde, "username" ve "password" tuşlarıyla http://localhost:3000/api/auth/login adresine bir POST sorgusu gönderilir.
+Bir jeton aşağıdaki gibi alınır:
 
 ```
 {
@@ -49,11 +49,11 @@ A token is taken as follows:
 }
 ```
 
-http://localhost:3000 is given as an example. Replace this with the actual system's IP and Port information.
+http://localhost:3000 örnek olarak verilmiştir. Bunu gerçek sistemin IP ve Bağlantı Noktası bilgileriyle değiştirin.
 
-###  To read data from API
+### API'den veri okumak için
 
-The following GET requests can be sent by adding this token to the "x-access-token" key value in the header:
+Bu belirteç başlıktaki "x-access-token" anahtar değerine eklenerek aşağıdaki GET istekleri gönderilebilir:
 
 * Information of all tags defined in the system
 ```
@@ -215,60 +215,3 @@ localhost:3000/api/auth/write_buffer
 ![scada-webapi-03](/img/scada-webapi-03.png)
 
 </center>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -2,7 +2,7 @@
 title: ViewPLUS SCADA Data Manager
 ---
 
-Archives are used to reduce the size in high-dimensional databases and to make a more detailed search between logs. To get to the archive screen, data manager is started from the tools tab.
+Arşivler, yüksek boyutlu veritabanlarında boyutu küçültmek ve loglar arasında daha detaylı arama yapmak için kullanılır. Arşiv ekranına ulaşmak için araçlar sekmesinden veri yöneticisi başlatılır.
 
 <center>
 
@@ -11,7 +11,7 @@ Archives are used to reduce the size in high-dimensional databases and to make a
 
 </center>
 
-Archiving is selected in the window that opens.
+Açılan pencerede Arşivleme seçilir.
 
 <center>
 
@@ -20,7 +20,7 @@ Archiving is selected in the window that opens.
 
 </center>
 
-Date is entered in Archieve Data Older Than section. All logs saved in the database before the date entered will be transferred to the archive database. Archiving is started by clicking Start Archiving.
+Daha Eski Verileri Arşivle bölümüne Tarih girilir. Veritabanına girilen tarihten önce kaydedilen tüm loglar arşiv veritabanına aktarılacaktır. Arşivleme Başlat seçeneğine tıklanarak arşivleme başlatılır.
 
 <center>
 
@@ -29,7 +29,7 @@ Date is entered in Archieve Data Older Than section. All logs saved in the datab
 
 </center>
 
-When OK is selected for the warning displayed after archiving, archived logs in the main database are deleted. Since these logs are deleted, they will not be displayed in reporting in the main project. It can only be accessed from the Archive database. If Cancel is selected, logs are kept in the main database and logs are saved in the archive database.
+Arşivleme sonrası çıkan uyarı için OK seçildiğinde ana veri tabanındaki arşivlenmiş loglar silinir. Bu günlükler silindiği için ana projede raporlamada görüntülenmeyecektir. Yalnızca Arşiv veritabanından erişilebilir. İptal seçilirse loglar ana veritabanında tutulur ve loglar arşiv veritabanına kaydedilir.
 
 <center>
 
@@ -38,7 +38,7 @@ When OK is selected for the warning displayed after archiving, archived logs in 
 
 </center>
 
-After seeing the text Archive process completed in the data manager, archiving process is completed.
+Veri yöneticisinde Arşivleme işlemi tamamlandı yazısını gördükten sonra arşivleme işlemi tamamlanır.
 
 <center>
 
@@ -47,7 +47,7 @@ After seeing the text Archive process completed in the data manager, archiving p
 
 </center>
 
-It is seen that a new database named main database archive has been created.
+Ana veritabanı arşivi adında yeni bir veritabanının oluşturulduğu görülüyor.
 
 <center>
 
@@ -56,7 +56,7 @@ It is seen that a new database named main database archive has been created.
 
 </center>
 
-Logs before the archiving date determined in the data manager are displayed in the archivetestlog_archive database.
+Veri yöneticisinde belirlenen arşivleme tarihinden önceki günlükler,archivetestlog_archive veritabanında görüntülenir.
 
 <center>
 

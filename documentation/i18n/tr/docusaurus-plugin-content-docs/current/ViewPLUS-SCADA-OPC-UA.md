@@ -3,13 +3,12 @@ title: ViewPLUS SCADA OPC UA Server Service
 ---
 
 
-### Install OPC UA Server Service
+### OPC UA Sunucu Hizmetini Kurun
 
-Download the latest version of ViewPLUS SCADA from the MIKRODEV website and install it.
+MIKRODEV web sitesinden ViewPLUS SCADA'nın en son sürümünü indirin ve kurun.
 [ViewPLUS SCADA Link](https://www.mikrodev.com/en/scada/) 
 
-Under the ViewPLUS SCADA tools tab, the installation process is performed with the “Install OPC
-Server Service” option.
+ViewPLUS SCADA araçları sekmesi altında “OPC Sunucu Hizmeti Kur” seçeneği ile kurulum işlemi gerçekleştirilir.
 
 <center>
 
@@ -18,7 +17,7 @@ Server Service” option.
 
 </center>
 
-In the task manager Services, it is checked that the “VPlusScadaOPCService” service is running.
+Servisler görev yöneticisinde “VPlusScadaOPCService” servisinin çalıştığı kontrol edilir.
 
 <center>
 

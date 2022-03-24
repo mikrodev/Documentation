@@ -2,11 +2,11 @@
 title: ViewPLUS SCADA Database
 ---
 
-### Database Tables
+### Veritabanı Tabloları
 
-ViewPLUS SCADA uses various database tables for handling SCADA Project, logging and reporting.
+ViewPLUS SCADA, SCADA Projesini yönetmek, günlüğe kaydetmek ve raporlamak için çeşitli veritabanı tablolarını kullanır.
 
-For PostgreSQL The tables are seperated by "public" and "logs" schemas. The public schema consists of project channels, tags, users related tables. The "logs" schema consists of logs and statistical log tables.
+PostgreSQL için Tablolar "public" ve "logs" şemalarına göre ayrılmıştır. Genel şema proje kanalları, etiketler, kullanıcılarla ilgili tablolardan oluşur. "Günlükler" şeması, günlüklerden ve istatistiksel günlük tablolarından oluşur.
 
 <center>
 
@@ -14,13 +14,13 @@ For PostgreSQL The tables are seperated by "public" and "logs" schemas. The publ
 
 </center>
 
-alarms : This table contains alarm definitions created by SCADA editor
+alarmlar : Bu tablo SCADA editörü tarafından oluşturulan alarm tanımlarını içerir
 
-channels : Channel definitions contains connection information to the field devices
+kanallar : Kanal tanımları saha cihazlarına bağlantı bilgilerini içerir
 
-tags : These are the the tag definitions used to define the tag details in the system
+etiketler : Sistemde etiket detaylarını tanımlamak için kullanılan etiket tanımlarıdır
 
-users: Table of authorised users list for the project
+kullanıcılar: Proje için yetkili kullanıcılar listesi
 
 <center>
 
@@ -28,22 +28,22 @@ users: Table of authorised users list for the project
 
 </center>
 
-aalm_table : This table contains the real time active alarms information of the system
+alarm_table : Bu tablo sistemin gerçek zamanlı aktif alarm bilgilerini içerir.
 
-alarm_log : Contains historical alarm information
+alarm_log : Geçmiş alarm bilgilerini içerir
 
-event_log : It contains event information like user login, user requests etc.
+event_log : Kullanıcı girişi, kullanıcı istekleri vb. olay bilgilerini içerir.
 
-lcd_table : This is the latest change time table containing the latest read values of the system tags from the field devices.
+lcd_table : Saha cihazlarından sistem etiketlerinin en son okunan değerlerini içeren en son değişiklik zaman tablosudur.
 
-tag_log : All the raw data gathered from the field is recorded into tag_log table. This table can increase very rapidly in size.
+tag_log : Alandan toplanan tüm ham veriler tag_log tablosuna kaydedilir. Bu tablonun boyutu çok hızlı büyüyebilir.
 
-tag_log_agrhour : The hourly statistical table of system tags. The statistics are calculated using tag_log table. The table is updated once a minute.
+tag_log_agrhour : Sistem etiketlerinin saatlik istatistiksel tablosu. İstatistikler tag_log tablosu kullanılarak hesaplanır. Tablo dakikada bir güncellenir.
 
-tag_log_agrday : The daily statistical table of system tags. The statistics are calculated using tag_log_agrhour table. The table is updated once a minute.
+tag_log_agrday : Sistem etiketlerinin günlük istatistiksel tablosu. İstatistikler tag_log_agrhour tablosu kullanılarak hesaplanır. Tablo dakikada bir güncellenir.
 
-tag_log_agrweek : The daily statistical table of system tags. The statistics are calculated using tag_log_agrday table. The table is updated once a minute.
+tag_log_agrweek : Sistem etiketlerinin günlük istatistiksel tablosu. İstatistikler tag_log_agrday tablosu kullanılarak hesaplanır. Tablo dakikada bir güncellenir.
 
-tag_log_agrmonth : The daily statistical table of system tags. The statistics are calculated using tag_log_agrday table. The table is updated once a minute.
+tag_log_agrmonth : Sistem etiketlerinin günlük istatistiksel tablosu. İstatistikler tag_log_agrday tablosu kullanılarak hesaplanır. Tablo dakikada bir güncellenir.
 
-tag_log_agryear : The daily statistical table of system tags. The statistics are calculated using tag_log_agryear table. The table is updated once a minute.
+tag_log_agryear : Sistem etiketlerinin günlük istatistiksel tablosu. İstatistikler tag_log_agryear tablosu kullanılarak hesaplanır. Tablo dakikada bir güncellenir.

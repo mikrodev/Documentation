@@ -2,32 +2,20 @@
 title: MBS100 Software Manual
 ---
 
-## MODBUS Gateway Configuration Software
+## MODBUS Ağ Geçidi Konfigürasyon Yazılımı
 
 [MBS100 Software Manual](https://www.mikrodev.com/en/docs/ModbusGateway/software_manual/MIKRODEV_SM_MBS100_CG_EN.pdf)
 
-### General Information
+### Genel Bilgi
 
-The Assistant software is used to make all necessary settings for the Mikrodev Gateway
-devices. Thanks to the software, device settings can be made online and/or offline. The
-settings that are loaded on the device can easily be downloaded and the previously saved
-settings can easilly be uploaded into the device by the program.
-The connection between the program and the device can be established in various ways
-such as USB, Ethernet, GSM, Wi-Fi. For Ethernet supported devices; there is also the ability
-to search the network and list details with connection information.
+Mikrodev Gateway cihazları için gerekli tüm ayarların yapılabilmesi için Assistant yazılımı kullanılmaktadır. Yazılım sayesinde cihaz ayarları online ve/veya offline olarak yapılabilmektedir. Cihaza yüklenen ayarlar kolaylıkla indirilebilir ve önceden kaydedilmiş ayarlar program tarafından kolaylıkla cihaza yüklenebilir. Program ile cihaz arasındaki bağlantı USB, Ethernet, GSM, Wi-Fi gibi çeşitli şekillerde kurulabilir. Ethernet destekli cihazlar için; Ayrıca ağda arama yapma ve bağlantı bilgileriyle ayrıntıları listeleme özelliği de vardır.
 
-### Device Connection
+### Cihaz Bağlantısı
 
-#### USB Serial Connection
+#### USB Seri Bağlantı
 
-One of the methods for establishing communication between PC and Mikrodev device in
-device configuration is USB serial connection. In order to perform USB connection
-between PC and device, you need to install USB driver for PCs with Windows 7/8 / 8.1
-operating systems. There is no need to install the USB driver for Windows 10 operating
-systems. For serial connection over USB, “Connect over USB" box in the Connect and
-Configure Your Device section of the Assistant software is selected. In the USB Port
-Selection section, you should select the port and click "Connect". USB connection will be
-established after that.
+Cihaz konfigürasyonunda PC ile Mikrodev cihazı arasında iletişim kurma yöntemlerinden biri de USB seri bağlantıdır. PC ile cihaz arasında USB bağlantısı yapabilmek için Windows 7/8 / 8.1 işletim sistemli PC'ler için USB sürücüsünü yüklemeniz gerekmektedir. Windows 10 işletim sistemleri için USB sürücüsünü yüklemeye gerek yoktur. USB üzerinden seri bağlantı için Assistant yazılımının Connect and Configure Your Device bölümünde “Connect over USB” kutusu seçilidir. USB Port Selection bölümünde port seçip “Connect”e tıklamanız gerekmektedir.
+Bundan sonra USB bağlantısı kurulacaktır.
 
 <center>
 
@@ -35,14 +23,9 @@ established after that.
 
 </center>
 
-#### TCP Connection – Device Discovery Mode
+#### TCP Bağlantısı – Cihaz Bulma Modu
 
-"Network Discovery" option is used to detect and connect IP addresses of Mikrodev
-devices which are active in the local network. The "Network Discovery " box will be
-highlighted after the "Connect via TCP" box is checked in the Connect and Configure to
-Device section of the Assistant software. After clicking "Scan Network for Mikrodev
-Devices", the serial number, IP address, listening port and software versions of all Mikrodev devices which are active in the network are listed on the screen. You
-can connect the device on the list by double clicking on the device name on the screen.
+Yerel ağda aktif olan Mikrodev cihazlarının IP adreslerini tespit etmek ve bağlamak için "Network Discovery" seçeneği kullanılır. Assistant yazılımının Connect and Configure to Device (Cihaza Bağlan ve Yapılandır) bölümünde "Connect via TCP" kutusu işaretlendikten sonra "Network Discovery" kutusu vurgulanacaktır. "Ağı Mikrodev Cihazları için Tara" seçeneğine tıkladıktan sonra, ağda aktif olan tüm Mikrodev cihazlarının seri numarası, IP adresi, dinleme portu ve yazılım sürümleri ekranda listelenir. Ekrandaki cihaz ismine çift tıklayarak listedeki cihazı bağlayabilirsiniz.
 
 <center>
 
@@ -50,15 +33,9 @@ can connect the device on the list by double clicking on the device name on the 
 
 </center>
 
-#### TCP Connection – Manual
+#### TCP Bağlantısı – Manuel
 
-When manually entering the ip address and port number of the device that is active in
-the local network, "Manual" option is used. The "Manual" box is checked after the
-"Connect over TCP" checkbox is checked in the Connect and Configure Device section
-from the Assistant software. The IP address of the device to be connected is entered into
-the "Device IP" section, the port number is entered into the "Port" section and "Connect"
-is clicked. Assistant software connects to the Mikrodev device with specified ip
-address and port number.
+Yerel ağda aktif olan cihazın ip adresi ve port numarası manuel olarak girilirken "Manuel" seçeneği kullanılır. Assistant yazılımından Connect and Configure Device bölümünde "Connect over TCP" onay kutusu işaretlendikten sonra "Manual" kutusu işaretlenir. "Aygıt IP" bölümüne bağlanılacak cihazın IP adresi girilir, "Port" bölümüne port numarası girilir ve "Bağlan" tıklanır. Asistan yazılımı Mikrodev cihazına belirtilen ip adresi ve port numarası ile bağlanır.
 
 <center>
 
@@ -66,15 +43,9 @@ address and port number.
 
 </center>
 
-### Offline Settings
+### Çevrimdışı Ayarlar
 
-Offline mode is used when parameter settings are made and saved without connecting to
-the device. Click on "Click here for offline configuration" on the Assistant main screen
-when you want to make the offline parameter settings. The device is selected in the
-screen that appears, and then "Select this device" is clicked. Offline parameter
-settings of the selected device can be made. In addition, using the "Load from
-configuration file" option on the same page, previously saved configuration values can
-also be loaded to the program.
+Çevrimdışı mod, cihaza bağlanmadan parametre ayarları yapıldığında ve kaydedildiğinde kullanılır. Çevrimdışı parametre ayarlarını yapmak istediğinizde Asistan ana ekranında "Çevrimdışı konfigürasyon için buraya tıklayın" seçeneğine tıklayın. Gelen ekranda cihaz seçilir ve ardından "Bu cihazı seç" tıklanır. Seçilen cihazın offline parametre ayarları yapılabilir. Ayrıca aynı sayfadaki "Yapılandırma dosyasından yükle" seçeneği kullanılarak daha önce kaydedilmiş yapılandırma değerleri de programa yüklenebilir.
 
 <center>
 
@@ -82,15 +53,11 @@ also be loaded to the program.
 
 </center>
 
-## MODBUS Gateway Settings
+## MODBUS Ağ Geçidi Ayarları
 
-### Status Screen
+### Durum Ekranı
 
-It is the status information screen which shows related information to the connected
-Mikrodev device. This screen contains the device's manufacturing information, Ip settings
-and serial connection settings (RS-485, RS-232). You can access the web
-interface of the device from this screen as well. Select "Click here to access the web
-interface of the device" to access the web interface.
+Bağlı olan Mikrodev cihazı ile ilgili bilgileri gösteren durum bilgisi ekranıdır. Bu ekranda cihazın üretim bilgileri, Ip ayarları ve seri bağlantı ayarları (RS-485, RS-232) yer almaktadır. Cihazın web arayüzüne de bu ekrandan ulaşabilirsiniz. Web arayüzüne erişmek için "Cihazın web arayüzüne erişmek için buraya tıklayın" seçeneğini seçin.
 
 <center>
 
@@ -98,16 +65,10 @@ interface of the device" to access the web interface.
 
 </center>
 
-### Basic Settings
+### Temel Ayarlar
 
-In the basic settings section, parameter set values are entered according to
-communication types. For Ethernet connection enter the local ip, gateway ip, subnet and
-for GSM connection enter the APN, user name, user password. SSID (Modem user name)
-and password are entered when wifi connection is requested. In addition; the password
-definition for access control to the Mikrodev device is performed on this page. In
-addition, device connection follow-up duration, auto reset duration, and configuration
-port can be entered. You can send ID after connection by checking the "Send ID after
-connection" checkbox.
+Temel ayarlar bölümünde haberleşme tiplerine göre parametre set değerleri girilir. Ethernet bağlantısı için yerel ip, ağ geçidi ipi, alt ağ girin ve GSM bağlantısı için APN, kullanıcı adı, kullanıcı şifresini girin. SSID (Modem kullanıcı adı)
+ve şifre wifi bağlantısı istendiğinde girilir. Ek olarak; Mikrodev cihazına erişim kontrolü için şifre tanımlaması bu sayfada yapılmaktadır. Ayrıca cihaz bağlantı takip süresi, otomatik sıfırlama süresi ve konfigürasyon portu girilebilir. "Bağlantıdan sonra kimliği gönder" onay kutusunu işaretleyerek bağlantıdan sonra kimlik gönderebilirsiniz.
 
 <center>
 
@@ -115,13 +76,10 @@ connection" checkbox.
 
 </center>
 
-### MODBUS Settings
+### MODBUS Ayarları
 
-The Modbus settings of the device are made in Modbus settings section. In the case of
-connection via Modbus TCP, server or client selection of connection type is made and port
-settings are defined. When the MBS100 series is to be operated in the client client mode, the
-relevant box is marked according to the serial (RTU) connection types (RS-232, RS-485) and
-the Ip setting, port number, baud rate, databit value, parity value and stop bit are set.
+Cihazın Modbus ayarları Modbus ayarları bölümünde yapılır. Modbus TCP üzerinden bağlantı yapılması durumunda bağlantı tipi sunucu veya istemci seçimi yapılır ve port ayarları tanımlanır. MBS100 serisi istemci istemci modunda çalıştırılacağı zaman,
+ilgili kutu seri (RTU) bağlantı tiplerine (RS-232, RS-485) göre işaretlenir ve Ip ayarı, port numarası, baud hızı, databit değeri, parite değeri ve stop biti ayarlanır.
 
 <center>
 
@@ -129,10 +87,9 @@ the Ip setting, port number, baud rate, databit value, parity value and stop bit
 
 </center>
 
-### Loading Settings to Device
+### Ayarları Cihaza Yükleme
 
-Click "Device Management" on the Assistant software to send the configuration settings
-to the device. Then click "Send Configuration" option.
+Konfigürasyon ayarlarını cihaza göndermek için Asistan yazılımında "Aygıt Yönetimi"ne tıklayın. Ardından "Yapılandırmayı Gönder" seçeneğine tıklayın.
 
 <center>
 
@@ -140,8 +97,7 @@ to the device. Then click "Send Configuration" option.
 
 </center>
 
-After completing the configuration, the device must be rebooted in order to register the
-settings.
+Yapılandırma tamamlandıktan sonra, ayarların kaydedilmesi için cihazın yeniden başlatılması gerekir.
 
 <center>
 
@@ -149,9 +105,7 @@ settings.
 
 </center>
 
-Restart the device by clicking "Restart Device" under "Device Management" on the main
-screen of the Assistant program. When the device is rebooted, you may need to remove
-and reinsert the USB cable to reconnect with the serial port. 
+Asistan programının ana ekranında "Aygıt Yönetimi" altında "Cihazı Yeniden Başlat" seçeneğine tıklayarak cihazı yeniden başlatın. Aygıt yeniden başlatıldığında, seri bağlantı noktasına yeniden bağlanmak için USB kablosunu çıkarmanız ve yeniden takmanız gerekebilir.
 
 <center>
 
@@ -159,9 +113,7 @@ and reinsert the USB cable to reconnect with the serial port.
 
 </center>
 
-The TCP connection between the device and the PC will be established automatically after
-the device is rebooted, after waiting approximately 20 seconds to reconnect to the device
-through the TCP connection.
+Cihaz yeniden başlatıldıktan sonra, TCP bağlantısı üzerinden cihaza yeniden bağlanmak için yaklaşık 20 saniye bekledikten sonra cihaz ile PC arasındaki TCP bağlantısı otomatik olarak kurulacaktır.
 
 <center>
 
@@ -171,12 +123,7 @@ through the TCP connection.
 
 ### Terminal
 
-Terminal window is the section where the commands for the MMS100 series converters are
-entered. In this section, information coming from the device is displayed on the screen. In the
-"Custom Command Input" section, type the command to be queried (eg AT + VERSION =?)
-And click "Send" to send the query to the device. The query answer appears on the screen.
-Click on "Clear History" in the "Console Window" section to clear the queries that
-are displayed on the screen.
+Terminal penceresi, MMS100 serisi dönüştürücüler için komutların girildiği bölümdür. Bu bölümde cihazdan gelen bilgiler ekrana gelir. "Özel Komut Girişi" bölümüne sorgulanacak komutu yazın (örn. AT + VERSION =?) ve sorguyu cihaza göndermek için "Gönder"e tıklayın. Sorgu yanıtı ekranda belirir. Ekranda görüntülenen sorguları temizlemek için "Konsol Penceresi" bölümünde "Geçmişi Temizle" seçeneğine tıklayın.
 
 <center>
 

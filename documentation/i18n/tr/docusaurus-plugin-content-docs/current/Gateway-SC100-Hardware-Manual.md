@@ -1,6 +1,7 @@
 ---
 title: SC100 Donanım Klavuzu
 ---
+
 ## SC100 Genel Bilgiler
 
 [SC100 Hardware Manual](https://www.mikrodev.com/en/docs/SerialDeviceServer/hardware_manual/MIKRODEV_HM_SC100_en.pdf)
