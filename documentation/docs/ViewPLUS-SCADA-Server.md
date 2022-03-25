@@ -1,5 +1,5 @@
 ---
-title: Scada Server
+title: ViewPLUS SCADA Server
 ---
 
 ## Overview

@@ -1,16 +1,16 @@
 ---
-title: Example Projects
+title: ViewPLUS SCADA Örnek Projeler
 ---
 
-## Alarm Projects
+## Alarm Projeleri
 
-### Applying Filter to Active Alarms and Records
+### Aktif Alarmlara ve Kayıtlara Filtre Uygulama
 
-By creating a filter, redirects to logs and active alarm page that can be made from within the pages.
+Filtre oluşturularak, sayfaların içinden yapılabilecek loglara ve aktif alarm sayfasına yönlendirmeler yapılır.
 
-From the Scada reporter screen, requested alarm or tag records could be filtered by selecting. In the window that appears after the selection screen, the date duration is selected, and the filter is added by clicking on “Save This Filter”. The added filters appear in "Saved Filters" on the right side of the page.
+Scada raportör ekranından istenilen alarm veya etiket kayıtları seçilerek filtrelenebilir. Seçim ekranının ardından gelen pencerede tarih süresi seçilir ve “Bu Filtreyi Kaydet” tıklanarak filtre eklenir. Eklenen filtreler, sayfanın sağ tarafında "Kayıtlı Filtreler" bölümünde görünür.
 
-By right click on the saved filter and the link information is received. The received link information is added as a (Web) Link on the component.
+Kaydedilen filtreye sağ tıklandığında link bilgisi alınır. Alınan bağlantı bilgileri, bileşene (Web) Bağlantısı olarak eklenir.
 
 ![active-alarm-01](/img/active-alarm-01.png)
 ***<center>Figure 1: Alarm Logs</center>***
@@ -72,12 +72,12 @@ By right click on the saved filter and the link information is received. The rec
 ![active-alarm-02](/img/active-alarm-02.png)
 ***<center>Figure 2: Applied Filter on Alarm Log</center>***
 
-In order to redirect the alarm logs with filters, at the end of the link, “||| 1: AlarmName ”parameter expression is added. 
-e.g for Alarm_5; “ ||| 1: Alarm_5 ”.
+Alarm loglarını filtrelerle yönlendirmek için linkin sonunda “||| 1: AlarmName ”parametre ifadesi eklendi.
+örneğin Alarm_5 için; “ ||| 1: Alarm_5 ”.
 
-The expression with "1" indicates the "alarm_id" column on the "Scada Reporter" screen. Each column is expressed in numbers starting from 0 from left to right.
+"1" olan ifade, "Scada Reporter" ekranındaki "alarm_id" sütununu gösterir. Her sütun, 0'dan başlayarak soldan sağa sayılarla ifade edilir.
 
-The expression specified with "alarm_5" filters according to the alarm ids under the "alarm_id" column. 
+"alarm_5" ile belirtilen ifade, "alarm_id" sütunu altındaki alarm kimliklerine göre filtrelenir.
 
 ![active-alarm-03](/img/active-alarm-03.png)
 ***<center>Figure 3: Adding Filter on Component by Web Link</center>***
@@ -140,7 +140,7 @@ The expression specified with "alarm_5" filters according to the alarm ids under
 ![active-alarm-04](/img/active-alarm-04.png)
 ***<center>Figure 4: Weblink Result for Filtered Alarm: Alarm_5</center>***
 
-The expression indicated with “: Alarms” is used to redirect to active alarms page.
+“: Alarmlar” ile gösterilen ifade aktif alarmlar sayfasına yönlendirmek için kullanılır.
 
 ![active-alarm-05](/img/active-alarm-05.png)
 ***<center>Figure 5: Adding “:Alarms” expression to WebLink Line for Showing Activated Alarms</center>***
@@ -148,7 +148,7 @@ The expression indicated with “: Alarms” is used to redirect to active alarm
 ![active-alarm-06](/img/active-alarm-06.png)
 ***<center>Figure 6: Weblink Result for “:Alarms” Expression</center>***
 
-The expression ": Alarms ||| 7: Alarm_5" filters according to the seventh column and redirects it to the active alarm page.
+": Alarmlar ||| 7: Alarm_5" ifadesi yedinci sütuna göre filtreleme yapar ve aktif alarm sayfasına yönlendirir.
 
 ![active-alarm-07](/img/active-alarm-07.png)
 ***<center>Figure 7: Adding WebLink for Actived & Filtered Alarms</center>***
@@ -156,11 +156,11 @@ The expression ": Alarms ||| 7: Alarm_5" filters according to the seventh column
 ![active-alarm-08](/img/active-alarm-08.png)
 ***<center>Figure 8: Result of Weblink for Activated and Filtered Alarms</center>***
 
-## Creating Constantly Increasing Counter Tag
+## Sürekli Artan Sayaç Etiketi Oluşturma
 
-In some cases, it may be desirable that the trend of the tag value read from the field is continuously increasing (such as reading a counter). In such cases, when the data read from the field is contaminated because of device replacement, project update, and etc.; trends and counter total values may also get contaminated. To prevent this, a mechanism on SCADA can be configured in the following way.
+Bazı durumlarda, alandan okunan etiket değerinin eğiliminin sürekli artması (bir sayaç okuma gibi) istenebilir. Bu gibi durumlarda sahadan okunan veriler cihaz değişimi, proje güncelleme vb. nedenlerle kirlendiğinde; eğilimler ve karşı toplam değerler de kirlenebilir. Bunu önlemek için SCADA üzerinde aşağıdaki şekilde bir mekanizma yapılandırılabilir.
 
-We need 3 seperate tags to solve the problem. As an example we will create a "CounterTag" tag. In parallel we will create a "CounterTag_latest" tag under "Database Channel" and a "CounterTag_controller" tag under Macro channel to fix field-based distortions so that this tag can read the latest value logged in the database.
+Problemi çözmek için 3 ayrı etikete ihtiyacımız var. Örnek olarak bir "CounterTag" etiketi oluşturacağız. Paralel olarak, "Veritabanı Kanalı" altında bir "CounterTag_latest" etiketi ve alan tabanlı bozulmaları düzeltmek için Makro kanalı altında bir "CounterTag_controller" etiketi oluşturacağız, böylece bu etiket veritabanında kaydedilen en son değeri okuyabilir.
 
 <center>
 
@@ -168,15 +168,15 @@ We need 3 seperate tags to solve the problem. As an example we will create a "Co
 
 </center>
 
-We will use the following query in the tag settings to get the most recent value we have logged into the "CounterTag_latest" tag:
+"CounterTag_latest" etiketine giriş yaptığımız en son değeri almak için etiket ayarlarında aşağıdaki sorguyu kullanacağız:
 
 ```
 select dataval from logs.lct_table where tag_id=2 
 ```
 
-This query will read the last logged value of the "CounterTag" tag with tag ID "2"
+Bu sorgu, "2" etiket kimliğine sahip "CounterTag" etiketinin son kaydedilen değerini okuyacaktır.
 
-Finally, we will add the control macro to the "CounterTag_controller" tag. The macro will be:
+Son olarak "CounterTag_controller" etiketine kontrol makrosunu ekleyeceğiz. Makro şöyle olacaktır:
 
 <center>
 
@@ -197,48 +197,48 @@ Finally, we will add the control macro to the "CounterTag_controller" tag. The m
 [E]
 ```
 
-This macro consists of 3 main sections:
+Bu makro 3 ana bölümden oluşur:
 
-Lines numbered as "1"; reads the last logged value from the database when the server is running for the first time.
+"1" olarak numaralandırılmış satırlar; sunucu ilk kez çalışırken veritabanından son günlüğe kaydedilen değeri okur.
 
-Lines numbered as "2"; sets the value to be the value on the field device if it is less than the last log value for any reason.
+"2" olarak numaralandırılmış satırlar; herhangi bir nedenle son log değerinden küçükse saha cihazındaki değeri ayarlar.
 
-Lines numbered as "3"; is the part where macro continuously updates the control tag.
+"3" olarak numaralandırılmış satırlar; makronun kontrol etiketini sürekli güncellediği kısımdır.
 
-In order to prevent erroneous logs in addition to the structure created above, the "log only while increasing" option should be enabled in the tag logging settings.
+Yukarıda oluşturulan yapıya ek olarak hatalı logların oluşmasını önlemek için etiket loglama ayarlarında "sadece artarken log" seçeneği aktif edilmelidir.
 
-## User Manager Applications
+## Kullanıcı Yöneticisi Uygulamaları
 
-### User Authorization in Dynamic Pages
+### Dinamik Sayfalarda Kullanıcı Yetkilendirmesi
 
-The "Run Function" parameter is defined in the relevant object for the dynamic page which is needed restricted access.
+Kısıtlı erişime ihtiyaç duyulan dinamik sayfa için ilgili nesnede "Run Function" parametresi tanımlanır.
 
-The "data1 = data2" information changes the tag names starting with data 1 in the directed page to the tag named data2.
-The information used after the semicolon indicates the access numbers for the page to be redirected.
+"data1 = data2" bilgisi, yönlendirilen sayfada data 1 ile başlayan tag isimlerini data2 isimli tag ile değiştirir.
+Noktalı virgülden sonra kullanılan bilgiler, yönlendirilecek sayfanın erişim numaralarını gösterir.
 
 ![function-parameters-01](/img/function-parameters-01.png)
 ***<center>Figure 1: Assigning Rights by Run Function Parameters</center>***
 
-In order to access the page content specified with "requireReadAccess = {1,2,4}", these numbers must be marked under the User Access Rights.
-If these numbers are not checked in the User Access Rights window, they cannot access the relevant page.
+"requireReadAccess = {1,2,4}" ile belirtilen sayfa içeriğine erişmek için bu numaraların Kullanıcı Erişim Hakları altında işaretlenmesi gerekmektedir.
+Kullanıcı Erişim Hakları penceresinde bu numaralar işaretlenmemiş ise ilgili sayfaya ulaşamazlar.
 
 ![useraccessrights-02](/img/useraccessrights-02.png)
 ***<center>Figure 2: Selecting Rights for User</center>***
 
-If the numbers in the "requireReadAccess" content are not selected in the user access right, the following warning screen is displayed when you want to be directed to the page.
+Kullanıcı erişim hakkı içerisinde "requireReadAccess" içeriğindeki sayılar seçilmemiş ise sayfaya yönlendirilmek istediğinizde aşağıdaki uyarı ekranı gelmektedir.
 
 ![useraccessrights-03](/img/useraccessrights-03.png)
 ***<center>Figure 3: Example For Unauthorized Access Try</center>***
 
-## ViewPLUS SCADA Protocol Applications
+## ViewPLUS SCADA Protokol Uygulamaları
 
-### Channel: Database
+### Kanal: Veritabanı
 
-Channel type used to make special queries from SCADA's own database.
+SCADA'nın kendi veri tabanından özel sorgular yapmak için kullanılan kanal tipi.
 
-#### Create Channels And Tags
+#### Kanallar ve Etiketler Oluşturun
 
-A channel is created by selecting the protocol type database in tag channel editor option.
+Etiket kanalı düzenleyici seçeneğinde protokol tipi veritabanı seçilerek kanal oluşturulur.
 
 <center>
 
@@ -247,7 +247,7 @@ A channel is created by selecting the protocol type database in tag channel edit
 
 </center>
 
-A label is created under the database channel.
+Veritabanı kanalının altında bir etiket oluşturulur.
 
 <center>
 
@@ -256,12 +256,12 @@ A label is created under the database channel.
 
 </center>
 
-#### Channel And Tag Configuration
+#### Kanal ve Etiket Yapılandırması
 
-Response Timeout: The time in milliseconds that represents the frequency with which the database query is executed.
-Queries are written in the «Query» option of the tag
+Yanıt Zaman Aşımı: Veritabanı sorgusunun yürütülme sıklığını temsil eden milisaniye cinsinden süre.
+Sorgular etiketin «Sorgu» seçeneğine yazılır
 
-A tag with tag ID 2 is attached to the database and transactions are performed over the database on this tag. Values from 1 to 100 are sent and the log is kept in the database.
+Veritabanına etiket kimliği 2 olan bir etiket eklenir ve bu etiket üzerindeki veritabanı üzerinden işlemler yapılır. 1'den 100'e kadar olan değerler gönderilir ve log veritabanında tutulur.
 
 <center>
 
@@ -270,9 +270,9 @@ A tag with tag ID 2 is attached to the database and transactions are performed o
 
 </center>
 
-#### Connection
+#### Bağlantı
 
-With this query, it brings the last sent value from the database.
+Bu sorgu ile veri tabanından son gönderilen değeri getirir.
 
 <center>
 
@@ -281,15 +281,15 @@ With this query, it brings the last sent value from the database.
 
 </center>
 
-### Channel: Global Database
+### Kanal: Küresel Veritabanı
 
-It is the channel type used to create special queries by connecting to different databases and to transfer these query results to project tags.
+Farklı veri tabanlarına bağlanarak özel sorgular oluşturmak ve bu sorgu sonuçlarını proje etiketlerine aktarmak için kullanılan kanal türüdür.
 
-#### PostgreSQL Database
+#### PostgreSQL Veritabanı
 
-#### Create Channels And Tags
+#### Kanallar ve Etiketler Oluşturun
 
-A channel is created by selecting the protocol type globaldatabase in tag channel editor option.
+Etiket kanalı düzenleyici seçeneğinde protokol türü global veritabanı seçilerek bir kanal oluşturulur.
 
 
 <center>
@@ -299,7 +299,7 @@ A channel is created by selecting the protocol type globaldatabase in tag channe
 
 </center>
 
-A label is created under the globaldatabase channel.
+Globaldatabase kanalının altında bir etiket oluşturulur.
 
 <center>
 
@@ -308,10 +308,10 @@ A label is created under the globaldatabase channel.
 
 </center>
 
-#### Channel And Tag Configuration
+#### Kanal ve Etiket Yapılandırması
 
-Information about PostgreSQL database type is entered on the channel screen.
-Response Timeout: The time in milliseconds that represents the frequency with which the database query is executed.
+Kanal ekranında PostgreSQL veri tabanı tipi ile ilgili bilgiler girilir.
+Yanıt Zaman Aşımı: Veritabanı sorgusunun yürütülme sıklığını temsil eden milisaniye cinsinden süre.
 
 <center>
 
@@ -320,7 +320,7 @@ Response Timeout: The time in milliseconds that represents the frequency with wh
 
 </center>
 
-Queries are written in the «Query» option of the tag.
+Sorgular, etiketin «Sorgu» seçeneğine yazılır.
 
 <center>
 
@@ -329,7 +329,7 @@ Queries are written in the «Query» option of the tag.
 
 </center>
 
-A tag with tag ID 2 is attached to the database and transactions are performed over the database on this tag. Values from 1 to 100 are sent and the log is kept in the database.
+Veritabanına etiket kimliği 2 olan bir etiket eklenir ve bu etiket üzerindeki veritabanı üzerinden işlemler yapılır. 1'den 100'e kadar olan değerler gönderilir ve log veritabanında tutulur.
 
 <center>
 
@@ -338,9 +338,9 @@ A tag with tag ID 2 is attached to the database and transactions are performed o
 
 </center>
 
-#### Connection
+#### Bağlantı
 
-The device address information of the label number 2 was written in the query. Device address information is displayed on the server screen.
+Sorguda 2 numaralı etiketin cihaz adres bilgisi yazıldı. Cihaz adres bilgisi sunucu ekranında görüntülenir.
 
 ```
 select deviceaddress from public.tags where tag_id=2;
@@ -354,7 +354,7 @@ select deviceaddress from public.tags where tag_id=2;
 
 </center>
 
-With this query, the last value sent from the database is set to the number 1 tag.
+Bu sorgu ile veritabanından gönderilen son değer 1 numaralı etikete ayarlanır.
 
 ```
 select data_value from logs.tag_log where tag_id=2 order by logtime desc limit 1
@@ -368,7 +368,7 @@ select data_value from logs.tag_log where tag_id=2 order by logtime desc limit 1
 
 </center>
 
-In the postgresql database query, the most recent values recorded in the database of the tags with id 2, 3, 4 and 5 were written in tags with ids 1, 6, 7, and 8, respectively.
+Postgresql veritabanı sorgusunda 2, 3, 4 ve 5 numaralı etiketlerin veritabanına kaydedilen en son değerleri sırasıyla 1, 6, 7 ve 8 numaralı etiketlere yazılmıştır.
 
 ```
  WITH
@@ -394,17 +394,17 @@ In the postgresql database query, the most recent values recorded in the databas
 
 </center>
 
-#### Oracle Database
+#### Oracle Veritabanı
 
-This channel is used to connect to the oracle database and pull the desired data.
+Bu kanal oracle veri tabanına bağlanıp istenilen veriyi çekmek için kullanılır.
 
-#### Channel And Tag Configuration
+#### Kanal ve Etiket Yapılandırması
 
-Information about Oracle database type is entered on the channel screen. The database information of the project is entered on the configuration screen.
+Kanal ekranına Oracle veri tabanı tipi ile ilgili bilgiler girilir. Konfigürasyon ekranında projenin veritabanı bilgileri girilir.
 
-#### Connection
+#### Bağlantı
 
-The first data recorded in the oracle database was captured by query. The data in the Oracle database is printed on the label with ID 2.
+Oracle veri tabanına kaydedilen ilk veriler sorgulanarak ele geçirilmiştir. Oracle veritabanındaki veriler, ID 2 ile etikete yazdırılır.
 
 ```
 select data_value UNTITLED127.tag_log order by logdate fetch first 1 rows only
@@ -418,7 +418,7 @@ select data_value UNTITLED127.tag_log order by logdate fetch first 1 rows only
 
 </center>
 
-The last data recorded in the oracle database was captured by query.
+Oracle veri tabanına kaydedilen son veriler sorgulanarak alınmıştır.
 
 ```
 select data_value UNTITLED127.tag_log order by logdate desc fetch first 1 rows only
@@ -432,18 +432,18 @@ select data_value UNTITLED127.tag_log order by logdate desc fetch first 1 rows o
 
 </center>
 
-### Channel: JavaScript
+### Kanal: JavaScript
 
-JavaScript functions could be defined JavaScript channel. You can call various Math functions in your script. You can also use the values of system tags in the form of "${123}". You need to "return" a numeric value for the function result to be written on the "JavaScript Tag".
-*Channel Parameters
-- Frame Timeout = The number of milliseconds that represents the frequency at which the
-JavaScript function is called.
-*Tag Parameters
-- Query = The JavaScript expression to be called.
+JavaScript fonksiyonları JavaScript kanalı tanımlanabilir. Komut dosyanızda çeşitli Matematik işlevlerini çağırabilirsiniz. Sistem etiketlerinin değerlerini "${123}" biçiminde de kullanabilirsiniz. İşlev sonucunun "JavaScript Etiketi" üzerine yazılması için sayısal bir değer "döndürmeniz" gerekir.
+*Kanal Parametreleri
+- Kare Zaman Aşımı = Çerçevenin hangi frekansta olduğunu temsil eden milisaniye sayısı.
+JavaScript işlevi çağrılır.
+*Etiket Parametreleri
+- Sorgu = Çağrılacak JavaScript ifadesi.
 
-#### Create Channels And Tags
+#### Kanallar ve Etiketler Oluşturun
 
-A channel is created by selecting the protocol type javascript in tag channel editor option.
+Etiket kanalı düzenleyici seçeneğinde protokol tipi javascript seçilerek kanal oluşturulur.
 
 <center>
 
@@ -452,7 +452,7 @@ A channel is created by selecting the protocol type javascript in tag channel ed
 
 </center>
 
-A label is created under the database channel.
+Veritabanı kanalının altında bir etiket oluşturulur.
 
 <center>
 
@@ -461,9 +461,9 @@ A label is created under the database channel.
 
 </center>
 
-#### Channel And Tag Configuration
+#### Kanal ve Etiket Yapılandırması
 
-Queries are written in the «Query» option of the tag.
+Sorgular, etiketin «Sorgu» seçeneğine yazılır.
 
 <center>
 
@@ -472,7 +472,7 @@ Queries are written in the «Query» option of the tag.
 
 </center>
 
-Sample javascript codes were written by choosing 2 different tags from the modbus channel.
+Modbus kanalından 2 farklı etiket seçilerek örnek javascript kodları yazılmıştır.
 
 <center>
 
@@ -481,9 +481,9 @@ Sample javascript codes were written by choosing 2 different tags from the modbu
 
 </center>
 
-#### Connection
+#### Bağlantı
 
-Example 1: The sum of the two labels is shown.
+Örnek 1: İki etiketin toplamı gösteriliyor.
 
 ```
 var3 = ${2}+${3};
@@ -497,12 +497,12 @@ return var3;
 
 </center>
 
-Example 2:
-In the first line : define a variable "var1" and assign "the value of tag with id 2" plus "5"
-In the second line : define a variable "var2" and assign "the value of tag with id 3" plus "3"
-In the third line : define a variable "subtotal" and assign "the sum of var1 and var2" to it
-In the last line : evaluate the square root of subtotal and return to that value. The return
-value will also be written as the value of the current JavaScript Tag.
+Örnek 2:
+İlk satırda: bir "var1" değişkeni tanımlayın ve "id 2 ile etiketin değeri" artı "5" atayın
+İkinci satırda: bir "var2" değişkeni tanımlayın ve "3 kimliğine sahip etiketin değeri" artı "3" atayın
+Üçüncü satırda: bir "ara toplam" değişkeni tanımlayın ve buna "var1 ve var2 toplamı" atayın
+Son satırda : ara toplamın karekökünü değerlendirin ve bu değere geri dönün. Geri dönüş
+değer, geçerli JavaScript Etiketinin değeri olarak da yazılacaktır.
 
 ```
 var1 = 5+${2};
@@ -518,10 +518,10 @@ return Math.sqrt(subtotal);
 
 </center>
 
-Important Note = You cannot set the values of other system tags in JavaScript tag. You
-need to use Macros to achieve this. Thus the following script will not work:
+Önemli Not = JavaScript etiketinde diğer sistem etiketlerinin değerlerini ayarlayamazsınız. Sen
+Bunu başarmak için Makroları kullanmanız gerekir. Böylece aşağıdaki komut dosyası çalışmayacaktır:
 ${3}= 3 + var1;
-Example 3: Tag values are assigned to variables. Return 1 if the variables are equal.Return 0 if variables are not equal.
+Örnek 3: Değişkenlere etiket değerleri atanır. Değişkenler eşitse 1 döndürün. Değişkenler eşit değilse 0 döndürün.
 
 ```
 var1 = ${2};
@@ -544,45 +544,45 @@ return var3;
 
 </center>
 
-### Channel: Server Info
+### Kanal: Sunucu Bilgisi
 
-By using this channel, you can get real-time information such as the num-ber of active alarms, system time, etc.
+Bu kanalı kullanarak aktif alarm sayısı, sistem saati gibi gerçek zamanlı bilgilere ulaşabilirsiniz.
+Sistem bilgilerini almak için örnek bir "JavaScript" ifadesi:
 
-Here is a sample "JavaScript" statement to get system information:
 ```
 var1 = :ALARMCOUNT(Panel1); 
 var2 = :ALARMCOUNT(Panel2); 
 totalalarms_defined= (var1 +var2 );  
-return totalalarms_defined; // It will return the total number of alarms defined for the "Panel1" and "Panel2" alarm classes.
+totalalarms_defined döndür; // "Panel1" ve "Panel2" alarm sınıfları için tanımlanan toplam alarm sayısını döndürür.
 ```
 ```
-The following keywords are supported in JavaScript.
-:ALARMCOUNT()              
-returns the number of alarms defined in the system.
-:ALARMCOUNT(ClassName)     
-returns the alarm number for the "ClassName" alarm class.
-:ACTALARMCOUNT()           
-returns the number of active alarms defined in the system.
-:ACTALARMCOUNT(ClassName)  
-returns the number of active alarms for the "ClassName" alarm class.
-:ACKEDALARMCOUNT()         
-returns the number of confirmed active alarms defined in the system.
-:ACKEDALARMCOUNT(ClassName) 
-returns the number of confirmed active alarms for the "ClassName" alarm class.
-:SYSTEMTIME()              
-returns the system time of the SCADA server in milliseconds since epoch.
-:CONNECTEDCHANNELS(ChannelName) 
-returns the number of channels with an active connection and a name containing the keyword "ChannelName".
-:UNCONNECTEDCHANNELS(ChannelName) 
-returns the number of channels that are not connected and have a name containing the keyword "ChannelName"
+Aşağıdaki anahtar kelimeler JavaScript'te desteklenir.
+:ALARMCOUNT()
+sistemde tanımlanan alarm sayısını döndürür.
+:ALARMCOUNT(SınıfAdı)
+"ClassName" alarm sınıfı için alarm numarasını döndürür.
+:ACTALARMCOUNT()
+sistemde tanımlanan aktif alarmların sayısını döndürür.
+:ACTALARMCOUNT(SınıfAdı)
+"ClassName" alarm sınıfı için aktif alarmların sayısını verir.
+:ACKEDALARMCOUNT()
+sistemde tanımlanan onaylanmış aktif alarmların sayısını döndürür.
+:ACKEDALARMCOUNT(SınıfAdı)
+"ClassName" alarm sınıfı için onaylanmış aktif alarmların sayısını döndürür.
+:SİSTEM ZAMANI()
+epoch'tan bu yana SCADA sunucusunun sistem saatini milisaniye cinsinden döndürür.
+:BAĞLANTILI KANALLAR(KanalAdı)
+etkin bir bağlantıya sahip kanalların sayısını ve "KanalAdı" anahtar sözcüğünü içeren bir adı döndürür.
+:BAĞLANMAYAN KANALLAR(KanalAdı)
+bağlı olmayan ve "KanalAdı" anahtar sözcüğünü içeren bir ada sahip kanalların sayısını döndürür
 ```
-The channel is created by selecting the protocol type "SERVERINFO" in the Tag Channel Editor.
+Kanal, Tag Channel Editor'da "SERVERINFO" protokol tipi seçilerek oluşturulur.
 
 ![serverinfo-01](/img/serverinfo-01.png)
 ***<center>Figure 1: Adding Serverinfo Type Channel</center>***
 
-By writing queries within the labels created under the "SERVERINFO" channel, information related to channels and alarms can be obtained.
-According to the query defined below, the total number of active alarms in the project can be read on the tag.
+"SERVERINFO" kanalı altında oluşturulan etiketler içerisine sorgular yazılarak kanallar ve alarmlar ile ilgili bilgiler alınabilir.
+Aşağıda tanımlanan sorguya göre projedeki toplam aktif alarm sayısı etiket üzerinde okunabilir.
 
 <center>
 
@@ -591,7 +591,7 @@ According to the query defined below, the total number of active alarms in the p
 
 </center>
 
-The total number of active alarms is displayed on the label under the de-fined “SERVERINFO” channel.
+Aktif alarmların toplam sayısı, tanımlanmış “SERVERINFO” kanalının altındaki etikette görüntülenir.
 
 ![serverinfo-03](/img/serverinfo-03.png)
 ***<center>Figure 3: Displaying Active Alarms on ViewPLUS Client</center>***
@@ -599,11 +599,11 @@ The total number of active alarms is displayed on the label under the de-fined �
 ![serverinfo-04](/img/serverinfo-04.png)
 ***<center>Figure 4: Displaying Active Alarm Information by Tag Monitor on Server Engine</center>***
 
-## Designing Fancy Tables For Map Views
+## Harita Görünümleri İçin Süslü Tablolar Tasarlama
 
-You can use some third party applications for designing tables to be used to display data in your Map Views. One of these services could be found on this [link](https://divtable.com/table-styler/)
+Harita Görünümlerinizde verileri görüntülemek için kullanılacak tabloları tasarlamak için bazı üçüncü taraf uygulamalarını kullanabilirsiniz. Bu hizmetlerden biri bu [link](https://divtable.com/table-styler/) bulunabilir.
 
-By using this service you can stylise you table and auto generate a CSS and HTML code.
+Bu hizmeti kullanarak tablonuzu stilize edebilir ve otomatik olarak bir CSS ve HTML kodu oluşturabilirsiniz.
 
 <center>
 
@@ -611,16 +611,16 @@ By using this service you can stylise you table and auto generate a CSS and HTML
 
 </center>
 
-To be able to use the generated code on Map View, you need to put both these code into InfoWindowContent. But before pasting the code into InfoWindowContent; you need to put the CSS code into "<style> </style> tags.
+Oluşturulan kodu Harita Görünümünde kullanabilmek için bu iki kodu da InfoWindowContent'e koymanız gerekir. Ancak kodu InfoWindowContent'e yapıştırmadan önce; CSS kodunu "<style> </style> etiketlerine koymanız gerekir.
 
-The structure of the code should be as following:
+Kodun yapısı aşağıdaki gibi olmalıdır:
 
 ```
 <style> ...CSS Code Here...</style>
         ... HTML Code Here ...
 ```
 
-For example if your generated CSS code is like :
+Örneğin, oluşturulan CSS kodunuz şöyleyse:
 
 ```
 table.blueTable {
@@ -682,7 +682,7 @@ table.blueTable tfoot .links a{
 }
 ```
 
-And your table HTML is like:
+Ve tablo HTML'niz şöyle:
 
 ```
 <table class="blueTable">
@@ -713,7 +713,7 @@ And your table HTML is like:
  </table>
 ```
 
-Then your resulting code to be pasted into the InfoWindofContent should be like:
+Ardından, InfoWindofContent'e yapıştırılacak olan kodunuz şöyle olmalıdır:
 
 ```
 <style>
@@ -804,7 +804,7 @@ Then your resulting code to be pasted into the InfoWindofContent should be like:
  </table>
 ```
 
-On the Map View the table will look like:
+Harita Görünümünde tablo şöyle görünecektir:
 
 <center>
 

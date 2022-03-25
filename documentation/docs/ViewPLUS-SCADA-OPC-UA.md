@@ -1,5 +1,5 @@
 ---
-title: Opc Ua Server Service
+title: ViewPLUS SCADA OPC UA Server Service
 ---
 
 ## Install OPC UA Server Service

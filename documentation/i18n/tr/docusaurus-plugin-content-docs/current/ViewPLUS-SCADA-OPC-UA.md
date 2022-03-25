@@ -1,5 +1,5 @@
 ---
-title: ViewPLUS SCADA OPC UA Server Service
+title: ViewPLUS SCADA OPC UA Sunucu Hizmeti
 ---
 
 

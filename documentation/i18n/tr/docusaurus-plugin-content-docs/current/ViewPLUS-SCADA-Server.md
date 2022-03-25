@@ -1,14 +1,14 @@
 ---
-title: ViewPLUS SCADA Server
+title: ViewPLUS SCADA Sunucu
 ---
 
-## Overview
+## Genel Bakış
 
-The server software must be associated with a project in order to be able to run. When run from the Editor menu, the currently open project is used by the server. To run the server independently from the editor, select "Editor > Select Tools > Create Server Files to specify a folder and copy the server files to this folder. The "ServerEngine" script is used to launch the server. The "ServerEngine" script looks for a folder named "Project" in the same folder as the default behavior.
+Sunucu yazılımının çalışabilmesi için bir proje ile ilişkilendirilmesi gerekir. Editör menüsünden çalıştırıldığında, o anda açık olan proje sunucu tarafından kullanılır. Sunucuyu düzenleyiciden bağımsız olarak çalıştırmak için, bir klasör belirtmek ve sunucu dosyalarını bu klasöre kopyalamak için "Düzenleyici > Araçlar Seç > Sunucu Dosyaları Oluştur'u seçin. Sunucuyu başlatmak için "ServerEngine" komut dosyası kullanılır. "ServerEngine" komut dosyası görünür varsayılan davranışla aynı klasörde "Proje" adlı bir klasör için.
 
-The "Project" folder contains special files created by the editor. The main ones are; "MicrodevScada.ini", "Project.zip", "project pages with .sca extension", and component files. The server reads the information in the "MikrodevScada.ini" file, such as where to connect to the database and where to keep the records.
+"Proje" klasörü, editör tarafından oluşturulan özel dosyaları içerir. Başlıcaları; "MicrodevScada.ini", "Project.zip", ".sca uzantılı proje sayfaları" ve bileşen dosyaları. Sunucu, "MikrodevScada.ini" dosyasındaki veritabanına nereden bağlanılacağı ve kayıtların nerede tutulacağı gibi bilgileri okur.
 
-When the SCADA server is started for the first time, the user may be prompted to enter the database connection information. The server can open a project in a different folder by using command line parameters below.
+SCADA sunucusu ilk kez başlatıldığında, kullanıcıdan veritabanı bağlantı bilgilerini girmesi istenebilir. Sunucu, aşağıdaki komut satırı parametrelerini kullanarak bir projeyi farklı bir klasörde açabilir.
 
 ```
 “ServerEngine –dir “C:\Users\yg\Desktop\server\projectname“ ”
@@ -18,9 +18,9 @@ When the SCADA server is started for the first time, the user may be prompted to
 -dir : Project folder
 ```
 
-#### Server Home Screen
+#### Sunucu Ana Ekranı
 
-The main screen of the server has a console on which general system logs can be viewed. This console shows important server changes. More detailed server logs are saved in a separate file. When the "Start" button is pressed, the server tries to connect to the field devices. After the connection is established, the server opens a port to which clients can connect and waits for incoming connections. When the server starts reading data from the field, it records them on the database server as specified in the project settings. Instantaneous readings of field-readable data can be viewed on the tag monitoring screen.
+Sunucunun ana ekranında, genel sistem günlüklerinin görüntülenebildiği bir konsol bulunur. Bu konsol önemli sunucu değişikliklerini gösterir. Daha ayrıntılı sunucu günlükleri ayrı bir dosyaya kaydedilir. "Başlat" butonuna basıldığında sunucu saha cihazlarına bağlanmaya çalışır. Bağlantı kurulduktan sonra sunucu, istemcilerin bağlanabileceği bir bağlantı noktası açar ve gelen bağlantıları bekler. Sunucu sahadan veri okumaya başladığında proje ayarlarında belirtildiği gibi veri tabanı sunucusuna kaydeder. Alanda okunabilen verilerin anlık okumaları, etiket izleme ekranında görüntülenebilir.
 
 <center>
 
@@ -29,57 +29,57 @@ The main screen of the server has a console on which general system logs can be 
 
 </center>
 
-#### Server Tag Monitor Screen
+#### Sunucu Etiketi İzleme Ekranı
 
-The instantaneous values ​​on the tag monitoring screen can be filtered according to parameters such as tagID, tag name, channel name, device address.
+Tag izleme ekranındaki anlık değerler tagID, tag name, channel name, device address gibi parametrelere göre filtrelenebilir.
 
 ```
-If there is a text "dced" next to the numeric data shown in the "Value" field, this indicates a connection problem between the device and the SCADA server
+"Değer" alanında gösterilen sayısal verilerin yanında "dced" yazısı varsa bu, cihaz ile SCADA sunucusu arasında bir bağlantı sorunu olduğunu gösterir.
 ```
 
-Information about the protocol drivers running on the drive monitoring screen is given. Information about connection problems can be obtained from this console.
+Sürücü izleme ekranında çalışan protokol sürücüleri hakkında bilgi verilir. Bağlantı sorunları hakkında bilgi bu konsoldan alınabilir.
 
-The alarm screen allows you to observe the history of alarms generated in the system and the current alarms.
+Alarm ekranı, sistemde oluşturulan alarmların geçmişini ve mevcut alarmları gözlemlemenizi sağlar.
 
-## Server Auto Start
+## Sunucu Otomatik Başlatma
 
-### Windows Platform
+### Windows Platformu
 
-Follow these steps to start the server automatically (for a sample project named "TestProject"):
+Sunucuyu otomatik olarak başlatmak için şu adımları izleyin ("TestProject" adlı örnek bir proje için):
 
-Create a shortcut on the desktop for the "ServerEngine.exe" program in the installation folder of ViewPLUS.
-Shortcut Creation
+ViewPLUS'ın kurulum klasöründeki "ServerEngine.exe" programı için masaüstünde bir kısayol oluşturun.
+Kısayol Oluşturma
 
-Right-click the created shortcut and select "Properties".
-Change the field marked "Target" to the following (Change the file path according to your system):
+Oluşturulan kısayola sağ tıklayın ve "Özellikler" seçeneğini seçin.
+"Hedef" yazan alanı aşağıdaki gibi değiştirin (Dosya yolunu sisteminize göre değiştirin):
 
 ```
 C:\Users\<User Name>\TestProject" -start C:\Program Files (x86)\ViewPLUS\bin\ServerEngine.exe"
 ```
 
-Then copy this shortcut to
+Ardından bu kısayolu şuraya kopyalayın:
 
 ```
 "C:\Users\<User Name>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 ```
 
-The server will now start automatically when the user logs in to the system.
+Kullanıcı sisteme giriş yaptığında sunucu artık otomatik olarak başlayacaktır.
 
-Auto startup can be accomplished by copying the OperatorClient shortcut to
+Otomatik başlatma, OperatorClient kısayolunu şuraya kopyalayarak gerçekleştirilebilir:
 
 ```
 "C:\Users\<User Name>\AppData\ Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 ```
 
-## Email Server Settings
+## E-posta Sunucusu Ayarları
 
-E-mail can be sent in case of an alarm to the user whose "e-mail send option" is marked as active from the user manager. For this, e-mail configuration settings must be made on the server. In addition, the smtp server to be used should allow ["less secure application access"](https://support.google.com/accounts/answer/6010255?hl=en). The configuration file "ServerEngine.ini" where the e-mail server settings can be found in the following folder:
+Kullanıcı yöneticisinden "e-posta gönderme seçeneği" aktif olarak işaretlenen kullanıcıya alarm durumunda e-posta gönderilebilir. Bunun için sunucu üzerinde e-posta yapılandırma ayarları yapılmalıdır. Ayrıca, kullanılacak smtp sunucusu ["daha az güvenli uygulama erişimine"](https://support.google.com/accounts/answer/6010255?hl=tr) izin vermelidir. E-posta sunucusu ayarlarının aşağıdaki klasörde bulunabileceği "ServerEngine.ini" yapılandırma dosyası:
 
 ```
 C:\Users\<user name>\AppData\Roaming\Mikrodev\ScadaServer\<project name>\ServerEngine.ini 
 ```
 
-In this file, the following variables must be set correctly under [SMTP]:
+Bu dosyada, [SMTP] altında aşağıdaki değişkenler doğru şekilde ayarlanmalıdır:
 
 [SMTP]
 
@@ -91,11 +91,11 @@ SMTP_port=<smtp server port>
 SMTP_mailDelay=<The time (in seconds) to wait for an e-mail to be sent after an alarm condition(in seconds)>
 ```
 
-## Create Server Runtime
+## Sunucu Çalışma Zamanı Oluştur
 
-You can also run the developed SCADA project without installing ViewPLUS on a different computer. By selecting "Create Server Files" from the "Tools" menu for this, you can collect the files in a folder for project and server work. By moving this folder, it is possible to run your project on different server machines.
+Geliştirilen SCADA projesini ViewPLUS'ı farklı bir bilgisayara kurmadan da çalıştırabilirsiniz. Bunun için "Araçlar" menüsünden "Sunucu Dosyaları Oluştur" seçeneğini seçerek proje ve sunucu çalışması için dosyaları bir klasörde toplayabilirsiniz. Bu klasörü taşıyarak projenizi farklı sunucu makinelerinde çalıştırmanız mümkündür.
 
-## Advanced Settings
+## Gelişmiş Ayarlar
 
 log_server.txt:
 
@@ -106,44 +106,44 @@ It is the file where the detailed server logs are found
 
 log_serverstarter.txt :
 
-The file that contains logs of the server monitor software
+Sunucu izleme yazılımının günlüklerini içeren dosya
 
 OperatorClient.ini :
 
 ServerEngine.ini:
 
 ```
-On Windows systems, it is located in the following folder:  
+Windows sistemlerinde, aşağıdaki klasörde bulunur: 
 C:\Users\<user name>\AppData\Mikrodev\ScadaServer\<project name>
 ```
 
 ```
-[Login]> ServerAdr              : Database address
+[Giriş]> ServerAdr : Veritabanı adresi
 
-[Login]> DbName                 : Database name
+[Giriş]> DbName : Veritabanı adı
 
-[Login]> DbUserName             : Database user name
+[Giriş]> DbUserName : Veritabanı kullanıcı adı
 
-[Login]> DbPassword             : Database password
+[Giriş]> DbPassword : Veritabanı şifresi
 
-[Connection] > Port             : The default server port is 560. A different port can be selected by changing this parameter.
+[Bağlantı] > Port   : Varsayılan sunucu bağlantı noktası 560'tır. Bu parametre değiştirilerek farklı bir bağlantı noktası seçilebilir.
 
-[Logging] > IsLogging           : Data logging can be enabled / disabled(true/false)
+[Logging] > IsLogging : Veri kaydı etkinleştirilebilir/devre dışı bırakılabilir(doğru/yanlış)
 
-[Logging] > IsLoggingDısconnections: You can choose whether to log connection failures
+[Logging] > IsLoggingDısconnections: Bağlantı hatalarının günlüğe kaydedilip kaydedilmeyeceğini seçebilirsiniz
 
-[REDUNDANCY]> ServerMode        : Determines the mode of operation. This value can be PRIMARY or BACKUP. When this mode is set to BACKUP, the server communicates with the PRIMARY server to form a redundant structure.
+[YEDEKLEME]> ServerMode        : Çalışma modunu belirler. Bu değer BİRİNCİL veya YEDEK olabilir. Bu mod YEDEK olarak ayarlandığında, sunucu, yedekli bir yapı oluşturmak için BİRİNCİL sunucu ile iletişim kurar.
 
-[REDUNDANCY]> PrimaryIP         : The PRIMARY server IP address to which the server in BACKUP mode will connect is written in this field.
+[YEDEKLEME]> PrimaryIP  : YEDEKLEME modundaki sunucunun bağlanacağı BİRİNCİL sunucu IP adresi bu alana yazılır.
 
-[REDUNDANCY]> PrimaryPORT       : The port number of the PRIMARY server to which the server in BACKUP mode will connect is written in this field.
+[YEDEKLEME]> PrimaryPORT  : YEDEKLEME modundaki sunucunun bağlanacağı BİRİNCİL sunucunun port numarası bu alana yazılır.
 
-[REDUNDANCY]> Timeout           : PRIMARY is the value in seconds that specifies how long the server will remain active if the BACKUP server is down.
+[YEDEKLEME]> Timeout : BİRİNCİL, YEDEK sunucu kapalı olduğunda sunucunun ne kadar süre etkin kalacağını belirten saniye cinsinden değerdir.
 ```
 
-## Active Sessions
+## Aktif Oturumlar
 
-It shows the information of the people who log on in the server and client environment. Contains remote IP, user, session key, last msg time informations.
+Sunucu ve istemci ortamında oturum açan kişilerin bilgilerini gösterir. Uzak IP, kullanıcı, oturum anahtarı, son mesaj zamanı bilgilerini içerir.
 
 <center>
 
@@ -152,9 +152,9 @@ It shows the information of the people who log on in the server and client envir
 
 </center>
 
-## White List
+## Beyaz Liste
 
-This will allow connections only from the specifed IP adresses.
+Bu, yalnızca belirtilen IP adreslerinden bağlantılara izin verecektir.
 
 <center>
 
@@ -163,7 +163,7 @@ This will allow connections only from the specifed IP adresses.
 
 </center>
 
-Enable white list filtering. By clicking add an IP address, IP address is entered into the window displayed.
+Beyaz liste filtrelemeyi etkinleştirin. Bir IP adresi ekle'ye tıklanarak görüntülenen pencereye IP adresi girilir.
 
 <center>
 
@@ -172,9 +172,9 @@ Enable white list filtering. By clicking add an IP address, IP address is entere
 
 </center>
 
-## Black List
+## Kara Liste
 
-By clicking add an IP address, IP address is entered into the window displayed. The IP addresses entered are blocked and access to the server is prohibited.
+Bir IP adresi ekle'ye tıklanarak görüntülenen pencereye IP adresi girilir. Girilen IP adresleri bloke edilir ve sunucuya erişim yasaktır.
 
 <center>
 
@@ -183,17 +183,17 @@ By clicking add an IP address, IP address is entered into the window displayed. 
 
 </center>
 
-## Client Settings
+## İstemci Ayarları
 
-#### Enable Client Auto Loggoff
-If no operations are performed on the client screen for the specified time in minutes when enable
-client auto loggoff is marked, the session is closed automatically.
-#### Don’t allow multiple connection for same user
-When don’t allow multiple connection for same user is marked, multiple logins are prohibited on the
-client screen with the same user.
-#### Enable user blacklist after 3 failed login attempts
-If the user information is entered incorrectly 3 times on the client screen when enable user blacklist
-after 3 failed login attempts is marked, the IP address is automatically black list.
+#### İstemci Otomatik Oturum Kapatmayı Etkinleştir
+Etkinleştirildiğinde dakika cinsinden belirtilen süre boyunca istemci ekranında herhangi bir işlem gerçekleştirilmezse
+istemci otomatik oturum kapatma işaretlenir, oturum otomatik olarak kapatılır.
+#### Aynı kullanıcı için birden fazla bağlantıya izin verme
+Aynı kullanıcı için birden fazla bağlantıya izin verme işaretlendiğinde, birden fazla oturum açmaya izin verilmez.
+aynı kullanıcı ile istemci ekranı.
+#### 3 başarısız oturum açma denemesinden sonra kullanıcı kara listesini etkinleştir
+Kullanıcı kara listesini etkinleştirirken istemci ekranında kullanıcı bilgileri 3 kez yanlış girilirse
+3 başarısız oturum açma girişimi işaretlendikten sonra IP adresi otomatik olarak kara listeye alınır.
 
 <center>
 
@@ -202,17 +202,17 @@ after 3 failed login attempts is marked, the IP address is automatically black l
 
 </center>
 
-## Parallel Redundant Operating Mode
+## Paralel Yedekli Çalışma Modu
 
-ViewPLUS SCADA software can run in "Parallel Redundant Mode" on a server cluster consisting of several computers. In this case, the server downtime can be reduced to the minimum. Redundant mode servers must be on the same local area network.
+ViewPLUS SCADA yazılımı, birkaç bilgisayardan oluşan bir sunucu kümesi üzerinde "Paralel Yedekleme Modu"nda çalışabilir. Bu durumda, sunucu kesinti süresi minimuma indirilebilir. Yedekli mod sunucuları aynı yerel alan ağında olmalıdır.
 
-### Installation Steps
+### Kurulum Adımları
 
-While ViewPLUS is running in this mode, both 2 servers (PRIMARY, BACKUP) must be able to access the project database over the network.
-At the same time, project files must be present on the server computers and they must be up to date (same as each other). To ensure this synchronization, a version control tool such as SVN can be used or the files can be moved manually.
-In order for the backup and main server to communicate, the main server must have port 51313 open on the computer. Make sure that this port is allowed in the firewall settings.
-In the next step, the following configuration settings must be made in the ScadaServer.ini files on the primary server (PRIMARY) and the backup server (BACKUP):
-Primary server(PRIMARY):
+ViewPLUS bu modda çalışırken her iki 2 sunucunun da (PRIMARY, BACKUP) proje veritabanına ağ üzerinden erişebilmesi gerekir.
+Aynı zamanda proje dosyalarının sunucu bilgisayarlarda bulunması ve güncel (birbiri ile aynı) olması gerekmektedir. Bu senkronizasyonu sağlamak için SVN gibi bir sürüm kontrol aracı kullanılabilir veya dosyalar manuel olarak taşınabilir.
+Yedek ve ana sunucunun iletişim kurabilmesi için ana sunucunun bilgisayarda 51313 numaralı bağlantı noktasının açık olması gerekir. Güvenlik duvarı ayarlarında bu bağlantı noktasına izin verildiğinden emin olun.
+Bir sonraki adımda, birincil sunucu (PRIMARY) ve yedekleme sunucusu (BACKUP) üzerindeki ScadaServer.ini dosyalarında aşağıdaki yapılandırma ayarlarının yapılması gerekir:
+Birincil sunucu(PRIMARY):
 
 ```
 [REDUNDANCY]
@@ -223,7 +223,7 @@ Timeout=60
 size=0
 ```
 
-Backup server(BACKUP):
+Yedekleme sunucusu(BACKUP):
 
 ```
 [REDUNDANCY]
@@ -234,46 +234,46 @@ Timeout=60
 size=0
 ```
 
-ServerMode: Specifies the backup operation mode. This value can be PRIMARY or BACKUP. When this mode is set to BACKUP, the server communicates with the PRIMARY server to create a redundant structure. PrimaryIP: The PRIMARY server IP address to which the server in BACKUP mode will connect is written in this field. PrimaryPORT: The port number of the PRIMARY server to which the server in BACKUP mode will connect is written in this field. Timeout: Is the value in seconds that specifies the time PRIMARY server is out of service before the BACKUP server become active.
+ServerMode: Yedekleme çalışma modunu belirtir. Bu değer BİRİNCİL veya YEDEK olabilir. Bu mod YEDEK olarak ayarlandığında, sunucu, yedekli bir yapı oluşturmak için BİRİNCİL sunucu ile iletişim kurar. Birincil IP: YEDEKLEME modundaki sunucunun bağlanacağı BİRİNCİL sunucu IP adresi bu alana yazılır. PrimaryPORT: YEDEK modundaki sunucunun bağlanacağı PRİMARY sunucunun port numarası bu alana yazılır. Zaman Aşımı: BİRİNCİL sunucunun, YEDEK sunucu aktif hale gelmeden önce hizmet dışı kalacağı zamanı belirten saniye cinsinden değerdir.
 
-In the example, the IP address of the primary server (PRIMARY) is a fixed IP of "192.168.2.201". The IP address of the primary server in the system to be installed must be a static IP in this way, variable IP from a DHCP server should not be used. The port number set in PrimaryPORT can be set differently according to security requirements. In this case, the correct port number should be entered by modifying every 2 configuration files.
+Örnekte, birincil sunucunun (PRIMARY) IP adresi "192.168.2.201" sabit IP'sidir. Kurulacak sistemdeki birincil sunucunun IP adresi bu şekilde statik bir IP olmalıdır, bir DHCP sunucusundan gelen değişken IP kullanılmamalıdır. BirincilPORT'ta ayarlanan port numarası, güvenlik gereksinimlerine göre farklı şekilde ayarlanabilir. Bu durumda, her 2 konfigürasyon dosyası değiştirilerek doğru port numarası girilmelidir.
 
-After the configuration process is completed, first the primary and then the backup servers are started . From this moment on, the backup server will switch on and off in case of a shutdown, watching the primary server. When the primary server becomes active again, the backup server will stop itself by switching to the watching mode.
+Yapılandırma işlemi tamamlandıktan sonra önce birincil, ardından yedek sunucular başlatılır. Bu andan itibaren, birincil sunucuyu izleyerek, bir kapatma durumunda yedekleme sunucusu açılır ve kapanır. Birincil sunucu tekrar aktif hale geldiğinde yedekleme sunucusu izleme moduna geçerek kendini durduracaktır.
 
-### Synchronization of the Project on the Backup Server
+### Projenin Yedekleme Sunucusunda Senkronize Edilmesi
 
-When the backup server starts running, the server will use the files in the project folder. Therefore, if these files are not synchronized with the files on the main server, an older version of the project will be sent to the clients. A synchronization mechanism must be established to prevent this from happening.
+Yedekleme sunucusu çalışmaya başladığında, sunucu proje klasöründeki dosyaları kullanacaktır. Bu nedenle, bu dosyalar ana sunucudaki dosyalarla senkronize edilmezse, istemcilere projenin eski bir sürümü gönderilecektir. Bunun olmasını önlemek için bir senkronizasyon mekanizması kurulmalıdır.
 
-Assuming that the project files are on the SVN version control server as described earlier, you can provide automatic synchronization as follows
+Proje dosyalarının daha önce anlatıldığı gibi SVN sürüm kontrol sunucusunda olduğunu varsayarak aşağıdaki gibi otomatik senkronizasyonu sağlayabilirsiniz.
 
-We create a batch script that will trigger SVN synchronization. In this example, the file name is updateSvn.bat. Modify the contents of the file according to the file paths in your system to make it like this:
+SVN senkronizasyonunu tetikleyecek bir toplu komut dosyası oluşturuyoruz. Bu örnekte, dosya adı updateSvn.bat'tır. Dosyanın içeriğini sisteminizdeki dosya yollarına göre şu şekilde değiştirin:
 
 ```
 CD D:\MIKRODEV\Projects\DepoProject
 "C:\Program Files\TortoiseSVN\bin\svn.exe" update
 ```
 
-Every time we run this script, it will synchronize the project folder with that of the SVN server.
+Bu betiği her çalıştırdığımızda, proje klasörünü SVN sunucusununkiyle senkronize edecektir.
 
-In the next step, this script will be configured to run at specific intervals. For this we will use the Windows "Schedule Tasks" tool.
-By following the steps below, the synchronization procedure will be run every 10 minutes. You can configure this time interval as you like.
+Bir sonraki adımda, bu komut dosyası belirli aralıklarla çalışacak şekilde yapılandırılacaktır. Bunun için Windows "Programlama Görevleri" aracını kullanacağız.
+Aşağıdaki adımları takip ederek senkronizasyon prosedürü her 10 dakikada bir çalıştırılacaktır. Bu zaman aralığını istediğiniz gibi yapılandırabilirsiniz.
 
-Task Scheduler
+Görev Zamanlayıcısı
 
-Create a new task
+Yeni bir görev oluştur
 
-Timing Programming
+Zamanlama Programlama
 
-Set timing settings. In this example we choose to work once every 10 minutes.
+Zamanlama ayarlarını yapın. Bu örnekte her 10 dakikada bir çalışmayı seçiyoruz.
 
-Script Selection
+Komut Dosyası Seçimi
 
-Finally, associate the .bat file you created with the timer.
+Son olarak, oluşturduğunuz .bat dosyasını zamanlayıcı ile ilişkilendirin.
 
-If you confirm the timer, the backup server will synchronize itself every 10 minutes with the project on the main server.
+Zamanlayıcıyı onaylarsanız, yedekleme sunucusu ana sunucudaki proje ile her 10 dakikada bir kendini senkronize edecektir.
 
 
-In case of failure, downtime or excessive traffic at the primary server, a redundant server can be implemented to take the primary server's place. When backup server is selected in redundancy mode, primary server IP and redundant server activation timeout are entered.
+Birincil sunucuda arıza, kesinti veya aşırı trafik olması durumunda, birincil sunucunun yerini alacak yedek bir sunucu uygulanabilir. Yedekleme modunda yedekleme sunucusu seçildiğinde, birincil sunucu IP'si ve yedek sunucu etkinleştirme zaman aşımı girilir.
 
 <center>
 
@@ -282,9 +282,9 @@ In case of failure, downtime or excessive traffic at the primary server, a redun
 
 </center>
 
-## Information
+## Bilgi
 
-The Information tab shows the capacity information that the project occupies in the database.
+Bilgi sekmesi, projenin veritabanında kapladığı kapasite bilgilerini gösterir.
 
 
 <center>
@@ -294,7 +294,7 @@ The Information tab shows the capacity information that the project occupies in 
 
 </center>
 
-The size of the project in the PostgreSQL database is shown below.
+Projenin PostgreSQL veritabanındaki boyutu aşağıda gösterilmiştir.
 
 <center>
 

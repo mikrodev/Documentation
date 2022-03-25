@@ -1,5 +1,5 @@
 ---
-title: ViewPLUS SCADA Client
+title: ViewPLUS SCADA İstemci
 ---
 
 ## İstemci Operatör Ekranı

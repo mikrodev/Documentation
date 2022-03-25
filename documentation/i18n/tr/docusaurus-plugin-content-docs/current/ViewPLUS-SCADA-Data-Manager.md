@@ -1,5 +1,5 @@
 ---
-title: ViewPLUS SCADA Data Manager
+title: ViewPLUS SCADA Veri Yöneticisi
 ---
 
 Arşivler, yüksek boyutlu veritabanlarında boyutu küçültmek ve loglar arasında daha detaylı arama yapmak için kullanılır. Arşiv ekranına ulaşmak için araçlar sekmesinden veri yöneticisi başlatılır.

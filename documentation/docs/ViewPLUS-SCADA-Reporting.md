@@ -1,5 +1,5 @@
 ---
-title: Reporting
+title: ViewPLUS SCADA Reporting
 --- 
 
 ## Overview

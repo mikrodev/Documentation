@@ -1,5 +1,5 @@
 ---
-title: Data Manager
+title: ViewPLUS SCADA Data Manager
 ---
 
 Archives are used to reduce the size in high-dimensional databases and to make a more detailed search between logs. To get to the archive screen, data manager is started from the tools tab.

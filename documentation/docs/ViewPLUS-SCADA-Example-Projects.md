@@ -1,5 +1,5 @@
 ---
-title: Example Projects
+title: ViewPLUS SCADA Example Projects
 ---
 
 ## Alarm Projects

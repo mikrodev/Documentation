@@ -1,5 +1,5 @@
 ---
-title: Change Map Icons
+title: ViewPLUS SCADA Change Map Icons
 ---
 
 ## Introduction
