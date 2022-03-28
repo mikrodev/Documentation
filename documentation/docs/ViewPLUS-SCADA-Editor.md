@@ -2058,11 +2058,27 @@ In order to create a user and make the necessary configurations in ViewPLUS, Sta
 
 <center>
 
-![usernew](/img/usernew.png)
+![new-user-2](/img/new-user-2.png)
 
 </center>
 
 The New User tab is clicked and a new user is created by filling in the parameters on the page that opens. The created user is displayed under the username under the Users tab.
+
+## User Access Rights
+
+User access privileges may vary depending on the user. Pages that the user does not have access to are not shown in the "page selector" or the links to these pages will not work. If a visual element on the page contains a tag that the user does not have access to, the user is prevented from watching or controlling this element.
+
+<center>
+
+![new-user-3](/img/new-user-3.png)
+
+</center>
+
+Access Rights;
+
+Read: These are the rights that users must have in order to see the tag values. Users who do not have the rights specified here will not be able to read this tag value.
+
+Write: This is the right that users must have to change the tag values. Users who do not have the rights specified here cannot change this tag value.
 
 For detailed information: [User Definitions and Page Authorizations](https://www.youtube.com/watch?v=x-ySrdmeHJI&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=20).
 

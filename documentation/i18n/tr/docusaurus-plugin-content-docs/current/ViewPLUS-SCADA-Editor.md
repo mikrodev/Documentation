@@ -217,7 +217,7 @@ Kenar çubuğunu değiştirmek için ￼ (Kenar Çubuğunu Gizle/Kenar Çubuğun
 Kenar çubuğunu bölmek için ￼ (Böl) öğesini tıklayın. Bölünmüş görünümde görüntülemek için yeni içerik seçin.
 Bir kenar çubuğu görünümünü kapatmak için ￼ (Kapat) öğesini tıklayın.
 
-### BİLEŞENLER
+### Bileşenler
 
 ViewPLUS SCADA, görüntülenen verilerin görselleştirilmesi için farklı tiplerde bileşenler sunar. Bunlar; temel bileşenler, zamanlayıcılar, grafikler, veritabanı sorgusu ve metin bileşenleri.
 
@@ -2141,11 +2141,28 @@ ViewPLUS'ta kullanıcı oluşturmak ve gerekli konfigürasyonları yapmak için 
 
 <center>
 
-![usernew](/img/usernew.png)
+![new-user-2](/img/new-user-2.png)
 
 </center>
 
 Yeni Kullanıcı sekmesine tıklanır ve açılan sayfada parametreler doldurularak yeni bir kullanıcı oluşturulur. Oluşturulan kullanıcı, Kullanıcılar sekmesi altındaki kullanıcı adının altında görüntülenir.
+
+## Kullanıcı Erişim Hakları
+
+Kullanıcı erişim yetkileri, kullanıcıya bağlı olarak değişiklik gösterebilir. Kullanıcının erişim yetkisi olmayan sayfalar “sayfa seçici” de gösterilmez ya da bu sayfalara doğru olan bağlantılar çalışmaz. Eğer sayfadaki bir görsel öğe, kullanıcının erişim yetkisi olmayan bir etiket içeriyorsa kullanıcının bu öğeyi izlemesi veya kontrolü engellenir.
+
+<center>
+
+![new-user-3](/img/new-user-3.png)
+
+</center>
+
+Erişim Hakları;
+
+Okuma: Kullanıcıların etiket değerlerini görebilmeleri için sahip olmaları gereken haklardır. Burada belirlenen haklara sahip olmayan kullanıcılar bu etiket değerini okuyamayacaktır.
+
+Yazma: Etiket değerlerini değiştirmek için kullanıcıların sahip olması gereken haktır. Burada belirlenen haklara sahip olmayan kullanıcılar bu etiket değerini değiştiremezler.
+
 
 Detaylı bilgi için:[User Definitions and Page Authorizations](https://www.youtube.com/watch?v=x-ySrdmeHJI&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=20).
 
@@ -2218,25 +2235,40 @@ Detaylı bilgi için: [Add New Component](https://www.youtube.com/watch?v=1w3nwg
 ## Gelişmiş Ayarlar
 
 log_server.txt:
+
 Windows sistemlerde şu klasör içinde bulunur:
 C:\Users\username\AppData\Roaming\Mikrodev\ScadaServer\proje adı
+
 Sunucuya ait detaylı logların bulunduğu dosyadır 
 log_serverstarter.txt : 
+
 Sunucu izleyici yazılımına ait logların bulunduğu dosyadır 
 OperatorClient.ini :
 ServerEngine.ini:
+
 Windows sistemlerde şu klasör içinde bulunur: 
 C:\Users\kullanıcı adı\AppData\Mikrodev\ScadaServer\proje adı 
+
 [Login] ServerAdr: Veritabanı adresi 
+
 [Login] DbName: Veritabanı adı 
+
 [Login] DbUserName: Veritabanı kullanıcı adı 
+
 [Login] DbPassword: Veritabanı şifresi 
+
 [Connection] Port: Varsayılan sunucu portu 560 dır. Farklı bir port bu parametre değiştirilerek seçilebilir. 
+
 [Logging]  IsLogging: Veri loglama aktif/pasif yapılabilir(true/false) 
+
 [Logging]  IsLoggingDısconnections: Bağlantı kopmalarının loglanıp loglanmayacağı seçilebilir 
+
 [REDUNDANCY] ServerMode: Yedekli çalışma modunu belirler. Bu değer PRIMARY ya da BACKUP olabilir. Bu mod backup olarak ayarlandığında,sunucu PRIMARY sunucu ile haberleşerek redundant bir yapı oluştururlar. 
+
 [REDUNDANCY] PrimaryIP: BACKUP moddaki sunucunun bağlanacağı PRIMARY sunucu IP adresi bu alana yazılır. 
+
 [REDUNDANCY] PrimaryPORT: BACKUP moddaki sunucunun bağlanacağı PRIMARY sunucunun port numarası bu alana yazılır. 
+
 [REDUNDANCY] Timeout: PRIMARY sunucunun ne kadar sürelik bir devredışı kalma durumunda BACKUP sunucunun aktif olacağını belirleyen saniye cinsinden değerdir. 
 
 Daha fazla bilgi almak için:
