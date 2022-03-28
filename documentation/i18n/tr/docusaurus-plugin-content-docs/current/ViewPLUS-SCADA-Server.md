@@ -25,7 +25,6 @@ Sunucunun ana ekranında, genel sistem günlüklerinin görüntülenebildiği bi
 <center>
 
 ![server-09](/img/server-09.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
@@ -148,7 +147,6 @@ Sunucu ve istemci ortamında oturum açan kişilerin bilgilerini gösterir. Uzak
 <center>
 
 ![server-01](/img/server-01.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
@@ -159,7 +157,6 @@ Bu, yalnızca belirtilen IP adreslerinden bağlantılara izin verecektir.
 <center>
 
 ![server-02](/img/server-02.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
@@ -168,7 +165,6 @@ Beyaz liste filtrelemeyi etkinleştirin. Bir IP adresi ekle'ye tıklanarak gör�
 <center>
 
 ![server-03](/img/server-03.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
@@ -179,7 +175,6 @@ Bir IP adresi ekle'ye tıklanarak görüntülenen pencereye IP adresi girilir. G
 <center>
 
 ![server-04](/img/server-04.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
@@ -198,7 +193,6 @@ Kullanıcı kara listesini etkinleştirirken istemci ekranında kullanıcı bilg
 <center>
 
 ![server-05](/img/server-05.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
@@ -278,7 +272,6 @@ Birincil sunucuda arıza, kesinti veya aşırı trafik olması durumunda, birinc
 <center>
 
 ![server-06](/img/server-06.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
@@ -290,7 +283,6 @@ Bilgi sekmesi, projenin veritabanında kapladığı kapasite bilgilerini göster
 <center>
 
 ![server-07](/img/server-07.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
@@ -299,7 +291,6 @@ Projenin PostgreSQL veritabanındaki boyutu aşağıda gösterilmiştir.
 <center>
 
 ![server-08](/img/server-08.png)
-***<center>Figure 1: Add Password</center>***
 
 </center>
 
