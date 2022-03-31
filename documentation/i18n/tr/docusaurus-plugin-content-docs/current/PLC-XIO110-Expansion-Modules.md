@@ -2,14 +2,12 @@
 title: XIO110 Serisi Donanım Kılavuzu
 ---
 
-## Mounting Information
+## Montaj Bilgileri
 
 [XIO110 Expansion Modules](https://www.mikrodev.com/en/docs/PLC/hardware_manual/MIKRODEV_HM_XIO110_en.pdf)
 
-### DIN Rail Mounting
-First, the upper part of the device is mounted on the DIN rail. Then, with the help of the
-springs behind the device, when a lightly force is applied to the lower part, the device
-locates into the DIN rail easily and the montage is completed.
+### DIN Ray Montajı
+İlk olarak cihazın üst kısmı DIN rayına monte edilir. Ardından cihazın arkasındaki yaylar yardımıyla alt kısma hafif bir kuvvet uygulandığında cihaz DIN rayına kolayca yerleşir ve montaj tamamlanır.
 
 <center>
 
@@ -17,10 +15,9 @@ locates into the DIN rail easily and the montage is completed.
 
 </center>
 
-### Expansion Installation
-Assembly between MP110 series PLC or RIO110 series remote I/O products and XIO110
-series expansion modules is carried out by sliding the tabs over the rail so that the tabs
-overlap each other.
+### Genişletme Kurulumu
+
+MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi genişletme modülleri arasındaki montaj, tırnaklar birbiri üzerine gelecek şekilde ray üzerinde kaydırılarak gerçekleştirilir.
 
 <center>
 
@@ -28,11 +25,11 @@ overlap each other.
 
 </center>
 
-## XIO110.DI8 Digital Input
+## XIO110.DI8 Dijital Giriş
 
-### XIO110.DI8 General Information
+### XIO110.DI8 Genel Bilgi
 
-#### Physical Interfaces
+#### Fiziksel Arayüzler
 
 <center>
 
@@ -46,7 +43,7 @@ overlap each other.
 
 </center>
 
-#### General Device Specifications
+#### Genel Cihaz Özellikleri
 
 <center>
 
@@ -54,9 +51,9 @@ overlap each other.
 
 </center>
 
-### Connection Diagrams
+### Bağlantı Şemaları
 
-#### Supply Connection
+#### Besleme Bağlantısı
 
 <center>
 
@@ -64,7 +61,7 @@ overlap each other.
 
 </center>
 
-#### Digital Inputs
+#### Dijital Girişler
 
 <center>
 
@@ -72,11 +69,11 @@ overlap each other.
 
 </center>
 
-## XIO110.DI16 Digital Input
+## XIO110.DI16 Dijital Giriş
 
-### XIO110.DI16 General Information
+### XIO110.DI16 Genel Bilgi
 
-#### Physical Interfaces
+#### Fiziksel Arayüzler
 
 <center>
 
@@ -90,7 +87,7 @@ overlap each other.
 
 </center>
 
-#### General Device Specifications
+#### Genel Cihaz Özellikleri
 
 <center>
 
@@ -98,9 +95,9 @@ overlap each other.
 
 </center>
 
-### Connection Diagrams
+### Bağlantı Şemaları
 
-#### Supply Connection
+#### Besleme Bağlantısı
 
 <center>
 
@@ -108,7 +105,7 @@ overlap each other.
 
 </center>
 
-#### Digital Inputs
+#### Dijital Girişler
 
 <center>
 
@@ -116,11 +113,11 @@ overlap each other.
 
 </center>
 
-## XIO110.DO8 Digital Outputs
+## XIO110.DO8 Dijital Çıkışlar
 
-### XIO110.DO8 General Information
+### XIO11.DO8 Genel Bilgi
 
-#### Physical Interfaces
+#### Fiziksel Arayüzler
 
 <center>
 
@@ -134,7 +131,7 @@ overlap each other.
 
 </center>
 
-#### General Device Specifications
+#### Genel Cihaz Özellikleri
 
 <center>
 
@@ -142,9 +139,9 @@ overlap each other.
 
 </center>
 
-### Connection Diagrams
+### Bağlantı Şemaları
 
-#### Supply Connection
+#### Besleme Bağlantısı
 
 <center>
 
@@ -152,7 +149,7 @@ overlap each other.
 
 </center>
 
-#### Digital Outputs
+#### Dijital Çıkışlar
 
 <center>
 
@@ -160,11 +157,11 @@ overlap each other.
 
 </center>
 
-## XIO110.DO16 Digital Outputs
+## XIO110.DO16 Dijital Çıkışlar
 
-### XIO110.DO16 General Information
+### XIO110.DO16 Genel Bilgi
 
-#### Physical Interfaces
+#### Fiziksel Arayüzler
 
 <center>
 
@@ -178,7 +175,7 @@ overlap each other.
 
 </center>
 
-#### General Device Specifications
+#### Genel Cihaz Özellikleri
 
 <center>
 
@@ -186,9 +183,9 @@ overlap each other.
 
 </center>
 
-### Connection Diagrams
+### Bağlantı Şemaları
 
-#### Supply Connection
+#### Besleme Bağlantısı
 
 <center>
 
@@ -196,7 +193,7 @@ overlap each other.
 
 </center>
 
-#### Digital Outputs
+#### Dijital Çıkışlar
 
 <center>
 
@@ -204,11 +201,11 @@ overlap each other.
 
 </center>
 
-## XIO110.DI8DO8 Digital Outputs
+## XIO110.DI8DO8 Dijital Çıkışlar
 
-### XIO110.DI8DO8 General Information
+### XIO110.DI8DO8 Genel Bilgi
 
-#### Physical Interfaces
+#### Fiziksel Arayüzler
 
 <center>
 
@@ -223,7 +220,7 @@ overlap each other.
 </center>
 
 
-#### General Device Specifications
+#### Genel Cihaz Özellikleri
 
 <center>
 
@@ -231,9 +228,9 @@ overlap each other.
 
 </center>
 
-### Connection Diagrams
+### Bağlantı Şemaları
 
-#### Supply Connection
+#### Besleme Bağlantısı
 
 <center>
 
@@ -241,7 +238,7 @@ overlap each other.
 
 </center>
 
-#### Digital Input and Outputs
+#### Dijital Giriş ve Çıkışlar
 
 <center>
 
@@ -255,11 +252,11 @@ overlap each other.
 
 </center>
 
-## XIO110.AI4 Analog Input
+## XIO110.AI4 Analog Giriş
 
-### XIO110.AI4 General Information
+### XIO110.AI4 Genel Bilgi
 
-#### Physical Interfaces
+#### Fiziksel Arayüzler
 
 <center>
 
@@ -273,7 +270,7 @@ overlap each other.
 
 </center>
 
-#### General Device Specifications
+#### Genel Cihaz Özellikleri
 
 <center>
 
@@ -281,9 +278,9 @@ overlap each other.
 
 </center>
 
-### Connection Diagrams
+### Bağlantı Şemaları
 
-#### Supply Connection
+#### Besleme Bağlantısı
 
 <center>
 
@@ -291,7 +288,7 @@ overlap each other.
 
 </center>
 
-####  Analog Inputs
+#### Analog Girişler
 
 <center>
 
@@ -305,11 +302,11 @@ overlap each other.
 
 </center>
 
-## XIO110.AI8 Analog Input
+## XIO110.AI8 Analog Giriş
 
-### XIO110.AI8 General Information
+### XIO110.AI8 Genel Bilgi
 
-#### Physical Interfaces
+#### Fiziksel Arayüzler
 
 <center>
 
@@ -323,7 +320,7 @@ overlap each other.
 
 </center>
 
-#### General Device Specifications
+#### Genel Cihaz Özellikleri
 
 <center>
 
@@ -331,9 +328,9 @@ overlap each other.
 
 </center>
 
-### Connection Diagrams
+### Bağlantı Şemaları
 
-#### Supply Connection
+#### Besleme Bağlantısı
 
 <center>
 
@@ -341,7 +338,7 @@ overlap each other.
 
 </center>
 
-####  Analog Inputs
+#### Analog Girişler
 
 <center>
 
@@ -355,11 +352,11 @@ overlap each other.
 
 </center>
 
-## XIO110.AO4 Analog Output
+## XIO110.AO4 Analog Çıkış
 
-### XIO110.AO4 General Information
+### XIO110.AO4 Genel Bilgi
 
-#### Physical Interfaces
+#### Fiziksel Arayüzler
 
 <center>
 
@@ -373,7 +370,7 @@ overlap each other.
 
 </center>
 
-#### General Device Specifications
+#### Genel Cihaz Özellikleri
 
 <center>
 
@@ -381,9 +378,9 @@ overlap each other.
 
 </center>
 
-### Connection Diagrams
+### Bağlantı Şemaları
 
-#### Supply Connection
+#### Besleme Bağlantısı
 
 <center>
 
@@ -391,7 +388,7 @@ overlap each other.
 
 </center>
 
-####  Analog Outputs
+#### Analog Çıkışlar
 
 <center>
 
@@ -405,11 +402,11 @@ overlap each other.
 
 </center>
 
-## XIO110.AO8 Analog Output
+## XIO110.AO8 Analog Çıkış
 
-### XIO110.AO8 General Information
+### XIO110.AO8 Genel Bilgi
 
-#### Physical Interfaces
+#### Fiziksel Arayüzler
 
 <center>
 
@@ -423,7 +420,7 @@ overlap each other.
 
 </center>
 
-#### General Device Specifications
+#### Genel Cihaz Özellikleri
 
 <center>
 
@@ -431,9 +428,9 @@ overlap each other.
 
 </center>
 
-### Connection Diagrams
+### Bağlantı Şemaları
 
-#### Supply Connection
+#### Besleme Bağlantısı
 
 <center>
 
@@ -441,7 +438,7 @@ overlap each other.
 
 </center>
 
-####  Analog Outputs
+#### Analog Çıkışlar
 
 <center>
 
@@ -455,11 +452,11 @@ overlap each other.
 
 </center>
 
-## XIO110.AI4AO4 Analog Output
+## XIO110.AI4AO4 Analog Çıkış
 
-### XIO110.AI4AO4 General Information
+### XIO110.AI4AO4 Genel Bilgi
 
-#### Physical Interfaces
+#### Fiziksel Arayüzler
 
 <center>
 
@@ -473,7 +470,7 @@ overlap each other.
 
 </center>
 
-#### General Device Specifications
+#### Genel Cihaz Özellikleri
 
 <center>
 
@@ -481,9 +478,9 @@ overlap each other.
 
 </center>
 
-### Connection Diagrams
+### Bağlantı Şemaları
 
-#### Supply Connection
+#### Besleme Bağlantısı
 
 <center>
 
@@ -491,7 +488,7 @@ overlap each other.
 
 </center>
 
-####  Analog Input and Outputs
+#### Analog Giriş ve Çıkışlar
 
 <center>
 
@@ -506,11 +503,11 @@ overlap each other.
 </center>
 
 
-## XIO110.P6 RTD INPUT(PT100/PT1000)
+## XIO110.P6 RTD GİRİŞİ(PT100/PT1000)
 
-### XIO110.P6 General Information
+### XIO110.P6 Genel Bilgi
 
-#### Physical Interfaces
+#### Fiziksel Arayüzler
 
 <center>
 
@@ -524,7 +521,7 @@ overlap each other.
 
 </center>
 
-#### General Device Specifications
+#### Genel Cihaz Özellikleri
 
 <center>
 
@@ -532,9 +529,9 @@ overlap each other.
 
 </center>
 
-### Connection Diagrams
+### Bağlantı Şemaları
 
-#### Supply Connection
+#### Besleme Bağlantısı
 
 <center>
 
@@ -542,7 +539,7 @@ overlap each other.
 
 </center>
 
-#### RTD Inputs
+#### RTD Girişler
 
 <center>
 
@@ -550,11 +547,11 @@ overlap each other.
 
 </center>
 
-## XIO110.R8 Relay Ouput
+## XIO 110.R8 Röle Çıkışı
 
-### XIO110.R8 General Information
+### XIO 110.R8 Genel Bilgi
 
-#### Physical Interfaces
+#### Fiziksel Arayüzler
 
 <center>
 
@@ -569,7 +566,7 @@ overlap each other.
 </center>
 
 
-#### General Device Specifications
+#### Genel Cihaz Özellikleri
 
 <center>
 
@@ -577,9 +574,9 @@ overlap each other.
 
 </center>
 
-### Connection Diagrams
+### Bağlantı Şemaları
 
-#### Supply Connection
+#### Besleme Bağlantısı
 
 <center>
 
@@ -587,7 +584,7 @@ overlap each other.
 
 </center>
 
-#### Relay Outputs
+#### Relay Çıkışlar
 
 <center>
 

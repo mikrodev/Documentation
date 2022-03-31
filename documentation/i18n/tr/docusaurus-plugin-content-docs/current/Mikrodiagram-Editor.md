@@ -2,21 +2,21 @@
 title: "Mikrodiagram Editor"
 ---
 
-## Introduction
+## Tanıtım
 
-### About Mikrodiagram
+### Mikrodiyagram Hakkında
 
-Mikrodiagram is an editor software for used programming of Mikrodev PLC family devices that developed by Mikrodev. Mikrodiagram provide to you perform very complex projects quickly with a visual and easy-to-understand interface.
+Mikrodiagram, Mikrodev tarafından geliştirilen Mikrodev PLC ailesi cihazların kullanılan programlanması için bir editör yazılımıdır. Mikrodiagram, görsel ve kolay anlaşılır bir arayüz ile çok karmaşık projeleri hızlı bir şekilde gerçekleştirmenizi sağlar.
 
-Mikrodiagram library keep advanced blocks that will facilitate complex aplications such as “PID, astronomical timer” as well as basic logic blocks like “AND, OR, XOR”.
+Mikrodiagram kütüphanesi, “PID, astronomik timer” gibi karmaşık uygulamaları kolaylaştıracak gelişmiş blokların yanı sıra “AND, OR, XOR” gibi temel mantık bloklarını da bulundurur.
 
-Settings such as program installation and update, online monitoring and firmware update are presented in Mikrodiagram by connecting to devices via different interfaces(USB/TCP).
+Program yükleme ve güncelleme, online izleme ve firmware güncelleme gibi ayarlar cihazlara farklı arayüzler (USB/TCP) üzerinden bağlanarak Mikrodiagram'da sunulmaktadır.
 
-## Setup
+## Kurmak
 
-### System Requirements
+### Sistem gereksinimleri
 
-Minimum computer requirments for Mikrodiagram setup:
+Mikrodiagram kurulumu için minimum bilgisayar gereksinimleri:
 
 Operating system: Microsoft Windows XP/Vista/7/8/10/12 (32/64 Bit),  Linux
 
@@ -28,27 +28,27 @@ Video Card: 128 MB
 
 Disk Area: 200 MB
 
-### Mikrodiagram Setup
+### Mikrodiyagram Kurulumu
 
-Mikrodiagram software is designed to work with current Windows versions. The installation file can be downloaded free of charge from the following internet address:
+Mikrodiagram yazılımı, güncel Windows sürümleriyle çalışacak şekilde tasarlanmıştır. Kurulum dosyası aşağıdaki internet adresinden ücretsiz olarak indirilebilir:
 
 [Mikrodiagram Setup](https://www.mikrodev.com/downloads/mikrodiagram/MikrodiagramSetupSTM_latest.zip)
 
-Mikrodiagram setup is completed by following the directions on the screen.
+Ekrandaki yönergeler takip edilerek Mikrodiagram kurulumu tamamlanır.
 
-### Usb Driver Setup
+### Usb Sürücü Kurulumu
 
-STM Processor USB driver installation file…………………… can download in internet adress.
+STM İşlemci USB sürücü kurulum dosyası…………………… internet adresinden indirilebilir.
 
-USB driver setup is completed by following the directions on the screen.
+Ekrandaki yönergeler takip edilerek USB sürücü kurulumu tamamlanır.
 
-= Note:= There is no need to install a USB driver when Mikrodiagram is installed on a computer with Windows 10 or higher operating system.
+= Not:= Mikrodiagram Windows 10 veya üzeri işletim sistemine sahip bir bilgisayara kurulduğunda USB sürücüsü kurulmasına gerek yoktur.
 
-## Interface
+## Arayüz
 
-### Menu Options
+### Menü seçenekleri
 
-In Mikrodiagram menu options "File, Edit, Build, Tools, Window and Help" menus are available.
+Mikrodiagram menü seçeneklerinde "Dosya, Düzenle, Oluştur, Araçlar, Pencere ve Yardım" menüleri mevcuttur.
 
 <center>
 
@@ -56,9 +56,9 @@ In Mikrodiagram menu options "File, Edit, Build, Tools, Window and Help" menus a
 
 </center>
 
-* File Menu
+* Dosya menüsü
 
-Basic program filing operations can be done from Mikrodiagram file menu.
+Mikrodiagram dosya menüsünden temel program dosyalama işlemleri yapılabilmektedir.
 
 <center>
 
@@ -66,7 +66,7 @@ Basic program filing operations can be done from Mikrodiagram file menu.
 
 </center>
 
-File menu options are described on the tablature.
+Dosya menü seçenekleri tabloda açıklanmıştır.
 
 <center>
 
@@ -74,7 +74,7 @@ File menu options are described on the tablature.
 
 </center>
 
-* Edit Menu
+* Düzenle Menüsü
 
 <center>
 
@@ -82,9 +82,9 @@ File menu options are described on the tablature.
 
 </center>
 
-Edit menu is used for undoing the operation, restoring the undo operation, renaming, cutting, copying, pasting, and selecting all operations.
+Düzenleme menüsü, işlemi geri almak, geri alma işlemini geri yüklemek, yeniden adlandırmak, kesmek, kopyalamak, yapıştırmak ve tüm işlemleri seçmek için kullanılır.
 
-* Build Menu
+* Yapı Menüsü
 
 <center>
 
@@ -92,9 +92,9 @@ Edit menu is used for undoing the operation, restoring the undo operation, renam
 
 </center>
 
-The Build menu is used for compiling the project.
+Projeyi derlemek için Build menüsü kullanılır.
 
-* Tools Menu
+* Araçlar Menüsü
 
 <center>
 
@@ -102,9 +102,9 @@ The Build menu is used for compiling the project.
 
 </center>
 
-From the Tools menu, you can access Mikrodiagram interface configuration settings and the "Mikroterminal" program where the USB serial port device settings are made.
+Araçlar menüsünden Mikrodiagram arayüz konfigürasyon ayarlarına ve USB seri port cihaz ayarlarının yapıldığı "Mikroterminal" programına ulaşabilirsiniz.
 
-* Window Menu
+* Pencere Menüsü
 
 <center>
 
@@ -112,9 +112,9 @@ From the Tools menu, you can access Mikrodiagram interface configuration setting
 
 </center>
 
-Window menu is used to Mikrodiagram make to design window settings. There are features such as full screen, sidebar display, mode selector display, screen splitting in various shapes
+Pencere menüsü, pencere ayarlarını tasarlamak için Mikrodiagram yapmak için kullanılır. Tam ekran, kenar çubuğu gösterimi, mod seçici gösterimi, çeşitli şekillerde ekran bölme gibi özellikler mevcuttur.
 
-* Help Menu
+* Yardım Menüsü
 
 <center>
 
@@ -122,7 +122,7 @@ Window menu is used to Mikrodiagram make to design window settings. There are fe
 
 </center>
 
-From the help menu you can access Mikrodiagram "help text" and "about Mikrodiagram" options.
+Yardım menüsünden Mikrodiagram "yardım metni" ve "Mikrodiagram hakkında" seçeneklerine ulaşabilirsiniz.
 
 <center>
 
@@ -130,9 +130,9 @@ From the help menu you can access Mikrodiagram "help text" and "about Mikrodiagr
 
 </center>
 
-Information on Mikrodiagram software version can be found on the "About Mikrodiagram" tab.
+Mikrodiagram yazılım sürümü ile ilgili bilgilere "Mikrodiagram Hakkında" sekmesinden ulaşılabilir.
 
-### Status Bar
+### Durum çubuğu
 
 <center>
 
@@ -140,11 +140,11 @@ Information on Mikrodiagram software version can be found on the "About Mikrodia
 
 </center>
 
-In the status bar you can select the mode "move object, link object, add object, add text, add line tag, group blocks, save, save as, diagram settings, zoom in, zoom out,”.
+Durum çubuğunda "nesneyi taşı, nesneyi bağla, nesne ekle, metin ekle, satır etiketi ekle, grup blokları, kaydet, farklı kaydet, diyagram ayarları, yakınlaştır, uzaklaştır" modunu seçebilirsiniz.
 
-The memory space used is also observed from this section.
+Kullanılan bellek alanı da bu bölümden görülmektedir.
 
-* Object Move Mode
+* Nesne Taşıma Modu
 
 <center>
 
@@ -152,9 +152,9 @@ The memory space used is also observed from this section.
 
 </center>
 
-It is the mode selection used to move objects in Mikrodiagram work area.
+Mikrodiagram çalışma alanında nesneleri hareket ettirmek için kullanılan mod seçimidir.
 
-* Object Connect Mode
+* Nesne Bağlantı Modu
 
 <center>
 
@@ -162,9 +162,9 @@ It is the mode selection used to move objects in Mikrodiagram work area.
 
 </center>
 
-It is the mode used to connect objects together in Mikrodiagram work area.
+Mikrodiagram çalışma alanında nesneleri birbirine bağlamak için kullanılan moddur.
 
-* Object Add Mode
+* Nesne Ekleme Modu
 
 <center>
 
@@ -172,9 +172,9 @@ It is the mode used to connect objects together in Mikrodiagram work area.
 
 </center>
 
-It is the mode used to insert object in Mikrodiagram work area. When selected, inserts the last selected door type when clicked in Mikrodiagram work area.
+Mikrodiagram çalışma alanına nesne eklemek için kullanılan moddur. Seçildiğinde Mikrodiyagram çalışma alanında tıklandığında son seçilen kapı tipini ekler.
 
-* Text Add Mode
+* Metin Ekleme Modu
 
 <center>
 
@@ -182,9 +182,9 @@ It is the mode used to insert object in Mikrodiagram work area. When selected, i
 
 </center>
 
-It is the mode used to insert word note in Mikrodiagram study area.
+Mikrodiagram çalışma alanına kelime notu eklemek için kullanılan moddur.
 
-* Add Line Label
+* Satır Etiketi Ekle
 
 <center>
 
@@ -192,9 +192,9 @@ It is the mode used to insert word note in Mikrodiagram study area.
 
 </center>
 
-It is the mode used to insert line tag in Mikrodiagram study area. The line tags provide a convenient way of connecting the output of doors with "line identification" on door types to the entrance of other blocks. Mikrodiagram provides ease of reading and following of projects.
+Mikrodiagram çalışma alanına satır etiketi eklemek için kullanılan moddur. Hat etiketleri, kapı tiplerinde "hat tanımlaması" olan kapıların çıkışını diğer blokların girişlerine bağlamak için uygun bir yol sağlar. Mikrodiagram projelerin okunması ve takibinde kolaylık sağlar.
 
-* Group Blocks
+* Grup Blokları
 
 <center>
 
@@ -202,9 +202,9 @@ It is the mode used to insert line tag in Mikrodiagram study area. The line tags
 
 </center>
 
-The projects prepared in Mikrodiagram work area are used in groups. Provides ease of reading and following the projects.
+Mikrodiyagram çalışma alanında hazırlanan projeler gruplar halinde kullanılmaktadır. Projeleri okuma ve takip etme kolaylığı sağlar.
 
-* Save- Save as
+* Kaydet- Farklı kaydet
 
 <center>
 
@@ -212,9 +212,9 @@ The projects prepared in Mikrodiagram work area are used in groups. Provides eas
 
 </center>
 
-On Mikrodiagram, "Save" to save changes made to projects and "Save As" to save projects in a different folder.
+Mikrodiagram'da projelerde yapılan değişiklikleri kaydetmek için "Kaydet" ve projeleri farklı bir klasöre kaydetmek için "Farklı Kaydet".
 
-* Diagram Setting
+* Diyagram Ayarı
 
 <center>
 
@@ -222,9 +222,9 @@ On Mikrodiagram, "Save" to save changes made to projects and "Save As" to save p
 
 </center>
 
-On Mikrodiagram, it is the mode selection used to adjust the dimensions of the work area to which door types can be added.
+Mikrodiagram üzerinde kapı tiplerinin eklenebileceği çalışma alanının ölçülerini ayarlamak için kullanılan mod seçimidir.
 
-* Zoom In-Zoom Out-Reset Zoom
+* Yakınlaştır-Uzaklaştır-Sıfırla Yakınlaştır
 
 <center>
 
@@ -232,9 +232,9 @@ On Mikrodiagram, it is the mode selection used to adjust the dimensions of the w
 
 </center>
 
-On Mikrodiagram, used to zoom in and out of the work area to which door types can be added and to set them to the initial settings.
+Mikrodiagram üzerinde kapı tiplerinin eklenebileceği çalışma alanını yakınlaştırıp uzaklaştırmak ve başlangıç ayarlarına getirmek için kullanılır.
 
-* Find
+* Bulmak
 
 <center>
 
@@ -242,9 +242,9 @@ On Mikrodiagram, used to zoom in and out of the work area to which door types ca
 
 </center>
 
-On Mikrodiagram, it is the search engine used to find door types or line tags on prepared projects more easily with "block name, block number, modbus address, line description and line tag" filters.
+Mikrodiagram üzerinde "blok adı, blok numarası, modbus adresi, hat açıklaması ve hat etiketi" filtreleri ile hazırlanan projelerde kapı tiplerini veya hat etiketlerini daha kolay bulmak için kullanılan arama motorudur.
 
-* Used Memory
+* Kullanılan Bellek
 
 <center>
 
@@ -252,9 +252,9 @@ On Mikrodiagram, it is the search engine used to find door types or line tags on
 
 </center>
 
-On Mikrodiagram, the memory area to be used is observed when the prepared projects are uploaded to the device.
+Mikrodiagram üzerinde hazırlanan projeler cihaza yüklendiğinde kullanılacak hafıza alanı gözlemlenir.
 
-### Mode Options
+### Mod Seçenekleri
 
 <center>
 
@@ -262,7 +262,7 @@ On Mikrodiagram, the memory area to be used is observed when the prepared projec
 
 </center>
 
-* Gate Editor
+* Kapı Editörü
 
 <center>
 
@@ -270,9 +270,9 @@ On Mikrodiagram, the memory area to be used is observed when the prepared projec
 
 </center>
 
-On Mikrodiagram, it is mode of project preparation.
+Mikrodiagram'da proje hazırlama modudur.
 
-* Projects
+* Projeler
 
 <center>
 
@@ -280,9 +280,9 @@ On Mikrodiagram, it is mode of project preparation.
 
 </center>
 
-"Device configuration, PLC and extensions, text table, block properties table, variable address table, display options and IEC61850 table" options.
+"Cihaz konfigürasyonu, PLC ve uzantılar, metin tablosu, blok özellikleri tablosu, değişken adres tablosu, ekran seçenekleri ve IEC61850 tablosu" seçenekleri.
 
-* Simulation
+* Simülasyon
 
 <center>
 
@@ -290,9 +290,9 @@ On Mikrodiagram, it is mode of project preparation.
 
 </center>
 
-On Mikrodiagram, provide you to test the prepared projects in offline mode without loading the device and examine the program responses.
+Mikrodiagram üzerinde hazırlanan projeleri cihaza yüklemeden offline modda test etmenizi ve program yanıtlarını incelemenizi sağlar.
 
-* Online View
+* Çevrimiçi Görünüm
 
 <center>
 
@@ -300,9 +300,9 @@ On Mikrodiagram, provide you to test the prepared projects in offline mode witho
 
 </center>
 
-It is used to track block values and load new values into blocks by USB or TCP connection to Mikrodiagram project loaded on the device.
+Cihaza yüklenen Mikrodiagram projesine USB veya TCP bağlantısı ile blok değerlerini takip etmek ve yeni değerleri bloklara yüklemek için kullanılır.
 
-### Build Mode Options
+### Yapı Modu Seçenekleri
 
 <center>
 
@@ -310,9 +310,9 @@ It is used to track block values and load new values into blocks by USB or TCP c
 
 </center>
 
-Build mode options can be switched to "connect / disconnect device, compile project, send to binary device, send project to device and project selection" modes.
+Oluşturma modu seçenekleri "cihazı bağla / bağlantısını kes, projeyi derle, ikili cihaza gönder, projeyi cihaza gönder ve proje seçimi" modlarına değiştirilebilir.
 
-* Device Connetion/ Disconnetion
+* Cihaz Bağlantısı/ Bağlantısının Kesilmesi
 
 <center>
 
@@ -320,9 +320,9 @@ Build mode options can be switched to "connect / disconnect device, compile proj
 
 </center>
 
-Used to establish a connection between the device to be programmed and the computer. USB or TCP port connectivity options are available.
+Programlanacak cihaz ile bilgisayar arasında bağlantı kurmak için kullanılır. USB veya TCP bağlantı noktası bağlantı seçenekleri mevcuttur.
 
-* Build Project
+* Yapı Projesi
 
 <center>
 
@@ -330,9 +330,9 @@ Used to establish a connection between the device to be programmed and the compu
 
 </center>
 
-On Mikrodiagram, it is used to compile the prepared project.
+Mikrodiagram üzerinde hazırlanan projeyi derlemek için kullanılır.
 
-* Send Binary to Device
+* Cihaza İkili Dosya Gönder
 
 <center>
 
@@ -340,9 +340,9 @@ On Mikrodiagram, it is used to compile the prepared project.
 
 </center>
 
-Used to send binary files to the device.
+Cihaza ikili dosyalar göndermek için kullanılır.
 
-* Send to Device
+* Cihaza Gönder
 
 <center>
 
@@ -350,9 +350,9 @@ Used to send binary files to the device.
 
 </center>
 
-Used to send the prepared project to the device.
+Hazırlanan projeyi cihaza göndermek için kullanılır.
 
-* Project Selection
+* Proje Seçimi
 
 <center>
 
@@ -360,9 +360,9 @@ Used to send the prepared project to the device.
 
 </center>
 
-On Mikrodiagram, if more than one project is open it is used to select the project to be sent to the device.
+Mikrodiagram üzerinde birden fazla proje açık ise cihaza gönderilecek projeyi seçmek için kullanılır.
 
-### Sidebar Options
+### Kenar Çubuğu Seçenekleri
 
 <center>
 
@@ -370,9 +370,9 @@ On Mikrodiagram, if more than one project is open it is used to select the proje
 
 </center>
 
-You can switch to the "block types, line labels, block packages, projects, open diagrams and file system" modes from sidebar options.
+Kenar çubuğu seçeneklerinden "blok türleri, satır etiketleri, blok paketleri, projeler, açık diyagramlar ve dosya sistemi" modlarına geçebilirsiniz.
 
-* Gate Types
+* Kapı Çeşitleri
 
 <center>
 
@@ -380,9 +380,9 @@ You can switch to the "block types, line labels, block packages, projects, open 
 
 </center>
 
-On Mikrodiagram , in order to select the blocks used for FBD programming and move the blocks to programming age, it is necessary to select "Gate Types".
+Mikrodiagram üzerinde FBD programlama için kullanılan blokları seçmek ve blokları programlama çağına taşımak için "Gate Types" seçilmesi gerekmektedir.
 
-* Line Labels
+* Satır Etiketleri
 
 <center>
 
@@ -390,9 +390,9 @@ On Mikrodiagram , in order to select the blocks used for FBD programming and mov
 
 </center>
 
-While "line labels" is selected in the sidebar, "line definitions" defined in Mikrodiagram can be displayed and used in the project.
+Kenar çubuğunda "çizgi etiketleri" seçili iken Mikrodiagram'da tanımlanan "çizgi tanımları" projede görüntülenebilir ve kullanılabilir.
 
-* Projects
+* Projeler
 
 <center>
 
@@ -400,9 +400,9 @@ While "line labels" is selected in the sidebar, "line definitions" defined in Mi
 
 </center>
 
-While "line labels" is selected in the sidebar, open projects are displayed, and projects are selected.
+Kenar çubuğunda "satır etiketleri" seçiliyken, açık projeler görüntülenir ve projeler seçilir.
 
-* Split
+* Bölmek
 
 <center>
 
@@ -410,10 +410,9 @@ While "line labels" is selected in the sidebar, open projects are displayed, and
 
 </center>
 
-It can be divided into sections using the "split" option to select more than one mode in the sidebar.
+Kenar çubuğunda birden fazla mod seçmek için "böl" seçeneği kullanılarak bölümlere ayrılabilir.
 
-
-## Mikrodiagram Configuration
+## Mikrodiyagram Yapılandırması
 
 <center>
 
@@ -421,9 +420,9 @@ It can be divided into sections using the "split" option to select more than one
 
 </center>
 
-Mikrodiagram configuration can be accessed by clicking on "Options" on the "Tools" menu. "environment, text editor, diagram editor and version control" are available.
+Mikrodiagram konfigürasyonuna "Araçlar" menüsünden "Seçenekler" tıklanarak ulaşılabilir. "ortam, metin düzenleyici, diyagram düzenleyici ve sürüm kontrolü" mevcuttur.
 
-### Environment
+### Çevre
 
 <center>
 
@@ -431,9 +430,9 @@ Mikrodiagram configuration can be accessed by clicking on "Options" on the "Tool
 
 </center>
 
-On the environment tab, there are "general, keyboard, external tools, MIME types and locator" options.
+Ortam sekmesinde "genel, klavye, harici araçlar, MIME türleri ve konumlandırıcı" seçenekleri bulunmaktadır.
 
-* General
+* Genel
 
 <center>
 
@@ -447,7 +446,7 @@ On the environment tab, there are "general, keyboard, external tools, MIME types
 
 </center>
 
-From the General tab, Mikrodiagram interface color can be changed and the color settings can be reset. (Return to factory settings.)
+Genel sekmesinden Mikrodiagram arayüz rengi değiştirilebilir ve renk ayarları sıfırlanabilir. (Fabrika ayarlarına dönün.)
 
 <center>
 
@@ -455,7 +454,7 @@ From the General tab, Mikrodiagram interface color can be changed and the color 
 
 </center>
 
-Mikrodiagram have Turkish and English languages options.
+Mikrodiagram Türkçe ve İngilizce dil seçeneklerine sahiptir.
 
 <center>
 
@@ -463,9 +462,9 @@ Mikrodiagram have Turkish and English languages options.
 
 </center>
 
-If the files are changed from the outside in Mikrodiagram, the application status of the changes is checked.
+Mikrodiagram'da dosyalar dışarıdan değiştirilirse, değişikliklerin uygulama durumu kontrol edilir.
 
-Mikrodiagram needs to be restarted when selecting between language options.
+Dil seçenekleri arasında seçim yaparken Mikrodiagram'ın yeniden başlatılması gerekiyor.
 
 <center>
 
@@ -473,9 +472,9 @@ Mikrodiagram needs to be restarted when selecting between language options.
 
 </center>
 
-When it is desired to automatically save changes made to the project in Mikrodiagram, the "modified files can be saved automatically" can be selected and the time interval to be saved can be specified.
+Projede yapılan değişikliklerin Mikrodiagram'da otomatik olarak kaydedilmesi istendiğinde, "değiştirilen dosyalar otomatik olarak kaydedilebilir" seçilebilir ve kaydedilecek zaman aralığı belirtilebilir.
 
-* Keyboard
+* Tuş takımı
 
 <center>
 
@@ -483,15 +482,15 @@ When it is desired to automatically save changes made to the project in Mikrodia
 
 </center>
 
-It provides access to the factory settings of the shortcut keys used in Mikrodiagram on the keyboard tab.
+Klavye sekmesinde Mikrodiagram'da kullanılan kısayol tuşlarının fabrika ayarlarına erişim sağlar.
 
-The shortcut key settings can be changed and the factory default settings can be restored.
+Kısayol tuşu ayarları değiştirilebilir ve fabrika varsayılan ayarları geri yüklenebilir.
 
-* External Tools
-* MIME Types
-* Locator
+* Harici Araçlar
+* MIME Türleri
+* Konumlandırıcı
 
-### Text Editor
+### Metin düzeltici
 
 <center>
 
@@ -499,11 +498,11 @@ The shortcut key settings can be changed and the factory default settings can be
 
 </center>
 
-The current status of the fonts used in Mikrodiagram is displayed.
+Mikrodiagram'da kullanılan yazı tiplerinin mevcut durumu görüntülenir.
 
-With the font&colors, behavior, display, generic highlighter, snippets,  completion options, the appearance of the text editor can be edited.
+Yazı tipi ve renkler, davranış, görünüm, genel vurgulayıcı, snippet'ler, tamamlama seçenekleri ile metin düzenleyicinin görünümü düzenlenebilir.
 
-### Diagram Editor
+### Diyagram Düzenleyici
 
 <center>
 
@@ -511,7 +510,7 @@ With the font&colors, behavior, display, generic highlighter, snippets,  complet
 
 </center>
 
-It is used to make settings for  Mikrodiagram background color, block color, page size and USB port selection
+Mikrodiagram arka plan rengi, blok rengi, sayfa boyutu ve USB port seçimi ayarlarını yapmak için kullanılır.
 
 <center>
 
@@ -519,11 +518,11 @@ It is used to make settings for  Mikrodiagram background color, block color, pag
 
 </center>
 
-It can be adjusted by selecting color from "background color" section in Mikrodiagram.
+Mikrodiagram'da "arka plan rengi" bölümünden renk seçilerek ayarlanabilir.
 
-It can be adjusted by selecting color from "block color" section in Mikrodiagram.
+Mikrodiagram'da "blok rengi" bölümünden renk seçilerek ayarlanabilir.
 
-Page sizes can be set to any size.
+Sayfa boyutları herhangi bir boyuta ayarlanabilir.
 
 <center>
 
@@ -531,7 +530,7 @@ Page sizes can be set to any size.
 
 </center>
 
-It is used to make COM port selection from Mikrodiagram to serial port connection to device.
+Cihaza seri port bağlantısı için Mikrodiagram'dan COM port seçimi yapmak için kullanılır.
 
 <center>
 
@@ -539,11 +538,11 @@ It is used to make COM port selection from Mikrodiagram to serial port connectio
 
 </center>
 
-The "logging" to save newly created projects is selected.
+Yeni oluşturulan projeleri kaydetmek için "log" seçilir.
 
-### Version Control
+### Sürüm Kontrolü
 
-#### General
+#### Genel
 
 <center>
 
@@ -551,7 +550,7 @@ The "logging" to save newly created projects is selected.
 
 </center>
 
-#### Subversion
+#### Yıkım
 
 <center>
 
@@ -559,7 +558,7 @@ The "logging" to save newly created projects is selected.
 
 </center>
 
-## Creating A Project
+## Proje Oluşturma
 
 <center>
 
@@ -567,9 +566,9 @@ The "logging" to save newly created projects is selected.
 
 </center>
 
-To create a new project in Mikrodiagram, select "New file or Project open " in the "File Menu".
+Mikrodiagram'da yeni bir proje oluşturmak için "Dosya Menüsü"nde "Yeni dosya veya Proje aç" seçeneğini seçin.
 
-* Step 1
+* Aşama 1
 
 <center>
 
@@ -577,7 +576,7 @@ To create a new project in Mikrodiagram, select "New file or Project open " in t
 
 </center>
 
-* Step 2
+* Aşama 2
 
 <center>
 
@@ -585,11 +584,11 @@ To create a new project in Mikrodiagram, select "New file or Project open " in t
 
 </center>
 
-The newly created project name and project creation place are selected
+Yeni oluşturulan proje adı ve proje oluşturma yeri seçilir
 
-When "Use as default project location" is selected, project creation place is fixed for the projects to be created later.
+"Varsayılan proje konumu olarak kullan" seçildiğinde, daha sonra oluşturulacak projeler için proje oluşturma yeri sabitlenir.
 
-* Step 3
+* Aşama 3
 
 <center>
 
@@ -597,9 +596,9 @@ When "Use as default project location" is selected, project creation place is fi
 
 </center>
 
-Programming method selection is done.
+Programlama yöntemi seçimi yapılır.
 
-* Step 4
+* Adım 4
 
 <center>
 
@@ -607,9 +606,9 @@ Programming method selection is done.
 
 </center>
 
-The device to be programmed and the expansion unit  if required are selected.
+Programlanacak cihaz ve genişletmeyi seçin.
 
-* Step 5
+* Adım 5
 
 <center>
 
@@ -617,9 +616,9 @@ The device to be programmed and the expansion unit  if required are selected.
 
 </center>
 
-Project configuration settings can be changed.
+Proje yapılandırma ayarları değiştirilebilir.
 
-* Step 6
+* Adım 6
 
 <center>
 
@@ -627,15 +626,15 @@ Project configuration settings can be changed.
 
 </center>
 
-A new project has been created.
+Yeni bir proje oluşturuldu.
 
-Project design can be started on the page opened by clicking on the file "main.mdv".
+Açılan sayfada "main.mdv" dosyasına tıklanarak proje tasarımına geçilebilir.
 
-## Using Editor
+## Düzenleyiciyi Kullanma
 
-### Block Inserting (Gate Type Inserting)
+### Blok Yerleştirme (Kapı Tipi Yerleştirme)
 
-Mikrodiagram-specific FBD (function block diagram) can be programmed with door types keep in the programming library.
+Mikrodiagrama özel FBD (fonksiyon blok şeması) programlama kitaplığında tutulan kapı tipleri ile programlanabilir.
 
 <center>
 
@@ -643,7 +642,7 @@ Mikrodiagram-specific FBD (function block diagram) can be programmed with door t
 
 </center>
 
-"Gate Types" are selected from the sidebar and the door type to be added is selected.
+Kenar çubuğundan "Kapı Tipleri" seçilir ve eklenecek kapı tipi seçilir.
 
 <center>
 
@@ -651,19 +650,19 @@ Mikrodiagram-specific FBD (function block diagram) can be programmed with door t
 
 </center>
 
-The door type to be added is clicked, then the door type is moved to the work area when it is clicked on the work area. The input and output of the added blocks are connected to each other and the design of the project is continued.
+Eklenecek kapı tipine tıklanır, çalışma alanı üzerine tıklandığında kapı tipi çalışma alanına taşınır. Eklenen blokların giriş ve çıkışları birbirine bağlanarak projenin tasarımına devam edilir.
 
-### Inserting Line Label
+### Satır Etiketi Ekleme
 
-In projects of Mikrodiagram can be made programming by connecting block outputs to inputs of other blocks.
+Mikrodiagram projelerinde blok çıkışları diğer blokların girişlerine bağlanarak programlama yapılabilir.
 
-Another way to connect block outputs to the inputs of other blocks is to add a line label.
+Blok çıkışlarını diğer blokların girişlerine bağlamanın başka bir yolu da bir satır etiketi eklemektir.
 
-Any block named "line definition" can be used as a line tag when connected to a block.
+"Hat tanımı" adlı herhangi bir blok, bir bloğa bağlandığında satır etiketi olarak kullanılabilir.
 
-Line labels facilitate the preparation of projects and increase the readability of the projects.
+Satır etiketleri projelerin hazırlanmasını kolaylaştırır ve projelerin okunabilirliğini artırır.
 
-* Step 1
+* Aşama 1
 
 <center>
 
@@ -671,9 +670,9 @@ Line labels facilitate the preparation of projects and increase the readability 
 
 </center>
 
-To move any block output to another point with a line tag, double-click on the block to access "object properties". The "line description" tab in the object properties is clicked, and a description is written in the line tags.
+Herhangi bir blok çıktısını bir çizgi etiketi ile başka bir noktaya taşımak için, "nesne özelliklerine" erişmek için bloğa çift tıklayın. Nesne özelliklerinde "satır açıklaması" sekmesine tıklanır ve satır etiketlerine açıklama yazılır.
 
-* Step 2
+* Adım 2
 
 <center>
 
@@ -681,9 +680,9 @@ To move any block output to another point with a line tag, double-click on the b
 
 </center>
 
-The "line tag" is added when clicking on the "add line tag" icon in Mikrodiagram status bar and then clicking on the work area. The output of the line tag is connected to the block input, as is the method of connecting the blocks together.
+Mikrodiagram durum çubuğundaki "satır etiketi ekle" simgesine tıklandığında ve ardından çalışma alanına tıklandığında "satır etiketi" eklenir. Satır etiketinin çıkışı, blokları birbirine bağlama yönteminde olduğu gibi blok girişine bağlanır.
 
-* Step 3
+* Aşama 3
 
 <center>
 
@@ -691,9 +690,9 @@ The "line tag" is added when clicking on the "add line tag" icon in Mikrodiagram
 
 </center>
 
-Double-click on the line label to select from line definitions.
+Çizgi tanımlarından seçim yapmak için çizgi etiketine çift tıklayın.
 
-* Step 4
+* Adım 4
 
 <center>
 
@@ -701,15 +700,15 @@ Double-click on the line label to select from line definitions.
 
 </center>
 
-Another way to add a line tag is;
+Satır etiketi eklemenin başka bir yolu da;
 
-The "line tags" are selected from the sidebar. A "line tag" can be added to the work area by selecting from the line definitions defined in the project.
+Kenar çubuğundan "satır etiketleri" seçilir. Projede tanımlanan çizgi tanımlarından seçim yapılarak çalışma alanına "çizgi etiketi" eklenebilir.
 
-There is also a filtering feature to choose from line tags.
+Satır etiketlerinden seçim yapabileceğiniz bir filtreleme özelliği de vardır.
 
-### Inserting Text
+### Metin Ekleme
 
-It is used to add notes to project creation area in Mikrodiagram. The fonts and background of the added notes can be changed.
+Mikrodiagramda proje oluşturma alanına not eklemek için kullanılır. Eklenen notların yazı tipleri ve arka planı değiştirilebilir.
 
 <center>
 
@@ -717,11 +716,11 @@ It is used to add notes to project creation area in Mikrodiagram. The fonts and 
 
 </center>
 
-If you click on the "insert text" button in Mikrodiagram status bar and then click on the work area, the memo page to be added is moved to the work area. The notes can be written on the note sheet. Font, color, background etc. to change the settings right-click on the note and make selection.
+Mikrodiagram durum çubuğunda "metin ekle" butonuna basar ve ardından çalışma alanına tıklarsanız eklenecek not sayfası çalışma alanına taşınır. Notlar not kağıdına yazılabilir. Yazı tipi, renk, arka plan vb. ayarları değiştirmek için nota sağ tıklayın ve seçim yapın.
 
-### Grinding Of Blocks
+### Blokların Taşlanması
 
-Mikrodiagram block grouping feature; it facilitates the follow-up of the functions of the block groups in the projects.
+Mikrodiyagram blok gruplama özelliği; projelerdeki blok gruplarının işlevlerinin takibini kolaylaştırır.
 
 <center>
 
@@ -729,23 +728,23 @@ Mikrodiagram block grouping feature; it facilitates the follow-up of the functio
 
 </center>
 
-Click on the "Block Group" icon in the status bar, then the blocks are grouped in the work area using the select-and-drop method.
+Durum çubuğundaki "Blok Grubu" simgesine tıklayın, ardından bloklar seç ve bırak yöntemi kullanılarak çalışma alanında gruplandırılır.
 
-The block grouping properties page is reached by double clicking on the block grouping.
+Blok gruplama üzerine çift tıklanarak blok gruplama özellikleri sayfasına ulaşılır.
 
-The name of the block group is defined by "group title" option.
+Blok grubunun adı "grup başlığı" seçeneği ile tanımlanır.
 
-With the "Look" option, the background of the block group (transparent background or rectangular line) is selected.
+"Bak" seçeneği ile blok grubunun arka planı (şeffaf arka plan veya dikdörtgen çizgi) seçilir.
 
-With the "Color" option, the desired color selection is made for the block group.
+"Renk" seçeneği ile blok grubu için istenilen renk seçimi yapılır.
 
-The size of the block group is adjusted by "Size" option.
+Blok grubunun boyutu "Boyut" seçeneği ile ayarlanır.
 
-In the "Behavior" option the selectivity status of the block group is determined.
+"Behavior" seçeneğinde blok grubunun seçicilik durumu belirlenir.
 
-### Diagram Settings
+### Diyagram Ayarları
 
-In Mikrodiagram, it is used to adjust the dimensions of the pages on which the projects are created.
+Mikrodiagram'da projelerin oluşturulduğu sayfaların boyutlarını ayarlamak için kullanılır.
 
 <center>
 
@@ -753,9 +752,9 @@ In Mikrodiagram, it is used to adjust the dimensions of the pages on which the p
 
 </center>
 
-In the diagram settings, page sizes can be selected from standard A3, A4, A5, A6, as well as making custom settings for the programmer.
+Diyagram ayarlarında sayfa boyutları standart A3, A4, A5, A6 arasından seçilebilir ve programcıya özel ayarlar yapılabilir.
 
-## Gate Editor
+## Kapı Düzenleyici
 
 <center>
 
@@ -763,9 +762,9 @@ In the diagram settings, page sizes can be selected from standard A3, A4, A5, A6
 
 </center>
 
-In the "gate editor" section of the mode options, the project creation page is accessed
+Mod seçeneklerinin "gate editor" bölümünde proje oluşturma sayfasına ulaşılır.
 
-### Object (Block) Properties
+### Nesne (Blok) Özellikleri
 
 <center>
 
@@ -773,9 +772,9 @@ In the "gate editor" section of the mode options, the project creation page is a
 
 </center>
 
-Block properties are reached by right clicking on the blocks added in Mikrodiagram. Block features include "object properties, cut, copy, delete, align horizontal, align vertical " properties.
+Mikrodiagram'da eklenen bloklar üzerine sağ tıklanarak blok özelliklerine ulaşılır. Blok özellikleri arasında "nesne özellikleri, kesme, kopyalama, silme, yatay hizalama, dikey hizalama" özellikleri bulunur.
 
-* Object Properties
+* Nesne Özellikleri
 
 <center>
 
@@ -783,11 +782,11 @@ Block properties are reached by right clicking on the blocks added in Mikrodiagr
 
 </center>
 
-In the block object properties, there are "parameters, line definition and notes" windows.
+Blok nesne özelliklerinde "parametreler, çizgi tanımlama ve notlar" pencereleri bulunmaktadır.
 
-* Parameters
+* Parametreler
 
-The parameter definitions are explained in the table.
+Parametre tanımları tabloda açıklanmıştır.
 
 <center>
 
@@ -795,21 +794,21 @@ The parameter definitions are explained in the table.
 
 </center>
 
-* Line Definition
+* Hat Tanımı
 
-Block outputs are used when you want to be identified by a name determined by the programmer. Line definitions have multiple uses.
+Programcı tarafından belirlenen bir isimle tanınmak istediğinizde blok çıkışları kullanılır. Hat tanımlarının birden fazla kullanımı vardır.
 
-1 - The "line definition" is used in the blocks where the outputs are to be connected with the "line label" to the entrance of another block.
+1 - Çıkışların başka bir bloğun girişine "hat etiketi" ile bağlanacağı bloklarda "hat tanımı" kullanılır.
 
-2 - If the block value is to be monitor and changed from devices with LCD screen feature or WEB interface."line definition" should be added
+2 - Blok değeri, LCD ekran özelliği veya WEB arayüzü olan cihazlardan izlenip değiştirilecekse "hat tanımı" eklenmelidir.
 
-3 - If the blocks in Mikrodiagram will be defined in the "variable address table", the "line definition" must be added to the blocks.
+3 - Mikrodiagram'daki bloklar "değişken adres tablosunda" tanımlanacaksa, bloklara "hat tanımı" eklenmelidir.
 
-* Notes
+* Notlar
 
-It is used by the user to write notes into the block.
+Kullanıcı tarafından bloğa not yazmak için kullanılır.
 
-* Cut-Copy-Paste-Delete
+* Kes-Kopyala-Yapıştır-Sil
 
 <center>
 
@@ -817,9 +816,9 @@ It is used by the user to write notes into the block.
 
 </center>
 
-Cut-copy-paste-delete operations can be performed on the blocks used in Mikrodiagram project. Cut-copy-delete operations can be done by right clicking on the block. For the "Paste" option, right click on an empty area in Mikrodiagram workspace and select the "paste" option.
+Mikrodiagram projesinde kullanılan bloklar üzerinde kes-kopyala-yapıştır-sil işlemleri yapılabilmektedir. Blok üzerine sağ tıklanarak kes-kopyala-sil işlemleri yapılabilir. "Yapıştır" seçeneği için Mikrodiagram çalışma alanında boş bir alana sağ tıklayın ve "yapıştır" seçeneğini seçin.
 
-* Align Horizontal-Align Vertical
+* Yatay Hizala-Dikey Hizala
 
 <center>
 
@@ -833,17 +832,17 @@ Cut-copy-paste-delete operations can be performed on the blocks used in Mikrodia
 
 </center>
 
-It is used to scale the selected block group horizontally or vertically in Mikrodiagram.
+Mikrodiagramda seçilen blok grubunu yatay veya dikey olarak ölçeklendirmek için kullanılır.
 
-## Project Configuration
+## Proje Yapılandırması
 
-In Mikrodiagram, project-specific configurations can be made from the "projects" section in mode options.
+Mikrodiagram'da mod seçeneklerinde bulunan "projeler" bölümünden projeye özel konfigürasyonlar yapılabilmektedir.
 
-### Device Configuration
+### Cihaz konfigürasyonu
 
-Connected to device on TCP when, is used for Ip ,port, version etc. settings making and viewing
+Ip,port,versiyon vb. ayarların yapılması ve görüntülenmesi için kullanıldığında TCP üzerinde cihaza bağlanır
 
-* Connection
+* Bağlantı
 
 <center>
 
@@ -851,15 +850,15 @@ Connected to device on TCP when, is used for Ip ,port, version etc. settings mak
 
 </center>
 
-It is used to establish a connection to the device over the TCP port and to restart the device with the "Restart device" button on the TCP port.
+TCP portu üzerinden cihazla bağlantı kurmak ve TCP portu üzerinde bulunan "Cihazı yeniden başlat" butonu ile cihazı yeniden başlatmak için kullanılır.
 
-In the "Device IP" section, the IP address of the device to which the TCP connection is to be made is written in. If a connection from a local network, connection from an external network, or connection to a GSM device  will be established, appropriate IPs must be defined.
+"Cihaz IP'si" bölümünde TCP bağlantısı yapılacak cihazın IP adresi yazılır. Yerel ağdan bağlantı varsa, harici ağdan bağlantı veya bir GSM cihazına bağlantı kurulur. , uygun IP'ler tanımlanmalıdır.
 
-Port: The listening port identification of the device should be done. The standard listening port 502 in Mikrodev products. It can be changed.
+Port: Cihazın dinleme port tanımlaması yapılmalıdır. Mikrodev ürünlerinde standart dinleme portu 502. Değiştirilebilir.
 
-In order for the "Restart device" button to be active, the TCP connection must be established.
+"Cihazı yeniden başlat" butonunun aktif olabilmesi için TCP bağlantısının kurulmuş olması gerekmektedir.
 
-* Firmware Update
+* Yazılım güncellemesi
 
 <center>
 
@@ -867,9 +866,9 @@ In order for the "Restart device" button to be active, the TCP connection must b
 
 </center>
 
-After the TCP connection is established, use the name of the device embedded software you want to update.
+TCP bağlantısı kurulduktan sonra, güncellemek istediğiniz cihaz gömülü yazılımının adını kullanın.
 
-* Advanced Parameters
+* Gelişmiş Parametreler
 
 <center>
 
@@ -877,19 +876,19 @@ After the TCP connection is established, use the name of the device embedded sof
 
 </center>
 
-After the TCP connection is established, it is used to configure the device's version, IP, port, clock etc. settings. "Read parameters" are used to read the parameters, and "apply parameters" buttons are used to set the parameters.
+TCP bağlantısı kurulduktan sonra cihazın sürüm, IP, port, saat vb. ayarlarını yapılandırmak için kullanılır. Parametreleri okumak için "Parametreleri oku" ve parametreleri ayarlamak için "parametreleri uygula" düğmeleri kullanılır.
 
-When "apply parameters" is selected while "Sync Device time with PC time" is selected, the computer clock is written to the device.
+"Cihaz zamanını PC zamanı ile senkronize et" seçili iken "parametreleri uygula" seçildiğinde bilgisayar saati cihaza yazılır.
 
-In order to be able to set parameters of the GSM section, the device must be GSM supported product.
+GSM bölümünün parametrelerinin ayarlanabilmesi için cihazın GSM destekli ürün olması gerekmektedir.
 
-After making the settings with "Apply parameters", the device needs to be restarted.
+"Parametreleri uygula" ile ayarlar yapıldıktan sonra cihazın yeniden başlatılması gerekir.
 
-### PLC And Expansions
+### PLC ve Genişletmeler
 
-The devices used in the project are selected.
+Projede kullanılan cihazlar seçilir.
 
-* Update Main Device
+* Ana Cihazı Güncelle
 
 <center>
 
@@ -897,9 +896,9 @@ The devices used in the project are selected.
 
 </center>
 
-The device to load Mikrodiagram project is selected. The main unit to be used in the project is clicked, the "Update MainDevice" tab is clicked to select from the devices.
+Mikrodiagram projesini yükleyecek cihaz seçilir. Projede kullanılacak ana ünite tıklanır, cihazlardan seçim yapmak için "Ana Cihazı Güncelle" sekmesine tıklanır.
 
-* Add Selected Device/Remove Selected Device
+* Seçili Aygıtı Ekle/Seçili Aygıtı Kaldır
 
 <center>
 
@@ -907,13 +906,13 @@ The device to load Mikrodiagram project is selected. The main unit to be used in
 
 </center>
 
-If the number of physical inputs / outputs used in the prepared project is more than the number found on the main unit, it is necessary to add expansion units to the project.
+Hazırlanan projede kullanılan fiziksel giriş/çıkış sayısı ana ünite üzerinde bulunan sayıdan fazla ise projeye genişletme üniteleri eklemek gerekir.
 
-Click on the relevant module in the Extension Devices section, click on the "Add Selected Device" tab to add. When the extension unit to be added is desired to be removed, the relevant unit can be clicked and the "Remove Selected Device" or "delete" key can be pressed.
+Extension Devices bölümünde ilgili modüle tıklayın, eklemek için Add Selected Device sekmesine tıklayın. Eklenecek genişletme birimi kaldırılmak istendiğinde ilgili birim tıklanarak "Seçili Aygıtı Kaldır" veya "sil" tuşuna basılabilir.
 
-For example, MP201 PLCs have 16 digital inputs (DI). If more than 16 digital inputs are used in the prepared project, it is necessary to add digital input expansion unit (IO200_I32).
+Örneğin, MP201 PLC'lerde 16 dijital giriş (DI) bulunur. Hazırlanan projede 16'dan fazla dijital giriş kullanılıyorsa, dijital giriş genişletme ünitesi (IO200_I32) eklenmesi gerekir.
 
-* Incompatible Device Error Code:17
+* Uyumsuz Cihaz Hata Kodu:17
 
 <center>
 
@@ -921,23 +920,23 @@ For example, MP201 PLCs have 16 digital inputs (DI). If more than 16 digital inp
 
 </center>
 
-If a mistake is observed in loading the prepared project into the device, the number of physical inputs and outputs used in the project is more than "main unit and selected units".
+Hazırlanan projenin cihaza yüklenmesinde bir hata gözlemlenirse, projede kullanılan fiziksel girdi ve çıktı sayısı "ana ünite ve seçilen üniteler"den fazladır.
 
-The MP201 PLC and 32 digital input expansion modules (IO200_I32) have been added to the project in the above line. A total of  "digital input" door types have been added to the project. However, since the digital input expansion module (IO200_I32) "extract the selected unit" was made, the "incompatible device error code: 17" error occurred when loading the project into the device.
+Yukarıdaki satırda projeye MP201 PLC ve 32 adet dijital giriş genişletme modülü (IO200_I32) eklenmiştir. Projeye toplamda "dijital girişli" kapı tipleri eklenmiştir. Ancak dijital giriş genişletme modülü (IO200_I32) "seçilen birimi ayıkla" yapıldığından, proje cihaza yüklenirken "uyumsuz cihaz hata kodu: 17" hatası oluştu.
 
-The digital input expansion (IO200_I32) unit must be added again in order to avoid the error.
+Hatayı önlemek için dijital giriş genişletme (IO200_I32) ünitesi tekrar eklenmelidir.
 
-## String Table
+## Dize Tablosu
 
-While SMS and DTMF search features are used in GSM products , SMS content and phone number are used for identification.
+GSM ürünlerinde SMS ve DTMF arama özellikleri kullanılırken, tanımlama için SMS içeriği ve telefon numarası kullanılmaktadır.
 
-There are 64 lines in the text table and 64 characters per line.
+Metin tablosunda 64 satır ve satır başına 64 karakter vardır.
 
-Turkish characters should not be used in the text table.
+Metin tablosunda Türkçe karakterler kullanılmamalıdır.
 
-The definitions in the text table must be selected from "text blocks" for use in SMS and DTMF searches.
+Metin tablosundaki tanımlar SMS ve DTMF aramalarında kullanılmak üzere "metin blokları" arasından seçilmelidir.
 
-### String Text
+### Dize Metni
 
 <center>
 
@@ -945,13 +944,13 @@ The definitions in the text table must be selected from "text blocks" for use in
 
 </center>
 
-Definitions in the text table The Mikrodiagram project is loaded into the device when it is sent to the device.
+Metin tablosundaki tanımlar Mikrodiagram projesi cihaza gönderildiğinde cihaza yüklenir.
 
-The way in which phone numbers are written in text contents may differ according to GSM operators (some operators support numbering with country phone codes as (+905001234567), others without country phone codes. (05011234567)).
+Telefon numaralarının metin içeriğine yazılma şekli GSM operatörlerine göre farklılık gösterebilir (bazı operatörler ülke telefon kodları ile (+905001234567), diğerleri ülke telefon kodu olmadan (05011234567) numaralandırmayı destekler.
 
-No spaces between words when writing text content.
+Metin içeriği yazarken kelimeler arasında boşluk yok.
 
-### Block Property Table
+### Blok Özellik Tablosu
 
 <center>
 
@@ -959,11 +958,11 @@ No spaces between words when writing text content.
 
 </center>
 
-Block number of blocks, register addresses and variable types  added to the project prepared in Mikrodiagram are used for easier definition of line definitions, logging and online monitoring situations.
+Mikrodiagram'da hazırlanan projeye eklenen blok sayısı, register adresleri ve değişken tipleri hat tanımlamaları, loglama ve online izleme durumlarının daha kolay tanımlanması için kullanılmaktadır.
 
-There is also the possibility to export the table to CSV.
+Tabloyu CSV'ye aktarma imkanı da vardır.
 
-* Select/Export Selected Blocks to CSV
+* Seçilen Blokları CSV'ye Seç/Dışa Aktar
 
 <center>
 
@@ -971,15 +970,15 @@ There is also the possibility to export the table to CSV.
 
 </center>
 
-It is used to transfer the selected blocks to CSV.
+Seçilen blokları CSV'ye aktarmak için kullanılır.
 
-With the "Invert" tab, the selection of blocks is reversed.
+"Ters Çevir" sekmesi ile blok seçimi tersine çevrilir.
 
-All blocks are selected with the "All" tab.
+Tüm bloklar "Tümü" sekmesi ile seçilir.
 
-With the "None" tab, the selections in all blocks are removed.
+"Yok" sekmesi ile tüm bloklardaki seçimler kaldırılır.
 
-* Block No
+* Blok No
 
 <center>
 
@@ -993,9 +992,9 @@ With the "None" tab, the selections in all blocks are removed.
 
 </center>
 
-It is used to monitor block numbers of door types and to transfer them to CSV.
+Kapı tiplerinin blok numaralarını izlemek ve CSV'ye aktarmak için kullanılır.
 
-* Reg Address
+* Kayıt Adresi
 
 <center>
 
@@ -1009,9 +1008,9 @@ It is used to monitor block numbers of door types and to transfer them to CSV.
 
 </center>
 
-It is used to monitor modbus communication addresses of door types and to transfer them to CSV.
+Kapı tiplerinin modbus haberleşme adreslerini izlemek ve CSV'ye aktarmak için kullanılır.
 
-* Line Description
+* Satır Açıklaması
 
 <center>
 
@@ -1025,11 +1024,11 @@ It is used to monitor modbus communication addresses of door types and to transf
 
 </center>
 
-It is used to modify and follow line definitions defined in blocks.
+Bloklarda tanımlanan hat tanımlarını değiştirmek ve takip etmek için kullanılır.
 
-The line definitions can be changed from the block object properties and the block properties table.
+Çizgi tanımları, blok nesne özelliklerinden ve blok özellikleri tablosundan değiştirilebilir.
 
-* Variable Type
+* Değişken Tipi
 
 <center>
 
@@ -1037,9 +1036,9 @@ The line definitions can be changed from the block object properties and the blo
 
 </center>
 
-There are 4 types of variables in Mikrodiagram: logic, word, float, long type. It is used to monitor and transfer variable types of blocks to CSV.
+Mikrodiagram'da 4 tip değişken vardır: logic, word, float, long type. Değişken blok tiplerini izlemek ve CSV'ye aktarmak için kullanılır.
 
-* Logging Active& DevNET
+* Aktif ve DevNET Loglama
 
 <center>
 
@@ -1053,9 +1052,9 @@ There are 4 types of variables in Mikrodiagram: logic, word, float, long type. I
 
 </center>
 
-It can be selected from the block object properties and the "Add log record to memory and synchronize with DevNET" options can also be changed from the block properties table.
+Blok nesne özelliklerinden seçilebilir ve ayrıca blok özellikleri tablosundan "Günlük kaydı belleğe ekle ve DevNET ile senkronize et" seçenekleri de değiştirilebilir.
 
-* Online View Active
+* Çevrimiçi Görüntüleme Aktif
 
 <center>
 
@@ -1063,9 +1062,9 @@ It can be selected from the block object properties and the "Add log record to m
 
 </center>
 
-It is possible to select the blocks to be watched and changed in the program via USB or TCP port. With "Turn on / off online monitoring for all blocks", online monitoring can be activated for all the blocks in the program, as well as the blocks that need to be monitored from the "online monitoring active" section can be selected.
+Programda izlenecek ve değiştirilecek blokları USB veya TCP portu üzerinden seçmek mümkündür. "Tüm bloklar için çevrimiçi izlemeyi aç / kapat" ile programdaki tüm bloklar için çevrimiçi izleme etkinleştirilebileceği gibi, "online izleme aktif" bölümünden izlenmesi gereken bloklar da seçilebilir.
 
-### Variable Address Table
+### Değişken Adres Tablosu
 
 <center>
 
@@ -1079,17 +1078,17 @@ It is possible to select the blocks to be watched and changed in the program via
 
 </center>
 
-* Descriptions
+* Açıklamalar
 
-1- In DNP3, IEC101 and IEC104 protocols, variable addresses, types and data transmission methods are used.
+1- DNP3, IEC101 ve IEC104 protokollerinde değişken adresleri, türleri ve veri aktarım yöntemleri kullanılmaktadır.
 
-2- It is used in Modbus Protocol when it is desired to define a different Modbus address than the standard modbus register addresses on the blocks.
+2- Bloklar üzerindeki standart modbus register adreslerinden farklı bir Modbus adresi tanımlanmak istendiğinde Modbus Protokolünde kullanılır.
 
-3- It can be used to read data recorded in table blocks starting from a specified address determined by TCP communication.
+3- TCP haberleşmesi ile belirlenen belirli bir adresten başlayarak tablo bloklarında kayıtlı verileri okumak için kullanılabilir.
 
-4- In Mikrodiagram, "block definition" must be made to blocks so that blocks can be defined in variable address table.
+4- Mikrodiagram'da blokların değişken adres tablosunda tanımlanabilmesi için bloklara "blok tanımlama" yapılmalıdır.
 
-* Alias
+* Takma ad
 
 <center>
 
@@ -1097,9 +1096,9 @@ It is possible to select the blocks to be watched and changed in the program via
 
 </center>
 
-It is used naming  for blocks transferred to the table.
+Tabloya aktarılan bloklar için isimlendirmede kullanılır.
 
-* Start Address
+* Başlangıç Adresi
 
 <center>
 
@@ -1107,11 +1106,11 @@ It is used naming  for blocks transferred to the table.
 
 </center>
 
-It is used for variable address definitions.
+Değişken adres tanımlamaları için kullanılır.
 
-If MODBUS is selected as the protocol type, the selected start address must be selected differently from the block addresses used in Mikrodiagram. (Variable addresses in Mikrodiagram, word: 4000, binary: 1000, analog: 6000, long: 8000).
+Protokol tipi olarak MODBUS seçilirse, seçilen başlangıç adresi Mikrodiagram'da kullanılan blok adreslerinden farklı seçilmelidir. (Mikrodiyagramdaki değişken adresleri, word: 4000, ikili: 1000, analog: 6000, uzun: 8000).
 
-* Line Label
+* Satır Etiketi
 
 <center>
 
@@ -1119,11 +1118,11 @@ If MODBUS is selected as the protocol type, the selected start address must be s
 
 </center>
 
-Block selection is made, defined in  the variable address table.
+Değişken adres tablosunda tanımlanan blok seçimi yapılır.
 
-In Mikrodiagram should be defined "line definition" to blocks to be transferred to the variable address tab.
+Değişken adres sekmesine aktarılacak bloklara Mikrodiagram'da "hat tanımı" tanımlanmalıdır.
 
-* Point Count
+* Puan Sayısı
 
 <center>
 
@@ -1131,9 +1130,9 @@ In Mikrodiagram should be defined "line definition" to blocks to be transferred 
 
 </center>
 
-The number of addresses to be identified from the starting address added to the variable address table is determined. If table blocks are added to the variable address table, the number of points to be read according to the size of the table is automatically defined. (If the starting address is 10000 and the dot number is 4, the defined addresses are 10000, 10001, 10002 and 10003.)
+Değişken adres tablosuna eklenen başlangıç adresinden tanımlanacak adres sayısı belirlenir. Değişken adres tablosuna tablo blokları eklenirse tablonun boyutuna göre okunacak nokta sayısı otomatik olarak tanımlanır. (Başlangıç adresi 10000 ve nokta numarası 4 ise tanımlanan adresler 10000, 10001, 10002 ve 10003'tür.)
 
-* Protocol Type
+* Protokol Türü
 
 <center>
 
@@ -1141,9 +1140,9 @@ The number of addresses to be identified from the starting address added to the 
 
 </center>
 
-Communication protocol type selection of blocks transferred to variable address table is configured.
+Değişken adres tablosuna aktarılan blokların haberleşme protokol tipi seçimi konfigüre edilir.
 
-* Object Type
+* Nesne türü
 
 <center>
 
@@ -1151,9 +1150,9 @@ Communication protocol type selection of blocks transferred to variable address 
 
 </center>
 
-Object (variable) types that differ in each protocol are selected.
+Her protokolde farklılık gösteren nesne (değişken) türleri seçilir.
 
-* Object Class
+* Nesne Sınıfı
 
 <center>
 
@@ -1161,9 +1160,9 @@ Object (variable) types that differ in each protocol are selected.
 
 </center>
 
-Object classification definitions
+Nesne sınıflandırma tanımları
 
-* Send On Trigger
+* Tetikte Gönder
 
 <center>
 
@@ -1177,9 +1176,9 @@ Object classification definitions
 
 </center>
 
-In DNP3, IEC 101, IEC104 protocols, the data added to the variable address table at specific time intervals are used  to sending to client of the datas. For example, if a trigger is detected for 10 seconds on the side of the IEC slave block and the defined block in the variable address table is "send on trigger"; The block value is sent to the client at intervals of 10 seconds.
+DNP3, IEC 101, IEC104 protokollerinde, değişken adres tablosuna belirli zaman aralıklarında eklenen veriler, verilerin istemciye gönderilmesi için kullanılır. Örneğin, IEC bağımlı bloğu tarafında 10 saniye boyunca bir tetik algılanırsa ve değişken adres tablosunda tanımlanan blok "tetikte gönder" ise; Blok değeri istemciye 10 saniye aralıklarla gönderilir.
 
-* Send Method/Change Value
+* Gönderme Yöntemi/Değeri Değiştir
 
 <center>
 
@@ -1193,9 +1192,9 @@ In DNP3, IEC 101, IEC104 protocols, the data added to the variable address table
 
 </center>
 
-In DNP3, IEC101, IEC104 protocols, the block values defined in the variable address table are used sending to client  the when the change exceeds the specified value according to the determined change method. For example, if the sending method is "change level" and the change value is 4, then the value client is sent if the difference between the first value and the value to be sent is greater than 4. (If the first value is 15 and the last value is less than 11 or greater than 19, is sent.
+DNP3, IEC101, IEC104 protokollerinde, belirlenen değişiklik yöntemine göre değişiklik belirlenen değeri aştığında istemciye göndererek değişken adres tablosunda tanımlanan blok değerleri kullanılır. Örneğin, gönderme yöntemi "değişim düzeyi" ise ve değişiklik değeri 4 ise, ilk değer ile gönderilecek değer arasındaki fark 4'ten büyükse, değer istemcisi gönderilir (İlk değer 15 ise. ve son değer 11'den küçük veya 19'dan büyükse gönderilir.
 
-* Example 1
+* Örnek 1
 
 <center>
 
@@ -1209,9 +1208,9 @@ In DNP3, IEC101, IEC104 protocols, the block values defined in the variable addr
 
 </center>
 
-In the sample; RTD block value in which the ambient temperature value is read is defined in the variable address table by the IEC104 protocol. In the variable address table, the address of the address is 12000 and the client will be sent when the temperature value changes by more than 1 ° C (as the value changes). "Send on trigger" is selected in the variable address table, but it is not active because the "Ttk" input of IEC104 slave block is left empty.
+Örnekte; Ortam sıcaklık değerinin okunduğu RTD blok değeri, IEC104 protokolü ile değişken adres tablosunda tanımlanır. Değişken adres tablosunda adresin adresi 12000'dir ve sıcaklık değeri 1°C'den fazla değiştiğinde (değer değiştikçe) client gönderilecektir. Değişken adres tablosunda "Send on trigger" seçili fakat IEC104 slave bloğunun "Ttk" girişi boş bırakıldığı için aktif değil.
 
-* Example 2
+* Örnek 2
 
 <center>
 
@@ -1225,9 +1224,9 @@ In the sample; RTD block value in which the ambient temperature value is read is
 
 </center>
 
-In the sample; The analog input block values are printed in an analog table at the top and read from the address 11000 defined in the variable address table with 5 modbus protocol from the address. If the size of the analog table block is 20 bytes and 1 analog value is 4 bytes, 5 analog values are recorded in the table. Since the tabloda has 5 analogue values, the analogue table is selected as the line tag, so that the data on the tabloda is automatically displayed in the "variable address table" "dot number". The "send on trigger", "sending method" and "exchange value" sections are not active due to the Modbus TCP slave protocol feature.
+Örnekte; Analog giriş blok değerleri üstte bir analog tabloya yazdırılır ve adresten 5 modbus protokolü ile değişken adres tablosunda tanımlanan 11000 adresinden okunur. Analog tablo bloğunun boyutu 20 bayt ve 1 analog değer 4 bayt ise tabloya 5 analog değer kaydedilir. Tablo 5 analog değere sahip olduğu için satır etiketi olarak analog tablo seçildiği için tabloda yer alan veriler otomatik olarak "değişken adres tablosu" "nokta numarası"nda görüntülenmektedir. Modbus TCP slave protokol özelliği nedeniyle "tetikte gönder", "gönderme yöntemi" ve "değişim değeri" bölümleri aktif değildir.
 
-### Display Options
+### Görüntüleme seçenekleri
 
 <center>
 
@@ -1235,9 +1234,9 @@ In the sample; The analog input block values are printed in an analog table at t
 
 </center>
 
-In Mikrodiagram,changing the project working background and block colors; is used block name, block number, and register addresses on blocks. The settings are project-specific. Different settings can be used in each project.
+Mikrodiagram'da proje çalışma arka planı ve blok renklerinin değiştirilmesi; blok adı, blok numarası ve bloklardaki kayıt adresleri kullanılır. Ayarlar projeye özeldir. Her projede farklı ayarlar kullanılabilir.
 
-* Background Color 
+* Arka plan rengi
 
 <center>
 
@@ -1245,9 +1244,9 @@ In Mikrodiagram,changing the project working background and block colors; is use
 
 </center>
 
-The Mikrodiagram workspace background colors can be changed and reset to their initial settings.
+Mikrodiagram çalışma alanı arka plan renkleri değiştirilebilir ve başlangıç ayarlarına sıfırlanabilir.
 
-* Block Color
+* Blok Rengi
 
 <center>
 
@@ -1255,9 +1254,9 @@ The Mikrodiagram workspace background colors can be changed and reset to their i
 
 </center>
 
-Mikrodiagram block colors can be changed, reset to initial settings.
+Mikrodiagram blok renkleri değiştirilebilir, başlangıç ayarlarına sıfırlanabilir.
 
-* Data View
+* Veri görünümü
 
 <center>
 
@@ -1265,9 +1264,9 @@ Mikrodiagram block colors can be changed, reset to initial settings.
 
 </center>
 
-It can make block name, block number and modbus register addresses selection of display status on the block.
+Blok üzerinde ekran durumunun blok adı, blok numarası ve modbus register adresleri seçimini yapabilir.
 
-### Simulation
+### Simülasyon
 
 <center>
 
@@ -1275,7 +1274,7 @@ It can make block name, block number and modbus register addresses selection of 
 
 </center>
 
-The projects prepared in Mikrodiagram are tested without loading in the device and used in monitoring the reactions.
+Mikrodiagramda hazırlanan projeler cihaza yüklenmeden test edilir ve reaksiyonların izlenmesinde kullanılır.
 
 <center>
 
@@ -1283,13 +1282,13 @@ The projects prepared in Mikrodiagram are tested without loading in the device a
 
 </center>
 
-* Descriptions
+* Açıklamalar
 
-To run the project prepared in Mikrodiagram in simulation mode, click on "simulation" from "mode selection".
+Mikrodiagram'da hazırlanan projeyi simülasyon modunda çalıştırmak için "mod seçimi"nden "simülasyon"a tıklayınız.
 
-Start the simulation with the Start button.
+Start butonu ile simülasyonu başlatın.
 
-Values are written from "inputs" section to digital and analogue inputs. Digital and analog outputs, "output" section can be monitored.
+Değerler "girişler" bölümünden dijital ve analog girişlere yazılır. Dijital ve analog çıkışlar, "çıkış" bölümünden izlenebilir.
 
 <center>
 
@@ -1303,13 +1302,13 @@ Values are written from "inputs" section to digital and analogue inputs. Digital
 
 </center>
 
-Assigning values to variables process (word, long, analog, binary register, etc.) is done from the displayed window by right clicking on the corresponding block.
+Değişkenlere değer atama işlemi (word, long, analog, binary register vb.) ilgili bloğa sağ tıklayarak açılan pencereden yapılır.
 
-Block status and values are monitored over blocks in simulation mode.
+Simülasyon modunda blok durumu ve değerleri bloklar üzerinden izlenir.
 
-= Note:= Simulation mode is not active in some blocks such as communication blocks, motion control blocks, GSM blocks.
+= Not:= İletişim blokları, hareket kontrol blokları, GSM blokları gibi bazı bloklarda simülasyon modu aktif değildir.
 
-## Online View
+## Çevrimiçi Görünüm
 
 <center>
 
@@ -1317,7 +1316,7 @@ Block status and values are monitored over blocks in simulation mode.
 
 </center>
 
-The projects prepared in Mikrodiagram are used after uploading to the device,  monitoring the responses using USB or TCP port connection and assigning new values to the blocks.
+Mikrodiagramda hazırlanan projeler cihaza yüklendikten sonra USB veya TCP port bağlantısı kullanılarak yanıtlar izlenip bloklara yeni değerler atanarak kullanılmaktadır.
 
 <center>
 
@@ -1325,7 +1324,7 @@ The projects prepared in Mikrodiagram are used after uploading to the device,  m
 
 </center>
 
-* Cyle Periods(ms)
+* Döngü Periyotları(ms)
 
 <center>
 
@@ -1333,13 +1332,13 @@ The projects prepared in Mikrodiagram are used after uploading to the device,  m
 
 </center>
 
-It is used to determine the cycle time of online view.At the specified time intervals, online monitoring is performed on the blocks, the block values are read and written over the blocks.
+Online görünümün çevrim süresini belirlemek için kullanılır.Belirtilen zaman aralıklarında bloklar üzerinde online izleme yapılır, blok değerleri okunur ve bloklar üzerine yazılır.
 
-* Descriptions
+* Açıklamalar
 
-The processes to be followed in order to get the project prepared in  Mikrodiagram to "online view" mode;
+Mikrodiagram'da hazırlanan projenin "online görüntüleme" moduna alınabilmesi için izlenmesi gereken işlemler;
 
-1 - The selection of the blocks to be monitored online should be made under the heading "Online view active" in the "block configuration" tab in the "project configuration" section.
+1 - Online izlenecek blokların seçimi, "proje konfigürasyonu" bölümündeki "blok konfigürasyonu" sekmesinde "Online görünüm aktif" başlığı altında yapılmalıdır.
 
 <center>
 
@@ -1353,15 +1352,15 @@ The processes to be followed in order to get the project prepared in  Mikrodiagr
 
 </center>
 
-Selection of blocks to be monitored online can be done by right clicking on the block after loading Mikrodiagram project on the device and "enable / disabe online view".
+Online izlenecek blokların seçimi, cihaza Mikrodiagram projesi yüklendikten sonra bloğa sağ tıklanarak ve "çevrimiçi görünümü etkinleştir / devre dışı bırak" ile yapılabilir.
 
-2 - USB or TCP port connection is established.
+2 - USB veya TCP port bağlantısı kurulur.
 
-3 - Prepared Mikrodiagram project is loaded on the device.
+3- Hazırlanan Mikrodiagram projesi cihaza yüklenir.
 
-4 - Reconnect the USB or TCP port.
+4 - USB veya TCP bağlantı noktasını yeniden bağlayın.
 
-5 - In the mode selection, click on "online view" and the "cycle periods" is set.
+5 - Mod seçiminde "çevrimiçi görünüm"e tıklayın ve "döngü periyotları" ayarlanır.
 
 <center>
 
@@ -1375,11 +1374,11 @@ Selection of blocks to be monitored online can be done by right clicking on the 
 
 </center>
 
-Click "Start" to start online monitoring.
+Çevrimiçi izlemeyi başlatmak için "Başlat"a tıklayın.
 
-The red-blue colors flash on the blocks for which online monitoring is active.
+Online izlemenin aktif olduğu bloklarda kırmızı-mavi renkler yanıp söner.
 
-* Connecting To Device
+* Cihaza Bağlanma
 
 <center>
 
@@ -1387,23 +1386,23 @@ The red-blue colors flash on the blocks for which online monitoring is active.
 
 </center>
 
-It is necessary to connect the device to send the project prepared in Mikrodiagram to the device and to monitor online.
+Mikrodiagramda hazırlanan projeyi cihaza göndermek ve online izlemek için cihaza bağlanılması gerekmektedir.
 
-Mikrodiagram can be connected to the device via USB or TCP port.
+Mikrodiagram cihaza USB veya TCP portu üzerinden bağlanabilir.
 
-Mikrodiagram can not be connected to USB and TCP port at the same time.
+Mikrodiagram USB ve TCP portuna aynı anda bağlanamaz.
 
-### Usb Connection
+### Usb Bağlantısı
 
-In order to use the USB connection, installation of the USB driver should be completed.
+USB bağlantısını kullanmak için USB sürücüsünün kurulumu tamamlanmalıdır.
 
-There is no need to install a USB driver on computers with Windows10 or higher operating system.
+Windows10 veya üzeri işletim sistemine sahip bilgisayarlarda USB sürücüsü kurulmasına gerek yoktur.
 
-After the USB Driver installation is complete, a USB cable is connected between the computer and the device.
+USB Sürücü kurulumu tamamlandıktan sonra bilgisayar ile cihaz arasına bir USB kablosu bağlanır.
 
-"USB A and USB B" (printer cable) should be preferred when selecting USB cable. The USB B side is connected to the device and the USB A side is connected to the computer.
+USB kablosu seçilirken "USB A ve USB B" (yazıcı kablosu) tercih edilmelidir. USB B tarafı cihaza, USB A tarafı ise bilgisayara bağlanır.
 
-The COM port from which the USB cable connecting from Device Manager is defined is determined.
+Aygıt Yöneticisinden bağlanan USB kablosunun tanımlandığı COM bağlantı noktası belirlenir.
 
 <center>
 
@@ -1411,7 +1410,7 @@ The COM port from which the USB cable connecting from Device Manager is defined 
 
 </center>
 
-Connetion interface is accessed by clicking the  tab in the build mode options.
+Bağlantı arayüzüne, yapı modu seçeneklerindeki sekmeye tıklanarak erişilir.
 
 <center>
 
@@ -1419,7 +1418,7 @@ Connetion interface is accessed by clicking the  tab in the build mode options.
 
 </center>
 
-"Connect using SERIAL USB" is selected, COM port selection is made. "OK" button is started the connection process.
+"SERIAL USB ile bağlan" seçilir, COM port seçimi yapılır. "OK" butonu ile bağlantı işlemi başlatılır.
 
 <center>
 
@@ -1427,7 +1426,7 @@ Connetion interface is accessed by clicking the  tab in the build mode options.
 
 </center>
 
-When the “A USB connection is established between the device and computer on serial port COM8” warning is received and the connection button reaches the "connected"  position, the connection via USB is completed.
+“Cihaz ve bilgisayar arasında COM8 seri port üzerinden USB bağlantısı kuruldu” uyarısı alındığında ve bağlantı butonu "bağlı" konumuna geldiğinde USB üzerinden bağlantı tamamlanmış olur.
 
 <center>
 
@@ -1435,23 +1434,23 @@ When the “A USB connection is established between the device and computer on s
 
 </center>
 
-### TCP Connection
+### TCP Bağlantısı
 
-In order to establish a TCP connection between the computer and the device;
+Bilgisayar ile cihaz arasında TCP bağlantısı kurmak için;
 
-At least one of the "Ethernet, Wi-Fi or GSM" ports must be found in the device to be connected to the TCP.
+TCP'ye bağlanacak cihazda "Ethernet, Wi-Fi veya GSM" portlarından en az birinin bulunması gerekir.
 
-     Establishing a TCP Connection with Ethernet
-For the Ethernet connection to be established;
+      Ethernet ile TCP Bağlantısı Kurma
+Kurulacak Ethernet bağlantısı için;
 
-1 - The device must be an ethernet port.
+1 - Cihaz ethernet portu olmalıdır.
 
-2 - The ethernet cable (CAT5, CAT6) connection must be established between the device and the computer.
+2 - Cihaz ile bilgisayar arasında ethernet kablosu (CAT5, CAT6) bağlantısı mutlaka yapılmalıdır.
 
-3 - If the device and the computer are on the same local network, the defined IPs must be selected accordingly.
+3 - Cihaz ve bilgisayar aynı yerel ağ üzerinde ise tanımlanan IP'ler buna göre seçilmelidir.
 
-     Defining IP to Device
-The "Mikroterminal" program must be used to make device IP settings via USB connection. (See section "Using Mikroterminals".)
+      Cihaza IP Tanımlama
+USB bağlantısı üzerinden cihaz IP ayarlarını yapmak için "Mikroterminal" programı kullanılmalıdır. ("Mikroterminalleri Kullanma" bölümüne bakın.)
 
 <center>
 
@@ -1459,7 +1458,7 @@ The "Mikroterminal" program must be used to make device IP settings via USB conn
 
 </center>
 
-Mikroterminal application can be accessed from Mikrodiagram "Tools" menu.
+Mikroterminal uygulamasına Mikrodiagram "Araçlar" menüsünden ulaşılabilir.
 
 <center>
 
@@ -1473,7 +1472,7 @@ Mikroterminal application can be accessed from Mikrodiagram "Tools" menu.
 
 </center>
 
-After the device and computer IP settings are complete, the device must be "pinged" from the computer for the "ethernet cable connection test" between the device and the computer.
+Cihaz ve bilgisayar IP ayarları tamamlandıktan sonra cihaz ile bilgisayar arasındaki "ethernet kablo bağlantı testi" için cihaza bilgisayardan "ping" atılması gerekir.
 
 <center>
 
@@ -1481,11 +1480,11 @@ After the device and computer IP settings are complete, the device must be "ping
 
 </center>
 
-For the "pinging" operation, the computer is typed in the "command window", the device IP is shown in the picture and "ENTER" is clicked.
+"Ping" işlemi için bilgisayar "komut penceresine" yazılır, cihaz IP'si resimde gösterilir ve "ENTER" tıklanır.
 
-If the resulting output in the top image occurs, the ping operation is "unsuccessful". IP settings and ethernet cable connections should be checked again.
+En üstteki görüntüde ortaya çıkan çıktı oluşursa, ping işlemi "başarısız" olur. IP ayarları ve ethernet kablo bağlantıları tekrar kontrol edilmelidir.
 
-If the result output looks like the following figure, the ping operation is "successful".
+Sonuç çıktısı aşağıdaki şekilde görünüyorsa ping işlemi "başarılı" demektir.
 
 <center>
 
@@ -1493,15 +1492,15 @@ If the result output looks like the following figure, the ping operation is "suc
 
 </center>
 
-An ethernet TCP connection can be established from Mikrodiagram to the device.
+Mikrodiagram'dan cihaza ethernet TCP bağlantısı kurulabilir.
 
-* Defining Listening Port to Device
+* Cihaza Dinleme Portu Tanımlama
 
-The standard listening port 502 in Mikrodev products is defined as.
+Mikrodev ürünlerinde standart dinleme portu 502 olarak tanımlanır.
 
-To change the default listening port 502;
+Varsayılan dinleme bağlantı noktası 502'yi değiştirmek için;
 
-1- A TCP socket block should be added to the project prepared in Mikrodiagram.
+1- Mikrodiagramda hazırlanan projeye bir TCP soket bloğu eklenmelidir.
 
 <center>
 
@@ -1509,19 +1508,19 @@ To change the default listening port 502;
 
 </center>
 
-2-  Socket type "TCP server" is selected.
+2- Soket tipi "TCP server" seçilir.
 
-3-  Listen port is defined.
+3- Listen portu tanımlanır.
 
-4- Select "Ethernet", "GSM" or "Wi-Fi" as the "Media type".
+4- "Medya türü" olarak "Ethernet", "GSM" veya "Wi-Fi" seçin.
 
-Note: The listening port can be defined by the number of TCP socket blocks added as a server in Mikrodiagram project.
+Not: Dinleme portu, Mikrodiagram projesinde sunucu olarak eklenen TCP soket bloklarının sayısı ile tanımlanabilir.
 
-* Ethernet Connection Test
+* Ethernet Bağlantı Testi
 
-After making the necessary settings for Ethernet connection, for TCP connection;
+Ethernet bağlantısı için gerekli ayarları yaptıktan sonra TCP bağlantısı için;
 
-1 - The link in the Build mode options is clicked on the  tab.
+1 - Sekmede Build mode seçeneklerinde bulunan linke tıklanır.
 
 <center>
 
@@ -1535,7 +1534,7 @@ After making the necessary settings for Ethernet connection, for TCP connection;
 
 </center>
 
-2 - Click "Settings" in the window that opens.
+2 - Açılan pencerede "Ayarlar"a tıklayınız.
 
 <center>
 
@@ -1543,9 +1542,9 @@ After making the necessary settings for Ethernet connection, for TCP connection;
 
 </center>
 
-3 - In the window that opens, "Device IP" section is device IP and device listen port is write in "Port" section.
+3 - Açılan pencerede "Device IP" bölümü cihaz IP'si ve "Port" bölümüne cihaz dinleme portu yazılır.
 
-4- Select "Connect using TCP" and click "OK" to install TCP connection.
+4- TCP bağlantısını kurmak için "TCP kullanarak bağlan"ı seçin ve "Tamam"a tıklayın.
 
 <center>
 
@@ -1559,9 +1558,9 @@ After making the necessary settings for Ethernet connection, for TCP connection;
 
 </center>
 
-5- When the TCP connection is established, a warning "A TCP connection is established between the device and computer" appears on the screen.
+5- TCP bağlantısı kurulduğunda ekrana "Cihaz ve bilgisayar arasında bir TCP bağlantısı kuruldu" uyarısı gelir.
 
-The link icon is displayed as "Connected" .
+Bağlantı simgesi "Bağlandı" olarak görüntülenir.
 
 <center>
 
@@ -1569,25 +1568,25 @@ The link icon is displayed as "Connected" .
 
 </center>
 
-* Establishing a TCP Connection with GSM
+* GSM ile TCP Bağlantısı Kurma
 
-In Mikrodiagram,GSM with the for installing  TCP connection  to the device;
+Mikrodiagram,GSM'de cihaza TCP bağlantısı kurmak için;
 
-1 - The device must have GSM-enabled .
+1 - Cihazda GSM etkin olmalıdır.
 
-2 - GSM antenna of the device should be connected.
+2 - Cihazın GSM anteni bağlı olmalıdır.
 
-3 - The device signal quality (CSQ) must be between 1 and 31.
+3 - Cihaz sinyal kalitesi (CSQ) 1 ile 31 arasında olmalıdır.
 
-4 - SIM card with data package (internet package) should be inserted into the device. (The SIM card must have a fixed IP address.)
+4 - Veri paketi (internet paketi) olan SIM kart cihaza takılmalıdır. (SIM kartın sabit bir IP adresi olmalıdır.)
 
-5 - APN identification of the inserted SIM card should be done to the device.
+5 - Takılan SIM kartın APN tanımlaması cihaza yapılmalıdır.
 
-6 - The Mikrodiagram installed computer must be connected to the "wide area network" (WAN) (internet network).
+6 - Mikrodiagram kurulu bilgisayarın "geniş alan ağına" (WAN) (internet ağı) bağlı olması gerekir.
 
-* Defining IP to Device
+* Cihaza IP Tanımlama
 
-In order to establish a TCP connection from Mikrodiagram to the GSM-enabled device,to the "device IP" section is written in IP of GSM.
+Mikrodiagram'dan GSM uyumlu cihaza TCP bağlantısı kurmak için GSM'nin IP'sinde "cihaz IP" kısmına yazılır.
 
 <center>
 
@@ -1595,17 +1594,17 @@ In order to establish a TCP connection from Mikrodiagram to the GSM-enabled devi
 
 </center>
 
-Other operations outside the GSM IP definition are identical to the Ethernet TCP connection.
+GSM IP tanımı dışındaki diğer işlemler, Ethernet TCP bağlantısı ile aynıdır.
 
-## Loading The Mikrodiagram Project To Device
+## Mikrodiagram Projesinin Cihaza Yüklenmesi
 
-There are 2 methods to load the project prepared in Mikrodiagram into the device.
+Mikrodiyagramda hazırlanan projeyi cihaza yüklemek için 2 yöntem vardır.
 
-The project can be sent to the device via USB or TCP connection.
+Proje, USB veya TCP bağlantısı ile cihaza gönderilebilir.
 
-### Loading Project With Usb Connection
+### Usb Bağlantılı Proje Yükleme
 
-USB connection between device and computer After  connection is establishment,  click on the "send to device" button.
+Cihaz ve bilgisayar arasında USB bağlantısı Bağlantı kurulduktan sonra "cihaza gönder" butonuna tıklayınız.
 
 <center>
 
@@ -1613,11 +1612,11 @@ USB connection between device and computer After  connection is establishment,  
 
 </center>
 
-If the output is as follows in the section "General Messages" in Mikrodiagram, then Mikrodiagram project is successfully loaded into the device.
+Mikrodiagram'da "Genel Mesajlar" bölümünde çıktı aşağıdaki gibi ise Mikrodiagram projesi başarıyla cihaza yüklenmiştir.
 
-Care must be taken to ensure that the file upload process is 100% complete.
+Dosya yükleme işleminin %100 tamamlandığından emin olmak için özen gösterilmelidir.
 
-With the USB connection, the device restarts automatically when the project uploading process to the device is 100% complete.
+USB bağlantısı ile cihaza proje yükleme işlemi %100 tamamlandığında cihaz otomatik olarak yeniden başlar.
 
 <center>
 
@@ -1625,9 +1624,9 @@ With the USB connection, the device restarts automatically when the project uplo
 
 </center>
 
-### Loading Project With Tcp Connection
+### Tcp Bağlantılı Proje Yükleme
 
-TCP connection between device and computer After  the connection is establised, clicked on the "send to device" button.
+Cihaz ve bilgisayar arasında TCP bağlantısı Bağlantı kurulduktan sonra "cihaza gönder" butonuna tıklanır.
 
 <center>
 
@@ -1641,9 +1640,9 @@ TCP connection between device and computer After  the connection is establised, 
 
 </center>
 
-The project loading process must be waited to be 100% complete.
+Proje yükleme işleminin %100 tamamlanması için beklenmelidir.
 
-Unlike the case of loading the project with USB, device restart is performed manually.
+Projeyi USB ile yükleme durumundan farklı olarak cihaz yeniden başlatma işlemi manuel olarak gerçekleştirilir.
 
 <center>
 
@@ -1651,25 +1650,25 @@ Unlike the case of loading the project with USB, device restart is performed man
 
 </center>
 
-After the project loading process is completed 100%, click "connection" from the "device configuration", click "restart device" and the project loading process is completed.
+Proje yükleme işlemi %100 tamamlandıktan sonra "cihaz konfigürasyonu"ndan "bağlantı"ya tıklanır, "cihazı yeniden başlat" tıklanır ve proje yükleme işlemi tamamlanır.
 
-## Retentivity Configuration
+## Kalıcılık Yapılandırması
 
-When designing a PLC application, it is important for the PLC user to understand the different types of memory in the PLC. Three types of memory are used by the Mikrodev PLC; RAM, SRAM and FLASH memory.
+Bir PLC uygulaması tasarlarken, PLC kullanıcısının PLC'deki farklı bellek türlerini anlaması önemlidir. Mikrodev PLC tarafından üç tip bellek kullanılmaktadır; RAM, SRAM ve FLASH bellek.
 
-SRAM memory can be configured by the PLC user as either retentive memory. SRAM is powered by internal battery when PLC external power is off.
+SRAM belleği, PLC kullanıcısı tarafından kalıcı bellek olarak yapılandırılabilir. SRAM, PLC harici gücü kapalıyken dahili pil ile çalışır.
 
-Retentive memory is memory that is configured by the user to maintain values through a power reset. Non--retentive memory is memory that is configured by the PLC user to clear data after a power reset.
+Kalıcı bellek, bir güç sıfırlaması yoluyla değerleri korumak için kullanıcı tarafından yapılandırılan bellektir. Kalıcı olmayan bellek, bir güç sıfırlamasından sonra verileri temizlemek için PLC kullanıcısı tarafından yapılandırılan bellektir.
 
-The default behaviour of the blocks in Mikrodev PLC is non-retentive. You need to select "Retentive" option to make the block use retentive memory.
+Mikrodev PLC'deki blokların varsayılan davranışı kalıcı değildir. Bloğun kalıcı bellek kullanmasını sağlamak için "Kalıcı" seçeneğini seçmeniz gerekir.
 
-* Example: 1
+* Örnek 1
 
-If “Retentive” is not selected, it does not make any difference whether you select “Load Initial Value” or not. 
+“Retentive” seçili değilse “Load Initial Value” seçip seçmemeniz bir şey değiştirmez.
 
-On Power Reset: The device will load the “Register Initial Value” into the register. 
+Güç Sıfırlandığında: Cihaz “Register Initial Value”yu registera yükleyecektir.
 
-On Project Upload: The device will load the “Register Initial Value” into the register.
+Proje Yüklemesinde: Cihaz “Register Initial Value”yu registera yükleyecektir.
 
 <center>
 
@@ -1677,14 +1676,14 @@ On Project Upload: The device will load the “Register Initial Value” into th
 
 </center>
 
-* Example: 2
+* Örnek: 2
 
-On Power Reset: The register will preserve the latest value. 
-On Project Upload:
+Güç Sıfırlandığında: Kayıt, en son değeri koruyacaktır.
+Proje Yüklemede:
 
-A-    If there are any changes in the project like adding/removing retentive blocks, the “Register Initial Value” will be written on the register after boot.
+A- Projede kalıcı blok ekleme/kaldırma gibi değişiklikler varsa, açılıştan sonra register üzerine “Register Initial Value” yazılacaktır.
 
-B-    If there are minor changes on the project like parameter update or add/remove lines, the register will preserve the latest value after boot 
+B- Projede parametre güncelleme, satır ekle/kaldır gibi küçük değişiklikler varsa, register boot sonrası en son değeri koruyacaktır.
 
 <center>
 
@@ -1692,24 +1691,14 @@ B-    If there are minor changes on the project like parameter update or add/rem
 
 </center>
 
-* Example: 3
+* Örnek: 3
 
-On Power Reset: The register will preserve the latest value. 
-On Project Upload: “Register Initial Value” will be written on the register
+Güç Sıfırlandığında: Kayıt, en son değeri koruyacaktır.
+Proje Yüklemede: Register'a “Register Initial Value” yazılacaktır.
 
 <center>
 
 ![mikrodiagram-editor-152](/img/mikrodiagram-editor-152.png)
 
 </center>
-
-
-
-
-
-
-
-
-
-
 

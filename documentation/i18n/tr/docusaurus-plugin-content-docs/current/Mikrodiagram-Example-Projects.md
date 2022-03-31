@@ -1,14 +1,14 @@
 ---
-title: "Example Projects"
+title: "Örnek Projeler"
 ---
 
-## Basic Logic Examples
+## Temel Mantık Örnekleri
 
-### Apple Boxing Automation
+### Apple Boks Otomasyonu
 
 [Download Project Files](https://www.mikrodev.com/downloads/example_projects/en/apple_packaging.zip) 
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DIGITAL INPUT
 * DIGITAL OUTPUT
@@ -22,9 +22,9 @@ title: "Example Projects"
 * WORD COMPARATOR
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-In apple automation, apples coming from apple conveyor band will be counted and 20 pieces will be passed into the box. When the number of apples counted is 20, the conveyor carrying the boxes will move. For this, the belt motor in which the boxes come will be controlled
+Elma otomasyonunda elma taşıma bandından gelen elmalar sayılacak ve koliye 20 adet geçirilecektir. Sayılan elma sayısı 20 olduğunda kutuları taşıyan konveyör hareket edecektir. Bunun için kutuların geldiği kayış motoru kontrol edilecektir.
 
 <center>
 
@@ -32,13 +32,13 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* The apple counting and box detection sensor generating the digital output is connected to the digital inputs of the PLC device.
-* The box band motor will be activated with DQ1 when the system is first turned on or when the apple comparator generates a high level signal.
-* When the box is detected, the box conveyor motor will be stopped and the apple conveyor motor will be activated immediately to send the apples.
-* When the apple counting process is completed, the conveyor motor will reactivate and the cyclic process will continue.
-* The box conveyor and the apple conveyor motors are stopped when the system shut off button is pressed.
+* Dijital çıkışı oluşturan elma sayma ve kutu algılama sensörü PLC cihazının dijital girişlerine bağlanır.
+* Sistem ilk açıldığında veya elma karşılaştırıcısı yüksek seviyeli bir sinyal ürettiğinde kutu bant motoru DQ1 ile devreye girecektir.
+* Kutu algılandığında kutu taşıma motoru durdurulacak ve elmaları göndermek için hemen elma taşıma motoru devreye girecektir.
+* Elma sayma işlemi tamamlandığında konveyör motoru tekrar devreye girecek ve döngüsel işlem devam edecektir.
+* Sistem kapatma butonuna basıldığında kutu konveyör ve elma konveyör motorları durdurulur.
 
 <center>
 
@@ -46,11 +46,11 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Sealing and ContactSafe Motor Switching
+### Sızdırmazlık ve Temas Güvenli Motor Anahtarlama
 
 [Download Project Files](https://www.mikrodev.com/downloads/example_projects/en/sealing_and%20contact_safe.zip) 
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DIGITAL INPUT
 * DIGITAL OUTPUT
@@ -60,17 +60,17 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * OR
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* When the button is pressed forward, the motor will start to move forward and the button will continue even if it is not pressed forward.
-* When the button is pressed back the engine will stop and immediately the engine will start to run in reverse direction.
-* If two buttons are pressed at the same time, the system will stop.
+* Düğmeye ileri basıldığında motor ileri doğru hareket etmeye başlayacak ve ileri basılmasa bile düğme devam edecektir.
+* Düğmeye geri basıldığında motor duracak ve hemen motor ters yönde çalışmaya başlayacaktır.
+* Aynı anda iki tuşa basılırsa sistem duracaktır.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* In the sealing algorithm, the 'motor forward' will start to work when the high signal is applied via 'forward button'. The 'motor forward' label will produce a high level output when the 'motor forward' starts to work and the 'motor forward' will be active even if the button is not pressed.
-* In the safety algorithm, the two buttons pressed together condition is checked. Binary flag is used to generate a 1 cycle delay in button controls.
-* In the above picture there is an online monitoring screen image where the button is pressed forward, the motor is forward activated and the 2 buttons in the picture below are pressed together so that the motor's forward and reverse outputs are inactive.
+* Sızdırmazlık algoritmasında, 'ileri düğmesi' ile yüksek sinyal uygulandığında 'motor ileri' çalışmaya başlayacaktır. 'Motor ileri' etiketi, 'motor ileri' çalışmaya başladığında yüksek seviyeli bir çıkış üretecek ve butona basılmasa bile 'motor ileri' aktif olacaktır.
+* Güvenlik algoritmasında iki butonun birlikte basılması durumu kontrol edilir. İkili bayrak, düğme kontrollerinde 1 döngü gecikmesi oluşturmak için kullanılır.
+* Yukarıdaki resimde buton ileri basıldığında motorun ileri aktif olduğu ve aşağıdaki resimdeki 2 butonun birlikte basıldığı bir online izleme ekranı görüntüsü vardır, böylece motorun ileri ve geri çıkışları inaktif olur.
 
 <center>
 
@@ -78,11 +78,11 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Controlling Two Motors With Four Buttons
+### Dört Düğmeyle İki Motoru Kontrol Etme
 
 [Download Project Files](https://www.mikrodev.com/downloads/example_projects/en/4button_STM.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DIGITAL INPUT
 * DIGITAL OUTPUT
@@ -90,17 +90,17 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * IMPULSE RELAY
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* When Button 0 is pressed, Motor 1 will started.
-* When Button 1 is pressed Motor 2 will started.
-* When Button 2 is pressed, two motors will start together
-* When Button 3 is pressed, two motors will stop together.
-* If the start button of Motor 2 is pressed while Motor 1 is running, Motor 1 will stop and Motor 2 will start to work.
+* Düğme 0'a basıldığında, Motor 1 başlatılacaktır.
+* Düğme 1'e basıldığında Motor 2 çalışacaktır.
+* Düğme 2'ye basıldığında, iki motor birlikte çalışacaktır.
+* Düğme 3'e basıldığında iki motor birlikte duracaktır.
+* Motor 1 çalışırken Motor 2'nin start butonuna basılırsa Motor 1 duracak ve Motor 2 çalışmaya başlayacaktır.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* In the set algorithm, the running states of the motors; in the reset algorithm, the stopping states of the motors and in the pulse impulse part the permanence of the active or passive states of the motors are provided.
+* Ayarlanan algoritmada motorların çalışma durumları; reset algoritmasında motorların durma durumları, darbe darbe kısmında ise motorların aktif veya pasif durumlarının kalıcılığı sağlanmaktadır.
 
 <center>
 
@@ -108,11 +108,11 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Conveyor Automation
+### Konveyör Otomasyonu
 
 [Download Project Files](https://www.mikrodev.com/downloads/example_projects/en/band_carrying.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DIGITAL INPUT
 * DIGITAL OUTPUT
@@ -122,20 +122,20 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * ON DELAY
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* When the Start button is pressed, the Motor 1 will start immediately.
-* The program will stop immediately when any Stop button is pressed.
-* Motor 2 will run, when FS1 has detected the object after 2 seconds.
-* Motor 3 will run, when FS2 has detected the object after 3 seconds.
-* When the FS3 detects the object, the program will stop immediately.
+* Başlat düğmesine basıldığında, Motor 1 hemen çalışacaktır.
+* Herhangi bir Durdur düğmesine basıldığında program hemen duracaktır.
+* Motor 2, FS1 nesneyi 2 saniye sonra algıladığında çalışır.
+* Motor 3, FS2 nesneyi 3 saniye sonra algıladığında çalışır.
+* FS3 nesneyi algıladığında program hemen duracaktır.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* The system on-off function was implemented using the pulse relay. When the system is off, the system will be turned on when a high level signal is received from the Start / Stop button, and the system will shut down when a high level signal is received while the system is on.
-* When the system is first turned on, motor1 will start to operate with the label 'System Start / stop' pulse relay.
-* When the FS1 sensor activates, it will wait for 2 seconds and then work. For this algorithm, the FS1 tag was checked with an on delay.
-* When the FS2 sensor is activated, motor 3 will start after waiting for 3 seconds with delay.
+*Sistemin açma-kapama fonksiyonu darbe rölesi kullanılarak gerçekleştirilmiştir. Sistem kapalıyken Başlat/Durdur butonundan yüksek seviyeli bir sinyal alındığında sistem açılacak, sistem açıkken yüksek seviyeli bir sinyal alındığında sistem kapanacaktır.
+* Sistem ilk açıldığında motor1 'Sistem Başlat/durdur' darbe rölesi etiketi ile çalışmaya başlayacaktır.
+* FS1 sensörü devreye girdiğinde 2 saniye bekleyip ardından çalışacaktır. Bu algoritma için, FS1 etiketi gecikmeli olarak kontrol edildi.
+* FS2 sensörü etkinleştirildiğinde, motor 3 gecikmeli olarak 3 saniye bekledikten sonra çalışacaktır.
 
 <center>
 
@@ -143,11 +143,11 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Contact Locking Motor Control
+### Kontak Kilitleme Motor Kontrolü
 
 [Download Project Files](https://www.mikrodev.com/downloads/example_projects/en/contact_safe.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DIGITAL INPUT
 * DIGITAL OUTPUT
@@ -156,19 +156,19 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * NOT
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* Motor right and left turn conditions will be checked.
-* If the motor turns to the left, it will not turn to the right, if it turns to the right, it will not turn to the left.
-* If you press left while turning to the right, it will continue to turn to the right, it will be the same in the left turning situation.
-* If neither of the buttons is pressed, the motor will not function.
+* Motorun sağa ve sola dönüş durumları kontrol edilecektir.
+* Motor sola dönerse sağa dönmez, sağa dönerse sola dönmez.
+* Sağa dönerken sola basarsanız sağa dönmeye devam edecek, sola dönüş durumunda da aynı olacaktır.
+* Düğmelerden hiçbirine basılmazsa motor çalışmayacaktır.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* Turn left turn to the right: If the motor is turning to the left, a low signal will be sent to the AND block because that the 'motor left' tag is high and not for the receipt. Therefore, if the left movement of the motor is active, it will not turn to the right even if the right button is pressed. The controller has a cycle delay using binary flags so that it does not enter the endless loop.
-* The same situation in the upper part is also used to prevent turning to the left when turning to the right.
-* It is observed that there is no button pressed in the online monitoring screen above.
-* In the following example, the right turn of the motor is observed when DI0 is active.
+* Sola dönün sağa dönün: Motor sola dönüyorsa, 'motor sola' etiketi yüksek olduğundan ve makbuz için olmadığı için AND bloğuna düşük bir sinyal gönderilecektir. Bu nedenle motorun sol hareketi aktif ise sağ tuşa basılsa dahi sağa dönmeyecektir. Kontrolör, sonsuz döngüye girmemesi için ikili bayraklar kullanan bir döngü gecikmesine sahiptir.
+* Sağa dönerken sola dönmeyi önlemek için üst kısımdaki aynı durum da kullanılmıştır.
+* Yukarıdaki online izleme ekranında herhangi bir butona basılmadığı gözlemlenmiştir.
+* Aşağıdaki örnekte, DI0 aktifken motorun sağa dönüşü gözlemlenmektedir.
 
 <center>
 
@@ -176,11 +176,11 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Bottle Liquid Level Control
+### Şişe Sıvı Seviye Kontrolü
 
 [Download Project Files](https://www.mikrodev.com/downloads/example_projects/en/bottle_filling.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DIGITAL INPUT
 * DIGITAL OUTPUT
@@ -192,13 +192,13 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * EDGE
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* The bottles pass through the conveyor belt in groups of three. When the sensors can not see each other, the filling valves open to allow the bottles to start filling. In the meantime, the distance sensors next to the fill valves begin to measure. It is filled until the desired distance is reached. Then the filling valves are closed. The conveyor belt starts to move again and the other bottle is expected to be detected.
+* Şişeler üçerli gruplar halinde konveyör banttan geçer. Sensörler birbirini göremediğinde doldurma vanaları açılır ve şişelerin dolmaya başlaması sağlanır. Bu sırada doldurma vanalarının yanındaki mesafe sensörleri de ölçüm yapmaya başlar. İstenilen mesafeye ulaşılana kadar doldurulur. Daha sonra doldurma vanaları kapatılır. Konveyör bant tekrar hareket etmeye başlar ve diğer şişenin algılanması beklenir.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* When the system is first turned on, the band motor is running. When the sensors detect the bottles, the logic is high and bottles are expected to be filled by stopping the motor. After the bottles are filled, the conveyor belt motor is energized again and the bottles are kept on the conveyor belt. The liquid level control sensors placed at the end of the belt control the filling bottles. If the liquid level in the bottle is not at the desired reference point, the system is stopped and the fault lamp is lit. The fluid level sensor is logic high when there is no desired reference value.
+* Sistem ilk açıldığında bant motoru çalışmaktadır. Sensörler şişeleri algıladığında mantık yüksektir ve motor durdurularak şişelerin doldurulması beklenir. Şişeler doldurulduktan sonra konveyör bant motoruna tekrar enerji verilir ve şişeler konveyör bant üzerinde tutulur. Kayışın ucuna yerleştirilen sıvı seviye kontrol sensörleri dolum şişelerini kontrol eder. Şişedeki sıvı seviyesi istenilen referans noktasında değilse sistem durdurulur ve arıza lambası yanar. İstenen referans değeri olmadığında sıvı seviye sensörü mantık yüksektir.
 
 <center>
 
@@ -206,11 +206,11 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Bottle Packing Automation
+### Şişe Paketleme Otomasyonu
 
 [Download Project Files](https://www.mikrodev.com/downloads/example_projects/en/Bottle_packaging.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DIGITAL INPUT
 * DIGITAL OUTPUT
@@ -219,17 +219,17 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * IMPULSE RELAY
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* The bottles pass through a conveyor belt in groups of three. When the tips of the sensors can not see each other, the filling valves open to allow the bottles to start filling. In the meantime, the distance sensors next to the filling valves start measuring. The distance is filled until the level is increased to the desired level. When the sensor reaches the specified level, the filling valves are closed. The conveyor belt moves and waits to detect the other bottle.
+* Şişeler üçerli gruplar halinde konveyör banttan geçer. Sensörlerin uçları birbirini göremediğinde doldurma valfleri açılarak şişelerin dolmaya başlaması sağlanır. Bu sırada doldurma vanalarının yanındaki mesafe sensörleri ölçüme başlar. Seviye istenilen seviyeye çıkana kadar mesafe doldurulur. Sensör belirtilen seviyeye ulaştığında doldurma vanaları kapatılır. Konveyör bant hareket eder ve diğer şişeyi algılamak için bekler.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* When the system is first turned on, the band motor is running.
-* When the sensors sense the bottles, the logic is high (1) and bottles are expected to be filled by stopping the belt motor.
-* After the bottles are filled, the conveyor belt motor is energized again and the bottles are kept on the conveyor belt.
-* The liquid level control sensors placed at the end of the conveyor belt control the filling bottles.If the liquid level in the bottle is not at the desired reference point, the system is stopped and the fault lamp is lit. If the fluid level sensor is not the desired reference value, the logic is high (1).
-* RD is the abbreviation of color detection, while Cturn is the abbreviation of rotation until color is perceived.
+* Sistem ilk açıldığında bant motoru çalışmaktadır.
+* Sensörler şişeleri algıladığında mantık yüksektir (1) ve kayış motorunu durdurarak şişelerin doldurulması beklenir.
+* Şişeler doldurulduktan sonra konveyör bant motoruna tekrar enerji verilir ve şişeler konveyör bant üzerinde tutulur.
+* Konveyör bandının ucuna yerleştirilen sıvı seviye kontrol sensörleri dolum şişelerini kontrol eder. Şişedeki sıvı seviyesi istenilen referans noktasında değilse sistem durdurulur ve arıza lambası yanar. Sıvı seviye sensörü istenen referans değeri değilse mantık yüksektir (1).
+* RD, renk algılamanın kısaltmasıdır, Cturn ise renk algılanıncaya kadar döndürmenin kısaltmasıdır.
 
 <center>
 
@@ -237,11 +237,11 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Led SwitchOn Delay With Functional Button
+### Fonksiyonel Butonlu Led Açma Gecikmesi
 
 [Download Project Files](https://www.mikrodev.com/downloads/example_projects/en/led_switchondelay.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DIGITAL INPUT
 * AND
@@ -251,18 +251,18 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * DIGITAL OUTPUT
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* When the two buttons are pressed at the same time, the first lamp lights up.
-* When three buttons are pressed in the system with three buttons in total, the second lamp lights up and the motor enters the circuit.
-* The system can also be shut down with the Stop button.
+* İki tuşa aynı anda basıldığında ilk lamba yanar.
+* Toplamda üç buton bulunan sistemde üç butona basıldığında ikinci lamba yanar ve motor devreye girer.
+* Stop butonu ile de sistem kapatılabilir.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* When Button_A and Button_B are pressed at the same time, the Lamp 1 lights up.
-* When Button_A, Button_B and Button_C are pressed at the same time, the Lamp 2 lights up.
-* When the Lamp 2 comes on, the Motor starts to work.
-* A Stop Button has been added to stop the entire system.
+* Button_A ve Button_B'ye aynı anda basıldığında, Lamba 1 yanar.
+* Button_A, Button_B ve Button_C'ye aynı anda basıldığında, Lamba 2 yanar.
+* Lamba 2 yandığında Motor çalışmaya başlar.
+* Tüm sistemi durdurmak için bir Durdurma Düğmesi eklendi.
 
 <center>
 
@@ -270,11 +270,11 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Bottle Recognition And Filling Automation
+### Şişe Tanıma ve Dolum Otomasyonu
 
 [Download Project Files](https://www.mikrodev.com/downloads/example_projects/en/bottle_recognition_andfilling_automation.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DIGITAL INPUT
 * AND
@@ -287,22 +287,22 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * BINARY FLAG
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* Robust bottles will be filled for three seconds.
-* Robust and broken bottles are determined with the camera.
-* Broken bottles are thrown out with the cylinder.
-* The camera will work immediately after the sensor detects the bottle.
+* Sağlam şişeler üç saniye boyunca doldurulacaktır.
+* Sağlam ve kırık şişeler kamera ile belirlenir.
+* Kırık şişeler silindirle birlikte atılır.
+* Sensör şişeyi algıladıktan hemen sonra kamera çalışacaktır.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* With the Start button, the system starts and the belt starts moving.
-* The camera works when the bottle sensor is activated while the belt is moving.
-* The information that the bottles are firm or broken is sent to the system.
-* The belt stops when you reach the bottle filling point.
-* If the bottle is broken, the piston will run and the bottle will be ejected from the belt. If it is intact, the valve will be opened and the filling process will be done within the time specified by the timer.
-* After filling, the belt becomes active.
-* These operations continue until the stop button is pressed.
+* Start butonu ile sistem çalışmaya başlar ve kayış hareket etmeye başlar.
+* Kamera, kayış hareket halindeyken şişe sensörü etkinleştirildiğinde çalışır.
+* Şişelerin sağlam veya kırık olduğu bilgisi sisteme gönderilir.
+* Şişe dolum noktasına ulaştığınızda kemer durur.
+* Şişe kırılırsa piston çalışır ve şişe kayıştan dışarı fırlar. Sağlam ise vana açılır ve timer ile belirtilen süre içerisinde dolum işlemi yapılır.
+* Doldurduktan sonra bant aktif hale gelir.
+* Bu işlemler stop butonuna basılana kadar devam eder.
 
 <center>
 
@@ -310,11 +310,11 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Start and Resume Motor
+### Motoru Başlat ve Sürdür
 
 [Download Project Files](https://www.mikrodev.com/downloads/example_projects/en/motorstart.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DIGITAL INPUT
 * DIGITAL OUTPUT
@@ -326,18 +326,18 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * OR
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* After the motor connected to the output DO0 has been running for 5 seconds, the lamp connected to the output DO1 will flash for 0.5 seconds at intervals of 10 seconds.
-* These operations will start when the button connected to the input DI0 is pressed, and will be stopped with the button connected to the input DI1.
+* DO0 çıkışına bağlı motor 5 saniye çalıştıktan sonra DO1 çıkışına bağlı lamba 10 saniye aralıklarla 0,5 saniye yanıp sönecektir.
+* Bu işlemler DI0 girişine bağlı butona basıldığında başlayacak ve DI1 girişine bağlı butona basıldığında durdurulacaktır.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* When the start button is pressed, the engine is on for 5 seconds.
-* When the engine stops, the lamp is triggered by the edge gate and flashes at 0.5 second intervals for 10 seconds.
-* After 10 seconds the engine restarts.
-* The system repeats this way.
-* When the Stop button is pressed, the entire system stops.
+* Start butonuna basıldığında motor 5 saniye çalışır.
+* Motor durduğunda, lamba kenar kapısı tarafından tetiklenir ve 10 saniye boyunca 0,5 saniye aralıklarla yanıp söner.
+* 10 saniye sonra motor yeniden çalışır.
+* Sistem bu şekilde tekrar eder.
+* Stop butonuna basıldığında tüm sistem durur.
 
 <center>
 
@@ -345,11 +345,11 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Systematic Motor Operation
+### Sistematik Motor Çalışması
 
 [Download Project Files](https://mikrodev.com/downloads/example_projects/en/systematic_motor_operation.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DIGITAL INPUT
 * EDGE
@@ -357,20 +357,20 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * DIGITAL OUTPUT
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* The system will be controlled by the limit switch, start and stop buttons.
-* When the Start button is pressed, Motor 1 will start to operate.
-* When a mechanical system comes into contact with the limit switch, the Motor 1 will remain active as long as the Motor 2 applies pressure to the moving system limit switch.
-* After the mechanical system passes the limit switch, the Motor 1 will continue to run until the Motor 2 stops.
-* All systems will stop when the Stop Button is pressed.
-* When the Start Button is pressed again to restart the stopped system with the Stop Button, the motors will continue to operate in that position.
+* Sistem limit switch, start ve stop butonları ile kontrol edilecektir.
+* Start butonuna basıldığında Motor 1 çalışmaya başlayacaktır.
+* Mekanik bir sistem limit anahtarı ile temas ettiğinde, Motor 2 hareketli sistem limit anahtarına basınç uyguladığı sürece Motor 1 aktif kalacaktır.
+* Mekanik sistem limit anahtarı geçtikten sonra Motor 1, Motor 2 durana kadar çalışmaya devam edecektir.
+* Stop Butonuna basıldığında tüm sistemler duracaktır.
+* Stop Butonu ile durdurulan sistemi yeniden başlatmak için Start Butonuna tekrar basıldığında motorlar o pozisyonda çalışmaya devam edecektir.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* This system will be controlled by the limit switch and stop button.
-* The mechanical system will start the Motor 1 when it contacts the limit switch until the stop button is pressed. The Motor 2 will run as long as the limit switch is pressed.
-* Stop button will stop the entire system.
+* Bu sistem limit switch ve stop butonu ile kontrol edilecektir.
+* Mekanik sistem, durdurma düğmesine basılana kadar limit anahtarına temas ettiğinde Motor 1'i çalıştıracaktır. Motor 2, limit anahtarına basıldığı sürece çalışacaktır.
+* Stop butonu tüm sistemi durduracaktır.
 
 <center>
 
@@ -378,9 +378,9 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Lift Automation
+### Asansör Otomasyonu
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DIGITAL INPUT
 * Adding a Line Label
@@ -390,40 +390,40 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * TIMER OUTPUT RELAY
 * ANALOG FLAG
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* The project will be prepared for a three-storey elevator. The controls that need to be done in elevator control are listed as follows.
-* The elevator cab is raised / lowered by moving the motor forward and backward. Motors like cylinders continue turning for a while after the power is turned off. In this case, the elevator cab will not stop at the exact desired location, so the elevator will have a braking system.
-* Only the motor and elevator car lighting will be checked from the digital outputs.
-* There are 3 floor buttons and 1 emergency stop button in the cabin.
-* Each floor has an elevator call button.
-* There are sensors on each floor to understand which floor of the elevator car is the floor.
-* If the elevator door is opened or the elevator call button is pressed while on the ground, the cabin lighting and the busy lamp are lit for 10 seconds.
-* In case of emergency, the stop button will be provided to keep the cabin in place.
-* An audible alarm or an alarm button must be placed in the cabin to be notified of any malfunction.
-* In the designed system, the elevator door will be opened and closed by hand (a system with automatic opening motor is required). Telephone voice notification will be made independent of the PLC. The elevator door will not open unless the cab is on the floor.
+* Proje üç katlı asansör için hazırlanacaktır. Asansör kontrolünde yapılması gereken kontroller aşağıdaki gibi sıralanmıştır.
+* Asansör kabini, motor ileri geri hareket ettirilerek yükseltilir/indirilir. Silindir gibi motorlar, güç kesildikten sonra bir süre daha dönmeye devam eder. Bu durumda asansör kabini tam istenilen yerde durmayacağı için asansörde fren sistemi olacaktır.
+* Dijital çıkışlardan sadece motor ve asansör kabin aydınlatması kontrol edilecektir.
+* Kabin içerisinde 3 adet kat butonu ve 1 adet acil stop butonu bulunmaktadır.
+* Her katta asansör çağrı butonu bulunmaktadır.
+* Asansör kabininin hangi katının kat olduğunu anlamak için her katta sensörler bulunmaktadır.
+* Yerdeyken asansör kapısı açılırsa veya asansör çağırma düğmesine basılırsa kabin aydınlatması ve meşgul lambası 10 saniye yanar.
+* Acil durumlarda kabini yerinde tutmak için stop butonu sağlanacaktır.
+* Herhangi bir arızadan haberdar olmak için kabine sesli alarm veya alarm butonu yerleştirilmelidir.
+* Tasarlanan sistemde asansör kapısı elle açılıp kapanacaktır (otomatik açma motorlu bir sistem gereklidir). Telefon sesli bildirimi PLC'den bağımsız yapılacaktır. Kabin katta olmadığı sürece asansör kapısı açılmayacaktır.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* 3-storey elevator system to be controlled in this system.
-* Motor forward output will move the elevator down, Motor backward output will move the elevator up.
-* These motors continue turning a little further after the power is turned off.
-* Because of this, whenever the elevator stops, the pneumatic brake system works and the elevator stops at the desired place.
-* Where the elevator is located is controlled by the switches located on each floor.
-* There are 3 floor buttons and a stop button in the elevator.
-* When the call buttons in the elevator and on the floors are pressed, the elevator moves to where the elevator is called.
-* The elevator door opens manually.
-* The status of the door open or closed is controlled by the switch.
-* If the door is open, the elevator will not move.
-* If the elevator is called from the other floors while the door is open, the busy lamp lights up for 10 seconds.
-* This process is done by timer block.
-* When the emergency stop button is pressed, it stops at the elevator.
+* Bu sistemde kontrol edilecek 3 katlı asansör sistemi.
+* Motor ileri çıkışı asansörü aşağı, Motor geri çıkışı asansörü yukarı hareket ettirecektir.
+* Bu motorlar, güç kapatıldıktan sonra biraz daha dönmeye devam eder.
+* Bu nedenle asansör her durduğunda pnömatik fren sistemi çalışır ve asansör istenilen yerde durur.
+* Asansörün bulunduğu yer her katta bulunan şalterler ile kontrol edilir.
+* Asansörde 3 adet kat butonu ve bir adet stop butonu bulunmaktadır.
+* Asansörde ve katlarda bulunan çağrı butonlarına basıldığında asansör çağrılan yere hareket eder.
+* Asansör kapısı manuel olarak açılır.
+* Kapının açık veya kapalı durumu switch ile kontrol edilir.
+* Kapı açıksa asansör hareket etmeyecektir.
+* Kapı açıkken diğer katlardan asansör çağırılırsa meşgul lambası 10 saniye boyunca yanar.
+* Bu işlem timer bloğu ile yapılır.
+* Acil stop butonuna basıldığında asansörde durur.
 
-### Analog Clock Automation
+### Analog Saat Otomasyonu
 
 [Download Project Files](https://www.mikrodev.com/downloads/example_projects/en/clock_automation.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DIGITAL INPUT
 * DIGITAL OUTPUT
@@ -438,22 +438,22 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * UP/DOWN COUNTER
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* A two-armed system is designed to make a circular motion connected to the center.
-* The system produces a one-second trigger every six degrees. The process will be repeated in sixty steps.
-* The second and minute hands will move 600 milliseconds each on the trigger.
-* The hour hand will move five hundred milliseconds every ten minutes. In this way, the clock dial movement within sixty minutes will be carried out gradually.
-* The system that will return to the beginning in 12 hours will be realized. The motors that rotate the wheels are stepping motors.
+* Merkeze bağlı dairesel bir hareket yapmak için iki kollu bir sistem tasarlanmıştır.
+* Sistem her altı derecede bir saniyelik bir tetik üretir. İşlem altmış adımda tekrarlanacaktır.
+* Saniye ve yelkovan tetikte 600 milisaniye hareket edecektir.
+* Akrep her on dakikada bir beş yüz milisaniye hareket edecektir. Bu şekilde altmış dakika içinde saat kadranı hareketi kademeli olarak gerçekleştirilecektir.
+* 12 saat sonra başa dönecek sistem hayata geçirilecek. Tekerlekleri döndüren motorlar step motorlardır.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* In the system, the input DI0 is the input of the step motor.
-* Second hand remains high for 600ms on each trigger (DO0).
-* The output of the minute stepper motor is triggered at intervals of 60 seconds (DO1).
-* The stepper motor of hour hand is triggered for 500 ms every 10 minutes (DO2). At the end of 60 minutes, the clock dial will progress gradually to one unit.
-* When the system is energized, it starts to work automatically.
-* If it does not start, it is started with start button.
+* Sistemde DI0 girişi step motorun girişidir.
+* Saniye ibresi her tetikte (DO0) 600ms yüksek kalır.
+* Dakika step motorunun çıkışı 60 saniyelik aralıklarla tetiklenir (DO1).
+* Akrep step motoru her 10 dakikada bir 500 ms tetiklenir (DO2). 60 dakikanın sonunda saat kadranı kademeli olarak bir birime ilerleyecektir.
+* Sisteme enerji verildiğinde otomatik olarak çalışmaya başlar.
+* Başlamazsa start butonu ile başlatılır.
 
 <center>
 
@@ -461,11 +461,11 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Automatic Door Control
+### Otomatik Kapı Kontrolü
 
 [Download Project Files](https://www.mikrodev.com/downloads/example_projects/en/automatic_door_control.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DIGITAL INPUT
 * Adding a Line Label
@@ -474,29 +474,29 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * NOT
 * TIMER OUTPUT RELAY
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* The system will have two start and one stop button.
-* The door will open when the first start button (open button) is pressed.
-* When the second start button is pressed (close button) the door will close.
-* The door will continue to open if the close button is pressed while the door is opened.
-* If the open button is pressed while the door is closed, the door will continue to close.
-* If the stop button is pressed at any time when the door is open or closed, the door will stop and then whichever button is pressed will move in that direction.
-* When the door is closed, the door will be opened if you enter the vehicle. The door will close again after the vehicle has passed.
+* Sistemde iki start ve bir stop butonu olacaktır.
+* İlk çalıştırma düğmesine (açma düğmesi) basıldığında kapı açılacaktır.
+* İkinci başlat düğmesine (kapat düğmesi) basıldığında kapı kapanacaktır.
+* Kapı açılırken kapatma düğmesine basılırsa kapı açılmaya devam eder.
+* Kapı kapalı iken açma butonuna basılırsa kapı kapanmaya devam edecektir.
+* Kapı açıkken veya kapanırken herhangi bir anda stop butonuna basılırsa kapı duracak ve daha sonra hangi butona basılırsa o yönde hareket edecektir.
+* Kapı kapandığında araca girerseniz kapı açılacaktır. Araç geçtikten sonra kapı tekrar kapanacaktır.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* There are two start buttons that open and close the door.
-* The door can not be opened while the door is closed, it can not be closed while the door is opened.
-* If the stop button is pressed at any time when the door is open or closed, the door will stop and then whichever button is pressed will move in that direction.
-* There are one photocell at the entrance and exit of the door.
-* Photocells consists of transmitter and receiver.
-* Infrared light communicates between the receiver and the transmitter.
-* The receiver and transmitter are mounted mutually.
-* The photocell generates an output signal when an object enters between the receiver and the transmitter.
-* In this system, when the door closes and the first photocell detects the object, the door stops and starts to open again.
-* When the object exits, the second photocell becomes active and the door closes.
-* The stop button stops the entire system.
+* Kapıyı açıp kapatan iki adet start butonu bulunmaktadır.
+* Kapı kapalıyken kapı açılamaz, kapı açıkken kapatılamaz.
+* Kapı açıkken veya kapanırken herhangi bir anda stop butonuna basılırsa kapı duracak ve daha sonra hangi butona basılırsa o yönde hareket edecektir.
+* Kapı giriş ve çıkışında birer adet fotosel bulunmaktadır.
+* Fotoseller verici ve alıcıdan oluşur.
+* Kızılötesi ışık, alıcı ve verici arasında iletişim kurar.
+* Alıcı ve verici karşılıklı olarak monte edilmiştir.
+* Alıcı ile verici arasına bir cisim girdiğinde fotosel bir çıkış sinyali üretir.
+* Bu sistemde kapı kapandığında ve ilk fotosel nesneyi algıladığında kapı durur ve tekrar açılmaya başlar.
+* Cisim çıkınca ikinci fotosel devreye girer ve kapı kapanır.
+* Stop butonu tüm sistemi durdurur.
 
 <center>
 
@@ -510,11 +510,11 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Count Items
+### Öğeleri Sayma
 
 [Download Project Files](https://www.mikrodev.com/downloads/example_projects/en/countitems.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DIGITAL INPUT
 * DIGITAL OUTPUT
@@ -528,19 +528,19 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * IMPULSE RELAY
 * Adding a Lane Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* Products pass through the conveyor belt. When the total product is 500, the system will wait for 30 seconds and it will work again and the same process will be repeated.
+* Ürünler konveyör banttan geçer. Toplam ürün 500 olduğunda sistem 30 saniye bekleyecek ve tekrar çalışacak ve aynı işlem tekrarlanacaktır.
 
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* In this system, the conveyor belt motor is started with the start button.
-* There are bottles in the counter.
-* These bottles are counted with the counter.
-* When the number of bottles is 500, the belt motor stops in the time defined in the timer (30 sec).
-* Then the belt motor continues to work.
-* This process is continuous.
+* Bu sistemde start butonu ile konveyör bant motoru çalıştırılır.
+* Tezgahta şişeler var.
+* Bu şişeler sayaç ile birlikte sayılır.
+* Şişe sayısı 500 olduğunda kayış motoru timer'da tanımlanan sürede (30 sn) durur.
+* Daha sonra kayış motoru çalışmaya devam eder.
+* Bu süreç süreklidir.
 
 <center>
 
@@ -548,11 +548,11 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Oven Automation
+### Fırın Otomasyonu
 
 [Download Project Files](https://mikrodev.com/downloads/example_projects/en/oven_automation.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DIGITAL INPUT
 * AND
@@ -567,26 +567,26 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * HIGH
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* An oven door is to be controlled automatically by PLC.
-* The start button activates the belt motor.
-* When the product comes in front of the first photocell (P1), it is requested to open the door automatically by energizing the piston opening bell and to close the door by energizing the piston when the product comes in front of the second photocell (P2).
-* The information that the door is open or closed is detected by the S1 and S2 proximity sensors.
-* If the product can not be opened within 5 seconds after passing through the P1 photocell, the belt motor must be stopped and the fault signal must be lit. If the door does not close within 5 seconds after the product has passed the P2 photocell, it is still required to turn on the fault signal lamp.
-* The belt motor will not move as long as the fault signal lamp is on.
-* Fault signal will be reset by reset button.
-* Pressing the stop button will stop the operation of the belt motor.
+* Bir fırın kapısı PLC tarafından otomatik olarak kontrol edilecektir.
+* Başlat düğmesi kayış motorunu çalıştırır.
+* Ürün birinci fotoselin (P1) önüne geldiğinde piston açma ziline enerji verilerek kapının otomatik olarak açılması, ürün ikinci fotoselin (P2) önüne geldiğinde ise pistona enerji verilerek kapının kapanması istenir. ).
+* Kapının açık veya kapalı olduğu bilgisi S1 ve S2 yakınlık sensörleri tarafından algılanır.
+* Ürün P1 fotoselinden geçtikten sonra 5 saniye içerisinde açılamıyorsa kayış motoru durdurulmalı ve arıza sinyali yanmalıdır. Ürün P2 fotoselini geçtikten sonra 5 saniye içerisinde kapı kapanmaz ise yine arıza sinyal lambasının yanması gerekir.
+* Arıza sinyal lambası açık olduğu sürece kayış motoru hareket etmeyecektir.
+* Reset butonu ile arıza sinyali resetlenecektir.
+* Stop butonuna basılması kayış motorunun çalışmasını durduracaktır.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* The start button activates the band motor.
-* When the product comes in the first photocell, the oven door opens.
-* After the product passes through the second photocell, the oven door closes.
-* The open position of the oven door is detected by the S1 proximity sensor. If the oven door is closed, it is detected by the S2 proximity sensor.
-* If the door is not opened or closed after 5 seconds after the product has passed through the photocells, the alarm will work.
-* The alarm is stopped with the Reset button.
-* Stop button also stops the belt motor.
+* Start butonu bant motorunu çalıştırır.
+* Ürün ilk fotosele girdiğinde fırın kapağı açılır.
+* Ürün ikinci fotoselden geçtikten sonra fırın kapağı kapanır.
+* Fırın kapağının açık konumu S1 yakınlık sensörü tarafından algılanır. Fırın kapağı kapalıysa S2 yakınlık sensörü tarafından algılanır.
+* Ürün fotosellerden geçtikten 5 saniye sonra kapı açılmaz veya kapanmaz ise alarm çalışacaktır.
+* Reset butonu ile alarm durdurulur.
+* Stop butonu aynı zamanda kayış motorunu da durdurur.
 
 <center>
 
@@ -594,11 +594,11 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Smart Home Application
+### Akıllı Ev Uygulaması
 
 [Download Project Files](https://mikrodev.com/downloads/example_projects/en/smart_home_application.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DIGITAL INPUT
 * AND
@@ -609,26 +609,27 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * RTD INPUT
 * HYSTERESIS
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* These applications will be realized by means of sensors, which will minimize the work done by the people living in the home where all kinds of security measures will be taken.
-* In the event of a fire possible, the smoke detector will trigger the alarm and fire extinguishing fountains will work.
-* The air conditioner will work when the house temperature is above 25 degrees Celsius and will stop when they are below 20 degrees Celsius.
-* The grass will be watered every day at 09:00.
-* In the evening, the lights in the garden will open.
-* In the weekend or after 00:00 at night, the alarm will sound with the motion detector.
-* The window shutters will automatically shut down when it rains or between 11 am and 2 pm.
+* Bu uygulamalar, her türlü güvenlik önleminin alınacağı evde yaşayan kişilerin işlerini en aza indirecek sensörler vasıtasıyla gerçekleştirilecektir.
+* Olası bir yangın durumunda duman dedektörü alarmı tetikleyecek ve yangın söndürme fıskiyeleri çalışacaktır.
+* Klima, ev sıcaklığı 25 santigrat derecenin üzerine çıktığında çalışacak ve 20 santigrat derecenin altına düştüğünde duracaktır.
+* Çimler her gün saat 09:00'da sulanacaktır.
+* Akşamları bahçedeki ışıklar açılacaktır.
+* Hafta sonu veya gece 00:00'dan sonra hareket dedektörü ile alarm çalacaktır.
+* Pencere kepenkleri yağmur yağdığında veya 11:00 ile 14:00 saatleri arasında otomatik olarak kapanacaktır.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* Thanks to the smoke sensor, the fire is extinguished with the mounted fountains.
-* The temperature of house is measured by RTD sensor.
-* The air conditioner is activated when the temperature is above 25 Celcius degrees and is stopped when temperature is below 20 Celcius degrees.
-* The weekly timer block provides daily watering of the grass between 09:00 and 09:30.
-* The shutters closes when it is raining thanks to the rain sensor.
-* The shutters closes every day between 11 pm and 2 am with the weekly timer.
-* The weekly timer block is run against theft on weekends and from 00:00 pm to 08:00 pm on weekdays.
-* When the weather is dark, the garden lighting is switched on thanks to the illumination sensor.
+* Duman sensörü sayesinde monteli fıskiyeler ile yangın söndürülür.
+* Evin sıcaklığı RTD sensörü ile ölçülür.
+* Klima, sıcaklık 25 santigrat derecenin üzerine çıktığında devreye girer ve sıcaklık 20 santigrat derecenin altına düştüğünde durur.
+* Haftalık zamanlayıcı bloğu, çimlerin 09:00 ile 09:30 saatleri arasında günlük olarak sulanmasını sağlar.
+* Yağmur sensörü sayesinde yağmur yağdığında kepenkler kapanır.
+* Panjurlar haftalık zamanlayıcı ile her gün 23:00 ile 02:00 saatleri arasında kapanır.
+* Haftalık zamanlayıcı bloğu hırsızlığa karşı hafta sonları ve hafta içi 00:00 - 20:00 saatleri arasında çalıştırılır.
+* Hava karanlık olduğunda aydınlatma sensörü sayesinde bahçe aydınlatması açılır.
+
 
 <center>
 
@@ -636,13 +637,13 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-## Analog Functions
+## Analog Fonksiyonlar
 
-### RTD Temperature Control
+### RTD Sıcaklık Kontrolü
 
 [Download Project Files](https://mikrodev.com/downloads/example_projects/en/rtd_temperature_control.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * RTD TEMPERATURE INPUT
 * DIGITAL OUTPUT
@@ -653,17 +654,18 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * EDGE GATE
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* PT100 data is check with periods 20 second. If over the set value, the digital output DQ0 is activated.
-* DQ0 will be inactive when the alarm condition is cleared.
+* PT100 verileri 20 saniyelik periyotlarla kontrol edilir. Ayarlanan değerin üzerinde ise dijital çıkış DQ0 aktif olur.
+* Alarm durumu temizlendiğinde DQ0 devre dışı kalacaktır.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* For the desired PT100 sensors to be read, the RTD Temperature Inputs block on the Physical I/O Blocks tab is added.
-* The Symmetric Pulse Generator was used to determine the control period of the data from the RTD.
-* Since there are four sensors, four analog comparators are used. The sensor data to the inA input of Analog Comparators was connected to the inB input of the temperature value register to be controlled. It was done the comparison trigger by the signal from the Symmetric Pulse Generator.
-* The Or gate is used to switch to an alarm state over any temperature sensor.
+* İstenen PT100 sensörlerinin okunması için Fiziksel I/O Blokları sekmesindeki RTD Sıcaklık Girişleri bloğu eklenmiştir.
+* RTD'den gelen verilerin kontrol periyodunu belirlemek için Simetrik Darbe Üreticisi kullanılmıştır.
+* Dört sensör olduğu için dört analog karşılaştırıcı kullanılır. Analog Karşılaştırıcıların inA girişine gelen sensör verileri, kontrol edilecek sıcaklık değeri kaydının inB girişine bağlandı. Simetrik Darbe Üreticisinden gelen sinyal ile karşılaştırma tetiklemesi yapılmıştır.
+* Or kapısı, herhangi bir sıcaklık sensörü üzerinden alarm durumuna geçmek için kullanılır.
+
 
 <center>
 
@@ -671,11 +673,11 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Analog Table and Operations
+### Analog Tablo ve İşlemler
 
 [Download Project Files](https://mikrodev.com/downloads/example_projects/en/analog_table_operations.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * ANALOG INPUT
 * ANALOG TABLE
@@ -685,16 +687,16 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * REAL TIME PULSE GENERATOR
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* The analog values read out for periods of five seconds will be collected. The values will be maximum 30 pieces. In the readings above 30 pieces, the first written value will be deleted and the last read value will be written. The system will operate when digital input 0 is activated, it will stop when it is disabled.
+* Beş saniyelik periyotlar için okunan analog değerler toplanacaktır. Değerler maksimum 30 adet olacaktır. 30 adetin üzerindeki okumalarda ilk yazılan değer silinecek ve son okunan değer yazılacaktır. Dijital giriş 0 aktif olduğunda sistem çalışacak, devre dışı bırakıldığında duracaktır.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* Analog input value was be read with AI0.
-* If the system is on (when DI0 is in high signal state), the system will be triggered by the signal from the timing trigger and through the And gate.
-* An analog table was created with an array of 30 values. Each rising edge to the Clk input of the analog table block will read the new value from AI0. When analog table type FIFO is selected and 30 table size is filled, the last read value will be overwritten with the first read value.
-* Analog table operation block also collects the values in the table.
+* Analog giriş değeri AI0 ile okunmuştur.
+* Sistem açıksa (DI0 yüksek sinyal durumundayken), sistem zamanlama tetikleyicisinden ve And geçidinden gelen sinyalle tetiklenir.
+* 30 değerlik bir dizi ile bir analog tablo oluşturuldu. Analog tablo bloğunun Clk girişine yükselen her kenar AI0'dan yeni değeri okuyacaktır. Analog tablo tipi FIFO seçildiğinde ve 30 tablo boyutu doldurulduğunda, ilk okunan değer son okunan değerin üzerine yazılacaktır.
+* Analog tablo işlem bloğu da tablodaki değerleri toplar.
 
 <center>
 
@@ -702,13 +704,13 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-## Word Functions
+## Kelime İşlevleri
 
-### Traffic Lights
+### Trafik ışıkları
 
 [Download Project Files](https://mikrodev.com/downloads/example_projects/en/traffic_lights.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DIGITAL INPUT
 * DIGITAL OUTPUT
@@ -722,20 +724,20 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * IMPULSE RELAY
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* System will be turned on when to DI0 is pressed,System will be turned off when to DI1 is pressed.
-* The light will turn red for 30 seconds, yellow for 10 seconds, green for 20 seconds.
-* The system will repeat this process until the Stop button is pressed.
+* DI0'a basıldığında sistem açılır, DI1'e basıldığında sistem kapanır.
+* Işık 30 saniye kırmızı, 10 saniye sarı, 20 saniye yeşile dönecektir.
+*Stop bu işlemi Stop butonuna basılana kadar tekrarlayacaktır.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* Impulse relay is used to control system on-off. DI0 is connected to the Set Input of the impulse relay namely the activation input. When from DI0 signal is high, system will open.
-* DI1 was connected to Res Input of impulse relay. When from DI1 is high, system will close.
-* Symmetric pulse generator was used for to create timing algorithm. When the system is turned on, the symmetrical pulse generator will begin to generate signals with periods of one second to be activated. Symmetric pulse genarator is specified 500 milliseconds block that value inside because it produce output at high and low level signal sum period. So, It 500ms+500ms=1 sec will produce output.
-* Signals coming from symmetric pulse genarator ıt was counted with counter. Counter operation was used for Up/Down counter. Double click on the block to select the up option. It would count to select up every signal for the coming 0,1,2,3, ... down every signal for the coming 0,-1,-2,,...
-* Total burn times for red, yellow and green lights are 60 seconds. When the counter value is 60, the counter is reset because the signalization process will be canceled. the system will repeat the function until system turn off. The binary flag is used because it connects with the timer output to the Word Comparator input.
-* The light will turn red in the range of 0-30 seconds, yellow in the range of 30-40, and green in the range of 40-60.
+*Sistemi on-off kontrol etmek için darbe rölesi kullanılır. DI0, darbe rölesinin Set Girişine yani aktivasyon girişine bağlanır. DI0 sinyali yüksek olduğunda sistem açılacaktır.
+* DI1 darbe rölesinin Res Girişine bağlanmıştır. DI1'den yüksek olduğunda, sistem kapanacaktır.
+* Zamanlama algoritması oluşturmak için simetrik puls üreteci kullanıldı. Sistem açıldığında, simetrik puls üreteci, etkinleştirilecek bir saniyelik periyotlarla sinyaller üretmeye başlayacaktır. Simetrik darbe üreteci, yüksek ve düşük seviyeli sinyal toplam periyodunda çıkış ürettiği için bu değeri içeride 500 milisaniye olarak bloke eder. Yani 500ms+500ms=1 sn çıktı üretecektir.
+* Simetrik puls üretecinden gelen sinyaller sayaç ile sayılmıştır. Yukarı/Aşağı sayacı için sayaç işlemi kullanıldı. Yukarı seçeneğini seçmek için bloğa çift tıklayın. Gelen 0,1,2,3, ... için her sinyali seçmek, 0,-1,-2,,...
+* Kırmızı, sarı ve yeşil ışıkların toplam yanma süreleri 60 saniyedir. Sayaç değeri 60 olduğunda sinyalizasyon işlemi iptal olacağından sayaç sıfırlanır. sistem kapanana kadar sistem işlevi tekrarlayacaktır. İkili bayrak, zamanlayıcı çıkışı ile Kelime Karşılaştırıcı girişine bağlandığı için kullanılır.
+* Işık 0-30 saniye aralığında kırmızı, 30-40 aralığında sarı, 40-60 saniye aralığında yeşile dönecektir.
 
 <center>
 
@@ -743,11 +745,11 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Word Table and Operations
+### Kelime Tablosu ve İşlemler
 
 [Download Project Files](https://mikrodev.com/downloads/example_projects/en/word_table_operations.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * WORD REGISTER
 * AND
@@ -757,16 +759,16 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * REAL TIME PULSE GENERATOR
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* The word values read out for periods of five seconds will be collected. The values will be maximum 30 pieces. In the readings above 30 pieces, the first written value will be deleted and the last read value will be written. The system will operate when digital input 0 is activated, it will stop when it is disabled.
+* Beş saniyelik periyotlar için okunan word değerleri toplanacaktır. Değerler maksimum 30 adet olacaktır. 30 adetin üzerindeki okumalarda ilk yazılan değer silinecek ve son okunan değer yazılacaktır. Dijital giriş 0 aktif olduğunda sistem çalışacak, devre dışı bırakıldığında duracaktır.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* Word register was connected Word Table input.
-* If the system is on (when DI0 is in high signal state), the system will be triggered by the signal from the timing trigger and through the And gate.
-* A word table was created with an array of 30 values. Each rising edge to the Clk input of the word table block will read the new value from word register. When word table type FIFO is selected and 30 table size is filled, the last read value will be overwritten with the first read value.
-* Word table operation block also collects the values in the table.
+* Word registeri Word Table girişine bağlandı.
+* Sistem açıksa (DI0 yüksek sinyal durumundayken), sistem zamanlama tetikleyicisinden ve And geçidinden gelen sinyalle tetiklenir.
+* 30 değerlik bir dizi ile bir kelime tablosu oluşturuldu. Kelime tablosu bloğunun Clk girişine yükselen her kenar, kelime kaydından yeni değeri okuyacaktır. Word tablo tipi FIFO seçildiğinde ve 30 tablo boyutu doldurulduğunda, ilk okunan değer son okunan değerin üzerine yazılacaktır.
+* Word tablosu işlem bloğu da tablodaki değerleri toplar.
 
 <center>
 
@@ -774,13 +776,13 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-## GSM Communication Examples
+## GSM İletişim Örnekleri
 
-### Send Temperature Values via SMS
+### Sıcaklık Değerlerini SMS ile Gönderin
 
 [Download Project Files](https://mikrodev.com/downloads/example_projects/en/send_temp_via_sms.zip)
 
-#### Things to Know Before Design
+#### Tasarımdan Önce Bilinmesi Gerekenler
 
 * RTD INPUT
 * SMS SEND
@@ -788,18 +790,18 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * STRING REFERENCE
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* It is requested to send as sms to five numbers determined at 9:00 am on weekdays.
+*Hafta içi saat 09:00'da belirlenen beş numaraya sms olarak gönderilmesi rica olunur.
 
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* Using the Weekly Timer Block, the system is only activated between 9.00 and 9.15 on weekdays.
-* The PT1000 sensor is connected to the RTD inputs.
-* For the values read from the temperature sensor, the phone numbers to which the SMS is sent are defined.
-* In the 'String table' section, the contents of the message to be sent are written.
-* The block number of each RTD Input block is defined by putting a '$' sign at the beginning. For example, $ 5000 is written to the SMS content to read the temperature value from the RTD0 input. The RTD0 input value is $5000, the RTD1 input value is $5001.
+* Haftalık Zaman Bloğu kullanılarak, sistem hafta içi sadece 9.00 ile 9.15 arasında aktif hale gelir.
+* PT1000 sensörü RTD girişlerine bağlanır.
+* Sıcaklık sensöründen okunan değerler için SMS'in gönderildiği telefon numaraları tanımlanır.
+* 'String tablosu' bölümünde gönderilecek mesajın içeriği yazılır.
+* Her bir RTD Giriş bloğunun blok numarası, başına bir '$' işareti konarak tanımlanır. Örneğin RTD0 girişinden sıcaklık değerini okumak için SMS içeriğine 5000$ yazılır. RTD0 giriş değeri 5000$, RTD1 giriş değeri ise 5001$'dır.
 
 <center>
 
@@ -807,11 +809,11 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Make Call on Alarm
+### Alarmda Arama Yap
 
 [Download Project Files](https://mikrodev.com/downloads/example_projects/en/make_call_on_alarm.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * RTD INPUT
 * BINARY FLAG
@@ -829,17 +831,18 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * ANALOG COMPARATOR
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* When a RTD temperature sensor data checked in 20 sec period passes the specified value, DTMF calling will start. Three different numbers will be dialed in order. After calling operation is finished, If temperature value is in location alarm again inside of 30 minute, calling operation will be repeated.
+* 20 sn periyotta kontrol edilen bir RTD sıcaklık sensörü verisi belirtilen değeri geçtiğinde DTMF çağrısı başlayacaktır. Sırayla üç farklı numara aranacaktır. Arama işlemi bittikten sonra, 30 dakika içinde sıcaklık değeri tekrar konum alarmında ise arama işlemi tekrarlanır.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* With the analog register, the temperature value at which the alarm condition is generated is determined. With the symmetrical pulse generator, the temperature values are controlled once every 20 seconds. Each of the RTD inputs is controlled by an analog comparator.
-* Any analog comparator block output from the analog registers above the specified temperature value will produce a high level signal and go into an alarm state. After going through the alarm condition, the call timer will start to increase at one second intervals.
-* If the temperature does not fall within 30 minutes, when the counter value reaches 1800 (1800sec / 60 = 30min), the Ori input will be reset and the calling will start again.
-* The calling operation will be performed according to the data received from the analog comparator. If the temperature is between 0-30, the first call will be made, between 100-180 second call and between 200-230 third call.
-* The numbers to be dialed are double-clicked in the DTMF Originate Call Block.
+* Analog register ile alarm durumunun oluştuğu sıcaklık değeri belirlenir. Simetrik puls üreteci ile sıcaklık değerleri her 20 saniyede bir kontrol edilir. RTD girişlerinin her biri bir analog karşılaştırıcı tarafından kontrol edilir.
+* Belirtilen sıcaklık değerinin üzerindeki analog kayıtlardan herhangi bir analog karşılaştırıcı blok çıkışı, yüksek seviyeli bir sinyal üretecek ve bir alarm durumuna geçecektir. Alarm durumundan geçtikten sonra, arama süresi bir saniye aralıklarla artmaya başlayacaktır.
+* 30 dakika içerisinde sıcaklık düşmez ise sayaç değeri 1800 (1800sn / 60 = 30dk) olduğunda Ori girişi sıfırlanır ve arama yeniden başlar.
+* Çağırma işlemi analog karşılaştırıcıdan alınan verilere göre yapılacaktır. Sıcaklık 0-30 arasında ise ilk arama, 100-180 saniye arası ve 200-230 arası üçüncü arama yapılır.
+* DTMF Originate Call Block'ta aranacak numaralar çift tıklanır.
+
 
 <center>
 
@@ -853,11 +856,11 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Oven Automation via SMS
+### SMS ile Fırın Otomasyonu
 
 [Download Project Files](https://mikrodev.com/downloads/example_projects/en/oven_automation_via_sms.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DIGITAL INPUT
 * DIGITAL OUTPUT
@@ -871,19 +874,19 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * IMPULSE RELAY
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* The system will be turned on at any time by throwing an SMS in the oven project.
-* When the message "Prepare dough" is thrown to +441234567890, the system will work.
-* On the automation side when commanded, flour is poured into the dough kneading bowl for 50 seconds. Water is added for 20 seconds and the ferment is poured for 10 seconds.
-* After the mixture is finished mixture motor will run 15 minute, And then to ovener will be sent " I prepared to dough" message.
+* Fırın projesine SMS atılarak sistem her an devreye girecektir.
+* +441234567890'a "Hamur hazırla" mesajı atıldığında sistem çalışacaktır.
+* Otomasyon tarafında komut verildiğinde 50 saniye boyunca hamur yoğurma kabına un dökülür. 20 saniye su eklenir ve maya 10 saniye dökülür.
+* Karışım bittikten sonra karışım motoru 15 dakika çalışır ve fırına "Hamur yaptım" mesajı gönderilir.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* From designated number "prepare dough" message, when came will be opened system with impulse relay. The DI0 is connected to the Sif input of the impulse relay to close the system in emergency response or to complete the dough process.
-* Timer output relay is used to add flour, water and yeast at different times. The system will become inactive after it has been active for the defined period of time.
-* DQ0, DQ1 and DQ2 outputs will be passive after the flour, water and yeast intake is complete when the system is on. These digital outputs are connected to the Not block for producing a high-level signal.
-* After the flour, water and yeast are taken, the And gate output will be activated and the mixing will start and the message will be sent after the mixing time is over.
+* Belirlenen numaradan "hamur hazırla" mesajı geldiğinde darbe röleli sistem açılacaktır. Acil müdahalede sistemi kapatmak veya hamur işlemini tamamlamak için DI0 darbe rölesinin Sif girişine bağlanır.
+* Zamanlayıcı çıkış rölesi farklı zamanlarda un, su ve maya eklemek için kullanılır. Belirlenen süre boyunca aktif olduktan sonra sistem pasif hale gelecektir.
+* Sistem açıkken un, su ve maya alımı tamamlandıktan sonra DQ0, DQ1 ve DQ2 çıkışları pasif olacaktır. Bu dijital çıkışlar, yüksek seviyeli bir sinyal üretmek için Not bloğuna bağlanır.
+* Un, su ve maya alındıktan sonra And kapısı çıkışı aktif olacak ve karıştırma işlemi başlayacak ve karıştırma süresi bittikten sonra mesaj gönderilecektir.
 
 <center>
 
@@ -897,11 +900,11 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Send Register Values to Internet
+### Kayıt Değerlerini İnternete Gönderin
 
 [Download Project Files](https://mikrodev.com/downloads/example_projects/en/send_register_value_to_internet.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * TCP SOCKET BLOCK
 * MODBUS TCP SLAVE
@@ -912,20 +915,21 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * CONNECTION
 * GPRS IP
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* Modbus TCP protocol to read and change the word register value via GSM communication.
+* GSM haberleşmesi ile word register değerini okumak ve değiştirmek için Modbus TCP protokolü.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* In the above picture with the online monitoring screen image, the word register data with the modbus address 4000 is read via GSM communication.
-* PLC device was arranged server and slave, for GSM connection .
-* The server was selected from the TCP socket block and written as listening port 502. The IP filter is not defined because the connection is requested from any IP address. If only one IP was to be connected, an IP filter would have to be specified.
-* The Modbus ID number is determined by the Modbus TCP slave block contents. Modbus slave address will allow communication with multiple slave terminals.
-* In order to provide GSM connection, firstly Mikroterminal is opened in Tools section in Mikrodiagram. CSQ, CONNECTION and GPRSIP interrogation must be performed after the APN description is made.
-* If the data line used has a static IP address, the APN number that can be learned from the GSM operator must be entered correctly. For example, if the APN address of the GSM operator is 'mgbs', then the AT+GPRSAPN command is typed as 'mgbs' and the write button is pressed.
-* To read the quality of the GSM line, press the read button on the AT + CSQ command line. In the example, the CSQ value is read as between 16 and 20. This value indicates that there is enough attraction power to make the connection.
-* After starting the GSM line, AT+CONNECTION=? command is sent. If the command reply is '6', GPRS IP is received. AT+GPRSIP=? command is sent to find out the IP address, the device is connected.
+* Online izleme ekranı görüntüsünün yer aldığı yukarıdaki resimde, modbus adresi 4000 olan word register datası GSM haberleşmesi ile okunur.
+* PLC cihazı, GSM bağlantısı için server ve slave olarak düzenlenmiştir.
+* Sunucu TCP soket bloğundan seçilmiş ve dinleme portu 502 olarak yazılmıştır. Bağlantı herhangi bir IP adresinden istendiği için IP filtresi tanımlanmamıştır. Yalnızca bir IP bağlanacaksa, bir IP filtresinin belirtilmesi gerekir.
+* Modbus ID numarası, Modbus TCP bağımlı blok içeriği tarafından belirlenir. Modbus slave adresi, birden fazla slave terminal ile iletişime izin verecektir.
+* GSM bağlantısını sağlamak için öncelikle Mikrodiagram'da Araçlar bölümünde Mikroterminal açılır. APN açıklaması yapıldıktan sonra CSQ, CONNECTION ve GPRSIP sorgulaması yapılmalıdır.
+* Kullanılan data hattının statik IP adresi varsa GSM operatöründen öğrenilebilecek APN numarası doğru girilmelidir. Örneğin GSM operatörünün APN adresi 'mgbs' ise AT+GPRSAPN komutu 'mgbs' olarak yazılır ve yazma butonuna basılır.
+* GSM hattının kalitesini okumak için AT + CSQ komut satırında oku butonuna basınız. Örnekte CSQ değeri 16 ile 20 arasında okunmaktadır. Bu değer bağlantının yapılması için yeterli çekim gücünün olduğunu gösterir.
+
+GSM hattını açtıktan sonra AT+CONNECTION=? komut gönderilir. Komut yanıtı '6' ise GPRS IP'si alınır. AT+GPRSIP=? IP adresini bulmak için komut gönderilir, cihaz bağlanır.
 
 <center>
 
@@ -939,11 +943,11 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### Communicating two PLCs via GPRS
+### GPRS üzerinden iki PLC ile iletişim kurma
 
 [Download Project Files](https://mikrodev.com/downloads/example_projects/en/comm_two_plc_via_gprs.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * TCP SOCKET
 * MODBUS TCP MASTER
@@ -957,20 +961,20 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 * CSQ
 * GPRS IP
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* The PLC configured as MODBUS Master will read a register value from the PLC configured as MODBUS Slave. In MODBUS protocol a SLAVE device creates a "TCP Server Socket", however the MASTER device creates "TCP Client Socket". The MASTER device connects the SLAVE device. So the MASTER should know about the IP and PORT information of the SLAVE device.
+* MODBUS Master olarak konfigüre edilen PLC, MODBUS Slave olarak konfigüre edilen PLC'den bir kayıt değeri okuyacaktır. MODBUS protokolünde bir SLAVE cihazı bir "TCP Sunucu Soketi" oluşturur, ancak MASTER cihazı "TCP İstemci Soketi" oluşturur. MASTER cihazı, SLAVE cihazını bağlar. Bu yüzden MASTER, SLAVE cihazının IP ve PORT bilgisini bilmelidir.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* Two devices and two separate diagrams are used as server and client.
-* GSM is selected as the media type in the TCP Socket Block.
-* Modbus TCP slave block is used in server diagram. This allows the client device to connect to the server. By specifying the ID, more than one device will be able to operate as a slave. In the TCP socket block, the server is selected and the listening port is entered.
-* The MODBUS TCP MASTER block is added on the client diagram to connect to the SLAVE device. Each time the rising edge of the MODBUS word reader block arrives at the trigger input, the specified register is read from the device it is connected to. The ID of the device identified as a slave should be written in the "ID" definition field in the MODBUS word reader block.
-* Since the MODBUS register address of Word Register Block with modbus adress is 4000, MODBUS address is set to 4000 in to Modbus Word Reader Block. In the TCP socket of the client device, the IP number of the PLC to be connected and the listening port values are entered. The SLAVE device's IP and listening port values can be learned on the Mikroteminal application console with GPRSIP and LISTENPORT commands.
-* You also need to check APN, CSQ and GPRSIP values on Mikroterminal. Please see MODBUS TCP GSM Communication example for connection settings.
+* Sunucu ve istemci olarak iki cihaz ve iki ayrı diyagram kullanılmaktadır.
+* TCP Soket Bloğunda ortam türü olarak GSM seçilir.
+* Sunucu şemasında Modbus TCP slave bloğu kullanılmıştır. Bu, istemci cihazın sunucuya bağlanmasına izin verir. ID belirlenerek birden fazla cihaz slave olarak çalışabilecektir. TCP soket bloğunda sunucu seçilir ve dinleme portu girilir.
+*SLAVE cihazına bağlanmak için client diyagramına MODBUS TCP MASTER bloğu eklenir. MODBUS word okuyucu bloğunun yükselen kenarı tetik girişine her geldiğinde, bağlı olduğu cihazdan belirtilen register okunur. Slave olarak tanımlanan cihazın ID'si MODBUS word okuyucu bloğundaki "ID" tanımlama alanına yazılmalıdır.
+* Modbus adresli Word Register Block'un MODBUS register adresi 4000 olduğundan, Modbus Word Okuyucu Bloğunda MODBUS adresi 4000 olarak ayarlanır. İstemci cihazın TCP soketine bağlanılacak PLC'nin IP numarası ve dinleme port değerleri girilir. SLAVE cihazının IP ve dinleme port değerleri GPRSIP ve LISTENPORT komutları ile Mikroteminal uygulama konsolu üzerinde öğrenilebilir.
+* Mikroterminal üzerinden APN, CSQ ve GPRSIP değerlerini de kontrol etmeniz gerekmektedir. Bağlantı ayarları için lütfen MODBUS TCP GSM İletişim örneğine bakınız.
 
-#### Master Device:
+#### Ana Cihaz:
 
 <center>
 
@@ -978,7 +982,7 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-#### Slave Device:
+#### Bağımlı Aygıt:
 
 <center>
 
@@ -986,9 +990,9 @@ In apple automation, apples coming from apple conveyor band will be counted and 
 
 </center>
 
-### PLCRESET and GSMRESET Definition via SMS
+### SMS ile PLCRESET ve GSMRESET Tanımlama
 
-To use AT commands from mobile, the blocks must be installed as follows.
+AT komutlarını mobilden kullanmak için bloklar aşağıdaki gibi kurulmalıdır.
 
 <center>
 
@@ -1008,7 +1012,7 @@ To use AT commands from mobile, the blocks must be installed as follows.
 
 </center>
 
-AT+PLCRESET=? and AT+GSMRESET=? When the command is sent, the information stored in the device is sent by the PLC as sms.
+AT+PLCRESET=? ve AT+GSMRESET=? Komut gönderildiğinde cihazda saklanan bilgiler PLC tarafından sms olarak gönderilir.
 
 <center>
 
@@ -1016,7 +1020,7 @@ AT+PLCRESET=? and AT+GSMRESET=? When the command is sent, the information stored
 
 </center>
 
-When AT+PLCRESET=26400 and AT+GSMRESET=600 command is sent, the specified number is set to the PLC in seconds.
+AT+PLCRESET=26400 ve AT+GSMRESET=600 komutu gönderildiğinde, belirtilen sayı PLC'ye saniyeler içinde set edilir.
 
 <center>
 
@@ -1024,7 +1028,7 @@ When AT+PLCRESET=26400 and AT+GSMRESET=600 command is sent, the specified number
 
 </center>
 
-Repeat AT+PLCRESET=? and AT+GSMRESET=? When the command is sent, it is seen that the set value is processed to PLC.
+AT+PLCRESET= tekrarla ve AT+GSMRESET= Komut gönderildiğinde set değerinin PLC'ye işlendiği görülür.
 
 <center>
 
@@ -1032,15 +1036,15 @@ Repeat AT+PLCRESET=? and AT+GSMRESET=? When the command is sent, it is seen that
 
 </center>
 
-#### Using SMS Console
+#### SMS Konsolunu Kullanma
 
-#### Description
+#### Tanım
 
-You can get and change the data in PLC by sending AT commands from a mobile phone. The following shows sample applications and the transmission of several AT commands.
+Cep telefonundan AT komutları göndererek PLC'deki verileri alıp değiştirebilirsiniz. Aşağıda örnek uygulamalar ve birkaç AT komutunun iletimi gösterilmektedir.
 
-#### Example:1
+#### Örnek 1
 
-To enable SMS console
+SMS konsolunu etkinleştirmek için:
 
 <center>
 
@@ -1048,17 +1052,16 @@ To enable SMS console
 
 </center>
 
-To set a string via SMS:
-Send SMS text message to device in following format:
+SMS yoluyla bir dizi ayarlamak için:
+Cihaza aşağıdaki biçimde SMS metin mesajı gönderin:
 
-AT+FBD=Block No,NewTextValue
+AT+FBD=Blok No,NewTextValue
 
-In order to update String Text referenced by String refeecne block (Block No: 2) and String Text Offset 1, send a SMS to device like follows:
+String refeecne bloğu (Blok No: 2) ve String Text Offset 1 ile referans verilen String Metni güncellemek için cihaza aşağıdaki gibi bir SMS gönderin:
 
 AT+FBD=2,+905457878774
 
-Send above SMS text message to the device, to change a string referecence value from remote.
-
+Uzaktan kumandadan bir dize referans değerini değiştirmek için cihaza yukarıdaki SMS metin mesajını gönderin.
 
 <center>
 
@@ -1066,10 +1069,9 @@ Send above SMS text message to the device, to change a string referecence value 
 
 </center>
 
-#### Example:2
+#### Örnek 2:
 
-To enable SMS console, select the String Reference Text Offset "AT + SMS" to the SMSR Msj input.
-Word Register value is 0.
+SMS konsolunu etkinleştirmek için, SMSR Msj girişine "AT + SMS" Dize Referans Metni Ofseti'ni seçin. Kelime Kayıt değeri 0'dır.
 
 <center>
 
@@ -1077,7 +1079,7 @@ Word Register value is 0.
 
 </center>
 
-To change the value in the word register, AT + FBD = 3000,20 is sent from Mobil.Word Register value is 20.
+Word registerindeki değeri değiştirmek için Mobil'den AT + FBD = 3000,20 gönderilir.Word Register değeri 20'dir.
 
 <center>
 
@@ -1085,7 +1087,7 @@ To change the value in the word register, AT + FBD = 3000,20 is sent from Mobil.
 
 </center>
 
-The following table shows the sending and incoming responses of AT commands from the mobile.
+Aşağıdaki tablo, AT komutlarının cep telefonundan gönderilen ve gelen yanıtlarını gösterir.
 
 <center>
 
@@ -1094,13 +1096,13 @@ The following table shows the sending and incoming responses of AT commands from
 </center>
 
 
-## Ethernet Communication
+## Ethernet İletişimi
 
-### MODBUS TCP Ethernet Communication
+### MODBUS TCP Ethernet İletişimi
 
 [Download Project Files](https://mikrodev.com/downloads/example_projects/en/modbus_tcp_ethernet_communication.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * TCP SOCKET BLOCK
 * MODBUS TCP SLAVE
@@ -1113,23 +1115,22 @@ The following table shows the sending and incoming responses of AT commands from
 * NETMASK
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* The PLC configured as MODBUS Master will read a register value from the PLC configured as MODBUS Slave. In MODBUS protocol a SLAVE device creates a "TCP Server Socket", however the MASTER device creates "TCP Client Socket". The MASTER device connects the SLAVE device. So the MASTER should know about the IP and PORT information of the SLAVE device.
+* MODBUS Master olarak konfigüre edilen PLC, MODBUS Slave olarak konfigüre edilen PLC'den bir kayıt değeri okuyacaktır. MODBUS protokolünde bir SLAVE cihazı bir "TCP Sunucu Soketi" oluşturur, ancak MASTER cihazı "TCP İstemci Soketi" oluşturur. MASTER cihazı, SLAVE cihazını bağlar. Bu yüzden MASTER, SLAVE cihazının IP ve PORT bilgisini bilmelidir.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* Two devices and two separate diagrams are used as server and client.
-* Ethernet is selected as the media type in the TCP Socket Block.
-* Modbus TCP slave block is used in server diagram. This allows the client device to connect to the server. By specifying the ID, more than one device will be able to operate as a slave. In the TCP socket block, the server is selected and the listening port is entered.
-* The MODBUS TCP MASTER block is added on the client diagram to connect to the SLAVE device. Each time the rising edge of the MODBUS word reader block arrives at the trigger input, the specified register is read from the device it is connected to. The ID of the device identified as a slave should be written in the "ID" definition field in the MODBUS word reader block.
-* Since the MODBUS register address of Word Register Block with modbus address is 4004, MODBUS address is set to 4004 in to Modbus Word Reader Block. In the TCP socket of the client device, the IP number of the PLC to be connected and the listening port values are entered. The SLAVE device's IP and listening port values can be learned on the Mikroteminal application console with LOCALIP command.
-* From inside of TCP socket block "TCP server " selecting 502 was written as listening port.Was not write ip filter because you want to connect from any ip address. If only one from IP had to be connected, was will needed IP filter to determine.
-* You also need to check MAC, GATEWAY and NETMASK values on Mikroterminal. Please see MODBUS TCP Ethernet Communication example for connection settings.
-* Local Ip address, is specified the IP address of PLC device.
-* Local Ip setting have to configured subnet mask, default gateway parameters as using.
-
-#### Master Device:
+* Sunucu ve istemci olarak iki cihaz ve iki ayrı diyagram kullanılmaktadır.
+* TCP Soket Bloğunda medya türü olarak Ethernet seçilir.
+* Sunucu şemasında Modbus TCP slave bloğu kullanılmıştır. Bu, istemci cihazın sunucuya bağlanmasına izin verir. ID belirlenerek birden fazla cihaz slave olarak çalışabilecektir. TCP soket bloğunda sunucu seçilir ve dinleme portu girilir.
+*SLAVE cihazına bağlanmak için client diyagramına MODBUS TCP MASTER bloğu eklenir. MODBUS word okuyucu bloğunun yükselen kenarı tetik girişine her geldiğinde, bağlı olduğu cihazdan belirtilen register okunur. Slave olarak tanımlanan cihazın ID'si MODBUS word okuyucu bloğundaki "ID" tanımlama alanına yazılmalıdır.
+* Modbus adresli Word Register Block'un MODBUS register adresi 4004 olduğundan, Modbus Word Reader Block'ta MODBUS adresi 4004 olarak ayarlanır. İstemci cihazın TCP soketine bağlanılacak PLC'nin IP numarası ve dinleme port değerleri girilir. LOCALIP komutu ile Mikroteminal uygulama konsolu üzerinde SLAVE cihazının IP ve dinleme port değerleri öğrenilebilir.
+* TCP soket bloğunun içinden "TCP server" seçilerek 502 portu dinleme olarak yazılmıştır.Herhangi bir ip adresinden bağlanmak istediğiniz için ip filtresi yazılmadı. IP'den yalnızca birinin bağlanması gerekiyorsa, belirlemek için IP filtresine ihtiyaç duyulacaktır.
+* Mikroterminal üzerinden MAC, GATEWAY ve NETMASK değerlerini de kontrol etmeniz gerekmektedir. Bağlantı ayarları için lütfen MODBUS TCP Ethernet İletişim örneğine bakın.
+* Lokal IP adresi, PLC cihazının IP adresi belirtilir.
+* Yerel Ip ayarı, alt ağ maskesini, varsayılan ağ geçidi parametrelerini kullanarak yapılandırılmalıdır.
+#### Ana Cihaz:
 
 <center>
 
@@ -1137,7 +1138,7 @@ The following table shows the sending and incoming responses of AT commands from
 
 </center>
 
-#### Slave Device:
+#### Bağımlı Aygıt:
 
 <center>
 
@@ -1145,41 +1146,41 @@ The following table shows the sending and incoming responses of AT commands from
 
 </center>
 
-### DevNET Communication
+### DevNET İletişimi
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DEVNET MAIN
 * DEVNET REGISTER
 * WORD REGISTER
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* There are two different PLC products connected to the same local network.
-* By using DevNET blocks, we will transfer the value of the PLC word register to the DevNET registers of the other device.
+* Aynı yerel ağa bağlı iki farklı PLC ürünü vardır.
+* DevNET bloklarını kullanarak PLC word register değerini diğer cihazın DevNET registerlarına aktaracağız.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-First Device
+İlk Cihaz
 
-* Sync with DevNET must be selected in Word registers.
-* Values are entered into Word registers.
-* The DevnetMain settings, were looked a pre-design from what needs to be known tab. Timeout and Cycle Delay times are equal since two devices are communicated.
+* Word kayıtlarında DevNET ile Sync seçilmelidir.
+* Değerler Word kayıtlarına girilir.
+* DevnetMain ayarları, bilinmesi gerekenler sekmesinden ön tasarım olarak bakıldı. Zaman Aşımı ve Döngü Gecikme süreleri, iki cihaz iletişim halinde olduğundan eşittir.
 
-Second Device
+İkinci Cihaz
 
-* DevNET Main settings for other PLC have been made.
-* The address and block number of the device to be read into the DevNET register block are written.
-* As you can see in the pictures, the values of the first device's word register are read in DevNET registers of the second device.
+* Diğer PLC için DevNET Main ayarları yapılmıştır.
+* DevNET register bloğuna okunacak cihazın adresi ve blok numarası yazılır.
+* Resimlerde görüldüğü gibi birinci cihazın word register değerleri ikinci cihazın DevNET registerlarında okunur.
 
-## Serial Communication
+## Seri iletişim
 
-### Reading Network Analyser via RS485
+### RS485 üzerinden Ağ Analizörü Okuma
 
 [Download Project Files](https://mikrodev.com/downloads/example_projects/en/reading_analyzer_via_rs485.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * SERIAL PORT BLOCK
 * MODBUS RTU MASTER
@@ -1189,17 +1190,17 @@ Second Device
 * ANALOG MATH
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* Reading the voltage data from the network analyzer with RS485 communication port.
+* RS485 iletişim portu ile ağ analizöründen voltaj verilerinin okunması.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* Serial port and RTU master block are used for serial communication. The Baudrate, Databit and Parity values of the network analyzer are entered in the serial port block.
-* Serial port no is entered 0 in the Serial Port Block and Port Type is selected RS485.
-* The slave address and register address of the analyzer are entered in Modbus word reader blocks.
-* The value is read at every rising edge from the symmetrical pulse generator.
-* Since the network analyzer's data is in word format, 222.7 V voltage value is read as 2227. The actual value read from the analyzer screen is accessed by performing a division operation with the Analog Math Block.
+* Seri haberleşme için seri port ve RTU master blok kullanılmaktadır. Ağ analizörünün Baudrate, Databit ve Parity değerleri seri port bloğuna girilir.
+* Seri Port Bloğunda Seri port numarası 0 girilir ve Port Tipi RS485 seçilir.
+* Analizörün slave adresi ve register adresi Modbus word okuyucu bloklarına girilir.
+* Değer, simetrik puls üretecinden yükselen her kenarda okunur.
+* Şebeke analizör verileri word formatında olduğu için 222.7 V voltaj değeri 2227 olarak okunur. Analizör ekranından okunan gerçek değere Analog Math Block ile bölme işlemi yapılarak ulaşılır.
 
 <center>
 
@@ -1213,11 +1214,11 @@ Second Device
 
 </center>
 
-### Serial Communicating two PLCs via Modbus Table Reader
+### İki PLC'nin Modbus Tablo Okuyucu ile Seri Haberleşmesi
 
 [Download Project Files](https://mikrodev.com/downloads/example_projects/en/seri_communication_via_modbus_table.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * SERIAL PORT BLOCK
 * MODBUS RTU MASTER
@@ -1231,28 +1232,28 @@ Second Device
 * ANALOG TABLE OPERATION
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-Reading of 10 Word and 10 Analog registers in RTU Slave device by RTU Master device via RS485 communication protocol.
+RTU Slave cihazındaki 10 Word ve 10 Analog registerin RTU Master cihazı tarafından RS485 haberleşme protokolü ile okunması.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* For the slave device, the Modbus RTU slave block located on the Modbus blocks tab is added.
-* Serial Port Block is added for serial communication and communication parameters are set. The slave and master devices must have the same baud rate, data bit and parity option.
-* The monitoring screen above is the RTU slave device, and below is the screenshot of RTU Master device.
-* For the master device, the Modbus RTU master block located on the Modbus blocks tab is added.
-* Since the Modbus table block reads every rising edge, the trigger is sent via the symmetric pulse generator.
-* Two modbus table blocks have been used since two different register formats like Word and Analog. Because the word registers start at 4000 and the analog registers at 6000.
-* The RTU master line tag has been added to the Mas input of Modbus table blocks.
-* The symmetric pulse generator is connected Trg input of Modbus table blocks for trigger.
-* For to be read Word and Analog values is added two separate Table Block. The output of table block is connected to the Tab input of the Modbus table block.
-* The word table field must be created twice the size of the word register to be read.
-* The analog values read from the Modbus table block constitute twice the number of registers read from the RTU Slave. An analog table size is created twice as much as the number entered in the Modbus table block. For example; There are 10 analog registers in RTU Slave. The number of registers in the modbus table read by RTU Master is 20. An analog table block with a table size of 40 is also added for data transfer.
-* Modbus table reading function as "0x03 Read Holding Register" must be selected.
-* Select "Read Offset" from the operation blocks and the table index number is entered.
-* 10 Analog and 10 Word table operation blocks have been added to receive 10 data from Modbus table blocks. This method can also be used by adding two table operation block(for analog and word) and changing the offset value by connecting the register to the "inB" input of the table transaction blocks.
+* Slave cihaz için Modbus blokları sekmesinde bulunan Modbus RTU slave bloğu eklenir.
+* Seri haberleşme için Seri Port Blok eklendi ve haberleşme parametreleri ayarlandı. Slave ve master cihazlar aynı baud hızına, veri bitine ve parite seçeneğine sahip olmalıdır.
+* Yukarıdaki izleme ekranı RTU bağımlı cihazıdır ve aşağıda RTU Master cihazının ekran görüntüsü yer almaktadır.
+* Master cihaz için Modbus blokları sekmesinde bulunan Modbus RTU master bloğu eklendi.
+* Modbus tablo bloğu her yükselen kenarı okuduğundan, tetik simetrik puls üreteci aracılığıyla gönderilir.
+* Word ve Analog gibi iki farklı kayıt formatından beri iki modbus tablo bloğu kullanılmıştır. Çünkü kelime kayıtları 4000'den ve analog kayıtlar 6000'den başlar.
+* Modbus tablo bloklarının Mas girişine RTU master hat etiketi eklendi.
+* Simetrik puls üreteci tetik için Modbus tablo bloklarının Trg girişine bağlanır.
+* Word ve Analog değerlerinin okunabilmesi için iki ayrı Tablo Bloğu eklenmiştir. Tablo bloğunun çıkışı, Modbus tablo bloğunun Tab girişine bağlanır.
+* Kelime tablosu alanı, okunacak kelime kaydının iki katı büyüklüğünde oluşturulmalıdır.
+* Modbus tablo bloğundan okunan analog değerler, RTU Slave'den okunan kayıt sayısının iki katıdır. Modbus tablo bloğuna girilen sayının iki katı kadar analog tablo boyutu oluşturulur. Örneğin; RTU Slave'de 10 analog register vardır. RTU Master tarafından okunan modbus tablosundaki kayıt sayısı 20'dir. Veri aktarımı için ayrıca tablo boyutu 40 olan bir analog tablo bloğu eklenmiştir.
+* Modbus tablosu okuma fonksiyonu "0x03 Okuma Tutma Kaydı" seçilmelidir.
+* İşlem bloklarından "Okuma Ofseti" seçilerek tablo indeks numarası girilir.
+* Modbus tablo bloklarından 10 veri almak için 10 Analog ve 10 Word tablo işlem bloğu eklendi. Bu yöntem aynı zamanda iki tablo işlem bloğu (analog ve word için) eklenerek ve kayıt defteri tablo işlem bloklarının "inB" girişine bağlanarak ofset değeri değiştirilerek de kullanılabilir.
 
-Master Device:
+Ana Cihaz:
 
 <center>
 
@@ -1260,7 +1261,7 @@ Master Device:
 
 </center>
 
-Slave Device:
+Köle Aygıtı:
 
 <center>
 
@@ -1268,13 +1269,13 @@ Slave Device:
 
 </center>
 
-## Digital Control Systems
+## Dijital Kontrol Sistemleri
 
-### Ventilation System with PID Control
+### PID Kontrollü Havalandırma Sistemi
 
 [Download Project Files](http://www.mikrodev.com/downloads/example_projects/en/pid_controller_ventilation_system.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * DIGITAL INPUT
 * ANALOG INPUT
@@ -1283,30 +1284,30 @@ Slave Device:
 * ANALOG DUAL MULTIPLEXER
 * Adding a Line Label
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* In the system read with the temperature value RTD0 temperature input, it is desired to control the temperature by the fan connected to the analog output.
-* PT100 sensor is connected to RTD0 input. Temperature measurement is made between -50 and 100 degrees centigrade.
-* As the ambient temperature increases, the speed of the fan connected to analog output 0 will also increase.
-* Ortamın sıcaklığı arttıkça analog çıkış 0'a bağlı olan fan motor hızı da artacaktır. The analog output produces current between 4 and 20 mA. As the motor speed increases, hot air will flow out. This will prevent the heating of the environment.
+* RTD0 sıcaklık girişi sıcaklık değeri ile okunan sistemde analog çıkışa bağlı fan ile sıcaklığın kontrol edilmesi istenir.
+* PT100 sensörü RTD0 girişine bağlanır. Sıcaklık ölçümü -50 ile 100 santigrat derece arasında yapılır.
+* Ortam sıcaklığı arttıkça analog çıkış 0'a bağlanan fanın hızı da artacaktır.
+* Ortamın çıkış çıkışı 0'a bağlı olan fan motoru hızı da art. Analog çıkış, 4 ile 20 mA arasında akım üretir. Motor hızı arttıkça, sıcak hava dışarı akacaktır. Bu, ortamın ısınmasını önleyecektir.
 
-* PID parameters will be calculated with autotunning.
-* In case of emergency, digital input signal information is received. The analog output value will be reset(4 mA) when a high level signal is input to the digital input 0.
+* PID parametreleri autotunning ile hesaplanacaktır.
+* Acil durumda dijital giriş sinyali bilgisi alınır. Dijital giriş 0'a yüksek seviyeli bir sinyal girildiğinde analog çıkış değeri sıfırlanacaktır (4 mA).
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
-* It is predicted that the temperature of the system will be 60 milliseconds.
-* The system is run in 'autotunning' mode to set the PID parameters with Autotunning. PID parameters calculated by opening the port from the Mikroterminal console are expected to be displayed. Calculation of PID parameters is provided for 30 minutes by testing the system for possible conditions. The calculation time varies according to the system conditions.
-* Once the PID parameters have been calculated, double clicking on the PID block switches the mode option to 'automatic' mode. In automatic mode, the system will continue to operate according to the previously calculated PID parameters.
-* An analog multiplexer is used to reset the analog output in emergency situations. If the emergency button is not pressed (DI0), the analog value from the I1 channel of the multiplexer will be transferred to the analog output. When DI0 button is pressed, 4 mA value coming from I2 channel of the multiplexer will be transferred to analog output.
+*Sistemin sıcaklığının 60 milisaniye olacağı tahmin edilmektedir.
+* PID parametrelerinin Autotunning ile ayarlanması için sistem 'autotunning' modunda çalıştırılır. Mikroterminal konsolundan port açılarak hesaplanan PID parametrelerinin görüntülenmesi beklenir. Sistem olası koşullar için test edilerek 30 dakika boyunca PID parametrelerinin hesaplanması sağlanır. Hesaplama süresi sistem koşullarına göre değişir.
+* PID parametreleri hesaplandıktan sonra, PID bloğuna çift tıklandığında mod seçeneği 'otomatik' moda geçer. Otomatik modda sistem daha önce hesaplanan PID parametrelerine göre çalışmaya devam edecektir.
+* Acil durumlarda analog çıkışı sıfırlamak için analog çoklayıcı kullanılır. Acil durum düğmesine basılmazsa (DI0) çoklayıcının I1 kanalından gelen analog değer analog çıkışa aktarılacaktır. DI0 butonuna basıldığında multiplexer'ın I2 kanalından gelen 4 mA değeri analog çıkışa aktarılacaktır.
 
-## Macro Examples
+## Makro Örnekleri
 
-### Define Logical AND Operation on Macro
+### Makroda Mantıksal VE İşlem Tanımlayın
 
 [Download Project Files](https://mikrodev.com/downloads/example_projects/en/and_operation_on_macro.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * HIGH
 * SYMMETRIC PULSE GENARATOR
@@ -1314,12 +1315,12 @@ Slave Device:
 * BINARY REGISTER
 * MACRO
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* Eight binary register values are controlled by the macro with the logical "And" operation.
-* Macro block will only work when trig is active.
+* Sekiz ikili kayıt değeri, mantıksal "Ve" işlemiyle makro tarafından kontrol edilir.
+* Makro blok sadece tetik aktifken çalışacaktır.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
 <center>
 
@@ -1327,21 +1328,21 @@ Slave Device:
 
 </center>
 
-Macro Commands:
+Makro Komutları:
 
 ```
-[v0=$0&$1] // Evaluate the registers $0 and $1 in the "and(&)" operation and assign the result to variable v0,
-[v1=v0&$2] // Evaluate the registers v0 and $2 in the "and" operation and assign the result to variable v1,
-[v2=v1&$3] // Evaluate the registers v1 and $3 in the "and" operation and assign the result to variable v2,
-[v3=v2&$4] // Evaluate the registers v2 and $4 in the "and" operation and assign the result to variable v3,
-[v4=v3&$5] // Evaluate the registers v3 and $5 in the "and" operation and assign the result to variable v4,
-[v5=v4&$6] // Evaluate the registers v4 and $6 in the "and" operation and assign the result to variable v5,
-[v6=v5&$7] // Evaluate the registers v5 and $7 in the "and" operation and assign the result to variable v6,
-[o0=v6+0] // Transfer the value macro block in variable 6 (v6) to the output 0.
-[E] // Macro end definition operation
+[v0=$0&$1] // "and(&)" işleminde $0 ve $1 kayıtlarını değerlendirin ve sonucu v0 değişkenine atayın
+[v1=v0&$2] // "ve" işleminde v0 ve $2 kayıtlarını değerlendirin ve sonucu v1 değişkenine atayın
+[v2=v1&$3] // "ve" işleminde v1 ve $3 kayıtlarını değerlendirin ve sonucu v2 değişkenine atayın,
+[v3=v2&$4] // "ve" işleminde v2 ve $4 kayıtlarını değerlendirin ve sonucu v3 değişkenine atayın,
+[v4=v3&$5] // "ve" işleminde v3 ve $5 kayıtlarını değerlendirin ve sonucu v4 değişkenine atayın
+[v5=v4&$6] // "ve" işleminde v4 ve $6 kayıtlarını değerlendirin ve sonucu v5 değişkenine atayın,
+[v6=v5&$7] // "ve" işleminde v5 ve $7 kayıtlarını değerlendirin ve sonucu v6 değişkenine atayın,
+[o0=v6+0] // Değişken 6'daki (v6) makro bloğu değerini 0 çıkışına aktarın.
+[E] // Makro sonu tanımlama işlemi
 ```
 
-The result of the operation where the value of the register with block no 7($7) is 0 and the other registers are 1:
+7($7) blok numaralı registerin değerinin 0 ve diğer registerlerin değerinin 1 olduğu işlemin sonucu:
 
 <center>
 
@@ -1349,7 +1350,7 @@ The result of the operation where the value of the register with block no 7($7) 
 
 </center>
 
-The result all register values ​​1:
+Sonuç tüm kayıt değerleri 1:
 
 <center>
 
@@ -1357,22 +1358,22 @@ The result all register values ​​1:
 
 </center>
 
-### Poligon Valve Linearization
+### Poligon Valf Lineerizasyonu
 
 [Download Project Files](https://mikrodev.com/downloads/example_projects/en/poligon_valve_linearization.zip)
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * WORD REGISTER
 * ANALOG REGISTER
 * BINARY REGISTER
 * MACRO
 
-#### Diagram Algorithm
+#### Diyagram Algoritması
 
-* The input value is parametrically calibrated at ten different points and transferred to the output.
+* Giriş değeri on farklı noktada parametrik olarak kalibre edilerek çıkışa aktarılır.
 
-#### Diagram Solution
+#### Diyagram Çözümü
 
 <center>
 
@@ -1380,7 +1381,7 @@ The result all register values ​​1:
 
 </center>
 
-Some sections are explained from within the macro. The entire macro is in the project.
+Bazı bölümler makro içinden açıklanmıştır. Tüm makro projede.
 
 ```
 [v0=$3000b0] // Controls whether the value in the register with block number 3000 is equal to or greater than 0. If the condition is satisfied, the v0 variable becomes 1.
@@ -1424,11 +1425,11 @@ Some sections are explained from within the macro. The entire macro is in the pr
 
 </center>
 
-## Getting Device Serial Number
+## Cihaz Seri Numarasını Alma
 
-You can get the serial number of the device using a "Long Math" block.
+Bir "Uzun Matematik" bloğu kullanarak cihazın seri numarasını alabilirsiniz.
 
-The serial number is kept in a special register with address "30000". To be able to access that register you need to use "Get" math operator in "Long Math" block. The following image shows the necessary configuration.
+Seri numarası, "30000" adresli özel bir kayıt defterinde tutulur. Bu kayda erişmek için "Uzun Matematik" bloğunda "Get" matematik operatörünü kullanmanız gerekir. Aşağıdaki resim gerekli yapılandırmayı göstermektedir.
 
 <center>
 
@@ -1436,15 +1437,15 @@ The serial number is kept in a special register with address "30000". To be able
 
 </center>
 
-## Updating Phone Numbers on Mikrodev Device through SCADA
+## Mikrodev Cihazındaki Telefon Numaralarının SCADA Üzerinden Güncellenmesi
 
-By using Mikrodev devices, you can send and receive SMS messages(with non-pp* firmwares). The content of the messages and phone numbers are stored in string registers of PLC device. And these strings are configured in PLC project on "string tables".
+Mikrodev cihazlarını kullanarak (pp* olmayan yazılımlar ile) SMS mesajları gönderip alabilirsiniz. Mesajların içeriği ve telefon numaraları, PLC cihazının string kayıtlarında saklanır. Ve bu diziler PLC projesinde "string tabloları" üzerinde konfigüre edilir.
 
-Sometimes you may want to view and update the phone number for SMS messages through your SCADA system. The following example illustrates how you can achieve this.
+Bazen SCADA sisteminiz üzerinden SMS mesajları için telefon numarasını görüntülemek ve güncellemek isteyebilirsiniz. Aşağıdaki örnek, bunu nasıl başarabileceğinizi göstermektedir.
 
-#### Storing the Phone Number
+#### Telefon Numarasını Kaydetme
 
-Since industrial protocols like Modbus only supports numeric data types, you need to store a numeric version of your phone number. And since a single "Long register" is not enough for storing a phone number, this can be done by using "2 Long Registers". You can divide the phone number into 2 parts and write and read these numbers through these registers. But of course; you will also need to convert these "2 Long Registers" containing the phone number parts into a single "String Register". And copy that register into the "phone number input" of SMS block.
+Modbus gibi endüstriyel protokoller yalnızca sayısal veri türlerini desteklediğinden, telefon numaranızın sayısal bir sürümünü kaydetmeniz gerekir. Ve bir telefon numarasını saklamak için tek bir "Uzun Kayıt" yeterli olmadığından, bu işlem "2 Uzun Kayıt" kullanılarak yapılabilir. Telefon numarasını 2 parçaya bölüp bu registerler üzerinden bu numaraları yazıp okuyabilirsiniz. Ama tabii; ayrıca telefon numarası kısımlarını içeren bu "2 Uzun Kayıt" ı tek bir "String Kaydı"na dönüştürmeniz gerekecektir. Ve bu kaydı SMS bloğunun "telefon numarası girişine" kopyalayın.
 
 <center>
 
@@ -1452,7 +1453,7 @@ Since industrial protocols like Modbus only supports numeric data types, you nee
 
 </center>
 
-In the "StringManipulation Block" you need to select "ToString" function and write it into a string register, i.e "index 2".
+"StringManip Block"ta "ToString" oluşturma ve bunu bir string register'a, yani "index 2"ye yazmanız gerekir.
 
 <center>
 
@@ -1460,9 +1461,9 @@ In the "StringManipulation Block" you need to select "ToString" function and wri
 
 </center>
 
-#### Formatting the Phone Number
+#### Telefon Numarasını Biçimlendirme
 
-In our example; we are using 10th and 11th String indexes as the format input of the phone number parts:
+Örneğimizde; telefon numarası bölümlerinin biçim girişi olarak 10. ve 11. String dizinlerini kullanıyoruz:
 
 <center>
 
@@ -1470,23 +1471,23 @@ In our example; we are using 10th and 11th String indexes as the format input of
 
 </center>
 
-You should take care of these formats and actual phone number parts. They should be in accordance with each other. That means;
+Bu formatlara ve gerçek telefon numarası bölümlerine dikkat etmelisiniz. Birbirlerine uygun olmalıdır. Bunun anlamı;
 
-If your phone number is like: +905556008899, your configuration will be something like that:
+Telefon numaranız +905556008899 ise, yapılandırmanız şöyle olacaktır:
 
-Content of 10th string index: "+90%04s"
-
-```
-Here"%04s" means prepend leading zeros up to 4 digits to your number.
-```
-
-Content of 11th string index: "%06s"
+10. dizi dizininin içeriği: "+90%04s"
 
 ```
-Here"%06s" means prepend leading zeros up to 6 digits to your number.
+Burada "%04s", numaranızın başına 4 haneye kadar olan sıfırları eklemek anlamına gelir.
 ```
 
-So if your first long register contains "5556" and second long register contains "8899" these numbers will merged into "+905556008899" by using these formatting rules.
+11. dize dizininin içeriği: "%06s"
+
+```
+Burada "%06s", numaranızın başına 6 haneye kadar olan sıfırları eklemek anlamına gelir.
+```
+
+Dolayısıyla, ilk uzun kaydınız "5556" ve ikinci uzun kaydı "8899" içeriyorsa, bu biçimlendirme kuralları kullanılarak bu sayılar "+905556008899" ile birleştirilir.
 
 <center>
 
@@ -1494,7 +1495,7 @@ So if your first long register contains "5556" and second long register contains
 
 </center>
 
-In the "StringManipulation" block below, you should select "Append" operation and copy the result into a string register i.e "index 1"
+Aşağıdaki "StringManipulation" bloğunda, "Append" işlemini seçmeli ve sonucu bir string register'a yani "index 1"e kopyalamalısınız.
 
 <center>
 
@@ -1502,9 +1503,9 @@ In the "StringManipulation" block below, you should select "Append" operation an
 
 </center>
 
-#### Running the Logic
+#### Mantığı Çalıştırma
 
-After configuring your "phone number string" mechanism, you just need to connect that string into the SMS block and write "1" into the "trigger" register.
+"Telefon numarası dizisi" mekanizmanızı yapılandırdıktan sonra, bu diziyi SMS bloğuna bağlamanız ve "tetikleyici" kaydına "1" yazmanız yeterlidir.
 
 <center>
 
@@ -1512,23 +1513,23 @@ After configuring your "phone number string" mechanism, you just need to connect
 
 </center>
 
-#### View and Update on SCADA
+#### SCADA'da Görüntüleme ve Güncelleme
 
-On the SCADA side; you can display "2 Long Registers" in two different components and an apply button for triggering the "trigger" register int the PLC project. The only drawback here is that the user should use the same number of characters as indicated in the format strings in PLC project.
+SCADA tarafında; PLC projesinde iki farklı bileşende "2 Uzun Kayıt" ve "tetikleyici" kaydı tetiklemek için bir uygula düğmesi görüntüleyebilirsiniz. Buradaki tek dezavantaj, kullanıcının PLC projesindeki format dizilerinde belirtilen sayıda karakter kullanması gerektiğidir.
 
-Download the sample PLC project from [here](https://www.mikrodev.com/files/phonestring.zip) 
+Örnek PLC projesini şuradan indirin: [here](https://www.mikrodev.com/files/phonestring.zip) 
 
-* non-pp firmware: There are 2 types of firmware , default one and the one with point to point networking stack for 3G connection. With point to point firmware you will have higher download/upload speed but no sms or call functionality.
+* pp olmayan bellenim: 2 tür bellenim vardır, varsayılan ve 3G bağlantısı için noktadan noktaya ağ yığınına sahip olan. Noktadan noktaya bellenim ile daha yüksek indirme/yükleme hızına sahip olursunuz, ancak sms veya arama işlevi olmaz.
 
-## MQTT Communications
+## MQTT İletişim
 
-### Example: 1
+### Örnek 1
 
-#### MQTT Publish/Subscribe Configuration
+#### MQTT Yayınlama/Abone Olma Yapılandırması
 
 [Download Project Files](https://mikrodev.com/downloads/example_projects/en/mqtt_test2.rar) 
 
-#### What You Need to Know Before Design
+#### Tasarımdan Önce Bilmeniz Gerekenler
 
 * TCP SOCKET
 
@@ -1542,7 +1543,7 @@ Download the sample PLC project from [here](https://www.mikrodev.com/files/phone
 
 * HIGH
 
-#### Parameter Settings For MQTT
+#### MQTT İçin Parametre Ayarları
 
 <center>
 
@@ -1550,18 +1551,18 @@ Download the sample PLC project from [here](https://www.mikrodev.com/files/phone
 
 </center>
 
-* Client mode must be defined in the TCP socket block for MQTT communication.
-* The server ip and port information are entered into the TCP socket block. The media type is selected within the block.
-* The Ena input of the TCP socket block must always be active for the duration of the communication.
-* After the TCP Socket output is connected to the I1 input of the MQTT Config, verification information such as Client ID, username and password is entered in the MQTT Config Block.
-* If Clean Session selection is activated, information is shared when there is communication between publish and brooker. If not selected, the information recorded in the communication breaks will not be sent.
-* If there is no communication between the publisher and the broker, the attempt is made to re-establish the MQTT connection in the Keep Alive after the time defined in seconds.
-* Timely triggering of I2 input of MQTT Config block is required when periodic data transmission is desired. If there is no trigger for I2 input, the information is sent to the broker according to the defined event conditions.
-* According to the information from the o0 output of MQTT Config block, it means: 0: TCP_DISCONNECTED, 1: TCP_CONNECTING, 2: MQTT_CONNECTING, 3: MQTT_CONNECTED
-* According to the information from the o1 output of MQTT Config block, it means: 0: E_MQTT_SEND_CONNPACK,1: E_MQTT_STATE_IDLE, 2: E_MQTT_STATE_SUBSCRIBING, 3: E_MQTT_STATE_PUBLISHING
-* The publish tmo information is read from o2 output of MQTT Config block.
+* MQTT iletişimi için TCP soket bloğunda istemci modu tanımlanmalıdır.
+* Sunucu ip ve port bilgileri TCP soket bloğuna girilir. Medya türü blok içinde seçilir.
+* TCP soket bloğunun Ena girişi, iletişim süresince her zaman aktif olmalıdır.
+* TCP Soket çıkışı MQTT Config'in I1 girişine bağlandıktan sonra MQTT Config Block'a Client ID, kullanıcı adı ve şifre gibi doğrulama bilgileri girilir.
+* Temiz Oturum seçimi aktif ise, yayınla ile brooker arasında iletişim olduğunda bilgi paylaşılır. Seçilmezse, iletişim kesintilerinde kaydedilen bilgiler gönderilmez.
+* Yayıncı ile aracı arasında iletişim yoksa, Keep Alive'da saniye cinsinden tanımlanan süre sonunda MQTT bağlantısı yeniden kurulmaya çalışılır.
+* Periyodik veri iletimi istendiğinde MQTT Config bloğunun I2 girişinin zamanında tetiklenmesi gerekir. I2 girişi için tetikleyici yoksa bilgi, tanımlanan olay koşullarına göre aracıya gönderilir.
+* MQTT Config bloğunun o0 çıkışından alınan bilgiye göre şu anlama gelir: 0: TCP_DISCONNECTED, 1: TCP_CONNECTING, 2: MQTT_CONNECTING, 3: MQTT_CONNECTED
+* MQTT Config bloğunun o1 çıkışından alınan bilgiye göre şu anlama gelir: 0: E_MQTT_SEND_CONNPACK,1: E_MQTT_STATE_IDLE, 2: E_MQTT_STATE_SUBSCRIBING, 3: E_MQTT_STATE_PUBLISHING
+* Yayınlama tmo bilgisi MQTT Config bloğunun o2 çıkışından okunur.
 
-#### Event Definitions in MQTT Table
+#### MQTT Tablosunda Olay Tanımları
 
 <center>
 
@@ -1569,44 +1570,44 @@ Download the sample PLC project from [here](https://www.mikrodev.com/files/phone
 
 </center>
 
-* In the Topic to Publish section, you can turn on and off the send options with Onchange send enabled block and periodic send enabled block, the block must be attached here. If the block value is 1, the send option is active, if it is 0, the send option is disabled. Qblock line label and Trgblock line label have been added in the publish to block for topic section. A qaulity information that can be determined by the user is sent together with the data to be sent with Qblock, can be left blank. With the trg block, it is possible to send a different trigger, regardless of sending a periodic, and leave it blank. 
-* To create event definitions, click 'MQTT Table' option in 'Projects' in Mikrodiagram or Telediagram Program.
-* In the Topic to Publish section, the topic title to be published is entered. Payload type is selected. The query status of the package to be published in the QOS section is determined. If QOS 0 is selected, the status of the package to be publisher is not queried. If QOS1 is selected, it is informed that broadcast package is transmitted. If QOS2 is selected, the broker will receive feedback on the delivery of the published information. If retain is selected and the communication between publish and broker is lost, the latest information is kept in memory. When communication is established again, the last information is published. If clean session is selected in MQTT Config block, the information will not be published again even if retain is selected.
-* In the Publishtopic section, the blocks to be published are selected. By selecting the line tag, it is determined in which case the data will be sent. If Send on trigger is selected, the data will be published according to the trigger for I2 input of The MQTT Config block.
-* In the Topics to Subscribe section, a topic title is created for the tags to be subscribed. The verification status of the subscribed information is selected (QoS0, Qos1, Qos2).
-* In the Subscribe Topic section, the information to be subscribed is selected.
+* Yayınlanacak Konu bölümünde Onchange send etkin blok ve periyodik gönderme etkin blok ile gönderme seçeneklerini açıp kapatabilirsiniz, blok buraya eklenmelidir. Blok değeri 1 ise gönderme seçeneği aktif, 0 ise gönderme seçeneği devre dışıdır. Konu için engellemek için yayınla bölümüne Qblock satır etiketi ve Trgblock satır etiketi eklendi. Qblock ile gönderilecek verilerle birlikte kullanıcı tarafından belirlenebilecek bir kalite bilgisi gönderilir, boş bırakılabilir. trg bloğu ile periyodik göndermeden bağımsız olarak farklı bir tetik gönderip boş bırakmak mümkündür.
+* Olay tanımları oluşturmak için Mikrodiagram veya Telediagram Programında 'Projeler'de 'MQTT Tablosu' seçeneğine tıklayın.
+*Yayınlanacak Konu bölümünde yayınlanacak konu başlığı girilir. Yük tipi seçilir. QOS bölümünde yayınlanacak paketin sorgu durumu belirlenir. QOS 0 seçilirse, yayımlanacak paketin durumu sorgulanmaz. QOS1 seçilirse yayın paketinin iletildiği bilgisi verilir. QOS2 seçilirse, aracı, yayınlanan bilgilerin teslimi hakkında geri bildirim alacaktır. Sakla seçilirse ve yayınlama ile aracı arasındaki iletişim kaybolursa, en son bilgiler bellekte tutulur. İletişim tekrar kurulduğunda son bilgi yayınlanır. MQTT Config bloğunda temiz oturum seçilirse, sakla seçilse bile bilgiler tekrar yayınlanmayacaktır.
+* Publishtopic bölümünde yayınlanacak olan bloklar seçilir. Satır etiketi seçilerek verilerin hangi durumda gönderileceği belirlenir. Tetikleyicide gönder seçilirse, veriler MQTT Yapılandırma bloğunun I2 girişi için tetikleyiciye göre yayınlanacaktır.
+* Abone Olacak Konular bölümünde, abone olunacak etiketler için konu başlığı oluşturulur. Abone olunan bilgilerin doğrulama durumu seçilir (QoS0, Qos1, Qos2).
+* Abone Ol Konusu bölümünde abone olunacak bilgiler seçilir.
 
-### Example: 2
+### Örnek: 2
 
 [Download Project Files](http://www.mikrodev.com/downloads/example_projects/en/mqttTest.zip) 
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/Wss6YhNHebs" frameBorder="1" allowFullScreen>></iframe></center>
 
-Mikrodev device sends the MQTT data in the following format:
+Mikrodev cihazı MQTT verilerini aşağıdaki formatta gönderir:
 
 ```
 {"BLOCKNUMBER1":VALUE1} or {"LINELABEL1":VALUE1}
 ```
 
-for multiple values :
+çoklu değerler için:
 
 ```
 {"BLOCKNUMBER1":VALUE1 , "BLOCKNUMBER2":VALUE2} or {"LINELABEL1":VALUE1 , "LINELABEL2":VALUE2}
 ```
 
-As an example, if you have selected blocks with block numbers 3001 and 6001 under a topic the device will send the following strings:
+Örnek olarak, bir konu altında 3001 ve 6001 blok numaralı blokları seçtiyseniz, cihaz aşağıdaki dizileri gönderecektir:
 
 ```
 {"3001":1234, "6001":123.6 }
 ```
 
-You can also use "Line Labels" instead of "Block Numbers" in the JSON format. "Block Number" or "Line Label" display format selection is made within the block properties.
+JSON formatında "Blok Numaraları" yerine "Satır Etiketleri" de kullanabilirsiniz. Blok özellikleri içerisinden "Blok Numarası" veya "Satır Etiketi" ekran formatı seçimi yapılır.
 
-## Using LCD on MP211 Series
+## MP211 Serisinde LCD'yi Kullanma
 
-#### Setting Welcome Text
+#### Karşılama Metnini Ayarlama
 
-The Mikroterminal application is used to change the text that appears on the LCD screen when MP211 is energized first time. After starting Mikroteminal application, you can change the upper line by entering the command 'AT + MENULINE1 =' and lower line by entering the command 'AT + MENULINE2 ='. The text will change when you send the command to the device after typing any word at the end of these commands.
+Mikroterminal uygulaması, MP211'e ilk enerji verildiğinde LCD ekranda görünen metni değiştirmek için kullanılır. Mikroteminal uygulamasını başlattıktan sonra 'AT + MENULINE1 =' komutunu girerek üst satırı, 'AT + MENULINE2 =' komutunu girerek alt satırı değiştirebilirsiniz. Bu komutların sonuna herhangi bir kelime yazdıktan sonra cihaza komut gönderdiğinizde metin değişecektir.
 
 <center>
 
@@ -1626,9 +1627,9 @@ AT+MENULINE2=AUTOMATION
 
 </center>
 
-#### Start/Stop Control
+#### Başlat/Durdur Kontrolü
 
-To start or stop PLC process select "PLC CONTROL" on the LCD screen using the arrow buttons on the keypad. And choose "START" or "STOP". The PLC will behave accordingly.
+PLC işlemini başlatmak veya durdurmak için tuş takımındaki ok tuşlarını kullanarak LCD ekranda "PLC KONTROL" seçeneğini seçin. Ve "BAŞLAT" veya "DURDUR" öğesini seçin. PLC buna göre davranacaktır.
 
 <center>
 
@@ -1642,9 +1643,9 @@ To start or stop PLC process select "PLC CONTROL" on the LCD screen using the ar
 
 </center>
 
-#### Monitor I/O Values
+#### G/Ç Değerlerini İzleme
 
-You can monitor the real-time values of Inputs and Outputs by selecting "IO MONITOR" on the LCD screen using the arrow buttons on the keypad.
+Tuş takımı üzerindeki ok tuşlarını kullanarak LCD ekranda "IO MONITOR" seçeneğini seçerek Giriş ve Çıkışların gerçek zamanlı değerlerini izleyebilirsiniz.
 
 <center>
 
@@ -1652,9 +1653,9 @@ You can monitor the real-time values of Inputs and Outputs by selecting "IO MONI
 
 </center>
 
-#### Selecting Blocks for Online Monitoring
+#### Çevrimiçi İzleme için Blokları Seçme
 
-You need to select the 'LCD/Web View' option in Mikrodiagram for the blocks which you want to view/control on LCD screen. If you only need to monitor the value select "View Only". If you also want to be able to modify the block value via LCD and keypad select "View and Set".
+LCD ekranda görüntülemek/kontrol etmek istediğiniz bloklar için Mikrodiagram'da 'LCD/Web Görünümü' seçeneğini seçmeniz gerekmektedir. Yalnızca değeri izlemeniz gerekiyorsa, "Salt Görüntüle" seçeneğini seçin. Ayrıca blok değerini LCD ve tuş takımı üzerinden değiştirebilmek istiyorsanız "Görüntüle ve Ayarla"yı seçin.
 
 <center>
 
@@ -1662,7 +1663,7 @@ You need to select the 'LCD/Web View' option in Mikrodiagram for the blocks whic
 
 </center>
 
-And you also need to define a "Line Label" for these blocks. "Line label" string will appear on the LCD with its real-time value.
+Ayrıca bu bloklar için bir "Satır Etiketi" tanımlamanız gerekir. "Satır etiketi" dizisi, gerçek zamanlı değeriyle LCD'de görünecektir.
 
 <center>
 
@@ -1670,9 +1671,9 @@ And you also need to define a "Line Label" for these blocks. "Line label" string
 
 </center>
 
-#### Modifying Register Values
+#### Kayıt Değerlerini Değiştirme
 
-To set a register value; select "BLOCK MONITOR" on the LCD screen using the arrow buttons on the keypad.
+Bir kayıt değeri ayarlamak için; tuş takımındaki ok tuşlarını kullanarak LCD ekranda "BLOCK MONITOR" öğesini seçin.
 
 <center>
 
@@ -1680,7 +1681,7 @@ To set a register value; select "BLOCK MONITOR" on the LCD screen using the arro
 
 </center>
 
-And select the block which you want to set value.
+Ve değerini ayarlamak istediğiniz bloğu seçin.
 
 <center>
 
@@ -1688,7 +1689,7 @@ And select the block which you want to set value.
 
 </center>
 
-After entering the password, you can enter a value for the block. If you haven't set a login password for the device yet, just enter "0" value as password.
+Şifreyi girdikten sonra blok için bir değer girebilirsiniz. Henüz cihaza giriş şifresi belirlemediyseniz şifre olarak "0" değerini girmeniz yeterlidir.
 
 <center>
 
@@ -1708,9 +1709,9 @@ After entering the password, you can enter a value for the block. If you haven't
 
 </center>
 
-#### Example
+#### Örnek vermek
 
-In the following example, the output of the binary register is connected to the input of the digital output(DO0). Digital output(DO0) is activated by writing a (high) binary register value on the LCD screen.
+Aşağıdaki örnekte, ikili kaydın çıkışı, dijital çıkışın(DO0) girişine bağlanmıştır. Dijital çıkış(DO0), LCD ekrana bir (yüksek) ikili kayıt değeri yazılarak etkinleştirilir.
 
 <center>
 
@@ -1718,9 +1719,9 @@ In the following example, the output of the binary register is connected to the 
 
 </center>
 
-## DNS Block
+## DNS Bloğu
 
-#### DNS Block Usage
+#### DNS Blok Kullanımı
 
 <center>
 
@@ -1728,7 +1729,7 @@ In the following example, the output of the binary register is connected to the 
 
 </center>
 
-#### Block Custom Settings
+#### Özel Ayarları Engelle
 
 <center>
 
@@ -1737,20 +1738,20 @@ In the following example, the output of the binary register is connected to the 
 </center>
 
 ```
-Blok Name: The name of the block.
+Blok Name: Blok adı.
 
-Primary DNS Server: The Primary DNS server is entered in this section.
+Primary DNS Server: Birincil DNS sunucusu bu bölüme girilir.
 
-Secondary DNS Server: Secondary DNS Server is entered to this section.
+Secondary DNS Server: İkincil DNS Sunucusu bu bölüme girilir.
 
-URL : The URL to use is entered in the string table. The ID of the URL entered in the string table is selected here.
+URL : Kullanılacak URL, dize tablosuna girilir. Dize tablosuna girilen URL'nin kimliği burada seçilir.
 
-Default IP : Default IP is entered in this section. If the DNS block cannot convert the URL to the IP address, Default IP is used.
+Default IP : Varsayılan IP bu bölümde girilir. DNS bloğu, URL'yi IP adresine dönüştüremezse, Varsayılan IP kullanılır.
 
-DNS Timeout : The DNS timeout value is entered in this section
+DNS Timeout : DNS timeout değeri bu bölüme girilir.
 ```
 
-#### String Table Entering Value
+#### Dize Tablosu Girilen Değer
 
 <center>
 
@@ -1758,11 +1759,11 @@ DNS Timeout : The DNS timeout value is entered in this section
 
 </center>
 
-Click the Projects tab on the left of the Mikrodiagram software. String Table is selected from the top menu.
+Mikrodiagram yazılımının solundaki Projeler sekmesine tıklayın. Üst menüden String Table seçilir.
 
-You can enter a URL under the String Text heading.
+Dize Metni başlığının altına bir URL girebilirsiniz.
 
-#### Use with TCP Block
+#### TCP Bloğu ile kullanın
 
 <center>
 
@@ -1770,7 +1771,7 @@ You can enter a URL under the String Text heading.
 
 </center>
 
-The dns block output is connected to the ip pin of the tcp socket block. The DNS block will convert the URL to IP, Fou. pin is active. The tcp block uses the ip address from the DNS block.
+dns blok çıkışı tcp soket bloğunun ip pinine bağlanır. DNS bloğu, URL'yi IP'ye, Fou'ya dönüştürecektir. pin aktif. tcp bloğu, DNS bloğundaki ip adresini kullanır.
 
 <center>
 
@@ -1778,52 +1779,4 @@ The dns block output is connected to the ip pin of the tcp socket block. The DNS
 
 </center>
 
-The TCP socket block can be used with the Mqtt block.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+TCP soket bloğu, Mqtt bloğu ile kullanılabilir.

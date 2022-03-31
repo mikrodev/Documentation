@@ -2,23 +2,23 @@
 title: Telediagram Editor
 ---
 
-## Using IEC 104
+## IEC 104'ü kullanma
 
-IEC 60870-5-104  is a protocol for power system monitoring and controlling. Mostly used to communicate between substations and control centers over Ethernet (Fiber optics, 2/3/4G, ...). IEC 60870-5-104 protocol is an extension of IEC 60870-5-101 protocol with the changes in transport, network, link and physical layer services to suit the complete network access.
+IEC 60870-5-104, güç sistemi izleme ve kontrolü için bir protokoldür. Çoğunlukla Ethernet üzerinden trafo merkezleri ve kontrol merkezleri arasında iletişim kurmak için kullanılır (Fiber optik, 2/3/4G, ...). IEC 60870-5-104 protokolü, tam ağ erişimine uyacak şekilde taşıma, ağ, bağlantı ve fiziksel katman hizmetlerindeki değişikliklerle birlikte IEC 60870-5-101 protokolünün bir uzantısıdır.
 
-Here you will find basic information about protocol parameters:
+Burada protokol parametreleri hakkında temel bilgileri bulacaksınız:
 
-* APCI - Application Protocol Control Information
-* APDU - Application Protocol Data Unit
-* ASDU - Application Service Data Unit
+* APCI - Uygulama Protokolü Kontrol Bilgileri
+* APDU - Uygulama Protokolü Veri Birimi
+* ASDU - Uygulama Hizmet Veri Birimi
 
-### Address
+### Adres
 
-* IP address - every device in Ethernet have physical address
-* ASDU address - every slave (client) device has a logical address, also one device could have more than one ASDU address
-* IOA  address - information object address
+* IP adresi - Ethernet'teki her cihazın fiziksel adresi vardır
+* ASDU adresi - her bağımlı (istemci) aygıtın mantıksal bir adresi vardır, ayrıca bir aygıtın birden fazla ASDU adresi olabilir
+* IOA adresi - bilgi nesnesi adresi
 
-|	Dec	|	Type	|	Description	|	Direction	|		Direction	|	Support	|		
+| 	Aralık	 | 	Tip	 | 	Açıklama	 | 	Yön	 | 	Yön	 | 	Destek	 |	
 | ------ | ------ | ------ | ------ |
 |	1	|	M_SP_NA_1	|	Single-point information		|	Monitor	|	Yes	|
 |	2	|	M_SP_TA_1	|	Single-point information with time tag		|	Monitor	|	Yes	|
@@ -132,13 +132,13 @@ Here you will find basic information about protocol parameters:
 |	46	|	ASDU address unknown	|
 |	47	|	Information object address unknown	|
 
-### Block Information
+### Blok Bilgileri
 
-* By adding IEC104 slave block , IEC 104 will be activated on the RTU.
-* TCP or Serialport block is connected to IEC104 block ser input.
-* IEC 104 blocks must be added for each server to serve multiple servers.
-* Asd input is used if IEC104 Asdu address is set from outside but not inside block.
-* On the rising edge of the trigger, periodic transmission between IEC104 objects is activated and the selected objects are transmitted to the server periodically. Trigger input can be left blank.
+* IEC104 slave bloğu eklendiğinde, RTU üzerinde IEC 104 aktif hale gelecektir.
+* TCP veya Serialport bloğu IEC104 blok ser girişine bağlanır.
+* Her sunucunun birden fazla sunucuya hizmet vermesi için IEC 104 blokları eklenmelidir.
+* IEC104 Asdu adresi blok içinden değil de dışarıdan ayarlanmışsa Asd girişi kullanılır.
+* Tetikleyicinin yükselen ucunda, IEC104 nesneleri arasında periyodik iletim etkinleştirilir ve seçilen nesneler periyodik olarak sunucuya iletilir. Tetik girişi boş bırakılabilir.
 
 <center>
 
@@ -146,19 +146,19 @@ Here you will find basic information about protocol parameters:
 
 </center>
 
-Ser: TCP Socket Input. The TCP server socket block from which the IEC104 protocol will work is connected from this input
+Ser: TCP Soket Girişi. IEC104 protokolünün çalışacağı TCP server soket bloğu bu girişten bağlanır.
 
-Trg: Trigger Input Trigger input for periodic sending. It works as a rising edge.
+Trg: Trigger Girişi Periyodik gönderim için tetik girişi. Yükselen bir kenar olarak çalışır.
 
-Asd: Asdu Address Input The ASDU address is used as input.
+Asd: Asdu Adres Girişi ASDU adresi giriş olarak kullanılır.
 
-Q1: Link Status If the IEC104 connection between SCADA and RTU is installed, this output value is 1, otherwise 0.
+Q1: Link Status SCADA ve RTU arasındaki IEC104 bağlantısı kurulu ise bu çıkış değeri 1, değilse 0'dır.
 
-Q2: SCADA write status, If SCADA requests select and execute, a pulse is generated at this output.
+Q2: SCADA yazma durumu, SCADA istekleri seçip yürütürse bu çıkışta bir darbe üretilir.
 
-### Custom Settings
+### Özel ayarlar
 
-* AsduAddress: IEC104 slave station ASDU address is defined
+* AsduAddress: IEC104 slave istasyon ASDU adresi tanımlıdır
 
 <center>
 
@@ -166,23 +166,23 @@ Q2: SCADA write status, If SCADA requests select and execute, a pulse is generat
 
 </center>
 
-AsduAddress: IEC104 slave station ASDU address is defined
+AsduAddress: IEC104 slave istasyonu ASDU adresi tanımlandı
 
-T0: Timeout for the establishment of the connection with the server. (Not used Slave)
+T0: Sunucu ile bağlantı kurulması için zaman aşımı. (Kullanılmayan Köle)
 
-T1: This parameter defines the time in seconds that slave waits maximum for an acknowledge from the master.
+T1: Bu parametre, master'dan bir onay için slave'in maksimum beklediği süreyi saniye cinsinden tanımlar.
 
-T2: Timeout period for Ack (A S-format frame  will be sent at the latest after this time starting from the last received telegram from the master)
+T2: Ack için zaman aşımı süresi (Master'dan alınan son telgraftan başlayarak en geç bu süreden sonra S-formatlı bir çerçeve gönderilir)
 
-T3: Test frame sending time (A Test frame will be sent at the latest after this time starting from the last received telegram from the master)
+T3: Test çerçevesi gönderme süresi (Master'dan alınan son telgraftan başlayarak en geç bu süreden sonra bir Test çerçevesi gönderilir)
 
-K: The maximum allowable difference between the sequence number in the received packet and the number in the send status variable.
+K: Alınan paketteki sıra numarası ile gönderme durumu değişkenindeki sayı arasındaki izin verilen maksimum fark.
 
-W: ACK(acknowledge message) sending frequency(sends ACK after W packets)
+W: ACK(onay mesajı) gönderme sıklığı(W paketlerinden sonra ACK gönderir)
 
-### Sample Application
+### Örnek Uygulama
 
-* In RTU logic projects , with the addition of IEC 104 Slave Block, the IEC 104 protocol is activated in the RTU. Variables in the RTU logic project, IEC104 association is provided in the variable address table.
+* RTU mantık projelerinde IEC 104 Slave Blok eklenmesi ile RTU'da IEC 104 protokolü aktif hale getirilir. RTU mantık projesinde değişkenler, IEC104 ilişkilendirmesi değişken adres tablosunda verilmektedir.
 
 <center>
 
@@ -190,11 +190,11 @@ W: ACK(acknowledge message) sending frequency(sends ACK after W packets)
 
 </center>
 
-### Variable Mapping with Protocol
+### Protokollü Değişken Eşleme
 
-#### Variable Address Table
+#### Değişken Adres Tablosu
 
-* The relevant protocol is activated in the RTU logic project by adding the protocol block. Variables in the RTU logic Project, association between protocol.is provided in te variable address table
+* RTU mantık projesinde protokol bloğu eklenerek ilgili protokol etkinleştirilir. RTU mantık Projesindeki değişkenler, protokol arasındaki ilişki değişken adres tablosunda sağlanır.
 
 <center>
 
@@ -202,9 +202,9 @@ W: ACK(acknowledge message) sending frequency(sends ACK after W packets)
 
 </center>
 
-#### Defining Line Labels
+#### Satır Etiketlerini Tanımlama
 
-*Line label can be defined for all blocks defined on the Mikrodiagram. In the variable table, the line label must be defined in order to be able to associate with the protocol addresses.
+*Mikrodiyagram üzerinde tanımlanan tüm bloklar için satır etiketi tanımlanabilir. Değişken tablosunda, protokol adresleri ile ilişkilendirilebilmek için hat etiketi tanımlanmalıdır.
 
 <center>
 
@@ -212,7 +212,7 @@ W: ACK(acknowledge message) sending frequency(sends ACK after W packets)
 
 </center>
 
-#### Attaching a Line Label
+#### Satır Etiketi Ekleme
 
 <center>
 
@@ -220,42 +220,43 @@ W: ACK(acknowledge message) sending frequency(sends ACK after W packets)
 
 </center>
 
-Alias: A special name is given that defines this defined variable.
+Alias: Tanımlanan bu değişkeni tanımlayan özel bir isim verilir.
 
-Start Address:The address allocated for this variable on SCADA is written here. It is written as a decimal value
+Başlangıç ​​Adresi: SCADA üzerinde bu değişken için ayrılan adres buraya yazılır. Ondalık değer olarak yazılır
 
-Line Label:The block to be associated on the Mikrodiagram is selected with the line label.
+Line Label:Mikrodiyagram üzerinde ilişkilendirilecek blok, line etiketi ile seçilir.
 
-Point Count:Calculated automatically. It makes sense on tables.
+Puan Sayısı: Otomatik olarak hesaplanır. Masalarda mantıklı.
 
-Protocol Type:Modbus, Dnp3, IEC101, IEC104 are selected. Object type will change according to protocol type.
+Protokol Tipi: Modbus, Dnp3, IEC101, IEC104 seçilir. Nesne tipi, protokol tipine göre değişecektir.
 
-Object Type:IEC104 object type information selected. look the protocol type information for detailed information.
+Nesne Türü:IEC104 nesne türü bilgisi seçildi. ayrıntılı bilgi için protokol türü bilgilerine bakın.
 
-Object Class:The class information to which the variable belongs is selected.
+Object Class: Değişkenin ait olduğu sınıf bilgisi seçilir.
 
-Send On Trigger:IEC104 Slave block is the selection to send to this SCADA as a periodic send when the test is detected from the trigger input.
+Send On Trigger:IEC104 Slave bloğu, tetik girişinden test algılandığında bu SCADA'ya periyodik gönderim olarak gönderilecek seçimdir.
 
-####  Send Method:
-If the value of the defined variable is changed, the operation to be performed is selected.
+#### Gönderme Yöntemi:
 
-Level: When the quantity defined in "Change Value" is changed, the transmission is triggered.
+Tanımlanan değişkenin değeri değiştirilirse yapılacak işlem seçilir.
 
-Percentage: The transmission is triggered when there is a change in the percentage defined in "Change Value".
+Seviye: "Değeri Değiştir" bölümünde tanımlanan miktar değiştirildiğinde iletim tetiklenir.
 
-None: Value exchange does not trigger posting
+Yüzde: "Değeri Değiştir" bölümünde tanımlanan yüzde oranında bir değişiklik olduğunda iletim tetiklenir.
 
-Change Value: With the "Send method", it adjusts the percentage change in the level.
+Yok: Değer değişimi kaydı tetiklemez
 
-## Telediagram License
+Değeri Değiştir: "Gönderme yöntemi" ile seviyedeki yüzde değişimini ayarlar.
 
-### Installing the License File
+## Telgraf Lisansı
 
-To get a valid license please send your "hardware id" to sales@mikrodev.com.
+### Lisans Dosyasını Yükleme
 
-To find out your hardware id; after you download and install Telediagram application, go to the "bin" directory of the application and run "license_user.exe" .
+Geçerli bir lisans almak için lütfen "donanım kimliğinizi" sales@mikrodev.com adresine gönderin.
 
-Before running "license_user.exe" make sure that no "usb stick" or "external harddrive" is connected on your computer since that may change your hardware ID.
+Donanım kimliğinizi öğrenmek için; Telediagram uygulamasını indirip kurduktan sonra uygulamanın "bin" dizinine gidin ve "license_user.exe" dosyasını çalıştırın.
+
+"license_user.exe"yi çalıştırmadan önce, donanım kimliğinizi değiştirebileceğinden, bilgisayarınıza "usb stick" veya "harici sabit disk" bağlı olmadığından emin olun.
 
 <center>
 
@@ -263,64 +264,6 @@ Before running "license_user.exe" make sure that no "usb stick" or "external har
 
 </center>
 
-After you receive a valid "tlicense.dat" file, copy this file into the "bin" directory of Telediagram application
+Geçerli bir "license.dat" dosyası aldıktan sonra, bu dosyayı Telediagram uygulamasının "bin" dizinine kopyalayın.
 
-The licence will automatically be loaded when you restart the Editor
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Düzenleyiciyi yeniden başlattığınızda lisans otomatik olarak yüklenecektir.
