@@ -1,12 +1,12 @@
 ---
-title: DM100 Hardware Manual
+title: DM100 Donanım Kılavuzu
 ---
 
-## DM100 General Information
+## DM100 Genel bilgi
 
 [DM100 Hardware Manual](https://mikrodev.com/en/docs/RTU/hardware_manual/MIKRODEV_HM_DM100_en.pdf)
 
-### Physical Interfaces
+### Fiziksel Arayüzler
 
 <center>
 
@@ -22,10 +22,10 @@ title: DM100 Hardware Manual
 
 Notes: 
 
-* DM110 has 2 ethernet ports 
-* Available for DM100
+* DM110'da 2 ethernet portu bulunur
+* DM100 için kullanılabilir
 
-### General Device Specifications
+### Genel Cihaz Özellikleri
 
 <center>
 
@@ -33,23 +33,23 @@ Notes:
 
 </center>
 
-Notes:
+Notlar:
 
-* May differ on some models
-* Available for DM100
+* Bazı modellerde farklılık gösterebilir
+* DM100 için kullanılabilir
 
-## Installation Information
+## Kurulum Bilgileri
 
-### Rail Installation
+### Ray Kurulumu
 
-#### DIN Rail Mountage
-First, the upper part of the device is mounted on the DIN rail. Then, with the help of the
-springs behind the device, when a lightly force is applied to the lower part, the device
-locates into the DIN rail easily and the montage is completed.
+#### DIN Ray Montajı
+İlk olarak cihazın üst kısmı DIN rayına monte edilir. Daha sonra, yardımı ile
+cihazın arkasına yaylar, alt kısma hafif bir kuvvet uygulandığında cihaz
+DIN rayına kolayca yerleşir ve montaj tamamlanır.
 
-#### DIN Rail Demountage
-To demount the device, firstly it is pulled from the bottom using flexibility of the spring,
-the device is removed from the DIN Rail and the demounting is completed.
+#### DIN Ray Demontajı
+Cihazı demonte etmek için öncelikle yayın esnekliği kullanılarak alttan çekilir,
+cihaz DIN Rayından çıkarılır ve demontaj tamamlanır.
 
 <center>
 
@@ -57,10 +57,10 @@ the device is removed from the DIN Rail and the demounting is completed.
 
 </center>
 
-### Expansion Installation
+### Genişletme Kurulumu
 
-The DM100 product and its extensions are mounted by sliding over the rail in such a way
-that the connectors correponds.
+DM100 ürünü ve uzantıları bu şekilde ray üzerinden kaydırılarak monte edilir.
+konektörlerin karşılık geldiği anlamına gelir.
 
 <center>
 
@@ -68,9 +68,9 @@ that the connectors correponds.
 
 </center>
 
-## Connection Diagrams
+## Bağlantı Şemaları
 
-### Supply Connection
+### Besleme Bağlantısı
 
 <center>
 
@@ -78,7 +78,7 @@ that the connectors correponds.
 
 </center>
 
-### RS485 Serial Port
+### RS485 Seri Port
 
 <center>
 
@@ -86,7 +86,7 @@ that the connectors correponds.
 
 </center>
 
-### RS232 Serial Port
+### RS232 Seri Port
 
 <center>
 

@@ -1,5 +1,5 @@
 ---
-title: MMS100 Software Manual
+title: MMS100 Yazılım Kılavuzu
 ---
 
 ## M-BUS Ağ Geçidi Yapılandırma Yazılımı

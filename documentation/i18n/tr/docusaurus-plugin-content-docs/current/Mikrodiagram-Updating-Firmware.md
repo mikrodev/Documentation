@@ -1,12 +1,12 @@
 ---
-title: Updating Firmware
+title: Firmware güncelleme
 ---
 
-You can update the firmware of Mikrodev PLC, RTU, Remote IO and Gateway product families via USB connecition.
+Mikrodev PLC, RTU, Remote IO ve Gateway ürün ailelerinin yazılımlarını USB bağlantısı ile güncelleyebilirsiniz.
 
-* Before starting, make sure that all USB connections to device are closed.
+* Başlamadan önce, cihaza giden tüm USB bağlantılarının kapalı olduğundan emin olun.
 
-* Power OFF the device, disconnect the DC supply connection.
+* Cihazı KAPATIN, DC besleme bağlantısını kesin.
 
 <center>
 
@@ -14,9 +14,9 @@ You can update the firmware of Mikrodev PLC, RTU, Remote IO and Gateway product 
 
 </center>
 
-* Connect the USB cable between the computer and the device.
+* USB kablosunu bilgisayar ve cihaz arasına bağlayın.
 
-* Click the "..." button and select the firmware with .mx3 extension.
+* "..." düğmesine tıklayın ve .mx3 uzantılı bellenimi seçin.
 
 <center>
 
@@ -24,7 +24,7 @@ You can update the firmware of Mikrodev PLC, RTU, Remote IO and Gateway product 
 
 </center>
 
-* Power ON device , connect the DC supply.
+* Cihazı AÇIK konuma getirin, DC kaynağını bağlayın.
  
 <center>
 
@@ -32,7 +32,7 @@ You can update the firmware of Mikrodev PLC, RTU, Remote IO and Gateway product 
 
 </center>
 
-* Select the correct port, click "Open". Then click on "Auto Switch to Boot Prompt" and wait for the device to be rebooted and start in Boot mode.
+* Doğru portu seçin, "Aç"a tıklayın. Ardından "Önyükleme İstemine Otomatik Geçiş" üzerine tıklayın ve cihazın yeniden başlatılmasını ve Önyükleme modunda başlamasını bekleyin.
 
 <center>
 
@@ -40,7 +40,7 @@ You can update the firmware of Mikrodev PLC, RTU, Remote IO and Gateway product 
 
 </center>
 
-* After the device starts in boot mode, click on the "Start Loading Firmware" button
+* Cihaz önyükleme modunda başladıktan sonra "Firmware Yüklemeyi Başlat" düğmesine tıklayın
  
 <center>
 
@@ -48,7 +48,7 @@ You can update the firmware of Mikrodev PLC, RTU, Remote IO and Gateway product 
 
 </center>
 
-* Wait for the firmware uploading to finish
+* Ürün yazılımı yüklemesinin bitmesini bekleyin
 
 <center>
 
@@ -56,7 +56,7 @@ You can update the firmware of Mikrodev PLC, RTU, Remote IO and Gateway product 
 
 </center>
 
-* After the process is completed, the USB connection will be closed automatically and the device will reboot once after verifying the flash file system.
+* İşlem tamamlandıktan sonra USB bağlantısı otomatik olarak kapatılacak ve flash dosya sistemi doğrulandıktan sonra cihaz bir kez yeniden başlatılacaktır.
 
 <center>
 
@@ -64,7 +64,7 @@ You can update the firmware of Mikrodev PLC, RTU, Remote IO and Gateway product 
 
 </center>
 
-* Wait for a few minutes for the device to finalise the firmware upgrade and click "Open Port" to connect the device again. And check version information to confirm if the update operation is succesful by clicking on the "SEND" button with "AT+VERSION=?" parameter.
+* Cihazın bellenim yükseltmesini tamamlaması için birkaç dakika bekleyin ve cihazı tekrar bağlamak için "Portu Aç"a tıklayın. Ve "AT+VERSION=?" ile "GÖNDER" düğmesine tıklayarak güncelleme işleminin başarılı olup olmadığını doğrulamak için sürüm bilgilerini kontrol edin. parametre.
 
 <center>
 
@@ -72,6 +72,6 @@ You can update the firmware of Mikrodev PLC, RTU, Remote IO and Gateway product 
 
 </center>
 
-Download Serial Loader application from the link below :
+Aşağıdaki bağlantıdan Seri Yükleyici uygulamasını indirin:
 
 [MikrodevSerialLoader](https://www.mikrodev.com/downloads/drivers/MikrodevSerialLoader.zip)

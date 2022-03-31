@@ -1,5 +1,5 @@
 ---
-title: XIO110 Series Hardware Manual
+title: XIO110 Serisi Donanım Kılavuzu
 ---
 
 ## Mounting Information
@@ -594,58 +594,3 @@ overlap each other.
 ![plc-expansion-68](/img/plc-expansion-68.png)
 
 </center>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

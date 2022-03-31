@@ -1,15 +1,15 @@
 ---
-title: RTU300 Series Hardware Manual
+title: RTU300 Serisi Donanım Kılavuzu
 ---
 
-## Mounting Information 
+## Montaj Bilgileri
 
 [RTU 300 Series Hardware Manual](https://mikrodev.com/en/docs/RTU/hardware_manual/MIKRODEV_HM_RTU300_en.pdf)
 
-### DIN Rail Mountage
-First, the upper part of the device is mounted on the DIN rail. Then, with the help of the
-springs behind the device, when a lightly force is applied to the lower part, the device
-locates into the DIN rail easily and the montage is completed.
+### DIN Ray Montajı
+İlk olarak cihazın üst kısmı DIN rayına monte edilir. Daha sonra, yardımı ile
+cihazın arkasına yaylar, alt kısma hafif bir kuvvet uygulandığında cihaz
+DIN rayına kolayca yerleşir ve montaj tamamlanır.
 
 <center>
 
@@ -17,9 +17,9 @@ locates into the DIN rail easily and the montage is completed.
 
 </center>
 
-### Expansion Installation
-Assembly between RTU300 series RTU products and XIO211 series expansion modules is
-carried out by sliding the tabs over the rail so that the tabs overlap each other
+### Genişletme Kurulumu
+RTU300 serisi RTU ürünleri ile XIO211 serisi genişletme modülleri arasındaki montaj,
+tırnakların birbiri üzerine binmesi için tırnakların ray üzerinde kaydırılmasıyla gerçekleştirilir
 
 <center>
 
@@ -27,11 +27,11 @@ carried out by sliding the tabs over the rail so that the tabs overlap each othe
 
 </center>
 
-## RTU300 General Information
+## RTU300 Genel Bilgi
 
 [RTU300 Hardware Manual](https://www.mikrodev.com/en/docs/rtu/hardware_manual/MIKRODEV_HM_RTU300_en.pdf)
 
-### Physical Interfaces
+### Fiziksel Arayüzler
 
 <center>
 
@@ -45,7 +45,7 @@ carried out by sliding the tabs over the rail so that the tabs overlap each othe
 
 </center>
 
-### General Device Specifications
+### Genel Cihaz Özellikleri
 
 <center>
 
@@ -53,12 +53,12 @@ carried out by sliding the tabs over the rail so that the tabs overlap each othe
 
 </center>
 
-Note: May differ on some models
+Not: Bazı modellerde farklılık gösterebilir
 
 
-## Power Connection Diagram
+## Güç Bağlantı Şeması
 
-### Supply Connection
+### Besleme Bağlantısı
 
 <center>
 
@@ -66,7 +66,7 @@ Note: May differ on some models
 
 </center>
 
-### Digital Inputs
+### Digital Girişler
 
 <center>
 
@@ -80,7 +80,7 @@ Note: May differ on some models
 
 </center>
 
-### Digital Outputs
+### Dijital Çıkışlar
 
 <center>
 
@@ -88,7 +88,7 @@ Note: May differ on some models
 
 </center>
 
-### Relay Outputs
+### Relay Çıkışlar
 
 <center>
 
@@ -96,7 +96,7 @@ Note: May differ on some models
 
 </center>
 
-### Analog Inputs
+### Analog Girişler
 
 <center>
 
@@ -104,7 +104,7 @@ Note: May differ on some models
 
 </center>
 
-### Analog Outputs
+### Analog Çıkışlar
 
 <center>
 
@@ -112,7 +112,7 @@ Note: May differ on some models
 
 </center>
 
-### RS485 Serial Port
+### RS485 Seri Port
 
 <center>
 
@@ -120,7 +120,7 @@ Note: May differ on some models
 
 </center>
 
-### RS232 Serial Port
+### RS232 Seri Port
 
 <center>
 
@@ -128,9 +128,9 @@ Note: May differ on some models
 
 </center>
 
-## RTU302 General Information
+## RTU302 Genel Bilgi
 
-### Physical Interfaces
+### Fiziksel Arayüzler
 
 <center>
 
@@ -144,7 +144,7 @@ Note: May differ on some models
 
 </center>
 
-### General Device Specifications
+### Genel Cihaz Özellikleri
 
 <center>
 
@@ -152,11 +152,11 @@ Note: May differ on some models
 
 </center>
 
-Note: One of the RS485 ports can be used as RS422 port.
+Not: RS485 portlarından biri RS422 portu olarak kullanılabilir.
 
-## Power Connection Diagram
+## Güç Bağlantı Şeması
 
-### Supply Connection
+### Besleme Bağlantısı
 
 <center>
 
@@ -164,7 +164,7 @@ Note: One of the RS485 ports can be used as RS422 port.
 
 </center>
 
-### Digital Inputs
+### Dijital Girişler
 
 <center>
 
@@ -172,7 +172,7 @@ Note: One of the RS485 ports can be used as RS422 port.
 
 </center>
 
-### Digital Outputs
+### Dijital Çıkışlar
 
 <center>
 
@@ -180,7 +180,7 @@ Note: One of the RS485 ports can be used as RS422 port.
 
 </center>
 
-### Analog Inputs
+### Analog Girişler
 
 <center>
 
@@ -188,9 +188,9 @@ Note: One of the RS485 ports can be used as RS422 port.
 
 </center>
 
-## Serial Ports
+## Seri Portlar
 
-### RS485 Serial Port
+### RS485 Seri Port
 
 <center>
 
@@ -198,19 +198,10 @@ Note: One of the RS485 ports can be used as RS422 port.
 
 </center>
 
-### RS232 Serial Port
+### RS232 Seri Port
 
 <center>
 
 ![rtu-hardware-18](/img/rtu-hardware-18.png)
 
 </center>
-
-
-
-
-
-
-
-
-

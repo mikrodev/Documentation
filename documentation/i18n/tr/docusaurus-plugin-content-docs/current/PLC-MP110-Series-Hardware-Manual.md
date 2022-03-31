@@ -1,12 +1,12 @@
 ---
-title: MP110 Series Hardware Manual
+title: MP110 Serisi Donanım Kılavuzu
 ---
 
-## MP110 General Information
+## MP110 Genel Bilgi
 
 [MP110 Hardware Manual](https://www.mikrodev.com/en/docs/PLC/hardware_manual/MIKRODEV_HM_MP110_en.pdf)
 
-### Physical Interfaces
+### Fiziksel Arayüzler
 
 <center>
 
@@ -20,7 +20,7 @@ title: MP110 Series Hardware Manual
 
 </center>
 
-### General Device Specifications
+### Genel Cihaz Özellikleri
 
 <center>
 
@@ -28,20 +28,20 @@ title: MP110 Series Hardware Manual
 
 </center>
 
-Note: May differ on some models
+Not: Bazı modellerde farklılık gösterebilir
 
-## Installation Information
+## Kurulum Bilgileri
 
-### Rail Installation
+### Ray Kurulumu
 
-#### DIN Rail Mountage
-First, the upper part of the device is mounted on the DIN rail. Then, with the help of the
-springs behind the device, when a lightly force is applied to the lower part, the device
-locates into the DIN rail easily and the montage is completed.
+#### DIN Ray Montajı
+İlk olarak cihazın üst kısmı DIN rayına monte edilir. Daha sonra, yardımı ile
+cihazın arkasına yaylar, alt kısma hafif bir kuvvet uygulandığında cihaz
+DIN rayına kolayca yerleşir ve montaj tamamlanır.
 
-#### DIN Rail Demountage
-To demount the device, firstly it is pulled from the bottom using flexibility of the spring,
-the device is removed from the DIN Rail and the demounting is completed.
+#### DIN Ray Demontajı
+Cihazı demonte etmek için öncelikle yayın esnekliği kullanılarak alttan çekilir,
+cihaz DIN Rayından çıkarılır ve demontaj tamamlanır.
 
 <center>
 
@@ -49,10 +49,10 @@ the device is removed from the DIN Rail and the demounting is completed.
 
 </center>
 
-### Expansion Installation
+### Genişletme Kurulumu
 
-The MP110 product and its extensions are mounted by sliding over the rail in such a way
-that the connectors correponds.
+MP110 ürünü ve uzantıları bu şekilde ray üzerinden kaydırılarak monte edilir.
+konektörlerin karşılık geldiği anlamına gelir.
 
 <center>
 
@@ -60,9 +60,9 @@ that the connectors correponds.
 
 </center>
 
-## Connection Diagrams
+## Bağlantı Şemaları
 
-### Supply Connection
+### Besleme Bağlantısı
 
 <center>
 
@@ -70,7 +70,7 @@ that the connectors correponds.
 
 </center>
 
-### Digital Inputs
+### Dijital Girişler
 
 <center>
 
@@ -78,7 +78,7 @@ that the connectors correponds.
 
 </center>
 
-### Digital Outputs
+### Dijital Çıkışlar
 
 <center>
 
@@ -86,7 +86,7 @@ that the connectors correponds.
 
 </center>
 
-### Analog Inputs
+### Analog Girişler
 
 <center>
 
@@ -94,72 +94,10 @@ that the connectors correponds.
 
 </center>
 
-### RS485 Serial Port
+### RS485 Seri Bağlantı Noktası
 
 <center>
 
 ![plc-hardware-10](/img/plc-hardware-10.png)
 
 </center>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

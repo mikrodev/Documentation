@@ -1,12 +1,12 @@
 ---
-title: Format File System
+title: Dosya Sistemini Biçimlendirme
 ---
 
-You can  format the filesystem of Mikrodev PLC, RTU, Remote IO and Gateway product families via USB connecition.
+Mikrodev PLC, RTU, Remote IO ve Gateway ürün ailelerinin dosya sistemini USB bağlantısı ile formatlayabilirsiniz.
 
-* Before starting, make sure that all USB connections to device are closed.
+* Başlamadan önce, cihaza giden tüm USB bağlantılarının kapalı olduğundan emin olun.
 
-* Power OFF the device, disconnect the DC supply connection.
+* Cihazı KAPATIN, DC besleme bağlantısını kesin.
 
 <center>
 
@@ -14,9 +14,9 @@ You can  format the filesystem of Mikrodev PLC, RTU, Remote IO and Gateway produ
 
 </center>
 
-* Connect the USB cable between the computer and the device.
+* USB kablosunu bilgisayar ve cihaz arasına bağlayın.
 
-* Power ON device , connect the DC supply.
+* Cihazı AÇIK konuma getirin, DC kaynağını bağlayın.
  
 <center>
 
@@ -24,7 +24,7 @@ You can  format the filesystem of Mikrodev PLC, RTU, Remote IO and Gateway produ
 
 </center>
 
-* Select the correct port, click "Open". Then click on "Auto Switch to Boot Prompt" and wait for the device to be rebooted and start in Boot mode.
+* Doğru portu seçin, "Aç"a tıklayın. Ardından "Önyükleme İstemine Otomatik Geçiş" üzerine tıklayın ve cihazın yeniden başlatılmasını ve Önyükleme modunda başlamasını bekleyin.
 
 <center>
 
@@ -32,12 +32,12 @@ You can  format the filesystem of Mikrodev PLC, RTU, Remote IO and Gateway produ
 
 </center>
 
-* After the device starts in boot mode, write "AT+FORMATFS=1" into the "Send Command" box  and click "SEND" button. In this stage, the system light on the device will flash rapidly and the error light will be steady. After the process is finished, the system led will start to flash normally again. The format procedure will take about 2-3 minutes. Do not power off the device during the format process. The device will reset several times and it will disconnect the USB connection.
+* Cihaz boot modunda başladıktan sonra "Komut Gönder" kutusuna "AT+FORMATFS=1" yazıp "GÖNDER" butonuna tıklayınız. Bu aşamada cihaz üzerindeki sistem ışığı hızlı bir şekilde yanıp sönecek ve hata ışığı sabit olacaktır. İşlem bittikten sonra sistem ledi tekrar normal şekilde yanıp sönmeye başlayacaktır. Biçimlendirme prosedürü yaklaşık 2-3 dakika sürecektir. Biçimlendirme işlemi sırasında cihazı kapatmayın. Cihaz birkaç kez sıfırlanacak ve USB bağlantısını kesecektir.
 
-* You can check whether the format process has finished or not by checking the boot version of the device. To check the boot version connect USB port and then write "AT+VERSION=?" into the "Send Command" box  and click "SEND" button. If you can see the boot version on the console after this command, it means that you are ready to load the firmware on the device.
+* Cihazın boot versiyonunu kontrol ederek formatlama işleminin bitip bitmediğini kontrol edebilirsiniz. Önyükleme sürümünü kontrol etmek için USB bağlantı noktasını bağlayın ve ardından "AT+VERSION=?" "Komut Gönder" kutusuna girin ve "GÖNDER" düğmesini tıklayın. Bu komuttan sonra konsolda önyükleme sürümünü görebiliyorsanız, aygıta bellenimi yüklemeye hazırsınız demektir.
 
-* Go to Step 7 on [Loading Firmware](Mikrodiagram-Updating-Firmware) page and continue loading firmware. Since the device is formatted, initial boot time will take significantly longer compared to standard firmware loading process.
+* [Firmware Yükleme](Mikrodiagram-Updating-Firmware) sayfasında Adım 7'ye gidin ve bellenimi yüklemeye devam edin. Aygıt biçimlendirildiğinden, ilk önyükleme süresi, standart bellenim yükleme işlemine kıyasla önemli ölçüde daha uzun sürer.
 
-Download Serial Loader application from the link below :
+Aşağıdaki bağlantıdan Seri Yükleyici uygulamasını indirin:
 
 [MikrodevSerialLoader](https://www.mikrodev.com/downloads/drivers/MikrodevSerialLoader.zip)

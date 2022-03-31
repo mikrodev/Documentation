@@ -1,8 +1,8 @@
 ---
-title: "Mikroterminal Interface"
+title: "Mikroterminal Arayüzü"
 ---
 
-The mikroterminal program can be accessed from Mikrodiagram Tools menu.
+Mikroterminal programına Mikrodiagram Tools menüsünden ulaşılabilir.
 
 <center>
 
@@ -16,7 +16,7 @@ The mikroterminal program can be accessed from Mikrodiagram Tools menu.
 
 </center>
 
-* Opening the USB COM Port
+* USB COM Bağlantı Noktasını Açma
 
 <center>
 
@@ -24,13 +24,13 @@ The mikroterminal program can be accessed from Mikrodiagram Tools menu.
 
 </center>
 
-To open the COM port on the mikroterminal, select the port where the connection between the device and the computer is established in the "port name" section. (The connection port between the device and the computer can be controlled from the "device manager".)
+Mikroterminal üzerinde COM portunu açmak için "port name" kısmından cihaz ile bilgisayar arasındaki bağlantının kurulduğu portu seçiniz. (Cihaz ile bilgisayar arasındaki bağlantı portu "aygıt yöneticisi"nden kontrol edilebilir.)
 
-When the "Open" tab is clicked, the COM port information displayed in the "console window" is displayed.
+"Aç" sekmesine tıklandığında, "konsol penceresinde" görüntülenen COM port bilgisi görüntülenir.
 
-* Sending The AT Command
+* AT Komutunu Gönderme
 
-With AT commands, the current settings on the device can be read or the desired values can be written to the device.
+AT komutları ile cihaz üzerindeki mevcut ayarlar okunabilir veya cihaza istenilen değerler yazılabilir.
 
 <center>
 
@@ -38,7 +38,7 @@ With AT commands, the current settings on the device can be read or the desired 
 
 </center>
 
-Click on the "Read" button to read the current settings on the device. When the "Read" button is clicked, the current value in the device is displayed in the "console window".
+Cihazdaki mevcut ayarları okumak için "Oku" düğmesine tıklayın. "Oku" butonuna tıklandığında "konsol penceresinde" cihazdaki mevcut değer görüntülenir.
 
 <center>
 
@@ -46,9 +46,9 @@ Click on the "Read" button to read the current settings on the device. When the 
 
 </center>
 
-In case the current settings of the device are to be changed by AT commands, the value to be changed is written on the window, then the "Write" button is clicked. The value written is displayed in the "console window". If the write operation is successful, the command  “OK" is printed in the console window.
+AT komutları ile cihazın mevcut ayarları değiştirilecekse değiştirilecek değer pencereye yazılır ve "Yaz" butonuna tıklanır. Yazılan değer "konsol penceresinde" görüntülenir. Yazma işlemi başarılı olursa konsol penceresinde “OK” komutu yazdırılır.
 
-* Custom Command Window
+* Özel Komut Penceresi
 
 <center>
 
@@ -56,9 +56,9 @@ In case the current settings of the device are to be changed by AT commands, the
 
 </center>
 
-AT commands can also be sent from the custom command input window.
+AT komutları, özel komut giriş penceresinden de gönderilebilir.
 
-If the current value in the device is to be read, the window "AT + SPECIALTY =?" is written, the "send" button is clicked, the current value is displayed in the console window.
+Cihazdaki mevcut değer okunacaksa "AT + ÖZELLİK =?" yazılır, "gönder" butonuna tıklanır, konsol penceresinde mevcut değer görüntülenir.
 
 <center>
 
@@ -66,29 +66,29 @@ If the current value in the device is to be read, the window "AT + SPECIALTY =?"
 
 </center>
 
-If you want to write a value from the device specific command window, the command "AT + SPECIALTYPE = WRITE KOMUT" is defined and the value written when the "send" button is clicked is displayed in the console window.
+Cihaza özel komut penceresinden değer yazmak istiyorsanız "AT + SPECIALTYPE = KOMUT YAZ" komutu tanımlanır ve "gönder" butonuna tıklandığında yazılan değer konsol penceresine gelir.
 
-If the write operation is successful, the command "SPECIALTY = OK" is printed in the console window.
+Yazma işlemi başarılı olursa, konsol penceresinde "SPECIALTY = OK" komutu yazdırılır.
 
-### List of The AT Command
+### AT Komutunun Listesi
 
-Some of the AT commands used in Mikrodev products are only readable and some have both readable and writeble capabilities.
+Mikrodev ürünlerinde kullanılan AT komutlarının bir kısmı sadece okunabilir, bir kısmı da hem okunabilir hem de yazılabilir özelliklere sahiptir.
 
-The commands on the AT command list differ according to the devices.
+AT komut listesindeki komutlar cihazlara göre farklılık gösterir.
 
-The AT commands used in GSM, Ethernet, Wi-Fi enabled products are indicated in the headers (E / G / W).
+GSM, Ethernet, Wi-Fi özellikli ürünlerde kullanılan AT komutları başlıklarda (E/G/W) belirtilmiştir.
 
 * AT+FBD
 
-In Mikrodiagram, it is used to read block value and write block value by using "block numbers" of door types.
+Mikrodiagram'da kapı tiplerinin "blok numaraları" kullanılarak blok değeri okumak ve blok değeri yazmak için kullanılır.
 
-If the value is to be written, "AT + FBD = BLOKNO, VALUE" is defined and clicked on the "write" command.
+Değer yazılacak ise "AT + FBD = BLOKNO, VALUE" tanımlanır ve "write" komutuna tıklanır.
 
-If the block value is to be read, "AT + FBD = BLOKNO,?" is defined and clicked on the "write" command.
+Blok değeri okunacaksa "AT + FBD = BLOKNO,?" tanımlanır ve "yaz" komutu tıklanır.
 
-The "read" command is not used in the AT + FBD command, only the "write" command is used.
+AT + FBD komutunda "read" komutu kullanılmaz, sadece "write" komutu kullanılır.
 
-Example;
+Örnek;
 
 <center>
 
@@ -102,9 +102,9 @@ Example;
 
 </center>
 
-Since the 3000 no of block is a register block, both writing and reading can be done.
+3000 nolu blok bir register bloğu olduğu için hem yazma hem de okuma yapılabilir.
 
-When "AT + FBD = 3000,10" is entered and "summer" button is clicked, "10" value  is written on block. Value information written  is displayed as "FBD = OK" in the console window.
+"AT + FBD = 3000,10" girilip "yaz" butonu tıklandığında bloğa "10" değeri yazılır. Yazılan değer bilgisi konsol penceresinde "FBD = OK" olarak görüntülenir.
 
 <center>
 
@@ -112,11 +112,11 @@ When "AT + FBD = 3000,10" is entered and "summer" button is clicked, "10" value 
 
 </center>
 
-If you want to read the block value of no 3000  , "AT + FBD = 3000,?" is written and when the "write" command is clicked, the block value is displayed as "FBD = 10" in the console window.
+3000 nolu blok değerini okumak isterseniz "AT + FBD = 3000,?" yazılır ve "write" komutu tıklandığında konsol penceresinde blok değeri "FBD = 10" olarak görüntülenir.
 
 * AT+LOCALIP(E/W)
 
-Used to identify local IP to devices with Ethernet or Wi-Fi capability
+Ethernet veya Wi-Fi özellikli cihazlara yerel IP'yi tanımlamak için kullanılır
 
 <center>
 
@@ -124,15 +124,15 @@ Used to identify local IP to devices with Ethernet or Wi-Fi capability
 
 </center>
 
-To change the local IP, type "AT + LOCALIP = IP" and click "write" command to write IP to the device.
+Yerel IP'yi değiştirmek için "AT + LOCALIP = IP" yazın ve cihaza IP yazmak için "yaz" komutuna tıklayın.
 
-Click on the "read" command to read the current IP value.
+Mevcut IP değerini okumak için "oku" komutuna tıklayın.
 
 * AT+MAC(E/W)
 
-It is used to define the MAC address for devices with Ethernet or Wi-Fi capability.
+Ethernet veya Wi-Fi özellikli cihazlar için MAC adresini tanımlamak için kullanılır.
 
-Numbers can be defined in hexadecimal.
+Sayılar onaltılık olarak tanımlanabilir.
 
 <center>
 
@@ -140,13 +140,13 @@ Numbers can be defined in hexadecimal.
 
 </center>
 
-The MAC address can be changed by typing "AT + MAC" command and clicking "write". The current MAC address can be read with "read" command.
+MAC adresi "AT + MAC" komutu yazıp "write" tıklanarak değiştirilebilir. Mevcut MAC adresi "read" komutu ile okunabilir.
 
 * AT+GATEWAY(E/W)
 
-It is used to define gateway to devices with Ethernet or Wi-Fi capability.
+Ethernet veya Wi-Fi özellikli cihazlara ağ geçidi tanımlamak için kullanılır.
 
-In a local network, the gateway is usually the IP address of the modem.
+Yerel bir ağda, ağ geçidi genellikle modemin IP adresidir.
 
 <center>
 
@@ -154,11 +154,11 @@ In a local network, the gateway is usually the IP address of the modem.
 
 </center>
 
-AT + GATEWAY "command to read and write the gateway address.
+AT + GATEWAY "ağ geçidi adresini okuma ve yazma komutu.
 
-* AT+NETMASK(E/W)
+* AĞMASK'TA(E/W)
 
-It is used to define "netmask" for devices with Ethernet or Wi-Fi capability.
+Ethernet veya Wi-Fi özellikli cihazlar için "ağ maskesi" tanımlamak için kullanılır.
 
 <center>
 
@@ -166,19 +166,19 @@ It is used to define "netmask" for devices with Ethernet or Wi-Fi capability.
 
 </center>
 
-Netmask can be read and written with "AT + NETMASK" command.
+Ağ maskesi "AT + NETMASK" komutu ile okunup yazılabilir.
 
-* AT+ONLINE
+* AT+ÇEVRİMİÇİ
 
-It is used to start and stop the online viewing from the mikroterminal while online viewing is performed in Mikrodiagram.
+Mikrodiagram'da çevrim içi görüntüleme yapılırken mikroterminalden çevrim içi görüntülemeyi başlatmak ve durdurmak için kullanılır.
 
-Online monitoring is started when AT + ONLINE = 1 command is sent.
+AT + ONLINE = 1 komutu gönderildiğinde çevrimiçi izleme başlatılır.
 
-Online monitoring is stopped when AT + ONLINE = 0 command is sent.
+AT + ONLINE = 0 komutu gönderildiğinde çevrimiçi izleme durdurulur.
 
-* AT+VERSION
+* + VERSİYONDA
 
-Mikrodev products software and hardware version information can be accessed with AT + VERSION command.
+Mikrodev ürünleri yazılım ve donanım versiyon bilgilerine AT + VERSION komutu ile ulaşılabilir.
 
 <center>
 
@@ -186,13 +186,13 @@ Mikrodev products software and hardware version information can be accessed with
 
 </center>
 
-The command "AT + VERSION" is only readable. The write operation can not be performed.
+"AT + VERSION" komutu yalnızca okunabilir. Yazma işlemi gerçekleştirilemez.
 
-The "Quick user guide" contains detailed information on the version.
+"Hızlı kullanım kılavuzu", sürüm hakkında ayrıntılı bilgiler içerir.
 
 * AT+SERIALNO
 
-The Mikrodev products serial number information can be accessed with the command "AT + SERIALNO".
+Mikrodev ürünlerinin seri numarası bilgilerine "AT + SERIALNO" komutu ile ulaşılabilir.
 
 <center>
 
@@ -200,13 +200,13 @@ The Mikrodev products serial number information can be accessed with the command
 
 </center>
 
-The command "AT + SERIALNO" is only readable. The write operation can not be performed.
+"AT + SERIALNO" komutu sadece okunabilir. Yazma işlemi gerçekleştirilemez.
 
-The "Quick user guide" contains detailed information on the serial number.
+"Hızlı kullanım kılavuzu", seri numarası hakkında ayrıntılı bilgiler içerir.
 
 *  AT+CONNECTION(G)
 
-Connection status check of Mikrodev products with GSM data exchange feature is done by "AT + CONNECTION" command.
+GSM veri alışverişi özelliğine sahip Mikrodev ürünlerinin bağlantı durum kontrolü "AT + CONNECTION" komutu ile yapılır.
 
 <center>
 
@@ -214,11 +214,11 @@ Connection status check of Mikrodev products with GSM data exchange feature is d
 
 </center>
 
-The AT + CONNECTION command has only readability.
+AT + CONNECTION komutunun yalnızca okunabilirliği vardır.
 
-The AT + CONNECTION command receives even-numbered values 0-8.
+AT + CONNECTION komutu, 0-8 arası çift sayılı değerleri alır.
 
-The AT + CONNECTION command response table is below.
+AT + CONNECTION komut yanıt tablosu aşağıdadır.
 
 <center>
 
@@ -228,7 +228,7 @@ The AT + CONNECTION command response table is below.
 
 *  AT+HELP
 
-AT command list is reached. Information on the use of commands is also provided.
+AT komut listesine ulaşıldı. Komutların kullanımına ilişkin bilgiler de verilmektedir.
 
 <center>
 
@@ -236,11 +236,11 @@ AT command list is reached. Information on the use of commands is also provided.
 
 </center>
 
-Writable AT commands, AT commands giving status information are provided.
+Yazılabilir AT komutları, durum bilgisi veren AT komutları sağlanır.
 
 * AT+SETTIME
 
-With the AT + SETTIME command, the device real time clock can be read and written.
+AT + SETTIME komutu ile cihazın gerçek zaman saati okunup yazılabilir.
 
 <center>
 
@@ -248,11 +248,11 @@ With the AT + SETTIME command, the device real time clock can be read and writte
 
 </center>
 
-When the AT + SETTIME command "read" is clicked, the current time of the device  readable in the console window, the date and time to be set to the command window; When set to "dd-mm-yyyy h:m:s" and the "summer" command is sent, the time set is displayed in the console window.
+AT + SETTIME komutu "read" tıklandığında, konsol penceresinde okunabilen cihazın güncel saati, komut penceresine ayarlanacak tarih ve saat; "gg-aa-yyyy h:m:s" olarak ayarlandığında ve "yaz" komutu gönderildiğinde, konsol penceresinde ayarlanan zaman görüntülenir.
 
 * AT+ERROR
 
-If the device is in error mode, it is used to learn the error code.
+Cihaz hata modunda ise hata kodunu öğrenmek için kullanılır.
 
 <center>
 
@@ -260,11 +260,11 @@ If the device is in error mode, it is used to learn the error code.
 
 </center>
 
-If AT + ERROR = 0, then there is no error condition.
+AT + HATA = 0 ise hata durumu yoktur.
 
-AT + ERROR = 61 means that the device does not have Mikrodiagram installed
+AT + HATA = 61, cihazda Mikrodiagram kurulu olmadığı anlamına gelir
 
-The AT + ERROR command is only a readable command.
+AT + ERROR komutu yalnızca okunabilir bir komuttur.
 
 <center>
 
@@ -274,7 +274,7 @@ The AT + ERROR command is only a readable command.
 
 * AT+DEFAULT
 
-The AT + DEFAULT command is used to reset the unit to factory settings.
+AT + DEFAULT komutu, üniteyi fabrika ayarlarına sıfırlamak için kullanılır.
 
 <center>
 
@@ -282,17 +282,17 @@ The AT + DEFAULT command is used to reset the unit to factory settings.
 
 </center>
 
-When AT + DEFAULT = 1 command is written and "write" is clicked, the device is restored to factory settings.
+AT + DEFAULT = 1 komutu yazıp "write" tıklandığında cihaz fabrika ayarlarına döner.
 
-When the device is restored to factory settings, the settings made with the AT commands are restored to factory settings, the most recently loaded Mikrodiagram project is deleted from the device.
+Cihaz fabrika ayarlarına döndürüldüğünde AT komutları ile yapılan ayarlar fabrika ayarlarına döndürülür, en son yüklenen Mikrodiagram projesi cihazdan silinir.
 
-After the command is sent, the device drops to error ERROR = 61
+Komut gönderildikten sonra cihaz ERROR = 61 hatasına düşer
 
-The command AT + DEFAULT is only writable.
+AT + DEFAULT komutu yalnızca yazılabilir.
 
-* AT+RESET
+*AT + RESET
 
-The AT + RESET command is used for software restart of the device.
+AT + RESET komutu, cihazın yazılımın yeniden başlatılması için kullanılır.
 
 <center>
 
@@ -300,7 +300,7 @@ The AT + RESET command is used for software restart of the device.
 
 </center>
 
-When AT + RESET = 1 is typed and the "send" button is clicked, the device is restarted.
+AT + RESET = 1 yazıp "gönder" butonuna tıklandığında cihaz yeniden başlatılır.
 
 * AT+PLCRESET
 
@@ -310,13 +310,13 @@ When AT + RESET = 1 is typed and the "send" button is clicked, the device is res
 
 </center>
 
-The AT + PLCRESET command is used when TCP communication protocols require the device to be reset after a certain period of time.
+AT + PLCRESET komutu, TCP iletişim protokolleri cihazın belirli bir süre sonra sıfırlanmasını gerektirdiğinde kullanılır.
 
-If AT + PLCRESET = 0 command is sent to the device, the command is disabled.
+Cihaza AT + PLCRESET = 0 komutu gönderilirse komut devre dışı bırakılır.
 
-The AT + PLCRESET command runs at a minimum 60 second (sec) scale.
+AT + PLCRESET komutu, minimum 60 saniye (sn) ölçeğinde çalışır.
 
-To learn the current PLCRESET command programmed in the device, enter AT + PLCRESET =? command can be sent to the device.
+Cihazda programlanan mevcut PLCRESET komutunu öğrenmek için AT + PLCRESET =? komut cihaza gönderilebilir.
 
 * AT+CONFIGPORT
 
@@ -326,13 +326,13 @@ To learn the current PLCRESET command programmed in the device, enter AT + PLCRE
 
 </center>
 
-The AT + CONFIGPORT command is used to identify the port number used in situations where a TCP port connection from Mikrodiagram is desired to be installed on devices with a TCP communication port (Ethernet, GSM, Wi-Fi).
+AT + CONFIGPORT komutu, TCP iletişim portu (Ethernet, GSM, Wi-Fi) bulunan cihazlara Mikrodiagram'dan TCP port bağlantısı kurulmak istenen durumlarda kullanılan port numarasını tanımlamak için kullanılır.
 
-The factory default ConfigPort number is 502.
+Fabrika varsayılan ConfigPort numarası 502'dir.
 
-It can be changed with AT + CONFIGPORT command.
+AT + CONFIGPORT komutu ile değiştirilebilir.
 
-AT + = CONFIGPORT? command can be viewed with the current configport.
+AT + = CONFIGPORT? komut mevcut configport ile görüntülenebilir.
 
 <center>
 
@@ -340,7 +340,7 @@ AT + = CONFIGPORT? command can be viewed with the current configport.
 
 </center>
 
-CONFIGPORT is disabled when a selected TCP socket block is added to the device as a server Mikrodiagram. The device's listening port is the listening port that is inserted into the TCP socket block.
+Cihaza sunucu Mikrodiagramı olarak seçilen bir TCP soket bloğu eklendiğinde CONFIGPORT devre dışı bırakılır. Aygıtın dinleme bağlantı noktası, TCP yuva bloğuna eklenen dinleme bağlantı noktasıdır.
 
 * AT+SERVERTIMEOUT
 
@@ -352,7 +352,7 @@ CONFIGPORT is disabled when a selected TCP socket block is added to the device a
 
 * AT+FORMATFS
 
-AT + FORMATFS = 1 command is used to format Mikrodev products. When the AT + FORMATFS = 1 command is sent to the device, the firmware will be deleted, so it is necessary to load the firmware again to program the device.
+AT + FORMATFS = 1 komutu Mikrodev ürünlerini biçimlendirmek için kullanılır. Cihaza AT + FORMATFS = 1 komutu gönderildiğinde firmware silinecektir, bu yüzden cihazı programlamak için tekrar firmware yüklemek gerekir.
 
 * AT+CANTIMEOUT
 
@@ -362,47 +362,47 @@ AT + FORMATFS = 1 command is used to format Mikrodev products. When the AT + FOR
 
 </center>
 
-AT + CANTIMEOUT command Mikrodev is used to protect the position of the inputs and outputs on the expansion units for a specified period of time in case of communication failure between CPU modules and expansion units.
+AT + CANTIMEOUT komutu Mikrodev, CPU modülleri ile genişletme üniteleri arasında haberleşme arızası olması durumunda genişletme üniteleri üzerindeki giriş ve çıkışların konumunu belirli bir süre boyunca korumak için kullanılır.
 
-The CANTIMEOUT time runs in millisecond (ms) time scale.
+CANTIMEOUT süresi, milisaniye (ms) zaman ölçeğinde çalışır.
 
-When the communication link between the input modules and the CPU breaks, inputs up to the number of CANTIMEOUT entered into the CPU do not change position in the software.
+Giriş modülleri ile CPU arasındaki iletişim bağlantısı koptuğunda, CPU'ya girilen CANTIMEOUT sayısına kadar olan girişler yazılımdaki pozisyonunu değiştirmez.
 
-When the communication link between the output modules and the CPU breaks, the outputs do not change positions as long as the CANTIMEOUT times entered in the output modules.
+Çıkış modülleri ile CPU arasındaki iletişim bağlantısı koptuğunda, çıkış modüllerine girilen CANTIMEOUT süreleri kadar çıkışlar konum değiştirmez.
 
-The CANTIMEOUT time input to the CPU is used for the input modules, the CANTIMEOUT time input to the output modules for the output modules is used.
+Giriş modülleri için CPU'ya CANTIMEOUT zaman girişi, çıkış modülleri için çıkış modüllerine CANTIMEOUT zaman girişi kullanılır.
 
-For example, if AT + CANTIMEOUT = 60000 (ms) is defined for the CPU and expansion units, the incoming digital input signal position is maintained through the expansion unit until 60000 (ms) (1 minute) after communication between the digital input (DI) expansion unit and the CPU is interrupted. 60000 ms. After the CANTIMEOUT time has elapsed, the digital inputs are pulled to logic (0) if no connection to the expansion unit is still present.
+Örneğin, CPU ve genişletme birimleri için AT + CANTIMEOUT = 60000 (ms) tanımlanmışsa, gelen dijital giriş sinyali konumu, dijital giriş (DI) arasındaki iletişimden sonra 60000 (ms) (1 dakika) kadar genişletme birimi aracılığıyla korunur. ) genişletme birimi ve CPU kesintiye uğradı. 60000 ms. CANTIMEOUT süresi geçtikten sonra, genişleme ünitesine hala bağlantı yoksa dijital girişler mantığa (0) çekilir.
 
 * AT+GPRSIP(G)
 
-The data package (internet package) is the IP of the SIM card. Supplied by the GSM operator.
+Veri paketi (internet paketi), SIM kartın IP'sidir. GSM operatörü tarafından sağlanır.
 
-It can only be read by AT + GPRSIP command. Changed.
+Sadece AT + GPRSIP komutu ile okunabilir. Değişti.
 
-If the device is to be used as a server, a SIM card with a fixed IP address must be provided.
+Cihaz sunucu olarak kullanılacaksa, sabit IP adresli bir SIM kart sağlanmalıdır.
 
-  When a SIM card with a fixed IP is provided, APN information must also be received from the GSM operator
+   Sabit IP'li bir SIM kart sağlandığında, GSM operatöründen de APN bilgisi alınmalıdır.
 
 * AT+GPRSAPN(G)
 
-AT + GPRSAPN command is used to define APN for Mikrodev products with GSM TCP communication feature.
+AT + GPRSAPN komutu, GSM TCP haberleşme özelliğine sahip Mikrodev ürünleri için APN tanımlamak için kullanılır.
 
-Since the APN that needs to be defined varies according to the SIM card operator used in the device,it must be supplied from the customer service of the relevant GSM operator.
+Tanımlanması gereken APN, cihazda kullanılan SIM kart operatörüne göre değişiklik gösterdiğinden ilgili GSM operatörünün müşteri hizmetlerinden temin edilmesi gerekmektedir.
 
-The APN has to be defined if the used device is to be used as a server in the TCP communication with the GSM line (if the device will connect to another IP).
+Kullanılan cihaz GSM hattı ile TCP iletişiminde sunucu olarak kullanılacaksa (cihaz başka bir IP'ye bağlanacaksa) APN tanımlanmalıdır.
 
-Note: The SIM card used in the APN-defined device must have a static IP
+Not: APN tanımlı cihazda kullanılan SIM kartın statik IP'si olmalıdır.
 
 * AT+CSQ(G)
 
-It is the value of the GSM signal quality (the power of the GSM line) that the devices with GSM capability are installed. It can be between -1 and 31.
+GSM özellikli cihazların kurulu olduğu GSM sinyal kalitesi (GSM hattının gücü) değeridir. -1 ile 31 arasında olabilir.
 
-Even if the SIM card is not inserted, the value can be read while the GSM antenna is connected. (Emergency calls are used on mobile phones when the SIM card is not inserted.)
+SIM kart takılı olmasa bile GSM anteni bağlıyken değer okunabilir. (Acil aramalar, SIM kart takılı değilken cep telefonlarında kullanılır.)
 
-AT + CSQ is only readable command.
+AT + CSQ sadece okunabilir komuttur.
 
-The pull chart is as follows.
+Çekme tablosu aşağıdaki gibidir.
 
 <center>
 
@@ -412,65 +412,65 @@ The pull chart is as follows.
 
 *  AT+SIM(G)
 
-It is used for SIM card inquiry in Mikrodev products with GSM hardware.
+GSM donanımına sahip Mikrodev ürünlerinde SIM kart sorgulama için kullanılmaktadır.
 
-With "AT + SIM =?" read only command. The value can not be written.
+"AT + SIM =?" ile salt okunur komutu Değer yazılamaz.
 
-If the answer to the command is SIM = 1, it indicates that the SIM card is correctly installed and is fault-free.
+Komutun cevabı SIM=1 ise SIM kartın doğru takıldığını ve hatasız olduğunu gösterir.
 
-The response to the command is SIM = 0 to indicate that the SIM card is not inserted, is incorrectly installed or is defective.
+Komuta yanıt, SIM kartın takılı olmadığını, yanlış takıldığını veya arızalı olduğunu belirtmek için SIM = 0'dır.
 
 * AT+WIFISSID(W)
 
-It is used to identify the WI-FI network name to be included in WI-FI enabled products.
+WI-FI özellikli ürünlere dahil edilecek WI-FI ağ adını belirlemek için kullanılır.
 
-In the "AT + WIFISSID" command window, the WI-FI name is written, the "write" command is clicked,
+"AT + WIFISSID" komut penceresinde WI-FI adı yazılır, "write" komutu tıklanır,
 
-When you want to read the current WI-FI SSID, click "AT + WIFISSID" "read" command.
+Mevcut WI-FI SSID'yi okumak istediğinizde, "AT + WIFISSID" "oku" komutuna tıklayın.
 
 * AT+WIFIPSSW(W)
 
-It is used to describe the password of the WI-FI network to be included in WI-FI-enabled products.
+WI-FI özellikli ürünlere dahil edilecek WI-FI ağının şifresini açıklamak için kullanılır.
 
-AT + WIFIPSSW WI-FI password is written into the command window, click on the "write" command,
+AT + WIFIPSSW WI-FI şifresi komut penceresine yazılır, "yaz" komutuna tıklayın,
 
-When the current WI-FI password is desired to be read, the AT + WIFIPSSW "read" command is clicked.
+Mevcut WI-FI şifresi okunmak istendiğinde AT + WIFIPSSW "oku" komutuna tıklanır.
 
 *  AT+TEMPTYPE
 
-For products with RTD temperature sensor input, temperature sensor selection is made.
+RTD sıcaklık sensörü girişi olan ürünler için sıcaklık sensörü seçimi yapılır.
 
-Hardware must be manufactured in accordance with the temperature sensor of the product.
+Donanım, ürünün sıcaklık sensörüne uygun olarak imal edilmelidir.
 
-The PT100 temperature sensor can be used if AT + TEMPTYPE = 0.
+AT + TEMPTYPE = 0 ise PT100 sıcaklık sensörü kullanılabilir.
 
-The NTC temperature sensor can be used if AT + TEMPTYPE = 1.
+AT + TEMPTYPE = 1 ise NTC sıcaklık sensörü kullanılabilir.
 
-The PT1000 temperature sensor can be used if AT + TEMPTYPE = 2.
+AT + TEMPTYPE = 2 ise PT1000 sıcaklık sensörü kullanılabilir.
 
 * AT+PRODUCTNO
 
-Hardware product code inquiry for the products in Mikrodev product family is made.
+Mikrodev ürün ailesindeki ürünler için donanım ürün kodu sorgulaması yapılır.
 
-The code that starts with the letter "p" (p42, p46, etc.) in the product embedded software (MP201_E_s11.09p42) must match the AT + PRODUCTNO code.
+Ürün yerleşik yazılımında (MP201_E_s11.09p42) "p" harfiyle başlayan (p42, p46, vb.) kod, AT + PRODUCTNO koduyla eşleşmelidir.
 
-  AT + PRODUCTNO is the only readable command.
+   AT + PRODUCTNO, okunabilen tek komuttur.
 
 * AT+PTO
 
-It is used to activate the "pulse train output" and "axis control" blocks.
+"Darbeli katar çıkışı" ve "eksen kontrolü" bloklarını etkinleştirmek için kullanılır.
 
-AT + PTO = 1 command is activated. AT + PTO = 0 disable the command.
+AT + PTO = 1 komutu etkinleştirilir. AT + PTO = 0 komutu devre dışı bırakın.
 
-For current status inquiry, "AT + PTO =?" Command can be sent.
+Mevcut durum sorgulaması için "AT + PTO =?" Komut gönderilebilir.
 
 * AT+SOCKET
 
-It is used to monitor the active connections of TCP socket blocks in Mikrodiagram project.
+Mikrodiagram projesinde TCP soket bloklarının aktif bağlantılarını izlemek için kullanılır.
 
-When AT + SOCKET = <"TCP Socket Block" Block Number> command is sent to the device, the connections made from the relevant TCP socket block are displayed.
+AT + SOKET = <"TCP Soket Blok" Blok Numarası> komutu cihaza gönderildiğinde ilgili TCP soket bloğundan yapılan bağlantılar görüntülenir.
 
-Those with status "1" indicate that the connection exists. The "status" states, which are different from "1", indicate that the link already existed, but that the link broke down before the specified time.
+Durumu "1" olanlar bağlantının var olduğunu gösterir. "1"den farklı olan "durum" durumları, bağlantının zaten var olduğunu, ancak bağlantının belirtilen süreden önce bozulduğunu gösterir.
 
 <center>
 
@@ -480,41 +480,8 @@ Those with status "1" indicate that the connection exists. The "status" states, 
 
 * AT+POWERCOUNT
 
-It shows how many times the device is restarted after Mikrodiagram project is loaded. The first value is 1 since the device is restarted after the mikrordiagram project has been loaded.
+Mikrodiagram projesi yüklendikten sonra cihazın kaç kez yeniden başlatıldığını gösterir. Mikrordiagram projesi yüklendikten sonra cihaz yeniden başlatıldığından ilk değer 1'dir.
 
-Writable and readable command.
+Yazılabilir ve okunabilir komut.
 
-AT + = POWERCOUNT? , The current value is queried, and the desired value can be written with the command AT + POWERCOUNT = Set value
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+AT + = GÜÇCOUNT? , Mevcut değer sorgulanır ve AT + GÜÇCOUNT = Set değeri komutu ile istenilen değer yazılabilir.

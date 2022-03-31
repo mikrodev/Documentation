@@ -1,5 +1,5 @@
 ---
-title: MBS100 Software Manual
+title: MBS100 Yazılım Kılavuzu
 ---
 
 ## MODBUS Ağ Geçidi Konfigürasyon Yazılımı
@@ -130,31 +130,4 @@ Terminal penceresi, MMS100 serisi dönüştürücüler için komutların girildi
 ![gateway-mbs100-software-08](/img/gateway-mbs100-software-08.png)
 
 </center>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

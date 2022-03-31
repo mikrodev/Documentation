@@ -1,12 +1,12 @@
 ---
-title: Factory Settings
+title: Fabrika Ayarları
 ---
 
-You can do factory settings of Mikrodev PLC, RTU and Gateway product families via USB connection. 
+Mikrodev PLC, RTU ve Gateway ürün ailelerinin fabrika ayarlarını USB bağlantısı üzerinden yapabilirsiniz.
  
-* Before starting, make sure that all USB connections to the device are closed. 
+* Başlamadan önce, cihazın tüm USB bağlantılarının kapalı olduğundan emin olun.
 
-* Power OFF device, disconnect the DC supply connection. 
+* Cihazı KAPALI konuma getirin, DC besleme bağlantısını kesin.
 
 <center>
 
@@ -14,9 +14,9 @@ You can do factory settings of Mikrodev PLC, RTU and Gateway product families vi
 
 </center>
 
-* Connect the USB cable between the computer and the device. 
+* USB kablosunu bilgisayar ve cihaz arasına bağlayın.
 
-* Power ON device, connect the DC supply.  
+* Cihazı AÇIK konuma getirin, DC kaynağını bağlayın. 
 
 <center>
 
@@ -24,7 +24,7 @@ You can do factory settings of Mikrodev PLC, RTU and Gateway product families vi
 
 </center>
 
-* Select the correct port, click "Open". Then click on "Auto Switch to Boot Prompt" and wait for the device to be rebooted and start in Boot mode.
+* Doğru portu seçin, "Aç"a tıklayın. Ardından "Önyükleme İstemine Otomatik Geçiş" üzerine tıklayın ve cihazın yeniden başlatılmasını ve Önyükleme modunda başlamasını bekleyin.
 
 <center>
 
@@ -32,7 +32,7 @@ You can do factory settings of Mikrodev PLC, RTU and Gateway product families vi
 
 </center>
 
-* After the device starts in boot mode, write "AT+DEFAULT=1" into the "Send Command" box and click "SEND" button. 
+* Cihaz boot modunda başladıktan sonra "Send Command" kutusuna "AT+DEFAULT=1" yazıp "SEND" butonuna tıklayın. 
 
 <center>
 
@@ -40,7 +40,7 @@ You can do factory settings of Mikrodev PLC, RTU and Gateway product families vi
 
 </center>
 
-* After write "AT+DEFAULT=1" into the "Send Command", write "AT+RESET=1" into the "Send Command" box and click "SEND" button.
+* "Gönder Komutu"na "AT+DEFAULT=1" yazdıktan sonra "Komut Gönder" kutusuna "AT+RESET=1" yazıp "GÖNDER" butonuna tıklayınız.
 
 <center>
 
