@@ -1166,6 +1166,37 @@ i ---Makro---->o , s----Makro---->w
 Makro işlemi yoksa, 'i', 'o'ya eşittir, 's', 'w'ye eşittir.
 ```
 
+Makrolar aynı anda iki işlem öğesi alabilir ve satır satır yazılır.
+
+Örnek olarak:
+
+Aşağıdaki örnekte, "v0" değişkenini 123 etiketinin değerini alır ve daha sonra değeri kontrol edilir. "v0" 1'e eşitse, makro en alt satırdaki komutu yürütür (o1 değerini 1 yapar). 1'e eşit değilse, satır "IF" satırının ikinci parametresi ("2") kadar aşağı kaydırılır. Bu örnekte "v0" 1'e eşit değilse, makro 2 satır aşağı inecek yani dönüş değeri ([E]) satırına gidecek ve bitecektir.
+
+
+[v0=$123]
+[IF,v0,2]
+[o1=0+1]
+[E]
+
+
+"o1" değişkeninin değeri kontrol edilir. "o1" 1'e eşitse, makro en alt satırdaki komutu yürütür (o1 değerini 1 yazar). 1'e eşit değilse, satır "IF" satırının ikinci parametresi ("2") kadar aşağı kaydırılır. Bu örnekte "v0" 1'e eşit değilse, makro 2 satır aşağı inecek yani dönüş değeri ([E]) satırına gidecek ve bitecektir.
+
+
+[IF,o1,2]
+[w1=0+1]
+[E]
+
+
+Etiketlerin o,i,s,w için sıra numaralarını öğrenmek için üzerine işaretçiyi getirmeniz yeterlidir.
+
+<center>
+
+![macro-001](/img/macro-001.png)
+
+
+</center>
+
+
 ## Lisans Dosyasını Yükleme
 
 Geçerli bir lisans almak için lütfen "donanım kimliğinizi" sales@mikrodev.com adresine gönderin. Donanım kimliğinizi öğrenmek için; uygulama menüsünden Help > User License Generator'ı seçin.

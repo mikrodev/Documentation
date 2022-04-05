@@ -1110,6 +1110,37 @@ i ---Macro---->o , s---Macro---->w
 If there is no macro operation 'i' is equal to 'o', 's' is equal to 'w'. 
 ```
 
+Macros can take two processing elements at a time and are written line by line.
+
+
+Example:
+
+
+In the example below, the variable "v0" takes the value of the tag 123 and then its value is checked. If "v0" is equal to 1, the macro executes the command in the bottom line (making o1 a 1). If not equal to 1, the line is shifted down by the second parameter of the "IF" line ("2"). In this example, if "v0" is not equal to 1, the macro will go down 2 lines, ie the return value ([E]) line, and finish.
+
+[v0=$123]
+[IF,v0,2]
+[o1=0+1]
+[E]
+
+
+The value of the variable "o1" is checked. If "o1" equals 1, the macro executes the command on the bottom line (writes o1 as 1). If not equal to 1, the line is shifted down by the second parameter of the "IF" line ("2"). In this example, if "v0" is not equal to 1, the macro will go down 2 lines, ie the return value ([E]) line, and finish.
+
+
+[IF,o1,2]
+[w1=0+1]
+[E]
+
+To learn the sequence numbers of the labels for o, i, s, w, simply move the pointer over it.
+
+<center>
+
+![macro-001](/img/macro-001.png)
+
+
+</center>
+
+
 ## Installing the License File
 
 To get a valid license please send your "hardware id" to sales@mikrodev.com. To learn your hardware id; select Help > User License Generator from the application menu.
