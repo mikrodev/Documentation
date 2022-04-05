@@ -47,6 +47,7 @@ module.exports = {
 		  "DNP3-Application-Notes",
 		  "Block-Descriptions-Notes",
 		  "MDV61850BROWSER-Application-Notes",
+		  "Basic-Network-Connection-Notes",
     ],
     },
      
