@@ -1173,18 +1173,23 @@ Makrolar aynı anda iki işlem öğesi alabilir ve satır satır yazılır.
 Aşağıdaki örnekte, "v0" değişkenini 123 etiketinin değerini alır ve daha sonra değeri kontrol edilir. "v0" 1'e eşitse, makro en alt satırdaki komutu yürütür (o1 değerini 1 yapar). 1'e eşit değilse, satır "IF" satırının ikinci parametresi ("2") kadar aşağı kaydırılır. Bu örnekte "v0" 1'e eşit değilse, makro 2 satır aşağı inecek yani dönüş değeri ([E]) satırına gidecek ve bitecektir.
 
 
-[v0=$123]
-[IF,v0,2]
-[o1=0+1]
-[E]
+[ v0=$123 ]
+
+[ IF,v0,2 ]
+
+[ o1=0+1 ]
+
+[ E ]
 
 
 "o1" değişkeninin değeri kontrol edilir. "o1" 1'e eşitse, makro en alt satırdaki komutu yürütür (o1 değerini 1 yazar). 1'e eşit değilse, satır "IF" satırının ikinci parametresi ("2") kadar aşağı kaydırılır. Bu örnekte "v0" 1'e eşit değilse, makro 2 satır aşağı inecek yani dönüş değeri ([E]) satırına gidecek ve bitecektir.
 
 
-[IF,o1,2]
-[w1=0+1]
-[E]
+[ IF,o1,2 ]
+
+[ w1=0+1 ]
+
+[ E ]
 
 
 Etiketlerin o,i,s,w için sıra numaralarını öğrenmek için üzerine işaretçiyi getirmeniz yeterlidir.
