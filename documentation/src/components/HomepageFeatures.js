@@ -17,7 +17,7 @@ Building Automation<br/>
 Process Plants
 				<br/><br/>
 
-        <code><a href="https://www.mikrodev.com/en/scada/">Website Link for SCADA</a></code>
+        <code><a href="https://docs.mikrodev.com/docs/ViewPLUS-SCADA-Editor/">Website Link for SCADA</a></code>
       </>	  
     ),	
   },
@@ -34,9 +34,9 @@ Lighting Automation<br/>
 Machine Automation<br/>
 IoT Applications
 		<br/><br/>
-<code><a href="https://www.mikrodev.com/en/mp211e/">Website Link for PLC</a></code>
+<code><a href="https://docs.mikrodev.com/docs/PLC-MP110-Series-Hardware-Manual">Website Link for PLC</a></code>
 <br/>
-        <code><a href="https://www.mikrodev.com/en/rtu301/">Website Link for RTU</a></code>
+        <code><a href="https://docs.mikrodev.com/docs/RTU-RTU-Series-Hardware-Manual">Website Link for RTU</a></code>
       </>
     ),
   },
@@ -53,7 +53,7 @@ AMR(Automatic Meter Reading) Solutions<br/>
 Load Profile Data
 				<br/><br/>
 
-        <code><a href="https://www.mikrodev.com/en/mbs100e/">Website Link for Gateway</a></code>
+        <code><a href="https://docs.mikrodev.com/docs/Gateway-MBS100-Hardware-Manual">Website Link for Gateway</a></code>
       </>
     ),
   },
