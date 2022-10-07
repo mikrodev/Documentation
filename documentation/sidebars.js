@@ -9,6 +9,7 @@ module.exports = {
 		'ViewPLUS-SCADA-Database',
 		'ViewPLUS-SCADA-WebApi',
 		'ViewPLUS-SCADA-Reporting',
+		'ViewPLUS-SCADA-Map-Page',
 		'ViewPLUS-SCADA-Change-Map-Icons',
 		'ViewPLUS-SCADA-Template-Page',
 		'ViewPLUS-SCADA-Example-Projects',

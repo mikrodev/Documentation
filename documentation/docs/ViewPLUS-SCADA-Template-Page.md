@@ -2,8 +2,6 @@
 title: "ViewPLUS SCADA Template Page"
 ---
 
-## ViewPLUS TEMPLATE PAGE/RUN FUNCTION
-
 In ViewPLUS Scada application, data of more than one point of the same type can be displayed with a page design.
 
 For example, if a relay with the same features is used with different labels in more than one place in your scada project; just create a single relay reference page. To use the reference page you created on relays with different labels; You need to redirect to the reference page through the relay scada component in the project and use the run function to assign the labels of the relays.
