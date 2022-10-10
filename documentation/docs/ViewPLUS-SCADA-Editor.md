@@ -66,7 +66,7 @@ Excellent connection with MikroDev PLC, REMOTE IO and Gateway products
 Compatible with a wide range of industry standard protocols: MODBUS TCP, MODBUS RTU, DNP3, SNMP, IEC- *, BACNET
 #### Database Support
 
-PgSQL
+PgSQL (PostgreSQL 13)
 
 ORACLE
 

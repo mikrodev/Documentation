@@ -16,6 +16,10 @@ You can update the firmware of Mikrodev PLC, RTU, Remote IO and Gateway product 
 
 * Connect the USB cable between the computer and the device.
 
+* In order to update the firmware file on the device, the Serial Loader application is first opened.   
+Right click on Telediagram or Microdiagram application, the file location of the application opens. Serial Loader application is found in this opened file and run.
+
+
 * Click the "..." button and select the firmware with .mx3 extension.
 
 <center>
@@ -32,7 +36,8 @@ You can update the firmware of Mikrodev PLC, RTU, Remote IO and Gateway product 
 
 </center>
 
-* Select the correct port, click "Open". Then click on "Auto Switch to Boot Prompt" and wait for the device to be rebooted and start in Boot mode.
+* Select the correct port, click "Open". Then click on "Auto Switch to Boot Prompt" and wait for the device to be rebooted and start in Boot mode.   
+The device enters the automatic boot mode, BootCmd> is read on the screen.
 
 <center>
 
