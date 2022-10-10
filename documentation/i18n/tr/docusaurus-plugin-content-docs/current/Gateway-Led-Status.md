@@ -4,6 +4,8 @@ title: Gateway Led Durumları
 
 ## Önyükleme Durumu
 
+**deneme**
+
 PWR ve SYS ledleri sürekli yanar. ACT ledi periyodik olarak yanıp söner.
 
 <center>
