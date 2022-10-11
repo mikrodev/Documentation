@@ -1,5 +1,5 @@
 ---
-title: Firmware güncelleme
+title: Firmware Güncelleme
 ---
 
 Mikrodev PLC, RTU, Remote IO ve Gateway ürün ailelerinin yazılımlarını USB bağlantısı ile güncelleyebilirsiniz.
@@ -15,6 +15,10 @@ Mikrodev PLC, RTU, Remote IO ve Gateway ürün ailelerinin yazılımlarını USB
 </center>
 
 * USB kablosunu bilgisayar ve cihaz arasına bağlayın.
+
+* Cihazda bulunan firmware dosyasını güncellemek için öncelikle Serial Loader uygulaması açılır.
+
+Telediagram veya Mikrodiagram uygulamasına sağ tık yapılır, uygulamanın dosya konumu açılır. Serial Loader uygulaması açılan bu dosya içerisinde bulunur ve çalıştırılır.
 
 * "..." düğmesine tıklayın ve .mx3 uzantılı bellenimi seçin.
 
@@ -48,7 +52,9 @@ Mikrodev PLC, RTU, Remote IO ve Gateway ürün ailelerinin yazılımlarını USB
 
 </center>
 
-* Ürün yazılımı yüklemesinin bitmesini bekleyin
+* Ürün yazılımı yüklemesinin bitmesini bekleyin.
+
+* Cihazın otomatik ön yükleme moduna geçer, ekranda BootCmd> yazısı okunur.
 
 <center>
 

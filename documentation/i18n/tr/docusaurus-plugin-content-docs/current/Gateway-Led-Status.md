@@ -4,9 +4,6 @@ title: Gateway Led Durumları
 
 ## Önyükleme Durumu
 
-Ön Yükleme Durum özellikleri 
-
-
 PWR ve SYS ledleri sürekli yanar. ACT ledi periyodik olarak yanıp söner.
 
 <center>
