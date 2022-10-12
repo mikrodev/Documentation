@@ -371,7 +371,6 @@ After all blocks to be subscribed are determined, the project is loaded into the
 <center>
 
 ![mqtt_25](/img/mqtt_25.png)
-***<center>Figure 25</center>***
 
 </center>
 
@@ -380,7 +379,21 @@ When the message is published to the test2 topic with the above format, the fina
 <center>
 
 ![mqtt_26](/img/mqtt_26.png)
-***<center>Figure 26: Values of Subscribed</center>***
+***<center>Figure 25: Values of Subscribed</center>***
 
 </center>
 
+## SETTING UP MQTT CONNECTION WITH SSL
+
+Secure Sockets Layer (SSL) and Transport Layer security (TLS) are protocols that provide secure communications over a computer network or link. SSL/TLS provides data encryption, data integrity and authentication.
+
+“SSL Enabled” option in block special settings of Mqtt Config Block; It provides secure MQTT connection with SSL Certificate. This option only active in DM Series.
+
+In order to use this feature, an SSL Certificate must be uploaded on the device and the "SSL Enabled" option of the Mqtt Config block must be checked.
+
+<center>
+
+![mqtt_27](/img/mqtt_27.png)
+***<center>Figure 26: Config Block SSL Enabled Checked</center>***
+
+</center>
