@@ -129,11 +129,11 @@ Oluşturulan filtreler raporlama komut satırı üzerinden çağrılarak istenil
 
 Aşağıdaki adımlar takip edilir.
 
-ScadaReporter.exe    
--database  Proje veritabanının adı (proje ile aynı ad)  
+ScadaReporter.exe     
+-database  Proje veritabanının adı (proje ile aynı ad)   
 -user      Database kullanıcı adı    
 -password  Database kullanıcı şifresi    
--server    Database ip adresi 
+-server    Database ip adresi        
 -port      Database bağlantı portu    
 -tnsname   Oracle veritabanları için tns adı    
 -format    Rapor çıktı formu. Olası değerler html, csv, xlsx, xml   

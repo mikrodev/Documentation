@@ -135,14 +135,14 @@ When the filters in this menu are copied by right clicking with the mouse, the c
 It is possible to create the report output in the desired format by calling the created filters through the reporting command line. For this, it is enough to give the command parameters required for the reporting application. Using this feature, it is possible to create automatic reports at certain time intervals via the "Task Scheduler" of the Windows operating system.
 
 ScadaReporter.exe        
--database   Name of the project database (same name as project)
--user      Database user name
--password  Database user password
--server    Database ip address
--port      Database connection port
--tnsname   tns name for Oracle databases
--format    Report output form. Possible values are html, csv, xlsx, xml dir
--query     The name of the filter saved in the report. This parameter is required for the report command. If not given, we do not produce a report; The reporting interface opens
+-database   Name of the project database (same name as project)          
+-user      Database user name             
+-password  Database user password           
+-server    Database ip address            
+-port      Database connection port          
+-tnsname   tns name for Oracle databases          
+-format    Report output form. Possible values are html, csv, xlsx, xml dir        
+-query     The name of the filter saved in the report. This parameter is required for the report command. If not given, we do not produce a report; The reporting interface opens        
 -output    The path and name of the file to be exported.
 
 #### Sample Application 
