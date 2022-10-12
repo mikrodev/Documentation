@@ -47,6 +47,7 @@ module.exports = {
 		  "MODBUS-Application-Notes",
           "SNMP-Application-Notes",
 		  "DNP3-Application-Notes",
+		  "NTP-Application-Notes",
 		  "GSM-IP-Usage-Application-Notes",
 		  "Block-Descriptions-Notes",
     ],
