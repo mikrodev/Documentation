@@ -88,7 +88,7 @@ Etiket değeri 2'ye eşitse, simge adı "Siyah" olan resmi gösterir.
 
 Bu şekilde etiketin değerine göre ikon renkleri değişmektedir.
 
-Daha fazla görüntü eklemek için çalıştırma işlev koduna daha fazla if satırı ekleyebilirsiniz.
+Daha fazla görüntü eklemek için run function kısmına daha fazla if satırı ekleyebilirsiniz.
 
 ### Sonuçlar
 
