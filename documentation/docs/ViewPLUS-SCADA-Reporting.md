@@ -70,16 +70,18 @@ When the report sheet is first opened, the values of the selected tags are displ
 
 
 #### Selecting a Time Interval
-The time range of the displayed data can be selected in 3 different ways.
+The time range of the displayed data can be selected in 4 different ways.
 
-A) Interval : 2 dates are selected
-B) Within the last:  Hour, day, week, etc. are selected and the backward time from current date/time is calculated.
-C) On Time/Date: An exact date can be selected , or a time value could be added forwards or backwards to this date. For example, "This Day - 5", means "5 days ago". If the date is selected and time unit is "Month"; the month of that date is selected as the time interval.
+A) Interval : 2 dates are selected    
+B) Within the last:  Hour, day, week, etc. are selected and the backward time from current date/time is calculated.       
+C) On Time/Date: An exact date can be selected , or a time value could be added forwards or backwards to this date.     
+D) ... Time Ago: You can use minutes, hours, days, etc. to view a retrospective report from the day it was viewed. is selected.              
+For example, "Today - 5 Days" means "5 days ago". If "Today - 5 Month" is selected and the time unit is "Month"; The month of that date is selected as the time range.
 
 #### Selecting Data Type
 The type of data to be displayed can be statistical value as well as the value of the data itself.
 
-A) All Data: Shown  the actual value of the data that has been logged
+A) All Data: Shown  the actual value of the data that has been logged         
 B) Statistics: Displays the mean, total, maximum, minimum, change and median values of the data for the selected time periods. For example, if the hourly maximums in a daily time interval are selected, the time interval is divided into hourly slices to produce an output consisting of 24 points.
 
 
@@ -90,8 +92,9 @@ B) Statistics: Displays the mean, total, maximum, minimum, change and median val
 </center>
 
 
-#### Managing Charts
-Show/hide Legend button: Shows or shows the name of the plotted tag and descriptions that show line color in the upper right corner of the chart Add a New Chart: Adds a new chart object that you can compare the data in the main chart with the previous time periods. The added chart is displayed synchronously with the main chart according to the determined time interval.
+### Managing Charts
+Show/hide Legend button: Shows or shows the name of the plotted tag and descriptions that show line color in the upper right corner of the chart           
+Add a New Chart: Adds a new chart object that you can compare the data in the main chart with the previous time periods. The added chart is displayed synchronously with the main chart according to the determined time interval.
 
 
 <center>
@@ -103,9 +106,9 @@ Show/hide Legend button: Shows or shows the name of the plotted tag and descript
 
 If the data belonging to the selected item in the range defined on the chart is present, this data is indicated by a point. The points shown can be connected to each other in different ways. Underneath the chart is the charting properties menu for each individual chart. Through this menu, the following operations can be performed
 
-A) Show / hide chart: This line can be hidden and shown with this button
-B) Charged / unloaded: Below of the line related to the tag is filled in integral. It may be easier to compare with other tags in this way.
-C) Merge Points: The points indicated by the item data can be merged into different ways.
+A) Show / hide chart: This line can be hidden and shown with this button                 
+B) Charged / unloaded: Below of the line related to the tag is filled in integral. It may be easier to compare with other tags in this way.               
+C) Merge Points: The points indicated by the item data can be merged into different ways.               
 
 
 <center>
@@ -115,7 +118,7 @@ C) Merge Points: The points indicated by the item data can be merged into differ
 </center>
 
 
-#### Saving Charts
+### Saving Charts
 According to the selected parameters, the chart can be saved in an image file in "png" format. Use the "Save Chart " button in the left panel.
 
 ### Exporting Data
@@ -128,10 +131,10 @@ The parameters selected to create the data can be saved, and then the same filte
 #### Calling Saved Filter Queries
 When the filters in this menu are copied by right clicking with the mouse, the content of the filter is copied to the clipboard. This copied content can be linked to objects on the SCADA Editor screen. When clicked on the related object on this screen, the report screen opens and the predefined filter is run.
 
-## Creating Reporting Command
+### Creating Reporting Command
 It is possible to create the report output in the desired format by calling the created filters through the reporting command line. For this, it is enough to give the command parameters required for the reporting application. Using this feature, it is possible to create automatic reports at certain time intervals via the "Task Scheduler" of the Windows operating system.
 
-ScadaReporter.exe -database modpollread -user postgres -password pwd123 -server localhost -port 5432 -query twohours -format csv -output "C:\Users\yg\Documents\Reports\Last2Hours" 
+ScadaReporter.exe        
 -database   Name of the project database (same name as project)
 -user      Database user name
 -password  Database user password
@@ -141,3 +144,14 @@ ScadaReporter.exe -database modpollread -user postgres -password pwd123 -server 
 -format    Report output form. Possible values are html, csv, xlsx, xml dir
 -query     The name of the filter saved in the report. This parameter is required for the report command. If not given, we do not produce a report; The reporting interface opens
 -output    The path and name of the file to be exported.
+
+#### Sample Application 
+ScadaReporter.exe          
+-database modpollread       
+-user postgres          
+-password pwd123        
+-server localhost         
+-port 5432       
+-query twohours      
+-format csv       
+-output "C:\Users\yg\Documents\Reports\Last2Hours"
