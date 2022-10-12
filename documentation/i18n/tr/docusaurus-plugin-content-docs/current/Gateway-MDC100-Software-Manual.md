@@ -1,5 +1,5 @@
 ---
-title: MDC100 Software Manual
+title: MDC100 Yazılım Kılavuzu
 ---
 
 ## MODC Ağ Geçidi Yapılandırma Yazılımı
