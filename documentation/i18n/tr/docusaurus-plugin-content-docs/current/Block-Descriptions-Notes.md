@@ -138,9 +138,9 @@ Bloğun Ttk girişine düşen kenar bir sinyal (lojik(0)) belirlenen gecikme zam
 
 Yazmaç blokları, IEC 61131-3 programlama dilindeki değişkenlere karşılık gelmektedir. Değişkenler, program içinde kullanılacak değerlerini bir yerde tutulmasını sağlar. Değişkenin tanımlaması ise girilen veya programın getireceği veriye göre farklılık gösterir.
 
-(T/M) Word Yazmaç: 16-bit WORD (işaretsiz) tamsayı değerleri için plc projelerde değişken olarak kullanılır.
+(T/M) Word Yazmaç: 16-bit WORD (işaretsiz) tamsayı değerleri için PLC projelerde değişken olarak kullanılır.
 
-(T/M) Analog Yazmaç: 32-bit ANALOG (floating point) tamsayı değerleri için plc projelerde değişken olarak kullanılır. 
+(T/M) Analog Yazmaç: 32-bit ANALOG (floating point) tamsayı değerleri için PLC projelerde değişken olarak kullanılır. 
 
 (T/M) İkilik Bayrak: Giriş sinyalindeki değer, bir PLC çevrim gecikmesi ile blok çıkışına iletilir.
 
@@ -148,9 +148,9 @@ Yazmaç blokları, IEC 61131-3 programlama dilindeki değişkenlere karşılık 
 
 (T/M) Analog Bayrak: Giriş sinyalindeki değer, bir PLC çevrim gecikmesi ile blok çıkışına iletilir.
 
-(T/M) Long Yazmaç: 32-bit LONG (işaretli) tamsayı değerleri için plc projelerde değişken olarak kullanılır. 
+(T/M) Long Yazmaç: 32-bit LONG (işaretli) tamsayı değerleri için PLC projelerde değişken olarak kullanılır. 
 
-(T/M) İkilik Yazmaç: 1-bit BINARY (Boolean) tamsayı değerleri için plc projelerde değişken olarak kullanılır.
+(T/M) İkilik Yazmaç: BINARY (Boolean) tamsayı değerleri için PLC projelerde değişken olarak kullanılır.
 
 (T/M) Long Bayrak: Giriş sinyalindeki değer, bir PLC çevrim gecikmesi ile blok çıkışına iletilir.
 
