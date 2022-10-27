@@ -73,7 +73,7 @@ title: "Blok Açıklama Notları"
 
 (T/M) Çekmede Gecikme: Bloğun Ttk girişine yükselen kenar bir sinyal (lojik(1)) belirlenen gecikme zaman aralığı boyunca uygulanırsa; blok çıkış sinyali, gecikme süresi sona erdikten sonra durumunu lojik(0)'dan lojik(1)'e değiştirir.
 
-(T/M) Düşmede Gecikme: Bloğun Ttk girişine düşen kenar bir sinyal (lojik(0)) belirlenen gecikme zaman aralığı boyunca uygulanırsa; blok çıkış sinyali, gecikme süresi sona erdikten sonra durumunu lojik1)'den lojik(0)'a değiştirir.
+(T/M) Düşmede Gecikme: Bloğun Ttk girişine düşen kenar bir sinyal (lojik(0)) belirlenen gecikme zaman aralığı boyunca uygulanırsa; blok çıkış sinyali, gecikme süresi sona erdikten sonra durumunu lojik(1)'den lojik(0)'a değiştirir.
 
 (T/M) Çekme/Düşmede Gecikme: Bloğun Ttk girişine yükselen kenar bir sinyal (lojik(1)) belirlenen gecikme zaman aralığı boyunca uygulanırsa; blok çıkış sinyali, gecikme süresi sona erdikten sonra durumunu lojik(0)'dan lojik(1)'e değiştirir.      
 Bloğun Ttk girişine düşen kenar bir sinyal (lojik(0)) belirlenen gecikme zaman aralığı boyunca uygulanırsa; blok çıkış sinyali, gecikme süresi sona erdikten sonra durumunu lojik1)'den lojik(0)'a değiştirir.
@@ -94,13 +94,14 @@ Bloğun Ttk girişine düşen kenar bir sinyal (lojik(0)) belirlenen gecikme zam
 
 (T/M) Analog Karşılaştırıcı: 32-bit ANALOG (floating point) sayıları karşılaştırmak için kullanılır.
 
+(T/M) Long Karşılaştırıcı: 32-bit LONG (işaretli) sayıları karşılaştırmak için kullanılır.
+
 (T/M) Analog İşlem: ANALOG (IEE754 floating point) sayılar üzerinde matematiksel işlemler yapmak için kullanılır.
 
 (T/M) Word İşlem: İşlem sonucu maksimum 16-bit (0-65535) WORD olan matematiksel işlemlerde kullanılır..
 
 (T/M) Long İşlem: İşlem sonucu maksimum 32-bit LONG (işaretli tamsayı) olan matematiksel işlemlerde kullanılır.
 
-(T/M) Long Karşılaştırıcı: 32-bit LONG (işaretli) sayıları karşılaştırmak için kullanılır.
 
 
 
@@ -140,19 +141,19 @@ Yazmaç blokları, IEC 61131-3 programlama dilindeki değişkenlere karşılık 
 
 (T/M) Word Yazmaç: 16-bit WORD (işaretsiz) tamsayı değerleri için PLC projelerde değişken olarak kullanılır.
 
-(T/M) Analog Yazmaç: 32-bit ANALOG (floating point) tamsayı değerleri için PLC projelerde değişken olarak kullanılır. 
-
-(T/M) İkilik Bayrak: Giriş sinyalindeki değer, bir PLC çevrim gecikmesi ile blok çıkışına iletilir.
-
-(T/M) Word Bayrak: Giriş sinyalindeki değer, bir PLC çevrim gecikmesi ile blok çıkışına iletilir.
-
-(T/M) Analog Bayrak: Giriş sinyalindeki değer, bir PLC çevrim gecikmesi ile blok çıkışına iletilir.
+(T/M) Analog Yazmaç: 32-bit ANALOG (floating point) tamsayı değerleri için PLC projelerde değişken olarak kullanılır.
 
 (T/M) Long Yazmaç: 32-bit LONG (işaretli) tamsayı değerleri için PLC projelerde değişken olarak kullanılır. 
 
 (T/M) İkilik Yazmaç: BINARY (Boolean) tamsayı değerleri için PLC projelerde değişken olarak kullanılır.
 
+(T/M) Word Bayrak: Giriş sinyalindeki değer, bir PLC çevrim gecikmesi ile blok çıkışına iletilir.
+
+(T/M) Analog Bayrak: Giriş sinyalindeki değer, bir PLC çevrim gecikmesi ile blok çıkışına iletilir.
+
 (T/M) Long Bayrak: Giriş sinyalindeki değer, bir PLC çevrim gecikmesi ile blok çıkışına iletilir.
+
+(T/M) İkilik Bayrak: Giriş sinyalindeki değer, bir PLC çevrim gecikmesi ile blok çıkışına iletilir.
 
 
 
@@ -160,25 +161,25 @@ Yazmaç blokları, IEC 61131-3 programlama dilindeki değişkenlere karşılık 
 
 (T/M) Modbus RTU Efendi: MODBUS RTU Efendi bloğu, iletişim portu girişi üzerinden bağlanan fiziksel arayüz üzerinde MODBUS RTU Efendi protokolünü etkinleştirir.
 
-(T/M) Modbus Word Okuyucu: Tek bir 16-bit uzunluğundaki WORD sayı tutan Modbus yazmaç adresini okumak için kullanılır.
-
-(T/M) Modbus Float Okuyucu: 32-bit uzunluğundaki ANALOG (IEEE 754 floating point) sayı tutan 2 adet Modbus yazmaç adresini okumak için kullanılır.
-
-(T/M) Modbus Word Yazıcı: Tek bir 16-bit uzunluğundaki WORD sayıyı saklayan MODBUS yazmaç adresine yazmak için kullanılır.
-
-(T/M) Modbus Analog Yazıcı: 32-bit uzunluğundaki ANALOG (IEEE 754 floating point) sayıyı saklayan 2 MODBUS yazmaç adresine yazmak için kullanılır.
-
 (T/M) Modbus TCP Efendi: MODBUS TCP Efendi bloğu, iletişim portu girişi üzerinden bağlanan fiziksel arayüz üzerinde MODBUS TCP Efendi protokolünü etkinleştirir.
 
 (T/M) Modbus TCP Köle: MODBUS TCP Köle bloğu, iletişim portu girişi üzerinden bağlanan fiziksel arayüzde MODBUS TCP Köle protokolünü etkinleştirir.
 
 (T/M) Modbus RTU Köle: MODBUS RTU Köle bloğu, iletişim portu girişi üzerinden bağlanan fiziksel arayüzde MODBUS RTU Köle protokolünü etkinleştirir.
 
-(T/M) Modbus Oku/Yaz Tablosu: Sıralı giden bir Modbus adresinde tanımlı bir veya birden fazla yazmacın okunması ya da yazılmasında kullanılır.
+(T/M) Modbus Word Okuyucu: Tek bir 16-bit uzunluğundaki WORD sayı tutan Modbus yazmaç adresini okumak için kullanılır.
+
+(T/M) Modbus Float Okuyucu: 32-bit uzunluğundaki ANALOG (IEEE 754 floating point) sayı tutan 2 adet Modbus yazmaç adresini okumak için kullanılır.
 
 (T/M) Modbus Long Okuyucu: 32 bit uzunluğundaki LONG sayı tutan 2 adet Modbus yazmaç adresini okumak için kullanılır.
 
+(T/M) Modbus Word Yazıcı: Tek bir 16-bit uzunluğundaki WORD sayıyı saklayan MODBUS yazmaç adresine yazmak için kullanılır.
+
+(T/M) Modbus Analog Yazıcı: 32-bit uzunluğundaki ANALOG (IEEE 754 floating point) sayıyı saklayan 2 MODBUS yazmaç adresine yazmak için kullanılır.
+
 (T/M) Modbus Long Yazıcı: 32-bit uzunluğundaki LONG sayıyı saklayan 2 MODBUS yazmaç adresine yazmak için kullanılır.
+
+(T/M) Modbus Oku/Yaz Tablosu: Sıralı giden bir Modbus adresinde tanımlı bir veya birden fazla yazmacın okunması ya da yazılmasında kullanılır.
 
 (T/M) Modbus Gateway: MODBUS Modbus Gateway cihazları, Modbus TCP/RTU ağındaki Efendi ünitelerin, Modbus RTU/TCP ağındaki Köle ünitelere erişebilmesi için geçit oluşturmakta kullanılır.
 
@@ -218,13 +219,13 @@ Yazmaç blokları, IEC 61131-3 programlama dilindeki değişkenlere karşılık 
 
 (T/M) Analog Tablo: Eklenen Analog değerleri tabloda tutar. Tablo boyutu girilen Analog yazmaç sayısının 4 katı seçilmelidir.
 
-(T/M) Word Tablo İşlemleri: Tablo verileri üzerinde tanımlanan işlemi yapar ve sonucu bloğun çıkışına yazar.
-
-(T/M) Analog Tablo İşlemleri: Tablo verileri üzerinde tanımlanan işlemi yapar ve sonucu bloğun çıkışına yazar.
-
 (T/M) Long Tablo: Eklenen Long değerleri tabloda tutar. Tablo boyutu girilen Long yazmaç sayısının 4 katı seçilmelidir.
 
 (T/M) Bit Tablo: Eklenen Binary değerleri tabloda tutar. Tablo boyutu girilen İkilik yazmaç sayısı ile aynı seçilmelidir.
+
+(T/M) Word Tablo İşlemleri: Tablo verileri üzerinde tanımlanan işlemi yapar ve sonucu bloğun çıkışına yazar.
+
+(T/M) Analog Tablo İşlemleri: Tablo verileri üzerinde tanımlanan işlemi yapar ve sonucu bloğun çıkışına yazar.
 
 (T/M) Long Tablo İşlemleri: Tablo verileri üzerinde tanımlanan işlemi yapar ve sonucu bloğun çıkışına yazar.
 
@@ -250,7 +251,7 @@ Yazmaç blokları, IEC 61131-3 programlama dilindeki değişkenlere karşılık 
 
 (T/M) Yüzer Motor: Oransal veya PID kontrol uygulamalarında kullanılır. Blok “YKB0” çıkışından gönderilen lojik (1) sinyal süresi kadar çıkışa bağlı ekipman açılacaktır. Bloğun “Kap” çıkışından gönderilen lojik (1) sinyal süresi kadar çıkışa bağlı ekipman kapanacaktır.
 
-(T/M) Yaşlandırma Yöneticisi: Bloğun "Etk" girişine lojik(1) sinyali geldiği sürece, blok aktif hale gelir ve bağlı olan yaşlandırmaq üyelerini etkinleştirir.
+(T/M) Yaşlandırma Yöneticisi: Bloğun "Etk" girişine lojik(1) sinyali geldiği sürece, blok aktif hale gelir ve bağlı olan yaşlandırma üyelerini etkinleştirir.
 
 (T/M) Yaşlandırma Üyesi: Birden fazla ekipmanın belirli bir süre boyunca sırayla başlatılması ve durdurulması gereken uygulamalarda kullanılır.
 
@@ -272,7 +273,7 @@ Yazmaç blokları, IEC 61131-3 programlama dilindeki değişkenlere karşılık 
 
 ### Çoklu Seçici Blokları
 
-(T/M)  Analog Dörtlü Seçici: Bloğun girişlerindeki 4 farklı bağlantıdan birinin seçilip çıkışa verilmesi gerektiği durumlarda kullanılır. 
+(T/M) Analog Dörtlü Seçici: Bloğun girişlerindeki 4 farklı bağlantıdan birinin seçilip çıkışa verilmesi gerektiği durumlarda kullanılır. 
 
 (T/M) Word İkili Seçici: Bloğun girişlerindeki 2 farklı bağlantıdan birinin seçilip çıkışa verilmesi gerektiği durumlarda kullanılır. 
 
