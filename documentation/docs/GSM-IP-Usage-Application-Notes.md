@@ -1,5 +1,5 @@
 ---
-title: "GSM IP USAGE"
+title: "GSM IP Usage Application Notes"
 ---
 
 ## Overview

@@ -1,5 +1,5 @@
 ---
-title: "GSM IP Kullanımı"
+title: "GSM IP Kullanımı Uygulama Notu"
 ---
 
 ## Genel Bakış
