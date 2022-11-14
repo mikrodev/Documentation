@@ -12,10 +12,10 @@ module.exports = {
 		'ViewPLUS-SCADA-Map-Page',
 		'ViewPLUS-SCADA-Change-Map-Icons',
 		'ViewPLUS-SCADA-Template-Page',
+		'ViewPLUS-SCADA-Mail-Server-Service',
 		'ViewPLUS-SCADA-Example-Projects',
-		
-		
     ],
+	
 	"Mikrodiagram": [
     ],
 	    "Mikrodiagram": [
@@ -31,10 +31,12 @@ module.exports = {
         "PLC-MP110-Series-Software-Manual",  
 		"PLC-MP211-Series-Software-Manual",		
     ],
+	
 	"Telediagram": [
 	    'Telediagram-Editor',
         "RTU-RTU300-Series-Software-Manual",  		
     ],
+	
 	"Assistant": [
 		  "Gateway-MBS100-Software-Manual",
 		  "Gateway-MMS100-Software-Manual",
