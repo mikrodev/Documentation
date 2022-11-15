@@ -32,6 +32,8 @@ This file contains the SMTP part.
 
 SMTP_user = < E-mail Address > // Enter the e-mail address that will send the mail.
 
+SMTP_pwd = < Application Password > // A password must be obtained for the scada application from the account that will send the mail. (This section is explained under the heading Getting Gmail Application Password.)
+
 SMTP_host = < SMTP Server Address > // SMTP Server Address of the e-mail address is entered. (For Gmail, smtp.gmail.com should be written.)    
 
 SMTP_port = < SMTP Server Port > // Enter the SMTP Server Port of the e-mail address. (For Gmail, 465 should be written.)
