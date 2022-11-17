@@ -1284,7 +1284,7 @@ CBS Object'in Kategori kısmında Marker seçilip yeni kategori olarak noktayı 
 
 ## ViewPLUS SCADA Kanalları
 
-### Modbus TCP
+### Kanal: Modbus TCP
 
 ModBus protokolünü kullanarak TCP üzerinden saha cihazlarıyla iletişim kurmak için yeni bir Modbus Kanalı oluşturmalısınız.
 
@@ -1360,7 +1360,7 @@ Tanımlanan adresteki değişkenin boyutu
 Tanımlanan adresteki değişkenin tipi
 
 
-### IEC 104 Protokolü
+### Kanal: IEC 104 
 
 Sahadaki cihazlarla TCP üzerinden IEC 104 protokolü kullanarak haberleşmek için yeni bir IEC 104 Kanalı 
 oluşturmalısınız.
@@ -1526,18 +1526,13 @@ SNMP Sunucu Bağlantı Noktası varsayılanı 161.
 
 
 
-### Makro Kanalı
+### Kanal: Makro 
 Bu kanal, sanal etiketler oluşturmak ve bunları komut dosyalarıyla değiştirmek için kullanılır.
 
 Ayrıntılı bilgi için: [Makro Kanal Tanımları](https://www.youtube.com/watch?v=oA8lWr3p_wc&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=25).
 
 #### Kanal Parametreleri
 
-<center>
-
-![macrokanalı](/img/macrokanalı.png)
-***<center>Şekil 1: Macro Channel Screen</center>***
-</center>
 
 
 #### Kare Zaman Aşımı
