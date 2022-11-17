@@ -585,7 +585,7 @@ Nesnenin görünümüyle ilgili bazı ayarları içerir.
 ```
 Font X Offset : Used to add a horizontal offset to the position of the text to be printed on the object, relative to the upper left corner of the object.  
 Font Offset : Used to add a vertical offset to the position of the text to be printed on the object, relative to the upper left corner of the object.  
-Text Content : It is the field in which the display format of the "Text Label" defined in "Feature Tags" is configured. The "formatted" text entered here is printed on the component. The text to be entered must be in "printf text format". The following examples can be used for formatting:
+Text Content : It is the field in which the display format of the "Text Label" defined in "Feature Tags" is conŞekild. The "formatted" text entered here is printed on the component. The text to be entered must be in "printf text format". The following examples can be used for formatting:
 
 Integer             :% d    => "1977"  
 Add leading spaces  :% 10d  => "1977"  
@@ -1242,7 +1242,7 @@ Proje dosyası parolasını kaldırmak için projeyi etkinleştirme koruması ka
 <center>
 
 ![password-02](/img/password-02.png)
-***<center>Figure 2: Delete Password</center>***
+***<center>Şekil 2: Delete Password</center>***
 
 </center>
 
@@ -1255,7 +1255,7 @@ ArcGIS haritasını kullanmak için CBS ayarları altında bulunan Projeler men�
 <center>
 
 ![arcgis-map-01](/img/arcgis-map-01.png)
-***<center>Figure 1: ArcGIS Configuration</center>***
+***<center>Şekil 1: ArcGIS Configuration</center>***
 
 </center>
 
@@ -1264,7 +1264,7 @@ ArcGIS haritası, sayfanın sağ tarafında bulunan Sayfa Özellikleri menüsün
 "GIS Objects" menüsü altındaki işaretçi ikonu kullanılarak harita üzerine işaretler eklenebilir veya haritaya eklenen işaretler, işaret sil ikonu kullanılarak silinebilir.
 
 ![arcgis-map-02](/img/arcgis-map-02.png)
-***<center>Figure 2: ArcGIS MAP Visibility Configuration</center>***
+***<center>Şekil 2: ArcGIS MAP Visibility Configuration</center>***
 
 İşaretçi simgeleri yeni kategoriler oluşturularak değiştirilebilir ve işaretçiler bir kategori altında gruplandırılabilir.
 
@@ -1273,18 +1273,18 @@ Yeni bir kategori oluşturmak için CBS Nesnesi menüsünden Kategori satırınd
 <center>
 
 ![arcgis-map-03](/img/arcgis-map-03.png)
-***<center>Figure 3: Adding New GIS Object Category</center>***
+***<center>Şekil 3: Adding New GIS Object Category</center>***
 
 </center>
 
 CBS Object'in Kategori kısmında Marker seçilip yeni kategori olarak noktayı seçiyoruz. Böylece ikon ve kategori seçimi tamamlanmış olur.
 
 ![arcgis-map-04](/img/arcgis-map-04.png)
-***<center>Figure 4: Demonstration of New Category Point That is Created as GIS Object.</center>***
+***<center>Şekil 4: Demonstration of New Category Point That is Created as GIS Object.</center>***
 
-## ViewPLUS SCADA Channels
+## ViewPLUS SCADA Kanalları
 
-### Channel: Modbus TCP
+### Modbus TCP
 
 ModBus protokolünü kullanarak TCP üzerinden saha cihazlarıyla iletişim kurmak için yeni bir Modbus Kanalı oluşturmalısınız.
 
@@ -1317,7 +1317,7 @@ Modbus Protokolü, modbus adresi için 125 yazmaca kadar okuma/yazmayı destekle
 <center>
 
 ![modbuskanal](/img/modbuskanal.png)
-***<center>Figure 1: Modbus Channel Screen</center>***
+***<center>Şekil 1: Modbus Channel Screen</center>***
 
 </center>
 
@@ -1344,7 +1344,7 @@ için beklenecek milisaniye cinsinden süredir
 <center>
 
 ![modbustag](/img/modbustag.png)
-***<center>Figure 2: Modbus Tag Screen</center>***
+***<center>Şekil 2: Modbus Tag Screen</center>***
 
 </center>
 
@@ -1370,7 +1370,7 @@ oluşturmalısınız.
 <center>
 
 ![kanal-104](/img/kanal-104.png)
-***<center>Figure 1: IEC 104 Channel Screen</center>***
+***<center>Şekil 1: IEC 104 Channel Screen</center>***
 
 </center>
 
@@ -1401,7 +1401,7 @@ Sunucu bilgisayarın timezone bildgisi
 <center>
 
 ![tag-104](/img/tag-104.png)
-***<center>Figure 2: IEC 104 Tag Screen</center>***
+***<center>Şekil 2: IEC 104 Tag Screen</center>***
 
 </center>
 
@@ -1460,7 +1460,7 @@ Okunacak RTU cihazından etiketin adres bilgisi girilir.
 <center>
 
 ![variable-iec](/img/variable-iec.png)
-***<center>Figure 3: Telediagram Variable Addresses Field</center>***
+***<center>Şekil 3: Telediagram Variable Addresses Field</center>***
 
 </center>
 
@@ -1475,7 +1475,7 @@ DNP3 protokolünü kullanarak TCP üzerinden saha cihazlarıyla iletişim kurmak
 <center>
 
 ![dnp3-ch](/img/dnp3-ch.png)
-***<center>Figure 1: DNP3 Channel Screen</center>***
+***<center>Şekil 1: DNP3 Channel Screen</center>***
 </center>
 
 
@@ -1497,7 +1497,7 @@ Belirtilen zaman aralıklarında sorguyu bir bütün olarak gerçekleştirir.
 <center>
 
 ![dnp3-tag](/img/dnp3-tag.png)
-***<center>Figure 2: DNP3 Tag Screen</center>***
+***<center>Şekil 2: DNP3 Tag Screen</center>***
 </center>
 
 
@@ -1509,7 +1509,7 @@ Bu kanal SNMP cihazlarına bağlanmak için kullanılır. Bu kanal türünün ç
 <center>
 
 ![snmp-ch](/img/snmp-ch.png)
-***<center>Figure 1: SNMP Channel Screen</center>***
+***<center>Şekil 1: SNMP Channel Screen</center>***
 </center>
 
 #### Sunucu IP'si
@@ -1521,7 +1521,7 @@ SNMP Sunucu Bağlantı Noktası varsayılanı 161.
 <center>
 
 ![snmp-tag](/img/snmp-tag.png)
-***<center>Figure 2: SNMP Tag Screen</center>***
+***<center>Şekil 2: SNMP Tag Screen</center>***
 </center>
 
 
@@ -1535,8 +1535,8 @@ Ayrıntılı bilgi için: [Makro Kanal Tanımları](https://www.youtube.com/watc
 
 <center>
 
-![macro-kanal](/img/macro-kanal.png)
-***<center>Figure 1: Macro Channel Screen</center>***
+![macrokanalı](/img/macrokanalı.png)
+***<center>Şekil 1: Macro Channel Screen</center>***
 </center>
 
 
@@ -1547,7 +1547,7 @@ Makronun çalışma sıklığını ifade eden milisaniye cinsinden süre.
 <center>
 
 ![macro-channel](/img/macro-channel.png)
-***<center>Figure 2: Macro Programming Screen</center>***
+***<center>Şekil 2: Macro Programming Screen</center>***
 
 </center>
 
@@ -1555,7 +1555,7 @@ Makronun çalışma sıklığını ifade eden milisaniye cinsinden süre.
 <center>
 
 ![macro-komut](/img/macro-komut.png)
-***<center>Figure 3: Macro Commands</center>***
+***<center>Şekil 3: Macro Commands</center>***
 
 </center>
 
@@ -1587,7 +1587,7 @@ Sorgu penceresine sorgular girilir. Sorguya verilen yanıtlar yine aynı etikett
 <center>
 
 ![database-channel](/img/database-channel.png)
-***<center>Figure 1: Database Channel Screen</center>***
+***<center>Şekil 1: Database Channel Screen</center>***
 
 </center>
 
@@ -1597,14 +1597,14 @@ Veritabanı sorgusunun yürütülme sıklığını temsil eden milisaniye sayıs
 <center>
 
 ![database-tag](/img/database-tag.png)
-***<center>Figure 2: Database Tag Screen</center>***
+***<center>Şekil 2: Database Tag Screen</center>***
 
 </center>
 
 <center>
 
 ![database-query](/img/database-query.png)
-***<center>Figure 3: Database Query Screen</center>***
+***<center>Şekil 3: Database Query Screen</center>***
 
 </center>
 
@@ -1629,14 +1629,14 @@ Farklı veritabanlarına bağlanarak özel sorgular oluşturmak ve bu sorgu sonu
 <center>
 
 ![global-channel](/img/global-channel.png)
-***<center>Figure 1: GlobalDatabase Channel Screen</center>***
+***<center>Şekil 1: GlobalDatabase Channel Screen</center>***
 
 </center>
 
 <center>
 
 ![db-user](/img/db-user.png)
-***<center>Figure 2: Database Name</center>***
+***<center>Şekil 2: Database Name</center>***
 
 </center>
 
@@ -1647,7 +1647,7 @@ Veritabanı sorgusunun yürütülme sıklığını temsil eden milisaniye sayıs
 <center>
 
 ![globaldatabase-tag](/img/globaldatabase-tag.png)
-***<center>Figure 3: GlobalDatabase Tag Screen</center>***
+***<center>Şekil 3: GlobalDatabase Tag Screen</center>***
 
 </center>
 
@@ -1656,7 +1656,7 @@ Veritabanı sorgusunun yürütülme sıklığını temsil eden milisaniye sayıs
 <center>
 
 ![database-query](/img/database-query.png)
-***<center>Figure 4: GlobalDatabase Query Screen</center>***
+***<center>Şekil 4: GlobalDatabase Query Screen</center>***
 
 </center>
 
@@ -1689,7 +1689,7 @@ JavaScript fonksiyonları JavaScript kanalı tanımlanabilir. Komut dosyanızda 
 <center>
 
 ![jv-ch](/img/jv-ch.png)
-***<center>Figure 1: JavaScript Channel Screen</center>***
+***<center>Şekil 1: JavaScript Channel Screen</center>***
 
 </center>
 
@@ -1723,13 +1723,13 @@ Bir SOAP Web Hizmetine bağlanmak ve sorgu sonuçlarını proje etiketlerine ile
 <center>
 
 ![webapi-ch](/img/webapi-ch.png)
-***<center>Figure 1: SOAP API Channel Screen</center>***
+***<center>Şekil 1: SOAP API Channel Screen</center>***
 </center>
 
 <center>
 
 ![webapi-tag](/img/webapi-tag.png)
-***<center>Figure 1: SOAP API Tag Screen</center>***
+***<center>Şekil 1: SOAP API Tag Screen</center>***
 </center>
 
 #### Yanıt Zaman Aşımı
@@ -1796,7 +1796,7 @@ Yanıtın sonucunu etiketlere yazma yöntemi aşağıdaki gibidir:
 <center>
 
 ![soap-channel-01](/img/soap-channel-01.png)
-***<center>Figure 3: Create Database Channel Screen</center>***
+***<center>Şekil 3: Create Database Channel Screen</center>***
 
 </center>
 
@@ -1821,7 +1821,7 @@ Mikrodev Client, yayıncı birimlerinden gelen mesajları alır ve abone olunan 
 Mikrodev Client'ın çalışma yapısı aşağıdaki resimde anlatılmaktadır.
 
 ![mqtt client](/img/mqtt-client.png)
-***<center>Figure 1: General Structure of Mikrodev Client</center>***
+***<center>Şekil 1: General Structure of Mikrodev Client</center>***
 
 Mikrodev Client aşağıdaki veri türlerini destekler.
 
@@ -1838,7 +1838,7 @@ Aboneler Mikrodev Client'a bildirdikleri konulara göre mesaj alan birimlerdir.
 
 <img src="/img/structure-of-subscriber.png" align="center" width="500" height="500"/>
 
-***<center>Figure 2: Structure of Subscriber Unit</center>***
+***<center>Şekil 2: Structure of Subscriber Unit</center>***
 
 </center>
 
@@ -1870,7 +1870,7 @@ Yayıncı birimleri tarafından Mikrodev Client'a gönderilen payload yapısı a
 Yayıncılar, mesaj yayınlayan ve yayınlamak istedikleri mesajı güncel bilgilerle birlikte aracı birime ileten birimlerdir. Mikrodev Client, mesajı ilgili konuya üye olan abone birimlerine iletir.
 
 ![structure publisher](/img/structure-of-publisher.png)
-***<center>Figure 3: Structure of Mikrodev Client for Publishing Data</center>***
+***<center>Şekil 3: Structure of Mikrodev Client for Publishing Data</center>***
 
 Mikrodev Client tarafından abone birimlerine iletilen payload yapıları aşağıdaki gibidir.
 #### Örnek 1:
@@ -1918,7 +1918,7 @@ Kısıtlı erişim gerektiren dinamik sayfa için ilgili nesnede "Run Function" 
 <center>
 
 ![text-component-text-01](/img/text-component-text-01.png)
-***<center>Figure 1: Adding a Description for a Tag</center>***
+***<center>Şekil 1: Adding a Description for a Tag</center>***
 
 </center>
 
@@ -1927,7 +1927,7 @@ Açıklama metnini görüntülemek için, "Nesne Özellikleri" bileşenindeki "M
 <center>
 
 ![text-component-text-02](/img/text-component-text-02.png)
-***<center>Figure 2: Assigning :TAGDESC Function to a Tag</center>***
+***<center>Şekil 2: Assigning :TAGDESC Function to a Tag</center>***
 
 </center>
 
@@ -1936,7 +1936,7 @@ Oluşturulan etiket, bileşenin "Etiketler" menüsü altındaki "Etiket Metni" b
 <center>
 
 ![text-component-text-03](/img/text-component-text-03.png)
-***<center>Figure 3: Assigning Label Tag Under Tags Menu of The Component</center>***
+***<center>Şekil 3: Assigning Label Tag Under Tags Menu of The Component</center>***
 
 </center>
 
@@ -1945,7 +1945,7 @@ TAGDESC fonksiyonunun tanımlanan işlemlerine göre, bileşen üzerinde etiket 
 <center>
 
 ![text-component-text-04](/img/text-component-text-04.png)
-***<center>Figure 4: Displaying Tag Description of Component</center>***
+***<center>Şekil 4: Displaying Tag Description of Component</center>***
 
 </center>
 
@@ -1958,7 +1958,7 @@ Aşağıdaki resimde iki kanala ayrılmış ve değiştirilecek olan etiketlerin
 <center>
 
 ![dynamic-pages-01](/img/dynamic-pages-01.png)
-***<center>Figure 1: Defined Tags and Channels</center>***
+***<center>Şekil 1: Defined Tags and Channels</center>***
 
 </center>
 
@@ -1967,21 +1967,21 @@ Referans etiketleri, referans sayfasındaki bileşenlere atanır.
 <center>
 
 ![dynamic-pages-02](/img/dynamic-pages-02.png)
-***<center>Figure 2: Assigning The Tags to The Components on The Reference Page</center>***
+***<center>Şekil 2: Assigning The Tags to The Components on The Reference Page</center>***
 
 </center>
 
 “Run Function” parametresinde “RegionA = RegionB” bilgisi, yönlendirilen sayfada “RegionA” ile başlayan tag adlarını “RegionB” ile başlayan tag isimleri ile değiştirir.
 
 ![dynamic-pages-03](/img/dynamic-pages-03.png)
-***<center>Figure 3: Run Function Configuration for Desired Components</center>***
+***<center>Şekil 3: Run Function Configuration for Desired Components</center>***
 
 A Bölgesi butonuna tıklandığında Bölge isimli açılır sayfa açılır ve bileşenler üzerinde tanımlanan referans etiket bilgileri ekrana gelir.
 
 <center>
 
 ![dynamic-pages-04](/img/dynamic-pages-04.png)
-***<center>Figure 4: Displaying The Pop-Up Page That Shows Run Function Configuration for Region A</center>***
+***<center>Şekil 4: Displaying The Pop-Up Page That Shows Run Function Configuration for Region A</center>***
 
 </center>
 
@@ -1990,7 +1990,7 @@ Bölge B butonuna tıklandığında Bölgeler isimli bir açılır sayfa açıl�
 <center>
 
 ![dynamic-pages-05](/img/dynamic-pages-05.png)
-***<center>Figure 5: Displaying The Pop-Up Page That Shows Run Function Configuration for Region B</center>***
+***<center>Şekil 5: Displaying The Pop-Up Page That Shows Run Function Configuration for Region B</center>***
 
 </center>
 
@@ -1999,7 +1999,7 @@ Dinamik sayfadan farklı sayfalara yönlendirme yapılırken dinamik yapının k
 <center>
 
 ![dynamic-pages-06](/img/dynamic-pages-06.png)
-***<center>Figure 6: Configuration for "Run Function" for Dynamic Page Redirection</center>***
+***<center>Şekil 6: Configuration for "Run Function" for Dynamic Page Redirection</center>***
 
 </center>
 
@@ -2012,7 +2012,7 @@ Kırmızı ile işaretlenmiş alan, Navigasyon panelini gösterir. Panel boyutu,
 <center>
 
 ![navigation-panel-01](/img/navigation-panel-01.png)
-***<center>Figure 1: Navigation Panel</center>***
+***<center>Şekil 1: Navigation Panel</center>***
 
 </center>
 
@@ -2021,7 +2021,7 @@ Navigasyon panelinde işlem yapmak için mouse ile sağ tıklayın ve görüntü
 <center>
 
 ![navigation-panel-02](/img/navigation-panel-02.png)
-***<center>Figure 2: Adding Folder in Navigation Panel</center>***
+***<center>Şekil 2: Adding Folder in Navigation Panel</center>***
 
 </center>
 
@@ -2032,7 +2032,7 @@ Oluşturulan klasör üzerinde işlem yapmak için seçilen klasöre sağ tıkla
 <center>
 
 ![navigation-panel-03](/img/navigation-panel-03.png)
-***<center>Figure 3: Adding Page Link Into The Created Folder</center>***
+***<center>Şekil 3: Adding Page Link Into The Created Folder</center>***
 
 </center>
 
@@ -2041,21 +2041,21 @@ SCADA sayfalarını klasöre taşımak için klasöre sağ tıklayın ve “Sayf
 "Görüntü Metni" parametresi ile sayfanın adı tanımlanabilir ve "Şablon Fonksiyonunu Çalıştır" parametresi ile dinamik yapı kullanılabilir.
 
 ![navigation-panel-04](/img/navigation-panel-04.png)
-***<center>Figure 4: Configuration for Page Link</center>***
+***<center>Şekil 4: Configuration for Page Link</center>***
 
 Şekil 5'te gezinme panelindeki klasöre eklenen "Page1.sca" sayfasını görebilirsiniz.
 
 <center>
 
 ![navigation-panel-05](/img/navigation-panel-05.png)
-***<center>Figure 5: Displaying Added Page Link</center>***
+***<center>Şekil 5: Displaying Added Page Link</center>***
 
 </center>
 
 Navigasyon paneli Client ekranındaki pencere sekmesinden açılıp kapatılabilir.
 
 ![navigation-panel-06](/img/navigation-panel-06.png)
-***<center>Figure 6: Navigation Panel Display Option on ViewPLUS Client</center>***
+***<center>Şekil 6: Navigation Panel Display Option on ViewPLUS Client</center>***
 
 ## Sunucu Yazılımı
 

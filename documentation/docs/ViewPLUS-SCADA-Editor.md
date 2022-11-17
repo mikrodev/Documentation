@@ -1462,7 +1462,7 @@ SNMP Server Port default 161.
 
 
 
-### Macro Channel
+### Channel: Macro
 This channel is used to create virtual tags and modify them with scripts.
 
 For detailed information: [Macro Channel Definitions](https://www.youtube.com/watch?v=oA8lWr3p_wc&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=25).
@@ -1471,13 +1471,14 @@ For detailed information: [Macro Channel Definitions](https://www.youtube.com/wa
 
 <center>
 
-![macro-kanal](/img/macro-kanal.png)
-***<center>Figure 1: Macro Channel Screen</center>***
-</center>
+![macrokanalı](/img/macrokanalı.png)
+***<center>Figure 2: Macro Channel Screen</center>***
 
+</center>
 
 #### Frame Timeout
 The time in milliseconds that expresses the frequency of operation of the macro.
+
 #### Tag Parameters
 
 <center>
@@ -1620,7 +1621,7 @@ An example "Query" expression:
 
 In the above PostgreSQL database query, the latest recorded database values of the tags 19, 20, 29, and 26 are written into the tags with 32, 33, 34, 35 IDs, respectively.
 
-### Channel: JavaScript Channel
+### Channel: JavaScript                  
 JavaScript functions could be defined JavaScript channel. You can call various Math functions in your script[Reference](https://www.w3schools.com/jsref/jsref_obj_math.asp). You can also use the values of system tags in the form of "${123}". You need to "return" a numeric value for the function result to be written on the "JavaScript Tag"
 
 #### Channel Parameters
@@ -1654,7 +1655,7 @@ ${20}= 3 + var1 ;
 
 For detailed information: [Javascript Channel Definitions](https://www.youtube.com/watch?v=YKGy4F4Z8-I&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=28).
 
-### Channel: SOAP API Channel
+### Channel: SOAP API               
 It is the type of channel used to connect to a SOAP Web Service and to pass the query results into project tags.
 
 #### Channel Parameters
