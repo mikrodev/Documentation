@@ -1541,7 +1541,7 @@ Makronun çalışma sıklığını ifade eden milisaniye cinsinden süre.
 
 <center>
 
-![macro-channel](/img/macro-channel.png)
+![macrokanalı](/img/macrokanalı.png)
 ***<center>Şekil 2: Macro Programming Screen</center>***
 
 </center>
