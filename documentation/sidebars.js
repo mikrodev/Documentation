@@ -51,6 +51,7 @@ module.exports = {
 		  "DNP3-Application-Notes",
 		  "NTP-Application-Notes",
 		  "GSM-IP-Usage-Application-Notes",
+		  "IEC61850-Application-Notes",
 		  "Block-Descriptions-Notes",
     ],
     },
