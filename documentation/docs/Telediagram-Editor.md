@@ -222,19 +222,23 @@ W: ACK(acknowledge message) sending frequency(sends ACK after W packets)
 
 Alias: A special name is given that defines this defined variable.
 
-Start Address:The address allocated for this variable on SCADA is written here. It is written as a decimal value
+Start Address: The address allocated for this variable on SCADA is written here. It is written as a decimal value
 
-Line Label:The block to be associated on the Mikrodiagram is selected with the line label.
+Line Label: The block to be associated on the Mikrodiagram is selected with the line label.
 
-Point Count:Calculated automatically. It makes sense on tables.
+Point Count: Calculated automatically. It makes sense on tables.             
 
-Protocol Type:Modbus, Dnp3, IEC101, IEC104 are selected. Object type will change according to protocol type.
+Quality Register Block:  Block entry to define Quality Register.
 
-Object Type:IEC104 object type information selected. look the protocol type information for detailed information.
+Send Trig Block:  If you want to send IEC104 data with an independent trigger from the trigger input of the block, the trigger block is selected from this section and the periodic send option in the block special settings must not be ticked in order to send trigger-dependent data here.
 
-Object Class:The class information to which the variable belongs is selected.
+Protocol Type: Modbus, Dnp3, IEC101, IEC104 are selected. Object type will change according to protocol type.
 
-Send On Trigger:IEC104 Slave block is the selection to send to this SCADA as a periodic send when the test is detected from the trigger input.
+Object Type: IEC104 object type information selected. look the protocol type information for detailed information.
+
+Object Class: The class information to which the variable belongs is selected.
+
+Send On Trigger: IEC104 Slave block is the selection to send to this SCADA as a periodic send when the test is detected from the trigger input.
 
 ####  Send Method:
 If the value of the defined variable is changed, the operation to be performed is selected.
@@ -369,6 +373,14 @@ The block to be associated with on the microdiagram is selected by the line labe
 
 It is calculated automatically. It makes sense in tables.
 
+● Quality Register Block:       
+
+Block entry to define Quality Register.
+
+● Send Trig Block:      
+
+If you want to send IEC104 data with an independent trigger from the trigger input of the block, the trigger block is selected from this section and the periodic send option in the block special settings must not be ticked in order to send trigger-dependent data here.
+
 ● Protocol Type:
 
 Modbus, Dnp3, iec101, iec104 to choosing from among them. The Object Type will change according to the protocol type.
@@ -442,7 +454,7 @@ The write variable is also automatically generated for each block mapped to the 
 
 In the variable address table, the send in change selection is available for DNP3 objects. When the value of the variable defined in this menu changes, the operation to be performed is selected.
 
-None: Spinner does not trigger submission
+●   None: Spinner does not trigger submission
 
 ●	Level: when the amount defined in “Change Value” is changed, the sending is triggered.
 
@@ -465,7 +477,7 @@ If the connection exists with the server and the events detected with the “UNS
 
 #### DNP3 Time-Tagged Submission Of Event States
 
-Event Controls continue passively sending “UNSOLICED” even if there is connection to the server or even if there is no connection. In the event of an event under these circumstances, event information is recorded in the event memory with the time tag and this data is kept in the device as CLASS 1 data.
+Event Controls continue passively sending “UNSOLICED” even if there is connection to the server or even if there is no connection. In the event of an event under these circumstances, event information is recorded in the event memory with the time tag and this data is kept in the device as CLASS 1 data.             
 This event data stored in memory can be read by the server with Class 1 data read management. This CLASS 1 data is also automatically forwarded to the server by RTU if” UNSOLICED " sending is enabled.
 
 Class 1 event data is dispatched with the DNP3 object types specified in the following table.
