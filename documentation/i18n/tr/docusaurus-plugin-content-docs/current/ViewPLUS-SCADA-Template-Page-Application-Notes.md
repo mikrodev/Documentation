@@ -1,5 +1,5 @@
 ---
-title: "ViewPLUS SCADA Referans Sayfası"
+title: "ViewPLUS SCADA Referans Sayfası Uygulama Notu"
 ---
 
 ViewPLUS Scada uygulamasında bir sayfa tasarımı ile aynı tipte birden çok noktanın verisi gösterilebilmektedir.

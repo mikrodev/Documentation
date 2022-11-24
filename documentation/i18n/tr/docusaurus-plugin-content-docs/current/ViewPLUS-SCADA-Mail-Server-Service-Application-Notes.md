@@ -1,5 +1,5 @@
 ---
-title: "ViewPLUS SCADA Mail Server Hizmeti"
+title: "ViewPLUS SCADA Mail Server Hizmeti Uygulama Notu"
 ---
 
 Scada projesinde tanımlı olan kullanıcıların e-posta adresleri girilerek, alarm durumlarında burada yer alan e-posta adreslerine mail atılması sağlanabilir.

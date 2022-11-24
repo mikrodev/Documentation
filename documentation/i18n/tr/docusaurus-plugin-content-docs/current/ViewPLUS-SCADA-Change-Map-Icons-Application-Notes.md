@@ -1,5 +1,5 @@
 ---
-title: ViewPLUS SCADA Harita İkonları 
+title: ViewPLUS SCADA Harita İkonları  Uygulama Notu
 ---
 
 ## Giriş

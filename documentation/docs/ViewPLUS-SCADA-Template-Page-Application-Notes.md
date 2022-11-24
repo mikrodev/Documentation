@@ -1,5 +1,5 @@
 ---
-title: "ViewPLUS SCADA Template Page"
+title: "ViewPLUS SCADA Template Page Application Notes"
 ---
 
 In ViewPLUS Scada application, data of more than one point of the same type can be displayed with a page design.

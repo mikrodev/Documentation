@@ -1,5 +1,5 @@
 ---
-title: "ViewPLUS SCADA Mail Server Service"
+title: "ViewPLUS SCADA Mail Server Service Application Notes"
 ---
 
 By entering the e-mail addresses of the users defined in the Scada project, e-mails can be sent to the e-mail addresses listed here in case of alarms.
