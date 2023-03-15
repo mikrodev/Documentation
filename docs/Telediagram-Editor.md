@@ -2,7 +2,7 @@
 title: Telediagram Editor
 ---
 
-## Using IEC 104
+## Using IEC 104-5
 
 IEC 60870-5-104  is a protocol for power system monitoring and controlling. Mostly used to communicate between substations and control centers over Ethernet (Fiber optics, 2/3/4G, ...). IEC 60870-5-104 protocol is an extension of IEC 60870-5-101 protocol with the changes in transport, network, link and physical layer services to suit the complete network access.
 
