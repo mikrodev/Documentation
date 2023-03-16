@@ -4,7 +4,7 @@ title: MP110 Serisi Donanım Kılavuzu
 
 ## MP110 Genel Bilgi
 
-[MP110 Hardware Manual](https://www.mikrodev.com/en/docs/PLC/hardware_manual/MIKRODEV_HM_MP110_en.pdf)
+[MP110 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_MP110.pdf)
 
 ### Fiziksel Arayüzler
 

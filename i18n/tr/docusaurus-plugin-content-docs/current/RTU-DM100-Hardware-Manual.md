@@ -4,7 +4,7 @@ title: DM100 Donanım Kılavuzu
 
 ## DM100 Genel bilgi
 
-[DM100 Hardware Manual](https://mikrodev.com/en/docs/RTU/hardware_manual/MIKRODEV_HM_DM100_en.pdf)
+[DM100 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2022/11/MIKRODEV_HM_DM100.pdf)
 
 ### Fiziksel Arayüzler
 

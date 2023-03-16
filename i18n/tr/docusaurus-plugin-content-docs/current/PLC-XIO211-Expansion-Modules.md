@@ -4,7 +4,7 @@ title: XIO211 Serisi Donanım Kılavuzu
 
 ## Montaj Bilgileri
 
-[XIO211 Expansion Modules](https://www.mikrodev.com/en/docs/PLC/hardware_manual/MIKRODEV_HM_XIO211_en.pdf)
+[XIO211 Expansion Modules](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_XIO211.pdf)
 
 ### DIN Ray Montajı
 İlk olarak cihazın üst kısmı DIN rayına monte edilir. Daha sonra, yardımı ile

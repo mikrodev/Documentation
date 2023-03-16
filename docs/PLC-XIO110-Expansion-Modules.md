@@ -4,7 +4,7 @@ title: XIO110 Series Hardware Manual
 
 ## Mounting Information
 
-[XIO110 Expansion Modules](https://www.mikrodev.com/en/docs/PLC/hardware_manual/MIKRODEV_HM_XIO110_en.pdf)
+[XIO110 Expansion Modules](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_XIO110_en.pdf)
 
 ### DIN Rail Mounting
 First, the upper part of the device is mounted on the DIN rail. Then, with the help of the

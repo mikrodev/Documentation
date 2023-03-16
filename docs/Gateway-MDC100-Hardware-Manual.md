@@ -3,7 +3,7 @@ title: MDC100 Hardware Manual
 ---
 ## MDC100 General Information
 
-[MDC100 Hardware Manual](https://www.mikrodev.com/en/docs/DlmsModbusGateway/hardware_manual/MIKRODEV_HM_MDC100_en.pdf)
+[MDC100 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/01/MIKRODEV_HM_MDC100_en.pdf)
 
 ### Physical Interfaces
 

@@ -3,7 +3,7 @@ title: MMS100 Hardware Manual
 ---
 ## MMS100 General Information
 
-[MMS100 Hardware Manual](https://www.mikrodev.com/en/docs/MbusModbusGateway/hardware_manual/MIKRODEV_HM_MMS100_en.pdf)
+[MMS100 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/01/MIKRODEV_HM_MMS100_en.pdf)
 
 ### Physical Interfaces
 

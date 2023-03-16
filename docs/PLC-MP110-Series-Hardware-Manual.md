@@ -4,7 +4,7 @@ title: MP110 Series Hardware Manual
 
 ## MP110 General Information
 
-[MP110 Hardware Manual](https://www.mikrodev.com/en/docs/PLC/hardware_manual/MIKRODEV_HM_MP110_en.pdf)
+[MP110 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_MP110_en.pdf)
 
 ### Physical Interfaces
 

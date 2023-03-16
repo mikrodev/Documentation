@@ -4,7 +4,7 @@ title: RTU300 Series Hardware Manual
 
 ## Mounting Information 
 
-[RTU 300 Series Hardware Manual](https://mikrodev.com/en/docs/RTU/hardware_manual/MIKRODEV_HM_RTU300_en.pdf)
+[RTU 300 Series Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_RTU300_en.pdf)
 
 ### DIN Rail Mountage
 First, the upper part of the device is mounted on the DIN rail. Then, with the help of the

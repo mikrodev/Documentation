@@ -4,7 +4,7 @@ title: MP211 Series Hardware Manual
 
 ## MP211 General Information
 
-[MP211 Hardware Manual](https://www.mikrodev.com/en/docs/PLC/hardware_manual/MIKRODEV_HM_MP211_en.pdf)
+[MP211 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_MP211_en.pdf)
 
 ### Physical Interfaces
 

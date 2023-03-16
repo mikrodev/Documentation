@@ -4,7 +4,7 @@ title: XIO110 Serisi Donanım Kılavuzu
 
 ## Montaj Bilgileri
 
-[XIO110 Expansion Modules](https://www.mikrodev.com/en/docs/PLC/hardware_manual/MIKRODEV_HM_XIO110_en.pdf)
+[XIO110 Expansion Modules](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_XIO110.pdf)
 
 ### DIN Ray Montajı
 İlk olarak cihazın üst kısmı DIN rayına monte edilir. Ardından cihazın arkasındaki yaylar yardımıyla alt kısma hafif bir kuvvet uygulandığında cihaz DIN rayına kolayca yerleşir ve montaj tamamlanır.
