@@ -6,7 +6,7 @@ title: MP110 Serisi Donanım Kılavuzu
 
 [MP110 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_MP110.pdf)
 
-### Fiziksel Arayüzler
+### GB0 Kart Tipi Fiziksel Arayüz
 
 <center>
 
@@ -16,19 +16,32 @@ title: MP110 Serisi Donanım Kılavuzu
 
 <center>
 
-![plc-hardware-02](/img/plc-hardware-02.png)
+![plc-hardware-27](/img/plc-hardware-27.png)
 
 </center>
+
+### GB1 Kart Tipi Fiziksel Arayüz
+
+<center>
+
+![plc-hardware-25](/img/plc-hardware-25.png)
+
+</center>
+
+<center>
+
+![plc-hardware-28](/img/plc-hardware-28.png)
+
+</center>
+
 
 ### Genel Cihaz Özellikleri
 
 <center>
 
-![plc-hardware-03](/img/plc-hardware-03.png)
+![plc-hardware-29](/img/plc-hardware-29.png)
 
 </center>
-
-Not: Bazı modellerde farklılık gösterebilir
 
 ## Kurulum Bilgileri
 
@@ -66,7 +79,7 @@ konektörlerin karşılık geldiği anlamına gelir.
 
 <center>
 
-![plc-hardware-06](/img/plc-hardware-06.png)
+![plc-hardware-30](/img/plc-hardware-30.png)
 
 </center>
 
@@ -74,7 +87,7 @@ konektörlerin karşılık geldiği anlamına gelir.
 
 <center>
 
-![plc-hardware-07](/img/plc-hardware-07.png)
+![plc-hardware-31](/img/plc-hardware-31.png)
 
 </center>
 
@@ -82,7 +95,7 @@ konektörlerin karşılık geldiği anlamına gelir.
 
 <center>
 
-![plc-hardware-08](/img/plc-hardware-08.png)
+![plc-hardware-32](/img/plc-hardware-32.png)
 
 </center>
 
@@ -90,7 +103,7 @@ konektörlerin karşılık geldiği anlamına gelir.
 
 <center>
 
-![plc-hardware-09](/img/plc-hardware-09.png)
+![plc-hardware-33](/img/plc-hardware-33.png)
 
 </center>
 
@@ -98,6 +111,6 @@ konektörlerin karşılık geldiği anlamına gelir.
 
 <center>
 
-![plc-hardware-10](/img/plc-hardware-10.png)
+![plc-hardware-34](/img/plc-hardware-34.png)
 
 </center>

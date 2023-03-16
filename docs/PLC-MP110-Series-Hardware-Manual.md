@@ -6,7 +6,7 @@ title: MP110 Series Hardware Manual
 
 [MP110 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_MP110_en.pdf)
 
-### Physical Interfaces
+### GB0 Board Type Physical Interfaces
 
 <center>
 
@@ -20,6 +20,21 @@ title: MP110 Series Hardware Manual
 
 </center>
 
+### GB1 Board Type Physical Interfaces 
+
+<center>
+
+![plc-hardware-25](/img/plc-hardware-25.png)
+
+</center>
+
+<center>
+
+![plc-hardware-02](/img/plc-hardware-02.png)
+
+</center>
+
+
 ### General Device Specifications
 
 <center>
@@ -27,8 +42,6 @@ title: MP110 Series Hardware Manual
 ![plc-hardware-03](/img/plc-hardware-03.png)
 
 </center>
-
-Note: May differ on some models
 
 ## Installation Information
 
