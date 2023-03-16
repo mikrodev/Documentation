@@ -6,7 +6,7 @@ title: MP211 Series Hardware Manual
 
 [MP211 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_MP211_en.pdf)
 
-### Physical Interfaces
+### GA0 Board Type Physical Interfaces
 
 <center>
 
@@ -20,6 +20,48 @@ title: MP211 Series Hardware Manual
 
 </center>
 
+### GA1 Board Type Physical Interfaces
+
+<center>
+
+![plc-hardware-35](/img/plc-hardware-35.png)
+
+</center>
+
+<center>
+
+![plc-hardware-36](/img/plc-hardware-36.png)
+
+</center>
+
+### GA3 Board Type Physical Interfaces
+
+<center>
+
+![plc-hardware-37](/img/plc-hardware-37.png)
+
+</center>
+
+<center>
+
+![plc-hardware-38](/img/plc-hardware-38.png)
+
+</center>
+
+### GA4 Board Type Physical Interfaces
+
+<center>
+
+![plc-hardware-39](/img/plc-hardware-39.png)
+
+</center>
+
+<center>
+
+![plc-hardware-40](/img/plc-hardware-40.png)
+
+</center>
+
 ### General Device Specifications
 
 <center>
@@ -27,8 +69,6 @@ title: MP211 Series Hardware Manual
 ![plc-hardware-13](/img/plc-hardware-13.png)
 
 </center>
-
-Note: May differ on some models
 
 ## Installation Information
 

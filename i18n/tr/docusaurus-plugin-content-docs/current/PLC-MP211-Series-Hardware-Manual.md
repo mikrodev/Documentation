@@ -6,7 +6,7 @@ title: MP211 Serisi Donanım Kılavuzu
 
 [MP211 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_MP211.pdf)
 
-### Fiziksel Arayüzler
+### GA0 Kart Tipi Fiziksel Arayüzler
 
 <center>
 
@@ -16,7 +16,49 @@ title: MP211 Serisi Donanım Kılavuzu
 
 <center>
 
-![plc-hardware-11](/img/plc-hardware-11.png)
+![plc-hardware-41](/img/plc-hardware-41.png)
+
+</center>
+
+### GA1 Kart Tipi Fiziksel Arayüzler
+
+<center>
+
+![plc-hardware-35](/img/plc-hardware-35.png)
+
+</center>
+
+<center>
+
+![plc-hardware-42](/img/plc-hardware-42.png)
+
+</center>
+
+### GA3 Kart Tipi Fiziksel Arayüzler
+
+<center>
+
+![plc-hardware-37](/img/plc-hardware-37.png)
+
+</center>
+
+<center>
+
+![plc-hardware-43](/img/plc-hardware-43.png)
+
+</center>
+
+### GA4 Kart Tipi Fiziksel Arayüzler
+
+<center>
+
+![plc-hardware-39](/img/plc-hardware-39.png)
+
+</center>
+
+<center>
+
+![plc-hardware-44](/img/plc-hardware-44.png)
 
 </center>
 
@@ -24,11 +66,9 @@ title: MP211 Serisi Donanım Kılavuzu
 
 <center>
 
-![plc-hardware-13](/img/plc-hardware-13.png)
+![plc-hardware-45](/img/plc-hardware-45.png)
 
 </center>
-
-Not: Bazı modellerde farklılık gösterebilir
 
 ## Kurulum Bilgileri
 
@@ -66,7 +106,7 @@ konektörlerin karşılık geldiği anlamına gelir.
 
 <center>
 
-![plc-hardware-16](/img/plc-hardware-16.png)
+![plc-hardware-46](/img/plc-hardware-46.png)
 
 </center>
 
@@ -74,7 +114,7 @@ konektörlerin karşılık geldiği anlamına gelir.
 
 <center>
 
-![plc-hardware-17](/img/plc-hardware-17.png)
+![plc-hardware-47](/img/plc-hardware-47.png)
 
 </center>
 
@@ -82,7 +122,7 @@ konektörlerin karşılık geldiği anlamına gelir.
 
 <center>
 
-![plc-hardware-18](/img/plc-hardware-18.png)
+![plc-hardware-48](/img/plc-hardware-48.png)
 
 </center>
 
@@ -90,7 +130,7 @@ konektörlerin karşılık geldiği anlamına gelir.
 
 <center>
 
-![plc-hardware-19](/img/plc-hardware-19.png)
+![plc-hardware-49](/img/plc-hardware-49.png)
 
 </center>
 
@@ -98,7 +138,7 @@ konektörlerin karşılık geldiği anlamına gelir.
 
 <center>
 
-![plc-hardware-20](/img/plc-hardware-20.png)
+![plc-hardware-50](/img/plc-hardware-50.png)
 
 </center>
 
@@ -106,7 +146,7 @@ konektörlerin karşılık geldiği anlamına gelir.
 
 <center>
 
-![plc-hardware-21](/img/plc-hardware-21.png)
+![plc-hardware-51](/img/plc-hardware-51.png)
 
 </center>
 
@@ -114,7 +154,7 @@ konektörlerin karşılık geldiği anlamına gelir.
 
 <center>
 
-![plc-hardware-22](/img/plc-hardware-22.png)
+![plc-hardware-52](/img/plc-hardware-52.png)
 
 </center>
 
@@ -122,7 +162,7 @@ konektörlerin karşılık geldiği anlamına gelir.
 
 <center>
 
-![plc-hardware-23](/img/plc-hardware-23.png)
+![plc-hardware-53](/img/plc-hardware-53.png)
 
 </center>
 
@@ -130,6 +170,6 @@ konektörlerin karşılık geldiği anlamına gelir.
 
 <center>
 
-![plc-hardware-24](/img/plc-hardware-24.png)
+![plc-hardware-54](/img/plc-hardware-54.png)
 
 </center>
