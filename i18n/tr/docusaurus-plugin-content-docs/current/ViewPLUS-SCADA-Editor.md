@@ -1541,7 +1541,7 @@ Makronun çalışma sıklığını ifade eden milisaniye cinsinden süre.
 
 <center>
 
-![macrokanalı](/img/macrokanalı.png)
+![macrokanali](/img/macrokanali.png)
 ***<center>Şekil 2: Macro Programming Screen</center>***
 
 </center>
@@ -1591,7 +1591,7 @@ Veritabanı sorgusunun yürütülme sıklığını temsil eden milisaniye sayıs
 
 <center>
 
-![database-tag](/img/database-tag.png)
+![database-tag](/img/database-tag.PNG)
 ***<center>Şekil 2: Database Tag Screen</center>***
 
 </center>
@@ -1683,7 +1683,7 @@ JavaScript fonksiyonları JavaScript kanalı tanımlanabilir. Komut dosyanızda 
 
 <center>
 
-![jv-ch](/img/jv-ch.png)
+![jv-ch](/img/jv-ch.PNG)
 ***<center>Şekil 1: JavaScript Channel Screen</center>***
 
 </center>

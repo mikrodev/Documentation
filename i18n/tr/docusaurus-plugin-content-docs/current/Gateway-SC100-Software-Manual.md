@@ -4,6 +4,7 @@ title: SC100 Yazılım Kılavuzu
 
 ## SERİ GATEWAY KONFİGÜRASYON YAZILIMI
 
+[SC100 Software Manual](https://www.mikrodev.com/wp-content/uploads/2023/01/MIKRODEV_SC100_SM.pdf)
 
 ### Genel Bilgi
 

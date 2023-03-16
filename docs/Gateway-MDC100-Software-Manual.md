@@ -4,7 +4,7 @@ title: MDC100 Software Manual
 
 ## MODC Gateway Configuration Software
 
-[MDC100 Software Manual](https://www.mikrodev.com/en/docs/DlmsModbusGateway/software_manual/MIKRODEV_SM_MDC100_EN.pdf)
+[MDC100 Software Manual](https://www.mikrodev.com/wp-content/uploads/2023/01/MIKRODEV_MDC100_SM_EN.pdf)
 
 ### General Information
 

@@ -1471,7 +1471,7 @@ For detailed information: [Macro Channel Definitions](https://www.youtube.com/wa
 
 <center>
 
-![macrokanalı](/img/macrokanalı.png)
+![macrokanali](/img/macrokanali.png)
 ***<center>Figure 2: Macro Channel Screen</center>***
 
 </center>
@@ -1535,7 +1535,7 @@ The number of milliseconds that represents the frequency at which the database q
 
 <center>
 
-![database-tag](/img/database-tag.png)
+![database-tag](/img/database-tag.PNG)
 ***<center>Figure 2: Database Tag Screen</center>***
 
 </center>
@@ -1628,7 +1628,7 @@ JavaScript functions could be defined JavaScript channel. You can call various M
 
 <center>
 
-![jv-ch](/img/jv-ch.png)
+![jv-ch](/img/jv-ch.PNG)
 ***<center>Figure 1: JavaScript Channel Screen</center>***
 
 </center>

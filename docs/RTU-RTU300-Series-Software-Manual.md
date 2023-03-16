@@ -2,4 +2,4 @@
 title: RTU300 Series Software Manual
 ---
 
-[RTU300 Software Manual](https://mikrodev.com/en/docs/RTU/software_manual/MIKRODEV_SM_RTU_PM_EN.pdf)
+[RTU300 Software Manual](https://www.mikrodev.com/wp-content/uploads/2022/12/DCS_SM_122022_EN.pdf)

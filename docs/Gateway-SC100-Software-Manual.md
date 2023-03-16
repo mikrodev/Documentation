@@ -4,6 +4,7 @@ title: SC100 Software Manual
 
 ## SERIAL GATEWAY CONFIGURATION SOFTWARE
 
+[SC100 Software Manual](https://www.mikrodev.com/wp-content/uploads/2023/01/MIKRODEV_SC100_SM_EN.pdf)
 
 ### General Information
 
@@ -14,8 +15,8 @@ The connection between the program and the device can be established in various 
 
 #### USB Serial Connection
 
-One of the methods for establishing communication between PC and Mikrodev device in device configuration is USB serial connection. In order to perform USB connection between PC and device, you need to install USB driver for PCs with Windows 7/8 / 8.1 operating systems. There is no need to install the USB driver for Windows 10 operating systems. For serial connection over USB, “Connect over USB" box in the Connect and Configure Your Device section of the Assistant software is selected. In the USB Port Selection section, you should select the port and click "Connect". USB connection will be established after that. (Figure 1)
-.
+One of the methods for establishing communication between PC and Mikrodev device in device configuration is USB serial connection. In order to perform USB connection between PC and device, you need to install USB driver for PCs with Windows 7/8 / 8.1 operating systems. There is no need to install the USB driver for Windows 10 operating systems. For serial connection over USB, "Connect over USB" box in the Connect and Configure Your Device section of the Assistant software is selected. In the USB Port Selection section, you should select the port and click "Connect". USB connection will be established after that. (Figure 1)
+
 <center>
 
 ![sc100_01](/img/sc100_01.png)

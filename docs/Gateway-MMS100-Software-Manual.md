@@ -4,7 +4,7 @@ title: MMS100 Software Manual
 
 ## M-BUS Gateway Configuration Software
 
-[MMS100 Software Manual](https://www.mikrodev.com/en/docs/MbusModbusGateway/software_manual/MIKRODEV_SM_MMS100_CG_EN.pdf)
+[MMS100 Software Manual](https://www.mikrodev.com/wp-content/uploads/2023/01/MIKRODEV_MMS100_SM_EN.pdf)
 
 ### General Information
 

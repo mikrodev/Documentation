@@ -4,7 +4,7 @@ title: MBS100 Yazılım Kılavuzu
 
 ## MODBUS Ağ Geçidi Konfigürasyon Yazılımı
 
-[MBS100 Software Manual](https://www.mikrodev.com/en/docs/ModbusGateway/software_manual/MIKRODEV_SM_MBS100_CG_EN.pdf)
+[MBS100 Software Manual](https://www.mikrodev.com/wp-content/uploads/2023/01/MIKRODEV_MBS100_SM.pdf)
 
 ### Genel Bilgi
 

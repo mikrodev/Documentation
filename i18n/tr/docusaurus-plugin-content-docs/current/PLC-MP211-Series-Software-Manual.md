@@ -2,4 +2,4 @@
 title: MP211 Serisi Yazılım Kılavuzu
 ---
 
-[MP211 Software Manual](https://www.mikrodev.com/en/docs/PLC/software_manual/MIKRODEV_SM_MP211_PM_EN.pdf)
+[MP211 Software Manual](https://www.mikrodev.com/wp-content/uploads/2022/12/PLC_SM_122022.pdf)
