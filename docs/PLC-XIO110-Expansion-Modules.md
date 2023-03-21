@@ -32,7 +32,7 @@ overlap each other.
 
 ### General Information
 
-#### GD6 Board Type \(8 Dijital Input\) Physical Interfaces
+### GD6 Board Type \(8 Dijital Input\) Physical Interfaces
 
 <center>
 
@@ -46,7 +46,7 @@ overlap each other.
 
 </center>
 
-#### GD0 Board Type \(16 Digital Input\) Physical Interfaces
+### GD0 Board Type \(16 Digital Input\) Physical Interfaces
 
 <center>
 
@@ -60,7 +60,7 @@ overlap each other.
 
 </center>
 
-#### General Device Specifications
+### General Device Specifications
 
 <center>
 
@@ -70,7 +70,7 @@ overlap each other.
 
 ### Connection Diagrams
 
-#### Supply Connection
+### Supply Connection
 
 <center>
 
@@ -78,7 +78,7 @@ overlap each other.
 
 </center>
 
-#### Digital Inputs
+### Digital Inputs
 
 <center>
 
@@ -96,7 +96,7 @@ overlap each other.
 
 ### General Information
 
-#### GD7 Board Type \(8 Digital Output\) Physical Interfaces
+### GD7 Board Type \(8 Digital Output\) Physical Interfaces
 
 <center>
 
@@ -110,7 +110,7 @@ overlap each other.
 
 </center>
 
-#### GD1 Board Type \(16 Digital Output\) Physical Interfaces
+### GD1 Board Type \(16 Digital Output\) Physical Interfaces
 
 <center>
 
@@ -124,7 +124,7 @@ overlap each other.
 
 </center>
 
-#### General Device Specifications
+### General Device Specifications
 
 <center>
 
@@ -134,7 +134,7 @@ overlap each other.
 
 ### Connection Diagrams
 
-#### Supply Connection
+### Supply Connection
 
 <center>
 
@@ -142,7 +142,7 @@ overlap each other.
 
 </center>
 
-#### Digital Outputs
+### Digital Outputs
 
 <center>
 
@@ -160,7 +160,7 @@ overlap each other.
 
 ### General Information
 
-#### GD8 Board Type \(8 Digital Input, 8 Digital Output\) Physical Interfaces
+### GD8 Board Type \(8 Digital Input, 8 Digital Output\) Physical Interfaces
 
 <center>
 
@@ -174,7 +174,7 @@ overlap each other.
 
 </center>
 
-#### General Device Specifications
+### General Device Specifications
 
 <center>
 
@@ -184,7 +184,7 @@ overlap each other.
 
 ### Connection Diagrams
 
-#### Supply Connection
+### Supply Connection
 
 <center>
 
@@ -192,7 +192,7 @@ overlap each other.
 
 </center>
 
-#### Digital Input and Output
+### Digital Input and Output
 
 <center>
 
@@ -210,7 +210,7 @@ overlap each other.
 
 ### General Information
 
-#### GD2 Board Type \(8 Analog Input\) Physical Interfaces
+### GD2 Board Type \(8 Analog Input\) Physical Interfaces
 
 <center>
 
@@ -224,7 +224,7 @@ overlap each other.
 
 </center>
 
-#### General Device Specifications
+### General Device Specifications
 
 <center>
 
@@ -234,7 +234,7 @@ overlap each other.
 
 ### Connection Diagrams
 
-#### Supply Connection
+### Supply Connection
 
 <center>
 
@@ -242,7 +242,7 @@ overlap each other.
 
 </center>
 
-#### Analog Inputs
+### Analog Inputs
 
 <center>
 
@@ -260,7 +260,7 @@ overlap each other.
 
 ### General Information
 
-#### GD3 Board Type \(8 Analog Output\) Physical Interfaces
+### GD3 Board Type \(8 Analog Output\) Physical Interfaces
 
 <center>
 
@@ -274,7 +274,7 @@ overlap each other.
 
 </center>
 
-#### General Device Specifications
+### General Device Specifications
 
 <center>
 
@@ -284,7 +284,7 @@ overlap each other.
 
 ### Connection Diagrams
 
-#### Supply Connection
+### Supply Connection
 
 <center>
 
@@ -292,7 +292,7 @@ overlap each other.
 
 </center>
 
-#### Analog Outputs
+### Analog Outputs
 
 <center>
 
@@ -310,7 +310,7 @@ overlap each other.
 
 ### General Information
 
-#### GD9 Board Type \(4 Analog Input, 4 Analog Output\) Physical Interfaces
+### GD9 Board Type \(4 Analog Input, 4 Analog Output\) Physical Interfaces
 
 <center>
 
@@ -324,7 +324,7 @@ overlap each other.
 
 </center>
 
-#### General Device Specifications
+### General Device Specifications
 
 <center>
 
@@ -334,7 +334,7 @@ overlap each other.
 
 ### Connection Diagrams
 
-#### Supply Connection
+### Supply Connection
 
 <center>
 
@@ -342,7 +342,7 @@ overlap each other.
 
 </center>
 
-####  Analog Input and Output
+###  Analog Input and Output
 
 <center>
 
@@ -360,7 +360,7 @@ overlap each other.
 
 ### General Information
 
-#### GD4 Board Type \(6 RTD Input\) Physical Interfaces
+### GD4 Board Type \(6 RTD Input\) Physical Interfaces
 
 <center>
 
@@ -374,7 +374,7 @@ overlap each other.
 
 </center>
 
-#### General Device Specifications
+### General Device Specifications
 
 <center>
 
@@ -384,7 +384,7 @@ overlap each other.
 
 ### Connection Diagrams
 
-#### Supply Connection
+### Supply Connection
 
 <center>
 
@@ -392,7 +392,7 @@ overlap each other.
 
 </center>
 
-####  RTD Inputs
+###  RTD Inputs
 
 <center>
 
@@ -410,7 +410,7 @@ overlap each other.
 
 ### General Information
 
-#### GDA Board Type \(1 DALI Port\) Physical Interfaces
+### GDA Board Type \(1 DALI Port\) Physical Interfaces
 
 <center>
 
@@ -424,7 +424,7 @@ overlap each other.
 
 </center>
 
-#### General Device Specifications
+### General Device Specifications
 
 <center>
 
@@ -434,7 +434,7 @@ overlap each other.
 
 ### Connection Diagrams
 
-#### Supply Connection
+### Supply Connection
 
 <center>
 
@@ -442,7 +442,7 @@ overlap each other.
 
 </center>
 
-####  DALI Current-Limited Power Connection
+###  DALI Current-Limited Power Connection
 
 <center>
 
@@ -456,7 +456,7 @@ overlap each other.
 
 </center>
 
-####  DALI Current-Limited Power Output Connection
+###  DALI Current-Limited Power Output Connection
 
 <center>
 
