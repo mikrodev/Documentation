@@ -28,11 +28,11 @@ overlap each other.
 
 </center>
 
-## XIO110.DI8 Digital Input
+## XIO110 Digital Input Expansion Modules
 
-### XIO110.DI8 General Information
+### General Information
 
-#### Physical Interfaces
+#### GD6 Board Type \(8 Dijital Input\) Physical Interfaces
 
 <center>
 
@@ -43,6 +43,20 @@ overlap each other.
 <center>
 
 ![plc-expansion-04](/img/plc-expansion-04.png)
+
+</center>
+
+#### GD0 Board Type \(16 Digital Input\) Physical Interfaces
+
+<center>
+
+![plc-expansion-118](/img/plc-expansion-118.png)
+
+</center>
+
+<center>
+
+![plc-expansion-119](/img/plc-expansion-119.png)
 
 </center>
 
@@ -60,7 +74,7 @@ overlap each other.
 
 <center>
 
-![plc-expansion-06](/img/plc-expansion-06.png)
+![plc-expansion-160](/img/plc-expansion-160.png)
 
 </center>
 
@@ -72,21 +86,41 @@ overlap each other.
 
 </center>
 
-## XIO110.DI16 Digital Input
+<center>
 
-### XIO110.DI16 General Information
+![plc-expansion-120](/img/plc-expansion-120.png)
 
-#### Physical Interfaces
+</center>
+
+## XIO110 Digital Output Expansion Modules
+
+### General Information
+
+#### GD7 Board Type \(8 Digital Output\) Physical Interfaces
 
 <center>
 
-![plc-expansion-08](/img/plc-expansion-08.png)
+![plc-expansion-121](/img/plc-expansion-121.png)
 
 </center>
 
 <center>
 
-![plc-expansion-09](/img/plc-expansion-09.png)
+![plc-expansion-122](/img/plc-expansion-122.png)
+
+</center>
+
+#### GD1 Board Type \(16 Digital Output\) Physical Interfaces
+
+<center>
+
+![plc-expansion-123](/img/plc-expansion-123.png)
+
+</center>
+
+<center>
+
+![plc-expansion-124](/img/plc-expansion-124.png)
 
 </center>
 
@@ -94,7 +128,7 @@ overlap each other.
 
 <center>
 
-![plc-expansion-10](/img/plc-expansion-10.png)
+![plc-expansion-125](/img/plc-expansion-125.png)
 
 </center>
 
@@ -104,51 +138,7 @@ overlap each other.
 
 <center>
 
-![plc-expansion-11](/img/plc-expansion-11.png)
-
-</center>
-
-#### Digital Inputs
-
-<center>
-
-![plc-expansion-12](/img/plc-expansion-12.png)
-
-</center>
-
-## XIO110.DO8 Digital Outputs
-
-### XIO110.DO8 General Information
-
-#### Physical Interfaces
-
-<center>
-
-![plc-expansion-13](/img/plc-expansion-13.png)
-
-</center>
-
-<center>
-
-![plc-expansion-14](/img/plc-expansion-14.png)
-
-</center>
-
-#### General Device Specifications
-
-<center>
-
-![plc-expansion-15](/img/plc-expansion-15.png)
-
-</center>
-
-### Connection Diagrams
-
-#### Supply Connection
-
-<center>
-
-![plc-expansion-16](/img/plc-expansion-16.png)
+![plc-expansion-160](/img/plc-expansion-160.png)
 
 </center>
 
@@ -156,25 +146,31 @@ overlap each other.
 
 <center>
 
-![plc-expansion-17](/img/plc-expansion-17.png)
-
-</center>
-
-## XIO110.DO16 Digital Outputs
-
-### XIO110.DO16 General Information
-
-#### Physical Interfaces
-
-<center>
-
-![plc-expansion-18](/img/plc-expansion-18.png)
+![plc-expansion-126](/img/plc-expansion-126.png)
 
 </center>
 
 <center>
 
-![plc-expansion-19](/img/plc-expansion-19.png)
+![plc-expansion-127](/img/plc-expansion-127.png)
+
+</center>
+
+## XIO110 Digital Input Output Expansion Modules
+
+### General Information
+
+#### GD8 Board Type \(8 Digital Input, 8 Digital Output\) Physical Interfaces
+
+<center>
+
+![plc-expansion-128](/img/plc-expansion-128.png)
+
+</center>
+
+<center>
+
+![plc-expansion-129](/img/plc-expansion-129.png)
 
 </center>
 
@@ -182,7 +178,7 @@ overlap each other.
 
 <center>
 
-![plc-expansion-20](/img/plc-expansion-20.png)
+![plc-expansion-130](/img/plc-expansion-130.png)
 
 </center>
 
@@ -192,42 +188,47 @@ overlap each other.
 
 <center>
 
-![plc-expansion-21](/img/plc-expansion-21.png)
+![plc-expansion-160](/img/plc-expansion-160.png)
 
 </center>
 
-#### Digital Outputs
+#### Digital Input and Output
 
 <center>
 
-![plc-expansion-22](/img/plc-expansion-22.png)
-
-</center>
-
-## XIO110.DI8DO8 Digital Outputs
-
-### XIO110.DI8DO8 General Information
-
-#### Physical Interfaces
-
-<center>
-
-![plc-expansion-23](/img/plc-expansion-23.png)
+![plc-expansion-131](/img/plc-expansion-131.png)
 
 </center>
 
 <center>
 
-![plc-expansion-24](/img/plc-expansion-24.png)
+![plc-expansion-132](/img/plc-expansion-132.png)
 
 </center>
 
+## XIO110 Analog Input Expansion Modules
+
+### General Information
+
+#### GD2 Board Type \(8 Analog Input\) Physical Interfaces
+
+<center>
+
+![plc-expansion-133](/img/plc-expansion-133.png)
+
+</center>
+
+<center>
+
+![plc-expansion-134](/img/plc-expansion-134.png)
+
+</center>
 
 #### General Device Specifications
 
 <center>
 
-![plc-expansion-25](/img/plc-expansion-25.png)
+![plc-expansion-135](/img/plc-expansion-135.png)
 
 </center>
 
@@ -237,39 +238,39 @@ overlap each other.
 
 <center>
 
-![plc-expansion-26](/img/plc-expansion-26.png)
+![plc-expansion-160](/img/plc-expansion-160.png)
 
 </center>
 
-#### Digital Input and Outputs
+#### Analog Inputs
 
 <center>
 
-![plc-expansion-27](/img/plc-expansion-27.png)
-
-</center>
-
-<center>
-
-![plc-expansion-28](/img/plc-expansion-28.png)
-
-</center>
-
-## XIO110.AI4 Analog Input
-
-### XIO110.AI4 General Information
-
-#### Physical Interfaces
-
-<center>
-
-![plc-expansion-29](/img/plc-expansion-29.png)
+![plc-expansion-136](/img/plc-expansion-136.png)
 
 </center>
 
 <center>
 
-![plc-expansion-30](/img/plc-expansion-30.png)
+![plc-expansion-137](/img/plc-expansion-137.png)
+
+</center>
+
+## XIO110 Analog Output Expansion Modules
+
+### General Information
+
+#### GD3 Board Type \(8 Analog Output\) Physical Interfaces
+
+<center>
+
+![plc-expansion-138](/img/plc-expansion-138.png)
+
+</center>
+
+<center>
+
+![plc-expansion-139](/img/plc-expansion-139.png)
 
 </center>
 
@@ -277,7 +278,7 @@ overlap each other.
 
 <center>
 
-![plc-expansion-31](/img/plc-expansion-31.png)
+![plc-expansion-140](/img/plc-expansion-140.png)
 
 </center>
 
@@ -287,39 +288,39 @@ overlap each other.
 
 <center>
 
-![plc-expansion-32](/img/plc-expansion-32.png)
+![plc-expansion-160](/img/plc-expansion-160.png)
 
 </center>
 
-####  Analog Inputs
+#### Analog Outputs
 
 <center>
 
-![plc-expansion-33](/img/plc-expansion-33.png)
-
-</center>
-
-<center>
-
-![plc-expansion-34](/img/plc-expansion-34.png)
-
-</center>
-
-## XIO110.AI8 Analog Input
-
-### XIO110.AI8 General Information
-
-#### Physical Interfaces
-
-<center>
-
-![plc-expansion-35](/img/plc-expansion-35.png)
+![plc-expansion-141](/img/plc-expansion-141.png)
 
 </center>
 
 <center>
 
-![plc-expansion-36](/img/plc-expansion-36.png)
+![plc-expansion-142](/img/plc-expansion-142.png)
+
+</center>
+
+## XIO110 Analog Input Output Expansion Modules
+
+### General Information
+
+#### GD9 Board Type \(4 Analog Input, 4 Analog Output\) Physical Interfaces
+
+<center>
+
+![plc-expansion-143](/img/plc-expansion-143.png)
+
+</center>
+
+<center>
+
+![plc-expansion-144](/img/plc-expansion-144.png)
 
 </center>
 
@@ -327,7 +328,7 @@ overlap each other.
 
 <center>
 
-![plc-expansion-37](/img/plc-expansion-37.png)
+![plc-expansion-145](/img/plc-expansion-145.png)
 
 </center>
 
@@ -337,39 +338,39 @@ overlap each other.
 
 <center>
 
-![plc-expansion-38](/img/plc-expansion-38.png)
+![plc-expansion-160](/img/plc-expansion-160.png)
 
 </center>
 
-####  Analog Inputs
+####  Analog Input and Output
 
 <center>
 
-![plc-expansion-39](/img/plc-expansion-39.png)
-
-</center>
-
-<center>
-
-![plc-expansion-40](/img/plc-expansion-40.png)
-
-</center>
-
-## XIO110.AO4 Analog Output
-
-### XIO110.AO4 General Information
-
-#### Physical Interfaces
-
-<center>
-
-![plc-expansion-41](/img/plc-expansion-41.png)
+![plc-expansion-146](/img/plc-expansion-146.png)
 
 </center>
 
 <center>
 
-![plc-expansion-42](/img/plc-expansion-42.png)
+![plc-expansion-147](/img/plc-expansion-147.png)
+
+</center>
+
+## XIO110 RTD Input \(PT100/PT1000\) Expansion Modules
+
+### General Information
+
+#### GD4 Board Type \(6 RTD Input\) Physical Interfaces
+
+<center>
+
+![plc-expansion-148](/img/plc-expansion-148.png)
+
+</center>
+
+<center>
+
+![plc-expansion-149](/img/plc-expansion-149.png)
 
 </center>
 
@@ -377,7 +378,7 @@ overlap each other.
 
 <center>
 
-![plc-expansion-43](/img/plc-expansion-43.png)
+![plc-expansion-150](/img/plc-expansion-150.png)
 
 </center>
 
@@ -387,39 +388,39 @@ overlap each other.
 
 <center>
 
-![plc-expansion-44](/img/plc-expansion-44.png)
+![plc-expansion-160](/img/plc-expansion-160.png)
 
 </center>
 
-####  Analog Outputs
+####  RTD Inputs
 
 <center>
 
-![plc-expansion-45](/img/plc-expansion-45.png)
-
-</center>
-
-<center>
-
-![plc-expansion-46](/img/plc-expansion-46.png)
-
-</center>
-
-## XIO110.AO8 Analog Output
-
-### XIO110.AO8 General Information
-
-#### Physical Interfaces
-
-<center>
-
-![plc-expansion-47](/img/plc-expansion-47.png)
+![plc-expansion-151](/img/plc-expansion-151.png)
 
 </center>
 
 <center>
 
-![plc-expansion-48](/img/plc-expansion-48.png)
+![plc-expansion-152](/img/plc-expansion-152.png)
+
+</center>
+
+## XIO110 DALI Expansion Modules
+
+### General Information
+
+#### GDA Board Type \(1 DALI Port\) Physical Interfaces
+
+<center>
+
+![plc-expansion-153](/img/plc-expansion-153.png)
+
+</center>
+
+<center>
+
+![plc-expansion-154](/img/plc-expansion-154.png)
 
 </center>
 
@@ -427,7 +428,7 @@ overlap each other.
 
 <center>
 
-![plc-expansion-49](/img/plc-expansion-49.png)
+![plc-expansion-155](/img/plc-expansion-155.png)
 
 </center>
 
@@ -437,166 +438,37 @@ overlap each other.
 
 <center>
 
-![plc-expansion-50](/img/plc-expansion-50.png)
+![plc-expansion-160](/img/plc-expansion-160.png)
 
 </center>
 
-####  Analog Outputs
+####  DALI Current-Limited Power Connection
 
 <center>
 
-![plc-expansion-51](/img/plc-expansion-51.png)
-
-</center>
-
-<center>
-
-![plc-expansion-52](/img/plc-expansion-52.png)
-
-</center>
-
-## XIO110.AI4AO4 Analog Output
-
-### XIO110.AI4AO4 General Information
-
-#### Physical Interfaces
-
-<center>
-
-![plc-expansion-53](/img/plc-expansion-53.png)
+![plc-expansion-156](/img/plc-expansion-156.png)
 
 </center>
 
 <center>
 
-![plc-expansion-54](/img/plc-expansion-54.png)
+![plc-expansion-157](/img/plc-expansion-157.png)
 
 </center>
 
-#### General Device Specifications
+####  DALI Current-Limited Power Output Connection
 
 <center>
 
-![plc-expansion-55](/img/plc-expansion-55.png)
-
-</center>
-
-### Connection Diagrams
-
-#### Supply Connection
-
-<center>
-
-![plc-expansion-56](/img/plc-expansion-56.png)
-
-</center>
-
-####  Analog Input and Outputs
-
-<center>
-
-![plc-expansion-57](/img/plc-expansion-57.png)
+![plc-expansion-158](/img/plc-expansion-158.png)
 
 </center>
 
 <center>
 
-![plc-expansion-58](/img/plc-expansion-58.png)
+![plc-expansion-159](/img/plc-expansion-159.png)
 
 </center>
-
-
-## XIO110.P6 RTD INPUT(PT100/PT1000)
-
-### XIO110.P6 General Information
-
-#### Physical Interfaces
-
-<center>
-
-![plc-expansion-59](/img/plc-expansion-59.png)
-
-</center>
-
-<center>
-
-![plc-expansion-60](/img/plc-expansion-60.png)
-
-</center>
-
-#### General Device Specifications
-
-<center>
-
-![plc-expansion-61](/img/plc-expansion-61.png)
-
-</center>
-
-### Connection Diagrams
-
-#### Supply Connection
-
-<center>
-
-![plc-expansion-62](/img/plc-expansion-62.png)
-
-</center>
-
-#### RTD Inputs
-
-<center>
-
-![plc-expansion-63](/img/plc-expansion-63.png)
-
-</center>
-
-## XIO110.R8 Relay Ouput
-
-### XIO110.R8 General Information
-
-#### Physical Interfaces
-
-<center>
-
-![plc-expansion-64](/img/plc-expansion-64.png)
-
-</center>
-
-<center>
-
-![plc-expansion-65](/img/plc-expansion-65.png)
-
-</center>
-
-
-#### General Device Specifications
-
-<center>
-
-![plc-expansion-66](/img/plc-expansion-66.png)
-
-</center>
-
-### Connection Diagrams
-
-#### Supply Connection
-
-<center>
-
-![plc-expansion-67](/img/plc-expansion-67.png)
-
-</center>
-
-#### Relay Outputs
-
-<center>
-
-![plc-expansion-68](/img/plc-expansion-68.png)
-
-</center>
-
-
-
 
 
 
