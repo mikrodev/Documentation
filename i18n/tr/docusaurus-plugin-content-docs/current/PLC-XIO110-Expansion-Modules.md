@@ -6,8 +6,9 @@ title: XIO110 Serisi Donanım Kılavuzu
 
 [XIO110 Expansion Modules](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_XIO110.pdf)
 
-### DIN Ray Montajı
-İlk olarak cihazın üst kısmı DIN rayına monte edilir. Ardından cihazın arkasındaki yaylar yardımıyla alt kısma hafif bir kuvvet uygulandığında cihaz DIN rayına kolayca yerleşir ve montaj tamamlanır.
+### DIN Ray Montajı                
+
+Cihazın üst kısmı öncelikle DIN Ray ‘a takılır. Daha sonra cihazın arkasında bulunan yaylar yardımıyla, cihazın alt kısmına hafif kuvvet uygulandığında ürün DIN Ray’ a kolayca geçer ve montaj tamamlanır.
 
 <center>
 
@@ -25,11 +26,11 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 </center>
 
-## XIO110.DI8 Dijital Giriş
+## XIO110 Dijital Giriş Genişleme Modülleri
 
-### XIO110.DI8 Genel Bilgi
+### Genel Bilgi
 
-#### Fiziksel Arayüzler
+#### GD6 Kart Tipi \(8 Dijital Giriş\) Fiziksel Arayüzler
 
 <center>
 
@@ -39,7 +40,21 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-04](/img/plc-expansion-04.png)
+![plc-expansion-161](/img/plc-expansion-161.png)
+
+</center>
+
+#### GD0 Kart Tipi \(16 Dijital Giriş\) Fiziksel Arayüzler
+
+<center>
+
+![plc-expansion-118](/img/plc-expansion-118.png)
+
+</center>
+
+<center>
+
+![plc-expansion-162](/img/plc-expansion-162.png)
 
 </center>
 
@@ -47,7 +62,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-05](/img/plc-expansion-05.png)
+![plc-expansion-163](/img/plc-expansion-163.png)
 
 </center>
 
@@ -57,7 +72,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-06](/img/plc-expansion-06.png)
+![plc-expansion-164](/img/plc-expansion-164.png)
 
 </center>
 
@@ -65,25 +80,45 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-07](/img/plc-expansion-07.png)
-
-</center>
-
-## XIO110.DI16 Dijital Giriş
-
-### XIO110.DI16 Genel Bilgi
-
-#### Fiziksel Arayüzler
-
-<center>
-
-![plc-expansion-08](/img/plc-expansion-08.png)
+![plc-expansion-165](/img/plc-expansion-165.png)
 
 </center>
 
 <center>
 
-![plc-expansion-09](/img/plc-expansion-09.png)
+![plc-expansion-120](/img/plc-expansion-120.png)
+
+</center>
+
+## XIO110 Dijital Çıkış Genişleme Modülleri
+
+### Genel Bilgi
+
+#### GD7 Kart Tipi \(8 Dijital Çıkış\) Fiziksel Arayüzler
+
+<center>
+
+![plc-expansion-121](/img/plc-expansion-121.png)
+
+</center>
+
+<center>
+
+![plc-expansion-166](/img/plc-expansion-166.png)
+
+</center>
+
+#### GD1 Kart Tipi \(16 Dijital Çıkış\) Fiziksel Arayüzler
+
+<center>
+
+![plc-expansion-123](/img/plc-expansion-123.png)
+
+</center>
+
+<center>
+
+![plc-expansion-167](/img/plc-expansion-167.png)
 
 </center>
 
@@ -91,7 +126,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-10](/img/plc-expansion-10.png)
+![plc-expansion-168](/img/plc-expansion-168.png)
 
 </center>
 
@@ -101,51 +136,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-11](/img/plc-expansion-11.png)
-
-</center>
-
-#### Dijital Girişler
-
-<center>
-
-![plc-expansion-12](/img/plc-expansion-12.png)
-
-</center>
-
-## XIO110.DO8 Dijital Çıkışlar
-
-### XIO11.DO8 Genel Bilgi
-
-#### Fiziksel Arayüzler
-
-<center>
-
-![plc-expansion-13](/img/plc-expansion-13.png)
-
-</center>
-
-<center>
-
-![plc-expansion-14](/img/plc-expansion-14.png)
-
-</center>
-
-#### Genel Cihaz Özellikleri
-
-<center>
-
-![plc-expansion-15](/img/plc-expansion-15.png)
-
-</center>
-
-### Bağlantı Şemaları
-
-#### Besleme Bağlantısı
-
-<center>
-
-![plc-expansion-16](/img/plc-expansion-16.png)
+![plc-expansion-164](/img/plc-expansion-164.png)
 
 </center>
 
@@ -153,25 +144,31 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-17](/img/plc-expansion-17.png)
-
-</center>
-
-## XIO110.DO16 Dijital Çıkışlar
-
-### XIO110.DO16 Genel Bilgi
-
-#### Fiziksel Arayüzler
-
-<center>
-
-![plc-expansion-18](/img/plc-expansion-18.png)
+![plc-expansion-169](/img/plc-expansion-169.png)
 
 </center>
 
 <center>
 
-![plc-expansion-19](/img/plc-expansion-19.png)
+![plc-expansion-127](/img/plc-expansion-127.png)
+
+</center>
+
+## XIO110 Dijital Giriş Çıkış Genişleme Modülleri
+
+### Genel Bilgi
+
+#### GD8 Kart Tipi \(8 Dijital Giriş,8 Dijital Çıkış\) Fiziksel Arayüzler
+
+<center>
+
+![plc-expansion-128](/img/plc-expansion-128.png)
+
+</center>
+
+<center>
+
+![plc-expansion-170](/img/plc-expansion-170.png)
 
 </center>
 
@@ -179,7 +176,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-20](/img/plc-expansion-20.png)
+![plc-expansion-171](/img/plc-expansion-171.png)
 
 </center>
 
@@ -189,52 +186,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-21](/img/plc-expansion-21.png)
-
-</center>
-
-#### Dijital Çıkışlar
-
-<center>
-
-![plc-expansion-22](/img/plc-expansion-22.png)
-
-</center>
-
-## XIO110.DI8DO8 Dijital Çıkışlar
-
-### XIO110.DI8DO8 Genel Bilgi
-
-#### Fiziksel Arayüzler
-
-<center>
-
-![plc-expansion-23](/img/plc-expansion-23.png)
-
-</center>
-
-<center>
-
-![plc-expansion-24](/img/plc-expansion-24.png)
-
-</center>
-
-
-#### Genel Cihaz Özellikleri
-
-<center>
-
-![plc-expansion-25](/img/plc-expansion-25.png)
-
-</center>
-
-### Bağlantı Şemaları
-
-#### Besleme Bağlantısı
-
-<center>
-
-![plc-expansion-26](/img/plc-expansion-26.png)
+![plc-expansion-164](/img/plc-expansion-164.png)
 
 </center>
 
@@ -242,31 +194,31 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-27](/img/plc-expansion-27.png)
+![plc-expansion-172](/img/plc-expansion-172.png)
 
 </center>
 
 <center>
 
-![plc-expansion-28](/img/plc-expansion-28.png)
+![plc-expansion-131](/img/plc-expansion-131.png)
 
 </center>
 
-## XIO110.AI4 Analog Giriş
+## XIO110 Analog Giriş Genişleme Modülleri
 
-### XIO110.AI4 Genel Bilgi
+### Genel Bilgi
 
-#### Fiziksel Arayüzler
+#### GD2 Kart Tipi \(8 Analog Giriş\) Fiziksel Arayüzler
 
 <center>
 
-![plc-expansion-29](/img/plc-expansion-29.png)
+![plc-expansion-133](/img/plc-expansion-133.png)
 
 </center>
 
 <center>
 
-![plc-expansion-30](/img/plc-expansion-30.png)
+![plc-expansion-173](/img/plc-expansion-173.png)
 
 </center>
 
@@ -274,7 +226,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-31](/img/plc-expansion-31.png)
+![plc-expansion-174](/img/plc-expansion-174.png)
 
 </center>
 
@@ -284,7 +236,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-32](/img/plc-expansion-32.png)
+![plc-expansion-164](/img/plc-expansion-164.png)
 
 </center>
 
@@ -292,39 +244,40 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-33](/img/plc-expansion-33.png)
+![plc-expansion-175](/img/plc-expansion-175.png)
 
 </center>
 
 <center>
 
-![plc-expansion-34](/img/plc-expansion-34.png)
+![plc-expansion-137](/img/plc-expansion-137.png)
 
 </center>
 
-## XIO110.AI8 Analog Giriş
+## XIO110 Analog Çıkış Genişleme Modülleri
 
-### XIO110.AI8 Genel Bilgi
+### Genel Bilgi
 
-#### Fiziksel Arayüzler
+#### GD3 Kart Tipi \(8 Analog Çıkış\) Fiziksel Arayüzler
 
 <center>
 
-![plc-expansion-35](/img/plc-expansion-35.png)
+![plc-expansion-138](/img/plc-expansion-138.png)
 
 </center>
 
 <center>
 
-![plc-expansion-36](/img/plc-expansion-36.png)
+![plc-expansion-176](/img/plc-expansion-176.png)
 
 </center>
+
 
 #### Genel Cihaz Özellikleri
 
 <center>
 
-![plc-expansion-37](/img/plc-expansion-37.png)
+![plc-expansion-177](/img/plc-expansion-177.png)
 
 </center>
 
@@ -334,57 +287,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-38](/img/plc-expansion-38.png)
-
-</center>
-
-#### Analog Girişler
-
-<center>
-
-![plc-expansion-39](/img/plc-expansion-39.png)
-
-</center>
-
-<center>
-
-![plc-expansion-40](/img/plc-expansion-40.png)
-
-</center>
-
-## XIO110.AO4 Analog Çıkış
-
-### XIO110.AO4 Genel Bilgi
-
-#### Fiziksel Arayüzler
-
-<center>
-
-![plc-expansion-41](/img/plc-expansion-41.png)
-
-</center>
-
-<center>
-
-![plc-expansion-42](/img/plc-expansion-42.png)
-
-</center>
-
-#### Genel Cihaz Özellikleri
-
-<center>
-
-![plc-expansion-43](/img/plc-expansion-43.png)
-
-</center>
-
-### Bağlantı Şemaları
-
-#### Besleme Bağlantısı
-
-<center>
-
-![plc-expansion-44](/img/plc-expansion-44.png)
+![plc-expansion-164](/img/plc-expansion-164.png)
 
 </center>
 
@@ -392,31 +295,31 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-45](/img/plc-expansion-45.png)
+![plc-expansion-178](/img/plc-expansion-178.png)
 
 </center>
 
 <center>
 
-![plc-expansion-46](/img/plc-expansion-46.png)
+![plc-expansion-142](/img/plc-expansion-142.png)
 
 </center>
 
-## XIO110.AO8 Analog Çıkış
+## XIO110 Analog Giriş Çıkış Genişleme Modülleri
 
-### XIO110.AO8 Genel Bilgi
+### Genel Bilgi
 
-#### Fiziksel Arayüzler
+#### GD9 Kart Tipi \(4 Analog Giriş, 4 Analog Çıkış\) Fiziksel Arayüzler
 
 <center>
 
-![plc-expansion-47](/img/plc-expansion-47.png)
+![plc-expansion-143](/img/plc-expansion-143.png)
 
 </center>
 
 <center>
 
-![plc-expansion-48](/img/plc-expansion-48.png)
+![plc-expansion-179](/img/plc-expansion-179.png)
 
 </center>
 
@@ -424,7 +327,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-49](/img/plc-expansion-49.png)
+![plc-expansion-180](/img/plc-expansion-180.png)
 
 </center>
 
@@ -434,57 +337,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-50](/img/plc-expansion-50.png)
-
-</center>
-
-#### Analog Çıkışlar
-
-<center>
-
-![plc-expansion-51](/img/plc-expansion-51.png)
-
-</center>
-
-<center>
-
-![plc-expansion-52](/img/plc-expansion-52.png)
-
-</center>
-
-## XIO110.AI4AO4 Analog Çıkış
-
-### XIO110.AI4AO4 Genel Bilgi
-
-#### Fiziksel Arayüzler
-
-<center>
-
-![plc-expansion-53](/img/plc-expansion-53.png)
-
-</center>
-
-<center>
-
-![plc-expansion-54](/img/plc-expansion-54.png)
-
-</center>
-
-#### Genel Cihaz Özellikleri
-
-<center>
-
-![plc-expansion-55](/img/plc-expansion-55.png)
-
-</center>
-
-### Bağlantı Şemaları
-
-#### Besleme Bağlantısı
-
-<center>
-
-![plc-expansion-56](/img/plc-expansion-56.png)
+![plc-expansion-164](/img/plc-expansion-164.png)
 
 </center>
 
@@ -492,32 +345,31 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-57](/img/plc-expansion-57.png)
+![plc-expansion-181](/img/plc-expansion-181.png)
 
 </center>
 
 <center>
 
-![plc-expansion-58](/img/plc-expansion-58.png)
+![plc-expansion-147](/img/plc-expansion-147.png)
 
 </center>
 
+## XIO110 RTD Giriş \(PT100/PT1000\) Genişleme Modülleri
 
-## XIO110.P6 RTD GİRİŞİ(PT100/PT1000)
+### Genel Bilgi
 
-### XIO110.P6 Genel Bilgi
-
-#### Fiziksel Arayüzler
+#### GD4 Kart Tipi \(6 RTD Giriş) Fiziksel Arayüzler
 
 <center>
 
-![plc-expansion-59](/img/plc-expansion-59.png)
+![plc-expansion-148](/img/plc-expansion-148.png)
 
 </center>
 
 <center>
 
-![plc-expansion-60](/img/plc-expansion-60.png)
+![plc-expansion-182](/img/plc-expansion-182.png)
 
 </center>
 
@@ -525,7 +377,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-61](/img/plc-expansion-61.png)
+![plc-expansion-183](/img/plc-expansion-183.png)
 
 </center>
 
@@ -535,7 +387,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-62](/img/plc-expansion-62.png)
+![plc-expansion-164](/img/plc-expansion-164.png)
 
 </center>
 
@@ -543,34 +395,39 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-63](/img/plc-expansion-63.png)
-
-</center>
-
-## XIO 110.R8 Röle Çıkışı
-
-### XIO 110.R8 Genel Bilgi
-
-#### Fiziksel Arayüzler
-
-<center>
-
-![plc-expansion-64](/img/plc-expansion-64.png)
+![plc-expansion-184](/img/plc-expansion-184.png)
 
 </center>
 
 <center>
 
-![plc-expansion-65](/img/plc-expansion-65.png)
+![plc-expansion-152](/img/plc-expansion-152.png)
 
 </center>
 
+## XIO110 DALI Genişleme Modülleri
+
+### Genel Bilgi
+
+#### GDA Kart Tipi \(1 DALI Port) Fiziksel Arayüzler
+
+<center>
+
+![plc-expansion-153](/img/plc-expansion-153.png)
+
+</center>
+
+<center>
+
+![plc-expansion-185](/img/plc-expansion-185.png)
+
+</center>
 
 #### Genel Cihaz Özellikleri
 
 <center>
 
-![plc-expansion-66](/img/plc-expansion-66.png)
+![plc-expansion-186](/img/plc-expansion-186.png)
 
 </center>
 
@@ -580,14 +437,35 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-67](/img/plc-expansion-67.png)
+![plc-expansion-164](/img/plc-expansion-164.png)
 
 </center>
 
-#### Relay Çıkışlar
+#### DALI Akım Limitli Güç Bağlantısı
 
 <center>
 
-![plc-expansion-68](/img/plc-expansion-68.png)
+![plc-expansion-187](/img/plc-expansion-187.png)
 
 </center>
+
+<center>
+
+![plc-expansion-157](/img/plc-expansion-157.png)
+
+</center>
+
+#### DALI Akım Limitli Güç Çıkış Bağlantısı
+
+<center>
+
+![plc-expansion-188](/img/plc-expansion-188.png)
+
+</center>
+
+<center>
+
+![plc-expansion-159](/img/plc-expansion-159.png)
+
+</center>
+
