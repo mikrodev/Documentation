@@ -30,7 +30,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 ### Genel Bilgi
 
-#### GD6 Kart Tipi \(8 Dijital Giriş\) Fiziksel Arayüzler
+### GD6 Kart Tipi \(8 Dijital Giriş\) Fiziksel Arayüzler
 
 <center>
 
@@ -44,7 +44,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 </center>
 
-#### GD0 Kart Tipi \(16 Dijital Giriş\) Fiziksel Arayüzler
+### GD0 Kart Tipi \(16 Dijital Giriş\) Fiziksel Arayüzler
 
 <center>
 
@@ -58,7 +58,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 </center>
 
-#### Genel Cihaz Özellikleri
+### Genel Cihaz Özellikleri
 
 <center>
 
@@ -94,7 +94,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 ### Genel Bilgi
 
-#### GD7 Kart Tipi \(8 Dijital Çıkış\) Fiziksel Arayüzler
+### GD7 Kart Tipi \(8 Dijital Çıkış\) Fiziksel Arayüzler
 
 <center>
 
@@ -108,7 +108,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 </center>
 
-#### GD1 Kart Tipi \(16 Dijital Çıkış\) Fiziksel Arayüzler
+### GD1 Kart Tipi \(16 Dijital Çıkış\) Fiziksel Arayüzler
 
 <center>
 
@@ -122,7 +122,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 </center>
 
-#### Genel Cihaz Özellikleri
+### Genel Cihaz Özellikleri
 
 <center>
 
@@ -158,7 +158,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 ### Genel Bilgi
 
-#### GD8 Kart Tipi \(8 Dijital Giriş,8 Dijital Çıkış\) Fiziksel Arayüzler
+### GD8 Kart Tipi \(8 Dijital Giriş,8 Dijital Çıkış\) Fiziksel Arayüzler
 
 <center>
 
@@ -172,7 +172,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 </center>
 
-#### Genel Cihaz Özellikleri
+### Genel Cihaz Özellikleri
 
 <center>
 
@@ -208,7 +208,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 ### Genel Bilgi
 
-#### GD2 Kart Tipi \(8 Analog Giriş\) Fiziksel Arayüzler
+### GD2 Kart Tipi \(8 Analog Giriş\) Fiziksel Arayüzler
 
 <center>
 
@@ -222,7 +222,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 </center>
 
-#### Genel Cihaz Özellikleri
+### Genel Cihaz Özellikleri
 
 <center>
 
@@ -258,7 +258,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 ### Genel Bilgi
 
-#### GD3 Kart Tipi \(8 Analog Çıkış\) Fiziksel Arayüzler
+### GD3 Kart Tipi \(8 Analog Çıkış\) Fiziksel Arayüzler
 
 <center>
 
@@ -273,7 +273,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 </center>
 
 
-#### Genel Cihaz Özellikleri
+### Genel Cihaz Özellikleri
 
 <center>
 
@@ -309,7 +309,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 ### Genel Bilgi
 
-#### GD9 Kart Tipi \(4 Analog Giriş, 4 Analog Çıkış\) Fiziksel Arayüzler
+### GD9 Kart Tipi \(4 Analog Giriş, 4 Analog Çıkış\) Fiziksel Arayüzler
 
 <center>
 
@@ -323,7 +323,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 </center>
 
-#### Genel Cihaz Özellikleri
+### Genel Cihaz Özellikleri
 
 <center>
 
@@ -359,7 +359,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 ### Genel Bilgi
 
-#### GD4 Kart Tipi \(6 RTD Giriş) Fiziksel Arayüzler
+### GD4 Kart Tipi \(6 RTD Giriş) Fiziksel Arayüzler
 
 <center>
 
@@ -373,7 +373,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 </center>
 
-#### Genel Cihaz Özellikleri
+### Genel Cihaz Özellikleri
 
 <center>
 
@@ -409,7 +409,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 ### Genel Bilgi
 
-#### GDA Kart Tipi \(1 DALI Port) Fiziksel Arayüzler
+### GDA Kart Tipi \(1 DALI Port) Fiziksel Arayüzler
 
 <center>
 
@@ -423,7 +423,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 </center>
 
-#### Genel Cihaz Özellikleri
+### Genel Cihaz Özellikleri
 
 <center>
 

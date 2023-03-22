@@ -6,7 +6,7 @@ title: XIO110 Series Hardware Manual
 
 [XIO110 Expansion Modules](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_XIO110_en.pdf)
 
-### DIN Rail Mounting
+#### DIN Rail Mounting
 First, the upper part of the device is mounted on the DIN rail. Then, with the help of the
 springs behind the device, when a lightly force is applied to the lower part, the device
 locates into the DIN rail easily and the montage is completed.
@@ -32,7 +32,7 @@ overlap each other.
 
 ### General Information
 
-### GD6 Board Type \(8 Dijital Input\) Physical Interfaces
+### GD6 Board Type \(8 Digital Input\) Physical Interfaces
 
 <center>
 
@@ -70,7 +70,7 @@ overlap each other.
 
 ### Connection Diagrams
 
-### Supply Connection
+#### Supply Connection
 
 <center>
 
@@ -78,7 +78,7 @@ overlap each other.
 
 </center>
 
-### Digital Inputs
+#### Digital Inputs
 
 <center>
 
@@ -134,7 +134,7 @@ overlap each other.
 
 ### Connection Diagrams
 
-### Supply Connection
+#### Supply Connection
 
 <center>
 
@@ -142,7 +142,7 @@ overlap each other.
 
 </center>
 
-### Digital Outputs
+#### Digital Outputs
 
 <center>
 
@@ -184,7 +184,7 @@ overlap each other.
 
 ### Connection Diagrams
 
-### Supply Connection
+#### Supply Connection
 
 <center>
 
@@ -192,7 +192,7 @@ overlap each other.
 
 </center>
 
-### Digital Input and Output
+#### Digital Input and Output
 
 <center>
 
@@ -228,13 +228,13 @@ overlap each other.
 
 <center>
 
-![plc-expansion-135](/img/plc-expansion-135.png)
+![plc-expansion-05](/img/plc-expansion-05.png)
 
 </center>
 
 ### Connection Diagrams
 
-### Supply Connection
+#### Supply Connection
 
 <center>
 
@@ -242,7 +242,7 @@ overlap each other.
 
 </center>
 
-### Analog Inputs
+#### Analog Inputs
 
 <center>
 
@@ -284,7 +284,7 @@ overlap each other.
 
 ### Connection Diagrams
 
-### Supply Connection
+#### Supply Connection
 
 <center>
 
@@ -292,7 +292,7 @@ overlap each other.
 
 </center>
 
-### Analog Outputs
+#### Analog Outputs
 
 <center>
 
@@ -334,7 +334,7 @@ overlap each other.
 
 ### Connection Diagrams
 
-### Supply Connection
+#### Supply Connection
 
 <center>
 
@@ -342,7 +342,7 @@ overlap each other.
 
 </center>
 
-###  Analog Input and Output
+####  Analog Input and Output
 
 <center>
 
@@ -384,7 +384,7 @@ overlap each other.
 
 ### Connection Diagrams
 
-### Supply Connection
+#### Supply Connection
 
 <center>
 
@@ -392,7 +392,7 @@ overlap each other.
 
 </center>
 
-###  RTD Inputs
+####  RTD Inputs
 
 <center>
 
@@ -434,7 +434,7 @@ overlap each other.
 
 ### Connection Diagrams
 
-### Supply Connection
+#### Supply Connection
 
 <center>
 
@@ -442,7 +442,7 @@ overlap each other.
 
 </center>
 
-###  DALI Current-Limited Power Connection
+####  DALI Current-Limited Power Connection
 
 <center>
 
@@ -456,7 +456,7 @@ overlap each other.
 
 </center>
 
-###  DALI Current-Limited Power Output Connection
+####  DALI Current-Limited Power Output Connection
 
 <center>
 

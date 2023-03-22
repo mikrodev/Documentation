@@ -7,6 +7,7 @@ title: XIO211 Series Hardware Manual
 [XIO211 Expansion Modules](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_XIO211_en.pdf)
 
 ### DIN Rail Mounting
+
 First, the upper part of the device is mounted on the DIN rail. Then, with the help of the
 springs behind the device, when a lightly force is applied to the lower part, the device
 locates into the DIN rail easily and the montage is completed.
@@ -18,6 +19,7 @@ locates into the DIN rail easily and the montage is completed.
 </center>
 
 ### Expansion Installation
+
 Assembly between MP211 series PLC or RTU300 series RTU products and XIO211 series
 expansion modules is carried out by sliding the tabs over the rail so that the tabs overlap
 each other
@@ -28,11 +30,11 @@ each other
 
 </center>
 
-## XIO211.DI16 Digital Input
+## XIO211 Digital Input Expansion Modules
 
-### XIO211.DI16 General Information
+### General Information
 
-#### Physical Interfaces
+### GD0 Board Type \(16 Digital Input\) Physical Interfaces
 
 <center>
 
@@ -78,11 +80,11 @@ each other
 
 </center>
 
-## XIO211.DO16 Digital Output
+## XIO211 Digital Output Expansion Modules
 
-### XIO211.DO16 General Information
+### General Information
 
-#### Physical Interfaces
+### GD7 Board Type \(8 Digital Output\)  Physical Interfaces
 
 <center>
 
@@ -96,11 +98,25 @@ each other
 
 </center>
 
+### GD1 Board Type \(16 Digital Output\)  Physical Interfaces
+
+<center>
+
+![plc-expansion-189](/img/plc-expansion-189.png)
+
+</center>
+
+<center>
+
+![plc-expansion-190](/img/plc-expansion-190.png)
+
+</center>
+
 #### General Device Specifications
 
 <center>
 
-![plc-expansion-79](/img/plc-expansion-79.png)
+![plc-expansion-73](/img/plc-expansion-73.png)
 
 </center>
 
@@ -110,7 +126,7 @@ each other
 
 <center>
 
-![plc-expansion-80](/img/plc-expansion-80.png)
+![plc-expansion-74](/img/plc-expansion-74.png)
 
 </center>
 
@@ -128,11 +144,11 @@ each other
 
 </center>
 
-## XIO211.DI8DO8 Digital Input Output
+## XIO211 Digital Input Output Expansion Modules
 
-### XIO211.DI8DO8 General Information
+### General Information
 
-#### Physical Interfaces
+### GD8 Board Type \(8 Digital Input, 8 Digital Output) Physical Interfaces
 
 <center>
 
@@ -150,7 +166,7 @@ each other
 
 <center>
 
-![plc-expansion-85](/img/plc-expansion-85.png)
+![plc-expansion-73](/img/plc-expansion-73.png)
 
 </center>
 
@@ -160,7 +176,7 @@ each other
 
 <center>
 
-![plc-expansion-86](/img/plc-expansion-86.png)
+![plc-expansion-74](/img/plc-expansion-74.png)
 
 </center>
 
@@ -178,11 +194,55 @@ each other
 
 </center>
 
-## XIO211.AI8 Analog Input
+## XIO211 Relay  Expansion Modules
 
-### XIO211.AI8 General Information
+### General Information
 
-#### Physical Interfaces
+### GD5 Board Type \(8 Relay\) Physical Interfaces
+
+<center>
+
+![plc-expansion-113](/img/plc-expansion-113.png)
+
+</center>
+
+<center>
+
+![plc-expansion-114](/img/plc-expansion-114.png)
+
+</center>
+
+#### General Device Specifications
+
+<center>
+
+![plc-expansion-73](/img/plc-expansion-73.png)
+
+</center>
+
+### Connection Diagrams
+
+#### Supply Connection
+
+<center>
+
+![plc-expansion-74](/img/plc-expansion-74.png)
+
+</center>
+
+####  Relay Outputs
+
+<center>
+
+![plc-expansion-117](/img/plc-expansion-45.png)
+
+</center>
+
+## XIO211 Analog Input Expansion Modules
+
+### General Information
+
+### GD2 Board Type \(8 Analog Input\)  Physical Interfaces
 
 <center>
 
@@ -200,7 +260,7 @@ each other
 
 <center>
 
-![plc-expansion-91](/img/plc-expansion-91.png)
+![plc-expansion-73](/img/plc-expansion-73.png)
 
 </center>
 
@@ -210,7 +270,7 @@ each other
 
 <center>
 
-![plc-expansion-92](/img/plc-expansion-92.png)
+![plc-expansion-74](/img/plc-expansion-74.png)
 
 </center>
 
@@ -228,11 +288,11 @@ each other
 
 </center>
 
-## XIO211.AO8 Analog Output
+## XIO211 Analog Output Expansion Modules
 
-### XIO211.AO8 General Information
+### General Information
 
-#### Physical Interfaces
+### GD3 Board Type \(8 Analog Output) Physical Interfaces
 
 <center>
 
@@ -251,7 +311,7 @@ each other
 
 <center>
 
-![plc-expansion-97](/img/plc-expansion-97.png)
+![plc-expansion-73](/img/plc-expansion-73.png)
 
 </center>
 
@@ -261,7 +321,7 @@ each other
 
 <center>
 
-![plc-expansion-98](/img/plc-expansion-98.png)
+![plc-expansion-74](/img/plc-expansion-74.png)
 
 </center>
 
@@ -279,11 +339,11 @@ each other
 
 </center>
 
-## XIO211.AI4AO4 Analog Input Output
+## XIO211 Analog Input Output Expansion Modules
 
-### XIO211.AI4AO4 General Information
+### General Information
 
-#### Physical Interfaces
+### GD9 Board Type \(4 Analog Input, 4 Analog Output\) Physical Interfaces
 
 <center>
 
@@ -301,7 +361,7 @@ each other
 
 <center>
 
-![plc-expansion-103](/img/plc-expansion-103.png)
+![plc-expansion-73](/img/plc-expansion-73.png)
 
 </center>
 
@@ -311,7 +371,7 @@ each other
 
 <center>
 
-![plc-expansion-104](/img/plc-expansion-104.png)
+![plc-expansion-74](/img/plc-expansion-74.png)
 
 </center>
 
@@ -329,11 +389,11 @@ each other
 
 </center>
 
-## XIO211.P6 RTD Input (PT100/PT1000) 
+## XIO211 RTD Input (PT100/PT1000) Expansion Modules 
 
-### XIO211.P6 General Information
+### General Information
 
-#### Physical Interfaces
+### GD4 Board Type \(6 RTD Input\) Physical Interfaces
 
 <center>
 
@@ -351,7 +411,7 @@ each other
 
 <center>
 
-![plc-expansion-109](/img/plc-expansion-109.png)
+![plc-expansion-73](/img/plc-expansion-73.png)
 
 </center>
 
@@ -361,7 +421,7 @@ each other
 
 <center>
 
-![plc-expansion-110](/img/plc-expansion-110.png)
+![plc-expansion-74](/img/plc-expansion-74.png)
 
 </center>
 
@@ -379,46 +439,3 @@ each other
 
 </center>
 
-## XIO211.R8 Relay Output
-
-### XIO211.R8 General Information
-
-#### Physical Interfaces
-
-<center>
-
-![plc-expansion-113](/img/plc-expansion-113.png)
-
-</center>
-
-<center>
-
-![plc-expansion-114](/img/plc-expansion-114.png)
-
-</center>
-
-#### General Device Specifications
-
-<center>
-
-![plc-expansion-115](/img/plc-expansion-115.png)
-
-</center>
-
-### Connection Diagrams
-
-#### Supply Connection
-
-<center>
-
-![plc-expansion-116](/img/plc-expansion-116.png)
-
-</center>
-
-####  Relay Outputs
-
-<center>
-
-![plc-expansion-117](/img/plc-expansion-45.png)
-
-</center>
