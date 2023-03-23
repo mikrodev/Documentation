@@ -24,7 +24,7 @@ The screws attached to the slots on the panel are removed with the help of a scr
 
 ## DM500 General Information
 
-### BP0 Rack Board Type Physical Interfaces
+### BP0 Rack Panel Board Type Physical Interfaces
 
 <center>
 
