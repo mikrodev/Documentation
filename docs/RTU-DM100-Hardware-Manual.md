@@ -6,7 +6,7 @@ title: DM100 Hardware Manual
 
 [DM100 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2022/09/MIKRODEV_HM_DM100_en.pdf)
 
-### Physical Interfaces
+### GC0 Board Type Physical Interfaces
 
 <center>
 
@@ -20,10 +20,19 @@ title: DM100 Hardware Manual
 
 </center>
 
-Notes: 
+### GC3 Board Type Physical Interfaces
 
-* DM110 has 2 ethernet ports 
-* Available for DM100
+<center>
+
+![rtu-dm100-hardware-09](/img/rtu-dm100-hardware-09.png)
+
+</center>
+
+<center>
+
+![rtu-dm100-hardware-10](/img/rtu-dm100-hardware-10.png)
+
+</center>
 
 ### General Device Specifications
 
@@ -32,11 +41,6 @@ Notes:
 ![rtu-dm100-hardware-03](/img/rtu-dm100-hardware-03.png)
 
 </center>
-
-Notes:
-
-* May differ on some models
-* Available for DM100
 
 ## Installation Information
 
@@ -86,10 +90,23 @@ that the connectors correponds.
 
 </center>
 
-### RS232 Serial Port
-
 <center>
 
 ![rtu-dm100-hardware-08](/img/rtu-dm100-hardware-08.png)
 
 </center>
+
+### RS232 Serial Port
+
+<center>
+
+![rtu-dm100-hardware-11](/img/rtu-dm100-hardware-11.png)
+
+</center>
+
+<center>
+
+![rtu-dm100-hardware-12](/img/rtu-dm100-hardware-12.png)
+
+</center>
+

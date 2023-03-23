@@ -16,31 +16,35 @@ title: DM100 Donanım Kılavuzu
 
 <center>
 
-![rtu-dm100-hardware-02](/img/rtu-dm100-hardware-02.png)
+![rtu-dm100-hardware-13](/img/rtu-dm100-hardware-13.png)
 
 </center>
 
-Notes: 
+### GC3 Board Type Physical Interfaces
 
-* DM110'da 2 ethernet portu bulunur
-* DM100 için kullanılabilir
+<center>
+
+![rtu-dm100-hardware-09](/img/rtu-dm100-hardware-09.png)
+
+</center>
+
+<center>
+
+![rtu-dm100-hardware-14](/img/rtu-dm100-hardware-14.png)
+
+</center>
 
 ### Genel Cihaz Özellikleri
 
 <center>
 
-![rtu-dm100-hardware-03](/img/rtu-dm100-hardware-03.png)
+![rtu-dm100-hardware-15](/img/rtu-dm100-hardware-15.png)
 
 </center>
 
-Notlar:
+## Montaj Bilgileri
 
-* Bazı modellerde farklılık gösterebilir
-* DM100 için kullanılabilir
-
-## Kurulum Bilgileri
-
-### Ray Kurulumu
+### Ray Montaj
 
 #### DIN Ray Montajı
 İlk olarak cihazın üst kısmı DIN rayına monte edilir. Daha sonra, yardımı ile
@@ -74,7 +78,7 @@ konektörlerin karşılık geldiği anlamına gelir.
 
 <center>
 
-![rtu-dm100-hardware-06](/img/rtu-dm100-hardware-06.png)
+![rtu-dm100-hardware-16](/img/rtu-dm100-hardware-16.png)
 
 </center>
 
@@ -82,7 +86,13 @@ konektörlerin karşılık geldiği anlamına gelir.
 
 <center>
 
-![rtu-dm100-hardware-07](/img/rtu-dm100-hardware-07.png)
+![rtu-dm100-hardware-17](/img/rtu-dm100-hardware-17.png)
+
+</center>
+
+<center>
+
+![rtu-dm100-hardware-08](/img/rtu-dm100-hardware-08.png)
 
 </center>
 
@@ -90,6 +100,12 @@ konektörlerin karşılık geldiği anlamına gelir.
 
 <center>
 
-![rtu-dm100-hardware-08](/img/rtu-dm100-hardware-08.png)
+![rtu-dm100-hardware-18](/img/rtu-dm100-hardware-18.png)
+
+</center>
+
+<center>
+
+![rtu-dm100-hardware-12](/img/rtu-dm100-hardware-12.png)
 
 </center>
