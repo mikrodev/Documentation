@@ -6,7 +6,7 @@ title: DM100 Donanım Kılavuzu
 
 [DM100 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2022/11/MIKRODEV_HM_DM100.pdf)
 
-### Fiziksel Arayüzler
+### GC0 Kart Tipi Fiziksel Arayüzler
 
 <center>
 
@@ -20,7 +20,7 @@ title: DM100 Donanım Kılavuzu
 
 </center>
 
-### GC3 Board Type Physical Interfaces
+### GC3 Kart Tipi Fiziksel Arayüzler
 
 <center>
 

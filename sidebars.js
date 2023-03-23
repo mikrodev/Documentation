@@ -71,7 +71,8 @@ module.exports = {
 	  "RTU": {
 	    "RTU Hardware": [
           "RTU-RTU-Series-Hardware-Manual",
-          "RTU-DM100-Hardware-Manual", 		  
+          "RTU-DM100-Hardware-Manual",
+		  "RTU-DM50-Hardware-Manual",  		  
 	  ],
 	},
 	
