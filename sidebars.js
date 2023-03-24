@@ -67,6 +67,10 @@ module.exports = {
           "PLC-XIO110-Expansion-Modules",
 		  "PLC-XIO211-Expansion-Modules",		  
 	  ],
+
+	  "Quick Installation Guide": [
+		"PLC-Series-Quick-Installation-Guide",	  
+	],
 	},
 	  "RTU": {
 	    "RTU Hardware": [

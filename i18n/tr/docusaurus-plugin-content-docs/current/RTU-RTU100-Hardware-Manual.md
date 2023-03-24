@@ -14,11 +14,11 @@ title: RTU100 Donanım Kılavuzu
 
 <center>
 
-![plc-hardware-11](/img/plc-hardware-11.png)
+![rtu100-hardware-11](/img/rtu100-hardware-11.png)
 
 </center>
 
-### General Device Specifications
+### Genel Cihaz Özellikleri
 
 <center>
 
