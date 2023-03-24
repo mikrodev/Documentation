@@ -28,7 +28,7 @@ The following steps are followed to create a new project in Mikrodiagram.
 
 <center>
 
-![plc-quick-inst-01](/img/plc-quick-inst-01.png)
+![plc-quick-inst-33](/img/plc-quick-inst-33.png)
 
 </center>
 
