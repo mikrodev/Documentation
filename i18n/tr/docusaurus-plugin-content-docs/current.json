@@ -35,10 +35,6 @@
     "message": "RTU Donanım",
     "description": "The label for category RTU Hardware in sidebar RTU"
   },
-  "sidebar.RTU.category.RTU.Quick Installation Guide": {
-    "message": "Hızlı Kullanım Kılavuzu",
-    "description": "The label for category Quick Installation Guide in sidebar RTU"
-  },
   "sidebar.Gateway.category.Gateway Hardware": {
     "message": "Gateway Donanım",
     "description": "The label for category Gateway Hardware in sidebar Gateway"
