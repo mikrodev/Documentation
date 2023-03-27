@@ -44,7 +44,7 @@ Double-click the license_user.exe application located in the bin folder. The num
 
 </center>
 
-Note: If the hardware id of the device is to be learned, it should be noted that the dongle is not attached to the device.
+**Note:** If the hardware id of the device is to be learned, it should be noted that the dongle is not attached to the device.
 
 The license file obtained from the sales unit must be copied to the bin folder of the telediagram software.
 
@@ -108,7 +108,7 @@ The programming method is selected.
 
 </center>
 
-The device to be programmed and the expansion unit (if it needs to be added) are selected.
+The device to be programmed and the expansion unit  \(if it needs to be added\) are selected.
 
 #### Step 5
 
@@ -150,7 +150,7 @@ There is no need for USB driver installation on computers with Windows 10 and ab
 
 After the USB Driver installation is completed, a USB cable connection is made between the computer and the device.
 
-"USB A and USB B" (printer cable) should be preferred for USB cable selection. The USB B side is connected to the device and the USB A side is connected to the computer.
+"USB A and USB B" \(printer cable\) should be preferred for USB cable selection. The USB B side is connected to the device and the USB A side is connected to the computer.
 
 The COM port where the USB cable connected from the device manager is defined is determined.
 
@@ -194,13 +194,13 @@ In order to establish an Ethernet connection;
 
 - The device must have an ethernet port.
 
-- Ethernet cable (CAT5, CAT6) connection must be established between the device and the computer.
+- Ethernet cable \(CAT5, CAT6\) connection must be established between the device and the computer.
 
 - If the device and the computer are in the same local network, the defined IPs should be selected accordingly.
 
 #### Identifying IP To The Device
 
-"Mikroterminal" program should be used to make device IP settings via USB connection. (See "Using the Mikroterminal" section.)
+"Mikroterminal" program should be used to make device IP settings via USB connection. \(See "Using the Mikroterminal" section.\)
 
 <center>
 
@@ -308,13 +308,13 @@ In order to establish a GSM and TCP connection to the device in Telediagram;
 
 - The GSM antenna of the device must be installed.
 
-- Device signal quality (CSQ) should be between 1-31.
+- Device signal quality \(CSQ\) should be between 1-31.
 
-- A SIM card with data package (internet package) must be inserted into the device. (SIM card must have fixed IP.)
+- A SIM card with data package (internet package) must be inserted into the device. \(SIM card must have fixed IP.\)
 
 - APN definition of the inserted SIM card must be made to the device.
 
-- The computer with the Telediagram must be connected to the "wide area network" (WAN) (internet network).
+- The computer with the Telediagram must be connected to the "wide area network" \(WAN\) \(internet network\).
 
 #### Identifying IP To The Device
 
@@ -360,7 +360,7 @@ The device must be restarted in order for the changes to be applied. A confirmat
 
 If the following output occurs in the "incoming messages" section of the Telediagram, it means that the Telediagram project has been successfully loaded to the device.
 
-It should be noted that the file upload process is 100% complete. The device restarts automatically when the project upload process is 100% completed with the USB connection. (it is reset.)
+It should be noted that the file upload process is 100% complete. The device restarts automatically when the project upload process is 100% completed with the USB connection. \(it is reset.\)
 
 <center>
 
@@ -394,7 +394,7 @@ The device must be restarted in order for the changes to be applied. A confirmat
 
 If the following output occurs in the "incoming messages" section of the Telediagram, it means that the Telediagram project has been successfully loaded to the device.
 
-It should be noted that the file upload process is 100% complete. The device restarts automatically when the project upload process is 100% completed with the TCP connection. (it is reset.)
+It should be noted that the file upload process is 100% complete. The device restarts automatically when the project upload process is 100% completed with the TCP connection. \(it is reset.\)
 
 <center>
 
