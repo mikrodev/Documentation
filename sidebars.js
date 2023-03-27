@@ -80,6 +80,10 @@ module.exports = {
 		  "RTU-DM500-Hardware-Manual",   
 		  "RTU-RTU100-Hardware-Manual",
 	  ],
+
+	  "Quick Installation Guide": [
+		"RTU-Series-Quick-Installation-Guide",	  
+	],
 	},
 	
 		  "Gateway": {

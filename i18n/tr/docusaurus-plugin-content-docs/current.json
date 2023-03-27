@@ -27,6 +27,10 @@
     "message": "Genişleme Modül Donanım",
     "description": "The label for category Expansion Modules Hardware in sidebar PLC"
   },
+  "sidebar.PLC.category.Quick Installation Guide": {
+    "message": "Hızlı Kurulum Kılavuzu",
+    "description": "The label for category Quick Installation Guide in sidebar PLC"
+  },
   "sidebar.RTU.category.RTU Hardware": {
     "message": "RTU Donanım",
     "description": "The label for category RTU Hardware in sidebar RTU"
