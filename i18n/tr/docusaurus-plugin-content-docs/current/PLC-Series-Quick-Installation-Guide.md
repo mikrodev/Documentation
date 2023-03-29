@@ -24,6 +24,8 @@ Mikrodiagram kurulumu ekrandaki yönergeler takip edilerek tamamlanır.
 
 Mikrodiagram’da yeni proje oluşturmak için aşağıdaki adımlar takip edilir.
 
+### Yeni Proje Oluşturma
+
 <center>
 
 ![plc-quick-inst-01](/img/plc-quick-inst-01.png)
@@ -32,7 +34,7 @@ Mikrodiagram’da yeni proje oluşturmak için aşağıdaki adımlar takip edili
 
 Mikrodiagram’da yeni proje oluşturmak için "Dosya Menüsü"nden "yeni dosya ya da proje aç" seçilir.
 
-### Adım 1
+#### Adım 1
 
 <center>
 
@@ -40,7 +42,7 @@ Mikrodiagram’da yeni proje oluşturmak için "Dosya Menüsü"nden "yeni dosya 
 
 </center>
 
-### Adım 2
+#### Adım 2
 
 <center>
 
@@ -52,7 +54,7 @@ Yeni oluşturulan proje ismi ve proje oluşturma yeri seçimi yapılır.
 
 "Varsayılan proje konumu olarak kullan" seçildiğinde, daha sonra oluşturulacak projeler için proje oluşturma yeri sabitlenmiş olur.
 
-### Adım 3
+#### Adım 3
 
 <center>
 
@@ -62,7 +64,7 @@ Yeni oluşturulan proje ismi ve proje oluşturma yeri seçimi yapılır.
 
 Programlama metodu seçimi yapılır.
 
-### Adım 4
+#### Adım 4
 
 <center>
 
@@ -72,7 +74,7 @@ Programlama metodu seçimi yapılır.
 
 Programlanmak istenen cihaz ve genişleme birimi (eklenmesi gerekiyorsa) seçimi yapılır.
 
-### Adım 5
+#### Adım 5
 
 <center>
 
@@ -82,7 +84,7 @@ Programlanmak istenen cihaz ve genişleme birimi (eklenmesi gerekiyorsa) seçimi
 
 Proje konfigürasyon ayarlarında değişiklik yapılabilir.
 
-### Adım 6
+#### Adım 6
 
 <center>
 

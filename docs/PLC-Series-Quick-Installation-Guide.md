@@ -84,7 +84,7 @@ The device to be programmed and the expansion unit (if it needs to be added) are
 
 Project configuration settings can be changed.
 
-### Step 6
+#### Step 6
 
 <center>
 

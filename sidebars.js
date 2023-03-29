@@ -82,7 +82,8 @@ module.exports = {
 	  ],
 
 	  "Quick Installation Guide": [
-		"RTU-Series-Quick-Installation-Guide",	  
+		"RTU-Series-Quick-Installation-Guide",
+		"DM-Series-Quick-Installation-Guide",	  
 	],
 	},
 	

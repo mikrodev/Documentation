@@ -1,5 +1,5 @@
 ---
-title: "RTU300 Series Quick Installation Guide"
+title: "DM Series Quick Installation Guide"
 ---
 
 ## Introduction
@@ -104,7 +104,7 @@ The programming method is selected.
 
 <center>
 
-![rtu-quick-inst-08](/img/rtu-quick-inst-08.png)
+![rtu-quick-inst-80](/img/rtu-quick-inst-80.png)
 
 </center>
 
@@ -138,49 +138,7 @@ In the projects section on the left side tab, double-click the Mdv text or click
 
 The projects prepared in the Telediagram must be sent to the device and a connection must be established to the device for online monitoring.
 
-The device can be connected to the device via USB or TCP port in Telediagram.
-
-In Telediagram, connection cannot be established from USB and TCP port at the same time.
-
-### Setting A USB Connection
-
-In order for the USB connection to be established, the USB driver installation must be completed on the computer with the Telediagram installed.
-
-There is no need for USB driver installation on computers with Windows 10 and above operating systems.
-
-After the USB Driver installation is completed, a USB cable connection is made between the computer and the device.
-
-"USB A and USB B" \(printer cable\) should be preferred for USB cable selection. The USB B side is connected to the device and the USB A side is connected to the computer.
-
-The COM port where the USB cable connected from the device manager is defined is determined.
-
-<center>
-
-![rtu-quick-inst-12](/img/rtu-quick-inst-12.png)
-
-</center>
-
-The connection 
-![rtu-quick-inst-11](/img/rtu-quick-inst-11.png)
-interface is accessed by clicking the tab from the Build Mod options.
-
-<center>
-
-![rtu-quick-inst-13](/img/rtu-quick-inst-13.png)
-
-</center>
-
-"Connect using SERIAL USB" is selected, COM port is selected. With the "OK" button, the connection establishment process is started.
-
-<center>
-
-![rtu-quick-inst-14](/img/rtu-quick-inst-14.png)
-
-</center>
-
-When the message "USB connection has been established between the device and the computer via serial port" is received and the connection button is turned to the "connected"
-![rtu-quick-inst-15](/img/rtu-quick-inst-15.png)
-position, the connection via USB is completed.
+The device can be connected to the device via TCP port in Telediagram or web server.
 
 ### Setting A TCP Connection
 
@@ -328,45 +286,38 @@ In order to establish a TCP connection from the Telediagram to the GSM-enabled d
 
 Other than GSM IP identification, other operations are the same as Ethernet TCP connection.
 
+### Connecting To The Device Via Web Server
+
+The following instructions must be followed to log into the DM50 Web Server Interface. 
+
+- Open any internet browser on your computer.
+
+- https://< DEVICE IP > must be entered in the URL part.
+
+<center>
+
+![rtu-quick-inst-77](/img/rtu-quick-inst-77.png)
+
+</center>
+
+- After entering enter, the user login screen appears in figure below. Username and password defined by default must be entered in the Username and Password section.
+
+Defined by default Username: admin
+                   Password: admin
+                
+<center>
+
+![rtu-quick-inst-78](/img/rtu-quick-inst-78.png)
+
+</center>
+
+After logging in as an administrator, user name and password adjustments can be made from the User Manager Page -> User Table section on the left sidebar.
+
 ## Loading A Telediagram Project To The Device 
 
 There are 2 methods to load the project prepared in Telediagram to the device.
 
-The project can be sent to the device via USB or TCP connection.
-
-### Upload Project Via USB Connection 
-
-After the USB connection
-![rtu-quick-inst-27](/img/rtu-quick-inst-27.png)
-is established between the device and the computer, the "send to device" button is clicked. 
-![rtu-quick-inst-28](/img/rtu-quick-inst-28.png)
-The project file is compiled and the bin file is loaded on the device.
-
-The confirmation screen opens for the project file backup to be uploaded to the device. If "Yes" is clicked, then the project file will be extracted from the device.
-
-<center>
-
-![rtu-quick-inst-29](/img/rtu-quick-inst-29.png)
-
-</center>
-
-The device must be restarted in order for the changes to be applied. A confirmation screen appears for device restart. Click on "Yes".
-
-<center>
-
-![rtu-quick-inst-30](/img/rtu-quick-inst-30.png)
-
-</center>
-
-If the following output occurs in the "incoming messages" section of the Telediagram, it means that the Telediagram project has been successfully loaded to the device.
-
-It should be noted that the file upload process is 100% complete. The device restarts automatically when the project upload process is 100% completed with the USB connection. \(it is reset.\)
-
-<center>
-
-![rtu-quick-inst-31](/img/rtu-quick-inst-31.png)
-
-</center>
+The project can be sent to the device via TCP connection or Web Server.
 
 ### Upload Project With TCP Connection 
 
@@ -402,11 +353,23 @@ It should be noted that the file upload process is 100% complete. The device res
 
 </center>
 
+### Upload Project Via Web Server
+
+Click on the "File Upload Tab" on the left sidebar of project uploads to the device from the web server interface. Select "Project Loading Page" from the tabs opened at the bottom. Project uploads to the device are made from this page. From the "Choose File" section, the ".bin" extension file of the telediagram project to be uploaded to the device is selected. Click on "Upload File". Thus, the project file will be successfully loaded onto the device.
+
+Administrator and Technician user can access the Project Upload page.
+
+<center>
+
+![rtu-quick-inst-79](/img/rtu-quick-inst-79.png)
+
+</center>
+
 ## Drawing A Project File From The Device 
 
 The existing project in the device can be downloaded to the computer via the Telediagram program. For this, the following steps should be followed.
 
-When the device is powered and connected to the computer via TCP or USB;
+When the device is powered and connected to the computer via TCP;
 
 Click on the "dowload project from device" option in the tools section of the Telediagram.
 
