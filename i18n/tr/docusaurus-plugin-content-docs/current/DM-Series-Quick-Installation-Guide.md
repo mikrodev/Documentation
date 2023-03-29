@@ -1,5 +1,5 @@
 ---
-title: "RTU300 Serisi Hızlı Kurulum Kılavuzu"
+title: "DM Serisi Hızlı Kurulum Kılavuzu"
 ---
 
 ## Başlangıç
@@ -10,7 +10,7 @@ Telediagram; Mikrodev tarafından geliştirilmiş ve Mikrodev RTU ailesi cihazla
 
 Telediagram kütüphanesinde "VE, VEYA, XOR" gibi temel mantık bloklarının yanında "PID, astronomik zamanlayıcı" gibi karmaşık uygulamaları kolaylaştıracak gelişmiş bloklar da bulunmaktadır.
 
-Farklı arayüzler \(USB/TCP\) üzerinden cihazlara bağlanarak, program yükleme/güncelleme, online izleme ve firmware güncelleme gibi araçlar da Telediagram ve web server ile sunulmaktadır.
+Farklı arayüzler \(TCP\) üzerinden cihazlara bağlanarak, program yükleme/güncelleme, online izleme ve firmware güncelleme gibi araçlar da Telediagram ve web server ile sunulmaktadır.
 
 #### Telediagram Kurulum
 
@@ -104,7 +104,7 @@ Programlama metodu seçimi yapılır.
 
 <center>
 
-![rtu-quick-inst-45](/img/rtu-quick-inst-45.png)
+![rtu-quick-inst-81](/img/rtu-quick-inst-81.png)
 
 </center>
 
@@ -138,55 +138,7 @@ Sol kenar sekmesinde yer alan projeler kısmında Mdv yazısına çift tıklanı
 
 Telediagram’ da hazırlanan projelerin cihaza gönderilmesi ve online izleme için cihaza bağlantı kurulması gerekmektedir.
 
-Telediagram’da USB veya TCP port ile cihaza bağlantı kurulabilir.
-
-Telediagram’da aynı anda USB ve TCP porttan bağlantı kurulamaz.
-
-### USB Bağlantısı Kurma 
-
-USB bağlantısının kurulabilmesi için Telediagram kurulu olan bilgisayara USB sürücü kurulumunun tamamlanmış olması gerekmektedir.
-
-Windows10 ve üzeri işletim sistemi bulunan bilgisayarlarda USB sürücü kurulumuna ihtiyaç yoktur.
-
-USB Sürücü kurulumu tamamlandıktan sonra bilgisayar ile cihaz arasına USB kablo bağlantısı yapılır.
-
-USB kablosu seçiminde "USB A ve USB B" (\yazıcı kablosu\) tercih edilmelidir. USB B tarafı cihaza USB A tarafı da bilgisayara bağlanır.
-
-Aygıt yöneticisinden bağlanan USB kablonun tanımlandığı COM port belirlenir.
-
-<center>
-
-![rtu-quick-inst-49](/img/rtu-quick-inst-49.png)
-
-</center>
-
-Build Mod seçeneklerinden 
-![rtu-quick-inst-48](/img/rtu-quick-inst-48.png)
-sekmesine tıklanarak bağlantı arayüzüne ulaşılır.
-
-<center>
-
-![rtu-quick-inst-50](/img/rtu-quick-inst-50.png)
-
-</center>
-
-"SERİ USB kullanarak bağlan" seçilir, COM port seçimi yapılır. "OK" butonu ile bağlantı kurma işlemi başlatılır.
-
-<center>
-
-![rtu-quick-inst-51](/img/rtu-quick-inst-51.png)
-
-</center>
-
-<center>
-
-![rtu-quick-inst-52](/img/rtu-quick-inst-52.png)
-
-</center>
-
-"Cihaz ile bilgisayar arasında seri port üzerinden USB bağlantısı kuruldu" uyarısı alındığında ve bağlantı kurma butonu "bağlandı"
-![rtu-quick-inst-53](/img/rtu-quick-inst-53.png)
-konumuna geldiğinde USB üzerinden bağlantı kurulumu tamamlanmıştır.
+Telediagram’da TCP port ile veya web server üzerinden cihaza bağlantı kurulabilir.
 
 ### TCP Bağlantısı Kurma
 
@@ -334,49 +286,38 @@ Telediagram’dan GSM özellikli cihaza TCP bağlantısı kurmak için "cihaz IP
 
 GSM IP tanımlamanın dışındaki diğer işlemler ethernet TCP bağlantısı ile aynıdır.
 
+### Web Server Üzerinden Cihaza Bağlanma 
+
+DM50 web server arayüzünde oturum açmak için aşağıdaki yönergeler takip edilmelidir.
+
+- Bilgisayarınızda bulunan herhangi bir internet tarayıcısını açın.
+
+- URL kısmına https://< CİHAZ IP > girilmelidir.
+
+<center>
+
+![rtu-quick-inst-82](/img/rtu-quick-inst-82.png)
+
+</center>
+
+- Enter yapıldıktan sonra aşağıdaki şekilde gözüken kullanıcı giriş ekranı gelmektedir. Username ve Password kısmına default olarak tanımlanan kullanıcı adı ve şifre girilmelidir.
+
+Default olarak tanımlanan Username: admin
+                          Password: admin
+
+<center>
+
+![rtu-quick-inst-83](/img/rtu-quick-inst-83.png)
+
+</center>
+
+Admin olarak giriş yapıldıktan sonra kullanıcı adı, şifre düzenlemeleri sol kenar çubuğunda yer alan Kullanıcı Yöneticisi Sayfası -> Kullanıcı Tablosu kısmından yapılabilmektedir.
+
 ## Cihaza Telediagram Projesi Yükleme 
 
 Telediagram’da hazırlanan projeyi cihaza yüklemek için 2 yöntem vardır.
 
-Telediagram üzerinden USB veya TCP bağlantısı  ile proje cihaza gönderilebilir.
-
-### USB Bağlantısı ile Proje Yükleme 
-
-Cihaz ile bilgisayar arasında USB bağlantısı
-![rtu-quick-inst-66](/img/rtu-quick-inst-66.png)
-kurulduktan sonra "cihaza gönder" butonuna 
-![rtu-quick-inst-67](/img/rtu-quick-inst-67.png)
-tıklanır.
-
-Proje dosyası derlenir ve cihaza bin dosyası yüklenmiş olur.
-
-Proje dosya yedeğinin cihaza yüklenmesi için onay ekranı açılır. "Evet" yazısına tıklanır ise, daha sonrasında cihaz içerisinden proje dosyasının çekilmesi sağlanmış olur.
-
-<center>
-
-![rtu-quick-inst-68](/img/rtu-quick-inst-68.png)
-
-</center>
-
-Yapılan değişikliklerin uygulanabilmesi için cihazın yeniden başlatılması gerekmektedir. Cihazın yeniden başlatılması için onay ekranı açılır. "Evet" yazısına tıklanır.
-
-<center>
-
-![rtu-quick-inst-69](/img/rtu-quick-inst-69.png)
-
-</center>
-
-Telediagram’da "gelen mesajlar" bölümünde aşağıdaki gibi bir çıktı oluşuyorsa Telediagram projesi cihaza başarı ile yüklenmiş demektir.
-
-Dosya yükleme işleminin %100 tamamlanmasına dikkat edilmelidir.
-
-USB bağlantısı ile cihaza proje yükleme işlemi %100 tamamlandığında cihaz otomatik olarak yeniden başlatılır. \(resetlenir.\)
-
-<center>
-
-![rtu-quick-inst-70](/img/rtu-quick-inst-70.png)
-
-</center>
+Telediagram üzerinden TCP bağlantısı ile veya web server üzerinden proje cihaza gönderilebilir.
 
 ### TCP Bağlantısı ile Proje Yükleme  
 
@@ -411,6 +352,18 @@ TCP bağlantısı ile cihaza proje yükleme işlemi %100 tamamlandığında ciha
 <center>
 
 ![rtu-quick-inst-74](/img/rtu-quick-inst-74.png)
+
+</center>
+
+### Web Server Üzerinden Proje Yükleme 
+
+Cihaza web server arayüzünden proje yüklemeleri sol kenar çubuğunda yer alan “Dosya Yükleme Sekmesi”ne tıklanır. Altta açılan sekmelerden “Proje Yükleme Sayfası” seçilir. Cihaza proje yüklemeleri bu sayfadan yapılır. “Dosya Seç” kısmından cihaza yüklenilecek telediagram projesinin “.bin” uzantılı dosyası seçilir. “Upload File” yazısına tıklanır. Böylelikle cihaza proje dosyası başaralı bir şekilde yüklenecektir.
+
+Proje Yükleme sayfasına Administrator ve Teknisyen kullanıcısı erişim sağlayabilmektedir.
+
+<center>
+
+![rtu-quick-inst-84](/img/rtu-quick-inst-84.png)
 
 </center>
 
