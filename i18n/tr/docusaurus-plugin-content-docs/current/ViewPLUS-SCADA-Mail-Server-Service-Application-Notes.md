@@ -10,7 +10,9 @@ Scada projesinde tanımlı olan kullanıcıların e-posta adresleri girilerek, a
 
 **Not:** Scada Mail Server yapılandırılması yapılırken, aktif ise scada sunucusu ve client uygulaması kapatılmalıdır.
 
-C:\Users\< Kullanıcı Adı >\AppData\Roaming\Mikrodev\ScadaServer\< Scada Projesi >
+Versiyon ViewPLUS \(0.9.154 beta build 15\) öncesi için - > C:\Users\< Kullanıcı Adı >\AppData\Roaming\Mikrodev\ScadaServer\< Scada Projesi >
+
+Versiyon ViewPLUS \(0.9.154 beta build 15\) dan sonrası için - > C:\ProgramData\Mikrodev\ScadaServer\< Scada Projesi >
 
 Dosya yolu izlenerek mail server tanımlanacak scada projesinin ServerEngine.ini dosyası bulunur. Notepad++ vb. bir uygulama ile düzenle seçeneği ile açılır.
 

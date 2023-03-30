@@ -10,7 +10,9 @@ First of all, mail server settings must be defined in the ServerEngine.ini file 
 
 **Note:** While configuring Scada Mail Server, if active, scada server and client application should be closed.
 
-C:\Users\< User Name >\AppData\Roaming\Mikrodev\ScadaServer\< Scada Project >
+Until ViewPLUS version 0.9.154 beta build 15 - > C:\Users\< User Name >\AppData\Roaming\Mikrodev\ScadaServer\< Scada Project >
+
+After ViewPLUS version 0.9.154 beta build 15 - > C:\ProgramData\Mikrodev\ScadaServer\< Scada Project >
 
 The serverEngine.ini file of the scada project to be defined as the mail server is found by following the file path. Notepad++ etc. opens with an option to edit with an application.
 
