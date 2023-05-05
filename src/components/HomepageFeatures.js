@@ -16,7 +16,6 @@ Automotive Industry<br/>
 Building Automation<br/>
 Process Plants
 				<br/><br/>
-
         <code><a href="https://docs.mikrodev.com/docs/ViewPLUS-SCADA-Editor/">Website Link for SCADA</a></code>
       </>	  
     ),	
@@ -34,9 +33,13 @@ Lighting Automation<br/>
 Machine Automation<br/>
 IoT Applications
 		<br/><br/>
-<code><a href="https://docs.mikrodev.com/docs/PLC-MP110-Series-Hardware-Manual">Website Link for PLC</a></code>
+<code><a href="https://docs.mikrodev.com/docs/PLC-MP110-Series-Hardware-Manual">Website Link for PLC Hardware Manuals</a></code>
 <br/>
-        <code><a href="https://docs.mikrodev.com/docs/RTU-RTU-Series-Hardware-Manual">Website Link for RTU</a></code>
+      <code><a href="https://docs.mikrodev.com/docs/PLC-MP110-Series-Software-Manual">Website Link for PLC Software Manuals</a></code>
+<br/>
+<code><a href="https://docs.mikrodev.com/docs/RTU-RTU-Series-Hardware-Manual">Website Link for RTU Hardware Manuals</a></code>
+<br/>
+      <code><a href="https://docs.mikrodev.com/docs/RTU-RTU300-Series-Software-Manual">Website Link for RTU Software Manuals</a></code>
       </>
     ),
   },
@@ -53,7 +56,9 @@ AMR(Automatic Meter Reading) Solutions<br/>
 Load Profile Data
 				<br/><br/>
 
-        <code><a href="https://docs.mikrodev.com/docs/Gateway-MBS100-Hardware-Manual">Website Link for Gateway</a></code>
+        <code><a href="https://docs.mikrodev.com/docs/Gateway-MBS100-Hardware-Manual">Website Link for Gateway Hardware Manuals</a></code>
+<br/>
+        <code><a href="https://docs.mikrodev.com/docs/Gateway-MBS100-Software-Manual">Website Link for Gateway Software Manuals</a></code>
       </>
     ),
   },

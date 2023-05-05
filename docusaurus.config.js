@@ -73,23 +73,23 @@ module.exports = {
           items: [
             {
               label: 'Programmable Logic Controller(PLC)',
-              href: 'https://www.mikrodev.com/en/products/#plc',
+              href: 'https://www.mikrodev.com/product-group/programmable-logic-controller-plc/',
             },
 			{
               label: 'Distributed Control System(DCS)',
-              href: 'https://www.mikrodev.com/en/rtu350/',
+              href: 'https://www.mikrodev.com/product-group/distributed-control-system-dcs-remote-terminal-unit-rtu/',
             },
 			{
               label: 'Expansion Modules',
-              href: 'https://www.mikrodev.com/en/products/#genisleme-modulu',
+              href: 'https://www.mikrodev.com/product-group/expansion-modules-extansion/',
             },
 			{
               label: 'IOT Protocol Converters',
-              href: 'https://www.mikrodev.com/en/products/#modbus-gateway',
+              href: 'https://www.mikrodev.com/product-group/iot-protocol-converters-gateway-gateways/',
             },
 			{
               label: 'Operator Control And Monitoring System',
-              href: 'https://www.mikrodev.com/en/products/#viewplus-scada',
+              href: 'https://www.mikrodev.com/product-group/operator-control-monitoring/',
             },
           ],
         },
