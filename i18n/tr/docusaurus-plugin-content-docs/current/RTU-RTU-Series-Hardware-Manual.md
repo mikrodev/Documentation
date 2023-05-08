@@ -4,7 +4,7 @@ title: RTU300 Serisi Donanım Kılavuzu
 
 ## Montaj Bilgileri
 
-[RTU 300 Series Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_RTU300.pdf)
+[RTU 300 Series Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/05/MIKRODEV_HM_RTU300.pdf)
 
 ### DIN Ray Montajı
 
@@ -30,8 +30,6 @@ tırnakların birbiri üzerine binmesi için tırnakların ray üzerinde kaydır
 </center>
 
 ## RTU300 Genel Bilgi
-
-[RTU300 Hardware Manual](https://www.mikrodev.com/en/docs/rtu/hardware_manual/MIKRODEV_HM_RTU300_en.pdf)
 
 ### GA1 Kart Tipi Fiziksel Arayüzler
 

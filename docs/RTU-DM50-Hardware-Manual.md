@@ -4,7 +4,7 @@ title: DM50 Hardware Manual
 
 ## DM50 General Information
 
-[DM50 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2022/09/MIKRODEV_HM_DM50_EN.pdf)
+[DM50 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_DM50_EN.pdf)
 
 ### GE0 Board Type Physical Interfaces
 

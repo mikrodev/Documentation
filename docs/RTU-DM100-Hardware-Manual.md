@@ -4,7 +4,7 @@ title: DM100 Hardware Manual
 
 ## DM100 General Information
 
-[DM100 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2022/09/MIKRODEV_HM_DM100_en.pdf)
+[DM100 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_DM100_en.pdf)
 
 ### GC0 Board Type Physical Interfaces
 

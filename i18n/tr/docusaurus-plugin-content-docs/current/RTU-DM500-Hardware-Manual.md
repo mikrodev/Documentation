@@ -2,7 +2,7 @@
 title: DM500 Donanım Kılavuzu
 ---
 
-[DM500 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/01/MIKRODEV_HM_DM500.pdf)
+[DM500 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/04/MIKRODEV_HM_DM500.pdf)
 
 ## Panel Montaj Bilgileri
 

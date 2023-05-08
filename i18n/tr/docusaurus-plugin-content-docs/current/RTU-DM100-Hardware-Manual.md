@@ -4,7 +4,7 @@ title: DM100 Donanım Kılavuzu
 
 ## DM100 Genel bilgi
 
-[DM100 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2022/11/MIKRODEV_HM_DM100.pdf)
+[DM100 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_DM100.pdf)
 
 ### GC0 Kart Tipi Fiziksel Arayüzler
 

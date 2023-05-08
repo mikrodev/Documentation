@@ -4,7 +4,7 @@ title: DM50 Donanım Kılavuzu
 
 ## DM50 Genel Bilgi
 
-[DM50 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2022/11/MIKRODEV_HM_DM50.pdf)
+[DM50 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_DM50.pdf)
 
 ### GE0 Kart Tipi Fiziksel Arayüzler
 

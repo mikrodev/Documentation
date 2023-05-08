@@ -4,7 +4,7 @@ title: MP211 Serisi Donanım Kılavuzu
 
 ## MP211 Genel Bilgi
 
-[MP211 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_MP211.pdf)
+[MP211 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/05/MIKRODEV_HM_MP211.pdf)
 
 ### GA0 Kart Tipi Fiziksel Arayüzler
 
