@@ -53,6 +53,7 @@ module.exports = {
 		  "ViewPLUS-SCADA-Change-Map-Icons-Application-Notes",
 		  "ViewPLUS-SCADA-Template-Page-Application-Notes",
 		  "ViewPLUS-SCADA-Mail-Server-Service-Application-Notes",
+		  "ViewPLUS-SCADA-MQTT-Channel-Definitions-Application-Notes",
 		  "Block-Descriptions-Notes",
     ],
     },
