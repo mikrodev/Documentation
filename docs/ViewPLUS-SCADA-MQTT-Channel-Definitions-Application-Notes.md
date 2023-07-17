@@ -54,7 +54,7 @@ If you did not change the file path during the installation, it is located insid
 
 <center>
 
-![mosquitto_image5](/img/mosquitto_image5.png)
+![mosquitto_image76](/img/mosquitto_image76.png)
 
 </center>
 
@@ -62,7 +62,7 @@ Open the folder named "mosquitto" and click on the "Edit with Notepad++" option 
 
 <center>
 
-![mosquitto_image6](/img/mosquitto_image6.png)
+![mosquitto_image77](/img/mosquitto_image77.png)
 
 </center>
 
