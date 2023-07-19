@@ -118,7 +118,7 @@ Open the Task Manager and locate the Mosquitto application from the "Background 
 
 <center>
 
-![mosquitto_image10](/img/mosquitto_image10.png)
+![mosquitto_image80](/img/mosquitto_image80.png)
 
 </center>
 
@@ -132,7 +132,7 @@ Open the Task Manager. From the "Background processes" section, locate the "mosq
 
 <center>
 
-![mosquitto_image11](/img/mosquitto_image11.png)
+![mosquitto_image80](/img/mosquitto_image80.png)
 
 </center>
 
@@ -522,21 +522,21 @@ Monitor the values sent from the client in the MQTT Box application.
 
 <center>
 
-![mosquitto_image51](/img/mosquitto_image51.png)
+![mosquitto_image118](/img/mosquitto_image118.png)
 
 </center>
 
 The payload structure for the value published by the SCADA system is: 
 
-{"14245": { "variable": {"V": 3640.0000 }}}
+{"14245": { "variable": {"V": 140.0000 }}}
 
 In this structure, the value "14245" represents the equipment number entered in the tag definitions.
 
-**Note:** If the equipment number field is left empty in the tag definitions, the payload structure of the value will be: {"": { "variable": {"V": 3640.0000 }}}
+**Note:** If the equipment number field is left empty in the tag definitions, the payload structure of the value will be: {"": { "variable": {"V": 140.0000 }}}
 
 In this structure, the "variable" expression represents the variable name entered in the tag definitions, 
 
-"V: 3640.0000" represents the published value.
+"V: 140.0000" represents the published value.
 
 #### Subscribing to a Value in Scada
 

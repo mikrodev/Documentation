@@ -8,7 +8,7 @@ module.exports = {
         label: "English",
       },
       tr: {
-        label: "Turkish",
+        label: "Türkçe",
       },
     },
   },
