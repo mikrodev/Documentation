@@ -808,16 +808,16 @@ To create an alarm, open "Tag/Channel Editor Panel". Alarms pane is on the botto
 
 <center>
 
-![project-view-07](/img/project-view-07.png)
+![alarm6](/img/alarm6.png)
 
 
 </center>
 
-On the "New Alarm" dialog write a name and description for the alarm. If you write an existing "class name" into AlarmClass, the alarm will be added to that class; if you write a new "class name" a new AlarmClass will created and the alrm will be added to that class.
+On the "New Alarm" dialog write a name and description for the alarm. If you write an existing "class name" into Alarm Class, the alarm will be added to that class; if you write a new "class name" a new Alarm Class will created and the alrm will be added to that class.
 
 <center>
 
-![project-view-08](/img/project-view-08.png)
+![alarm7](/img/alarm7.png)
 
 
 </center>
@@ -826,43 +826,58 @@ On the "New Alarm" dialog write a name and description for the alarm. If you wri
 
 <center>
 
-![project-view-9](/img/project-view-09.png)
+![alarm8](/img/alarm8.png)
 
 
 </center>
 
-##### Alarm Name
-Give an apparent unique name for the alarm
-##### Class Name
-The name of the class which the alarm belongs to. This is useful when grouping the alarms
-##### Description
-Write a human readable explanation about the alarm
-##### Value Tag
-The selected tag is the source of the alarm. Condition check will be made on this tag's value.
+**Alarm Name** : Give an apparent unique name for the alarm
 
-#### Condition
-The conditions are evaluated according to the LIMIT and RANGE values on the right side of conditions pane
+**Class Name** : The name of the class which the alarm belongs to. This is useful when grouping the alarms
 
-##### VALUE is equal to LIMIT
-The alarm is activated if the value of the tag is equal to "LIMIT" value.
-##### VALUE is smaller than LIMIT
-The alarm is activated if the value of the tag is smaller than "LIMIT" value.
-##### VALUE is greater than LIMIT
-The alarm is activated if the value of the tag is greater than "LIMIT" value.
-##### VALUE is in "RANGE"
-The alarm is activated if the value of the tag is in "RANGE".
-##### VALUE is out of "RANGE"
-The alarm is activated if the value of the tag is out of "RANGE".
+**Description** : In order to make the generated alarms more understandable, definitions are made here
 
-#### Subscriptions
-
-Alarms should be assigned to users. A user can monitor an alarm only if the user is subscribed on that alarm.
-
-To add a user subscription on the alarm click on the Subscribed User Selection button.
+**Priority** : 4 different definitions can be made according to the priority order of the alarms. In order to see the priority ranges allocated for definition, it is necessary to move the mouse to this part.
 
 <center>
 
-![project-view-10](/img/project-view-10.png)
+![alarm9](/img/alarm9.png)
+
+
+</center>
+
+The alarms on the client screen can play in three different alarm sounds based on their priority level. 
+
+The priority levels for high-level alarms range from 0 to 31,       
+For medium-level alarms range from 32 to 63,            
+For low-level alarms range from 64 to 95,            
+For warning alarms specifically added, the priority level ranges from 96 to 127.                  
+What sets warning alarms apart from other alarms is that when an alarm condition occurs, they do not play an alarm sound. Instead, they operate as silent alarms.
+
+***Note*** : *4 different alarm definitions according to priority level are valid for ViewPLUS SCADA version 0.9.154 and later. Previous versions do not have this feature.*
+
+**Value Tag** : The selected tag is the source of the alarm. Condition check will be made on this tag's value.
+
+**Condition** : The conditions are evaluated according to the LIMIT and RANGE values on the right side of conditions pane
+
+- VALUE is equal to LIMIT       
+The alarm is activated if the value of the tag is equal to "LIMIT" value.
+- VALUE is smaller than LIMIT            
+The alarm is activated if the value of the tag is smaller than "LIMIT" value.
+- VALUE is greater than LIMIT            
+The alarm is activated if the value of the tag is greater than "LIMIT" value.
+- VALUE is in RANGE
+The alarm is activated if the value of the tag is in RANGE.
+- VALUE is out of RANGE          
+The alarm is activated if the value of the tag is out of RANGE.
+
+**Subscriptions** : Alarms must be assigned to users so that they can be viewed on the Client screen. A user can only monitor the alarm to which he is subscribed.
+
+Click on the three dots next to Subscribed Users to add a user subscription to the alarm.
+
+<center>
+
+![alarm10](/img/alarm10.png)
 
 
 </center>
@@ -870,12 +885,12 @@ To add a user subscription on the alarm click on the Subscribed User Selection b
 On the opened dialog, select the users which you want to be subscribed on the alarm.
 
 #### Other
-##### Require Acknowledge
-When this option is checked, if a user does not acknowledge the alarm, it will not disappear from alarms list if also alarm condition has gone away
-##### Log into Database
-When this option is checked, the alarm states will be logged into database
-##### Enabled
-This option activates/deactivates the alarm
+
+**Require Acknowledge** : When this option is checked, if the user does not acknowledge the alarm, the alarm will not disappear from the Client screen alarms page even if the alarm condition disappears.
+
+**Log into Database** : When this option is checked, the alarm states will be logged into database
+
+**Enabled** : The alarms generated by this option are enabled or disabled.
 
 For detailed information: [Alarm Identification and E-mail Sending](https://www.youtube.com/watch?v=hVc3wrQba3o&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=13).
 
