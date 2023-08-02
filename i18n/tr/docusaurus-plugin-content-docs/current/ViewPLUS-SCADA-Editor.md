@@ -36,36 +36,36 @@ hazırlamasına imkan verir.
 
 #### Paralel Yedekli Çalışma(Redundant Working Mode)
 
-Sahadan veriler her iki SCADA sisteminde okunur ve işlenir.
-Veri kaybı yaşanmaz
+Sahadan veriler her iki SCADA sisteminde okunur ve işlenir.                       
+Veri kaybı yaşanmaz.                               
 Haberleşme durum testleri (saha cihazları veya yedek SCADA)
 
 #### Server/Client Mimari 
 
-Çoklu çalışma istasyon desteği
-Çalışma istasyonlarına yetki seviyesi atama
+Çoklu çalışma istasyon desteği            
+Çalışma istasyonlarına yetki seviyesi atama                  
 
 
 #### Lisansa Bağlı Etiket Kapasitesi 
 
-Sınırsız lisans imkanı (Sistem belleği ile sınırlıdır.)
-Etiket sayısı kadar alarm etiketi tanımlayabilme
-Etiket sayısı kadar trend tanımlayabilme
+Sınırsız lisans imkanı (Sistem belleği ile sınırlıdır.)                
+Etiket sayısı kadar alarm etiketi tanımlayabilme                        
+Etiket sayısı kadar trend tanımlayabilme                          
 
 #### İşletim Sistemi Desteği 
 
-Windows 7/8/10
-Windows Server 2008/2012/2016
-Linux (Debian)
-MacOSX
+Windows 7/8/10              
+Windows Server 2008/2012/2016             
+Linux (Debian)          
+MacOSX                 
 
 #### Güvenlik 
 
-Etiketlere ve sayfalara 128 farklı erişim yetkisi tanılama
-Kullanıcılara 128 farklı grup üyeliği atayabilme 
-İşletim sistemi ile entegre güvenlik
-Haberleşmede katman 7 protokollerinin TLS/SSL versiyonları
-Yetkilendirme mekanizmasında düz metin şifreler yerine salt eklenmiş SHA256 özetler kullanır
+Etiketlere ve sayfalara 128 farklı erişim yetkisi tanılama         
+Kullanıcılara 128 farklı grup üyeliği atayabilme                  
+İşletim sistemi ile entegre güvenlik                 
+Haberleşmede katman 7 protokollerinin TLS/SSL versiyonları                
+Yetkilendirme mekanizmasında düz metin şifreler yerine salt eklenmiş SHA256 özetler kullanır               
 
 #### Veri Aktarım 
 
@@ -73,21 +73,21 @@ SQL uyumlu dışa ve içe veri aktarım imkanı
 
 #### Alarm
 
-Tanımlanmış tüm etiketler için alarm tanımlama imkanı
-Alarmlar 256 farklı kritiklik seviyesi tanımlayabilme
-Aktive alarmları ve alarm geçmişini izleme imkanı
-Tarih ve önem sırasına göre alarm izleme imkanı
-Alarm listesinden çıktı alma imkanı: Excel,printer,pdf
+Tanımlanmış tüm etiketler için alarm tanımlama imkanı           
+Alarmlar 256 farklı kritiklik seviyesi tanımlayabilme                 
+Aktive alarmları ve alarm geçmişini izleme imkanı        
+Tarih ve önem sırasına göre alarm izleme imkanı              
+Alarm listesinden çıktı alma imkanı: Excel,printer,pdf          
 
 #### Veri Kayıt Trend İzleme 
 
-Tanımlanmış tüm etiketler için log kayıt imkanı
-Trend tanımlanmış etiketler grafiksel gösterim
-Trend tanımlanmış etiket verilerinin excel, pdf veya printer çıktısı
+Tanımlanmış tüm etiketler için log kayıt imkanı           
+Trend tanımlanmış etiketler grafiksel gösterim                
+Trend tanımlanmış etiket verilerinin excel, pdf veya printer çıktısı        
 
 #### Haberleşme
 
-Mikrodev PLC,REMOTE IO ve Gateway ürünleri ile mükemmel bağlantı
+Mikrodev PLC,REMOTE IO ve Gateway ürünleri ile mükemmel bağlantı                
 Endüstri standardı çok sayıda protokolle uyum: MODBUS TCP, MODBUS RTU,DNP3,SNMP, IEC-, BACNET
 
 #### Veri Tabanı Desteği 
@@ -119,25 +119,25 @@ aşağıdaki şekilde gösterilen mimari kullanılabilir.
 
 Yeni proje oluşturmak için:
 
- Dosya>Yeni Dosya ya da Proje > Mikrodev SCA Projesi seçilir.,
+Dosya -> Yeni Dosya ya da Proje -> Mikrodev SCA Projesi seçilir.,
  
- <center>
+<center>
 
 ![new-project-01](/img/new-project-01.png)
 
 
 </center>
  
-  Proje ismi ve nereye kaydedeceği seçilir.
+Proje ismi ve projenin nereye kaydedileceği seçilir.
 
- <center>
+<center>
 
 ![new-project-02](/img/new-project-02.png)
 
 
 </center>
  
-  Veritabanı kullanıcı adı ve şifrenizi girdikten sonra "Bağlantıyı Test Et" butonuna basılarak şifre 
+Veritabanı kullanıcı adı ve şifrenizi girdikten sonra "Bağlantıyı Test Et" butonuna basılarak şifre 
 doğrulaması yapılır.(Eğer PostgreSQL veritabanı, sisteminizde kurulu değilse " PgSQL ‘i indir" 
 bağlantısına tıklayarak ilgili versiyonu indirip kurmanız gerekir)
 
@@ -148,12 +148,11 @@ bağlantısına tıklayarak ilgili versiyonu indirip kurmanız gerekir)
 
 </center>
 
- Ekran rengi, varsayılan sayfa boyutu gibi görsel parametreler ayarlanır.
+Ekran rengi, varsayılan sayfa boyutu gibi görsel parametreler ayarlanır.
  
- <center>
+<center>
 
 ![new-project-04](/img/new-project-04.png)
-
 
 </center>
 
@@ -178,7 +177,7 @@ ekranı bu sayfa üzerinde tasarlayabilirsiniz.
 
 </center>
  
- En solda, editörün temel arayüzlerinde gezinmenizi sağlayan gezinme düğmeleri bulunur. Bu düğmeleri kullanarak SCADA Düzenleyici görünümü, Projeler görünümü ve Etiket/kanal Düzenleyici görünümü arasında geçiş yapabilirsiniz. Gezinme düğmelerinin altında proje seçici bulunur. Editörde aynı anda birden fazla proje açıksa, projeler arasında geçiş yapmak için bu buton kullanılabilir.
+ En solda, editörün temel arayüzlerinde gezinmenizi sağlayan gezinme düğmeleri bulunur. Bu düğmeleri kullanarak SCADA Düzenleyici görünümü, Projeler görünümü ve Etiket/Kanal Editörü görünümü arasında geçiş yapabilirsiniz. Gezinme düğmelerinin altında proje seçici bulunur. Editörde aynı anda birden fazla proje açıksa, projeler arasında geçiş yapmak için bu buton kullanılabilir.
  
  <center>
 
@@ -186,10 +185,8 @@ ekranı bu sayfa üzerinde tasarlayabilirsiniz.
 
 
 </center>
- 
- Detaylı bilgi için:
-[Proje oluşturmak]
-(https://www.youtube.com/watch?v=czQOlx0or2g&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=3).
+
+[Proje oluşturma](https:www.youtube.com/watch?v=czQOlx0or2g&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=3).
  
 
 ## SSCADA GÖRSEL BİLEŞENLERİ
@@ -731,7 +728,7 @@ Bu menüde Client görünümü ile ilgili çeşitli ayarlar yapılabilir.
 
 </center>
 
-### Etiket ve Kanal Düzenleyici Görünümü
+### Etiket Kanal Editörü Görünümü
 
 Kanallar ve etiketler, SCADA yazılımının saha cihazlarındaki verilere erişmesini sağlayan özel tanımlardır. Kanallar, cihazla sahada haberleşmeyi sağlayacak protokol tanımlarını ve bu protokole özel ayarları içerir. Etiketler, bağlı cihazdaki kayıtlar için adres tanımlarından oluşur. Alarm yönetimi de bu görünüm altında yapılır.
 
@@ -748,7 +745,7 @@ Açılan diyalog penceresinde yeni kanal ile ilgili gerekli ayarlamalar yapılab
 "Etiket", sahneden okunan veya sistem tarafından sanal olarak oluşturulan nokta verilerini ifade eder. Etiketler kanalların altında tanımlanır ve bulundukları kanalın türüne göre farklı özelliklere sahip olabilir.
 
 #### Etiketler Oluşturma
-Bir etiket oluşturmak için "Etiket/Kanal Düzenleyici Paneli"ni açın. Etiket/Kanal bölmesi ekranın sol üst kısmındadır. Bölmede, etiket oluşturmak istediğiniz kanala sağ tıklayın. Bağlam menüsünde "Yeni Etiket" eylemini seçin.
+Bir etiket oluşturmak için "Etiket/Kanal Editörü Paneli"ni açın. Etiket/Kanal bölmesi ekranın sol üst kısmındadır. Bölmede, etiket oluşturmak istediğiniz kanala sağ tıklayın. Bağlam menüsünde "Yeni Etiket" eylemini seçin.
 
 <center>
 
@@ -871,19 +868,20 @@ Bu filtre, yalnızca alandan okunan değer belirtilen aralığın dışındaysa 
 Alarmlar, izleme sistemlerinin ayrılmaz bir parçasıdır. ViewPLUS, saha verilerine ve kullanıcı erişim haklarına göre kullanıcılar için alarmlar oluşturabilir.
 
 #### Alarm Oluşturma
-Bir alarm oluşturmak için "Etiket/Kanal Düzenleyici Paneli"ni açın. Alarmlar bölmesi ekranın sol alt kısmındadır. Alarm bölmesine sağ tıklayın. Bağlam menüsünde "Yeni Alarm" eylemini seçin.
+Bir alarm oluşturmak için "Etiket/Kanal Editörü Paneli"ni açın. Alarmlar bölmesi ekranın sol alt kısmındadır. Alarm bölmesine sağ tıklayın. Açılan seçenekler pencersinden "Yeni Alarm" seçeneğini seçin.
 
 <center>
 
-![project-view-07](/img/project-view-07.png)
+![alarm1](/img/alarm1.png)
 
 </center>
 
-"Yeni Alarm" iletişim kutusunda, alarm için bir ad ve açıklama yazın. AlarmClass'a mevcut bir "sınıf adı" yazarsanız, alarm o sınıfa eklenir; yeni bir "sınıf adı" yazarsanız yeni bir AlarmClass oluşturulacak ve alarm o sınıfa eklenecektir.
+"Yeni Alarm" ekleme pencersinden, alarm için bir ad ve açıklama yazın.     
+Alarm Sınıfı kısmına mevcut bir "sınıf adı" yazarsanız, alarm o sınıfa eklenir; yeni bir "sınıf adı" yazarsanız yeni bir Alarm Sınıfı oluşturulacak ve alarm o sınıfa eklenecektir.
 
 <center>
 
-![project-view-08](/img/project-view-08.png)
+![alarm2](/img/alarm2.png)
 
 </center>
 
@@ -891,57 +889,73 @@ Bir alarm oluşturmak için "Etiket/Kanal Düzenleyici Paneli"ni açın. Alarmla
 
 <center>
 
-![project-view-9](/img/project-view-09.png)
+![alarm3](/img/alarm3.png)
 
 </center>
 
-##### Alarm Adı
-Alarm için görünürde benzersiz bir ad verin
+**Alarm Adı** : Oluşturulan alarmlara buradan isim verilir.
 
-##### Sınıf adı
-Alarmın ait olduğu sınıfın adı. Bu, alarmları gruplandırırken kullanışlıdır.
 
-##### Tanım
-Alarm hakkında insan tarafından okunabilir bir açıklama yazın
+**Sınıf Adı** : Alarmın ait olduğu sınıfın adı buraya yazılır. Sınıf adları, alarmların gruplandırılmasını sağlar. 
 
-##### Değer Etiketi
-Seçilen etiket, alarmın kaynağıdır. Bu etiketin değeri üzerinde durum kontrolü yapılacaktır.
+**Tanım** : Oluşturulan alarmların daha anlaşılabilir olması için tanımlamalar buradan yapılır. 
 
-#### Koşul
-Koşullar, koşullar bölmesinin sağ tarafında bulunan LIMIT ve RANGE değerlerine göre değerlendirilir.
-
-##### VALUE, LIMIT'e eşittir
-Etiketin değeri "LIMIT" değerine eşitse alarm devreye girer.
-##### VALUE, LIMIT değerinden küçük
-Etiketin değeri "LIMIT" değerinden küçükse alarm devreye girer.
-##### VALUE, LIMIT değerinden büyük
-Etiketin değeri "LIMIT" değerinden büyükse alarm devreye girer.
-##### DEĞER "ARALIK" içinde
-Etiketin değeri "RANGE" içindeyse alarm etkinleştirilir.
-##### VALUE, "RANGE" dışında
-Etiketin değeri "RANGE" dışındaysa alarm etkinleştirilir.
-
-#### Abonelikler
-
-Alarmlar kullanıcılara atanmalıdır. Bir kullanıcı, yalnızca kullanıcı o alarma aboneyse bir alarmı izleyebilir.
-
-Alarma bir kullanıcı aboneliği eklemek için Abone Olunan Kullanıcı Seçimi düğmesine tıklayın.
+**Öncelik** : Alarmların öncelik sırasına göre 4 farklı tanımlama yapılabilir. Tanımlamak için ayrılan öncelik aralıklarını görebilmek için fare ile bu kısma gelinmesi gerekmektedir. 
 
 <center>
 
-![project-view-10](/img/project-view-10.png)
+![alarm4](/img/alarm4.png)
 
 </center>
 
-On the opened dialog, select the users which you want to be subscribed on the alarm.
+Client ekranında oluşan alarmlar öncelik seviyesine göre 3 farklı alarm sesinde çalabilmektedir. 
+
+Yüksek seviyede olan alarmlar için öncelik seviyesi 0-31,              
+Orta seviyede olan alarmlar için öncelik seviyesi 32-63,              
+Düşük seviyede olan alarmlar için öncelik seviyesi 64-95,                
+Uyarı için eklenen alarmlar için öncelik seviyesi 96-127 olarak belirlenmiştir.                     
+Uyarı için eklenen alarmların diğer alarmlardan ayıran özelliği alarm durumu oluştuğunda alarm sesinin çalmamasıdır. (sessiz alarm)
+
+***Not*** : *Öncelik seviyesine göre 4 farklı alarm tanımlaması ViewPLUS SCADA 0.9.154 versiyonu ve sonrası için geçerlidir. Önceki versiyonlarda bu özellik bulunmamaktadır.*
+
+**Değer Etiketi** : Burada seçilen etiket üzerinden alarm durumları oluşturulmaktadır. 
+
+**Koşul**: Koşullar, koşullar bölmesinin sağ tarafında bulunan SINIR ve ARALIK değerlerine göre değerlendirilir.
+
+- DEĞER, SINIR a eşit           
+Etiketin değeri "SINIR" değerine eşitse alarm devreye girer.
+
+- DEĞER, SINIR dan küçük               
+Etiketin değeri "SINIR" değerinden küçükse alarm devreye girer.
+
+- DEĞER, SINIR dan büyük                    
+Etiketin değeri "SINIR" değerinden büyükse alarm devreye girer.
+
+- DEĞER ARALIK içinde                
+Etiketin değeri "ARALIK" içindeyse alarm etkinleştirilir.
+
+- DEĞER ARALIK dışında
+Etiketin değeri "ARALIK" dışındaysa alarm etkinleştirilir.
+
+**Abonelikler** : Alarmlar Client ekranında izlenebilmesi için kullanıcılara atanmalıdır. Bir kullanıcı, sadece abone olduğu alarmı izleyebilmektedir.
+
+Alarma bir kullanıcı aboneliği eklemek için Abone Kullanıcılar yazısının yanında yer alan üç noktaya tıklayın.
+
+<center>
+
+![alarm5](/img/alarm5.png)
+
+</center>
+
+Açılan pencereden alarma abone olması istenen kullanıcı seçilir. 
 
 #### Diğer
-##### Onay Gerektir
-Bu seçenek işaretlendiğinde, kullanıcı alarmı onaylamazsa, alarm durumu da ortadan kalkmışsa alarmlar listesinden kaybolmaz.
-##### Veritabanına Giriş Yapın
-Bu seçenek işaretlendiğinde alarm durumları veritabanına kaydedilir.
-##### Etkinleştirilmiş
-Bu seçenek alarmı etkinleştirir/devre dışı bırakır
+
+**Geri Bildirim İste** : Bu seçenek işaretlendiğinde, kullanıcı alarmı onaylamazsa, alarm durumu ortadan kalksa bile Client ekranı alarmlar sayfasından alarm kaybolmaz.
+
+**Veri tabanına Giriş Yap** : Bu seçenek işaretlendiğinde alarm durumları veritabanına kaydedilir.
+
+**Kullanımda** : Bu seçenek sayeseinde oluşturulan alarmlar etkinleştirilir ya da devre dışı bırakılır.
 
 Detaylı bilgi için: [Alarm Identification and E-mail Sending](https://www.youtube.com/watch?v=hVc3wrQba3o&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=13).
 
@@ -1065,7 +1079,7 @@ ViewPLUS üzerinde bir proje açtıktan sonra Araçlar menüsünde "Kullanıcıl
 
 ViewPLUS, farklı türlerdeki makroları destekler. Bu makrolardan bazıları sunucu tarafında, bazıları ise istemci tarafında çalışır.
 
-Etiket/Kanal Düzenleyicide tanımladığımız "makro etiketler" sunucu tarafında çalışır. Ve sanal bir etiket görevi görür. Bu makrolar belirtilen süre boyunca sunucu üzerinde sürekli çalışır.
+Etiket/Kanal Editöründe tanımladığımız "makro etiketler" sunucu tarafında çalışır. Ve sanal bir etiket görevi görür. Bu makrolar belirtilen süre boyunca sunucu üzerinde sürekli çalışır.
 
 Editör üzerinde her nesne için ayrı makrolar yazmak mümkündür. Bu makrolar, o nesnenin görüntülenmesini ve davranışını etkiler ve yalnızca kullanıcı nesneyi izlerken yürütülür.
 
@@ -1301,7 +1315,7 @@ Detaylı bilgi için:[Modbus TCP Definitions](https://www.youtube.com/watch?v=9C
 </center>
 
 
-ViewPLUS'ta Etiket Kanalı Düzenleyicisi sekmesinin Kanal bölümünde "Maksimum Okuma Boyutu" alanı vardır.
+ViewPLUS'ta Etiket Kanalı Editörü sekmesinin Kanal bölümünde "Maksimum Okuma Boyutu" alanı vardır.
 
 <center>
 
@@ -1459,12 +1473,10 @@ Okunacak RTU cihazından etiketin adres bilgisi girilir.
 
 <center>
 
-![variable-iec](/img/variable-iec.png)
-***<center>Şekil 3: Telediagram Variable Addresses Field</center>***
+![iec104-channel1](/img/iec104-channel1.png)
+***<center>Şekil 3: Telediagram Değişken Adres Tablosu</center>***
 
 </center>
-
-
 
 ### Kanal: DNP3
 
@@ -1710,7 +1722,7 @@ ${20}= 3 + var1 ;
 
 Detaylı bilgi için: [Javascript Channel Definitions](https://www.youtube.com/watch?v=YKGy4F4Z8-I&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=28).
 
-### Kanal: SABUN API Kanalı
+### Kanal: SOAP API Kanalı
 Bir SOAP Web Hizmetine bağlanmak ve sorgu sonuçlarını proje etiketlerine iletmek için kullanılan kanal türüdür.
 
 #### Kanal Parametreleri
@@ -1732,7 +1744,7 @@ Sorgunun yürütüldüğü frekansı temsil eden milisaniye sayısı.
 Etiket Parametreleri
 #### Sorgu
 SOAP servisine gönderilecek API ifadesi. Sorgu sonucu ayrıştırılır ve ilgili dönüş değerleri etiketlere yazılır:
-Sorgu ifadesi 3 bölümden oluşur. İlk kısım, SOAP sunucusunun WSDL yolunu tanımlar. İkinci kısım, gerçek SABUN sorgu zarfıdır. Ve son kısım, sonuçların doğru etiket değerlerine yazılması için etiket bağlama ifadesidir. Örnek bir "Sorgu" ifadesi:
+Sorgu ifadesi 3 bölümden oluşur. İlk kısım, SOAP sunucusunun WSDL yolunu tanımlar. İkinci kısım, gerçek SOAP sorgu zarfıdır. Ve son kısım, sonuçların doğru etiket değerlerine yazılması için etiket bağlama ifadesidir. Örnek bir "Sorgu" ifadesi:
 
 ```
 WSDL_PATH = https://minosxcloud.umpi.it/ws/wsminos.php?wsdl; 

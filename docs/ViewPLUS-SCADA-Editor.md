@@ -1395,12 +1395,10 @@ From the RTU device to be read, the address information of the label is entered.
 
 <center>
 
-![variable-iec](/img/variable-iec.png)
+![iec104-channel1](/img/iec104-channel1.png)
 ***<center>Figure 3: Telediagram Variable Addresses Field</center>***
 
 </center>
-
-
 
 ### Channel: DNP3 
 
