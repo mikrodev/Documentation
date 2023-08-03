@@ -1,9 +1,9 @@
 ---
-title: "ViewPLUS SCADA Alarms Screen Application Notes"
+title: "ViewPLUS SCADA Alarm Screens Application Notes"
 ---
 
 
-### ViewPLUS Client Screen Alarm Page
+## ViewPLUS Client Screen Alarm Page
 
 The ViewPLUS Client screen alarm page consists of two parts.
 
@@ -38,7 +38,7 @@ What sets warning alarms apart from other alarms is that when an alarm condition
 
 **Note:** If all alarm sounds are to be turned off, the "Mute Alarm Sounds" option on the client screen should be checked.
 
-#### Active Alarms Section
+### Active Alarms Section
 
 The features in the active alarm section of the client screen are indicated by numbering them in Figure 2.
 
@@ -93,7 +93,7 @@ If the created alarm is acknowledged and a value different from the alarm value 
 
 **Number 19 Select All:** All of the alarms that occur can be selected from this section. Thanks to this feature, alarms can be confirmed collectively.
 
-#### Alarm Logs Section
+### Alarm Logs Section
 
 The properties in the alarm log section of the client screen are indicated by numbering in Figure 3.
 
@@ -131,11 +131,11 @@ Alarm Recovered: If the generated alarm is not acknowledged, and a value differe
 
 **Number 10 Load More:** Previously saved alarms in the database that do not appear in the alarm log can be brought to the alarm log section with this option.
 
-### Server Engine Screen Alarm Page 
+## Server Engine Screen Alarm Page
 
 The alarms created via the SCADA editor can be monitored not only from the client screen but also from the server screen. The server screen alarm page consists of three tabs.
 
-#### Active Alarms Section
+### Active Alarms Section
 
 To monitor active alarms from the server screen, go to ViewPLUS SCADA Editor -> Tools -> Start Server -> Alarms -> Active Alarms tab. The active alarms tab on the server screen has the following features, numbered in Figure 4.
 
@@ -180,7 +180,7 @@ If the alarm is acknowledged on the client screen and a value other than the ala
 
 **Number 14 Tag Name:** The name of the tag associated with the alarm, which is listed in ViewPLUS SCADA Editor -> Tag Channel Editor -> Alarms section, is written in this column.
 
-#### Registered Alarms Section
+### Registered Alarms Section
 
 To view all alarms created from the editor on the server screen, go to ViewPLUS SCADA Editor -> Tools -> Start Server -> Alarms -> Registered Alarms tab. The properties in the server screen registered alarms tab are numbered and indicated in Figure 5.
 
@@ -237,7 +237,7 @@ If the condition is set to "Out of range", the value in this column will be 4.
 
 **Number 20 CurrentState:** This column indicates the current state of the alarm. When the associated tag receives an alarm value, the value in this column will be 1. If a value outside of the alarm threshold is received, the value in this column will be 0.
 
-#### Alarm History Section
+### Alarm History Section
 
 To view all alarms created through the editor from the server screen, open ViewPLUS SCADA Editor -> Tools -> Start Server -> Alarms -> Alarm History tab. The features in the server screen alarm history tab are numbered and indicated in Figure 6.
 
