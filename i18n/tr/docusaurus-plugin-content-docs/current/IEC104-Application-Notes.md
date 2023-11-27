@@ -33,6 +33,8 @@ Mikrodev RTU cihazları, IEC 60870-5-104 SLAVE modunu destekler ve IEC 60870-5-1
 
 7.	Komut göndermede, Execution Mode desteği; Execute Only, Select Before Execute, Long Pulse ve Short Pulse Duration, Quality Descriptor bilgileri gönderimini destekler.
 
+8.	Birden fazla Slave açabilme ve her Slave için farklı IEC104 nesnesi tanımlayabilme
+
 
 <center>
 
@@ -67,21 +69,17 @@ ASDU adresi girişi olarak kullanılır.
 
 #I1040: Bağlantı Durum
 
-SCADA ile RTU arasında IEC104 bağlantısı kurulu durumda ise bu çıkış değeri 1 dir aksi durumda 0 dır. 
-
-Out: SCADA Yazma Durumu
-
-SCADA seçme ve yürütme isteğinde bulunursa, bu çıkışta bir darbe üretilir.
+IEC104 Köle bloğuna bağlı IEC104 Master varsa bu çıkış 1 olur.  
 
 #### Blok Özel Ayarları
 
 <center>
 
-![iec104_02](/img/iec104_02.png)
+![iec104-an-30](/img/iec104-an-30.png)
 
 </center>
 
-AsduAddress: IEC104 slave istasyon ASDU adresi tanımlanır.
+AsduAddress: IEC104 Köle Bloğunun ASDU adresi bu kısımdan veya IEC104 Köle bloğunun Asd girişinden tanımlanabilir.
 
 T0: TCP connection timeout süresidir.
 
@@ -95,14 +93,37 @@ K: Alınan paketteki sequence numarası ile gönderme durum değişkenindeki num
 
 W: w kadar I Formatında APDU alındıktan sonra ACK gönderilir.
 
+Group Count**: Cihazın IEC104 Slave olarak kaç adet Master ile bağlantı kurabileceği buradan belirtilir. Bu değer RTU cihazlar için maksimum 2, DM cihazlar için maksimum 4 olabilmektedir. 
+
+Max Client in Group**: Bir IEC104 Master a maksimum kaç adet Slave bağlantısı kurulabileceği buradan belirtilir. (Bu değer şuanlık 5 olarak ayarlanmıştır.) 
+
+Object Sets*: Birden fazla IEC104 Slave tanımlayabilmek için kullanılır. IEC104 nesneleri buraya girilen değer sayesinde farklı Slave adreslerine tanımlama yapılabilmektedir. Değişken adres tablosunda yer alan Object Set No kısmı ile birlikte kullanılır. Detaylı bilgi için Blok Açıklamalarına bakınız.
+
+Log-kayıt belleğine ekle: Sunucu ile bağlantı yok iken, blok değerleri olay kayıt hafızasına eklenmesi isteniyorsa log-kayıt belleğine ekle seçeneği seçili olmalıdır. 
+
+DevNET ile senkronla: Bağlantı kurulduğunda tüm blokların değerleri sunucuya gönderilmesi isteniyorsa bu seçenek seçili olmalıdır.
+
+*Telediagram versiyon 18 ve sonrası için geçerlidir.                    
+**Telediagram versiyon 18’den daha önceki sürümlerde bu özellikler Mikroterminal uygulaması üzerinden özel komut göndererek sağlanmaktadır.
+
+
 #### Blok Açıklaması
 
-IEC104 Slave blok eklenerek, RTU üzerinde IEC 104 aktif hale getirilir. IEC104 blok “Ser” girişine TCP bloğu eklenir.
+RTU üzerinden IEC104 protokolünün aktif hale getirilebilmesi için Telediagram projesine IEC104 Köle bloğu eklenmeli ve IEC104 Köle bloğunun "Ser" girişine TCP Soket bloğu bağlanmalıdır. Burada yer alan TCP Soket bloğunun özel ayarlarından TCP Soket Tipi "Sunucu" olarak seçilmeli ve dinleme portu tanımlanmalıdır. 
 
-Birden fazla sunucuya hizmet vermek için her bir sunucu için IEC 104 blok eklenmesi gerekir.
+TCP Soket bloğunu aktif edebilmek için TCP Soket bloğunun "Etk" girişine Yüksek Kapısı Bloğu bağlanmalıdır.
 
-IEC104 Asdu adresi, blok içinden değil de dışardan ayarlanmak istenirse “Asd” girişi kullanılır. IEC104 nesneleri arasında periyodik gönderim aktif seçilen nesnelerin değerleri IEC104 Slave bloğuna gelen yükselen kenar ile sunucuya iletilir (COT). Periyodik ya da tetikleme ile veri gönderimi olmayacaksa tetikleme girişi boş bırakılabilir.
+Birden fazla sunucuya hizmet verilmesi isteniyorsa Telediagram projesinde yer alan her bir sunucu için IEC104 Köle bloğu eklenmesi gerekmektedir.
 
+IEC104 Asdu adresi, IEC104 Köle bloğunun özel ayarlarından ayarlanabileceği gibi IEC104 Köle bloğunun "Asd" girişinden de ayarlanabilmektedir.
+
+IEC104 nesneleri arasında periyodik gönderim aktif seçilen nesnelerin değerleri, IEC104 Köle bloğunun "Ttk" girişine yükselen kenar sinyali gelmesi ile sunucuya iletilir. Periyodik ya da tetikleme ile veri gönderimi olmayacaksa tetikleme girişi boş bırakılabilir.
+
+Cihaz üzerinde birden fazla IEC104 Slave açmak istenirse IEC104 Köle bloğunun özel ayarlarında yer alan object sets kısmından ayarlanma yapılmalıdır. Bu kısım değişken adres tablosu ile birlikte kullanılmaktadır. Değişken adres tablosunda IEC104 nesneleri için tanımlama yaparken girilen object set no kısmı object sets değerine göre girilmelidir.
+
+Örneğin IEC104 Köle bloğunun özel ayarlarından object sets değeri 1 girildiyse değişken adres tablosunda bu bloğa karşılık gelen object set no kısmı 0 olmalıdır. (2^0=1)        
+IEC104 Köle bloğunun özel ayarlarından object sets değeri 2 girildiyse değişken adres tablosunda bu bloğa karşılık gelen object set no kısmı 1 olmalıdır. (2^1=2)           
+IEC104 Köle bloğunun özel ayarlarından object sets değeri 8 girildiyse değişken adres tablosunda bu bloğa karşılık gelen object set no kısmı 3 olmalıdır. (2^3=8) 
 
 ### Örnek Uygulama
 
@@ -110,7 +131,88 @@ RTU lojik projelerinde IEC 104 Slave Block'un eklenmesi ile RTU'da IEC 104 proto
 
 <center>
 
-![iec104_03](/img/iec104_03.png)
+![iec104-an-31](/img/iec104-an-31.png)
+***<center>Şekil 2: IEC104 Köle Bloğu Örnek FBD Projesi</center>***
+
+</center>
+
+<center>
+
+![iec104-an-32](/img/iec104-an-32.png)
+
+</center>
+
+<center>
+
+![iec104-an-33](/img/iec104-an-33.png)
+
+</center>
+
+<center>
+
+![iec104-an-34](/img/iec104-an-34.png)
+
+</center>
+
+<center>
+
+![iec104-an-35](/img/iec104-an-35.png)
+
+</center>
+
+<center>
+
+![iec104-an-36](/img/iec104-an-36.png)
+
+</center>
+
+<center>
+
+![iec104-an-37](/img/iec104-an-37.png)
+
+</center>
+
+Örnek uygulamada 3 farklı dinleme portu için 3 farklı IEC104 Köle bloğu tanımlandı. Tanımlama yapılır iken her IEC104 Köle bloğuna farklı Object Sets değeri verildi.
+
+Dinleme portu 2404 için IEC104 Köle bloğunun özel ayarlarından object sets değeri 1 olarak belirtildiğinden dolayı değişken adres tablosunda bu değere karşılık gelen object set no değeri 0 olarak girildi. (2^0=1)
+
+<center>
+
+![iec104-an-38](/img/iec104-an-38.png)
+
+</center>
+
+Dinleme portu 2405 için IEC104 Köle bloğunun özel ayarlarından object sets değeri 2 olarak belirtildiğinden dolayı değişken adres tablosunda bu değere karşılık gelen object set no değeri 1 olarak girildi. (2^1=2)
+
+<center>
+
+![iec104-an-39](/img/iec104-an-39.png)
+
+</center>
+
+Dinleme portu 2406 için IEC104 Köle bloğunun özel ayarlarından object sets değeri 8 olarak belirtildiğinden dolayı değişken adres tablosunda bu değere karşılık gelen object set no değeri 3 olarak girildi. (2^3=8)
+
+<center>
+
+![iec104-an-40](/img/iec104-an-40.png)
+
+</center>
+
+Değişken adres tablosunda 104 nesneleri tanımlandı. 
+
+Cihaza TCP üzerinden bağlantı kuruldu ve online izleme başlatıldı. 
+
+<center>
+
+![iec104-an-41](/img/iec104-an-41.png)
+
+</center>
+
+Vinci uygulaması üzerinden farklı dinleme portları için IEC104 Master açıldı ve gönderilen değer takip edildi.
+
+<center>
+
+![iec104-an-42](/img/iec104-an-42.png)
 
 </center>
 
@@ -118,17 +220,21 @@ RTU lojik projelerinde IEC 104 Slave Block'un eklenmesi ile RTU'da IEC 104 proto
 
 #### Değişken Tablosu
 
-RTU lojik projesine, IEC 104 Slave Blok eklenmesi ile RTU içinde IEC 104 protokol aktif hale gelir. RTU lojik projesindeki değişkenler, IEC104 ilişkilendirilmesi ise değişken adres tablosunda sağlanır.
+Telediagram projesine, IEC104 Köle Blok eklenmesi ile RTU içinde IEC104 protokolü aktif hale gelir. 
+
+Telediagram projesindeki değişkenler, IEC104 ilişkilendirilmesi ise değişken adres tablosundan sağlanır.
 
 <center>
 
-![iec104_04](/img/iec104_04.png)
+![iec104-an-43](/img/iec104-an-43.png)
 
 </center>
 
 #### Hat Etiketi Tanımlama
 
 Mikrodiagram üzerinde tanımlanan tüm blokların için Hat etiketi tanımlanabilmektedir. Değişken tablosunda protokol adresleri ile ilişkilendirmeyi yapabilmek için hat etiket tanımlanmış olması gerekmektedir.
+
+**Not:** Hat tanımlaması yapılır iken boşluk bırakılmamasına ve Türkçe karakter kullanılmamasına dikkat edilmelidir.
 
 <center>
 
@@ -140,40 +246,40 @@ Mikrodiagram üzerinde tanımlanan tüm blokların için Hat etiketi tanımlanab
 
 <center>
 
-![telediagram-editor-06](/img/telediagram-editor-06.png)
+![iec104-an-44](/img/iec104-an-44.png)
 
 </center>
 
-İsim / Alias: Tanımlanan bu değişkeni tanımlayan özel bir isim verilir.
+İsim: Tanımlanan bu değişkeni tanımlayan özel bir isim verilir.
 
-Başlangıç Adresi / Start Address: SCADA üzerinde bu değişken için ayrılan adres buraya yazılır. (Desimal değer olarak yazılır.)
+Başlangıç Adresi: SCADA üzerinde bu değişken için ayrılan adres buraya yazılır. (Desimal değer olarak yazılır.)
 
-Hat Etiketi / Line Label: Mikrodiagram üzerindeki ilişkilendirilecek blok hat etiketiyle seçilir.
+Object Set No: Birden fazla IEC104 Slave tanımlayabilmek için kullanılır. IEC104 nesneleri buraya girilen değer sayesinde farklı Slave adreslerine tanımlama yapılabilmektedir. IEC104 Köle bloğunun özel ayarlarında yer alan Object Sets kısmı ile birlikte kullanılır. Detaylı bilgi için Blok Açıklamaları kısmına bakınız.
 
-Nokta Sayısı / Point Count: Otomatik olarak hesaplanır. Tablolarda anlamlıdır.            
+Hat Etiketi: Mikrodiagram üzerindeki ilişkilendirilecek blok hat etiketiyle seçilir.
 
-Quality Register Block: Quality Register tanımlanacak blok girişi
+Nokta Sayısı: Otomatik olarak hesaplanır. Tablolarda anlamlıdır.            
+
+Quality Register Block: Quality Register tanımlanacak blok girişidir. Detaylı bilgi için Quality Register Blok Ayarları kısmına bakınız.
 
 Send Trig Block: Bloğun tetik girişinden bağımsız bir tetik ile IEC104 verileri gönderilmesi istenirse bu kısımdan tetik bloğu seçilir ve buradaki tetiğe bağımlı veri gönderebilmesi için blok özel ayarlarında yer alan periyodik gönder seçeneğinin tikli olmaması gerekmektedir.
 
-Protokol Tipi / Protocol Type: Modbus, Dnp3, IEC101, IEC104 arasından seçim yapılır. Protokol tipine göre Object Type (Nesne Tipi) değişecektir.
+Protokol Tipi: Modbus, Dnp3, IEC101, IEC104 arasından seçim yapılır. Protokol tipine göre Object Type (Nesne Tipi) değişecektir.
 
-Nesne Sınıfı / Object Type: Değişkenin ait olduğu sınıf bilgisi seçilir
+Nesne Sınıfı: Değişkenin ait olduğu sınıf bilgisi seçilir
 
-Periyodik Gönderim / Send Periodically: IEC104 Slave blok üzerindeki Tetik girişinden tetik algılanınca periyodik gönderme olarak bu değişkende SCADA’ya gönderilsin mi seçimidir.
+Periyodik Gönderim: IEC104 Slave blok üzerindeki Tetik girişinden tetik algılanınca periyodik gönderme olarak bu değişkende SCADA’ya gönderilsin mi seçimidir.
 
-####  Gönderim Metodu / Send Method:          
-Tanımlanan değişkenin değeri değişince yapılacak işlem seçilir.
+Gönderim Metodu: Tanımlanan değişkenin değeri değişince yapılacak işlem seçilir.
 
-Seviye: “Change Value” de tanımlanan miktar değişim olunca gönderim tetiklenir.
+Hiçbir Değişimde: Değer değişimi gönderimi tetiklemez.      
+Seviye Değişiminde: "Değişim Değeri" nde tanımlanan miktar kadar değişim olunca gönderim tetiklenir.          
+Yüzde Değişiminde: "Değişim Değeri" nde tanımlanan yüzde kadar değişim olunca gönderim tetiklenir.             
+İntegral Değişiminde: "Değişim Değeri" nde tanımlanan değer eklenen nesnenin birim zamanındaki değişimlerinin toplamını aşarsa gönderim tetiklenir. Birimi saniyedir. Detaylı bilgi için IEC104 Olay Mekanizması kısmına bakınız.
+   
+Değişim Değeri: "Gönderim Metodu" nda tanımlanan yüzde, seviye ya da integral değişim değeri bu kısımdan ayarlanır.
 
-Yüzde: “Change Value” de tanımlanan yüzde kadar değişim olunca gönderim tetiklenir.
-
-Hiçbir Değişimde/ None: Değer değişimi gönderimi tetiklenmez.
-
-Change Value: With the "Send method", it adjusts the percentage change in the level.
-
-Değişim Değeri / Change Value: “Send method” ile birlikte yüzde ya da level değişim değerini ayarlar.
+Açıklama: Açıklama girişidir. 
 
 ### IEC104 Nesne Tipleri
 
@@ -240,7 +346,12 @@ Kullanılacak QDS değerleri Bit Birleştirme Bloğuyla oluşturulup değişken 
 
 ### Komut Gönderimi Ayarları
 
-IEC 104 protokolünde uygun nesne tiplerinde Single Command, Double Command ve Set Point Command özelliğini desteklemektedir. Nesne tipleri komut türleri eşleşmesi Nesne Tipleri Tablosunda gösterilmiştir. Ayarları ise şu şekildedir; Hat etiketi ilişkilendirme işlemi yapılırken seçilen IEC 104 protokolü ayarlarında nesne tipine bağlı olarak seçenekler otomatik olarak görünmektedir. Örneğin, Nesne tipi 45 (Single Command) Seçildiğinde Şekil 6 da görüldüğü gibi parametre ayarları için seçenekler aktif olmaktadır. Short Pulse Duration ya da Long Pulse Duration değerleri için birer yazmaç seçilir. Girilen değer ms olarak işlem göreceği unutulmamalı. Execution Method da listeden seçilir. Execution Method 2 türdür. İşlemin tek komutla gerçekleşmesi isteniyorsa Execute Only seçilir. Farklı 2 onay durumu isteniyorsa Select Before Execute seçilir. Örneğin 2 farklı komutla onay isteyen işlemlerde Select Before Execute seçeneği kullanılabilir. Bunun için önce Select komutu sonrasında ise Execute komutu gönderilmelidir. 
+IEC 104 protokolünde uygun nesne tiplerinde Single Command, Double Command ve Set Point Command özelliğini desteklemektedir. Nesne tipleri komut türleri eşleşmesi Nesne Tipleri Tablosunda gösterilmiştir. Ayarları ise şu şekildedir;           
+Hat etiketi ilişkilendirme işlemi yapılırken seçilen IEC 104 protokolü ayarlarında nesne tipine bağlı olarak seçenekler otomatik olarak görünmektedir.               
+Örneğin, Nesne tipi 45 (Single Command) Seçildiğinde Şekil 6 da görüldüğü gibi parametre ayarları için seçenekler aktif olmaktadır. Short Pulse Duration ya da Long Pulse Duration değerleri için birer yazmaç seçilir. Girilen değer ms olarak işlem göreceği unutulmamalı. 
+
+Execution Method da listeden seçilir. Execution Method 2 türdür. İşlemin tek komutla gerçekleşmesi isteniyorsa Execute Only seçilir. Farklı 2 onay durumu isteniyorsa Select Before Execute seçilir.          
+Örneğin 2 farklı komutla onay isteyen işlemlerde Select Before Execute seçeneği kullanılabilir. Bunun için önce Select komutu sonrasında ise Execute komutu gönderilmelidir. 
 
 <center>
 
@@ -251,27 +362,37 @@ IEC 104 protokolünde uygun nesne tiplerinde Single Command, Double Command ve S
 
 ### IEC104 Olay (Event) Mekanizması
 
-Değişken adres tablosunda, IEC 104 nesneleri için değişimde gönder seçimi mevcuttur. Bu menüde tanımlanan değişkenin değeri değişince yapılacak işlem seçilir.
+Değişken adres tablosunda IEC104 nesneleri için değişimde gönder seçimi mevcuttur. 
 
-Hiçbir Değişimde: Değer değişimi gönderimi tetiklenmez.
+Değişken adres tablosunda tanımlanan gönderim methodu ile tanımlanan değişkenin değeri değişince yapılacak işlem seçilir. Gönderim methodu kısmı değişken değeri kısmı ile birlikte kullanılmaktadır.     
+Hiçbir Değişimde: Değer değişimi gönderimi tetiklemez.         
+Seviye Değişiminde: "Değişim Değeri" nde tanımlanan miktar kadar değişim olunca gönderim tetiklenir.      
+Yüzde Değişiminde: "Değişim Değeri" nde tanımlanan yüzde kadar değişim olunca gönderim tetiklenir.      
+İntegral Değişiminde: "Değişim Değeri" nde tanımlanan değer eklenen nesnenin birim zamanındaki değişimlerinin toplamını aşarsa gönderim tetiklenir.       
 
-Seviye Değişiminde: “Değişim Değeri” de tanımlanan miktar değişim olunca gönderim tetiklenir.
+Değişim Değeri "Gönderim Metodu" ile birlikte yüzde, seviye ve integral değişim değerini ayarlar.    
 
-Yüzde Değişiminde: “Değişim Değeri” de tanımlanan yüzde kadar değişim olunca gönderim tetiklenir.
+Örneğin değişken adres tablosunda tanımlanan IEC104 nesnesinin gönderim metodu integral değişiminde seçilip, değişim miktarı 10 girildiğinde;     
+Tanımlanan değişkenin değişim miktarı 2 olduğunda (tanımlanan değişkenin son değeri ile bir önceki değeri arasındaki fark alınır) gönderim 10/2 (değişken adres tablosuna girilen değişim değeri bölü tanımlanan değişkenin değişim miktarı) işleminden dolayı 5 sn sonra,      
+değişim miktarı 5 olduğunda gönderim 10/5 işleminden dolayı 2 sn sonra,   
+değişim miktarı 15 olduğunda, değişken adres tablosuna girilen değişim miktarından büyük olmasından dolayı hemen tetiklenecektir.        
 
-Değişim yüzdesi ya da seviyesi de	“Değişim Değeri” seçeneği ile ayarlanır. “Gönderim Metodu” ile birlikte yüzde ya da seviye değişim değerini ayarlar.
+RTU cihazı, değişimde gönder tanımlı olan ve değişim tespit edilmiş durumları olay olarak etiketler ve olaya zaman etiketi atar. Etiketlenmiş bir olay olması durumunda eğer sunucu ile bağlantı var ise ilgili nesne COT 0x03 Spontaneous olarak anında iletilir.      
+Eğer sunucu ile bağlantı yok ise, cihaz olay kayıt hafızasına ekler ve tekrar sunucu bağlantısı kurulunca göndermek üzere saklanır. Saklama işlemi için IEC104 Köle bloğunun özel ayarlarından log-kayıt belleğine ekle seçeneği seçili olmalıdır.      
 
-RTU cihazı, değişimde gönder tanımlı olan ve değişim tespit edilmiş durumları olay olarak etiketler ve olaya zaman etiketi atar. Etiketlenmiş bir olay olması durumunda eğer sunucu ile bağlantı var ise ilgili nesne COT 0x03 Spontaneous olarak anında iletilir. 
+**Not:** Bağlantı kurulduğunda tüm etiketlerin sunucuya gönderilmesi isteniyorsa IEC104 Köle bloğunun özel ayarlarından DevNET ile senkronla seçeneği seçili olmalıdır.
 
-Eğer sunucu ile bağlantı yok ise, cihaz olay kayıt hafızasına eklenir ve tekrar sunucu bağlantısı kurulunca göndermek üzere saklanır. Saklama işlemi için IEC104 Slave bloğu içerisinde log-kayıt belleğine ekle seçeneği seçili olmalıdır.
+**Not:** IEC104 nesneleri arasında periyodik gönderim aktif seçilen nesnelerin değerleri olay (event) olarak algılanmaz. Yani periyodik gönderimler bağlantı yokken log kayıt belleğine eklenmez.
 
-Not: Bağlantı kurulduğunda tüm etiketlerin sunucuya gönderilmesi isteniyorsa IEC104 Slave bloğu içerisinde DevNET ile senkronla seçeneği seçili olmalıdır.
-
-Not: IEC104 nesneleri arasında periyodik gönderim aktif seçilen nesnelerin değerleri olay (event) olarak algılanmaz. Yani periyodik gönderimler bağlantı yokken log kayıt belleğine eklenmez.
 
 ### IEC104 Redundancy Grup Özelliği
 
-Mikrodev RTU IEC104 Slave olarak IEC104 Master ile bağlantı kurabilir. Bu bağlanacak Master IP’lerin sayısının AT komutu ile cihaza tanımlanması gerekir. Mikroterminal uygulaması açılır, özel komut girişi kısmından 
+**Not:** Telediagram versiyon 18 ve öncesi için aşağıda anlatılan ayarlar geçerlidir.        
+Versiyon 18 ve sonrası için Mikroterminal üzerinden yapılan ayarlamalar, IEC104 Köle Bloğunun özel ayarlarından yapılmaktadır.
+
+Mikrodev RTU IEC104 Slave olarak IEC104 Master ile bağlantı kurabilir. Bu bağlanacak Master IP’lerin sayısının AT komutu ile veya IEC104 Köle bloğu üzerinden cihaza tanımlanması gerekir. 
+
+**Telediagram versiyon 18 öncesi için;**
 
 AT+OPTIONS=7,< BAGLANACAK MASTER IP SAYISI > komutu gönderilir.
 
@@ -289,6 +410,9 @@ OPTIONS=2
 
 Bu parametre girildikten sonra cihaza reset atılmalıdır. AT+RESET=1
 
+**Not:** IEC104 Slave bloğunun bağlanacağı Master sayısı RTU serisi cihazlar için maksimum 2, DM serisi cihazlar için maksimum 4’tür.
+
+Telediagram versiyon 18 ve sonrası için Redundancy grup tanımlaması için Blok Özel Ayarları kısmına bakınız.
  
 ###	Log Kayıt Belleğinde Tutulan Analog Eşik Değerini Düzenleme Özelliği
 
@@ -312,9 +436,13 @@ OPTIONS=10
 
 Bu parametre girildikten sonra cihaza reset atılmalıdır. AT+RESET=1
 
+**Not:** Buraya girilen eşik değeri projede tanımlanan tüm IEC104 Slave ler için geçerlidir.
+
 ### IEC104 Bağlantı Bilgisi Öğrenme Komutu
 
 AT komutu ile IEC104 bağlantı bilgisi öğrenilebilir.
+
+**Telediagram versiyon 18 öncesi için;**
 
 Mikroterminal uygulaması açılır, özel komut girişinden            
 AT+COMSTATUS=iec104 komutu gönderilir.
@@ -377,6 +505,132 @@ IEC104 CLIENT GROUP[1]:00000000
 		connection[3]:00000000            
 		connection[4]:00000000              
 COMSTATUS=      
+
+AT+COMSTATUS=iec104 komutu gönderildiğinde ekranda oluşan çıktılardan 
+
+IEC104 CLIENT GROUP: O gruba ait IP adresini hex tabanında verir.
+
+isDataTransStarted: O gruba ait Master IP’ye veri akışının olup olmadığını gösterir.
+
+MaxNumberOfEvents: Bağlantı yok iken log kayıt belleğinde tutulan analog değerlerin sayısıdır. Grup sayısı arttıkça MaxNumberOfEvents değeri grup sayısına bölünür ve her grup için bu değeri alır.
+
+IEC104 redundancy grup sayısı =1 seçili bağlantı var iken komut sorgusu örneği;
+
+>>  AT+COMSTATUS=iec104     
+IEC104 CLIENT GROUP[0]:220aa8c0      
+	isDataTransStarted:1     
+	NumofActiveConnections:1      
+	MaxNumberOfEvents:512          
+	RefInstance:20015e98      
+	EventItems:1000c800    
+	ObjMap:100068c8     
+		connection[0]:20016fd8      
+			DataTransStarted: 1     
+		connection[1]:00000000   
+		connection[2]:00000000       
+		connection[3]:00000000      
+		connection[4]:00000000       
+COMSTATUS=
+ 
+IEC104 redundancy grup sayısı =2 seçili bağlantı var iken komut sorgusu örneği;
+
+>>  AT+COMSTATUS=iec104    
+IEC104 CLIENT GROUP[0]:220aa8c0     
+	isDataTransStarted:1    
+	NumofActiveConnections:1       
+	MaxNumberOfEvents:256       
+	RefInstance:200162a0      
+	EventItems:1000c800     
+	ObjMap:100068c8     
+		connection[0]:20017858           
+			DataTransStarted: 1       
+		connection[1]:00000000    
+		connection[2]:00000000    
+		connection[3]:00000000       
+		connection[4]:00000000     
+IEC104 CLIENT GROUP[1]:f00aa8c0    
+	isDataTransStarted:1    
+	NumofActiveConnections:1    
+	MaxNumberOfEvents:256       
+	RefInstance:200166e0      
+	EventItems:1000dc00   
+	ObjMap:10006918     
+		connection[0]:20017d38     
+			DataTransStarted: 1      
+		connection[1]:00000000     
+		connection[2]:00000000      
+		connection[3]:00000000      
+		connection[4]:00000000    
+COMSTATUS=
+
+
+ 
+**Telediagram versiyon 18 ve sonrası için;**    
+
+Mikroterminal uygulaması açılır, özel komut girişinden 
+
+AT+COMSTATUS=iec104,< blok numarası > komutu gönderilir.
+
+Komut satırında belirtilen blok numarası bağlantı bilgisi öğrenilmek istenen IEC104 Köle bloğunun blok numarasıdır.
+
+IEC104 redundancy grup sayısı =2 seçili bağlantı yok iken komut sorgusu örneği;
+
+>>  AT+COMSTATUS=iec104,2   
+IEC104 CLIENT GROUP[0]:d20aa8c0     
+	isDataTransStarted:0      
+	NumofActiveConnections:0      
+	MaxNumberOfEvents:85       
+	RefInstance:200100d0       
+	EventItems:1000c800      
+	ObjMap:10005134        
+		connection[0]:00000000       
+		connection[1]:00000000     
+		connection[2]:00000000      
+		connection[3]:00000000       
+		connection[4]:00000000     
+IEC104 CLIENT GROUP[1]:390aa8c0       
+	isDataTransStarted:0       
+	NumofActiveConnections:0       
+	MaxNumberOfEvents:85      
+	RefInstance:20010518      
+	EventItems:1000cea4       
+	ObjMap:1000518c        
+		connection[0]:00000000      
+		connection[1]:00000000      
+		connection[2]:00000000      
+		connection[3]:00000000      
+		connection[4]:00000000     
+COMSTATUS=
+ 
+IEC104 redundancy grup sayısı =2 seçili, tek bağlantı var iken komut sorgusu örneği;
+
+>>  AT+COMSTATUS=iec104,2    
+IEC104 CLIENT GROUP[0]:d20aa8c0     
+	isDataTransStarted:1     
+	NumofActiveConnections:1    
+	MaxNumberOfEvents:85      
+	RefInstance:200100d0    
+	EventItems:1000c800     
+	ObjMap:10005134       
+		connection[0]:20012bc0     
+			DataTransStarted: 1     
+		connection[1]:00000000      
+		connection[2]:00000000       
+		connection[3]:00000000       
+		connection[4]:00000000       
+IEC104 CLIENT GROUP[1]:390aa8c0       
+	isDataTransStarted:0     
+	NumofActiveConnections:0            
+	MaxNumberOfEvents:85      
+	RefInstance:20010518        
+	EventItems:1000cea4         
+	ObjMap:1000518c        
+		connection[0]:00000000         
+		connection[1]:00000000     
+		connection[2]:00000000       
+		connection[3]:00000000       
+		connection[4]:00000000       
+COMSTATUS=
 
 ### TCP Soket Bloğuna Bağlı IEC104 Master IP’lerini Öğrenme Komutu
 

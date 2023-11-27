@@ -106,12 +106,17 @@ Sync with DevNET:  If it is desired to send the values of all blocks to the serv
 
 #### Block Information 
 
-To enable the IEC104 protocol over RTU, you need to add an IEC104 Slave block to the Telediagram project and connect the TCP Socket block to the "Ser" input of the IEC104 Slave block. In the TCP Socket block settings, the TCP Socket Type should be selected as "Server" and the listening port should be defined. To activate the TCP Socket block, the "Ena" input of the TCP Socket block should be connected to the High Gate block.                
-If you want to serve multiple servers, you need to add an IEC104 Slave block for each server in the Telediagram project.            
-The IEC104 ASDU address can be configured either from the block settings of the IEC104 Slave block or from the "Asd" input of the IEC104 Slave block.            
-The values of the IEC104 objects that are selected for periodic transmission will be sent to the server when a rising edge signal is received at the "Trg" input of the IEC104 Slave block. If there is no data transmission through periodic or trigger-based methods, the trigger input can be left unconnected.              
-If you want to open multiple IEC104 Slaves on the device, you should make the configuration from the "object sets" section in the block settings of the IEC104 Slave block. This section is used in conjunction with the variable address table. When defining IEC104 objects in the variable address table, the "object set no" entered should correspond to the object sets value.                
-For example, if the "object sets" value in the block settings of the IEC104 Slave block is set to 1, the "object set no" in the variable address table should be 0. (2^0=1)       
+To enable the IEC104 protocol over RTU, you need to add an IEC104 Slave block to the Telediagram project and connect the TCP Socket block to the "Ser" input of the IEC104 Slave block. In the TCP Socket block settings, the TCP Socket Type should be selected as "Server" and the listening port should be defined. To activate the TCP Socket block, the "Ena" input of the TCP Socket block should be connected to the High Gate block.
+
+If you want to serve multiple servers, you need to add an IEC104 Slave block for each server in the Telediagram project.
+
+The IEC104 ASDU address can be configured either from the block settings of the IEC104 Slave block or from the "Asd" input of the IEC104 Slave block.
+
+The values of the IEC104 objects that are selected for periodic transmission will be sent to the server when a rising edge signal is received at the "Trg" input of the IEC104 Slave block. If there is no data transmission through periodic or trigger-based methods, the trigger input can be left unconnected.
+
+If you want to open multiple IEC104 Slaves on the device, you should make the configuration from the "object sets" section in the block settings of the IEC104 Slave block. This section is used in conjunction with the variable address table. When defining IEC104 objects in the variable address table, the "object set no" entered should correspond to the object sets value.
+                
+For example, if the "object sets" value in the block settings of the IEC104 Slave block is set to 1, the "object set no" in the variable address table should be 0. (2^0=1)                  
 If the "object sets" value is set to 2, the "object set no" in the variable address table should be 1. (2^1=2)            
 And if the "object sets" value is set to 8, the "object set no" in the variable address table should be 3. (2^3=8)             
 
@@ -326,9 +331,11 @@ For example, we will define the reading value with the IEC 104 protocol. We sele
 
 ### Command Send Settings
 
-It supports Single Command, Double Command and Set Point Command for appropriate object types in IEC 104 protocol. Object types command types mapping is shown in the Object Types Table. The settings are as follows; Depending on the object type, the options appear automatically in the selected IEC 104 protocol settings during line label association. For example, when Object type 45 (Single Command) is selected, options for parameter settings become active as seen in Figure 2. A register is selected for either Short Pulse Duration or Long Pulse Duration values. It should be noted that the entered value will be treated as ms. 
+It supports Single Command, Double Command and Set Point Command for appropriate object types in IEC 104 protocol. Object types command types mapping is shown in the Object Types Table. The settings are as follows; Depending on the object type, the options appear automatically in the selected IEC 104 protocol settings during line label association.          
+For example, when Object type 45 (Single Command) is selected, options for parameter settings become active as seen in Figure 2. A register is selected for either Short Pulse Duration or Long Pulse Duration values. It should be noted that the entered value will be treated as ms. 
 
-The Execution Method is also selected from the list. The Execution Method is of 2 types. Execute Only is selected if the operation is desired to be performed with a single command. If 2 different confirmation states are desired, Select Before Execute is selected. For example, the Select Before Execute option can be used for transactions that require confirmation with 2 different commands. For this, the Select command must be sent first and then the Execute command. 
+The Execution Method is also selected from the list. The Execution Method is of 2 types. Execute Only is selected if the operation is desired to be performed with a single command. If 2 different confirmation states are desired, Select Before Execute is selected.            
+For example, the Select Before Execute option can be used for transactions that require confirmation with 2 different commands. For this, the Select command must be sent first and then the Execute command. 
 
 <center>
 
@@ -349,8 +356,9 @@ On Change Percentage: Sending is triggered when there is a change in the percent
 
 On Change Integral: If the accumulated change of the added object within the unit time, defined by the "Change Value," exceeds, the transmission is triggered.
 
-The "Change Value" in conjunction with the "Send Method" sets the percentage, level, and integral change value.
-For example, if the send method for the IEC104 object defined in the variable address table is set to "Integral Change" and the change value is set to 10:
+The "Change Value" in conjunction with the "Send Method" sets the percentage, level, and integral change value.         
+
+For example, if the send method for the IEC104 object defined in the variable address table is set to "Integral Change" and the change value is set to 10:                          
 When the change amount of the defined variable is 2 (the difference between the current value and the previous value of the defined variable), the transmission will be triggered after 5 seconds (10 divided by 2, based on the change value entered in the variable address table).
 When the change amount of the defined variable is 5, the transmission will be triggered after 2 seconds (10 divided by 5).
 When the change amount of the defined variable is 15, the transmission will be triggered immediately as it exceeds the change value entered in the variable address table.
@@ -402,7 +410,7 @@ The Mikroterminal application opens, will be sent from the custom command line
 
 AT+OPTION=8,< ANALOG EVENT MULTIPLIER >
 
-analog event multiplier on the command line, analog log recorded when there is no connection, it allows to operate on the threshold values of the values. Values written here are from 0 if set differently, when there is no connection, the event threshold is multiplied by the coefficient here.
+Analog event multiplier on the command line, analog log recorded when there is no connection, it allows to operate on the threshold values of the values. Values written here are from 0 if set differently, when there is no connection, the event threshold is multiplied by the coefficient here.
 
 For example;
 
