@@ -3,7 +3,7 @@ title: ViewPLUS SCADA MQTT Kanalı Uygulama Notu
 ---
 
 
-### Mosquitto Kurulumu
+## Mosquitto Kurulumu
 
 ViewPLUS SCADA yazılımı MQTT üzerinden haberleşebilmesi için MQTT broker ile SCADA sunucusu aynı bilgisayar üzerinden başlatılmalıdır.
 
@@ -47,7 +47,7 @@ Kurulum tamamlandı penceresinde finish seçeneğine tıklayın ve ekrandan çı
 
 Kurulum tamamlandıktan sonra mosquitto brokerı nı çalıştırmadan önce programın konfigürasyon ayarlarının yapılması gerekmektedir.
 
-#### Mosquitto Konfigürasyon Ayarları
+### Mosquitto Konfigürasyon Ayarları
 
 Programın kurulmuş olduğu dosya yoluna gidilir.
 
@@ -88,7 +88,7 @@ Böylelikle MQTT için tanımlanan 1883 default portu broker ın ayarlarından d
 
 Düzenlemiş olduğumuz dosyayı kaydedip, dosyayı kapatın.
 
-#### Mosquitto Broker Çalıştırma
+### Mosquitto Broker Çalıştırma
 
 Konfigürasyon ayarlarını yaptıktan sonra komut satırını yönetici olarak çalıştırın.
 
@@ -125,7 +125,7 @@ Görev yöneticisini açın ve arka plan işlemleri kısmından mosquitto uygula
 
 </center>
 
-#### Çalışan Mosquitto Broker Kapatma
+### Çalışan Mosquitto Broker Kapatma
 
 Bilgisayar üzerinde çalışan mosquitto broker ı kapatmak için iki yol bulunmaktadır. 
 
@@ -168,9 +168,9 @@ komutunu yazın ve enter a tıklayın.
 
 </center>
 
-### ViewPLUS SCADA Etiket Kanal Editörü
+## ViewPLUS SCADA Etiket Kanal Editörü
 
-#### MQTT Client Kanal Tanımlamaları 
+### MQTT Client Kanal Tanımlamaları 
 
 Mikrodev Client, yayıncı birimlerinden gelen mesajları alır ve abone olunan birimlere iletir. Mesaj gönderirken, mesajı alacak olan müşteri birimlerini filtrelemek için konuları kullanır.
 
@@ -204,7 +204,7 @@ MQTT kanalında aşağıdaki ayarların yapılması gerekmektedir.
 *Socket Type: Unencrypted*        
 *KeepAlive: 6000*          
 
-##### SCADA Üzerinden Bir Değer Yayınlama (Publish Etme)
+### SCADA Üzerinden Bir Değer Yayınlama (Publish Etme)
 
 Teçhizat: Cihaz ID bilgisi buraya girilir. (Bu kısım boşta bırakılabilir.)
 
@@ -227,7 +227,7 @@ VarSize: Değişken tipine göre değişken boyutunu SCADA programı otomatik at
 
 </center>
 
-#### SCADA Üzerinden Bir Değer Yayınlama (Publish Etme) Uygulama Örneği
+### SCADA Üzerinden Bir Değer Yayınlama (Publish Etme) Uygulama Örneği
 
 **Not:** Bu örnekte MQTT Box programı kullanarak simülasyon yapılacaktır. 
 
@@ -544,7 +544,7 @@ deger ifadesi, etiket tanımlamalarında girilen variable name (değişken adı)
 
 V: 3640.0000 ifadesi ise yayın yapılan değeri ifade etmektedir.
 
-#### SCADA Üzerinden Bir Değere Abone Olma (Subscribe Olma)
+### SCADA Üzerinden Bir Değere Abone Olma (Subscribe Olma)
 
 Teçhizat: Cihaz ID bilgisi buraya girilir. (Bu kısım boşta bırakılabilir.)
 
@@ -567,7 +567,7 @@ VarSize: Değişken tipine göre değişken boyutunu SCADA programı otomatik at
 
 </center>
 
-#### SCADA Üzerinden Bir Değere Abone Olma (Subscribe Olma) Uygulama Örneği
+### SCADA Üzerinden Bir Değere Abone Olma (Subscribe Olma) Uygulama Örneği
 
 **Not:**  Bu örnekte MQTT Box programı kullanarak simülasyon yapılacaktır. 
 

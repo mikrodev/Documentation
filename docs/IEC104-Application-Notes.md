@@ -32,6 +32,8 @@ Mikrodev RTU devices support IEC 60870-5-104 SLAVE mode and serve SCADA systems 
 
 7.	Execution Mode support in sending commands; Execute Only, Select Before Execute, Long Pulse, and Short Pulse Duration support sending Quality Descriptor information.
 
+8. Ability to open more than one Slave and define different IEC104 objects for each Slave.
+
 <center>
 
 ![iec104-an-1](/img/iec104-an-1.png)
@@ -63,73 +65,150 @@ Asd: Asdu Address Input
 
 The ASDU address is used as input.
 
-#I104: Link Status 
+#I104: Connection Status Output
 
 If the IEC104 connection between SCADA and RTU is installed, this output value is 1, otherwise 0.
-
-Out: SCADA Write Status
-
-If SCADA requests select and execute, a pulse is generated at this output.
 
 #### Block Settings 
 
 <center>
 
-![iec104_02](/img/iec104_02.png)
+![iec104-an-6](/img/iec104-an-6.png)
 
 </center>
 
-AsduAddress: IEC104 slave station ASDU address is defined.
+AsduAddress: The ASDU address of the IEC104 Slave Block can be defined from this section or from the ASDU input of the IEC104 Slave block.
 
-T0: TCP IEC104 slave station ASDU address is defined.
+T0: TCP connection timeout period.
 
 T1: Test APDU timeout period.
 
 T2: Timeout period for Ack.
 
-T3: Test frame sending time
+T3: Test frame sending time.
 
 K: The maximum allowable difference between the sequence number in the received packet and the number in the send status variable.
 
 W: ACK is sent after receiving W up to I Format APDU.
 
+Group Count**: The number of Masters that the device can establish connections with as an IEC 104 Slave is specified here. This value can be a maximum of 2 for RTU devices and a maximum of 4 for DM devices.
+
+Max Client in Group**:  The maximum number of Slave connections that can be established to an IEC 104 Master is specified here. (Currently set to 5.)
+
+Object Sets*:  It is used to define multiple IEC 104 Slaves. Thanks to the value entered here, IEC 104 objects can be assigned to different Slave addresses. It is used in conjunction with the 'Object Set No' in the Variable Address Table. For more detailed information, please refer to the Block Descriptions.
+
+Add to log-record memory:  If block values are desired to be added to the event log memory when there is no connection with the server, the "Add to Log Memory" option should be selected.
+
+Sync with DevNET:  If it is desired to send the values of all blocks to the server when the connection is established, this option should be selected.
+
+*This is valid for Telediagram version 18 and later.                        
+**In Telediagram versions earlier than 18, these features are provided by sending special commands through the Mikroterminal application.
+
 #### Block Information 
 
-By adding IEC104 slave block ,  IEC 104  will be activated on the RTU. 
-
-TCP or Serialport block is added to IEC104 block ser input.
-
-EC 104 blocks must be added for each server to serve multiple servers.
-
-Asd input is used if IEC104 Asdu address is set from outside but not inside block.
-
-On the rising edge of the trigger, periodic transmission between IEC104 objects is activated and the selected objects are transmitted to the server periodically. Trigger input can be left blank.
+To enable the IEC104 protocol over RTU, you need to add an IEC104 Slave block to the Telediagram project and connect the TCP Socket block to the "Ser" input of the IEC104 Slave block. In the TCP Socket block settings, the TCP Socket Type should be selected as "Server" and the listening port should be defined. To activate the TCP Socket block, the "Ena" input of the TCP Socket block should be connected to the High Gate block.                
+If you want to serve multiple servers, you need to add an IEC104 Slave block for each server in the Telediagram project.            
+The IEC104 ASDU address can be configured either from the block settings of the IEC104 Slave block or from the "Asd" input of the IEC104 Slave block.            
+The values of the IEC104 objects that are selected for periodic transmission will be sent to the server when a rising edge signal is received at the "Trg" input of the IEC104 Slave block. If there is no data transmission through periodic or trigger-based methods, the trigger input can be left unconnected.              
+If you want to open multiple IEC104 Slaves on the device, you should make the configuration from the "object sets" section in the block settings of the IEC104 Slave block. This section is used in conjunction with the variable address table. When defining IEC104 objects in the variable address table, the "object set no" entered should correspond to the object sets value.                
+For example, if the "object sets" value in the block settings of the IEC104 Slave block is set to 1, the "object set no" in the variable address table should be 0. (2^0=1)       
+If the "object sets" value is set to 2, the "object set no" in the variable address table should be 1. (2^1=2)            
+And if the "object sets" value is set to 8, the "object set no" in the variable address table should be 3. (2^3=8)             
 
 ### Sample Application
 
-* In RTU logic projects , with the addition of IEC 104 Slave Block, the IEC 104 protocol is activated in the RTU. Variables in the RTU logic project, IEC104 association is provided in the variable address table.
-
 <center>
 
-![iec104_03](/img/iec104_03.png)
+![iec104-an-7](/img/iec104-an-7.png)
+***<center>Figure 1: IEC104 Slave Block Example FBD Project</center>***
 
 </center>
 
-### Variable Mapping with Protocol
+<center>
 
-#### Variable Address Table
+![iec104-an-8](/img/iec104-an-8.png)
 
-* The relevant protocol is activated in the RTU logic project by adding the protocol block. Variables in the RTU logic Project, association between protocol.is provided in te variable address table
+</center>
 
 <center>
 
-![iec104_04](/img/iec104_04.png)
+![iec104-an-9](/img/iec104-an-9.png)
+
+</center>
+
+<center>
+
+![iec104-an-10](/img/iec104-an-10.png)
+
+</center>
+
+<center>
+
+![iec104-an-11](/img/iec104-an-11.png)
+
+</center>
+
+In the example application, three different IEC104 Slave blocks were defined for three different listening ports. During the configuration, each IEC104 Slave block was assigned a different "Object Sets" value.
+
+For listening port 2404, the "Object Sets" value of the IEC104 Slave block is specified as 1 in the block settings. Therefore, the corresponding "Object Set No" value in the variable address table is entered as 0. (2^0=1)
+
+<center>
+
+![iec104-an-12](/img/iec104-an-12.png)
+
+</center>
+
+For listening port 2405, the "Object Sets" value of the IEC104 Slave block is specified as 2 in the block settings. Therefore, the corresponding "Object Set No" value in the variable address table is entered as 1. (2^1=2)
+
+<center>
+
+![iec104-an-13](/img/iec104-an-13.png)
+
+</center>
+
+For listening port 2406, the "Object Sets" value of the IEC104 Slave block is specified as 8 in the block settings. Therefore, the corresponding "Object Set No" value in the variable address table is entered as 3. (2^3=8)
+
+<center>
+
+![iec104-an-14](/img/iec104-an-14.png)
+
+</center>
+
+IEC 104 objects have been defined in the variable address table. A TCP connection has been established to the device, and online monitoring has been initiated.
+
+<center>
+
+![iec104-an-15](/img/iec104-an-15.png)
+
+</center>
+
+IEC104 Masters were opened for different listening ports through the Vinci application, and the transmitted values were monitored.
+
+<center>
+
+![iec104-an-16](/img/iec104-an-16.png)
+
+</center>
+
+###	IEC104 Variable Address Table Definitions
+
+#### Variable Address Table
+
+With the addition of the IEC104 Slave Block to the Telediagram project, the IEC104 protocol becomes active within the RTU.
+
+The association of variables with IEC104 is provided through the variable address table in the Telediagram project.
+
+<center>
+
+![iec104-an-17](/img/iec104-an-17.png)
 
 </center>
 
 #### Defining Line Labels
 
-*Line label can be defined for all blocks defined on the Mikrodiagram. In the variable table, the line label must be defined in order to be able to associate with the protocol addresses.
+In the Telediagram software, automatic line label is provided for all blocks added to the Telediagram project. To facilitate project readability, line label can be done based on the usage locations of the blocks. 
+
+**Note:** When defining line label, ensure not to leave any spaces and avoid using Turkish characters.
 
 <center>
 
@@ -139,42 +218,50 @@ On the rising edge of the trigger, periodic transmission between IEC104 objects 
 
 #### Attaching a Line Label
 
+Associating protocol tags with line labels, variable address is provided from the menu by pressing "Add" button in the address table.
+
 <center>
 
-![telediagram-editor-06](/img/telediagram-editor-06.png)
+![iec104-an-18](/img/iec104-an-18.png)
 
 </center>
 
 Alias: A special name is given that defines this defined variable.
 
-Start Address: The address allocated for this variable on SCADA is written here. It is written as a decimal value
+Start Address: The address allocated for this variable on SCADA is written here. It is written as a decimal value.
 
-Line Label: The block to be associated on the Mikrodiagram is selected with the line label.
+Object Set No:  It is used to define multiple IEC104 Slaves. Through this value, IEC104 objects can be assigned to different Slave addresses. It is used in conjunction with the "Object Sets" section in the block settings of the IEC104 Slave block. For detailed information, please refer to the "Block Descriptions" section.
+
+Line Label: The block to be associated on the Telediagram is selected with the line label.
 
 Point Count: Calculated automatically. It makes sense on tables.             
 
-Quality Register Block:  Block entry to define Quality Register.
+Quality Register Block:  Block entry to define Quality Register. For detailed information, please refer to the "Quality Register Block Settings" section.
 
 Send Trig Block:  If you want to send IEC104 data with an independent trigger from the trigger input of the block, the trigger block is selected from this section and the periodic send option in the block special settings must not be ticked in order to send trigger-dependent data here.
 
 Protocol Type: Modbus, Dnp3, IEC101, IEC104 are selected. Object type will change according to protocol type.
 
-Object Type: IEC104 object type information selected. look the protocol type information for detailed information.
+Object Type: IEC104 object type information selected. For detailed information, please refer to the "Object Types" section.
 
 Object Class: The class information to which the variable belongs is selected.
 
-Send On Trigger: IEC104 Slave block is the selection to send to this SCADA as a periodic send when the test is detected from the trigger input.
+Send Periodically:  It is the selection of whether to send periodic sending to SCADA in this variable when the trigger is detected from the Trigger input on the IEC104 Slave block.
 
-####  Send Method:
-If the value of the defined variable is changed, the operation to be performed is selected.
+Send Method: If the value of the defined variable is changed, the operation to be performed is selected.
 
-Level: When the quantity defined in "Change Value" is changed, the transmission is triggered.
+On Change None: The spin submission is not triggered.
 
-Percentage: The transmission is triggered when there is a change in the percentage defined in "Change Value".
+On Change Level: When the amount defined in "Change Value" changes, sending is triggered.
 
-None: Value exchange does not trigger posting
+On Change Percentage: Sending is triggered when there is a change in the percentage defined in "Change Value".
 
-Change Value: With the "Send method", it adjusts the percentage change in the level.
+On Change Integral: If the accumulated change of the added object within the unit time, defined by the "Change Value," exceeds, the transmission is triggered. The unit is in seconds. For detailed information, please refer to the "IEC104 Event Mechanism" section.
+
+
+Change Value: Sets the percentage or level change value together with the "Send method".
+
+Description:  It is the description input.
 
 ### IEC104 Object Types
 
@@ -239,7 +326,9 @@ For example, we will define the reading value with the IEC 104 protocol. We sele
 
 ### Command Send Settings
 
-It supports Single Command, Double Command and Set Point Command for appropriate object types in IEC 104 protocol. Object types command types mapping is shown in the Object Types Table. The settings are as follows; Depending on the object type, the options appear automatically in the selected IEC 104 protocol settings during line label association. For example, when Object type 45 (Single Command) is selected, options for parameter settings become active as seen in Figure 2. A register is selected for either Short Pulse Duration or Long Pulse Duration values. It should be noted that the entered value will be treated as ms. The Execution Method is also selected from the list. The Execution Method is of 2 types. Execute Only is selected if the operation is desired to be performed with a single command. If 2 different confirmation states are desired, Select Before Execute is selected. For example, the Select Before Execute option can be used for transactions that require confirmation with 2 different commands. For this, the Select command must be sent first and then the Execute command. 
+It supports Single Command, Double Command and Set Point Command for appropriate object types in IEC 104 protocol. Object types command types mapping is shown in the Object Types Table. The settings are as follows; Depending on the object type, the options appear automatically in the selected IEC 104 protocol settings during line label association. For example, when Object type 45 (Single Command) is selected, options for parameter settings become active as seen in Figure 2. A register is selected for either Short Pulse Duration or Long Pulse Duration values. It should be noted that the entered value will be treated as ms. 
+
+The Execution Method is also selected from the list. The Execution Method is of 2 types. Execute Only is selected if the operation is desired to be performed with a single command. If 2 different confirmation states are desired, Select Before Execute is selected. For example, the Select Before Execute option can be used for transactions that require confirmation with 2 different commands. For this, the Select command must be sent first and then the Execute command. 
 
 <center>
 
@@ -250,42 +339,61 @@ It supports Single Command, Double Command and Set Point Command for appropriate
 
 ### IEC 104 Event Mechanism
 
-The variable address table has a send on exchange selection for IEC 104 objects. When the value of the variable defined in this menu changes, the action to be taken is selected.
+The variable address table has a send on exchange selection for IEC 104 objects. The selection of the action to be taken when the value of the variable defined in the variable address table changes is determined by the send method defined in the variable address table. The send method is used in conjunction with the change value section.
 
-On No Exchange: The spin submission is not triggered.
+On Change None: The spin submission is not triggered.
 
-In Level Change: When the amount defined in “Change Value” changes, the sending is triggered.
+On Change Level: When the amount defined in "Change Value" changes, the sending is triggered.
 
-In Percentage Change: Sending is triggered when there is a change in the percentage defined in “Change Value”.
+On Change Percentage: Sending is triggered when there is a change in the percentage defined in "Change Value".
 
-The percentage or level of change is also set with the "Change Value" option. Sets the percentage or level change value along with the “Submission Method”.
+On Change Integral: If the accumulated change of the added object within the unit time, defined by the "Change Value," exceeds, the transmission is triggered.
+
+The "Change Value" in conjunction with the "Send Method" sets the percentage, level, and integral change value.
+For example, if the send method for the IEC104 object defined in the variable address table is set to "Integral Change" and the change value is set to 10:
+When the change amount of the defined variable is 2 (the difference between the current value and the previous value of the defined variable), the transmission will be triggered after 5 seconds (10 divided by 2, based on the change value entered in the variable address table).
+When the change amount of the defined variable is 5, the transmission will be triggered after 2 seconds (10 divided by 5).
+When the change amount of the defined variable is 15, the transmission will be triggered immediately as it exceeds the change value entered in the variable address table.
 
 The RTU device tags the statuses that are send on change and change detected as events and assigns a time tag to the event. In case of a tagged event, if there is a connection with the server, the relevant object is transmitted immediately as COT 0x03 Spontaneous.
 
-If there is no connection with the server, the device is added to the event log memory and stored for sending when the server connection is established again. For storage, the option "Add to log-record memory" must be selected in the IEC104 Slave block.
+If there is no connection with the server, the device is added to the event log memory and stored for sending when the server connection is established again. For storage, the option "Add to log-record memory" must be selected in the IEC104 Slave block settings.
 
-Note: If all tags are to be sent to the server when the connection is established, the Sync with DevNET option must be selected in the IEC104 Slave block.
+**Note:** If all tags are to be sent to the server when the connection is established, the Sync with DevNET option must be selected in the IEC104 Slave block settings.
 
-Note: The values of selected objects with periodic sending between IEC104 objects are not detected as events. That is, periodic submissions are not added to the log memory when there is no connection.
+**Note:** The values of selected objects with periodic sending between IEC104 objects are not detected as events. That is, periodic submissions are not added to the log memory when there is no connection.
 
 ### IEC104 Redundancy Group Specification
 
-Mikrodev RTU can connect with IEC 104 Master as IEC 104 Slave. The number of Master IPs to be connected to this must be defined to the device with the AT command. The Mikroterminal application opens, from the special command entry section.
+Note: The settings described below are valid for Telediagram version before 18.
+
+For version 18 and later, the adjustments are made through the block settings of the IEC104 Slave Block in Mikroterminal.
+
+Mikrodev RTU can connect with IEC 104 Master as IEC 104 Slave. The number of Master IPs to be connected to this must be defined to the device with the AT command and via the IEC104 Slave block.
+
+**For Telediagram version before 18:**
+
+The Mikroterminal application opens, from the special command entry section.
 
 The command AT+OPTIONS=7,< NUMBER OF MASTER IP TO CONNECT > is sent.
+
 For example, if Edaş has two different server IPs, this command would be as follows:
+
 AT+OPTIONS=7,2
 
 
 >>  AT+OPTIONS=7,2   Write Commad
 OPTIONS=OK
 
-
 >>  AT+OPTIONS=7,?   Read Command
 OPTIONS=2
 
 After entering this parameter, the device must be reset. AT+RESET=1
- 
+
+**Note:** The maximum number of Masters that the IEC104 Slave block can connect to is 2 for RTU series devices and 4 for DM series devices.
+
+**For Telediagram version 18 and later, please refer to the "Block Settings" section for Redundancy Group definition.**
+
 ###	Ability to Edit the Analog Threshold Value Retained in the Log Recording Memory
 
 While there is no connection, changes can be made on the threshold values of the analog values kept in the log memory.
@@ -312,11 +420,15 @@ OPTIONS=10
 
 After entering this parameter, the device must be reset. AT+RESET=1
 
+**Note:** The threshold value entered here applies to all defined IEC104 Slaves in the project.
+
 ### IEC104 Connection Information Learning Command
 
 IEC104 connection information can be learned with AT command.
 
-The Mikroterminal application opens, from the custom command input 
+**For Telediagram version before 18:**
+
+The Mikroterminal application opens, from the custom command input. 
 
 The command AT+COMSTATUS=iec104 is sent.
 
@@ -379,6 +491,74 @@ IEC104 CLIENT GROUP[1]:00000000
 		connection[3]:00000000            
 		connection[4]:00000000              
 COMSTATUS=      
+
+**For Telediagram version 18 and later:**
+
+The Mikroterminal application opens, from the custom command input.
+
+The command AT+COMSTATUS=iec104,< block number > is sent.
+
+The block number specified on the command line is the block number of the IEC104 Slave block from which the connection information is to be retrieved.
+
+IEC104 redundancy group number =2 command query example when there is no selected connection;
+
+>>  AT+COMSTATUS=iec104,2            
+IEC104 CLIENT GROUP[0]:d20aa8c0          
+	isDataTransStarted:0         
+	NumofActiveConnections:0              
+	MaxNumberOfEvents:85          
+	RefInstance:200100d0             
+	EventItems:1000c800             
+	ObjMap:10005134            
+		connection[0]:00000000                
+		connection[1]:00000000           
+		connection[2]:00000000            
+		connection[3]:00000000          
+		connection[4]:00000000           
+IEC104 CLIENT GROUP[1]:390aa8c0              
+	isDataTransStarted:0          
+	NumofActiveConnections:0          
+	MaxNumberOfEvents:85          
+	RefInstance:20010518         
+	EventItems:1000cea4           
+	ObjMap:1000518c          
+		connection[0]:00000000          
+		connection[1]:00000000         
+		connection[2]:00000000         
+		connection[3]:00000000           
+		connection[4]:00000000           
+COMSTATUS=
+
+ 
+IEC104 redundancy group number =2 selected, command query example when there is only one connection; 
+
+>>  AT+COMSTATUS=iec104,2        
+IEC104 CLIENT GROUP[0]:d20aa8c0         
+	isDataTransStarted:1       
+	NumofActiveConnections:1         
+	MaxNumberOfEvents:85           
+	RefInstance:200100d0         
+	EventItems:1000c800             
+	ObjMap:10005134            
+		connection[0]:20012bc0       
+			DataTransStarted: 1          
+		connection[1]:00000000        
+		connection[2]:00000000       
+		connection[3]:00000000         
+		connection[4]:00000000       
+IEC104 CLIENT GROUP[1]:390aa8c0           
+	isDataTransStarted:0      
+	NumofActiveConnections:0          
+	MaxNumberOfEvents:85           
+	RefInstance:20010518         
+	EventItems:1000cea4           
+	ObjMap:1000518c     
+		connection[0]:00000000         
+		connection[1]:00000000        
+		connection[2]:00000000      
+		connection[3]:00000000      
+		connection[4]:00000000      
+COMSTATUS=
 
 ### Command to Learn IEC104 Master IPs Connected to TCP Socket Block
 

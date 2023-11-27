@@ -894,6 +894,180 @@ On the opened dialog, select the users which you want to be subscribed on the al
 
 For detailed information: [Alarm Identification and E-mail Sending](https://www.youtube.com/watch?v=hVc3wrQba3o&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=13).
 
+#### Monitoring Alarms 
+
+Alarm states prepared through the editor can be monitored not only from the alarms tab on the client or server screen but also from the SCADA design pages.
+
+To monitor alarm states from the client or server screen, refer to the [ViewPLUS SCADA Alarm Pages Application Note](https://docs.mikrodev.com/docs/ViewPLUS-SCADA-Alarms-Screen-Application-Notes/) document. 
+
+##### Monitoring Alarm States on SCADA Design Pages
+
+Alarm labels can be associated with SCADA components added to SCADA design pages, allowing the alarm status of the label to be tracked through the components. Furthermore, alarm statuses monitored through SCADA components can be acknowledged by generating acknowledgment messages via the components.
+
+###### SCADA Component Alarm Application
+
+1.  Create a new SCADA project and define labels.
+
+2.	Create alarm states for the defined labels.
+
+<center>
+
+![alarm40](/img/alarm40.png)
+
+</center>
+
+3.	Open the SCADA Editor page, add one of the SCADA components to the SCADA design page to monitor the alarm states of the label.
+
+<center>
+
+![alarm41](/img/alarm41.png)
+
+</center>
+
+In this example, to monitor the value of label 1 in the SCADA, a display was added to the page, and the label 1 was selected from the text label section.
+
+4.	To monitor alarm states through the added component, click on the component, locate the Events section in the properties panel on the right side. Check the option "Show Alarms" located here.
+
+<center>
+
+![alarm42](/img/alarm42.png)
+
+</center>
+
+5.	Start the server and then open the client application.
+
+6.	When an alarm value is sent to the label associated with the SCADA component, you will observe that a bell icon appears on the component, and the alarm icon changes color, flashing on and off.
+
+<center>
+
+![alarm43](/img/alarm43.png)
+
+</center>
+
+7.	Right-click on the bell icon to acknowledge the alarm. As a result of this action, you will see the option to acknowledge the alarm.
+
+<center>
+
+![alarm44](/img/alarm44.png)
+
+</center>
+
+8.	Click on the "Acknowledge Alarm" text, and in the opened window, add an acknowledgment message to the alarm.
+
+<center>
+
+![alarm45](/img/alarm45.png)
+
+</center>
+
+9.	After confirming the alarm status, you will observe that the bell icon on the SCADA component disappears.
+
+<center>
+
+![alarm46](/img/alarm46.png)
+
+</center>
+
+###### SCADA Page Alarms Application
+
+1.	Create a new SCADA project and define labels.
+
+2.	Create alarm states for the defined labels.
+
+<center>
+
+![alarm40](/img/alarm40.png)
+
+</center>
+
+3.	Open the SCADA Editor page. Create two separate pages: one for the homepage and the other for displaying alarm statuses using SCADA components.
+
+4.	To transition from the homepage to another page, select the button icon from within the SCADA components and add it to your SCADA page.
+
+5.	Click on the button icon. On the right side, find the Events section in the object properties. Select event type "Mouse Button Down," event action "Go Page," and from the "Go Page" section, choose the other page you created. To monitor alarm states through the button, the "Show Alarms" option should be checked.
+
+<center>
+
+![alarm47](/img/alarm47.png)
+
+</center>
+
+6.	To monitor the alarm states of the label, add one of the SCADA components to the SCADA design page that is navigated using "Go Page" from the homepage.
+
+<center>
+
+![alarm41](/img/alarm41.png)
+
+</center>
+
+In this example, to monitor the value of label 1 through SCADA, a display was added to the page, and label 1 was selected from the text label section.
+
+7.	Start the server, and then open the client application.
+
+8.	When an alarm value is sent to the label associated with the SCADA component, observe that an exclamation mark icon appears on the button and flashes on and off.
+
+<center>
+
+![alarm48](/img/alarm48.png)
+
+</center>
+
+**Note:** Alarms cannot be acknowledged from the exclamation mark icon displaying page alarms.
+
+1.	Create a new SCADA project and define labels.
+
+2.	Create alarm states for the defined labels.
+
+<center>
+
+![alarm40](/img/alarm40.png)
+
+</center>
+
+3.	The map page uses "Go to Page" event action with location markers. Therefore, as in the previous example, page alarms will be created. Prepare two separate pages for the map page and the page where alarm statuses will be associated.
+
+4.	Open the SCADA Editor page. To set the opened page as a map page, check the geo view option in the page properties. [Click here](https://docs.mikrodev.com/docs/ViewPLUS-SCADA-Map-Page/) to get detailed information about map pages.
+
+<center>
+
+![alarm49](/img/alarm49.png)
+
+</center>
+
+5.	Add location markers to the map page. Click on the marker under the GIS objects section and place it on the desired location on the map.
+
+<center>
+
+![alarm50](/img/alarm50.png)
+
+</center>
+
+6.	Click on the added location marker on the page. Under the GIS objects section, check the "Active" option next to the "Link to Page" section and select the other page where alarm statuses will be associated. To monitor alarm statuses through the location marker, the "Show Alarms" option should be checked.
+
+<center>
+
+![alarm51](/img/alarm51.png)
+
+</center>
+
+7.	To monitor the alarm states of the label, add one of the SCADA components to the SCADA design page that is navigated using "Go Page" from the map page.
+
+<center>
+
+![alarm41](/img/alarm41.png)
+
+</center>
+
+8.	Start the server, and then open the client application.
+
+9.	When an alarm value is sent to the label associated with the SCADA component, you will observe that an exclamation mark icon appears on the location marker, and in the top left corner of the client screen, you will see the number of location markers in alarm.
+
+<center>
+
+![alarm52](/img/alarm52.png)
+
+</center>
+
 ### Associating PLC and SCADA Projects
 
 As you develop your project, it becomes more important to associate channels in SCADA with PLC projects to avoid confusion.To do this, you can specify the PLC project path in the upper right corner of the channel menu.

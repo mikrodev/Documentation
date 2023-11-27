@@ -949,15 +949,195 @@ Alarma bir kullanıcı aboneliği eklemek için Abone Kullanıcılar yazısını
 
 Açılan pencereden alarma abone olması istenen kullanıcı seçilir. 
 
-#### Diğer
+**Diğer**
 
 **Geri Bildirim İste** : Bu seçenek işaretlendiğinde, kullanıcı alarmı onaylamazsa, alarm durumu ortadan kalksa bile Client ekranı alarmlar sayfasından alarm kaybolmaz.
 
 **Veri tabanına Giriş Yap** : Bu seçenek işaretlendiğinde alarm durumları veritabanına kaydedilir.
 
-**Kullanımda** : Bu seçenek sayeseinde oluşturulan alarmlar etkinleştirilir ya da devre dışı bırakılır.
+**Kullanımda** : Bu seçenek sayesinde oluşturulan alarmlar etkinleştirilir ya da devre dışı bırakılır.
 
-Detaylı bilgi için: [Alarm Identification and E-mail Sending](https://www.youtube.com/watch?v=hVc3wrQba3o&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=13).
+Detaylı bilgi için: [Alarm Tanımlamaları](https://www.youtube.com/watch?v=hVc3wrQba3o&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=13).
+
+#### Alarmları İzleme
+
+Editör üzerinden hazırlanan alarm durumları Client veya sunucu ekranında yer alan alarmlar sekmesinden izlenebildiği gibi SCADA tasarım sayfalarından da izlenebilmektedir.
+
+Alarm durumlarını Client veya sunucu ekranından izleyebilmek için [ViewPLUS SCADA Alarm Sayfaları Uygulama Notu](https://docs.mikrodev.com/tr/docs/ViewPLUS-SCADA-Alarms-Screen-Application-Notes/) dokümanına bakınız. 
+
+##### SCADA Tasarım Sayfalarında Alarm Durumlarını İzleme
+
+Alarm etiketleri, SCADA tasarım sayfalarına eklenen SCADA bileşenleri ile ilişkilendirilerek etiketin alarm durumları bileşenler üzerinden takip edilebilmektedir. Ayrıca SCADA bileşenleri üzerinden takip edilen alarm durumları bileşenler üzerinden onay mesajı oluşturarak onaylanabilmektedir.
+
+###### SCADA Bileşen Alarm Uygulaması
+
+1.	Yeni bir SCADA projesi oluşturun ve etiket tanımlamaları yapın. 
+
+2.	Tanımlanan etiketler için alarm durumları oluşturun. 
+
+<center>
+
+![alarm60](/img/alarm60.png)
+
+</center>
+
+3.	SCADA Editörü sayfasını açın, etiketin alarm durumlarını izleyebilmek için SCADA tasarım sayfasına SCADA bileşenlerinden birini ekleyin.
+
+<center>
+
+![alarm61](/img/alarm61.png)
+
+</center>
+
+Bu örnekte etiket 1 değerini SCADA üzerinden izleyebilmek için sayfaya bir display eklendi ve yazı etiketi kısmından etiket 1 seçildi. 
+
+4.	 Alarm durumlarını eklenen bileşen üzerinden izlemek için bileşen üzerine tıklayın sağ tarafta yer alan nesne özelliklerinden olaylar kısmını bulun. Burada yer alan alarmları göster seçeneğini işaretleyin.
+
+<center>
+
+![alarm62](/img/alarm62.png)
+
+</center>
+
+5.	Sunucuyu başlatın, Client uygulamasını açın.
+
+6.	SCADA bileşeni ile ilişkilendirilen etikete alarm değeri gönderildiğinde bileşen üzerinde çan simgesi çıktığı ve alarm simgesinin renk değiştirerek yanıp söndüğü gözlemlenir.
+
+<center>
+
+![alarm63](/img/alarm63.png)
+
+</center>
+
+7.	Alarmı onaylamak için çan simgesine sağ tıklayın. Bu işlemin sonucunda alarmı onayla seçeneğinin çıktığı görülür.
+
+<center>
+
+![alarm64](/img/alarm64.png)
+
+</center>
+
+8.	Alarmı onayla yazısına tıklayın açılan pencere üzerinden alarma bir onay mesajı ekleyin. 
+
+<center>
+
+![alarm65](/img/alarm65.png)
+
+</center>
+
+9.	Alarm durumu onaylandıktan sonra SCADA bileşeni üzerinde oluşan çan simgesinin kaybolduğu gözlemlenir.
+
+<center>
+
+![alarm66](/img/alarm66.png)
+
+</center>
+
+###### SCADA Sayfa Alarmları Uygulaması
+
+1.	Yeni bir SCADA projesi oluşturun ve etiket tanımlamaları yapın. 
+
+2.	Tanımlanan etiketler için alarm durumları oluşturun. 
+
+<center>
+
+![alarm67](/img/alarm67.png)
+
+</center>
+
+3.	SCADA Editörü sayfasını açın. Biri anasayfa, diğeri alarm durumları ile ilgili SCADA bileşenlerinin yer alacağı iki farklı sayfa oluşturun. 
+
+4.	SCADA projesine yeni bir sayfa ekleme hakkında bilgi almak için [buraya tıklayınız](https://www.youtube.com/watch?v=1utxG_0xRIQ&list=PLJRed6B6rTSoT97Y58zzJDD5R9rQOzMak&index=6)
+
+5.	Anasayfa üzerinden bir diğer sayfaya geçiş yapabilmek için SCADA bileşenleri içerisinden buton simgesini seçin ve SCADA sayfanıza ekleyin.
+
+6.	Buton simgesi üzerine tıklayın. Sağ tarafta açılan nesne özelliklerinden olaylar kısmını bulun. Olay tipi fare tuşa basıldı, olay aksiyonu sayfaya git ve sayfaya git kısmından ise yeni oluşturduğunuz diğer sayfayı seçin. Alarm durumlarını buton üzerinden takip edebilmek için alarmları göster seçeneği işaretli olmalıdır.
+
+<center>
+
+![alarm68](/img/alarm68.png)
+
+</center>
+
+7.	Etiketin alarm durumlarını izleyebilmek için anasayfadan sayfaya git ile yönlendirilen SCADA tasarım sayfasına SCADA bileşenlerinden birini ekleyin.
+
+<center>
+
+![alarm69](/img/alarm69.png)
+
+</center>
+
+Bu örnekte etiket 1 değerini SCADA üzerinden izleyebilmek için sayfaya bir display eklendi ve yazı etiketi kısmından etiket 1 seçildi.
+
+8.	Sunucuyu başlatın, Client uygulamasını açın.
+
+9.	SCADA bileşeni ile ilişkilendirilen etikete alarm değeri gönderildiğinde buton üzerinde ünlem simgesinin çıktığını ve yanıp söndüğünü gözlemleyin.
+
+<center>
+
+![alarm70](/img/alarm70.png)
+
+</center>
+
+**Not:** Sayfa alarmlarını gösteren ünlem simgesinden alarmlar onaylanamamaktadır.
+
+###### SCADA Harita Sayfası Üzerinden Alarm Durumlarını İzleme Uygulaması
+
+1.	Yeni bir SCADA projesi oluşturun ve etiket tanımlamaları yapın. 
+
+2.	Tanımlanan etiketler için alarm durumları oluşturun. 
+
+<center>
+
+![alarm67](/img/alarm67.png)
+
+</center>
+
+3.	Harita sayfası üzerinden yer işaretleri ile sayfaya git olay aksiyonu kullanılmaktadır. Bu nedenle bir önceki örnekte olduğu gibi sayfa alarmları oluşturulacaktır. Harita sayfası ve alarm durumlarının ilişkilendirileceği iki farklı sayfa hazırlayın.
+
+4.	SCADA Editörü sayfasını açın. Açılan sayfanın harita sayfası olarak ayarlayabilmek için sayfa özelliklerinde yer alan geo görünüm seçeneğini işaretleyin. Harita sayfaları hakkında detaylı bilgi almak için [buraya tıklayınız](https://docs.mikrodev.com/tr/docs/ViewPLUS-SCADA-Map-Page/) 
+
+<center>
+
+![alarm71](/img/alarm71.png)
+
+</center>
+
+5.	Harita sayfasına yer işaretleri ekleyin. GIS nesneleri kısmının altında yer alan yer işaretine tıklayın ve haritada istenilen yere bırakın. 
+
+<center>
+
+![alarm72](/img/alarm72.png)
+
+</center>
+
+6.	Sayfaya eklediğiniz yer işaretine tıklayın. GIS nesneleri sayfaya bağlantı kısmının yanında bulunan aktif seçeneğini işaretleyin, alarm durumlarının ilişkilendirileceği diğer sayfayı seçin. Alarm durumlarını yer işaretçisi üzerinden takip edebilmek için alarmları göster seçeneği işaretli olmalıdır. 
+
+<center>
+
+![alarm73](/img/alarm73.png)
+
+</center>
+
+7.	Etiketin alarm durumlarını izleyebilmek için harita sayfasından sayfaya git ile yönlendirilen SCADA tasarım sayfasına SCADA bileşenlerinden birini ekleyin.
+
+<center>
+
+![alarm69](/img/alarm69.png)
+
+</center>
+
+Bu örnekte etiket 1 değerini SCADA üzerinden izleyebilmek için sayfaya bir display eklendi ve yazı etiketi kısmından etiket 1 seçildi.
+
+8.	Sunucuyu başlatın, Client uygulamasını açın.
+
+9.	SCADA bileşeni ile ilişkilendirilen etikete alarm değeri gönderildiğinde yer işaretçisi üzerinde ünlem simgesinin çıktığı ve client ekranının sol üst köşesinde alarmda olan yer işaretçisi sayısının yazdığı gözlemlenir.
+
+<center>
+
+![alarm74](/img/alarm74.png)
+
+</center>
 
 ### PLC ve SCADA Projelerini İlişkilendirme
 

@@ -2,7 +2,7 @@
 title: "ViewPLUS SCADA Alarm Sayfaları Uygulama Notu"
 ---
 
-## ViewPLUS Client Ekranı Alarm Sayafası
+## ViewPLUS Client Ekranı Alarm Sayfası
 
 ViewPLUS Client ekranı alarm sayfası iki kısımdan oluşmaktadır. 
 
@@ -15,7 +15,7 @@ ViewPLUS Client ekranı alarm sayfası iki kısımdan oluşmaktadır.
 
 Aktif olan alarmların takip edildiği aktif alarm kısmı 1 numara ile, geçmiş alarmların yer aldığı alarm günlüğü kısmı ise 2 numara ile ifade edilmiştir.
 
-**Not:** Bu dokümanda yer alan bilgiler ViewPLUS 0.9.154 (beta build 3) versiyonu ve sonrası için geçerlidir. 
+**Not:** Bu dokümanda yer alan bilgiler ViewPLUS 0.9.154 versiyonu ve sonrası için geçerlidir. 
 
 Client ekranında oluşan alarmlar öncelik seviyesine göre 3 farklı alarm sesinde çalabilmektedir. Öncelik seviyelerinin aralık değerlerini görebilmek için ViewPLUS kanal etiket editöründen alarmlar kısmı açılır. Alarmlar kısmında yer alan herhangi bir alarm seçilir ve öncelik kısmına Mouse ile gelinir, bilgilendirme ekranının açıldığı görülür.
 
@@ -126,7 +126,7 @@ Oluşan alarm onaylanmayıp (acknowledge edilmeyip) alarm ile ilişkilendirilen 
 
 **Numara 10 Daha fazla yükle:** Önceden database e kaydedilen ve alarm günlüğünde yer almayan alarmlar bu seçenek ile alarm günlüğü kısmına getirilebilmektedir. 
 
-## Sunucu \(Server Engine\)Ekranı Alarm Sayfası
+## Sunucu \(Server Engine\) Ekranı Alarm Sayfası
 
 SCADA editörü üzerinden oluşturulan alarmlar client ekranından takip edilebildiği gibi sunucu ekranından da takip edilebilmektedir. 
 
@@ -134,7 +134,7 @@ Sunucu ekranı alarm sayfası 3 sekmeden oluşmaktadır.
 
 ### Aktif Alarmlar Sekmesi
 
-Sunucu ekranından aktif alarmları izlemek için ViewPLUS SCADA Editörü -> Araçlar -> Sunucuyu (Server Engine) başlat-> Alarms -> Active Alarms sekmesi açılır. Sunucu ekranı aktif alarmlar sekmesi kısmında yer alan özellikler şekil 4 de numaralandırılarak belirtilmiştir.
+Sunucu ekranından aktif alarmları izlemek için ViewPLUS SCADA Editörü -> Araçlar -> Sunucuyu (Server Engine) başlat-> Alarmlar -> Aktif Alarmlar sekmesi açılır. Sunucu ekranı aktif alarmlar sekmesi kısmında yer alan özellikler şekil 4 de numaralandırılarak belirtilmiştir.
 
 <center>
 
@@ -157,7 +157,8 @@ Sunucu ekranından aktif alarmları izlemek için ViewPLUS SCADA Editörü -> Ar
 
 **Numara 6 Durum:** Oluşan alarmın anlık durumu bu sütunda yazmaktadır. Alarm ile ilişkilendirilen etikete alarm değeri geldiğinde burada yazan değer 1 olmaktadır. 
 
-Oluşan alarm client ekranı üzerinden onaylanmayıp (acknowledge edilmeyip) alarm ile ilişkilendirilen etikete alarm değeri dışında bir değer gelir ise burada yazan değer 0 olacaktır.          
+Oluşan alarm client ekranı üzerinden onaylanmayıp (acknowledge edilmeyip) alarm ile ilişkilendirilen etikete alarm değeri dışında bir değer gelir ise burada yazan değer 0 olacaktır.   
+
 Oluşan alarm eğer client ekranı üzerinden onaylanıp (acknowledge edilip) alarm ile ilişkilendirilen etikete alarm değeri dışında bir değer gelir ise bu alarm aktif alarm olarak değerlendirilmez ve aktif alarm ekranından gider.
 
 **Numara 7 Priority:** Oluşan alarmın ViewPLUS SCADA Editörü -> Etiket Kanal Editörü -> Alarmlar kısmında yer alan önceliği bu sütunda yazmaktadır. Buraya girilen öncelik değerine göre aktif alarmlar arasında alarm filtresi uygulayarak, alarmlarınızı öncelik sırasına göre listeleyebilirsiniz. Alarm önceliği olarak 255 farklı seviye tanımlanabilmektedir.
@@ -178,7 +179,7 @@ Oluşan alarm eğer client ekranı üzerinden onaylanıp (acknowledge edilip) al
 
 ### Kayıtlı Alarmlar Sekmesi
 
-Sunucu ekranından editör üzerinden oluşturulan tüm alarmları görmek için ViewPLUS SCADA Editörü -> Araçlar -> Sunucuyu (Server Engine) başlat-> Alarms -> Registered Alarms sekmesi açılır. Sunucu ekranı kayıtlı alarmlar sekmesinde yer alan özellikler şekil 5 te numaralandırılarak belirtilmiştir.
+Sunucu ekranından editör üzerinden oluşturulan tüm alarmları görmek için ViewPLUS SCADA Editörü -> Araçlar -> Sunucuyu (Server Engine) başlat-> Alarmlar -> Kayıtlı Alarmlar sekmesi açılır. Sunucu ekranı kayıtlı alarmlar sekmesinde yer alan özellikler şekil 5 te numaralandırılarak belirtilmiştir.
 
 <center>
 
@@ -199,7 +200,8 @@ Sunucu ekranından editör üzerinden oluşturulan tüm alarmları görmek için
 
 **Numara 6 Onay Gerektirir:** Oluşturulan alarmın ViewPLUS SCADA Editörü -> Etiket Kanal Editörü -> Alarmlar kısmında yer alan geri bildirim iste kutucuğunun işaretlenip işaretlenmediği bu sütunda belirtilmektedir. 
 
-Alarm oluşturulur iken geri bildirim iste kutucuğu işaretlenir ise burada yazan değer 1, işaretlenmez ise burada yazan değer 0 olacaktır.          
+Alarm oluşturulur iken geri bildirim iste kutucuğu işaretlenir ise burada yazan değer 1, işaretlenmez ise burada yazan değer 0 olacaktır.
+
 Bu seçenek sayesinde oluşturulan alarmın kullanıcı onayına (acknowledge) tabi tutulup, tutulmayacağı seçimi yapılır.
 
 **Numara 7 Loglama Aktif:** Oluşturulan alarmın ViewPLUS SCADA Editörü -> Etiket Kanal Editörü -> Alarmlar kısmında yer alan veri tabanına giriş yap kutucuğunun işaretlenip işaretlenmediği bu sütunda belirtilmektedir. Alarm oluşturulur iken veri tabanına giriş yap kutucuğu işaretlenir ise burada yazan değer 1, işaretlenmez ise burada yazan değer 0 olacaktır. Bu seçenek sayesinde oluşturulan alarmın database e kaydının yapılıp, yapılmayacağı seçimi yapılır.
@@ -234,11 +236,11 @@ Koşul; değer aralık dışında seçilir ise burada yazan değer 4 olmaktadır
 
 **Numara 19 Subscribers:** Oluşturulan alarmın ViewPLUS SCADA Editörü -> Etiket Kanal Editörü -> Alarmlar kısmında yer alan abone kullanıcı id si bu sütunda yazmaktadır. Alarmların client ekranından izlenebilmesi için oluşturulan alarmlara abone kullanıcılar tanımlanmalıdır.
 
-**Numara 20 CurrentState:** Oluşan alarmın anlık durumu bu sütunda yazmaktadır. Alarm ile ilişkilendirilen etikete alarm değeri geldiğinde burada yazan değer 1, alarm değeri dışında bir değer geldiğinde ise burada yazan değer 0 olmaktadır.
+**Numara 20 Current State:** Oluşan alarmın anlık durumu bu sütunda yazmaktadır. Alarm ile ilişkilendirilen etikete alarm değeri geldiğinde burada yazan değer 1, alarm değeri dışında bir değer geldiğinde ise burada yazan değer 0 olmaktadır.
 
 ### Alarm Geçmişi Sekmesi
 
-Sunucu ekranından editör üzerinden oluşturulan tüm alarmları görmek için ViewPLUS SCADA Editörü -> Araçlar -> Sunucuyu (Server Engine) başlat-> Alarms -> Alarm History sekmesi açılır. Sunucu ekranı alarm geçmişi sekmesinde yer alan özellikler şekil 6 da numaralandırılarak belirtilmiştir.
+Sunucu ekranından editör üzerinden oluşturulan tüm alarmları görmek için ViewPLUS SCADA Editörü -> Araçlar -> Sunucuyu (Server Engine) başlat-> Alarmlar -> Alarm Geçmişi sekmesi açılır. Sunucu ekranı alarm geçmişi sekmesinde yer alan özellikler şekil 6 da numaralandırılarak belirtilmiştir.
 
 <center>
 
@@ -260,10 +262,10 @@ Oluşan alarm onaylanmayıp (acknowledge edilmezse) alarm ile ilişkilendirilen 
  
 **Numara 4 Event Type:** Oluşan alarmların olay tipleri bu sütunda yazmaktadır. Oluşabilecek olay tipleri aşağıdaki gibidir.
 
-Alarm Triggered (Alarm Tetiklendi): Alarm ile ilişkilendirilen etikete alarm değeri gelirse bu sütunda alarm triggered yazacaktır.              
-Alarm Removed (Alarm Kaldırıldı): Oluşan bu alarm onaylanıp (acknowledge edilirse) alarm ile ilişkilendirilen etikete alarm değerinden farklı bir değer gelirse bu sütunda alarm removed yazacaktır.              
-Alarm Acknowledged (Alarm Onaylandı): Oluşan bu alarm onaylanırsa (acknowledge edilirse) bu sütunda alarm acknowledged yazacaktır.                   
-Alarm Recovered (Alarm Kaydedildi): Oluşan bu alarm onaylanmayıp (acknowledge edilmezse) alarm ile ilişkilendirilen etikete alarm değerinden farklı bir değer gelirse bu sütunda alarm recovered yazacaktır.
+- Alarm Triggered (Alarm Tetiklendi): Alarm ile ilişkilendirilen etikete alarm değeri gelirse bu sütunda alarm triggered yazacaktır.              
+- Alarm Removed (Alarm Kaldırıldı): Oluşan bu alarm onaylanıp (acknowledge edilirse) alarm ile ilişkilendirilen etikete alarm değerinden farklı bir değer gelirse bu sütunda alarm removed yazacaktır.              
+- Alarm Acknowledged (Alarm Onaylandı): Oluşan bu alarm onaylanırsa (acknowledge edilirse) bu sütunda alarm acknowledged yazacaktır.                   
+- Alarm Recovered (Alarm Kaydedildi): Oluşan bu alarm onaylanmayıp (acknowledge edilmezse) alarm ile ilişkilendirilen etikete alarm değerinden farklı bir değer gelirse bu sütunda alarm recovered yazacaktır.
 
 **Numara 5 DataVal:** Oluşan alarm ile ilişkilendirilen etiketin anlık değeri bu sütunda yazmaktadır.
 

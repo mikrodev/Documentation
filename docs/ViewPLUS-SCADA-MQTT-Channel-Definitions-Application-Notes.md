@@ -2,7 +2,7 @@
 title: "ViewPLUS SCADA MQTT Channel Definitions Application Notes"
 ---
 
-### Mosquitto Installation
+## Mosquitto Installation
 
 In order for the ViewPLUS SCADA software to communicate via MQTT, both the MQTT broker and the SCADA server should be started on the same computer. 
 
@@ -46,7 +46,7 @@ Click on the "Finish" option in the installation completed window and exit the s
 
 After the installation is complete, the configuration settings of the Mosquitto broker need to be done before running the program.
 
-#### Mosquitto Configuration Settings
+### Mosquitto Configuration Settings
 
 Navigate to the installation directory of the program.
 
@@ -87,7 +87,7 @@ By doing this, we have now defined the default port 1883 for MQTT in the broker'
 
 Save the edited file and close it.
 
-#### Running Mosquitto Broker
+### Running Mosquitto Broker
 
 After making the configuration settings, run the command prompt as an administrator.
 
@@ -122,7 +122,7 @@ Open the Task Manager and locate the Mosquitto application from the "Background 
 
 </center>
 
-#### Closing a Running Mosquitto Broker
+### Closing a Running Mosquitto Broker
 
 There are two ways to close the running Mosquitto Broker on your computer. 
 
@@ -163,9 +163,9 @@ In the command prompt that appears, type the following command and press Enter:
 
 </center>
 
-### ViewPLUS Scada Tag Channel Editor 
+## ViewPLUS Scada Tag Channel Editor 
 
-#### MQTT Client Channel Definitions
+### MQTT Client Channel Definitions
 
 Mikrodev Client receives messages from publisher units and forwards them to subscribed units. When sending a message, it uses topics to filter the customer units that will receive the message.
 
@@ -199,7 +199,7 @@ The following settings need to be configured in the MQTT channel.
 *Socket Type: Unencrypted*             
 *KeepAlive: 6000*              
 
-#### Publishing a Value via SCADA 
+### Publishing a Value via SCADA 
 
 Equipment: Device ID information is entered here. (This field can be left blank.)
 
@@ -222,7 +222,7 @@ VarSize: The SCADA program automatically assigns the variable size based on the 
 
 </center>
 
-#### Example of Publishing a Value via SCADA
+### Example of Publishing a Value via SCADA
 
 **Note:** In this example, simulation will be done using the MQTT Box program.
 
@@ -538,7 +538,7 @@ In this structure, the "variable" expression represents the variable name entere
 
 "V: 140.0000" represents the published value.
 
-#### Subscribing to a Value in Scada
+### Subscribing to a Value in Scada
 
 Equipment: Device ID information is entered here. (This field can be left blank.)
 
@@ -561,7 +561,7 @@ VarSize: The SCADA program automatically assigns the variable size based on the 
 
 </center>
 
-#### Example of Subscribing to a Value from Scada
+### Example of Subscribing to a Value from Scada
 
 **Note:** In this example, simulation will be done using the MQTT Box program.
 

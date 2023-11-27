@@ -77,7 +77,7 @@ If the created alarm is acknowledged and a value different from the alarm value 
 
 **Number 11 Ack Message:** If the generated alarm has been acknowledged, the acknowledgement message is written in this column.
 
-**Number 12 Is Acknowledged:** If the generated alarm has been acknowledged, the acknowledgement status ([ACK] acknowledged) is written in this column.
+**Number 12 Is Acknowledged:** If the generated alarm has been acknowledged, the acknowledgement status (\[ACK\] acknowledged) is written in this column.
 
 **Number 13 Station:** The station information of the tag associated with the generated alarm is written in this column in the ViewPLUS SCADA Editor -> Tag Channel Editor -> Tag Channel.
 
@@ -118,10 +118,10 @@ For example, when the alarm value associated with the tag is received, the alarm
 
 **Number 6 Event Type:** The event types of the generated alarms are written in this column. The possible event types are as follows: 
 
-Alarm Triggered: If the alarm value is received for the tag associated with the alarm, it will be written as alarm triggered in this column.             
-Alarm Removed: If the generated alarm is acknowledged (acknowledged), and a value different from the alarm value associated with the tag is received, it will be written as alarm removed in this column.              
-Alarm Acknowledged: If the generated alarm is acknowledged, it will be written as alarm acknowledged in this column.                 
-Alarm Recovered: If the generated alarm is not acknowledged, and a value different from the alarm value associated with the tag is received, it will be written as alarm recovered in this column. 
+- Alarm Triggered: If the alarm value is received for the tag associated with the alarm, it will be written as alarm triggered in this column.             
+- Alarm Removed: If the generated alarm is acknowledged (acknowledged), and a value different from the alarm value associated with the tag is received, it will be written as alarm removed in this column.              
+- Alarm Acknowledged: If the generated alarm is acknowledged, it will be written as alarm acknowledged in this column.                 
+- Alarm Recovered: If the generated alarm is not acknowledged, and a value different from the alarm value associated with the tag is received, it will be written as alarm recovered in this column. 
 
 **Number 7 Data Val:** The current value of the tag associated with the generated alarm is written in this column. 
 
@@ -260,10 +260,10 @@ To view all alarms created through the editor from the server screen, open ViewP
 
 The possible event types are as follows: 
  
-Alarm Triggered: If an alarm value is received for the tag associated with the alarm, "alarm triggered" will be displayed in this column.           
-Alarm Removed: If the alarm is acknowledged and a different value than the alarm value is received for the tag associated with the alarm, "alarm removed" will be displayed in this column.              
-Alarm Acknowledged: If the alarm is acknowledged, "alarm acknowledged" will be displayed in this column.                    
-Alarm Recovered: If the alarm is not acknowledged and a different value than the alarm value is received for the tag associated with the alarm, "alarm recovered" will be displayed in this column. 
+- Alarm Triggered: If an alarm value is received for the tag associated with the alarm, "alarm triggered" will be displayed in this column.           
+- Alarm Removed: If the alarm is acknowledged and a different value than the alarm value is received for the tag associated with the alarm, "alarm removed" will be displayed in this column.              
+- Alarm Acknowledged: If the alarm is acknowledged, "alarm acknowledged" will be displayed in this column.                    
+- Alarm Recovered: If the alarm is not acknowledged and a different value than the alarm value is received for the tag associated with the alarm, "alarm recovered" will be displayed in this column. 
 
 **Number 5 DataVal:** The current value of the tag associated with the generated alarm is displayed in this column. 
 
