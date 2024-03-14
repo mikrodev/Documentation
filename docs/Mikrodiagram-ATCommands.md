@@ -64,8 +64,7 @@ For more detailed information : [Mikroterminal Interface](https://docs.mikrodev.
 |		|	LOGIN	|	UNPROTECTED, R/W	|	Login device	|																	
 |		|	RESET	|	UNPROTECTED, R/W	|	 	|																	
 |		|		|		|	 	|																																		
-|	OTHER PLC FUNCTIONS	|	ADCERROR	|	READ ONLY	|	ADC error count	|																	
-|		|	FORMATFS	|	LOGIN REQUIRED, R/W	|	Format filesystem	|																	
+|	OTHER PLC FUNCTIONS	|	ADCERROR	|	READ ONLY	|	ADC error count	|																																
 |		|	FATFS	|	READ ONLY	|	The size of the log file in the SD card	|																	
 
 ## ETHERNET 
@@ -441,10 +440,6 @@ When AT + RESET = 1 is typed and the "send" button is clicked, the device is res
 * AT+ADCERROR
 
 ADC (Analog to Digital Converter). With this command the count of ADC errors is learned. 
-
-* AT+FORMATFS
-
-The AT+FORMATFS =1 command is used to format Mikrodev products. While the device is counting "autoboot", sending the AT + FORMATFS = 1 command to the device will delete the firmware, so it is necessary to reload the firmware to program the device.
 
 ### Other AT Commands
 

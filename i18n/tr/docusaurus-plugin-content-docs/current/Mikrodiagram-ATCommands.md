@@ -62,6 +62,5 @@ Mikrodev Cihazları, bazı özel parametreleri ayarlayabileceğiniz MODBUS kayı
 |		|	LOGIN	|	UNPROTECTED, READ ONLY	|	Login device	|																	
 |		|	RESET	|	UNPROTECTED, R/W	|	 	|																	
 |		|		|		|	 	|																																		
-|	OTHER PLC FUNCTIONS	|	ADCERROR	|	READ ONLY	|	ADC error count	|																	
-|		|	FORMATFS	|	LOGIN REQUIRED, R/W	|	Format filesystem	|																	
+|	OTHER PLC FUNCTIONS	|	ADCERROR	|	READ ONLY	|	ADC error count	|																																
 |		|	FATFS	|	READ ONLY	|	SD karttaki günlük dosyasının boyutu	|																	
