@@ -49,6 +49,7 @@ module.exports = {
 		  "GSM-IP-Usage-Application-Notes",
 		  "IEC104-Application-Notes",
 		  "IEC61850-Application-Notes",
+		  "DALI-Application-Notes",		  
 		  "ViewPLUS-SCADA-OPC-UA-Application-Notes",
 		  "ViewPLUS-SCADA-Change-Map-Icons-Application-Notes",
 		  "ViewPLUS-SCADA-Template-Page-Application-Notes",
