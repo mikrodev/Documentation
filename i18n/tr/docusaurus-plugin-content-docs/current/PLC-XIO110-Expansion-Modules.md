@@ -4,7 +4,7 @@ title: XIO110 Serisi Donanım Kılavuzu
 
 ## Montaj Bilgileri
 
-[XIO110 Expansion Modules](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_XIO110.pdf)
+[XIO110 Expansion Modules](https://www.mikrodev.com/wp-content/uploads/2025/01/MIKRODEV_HM_XIO110.pdf)
 
 ### DIN Ray Montajı                
 
@@ -355,7 +355,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 </center>
 
-## XIO110 RTD Giriş \(PT100/PT1000\) Genişleme Modülleri
+## XIO110 RTD Giriş \(PT1000/\) Genişleme Modülleri
 
 ### Genel Bilgi
 
@@ -395,7 +395,7 @@ MP110 serisi PLC veya RIO110 serisi uzak I/O ürünleri ile XIO110 serisi geniş
 
 <center>
 
-![plc-expansion-184](/img/plc-expansion-184.png)
+![pt1000_genisleme](/img/pt1000_genisleme.png)
 
 </center>
 

@@ -4,7 +4,7 @@ title: XIO211 Serisi Donanım Kılavuzu
 
 ## Montaj Bilgileri
 
-[XIO211 Expansion Modules](https://www.mikrodev.com/wp-content/uploads/2023/03/MIKRODEV_HM_XIO211.pdf)
+[XIO211 Expansion Modules](https://www.mikrodev.com/wp-content/uploads/2025/01/MIKRODEV_HM_XIO211.pdf)
 
 ### DIN Ray Montajı
 
@@ -387,7 +387,7 @@ MP211 serisi PLC veya RTU300 serisi RTU ürünleri ile XIO211 serisi genişletme
 
 </center>
 
-## XIO211 RTD Giriş (PT100/PT1000) Genişleme Modülleri
+## XIO211 RTD Giriş (PT1000) Genişleme Modülleri
 
 ### Genel Bilgi
 
@@ -427,7 +427,7 @@ MP211 serisi PLC veya RTU300 serisi RTU ürünleri ile XIO211 serisi genişletme
 
 <center>
 
-![plc-expansion-208](/img/plc-expansion-208.png)
+![pt1000_genisleme1](/img/pt1000_genisleme1.png)
 
 </center>
 
