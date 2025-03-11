@@ -356,7 +356,7 @@ overlap each other.
 
 </center>
 
-## XIO110 RTD Input \(PT100/PT1000\) Expansion Modules
+## XIO110 RTD Input \(PT1000\) Expansion Modules
 
 ### General Information
 
@@ -396,7 +396,7 @@ overlap each other.
 
 <center>
 
-![plc-expansion-151](/img/plc-expansion-151.png)
+![pt1000_genisleme](/img/pt1000_genisleme.png)
 
 </center>
 

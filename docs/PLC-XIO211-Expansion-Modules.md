@@ -389,7 +389,7 @@ each other
 
 </center>
 
-## XIO211 RTD Input (PT100/PT1000) Expansion Modules 
+## XIO211 RTD Input (PT1000) Expansion Modules 
 
 ### General Information
 
@@ -429,7 +429,7 @@ each other
 
 <center>
 
-![plc-expansion-111](/img/plc-expansion-111.png)
+![pt1000_genisleme1](/img/pt1000_genisleme1.png)
 
 </center>
 
