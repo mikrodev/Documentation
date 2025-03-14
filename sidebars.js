@@ -50,6 +50,7 @@ module.exports = {
 		  "IEC104-Application-Notes",
 		  "IEC61850-Application-Notes",
 		  "IEC61850-V2.0-Application-Notes",
+		  "MDV61850-BROWSER-Application-Notes",		  
 		  "DALI-Application-Notes",		  
 		  "ViewPLUS-SCADA-OPC-UA-Application-Notes",
 		  "ViewPLUS-SCADA-Change-Map-Icons-Application-Notes",
