@@ -373,21 +373,12 @@ Sertifikalar yüklendikten sonra Add Openvpn kısmından gerekli yerler doldurul
 
 </center>
 
-Eklenen bağlantılar "Connection" bölümünde görüntülenebilir ve bu bağlantılar etkinleştirilebilir veya devre dışı bırakılabilir. Ayrıca oluşturulan yapılandırma dosyası da indirilebilir. Enable edildikten sonra bağlantı durumu ve IP bilgisi güncellenecektir. Bağlantının başarılı olup olmadığını doğrulamak için ifconfig komutu ile kontrol edilebilir.
+Eklenen bağlantılar "Connection" bölümünde görüntülenebilir ve bu bağlantılar etkinleştirilebilir veya devre dışı bırakılabilir. Ayrıca oluşturulan yapılandırma dosyası da indirilebilir. Enable edildikten sonra bağlantı durumu ve IP bilgisi güncellenecektir.
 
 <center>
 
-![webserver29](/img/webserver29.png)
+![webserver92](/img/webserver92.png)
 ***<center>Şekil 29: OpenVPN Connections Sayfası</center>***
-
-</center>
-
-Burada anlatılan örnekte Tunnel-2 bağlantısı aktif (Connected) durumda olup 10.9.0.18 IP adresi atanmıştır, ancak Tunnel-1 devre dışıdır. tun1 arayüzü, OpenVPN tünel bağlantısını temsil etmektedir. Bu arayüz, 10.9.0.18 IP adresi ile yapılandırılmıştır. RX ve TX değerleri, VPN üzerinden veri trafiği gerçekleştiğini doğrulamaktadır.
-
-<center>
-
-![webserver30](/img/webserver30.png)
-***<center>Şekil 30: Ağ Arayüzleri ve VPN Bağlantı Kontrolü</center>***
 
 </center>
 
@@ -398,7 +389,7 @@ OpenVPN Client Modu, istemcinin OpenVPN sunucusuna bağlanarak güvenli ve şifr
 <center>
 
 ![webserver31](/img/webserver31.png)
-***<center>Şekil 31: OpenVPN Client Sertifika Yükleme Ekran</center>***
+***<center>Şekil 30: OpenVPN Client Sertifika Yükleme Ekran</center>***
 
 </center>
 
@@ -409,7 +400,7 @@ Server kurulumu sırasında ayarlanan encryption ve authentication algoritmalar�
 <center>
 
 ![webserver32](/img/webserver32.png)
-***<center>Şekil 32: OpenVPN Client Yapılandırma Ayarları</center>***
+***<center>Şekil 31: OpenVPN Client Yapılandırma Ayarları</center>***
 
 </center>
 
@@ -417,21 +408,12 @@ Server kurulumu sırasında ayarlanan encryption ve authentication algoritmalar�
 
 <center>
 
-![webserver33](/img/webserver33.png)
-***<center>Şekil 33: OpenVPN Client Bağlantı Durumu</center>***
+![webserver93](/img/webserver93.png)
+***<center>Şekil 32: OpenVPN Client Bağlantı Durumu</center>***
 
 </center>
 
 Örnekte client_ovpn istemcisinin Tunnel-1 üzerinden başarıyla bağlandığı görülmektedir. İstemciye 10.8.0.2 IP adresi atanmış ve bağlantı aktif (Connected) durumdadır. VPN bağlantısı Enable seçeneğiyle açılıp kapatılabilir, gerekirse sağdaki kırmızı buton ile silinebilir.
-
-<center>
-
-![webserver34](/img/webserver34.png)
-***<center>Şekil 34: OpenVPN Tap Arayüzü ve Ağ Bağlantıları</center>***
-
-</center>
-
-OpenVPN istemcisinin bağlantı durumunu doğrulamak için kullanılan ifconfig komutunun sonucudur. tap0 arayüzü üzerinden istemciye 10.8.0.2 IP adresi atanmış ve bağlantı aktif durumdadır. VPN trafiği bu arayüz üzerinden yönlendirilirken, yerel ağ bağlantıları eth1 ve wlan0 üzerinden devam etmektedir.
 
 ##### Server Mod
 
@@ -440,7 +422,7 @@ OpenVPN Server Modu, VPN sunucusunun istemciler için merkezi bir erişim noktas
 <center>
 
 ![webserver35](/img/webserver35.png)
-***<center>Şekil 35: OpenVPN Sunucu Modu İçin Sertifika ve Anahtar Yükleme Ekranı</center>***
+***<center>Şekil 33: OpenVPN Sunucu Modu İçin Sertifika ve Anahtar Yükleme Ekranı</center>***
 
 </center>
 
@@ -449,7 +431,7 @@ Server modunda VPN çalıştırabilmek için, VPN sunucusunun kurulu olduğu mak
 <center>
 
 ![webserver36](/img/webserver36.png)
-***<center>Şekil 36: Server Konfigürasyonu</center>***
+***<center>Şekil 34: Server Konfigürasyonu</center>***
 
 </center>
 
@@ -457,21 +439,12 @@ Server kurulumu sırasında ayarlanan encryption ve authentication algoritmalar�
 
 <center>
 
-![webserver37](/img/webserver37.png)
-***<center>Şekil 37: OpenVPN Server Modu Bağlantı Sayfası</center>***
+![webserver94](/img/webserver94.png)
+***<center>Şekil 35: OpenVPN Server Modu Bağlantı Sayfası</center>***
 
 </center>
 
 Burada anlatılan örnekte, OpenVPN Server Modu'nun aktif olduğunu göstermektedir. Sunucu, 10.8.0.1 IP adresiyle çalışmakta ve istemciler için bağlantıyı yönetmektedir. Bağlantı durumu Connected (Bağlandı) olarak görülmekte ve sunucu etkin durumda bulunmaktadır.
-
-<center>
-
-![webserver38](/img/webserver38.png)
-***<center>Şekil 38: OpenVPN Tun Arayüzü ve Ağ Bağlantıları</center>***
-
-</center>
-
-OpenVPN Server Modu'nun bağlantı durumunu doğrulamak için yapılan ifconfig kontrolü yapılabilir tun0 arayüzünün etkin olduğu ve VPN tünelinin başarıyla oluşturulduğu görülmektedir. RX ve TX değerleri, VPN bağlantısı üzerinden veri akışının gerçekleştiğini doğrulamaktadır.
 
 #### IPsec Sayfası
 
@@ -482,7 +455,7 @@ Bu sayfaya sadece Administrator kullanıcısı erişim sağlayabilmektedir.
 <center>
 
 ![webserver39](/img/webserver39.png)
-***<center>Şekil 39: IPSec Sayfası</center>***
+***<center>Şekil 36: IPSec Sayfası</center>***
 
 </center>
 
@@ -495,7 +468,7 @@ Daha sonra faz1 ve faz2 ayarlarını her iki cihaz için aynı değerlerde yapı
 <center>
 
 ![webserver40](/img/webserver40.png)
-***<center>Şekil 40: IPSEC Yapılandırma Sayfası</center>***
+***<center>Şekil 37: IPSEC Yapılandırma Sayfası</center>***
 
 </center>
 
@@ -512,7 +485,7 @@ Bu sayfaya sadece Administrator kullanıcısı erişim sağlayabilmektedir.
 <center>
 
 ![webserver41](/img/webserver41.png)
-***<center>Şekil 41: Firewall Sayfası</center>***
+***<center>Şekil 38: Firewall Sayfası</center>***
 
 </center>
 
@@ -524,8 +497,8 @@ Yapılmak istenen filtreleme kuralına göre gerekli yerler doldurulur ve sayfan
 
 <center>
 
-![webserver42](/img/webserver42.png)
-***<center>Şekil 42: Firewall Input Kuralı</center>***
+![webserver95](/img/webserver95.png)
+***<center>Şekil 39: Firewall Input Kuralı</center>***
 
 </center>
 
@@ -544,7 +517,7 @@ Bu yapılandırmada, 192.168.10.151 IP adresine sahip cihazın 510 numaralı por
 <center>
 
 ![webserver44](/img/webserver44.png)
-***<center>Şekil 43: Ağ Bağlantı ve Erişim Kontrolü</center>***
+***<center>Şekil 40: Ağ Bağlantı ve Erişim Kontrolü</center>***
 
 </center>
 
@@ -552,8 +525,8 @@ Bu yapılandırmada, 192.168.10.151 IP adresine sahip cihazın 510 numaralı por
 
 <center>
 
-![webserver45](/img/webserver45.png)
-***<center>Şekil 44: Firewall Output Kuralı</center>***
+![webserver96](/img/webserver96.png)
+***<center>Şekil 41: Firewall Output Kuralı</center>***
 
 </center>
 
@@ -561,19 +534,12 @@ Firewall output kuralı, sistemden dışarıya giden trafiği kontrol eden bir g
 
 Bağlantının başarılı olması için 192.168.10.151’den 192.168.10.58:540’a bağlantı kurulmalı, farklı bir IP’den denendiğinde ise başarısız olmalıdır. Ayrıca, hedef cihazın 540 numaralı portunun açık olması ve INPUT kurallarında bir kısıtlama olmaması gerekmektedir.
 
-<center>
-
-![webserver46](/img/webserver46.png)
-***<center>Şekil 45: Ağ Bağlantı ve Erişim Kontrolü</center>***
-
-</center>
-
 ##### Forward Kuralı
 
 <center>
 
 ![webserver47](/img/webserver47.png)
-***<center>Şekil 46: Firewall Forward Bağlantı Sayfası</center>***
+***<center>Şekil 42: Firewall Forward Bağlantı Sayfası</center>***
 
 </center>
 
@@ -592,7 +558,7 @@ Bu yapılandırma, yalnızca yetkilendirilmiş cihazların belirlenen porta eri�
 <center>
 
 ![webserver49](/img/webserver49.png)
-***<center>Şekil 47: Ağ Bağlantı ve Erişim Kontrolü</center>***
+***<center>Şekil 43: Ağ Bağlantı ve Erişim Kontrolü</center>***
 
 </center>
 
@@ -606,7 +572,7 @@ Bu sayfaya sadece Administrator kullanıcısı erişim sağlayabilmektedir.
 <center>
 
 ![webserver50](/img/webserver50.png)
-***<center>Şekil 48: NAT Sayfası</center>***
+***<center>Şekil 44: NAT Sayfası</center>***
 
 </center>
 
@@ -622,15 +588,8 @@ SNAT (Source NAT), çıkış yapan ağ trafiğinin kaynak IP adresini değiştir
 
 <center>
 
-![webserver51](/img/webserver51.png)
-***<center>Şekil 49: SNAT Kuralı ve İnternet Bağlantı Doğrulama</center>***
-
-</center>
-
-<center>
-
 ![webserver52](/img/webserver52.png)
-***<center>Şekil 50: İnternete Çıkarılacak Cihazın Ağ Yapılandırması</center>***
+***<center>Şekil 45: İnternete Çıkarılacak Cihazın Ağ Yapılandırması</center>***
 
 </center>
 
@@ -645,14 +604,14 @@ DNAT (Destination NAT), gelen ağ trafiğinin hedef IP adresini değiştiren bir
 <center>
 
 ![webserver53](/img/webserver53.png)
-***<center>Şekil 51: DNAT Kuralı ile Port Yönlendirme Yapılandırması</center>***
+***<center>Şekil 46: DNAT Kuralı ile Port Yönlendirme Yapılandırması</center>***
 
 </center>
 
 <center>
 
 ![webserver54](/img/webserver54.png)
-***<center>Şekil 52: Cihaz Ağ Yapılandırması</center>***
+***<center>Şekil 47: Cihaz Ağ Yapılandırması</center>***
 
 </center>
 
@@ -667,7 +626,7 @@ Bu sayfaya sadece Administrator kullanıcısı erişim sağlayabilmektedir.
 <center>
 
 ![webserver55](/img/webserver55.png)
-***<center>Şekil 53: Bridge Sayfası</center>***
+***<center>Şekil 48: Bridge Sayfası</center>***
 
 </center>
 
@@ -676,7 +635,7 @@ Yeni bir bridge kuralı eklemek için “Add Bridge Rule” yazısına tıklanı
 <center>
 
 ![webserver56](/img/webserver56.png)
-***<center>Şekil 54: Bridge Kuralı Ekleme Sayfası</center>***
+***<center>Şekil 49: Bridge Kuralı Ekleme Sayfası</center>***
 
 </center>
 
@@ -691,7 +650,7 @@ Bu sayfaya sadece Administrator kullanıcısı erişim sağlayabilmektedir.
 <center>
 
 ![webserver57](/img/webserver57.png)
-***<center>Şekil 55: Port Yönlendirme Sayfası</center>***
+***<center>Şekil 50: Port Yönlendirme Sayfası</center>***
 
 </center>
 
@@ -702,7 +661,7 @@ Gerekli ayarlamalar yapıldıktan sonra sayfanın alt kısmında yazan “Save &
 <center>
 
 ![webserver58](/img/webserver58.png)
-***<center>Şekil 56: Port Yönlendirme Yapılandırma Sayfası</center>***
+***<center>Şekil 51: Port Yönlendirme Yapılandırma Sayfası</center>***
 
 </center>
 
@@ -711,14 +670,14 @@ Aktif port yönlendirme yapılandırmaları "Connections" sekmesinde görüntül
 <center>
 
 ![webserver59](/img/webserver59.png)
-***<center>Şekil 57: Port Yönlendirme Yapılandırması</center>***
+***<center>Şekil 52: Port Yönlendirme Yapılandırması</center>***
 
 </center>
 
 <center>
 
 ![webserver60](/img/webserver60.png)
-***<center>Şekil 58: Cihaz TCP Bağlantı Ayarları</center>***
+***<center>Şekil 53: Cihaz TCP Bağlantı Ayarları</center>***
 
 </center>
 
@@ -731,7 +690,7 @@ Telediagram programı kullanmadan Web Server Arayüzünden DM50 cihazına firmwa
 <center>
 
 ![webserver61](/img/webserver61.png)
-***<center>Şekil 59: Yükleme Yöneticisi Sayfası</center>***
+***<center>Şekil 54: Yükleme Yöneticisi Sayfası</center>***
 
 </center>
 
@@ -766,7 +725,7 @@ Burada loglaması açılan protokol logları, protokol logları sekmesinden gör
 <center>
 
 ![webserver62](/img/webserver62.png)
-***<center>Şekil 59: Cihaz Günlükleri Ayarlar Sekmesi</center>***
+***<center>Şekil 55: Cihaz Günlükleri Ayarlar Sekmesi</center>***
 
 </center>
 
@@ -777,7 +736,7 @@ Cihaza ait sistem logları bu sekmeden izlenmektedir. Ekranda görüntülenen si
 <center>
 
 ![webserver63](/img/webserver63.png)
-***<center>Şekil 60: Sistem Günlükleri Sekmesi</center>***
+***<center>Şekil 56: Sistem Günlükleri Sekmesi</center>***
 
 </center>
 
@@ -804,7 +763,7 @@ Görüntülenen loglar dışa aktar seçeneği ile ".txt" formatında dışa akt
 <center>
 
 ![webserver64](/img/webserver64.png)
-***<center>Şekil 61: Protokol Günlükleri Sekmesi</center>***
+***<center>Şekil 57: Protokol Günlükleri Sekmesi</center>***
 
 </center>
 
@@ -815,20 +774,20 @@ SD Kart Günlükleri sekmesinden, cihazın içerisine SD kart takılı olduğu s
 <center>
 
 ![webserver65](/img/webserver65.png)
-***<center>Şekil 62: SD Kart Günlükleri Sekmesi</center>***
+***<center>Şekil 58: SD Kart Günlükleri Sekmesi</center>***
 
 </center>
 
 ### Terminal Sayfası
 
-Terminal sayfası üzerinden cihaza AT komutu gönderilebilmektedir. Cihaza gönderilebilecek AT komut listesine buradan ulaşabilirsiniz.
+Terminal sayfası üzerinden cihaza AT komutu gönderilebilmektedir. Cihaza gönderilebilecek AT komut listesine [buradan ulaşabilirsiniz](https://docs.mikrodev.com/tr/docs/Mikrodiagram-ATCommands/).
 
 Bu sayfaya sadece Administrator kullanıcısı erişim sağlayabilmektedir.
 
 <center>
 
 ![webserver66](/img/webserver66.png)
-***<center>Şekil 63: Terminal Sayfası</center>***
+***<center>Şekil 59: Terminal Sayfası</center>***
 
 </center>
 
@@ -845,7 +804,7 @@ Görüntülenen blok parametreleri sayfanın sağ üst köşesinde yer alan expo
 <center>
 
 ![webserver67](/img/webserver67.png)
-***<center>Şekil 64: Gerçek Zamanlı Lojikler Sayfası</center>***
+***<center>Şekil 60: Gerçek Zamanlı Lojikler Sayfası</center>***
 
 </center>
 
@@ -860,7 +819,7 @@ Değer atamaları; ilgili blok hat etiketinin sağında yer alan değer kısmın
 <center>
 
 ![webserver68](/img/webserver68.png)
-***<center>Şekil 65: Blok Hat Etiketine Değer Gönderme</center>***
+***<center>Şekil 61: Blok Hat Etiketine Değer Gönderme</center>***
 
 </center>
 
@@ -871,7 +830,7 @@ Web server’a giriş yapan tüm kullanıcıların erişim sağlayabildiği ve k
 <center>
 
 ![webserver69](/img/webserver69.png)
-***<center>Şekil 66: Hesap Tercihleri Sayfası</center>***
+***<center>Şekil 62: Hesap Tercihleri Sayfası</center>***
 
 </center>
 
@@ -884,7 +843,7 @@ Bu sayfaya Web Server Arayüzünde tanımlanan tüm kullanıcılar erişim sağl
 <center>
 
 ![webserver70](/img/webserver70.png)
-***<center>Şekil 67: Uygulama Ayarları Sayfası</center>***
+***<center>Şekil 63: Uygulama Ayarları Sayfası</center>***
 
 </center>
 
@@ -901,7 +860,7 @@ Operatörler sadece kendilerine tanımlanan IP’lerden DM50 web server arayüz�
 <center>
 
 ![webserver71](/img/webserver71.png)
-***<center>Şekil 68: IP'nin Erişim Yetkisi Yok Uyarısı</center>***
+***<center>Şekil 64: IP'nin Erişim Yetkisi Yok Uyarısı</center>***
 
 </center>
 
@@ -934,6 +893,6 @@ Sağ üst köşede yer alan kullanıcı simgesine tıklanıldığında açılan 
 <center>
 
 ![webserver72](/img/webserver72.png)
-***<center>Şekil 69: Web Server Arayüzünden Çıkış Yapma</center>***
+***<center>Şekil 65: Web Server Arayüzünden Çıkış Yapma</center>***
 
 </center>

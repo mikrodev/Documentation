@@ -56,7 +56,7 @@ The project to be loaded onto the DM50 device must first be opened via the Teled
 
 <center>
 
-![webserver05](/img/webserver05.png)
+![webserver88](/img/webserver88.png)
 ***<center>Figure 5: Telediagram Web View Settings</center>***
 
 </center>
@@ -109,7 +109,7 @@ These features facilitate remote access and management of the DM50 device, allow
 
 <center>
 
-![webserver09](/img/webserver09.png)
+![webserver77](/img/webserver77.png)
 ***<center>Figure 9: DM50 Web Server Main Screen</center>***
 
 </center>
@@ -147,7 +147,7 @@ The left sidebar can be hidden by clicking on "Home" at the top of the page. The
 
 <center>
 
-![webserver10](/img/webserver10.png)
+![webserver91](/img/webserver91.png)
 ***<center>Figure 10: Hiding the Left Sidebar</center>***
 
 </center>
@@ -160,7 +160,7 @@ All user types except guest and operator users defined via the Web Server Interf
 
 <center>
 
-![webserver11](/img/webserver11.png)
+![webserver78](/img/webserver78.png)
 ***<center>Figure 11: Control Panel Page</center>***
 
 </center>
@@ -207,7 +207,7 @@ Different permissions for the created users are set from the permission options 
 
 <center>
 
-![webserver14](/img/webserver14.png)
+![webserver79](/img/webserver79.png)
 ***<center>Figure 14: Operator User Main Screen</center>***
 
 </center>
@@ -216,7 +216,7 @@ Different permissions for the created users are set from the permission options 
 
 <center>
 
-![webserver15](/img/webserver15.png)
+![webserver80](/img/webserver80.png)
 ***<center>Figure 15: Technician User Main Screen</center>***
 
 </center>
@@ -225,7 +225,7 @@ Different permissions for the created users are set from the permission options 
 
 <center>
 
-![webserver16](/img/webserver16.png)
+![webserver81](/img/webserver81.png)
 ***<center>Figure 16: Guest User Main Screen</center>***
 
 </center>
@@ -236,7 +236,7 @@ Different permissions for the created users are set from the permission options 
 
 <center>
 
-![webserver17](/img/webserver17.png)
+![webserver82](/img/webserver82.png)
 ***<center>Figure 17: Administrator User Main Screen</center>***
 
 </center>
@@ -247,7 +247,7 @@ The Interfaces page contains a table where the device's network settings are con
 
 <center>
 
-![webserver18](/img/webserver18.png)
+![webserver83](/img/webserver83.png)
 ***<center>Figure 18: Interfaces Page</center>***
 
 </center>
@@ -260,7 +260,7 @@ The Administrator and Technician users can access this page.
 
 <center>
 
-![webserver19](/img/webserver19.png)
+![webserver84](/img/webserver84.png)
 ***<center>Figure 19: Ethernet Settings</center>***
 
 </center>
@@ -269,7 +269,7 @@ To configure the network for the desired Ethernet port, go to the corresponding 
 
 <center>
 
-![webserver20](/img/webserver20.png)
+![webserver85](/img/webserver85.png)
 ***<center>Figure 20: Ethernet Network Configuration Settings</center>***
 
 </center>
@@ -376,17 +376,8 @@ Added connections can be viewed in the "Connection" section, and these connectio
 
 <center>
 
-![webserver29](/img/webserver29.png)
+![webserver92](/img/webserver92.png)
 ***<center>Figure 29: OpenVPN Connections Page</center>***
-
-</center>
-
-In the example described here, the Tunnel-2 connection is active (Connected) and has been assigned the IP address 10.9.0.18, while Tunnel-1 is disabled. The tun1 interface represents the OpenVPN tunnel connection. This interface is configured with the IP address 10.9.0.18. The RX and TX values confirm that data traffic is occurring over the VPN.
-
-<center>
-
-![webserver30](/img/webserver30.png)
-***<center>Figure 30: Network Interfaces and VPN Connection Control</center>***
 
 </center>
 
@@ -397,7 +388,7 @@ OpenVPN Client Mode allows the client to establish a secure and encrypted tunnel
 <center>
 
 ![webserver31](/img/webserver31.png)
-***<center>Figure 31: OpenVPN Client Certificate Upload Screen</center>***
+***<center>Figure 30: OpenVPN Client Certificate Upload Screen</center>***
 
 </center>
 
@@ -408,7 +399,7 @@ The same encryption and authentication algorithms set during server setup are en
 <center>
 
 ![webserver32](/img/webserver32.png)
-***<center>Figure 32: OpenVPN Client Configuration Settings</center>***
+***<center>Figure 31: OpenVPN Client Configuration Settings</center>***
 
 </center>
 
@@ -416,21 +407,12 @@ The same encryption and authentication algorithms set during server setup are en
 
 <center>
 
-![webserver33](/img/webserver33.png)
-***<center>Figure 33: OpenVPN Client Connection Status</center>***
+![webserver93](/img/webserver93.png)
+***<center>Figure 32: OpenVPN Client Connection Status</center>***
 
 </center>
 
 The example shows that the client_ovpn client has successfully connected via Tunnel-1. The client has been assigned the IP address 10.8.0.2, and the connection is active (Connected). The VPN connection can be turned on and off with the Enable option, and can be deleted with the red button on the right if necessary.
-
-<center>
-
-![webserver34](/img/webserver34.png)
-***<center>Figure 34: OpenVPN Tap Interface and Network Connections</center>***
-
-</center>
-
-This is the result of the ifconfig command used to verify the connection status of the OpenVPN client. The client has been assigned the IP address 10.8.0.2 via the tap0 interface, and the connection is active. VPN traffic is routed over this interface, while local network connections continue over eth1 and wlan0.
 
 ##### Server Mode
 
@@ -439,7 +421,7 @@ OpenVPN Server Mode is the mode that allows the VPN server to function as a cent
 <center>
 
 ![webserver35](/img/webserver35.png)
-***<center>Figure 35: Certificate and Key Upload Screen for OpenVPN Server Mode</center>***
+***<center>Figure 33: Certificate and Key Upload Screen for OpenVPN Server Mode</center>***
 
 </center>
 
@@ -448,7 +430,7 @@ To run VPN in Server mode, server certificates must be generated on the machine 
 <center>
 
 ![webserver36](/img/webserver36.png)
-***<center>Figure 36: Server Configuration</center>***
+***<center>Figure 34: Server Configuration</center>***
 
 </center>
 
@@ -456,21 +438,12 @@ The same encryption and authentication algorithms set during server setup are en
 
 <center>
 
-![webserver37](/img/webserver37.png)
-***<center>Figure 37: OpenVPN Server Mode Connection Page</center>***
+![webserver94](/img/webserver94.png)
+***<center>Figure 35: OpenVPN Server Mode Connection Page</center>***
 
 </center>
 
 The example described here shows that OpenVPN Server Mode is active. The server is running with the IP address 10.8.0.1 and managing connections for clients. The connection status is seen as Connected, and the server is active.
-
-<center>
-
-![webserver38](/img/webserver38.png)
-***<center>Figure 38: OpenVPN Tun Interface and Network Connections</center>***
-
-</center>
-
-To verify the connection status of OpenVPN Server Mode, an ifconfig check can be performed. It can be seen that the tun0 interface is active and the VPN tunnel has been successfully established. The RX and TX values confirm that data flow is occurring over the VPN connection.
 
 #### IPsec Page
 
@@ -481,7 +454,7 @@ Only the Administrator user can access this page.
 <center>
 
 ![webserver39](/img/webserver39.png)
-***<center>Figure 39: IPSec Page</center>***
+***<center>Figure 36: IPSec Page</center>***
 
 </center>
 
@@ -494,7 +467,7 @@ After configuring the phase1 and phase2 settings with the same values for both d
 <center>
 
 ![webserver40](/img/webserver40.png)
-***<center>Figure 40: IPSEC Configuration Page</center>***
+***<center>Figure 37: IPSEC Configuration Page</center>***
 
 </center>
 
@@ -511,7 +484,7 @@ Only the Administrator user can access this page.
 <center>
 
 ![webserver41](/img/webserver41.png)
-***<center>Figure 41: Firewall Page</center>***
+***<center>Figure 38: Firewall Page</center>***
 
 </center>
 
@@ -523,8 +496,8 @@ Fill in the necessary fields according to the filtering rule you want to create 
 
 <center>
 
-![webserver42](/img/webserver42.png)
-***<center>Figure 42: Firewall Input Rule</center>***
+![webserver95](/img/webserver95.png)
+***<center>Figure 39: Firewall Input Rule</center>***
 
 </center>
 
@@ -543,7 +516,7 @@ In this configuration, a Modbus TCP/IP connection is established over port 510 o
 <center>
 
 ![webserver44](/img/webserver44.png)
-***<center>Figure 43: Network Connection and Access Control</center>***
+***<center>Figure 40: Network Connection and Access Control</center>***
 
 </center>
 
@@ -551,8 +524,8 @@ In this configuration, a Modbus TCP/IP connection is established over port 510 o
 
 <center>
 
-![webserver45](/img/webserver45.png)
-***<center>Figure 44: Firewall Output Rule</center>***
+![webserver96](/img/webserver96.png)
+***<center>Figure 41: Firewall Output Rule</center>***
 
 </center>
 
@@ -560,19 +533,12 @@ A firewall output rule is a security rule that controls traffic going out from t
 
 For the connection to be successful, a connection must be established from 192.168.10.151 to 192.168.10.58:540, and it should fail when attempted from a different IP. Additionally, port 540 of the target device must be open, and there should be no restrictions in the INPUT rules.
 
-<center>
-
-![webserver46](/img/webserver46.png)
-***<center>Figure 45: Network Connection and Access Control</center>***
-
-</center>
-
 ##### Forward Rule
 
 <center>
 
 ![webserver47](/img/webserver47.png)
-***<center>Figure 46: Firewall Forward Connection Page</center>***
+***<center>Figure 42: Firewall Forward Connection Page</center>***
 
 </center>
 
@@ -591,7 +557,7 @@ This configuration enhances security by ensuring that only authorized devices ca
 <center>
 
 ![webserver49](/img/webserver49.png)
-***<center>Figure 47: Network Connection and Access Control</center>***
+***<center>Figure 43: Network Connection and Access Control</center>***
 
 </center>
 
@@ -604,7 +570,7 @@ Only the Administrator user can access this page.
 <center>
 
 ![webserver50](/img/webserver50.png)
-***<center>Figure 47: NAT Page</center>***
+***<center>Figure 44: NAT Page</center>***
 
 </center>
 
@@ -620,15 +586,8 @@ For example, the internet traffic of a device with the IP address 192.168.1.10 c
 
 <center>
 
-![webserver51](/img/webserver51.png)
-***<center>Figure 48: SNAT Rule and Internet Connection Verification</center>***
-
-</center>
-
-<center>
-
-![webserver52](/img/webserver52.png)
-***<center>Figure 49: Network Configuration of the Device to be Connected to the Internet</center>***
+![webserver89](/img/webserver89.png)
+***<center>Figure 45: Network Configuration of the Device to be Connected to the Internet</center>***
 
 </center>
 
@@ -645,14 +604,14 @@ For the DM50 device to access the internet using a PPP connection, the Gateway a
 <center>
 
 ![webserver53](/img/webserver53.png)
-***<center>Figure 50: Port Forwarding Configuration with DNAT Rule</center>***
+***<center>Figure 46: Port Forwarding Configuration with DNAT Rule</center>***
 
 </center>
 
 <center>
 
-![webserver54](/img/webserver54.png)
-***<center>Figure 51: Device Network Configuration</center>***
+![webserver89](/img/webserver89.png)
+***<center>Figure 47: Device Network Configuration</center>***
 
 </center>
 
@@ -664,7 +623,7 @@ Only the Administrator user can access this page.
 <center>
 
 ![webserver55](/img/webserver55.png)
-***<center>Figure 52: Bridge Page</center>***
+***<center>Figure 48: Bridge Page</center>***
 
 </center>
 
@@ -673,7 +632,7 @@ To add a new bridge rule, click on "Add Bridge Rule". Continue with the "Add Bri
 <center>
 
 ![webserver56](/img/webserver56.png)
-***<center>Figure 53: Add Bridge Rule Page</center>***
+***<center>Figure 49: Add Bridge Rule Page</center>***
 
 </center>
 
@@ -687,7 +646,7 @@ Only the Administrator user can access this page.
 <center>
 
 ![webserver57](/img/webserver57.png)
-***<center>Figure 54: Port Forwarding Page</center>***
+***<center>Figure 50: Port Forwarding Page</center>***
 
 </center>
 
@@ -698,7 +657,7 @@ After making the necessary adjustments, click on "Save & Apply" at the bottom of
 <center>
 
 ![webserver58](/img/webserver58.png)
-***<center>Figure 55: Port Forwarding Configuration Page</center>***
+***<center>Figure 51: Port Forwarding Configuration Page</center>***
 
 </center>
 
@@ -709,14 +668,14 @@ In the example described here, external network traffic arriving at port 4124 is
 <center>
 
 ![webserver59](/img/webserver59.png)
-***<center>Figure 56: Port Forwarding Configuration</center>***
+***<center>Figure 52: Port Forwarding Configuration</center>***
 
 </center>
 
 <center>
 
-![webserver60](/img/webserver60.png)
-***<center>Figure 57: Device TCP Connection Settings</center>***
+![webserver90](/img/webserver90.png)
+***<center>Figure 53: Device TCP Connection Settings</center>***
 
 </center>
 
@@ -729,7 +688,7 @@ The Administrator and Technician users can access the file upload page.
 <center>
 
 ![webserver61](/img/webserver61.png)
-***<center>Figure 58: Upload Manager Page</center>***
+***<center>Figure 54: Upload Manager Page</center>***
 
 </center>
 
@@ -761,8 +720,8 @@ Protocol logs for which logging is turned on here are displayed in the protocol 
 
 <center>
 
-![webserver62](/img/webserver62.png)
-***<center>Figure 59: Device Logs Settings Tab</center>***
+![webserve97](/img/webserver97.png)
+***<center>Figure 55: Device Logs Settings Tab</center>***
 
 </center>
 
@@ -773,7 +732,7 @@ System logs belonging to the device are monitored from this tab. The system logs
 <center>
 
 ![webserver63](/img/webserver63.png)
-***<center>Figure 60: System Logs Tab</center>***
+***<center>Figure 56: System Logs Tab</center>***
 
 </center>
 
@@ -800,7 +759,7 @@ The displayed logs can be exported in ".txt" format with the export option.
 <center>
 
 ![webserver64](/img/webserver64.png)
-***<center>Figure 61: Protocol Logs Tab</center>***
+***<center>Figure 57: Protocol Logs Tab</center>***
 
 </center>
 
@@ -811,7 +770,7 @@ From the SD Card Logs tab, as long as an SD card is inserted in the device, the 
 <center>
 
 ![webserver65](/img/webserver65.png)
-***<center>Figure 62: SD Card Logs Tab</center>***
+***<center>Figure 58: SD Card Logs Tab</center>***
 
 </center>
 
@@ -819,12 +778,12 @@ From the SD Card Logs tab, as long as an SD card is inserted in the device, the 
 
 AT commands can be sent to the device via the terminal page. You can access the list of AT commands that can be sent to the device from here.
 
-Only the Administrator user can access this page.
+Only the Administrator user can access [this page](https://docs.mikrodev.com/docs/Mikrodiagram-ATCommands). 
 
 <center>
 
 ![webserver66](/img/webserver66.png)
-***<center>Figure 63: Terminal Page</center>***
+***<center>Figure 59: Terminal Page</center>***
 
 </center>
 
@@ -840,8 +799,8 @@ The displayed block parameters can be exported in CSV format with the export opt
 
 <center>
 
-![webserver67](/img/webserver67.png)
-***<center>Figure 64: Real-Time Logics Page</center>***
+![webserver98](/img/webserver98.png)
+***<center>Figure 60: Real-Time Logics Page</center>***
 
 </center>
 
@@ -855,8 +814,8 @@ Value assignments are made from the value section located to the right of the re
 
 <center>
 
-![webserver68](/img/webserver68.png)
-***<center>Figure 65: Sending Value to Block Tag Label</center>***
+![webserver99](/img/webserver99.png)
+***<center>Figure 61: Sending Value to Block Tag Label</center>***
 
 </center>
 
@@ -866,8 +825,8 @@ This is a page that all users logged into the web server can access and edit the
 
 <center>
 
-![webserver69](/img/webserver69.png)
-***<center>Figure 66: Account Preferences Page</center>***
+![webserver100](/img/webserver100.png)
+***<center>Figure 62: Account Preferences Page</center>***
 
 </center>
 
@@ -879,8 +838,8 @@ All users defined in the Web Server Interface can access this page.
 
 <center>
 
-![webserver70](/img/webserver70.png)
-***<center>Figure 67: Application Settings Page</center>***
+![webserver101](/img/webserver101.png)
+***<center>Figure 63: Application Settings Page</center>***
 
 </center>
 
@@ -896,8 +855,8 @@ Operators can only access the DM50 web server interface from the IPs defined for
 
 <center>
 
-![webserver71](/img/webserver71.png)
-***<center>Figure 68: IP's Access is Denied Warning</center>***
+![webserver86](/img/webserver86.png)
+***<center>Figure 64: IP's Access is Denied Warning</center>***
 
 </center>
 
@@ -929,7 +888,7 @@ You can securely log out of the web server interface by clicking on the user ico
 
 <center>
 
-![webserver72](/img/webserver72.png)
-***<center>Figure 69: Logging Out of the Web Server Interface</center>***
+![webserver87](/img/webserver87.png)
+***<center>Figure 65: Logging Out of the Web Server Interface</center>***
 
 </center>
