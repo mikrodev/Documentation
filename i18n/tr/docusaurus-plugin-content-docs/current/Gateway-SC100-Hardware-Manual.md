@@ -10,13 +10,13 @@ title: SC100 Donanım Klavuzu
 
 <center>
 
-![gateway-sc100-hardware-01](/img/gateway-sc100-hardware-01.png)
+![gateway-sc100-hardware-16](/img/gateway-sc100-hardware-16.png)
 
 </center>
 
 <center>
 
-![gateway-sc100-hardware-02](/img/gateway-sc100-hardware-02.png)
+![gateway-sc100-hardware-17](/img/gateway-sc100-hardware-17.png)
 
 </center>
 
@@ -24,11 +24,9 @@ title: SC100 Donanım Klavuzu
 
 <center>
 
-![gateway-mbs100-hardware-03](/img/gateway-mbs100-hardware-03.png)
+![gateway-sc100-hardware-23](/img/gateway-sc100-hardware-23.png)
 
 </center>
-
-Not: 2 adet RS485 portu bulunan modellerde RS232 portu bulunmamaktadır.
 
 ## Montaj Bilgileri
 
@@ -41,7 +39,7 @@ ve montaj tamamlanır.
 
 <center>
 
-![gateway-sc100-hardware-03](/img/gateway-sc100-hardware-03.png)
+![gateway-sc100-hardware-18](/img/gateway-sc100-hardware-18.png)
 
 </center>
 
@@ -51,7 +49,7 @@ Cihazın demontajı için öncelikle yayın esnekliği kullanılarak tornavida v
 
 <center>
 
-![gateway-sc100-hardware-04](/img/gateway-sc100-hardware-04.png)
+![gateway-sc100-hardware-19](/img/gateway-sc100-hardware-19.png)
 
 </center>
 
@@ -61,7 +59,7 @@ Cihazın demontajı için öncelikle yayın esnekliği kullanılarak tornavida v
 
 <center>
 
-![gateway-sc100-hardware-05](/img/gateway-sc100-hardware-05.png)
+![gateway-sc100-hardware-20](/img/gateway-sc100-hardware-20.png)
 
 </center>
 
@@ -69,20 +67,15 @@ Cihazın demontajı için öncelikle yayın esnekliği kullanılarak tornavida v
 
 <center>
 
-![gateway-sc100-hardware-06](/img/gateway-sc100-hardware-06.png)
+![gateway-sc100-hardware-21](/img/gateway-sc100-hardware-21.png)
 
 </center>
 
-<center>
-
-![gateway-sc100-hardware-07](/img/gateway-sc100-hardware-07.png)
-
-</center>
 
 ### RS232 Seri Port
 
 <center>
 
-![gateway-sc100-hardware-08](/img/gateway-sc100-hardware-08.png)
+![gateway-sc100-hardware-22](/img/gateway-sc100-hardware-22.png)
 
 </center>

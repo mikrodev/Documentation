@@ -9,13 +9,13 @@ title: MDC100 Hardware Manual
 
 <center>
 
-![gateway-MDC100-hardware-011](/img/gateway-MDC100-hardware-011.png)
+![gateway-MDC100-hardware-088](/img/gateway-MDC100-hardware-088.png)
 
 </center>
 
 <center>
 
-![gateway-MDC100-hardware-022](/img/gateway-MDC100-hardware-022.png)
+![gateway-MDC100-hardware-099](/img/gateway-MDC100-hardware-099.png)
 
 </center>
 
@@ -40,7 +40,7 @@ locates into the DIN rail easily and the montage is completed.
 
 <center>
 
-![gateway-MDC100-hardware-044](/img/gateway-MDC100-hardware-044.png)
+![gateway-MDC100-hardware-100](/img/gateway-MDC100-hardware-100.png)
 
 </center>
 
@@ -50,7 +50,7 @@ the device is removed from the DIN Rail and the demounting is completed.
 
 <center>
 
-![gateway-MDC100-hardware-055](/img/gateway-MDC100-hardware-055.png)
+![gateway-MDC100-hardware-101](/img/gateway-MDC100-hardware-101.png)
 
 </center>
 
@@ -60,7 +60,7 @@ the device is removed from the DIN Rail and the demounting is completed.
 
 <center>
 
-![gateway-MDC100-hardware-066](/img/gateway-MDC100-hardware-066.png)
+![gateway-MDC100-hardware-102](/img/gateway-MDC100-hardware-102.png)
 
 </center>
 
@@ -68,7 +68,7 @@ the device is removed from the DIN Rail and the demounting is completed.
 
 <center>
 
-![gateway-MDC100-hardware-01](/img/gateway-MDC100-hardware-01.png)
+![gateway-MDC100-hardware-103](/img/gateway-MDC100-hardware-103.png)
 
 </center>
 
@@ -76,6 +76,6 @@ the device is removed from the DIN Rail and the demounting is completed.
 
 <center>
 
-![gateway-MDC100-hardware-077](/img/gateway-MDC100-hardware-077.png)
+![gateway-MDC100-hardware-104](/img/gateway-MDC100-hardware-104.png)
 
 </center>

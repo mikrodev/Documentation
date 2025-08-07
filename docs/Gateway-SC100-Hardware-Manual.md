@@ -9,13 +9,13 @@ title: SC100 Hardware Manual
 
 <center>
 
-![gateway-sc100-hardware-01](/img/gateway-sc100-hardware-01.png)
+![gateway-sc100-hardware-09](/img/gateway-sc100-hardware-09.png)
 
 </center>
 
 <center>
 
-![gateway-sc100-hardware-02](/img/gateway-sc100-hardware-02.png)
+![gateway-sc100-hardware-10](/img/gateway-sc100-hardware-10.png)
 
 </center>
 
@@ -23,11 +23,9 @@ title: SC100 Hardware Manual
 
 <center>
 
-![gateway-mbs100-hardware-03](/img/gateway-mbs100-hardware-03.png)
+![gateway-sc100-hardware-24](/img/gateway-sc100-hardware-24.png)
 
 </center>
-
-Note: Models with 2 RS485 ports do not have RS232 ports.
 
 ## Istallation Information 
 
@@ -40,7 +38,7 @@ locates into the DIN rail easily and the montage is completed.
 
 <center>
 
-![gateway-sc100-hardware-03](/img/gateway-sc100-hardware-03.png)
+![gateway-sc100-hardware-11](/img/gateway-sc100-hardware-11.png)
 
 </center>
 
@@ -50,7 +48,7 @@ the device is removed from the DIN Rail and the demounting is completed.
 
 <center>
 
-![gateway-sc100-hardware-04](/img/gateway-sc100-hardware-04.png)
+![gateway-sc100-hardware-12](/img/gateway-sc100-hardware-12.png)
 
 </center>
 
@@ -60,7 +58,7 @@ the device is removed from the DIN Rail and the demounting is completed.
 
 <center>
 
-![gateway-sc100-hardware-05](/img/gateway-sc100-hardware-05.png)
+![gateway-sc100-hardware-13](/img/gateway-sc100-hardware-13.png)
 
 </center>
 
@@ -68,13 +66,7 @@ the device is removed from the DIN Rail and the demounting is completed.
 
 <center>
 
-![gateway-sc100-hardware-06](/img/gateway-sc100-hardware-06.png)
-
-</center>
-
-<center>
-
-![gateway-sc100-hardware-07](/img/gateway-sc100-hardware-07.png)
+![gateway-sc100-hardware-14](/img/gateway-sc100-hardware-14.png)
 
 </center>
 
@@ -82,6 +74,6 @@ the device is removed from the DIN Rail and the demounting is completed.
 
 <center>
 
-![gateway-sc100-hardware-08](/img/gateway-sc100-hardware-08.png)
+![gateway-sc100-hardware-15](/img/gateway-sc100-hardware-15.png)
 
 </center>

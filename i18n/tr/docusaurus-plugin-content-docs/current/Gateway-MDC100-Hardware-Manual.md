@@ -9,13 +9,13 @@ title: MDC100 Donanım Klavuzu
 
 <center>
 
-![gateway-MDC100-hardware-011](/img/gateway-MDC100-hardware-011.png)
+![gateway-MDC100-hardware-105](/img/gateway-MDC100-hardware-105.png)
 
 </center>
 
 <center>
 
-![gateway-MDC100-hardware-022](/img/gateway-MDC100-hardware-022.png)
+![gateway-MDC100-hardware-106](/img/gateway-MDC100-hardware-106.png)
 
 </center>
 
@@ -41,7 +41,7 @@ ve montaj tamamlanır.
 
 <center>
 
-![gateway-MDC100-hardware-044](/img/gateway-MDC100-hardware-044.png)
+![gateway-MDC100-hardware-107](/img/gateway-MDC100-hardware-107.png)
 
 </center>
 
@@ -51,7 +51,7 @@ Cihazın demontajı için öncelikle yayın esnekliği kullanılarak tornavida v
 
 <center>
 
-![gateway-MDC100-hardware-055](/img/gateway-MDC100-hardware-055.png)
+![gateway-MDC100-hardware-108](/img/gateway-MDC100-hardware-108.png)
 
 </center>
 
@@ -61,7 +61,7 @@ Cihazın demontajı için öncelikle yayın esnekliği kullanılarak tornavida v
 
 <center>
 
-![gateway-MDC100-hardware-066](/img/gateway-MDC100-hardware-066.png)
+![gateway-MDC100-hardware-109](/img/gateway-MDC100-hardware-109.png)
 
 </center>
 
@@ -69,7 +69,7 @@ Cihazın demontajı için öncelikle yayın esnekliği kullanılarak tornavida v
 
 <center>
 
-![gateway-MDC100-hardware-01](/img/gateway-MDC100-hardware-01.png)
+![gateway-MDC100-hardware-110](/img/gateway-MDC100-hardware-110.png)
 
 </center>
 
@@ -77,6 +77,6 @@ Cihazın demontajı için öncelikle yayın esnekliği kullanılarak tornavida v
 
 <center>
 
-![gateway-MDC100-hardware-077](/img/gateway-MDC100-hardware-077.png)
+![gateway-MDC100-hardware-111](/img/gateway-MDC100-hardware-111.png)
 
 </center>

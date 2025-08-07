@@ -9,13 +9,13 @@ title: MMS100 Hardware Manual
 
 <center>
 
-![gateway-MMS100-hardware-01](/img/gateway-MMS100-hardware-01.png)
+![gateway-MMS100-hardware-08](/img/gateway-MMS100-hardware-08.png)
 
 </center>
 
 <center>
 
-![gateway-MMS100-hardware-02](/img/gateway-MMS100-hardware-02.png)
+![gateway-MMS100-hardware-09](/img/gateway-MMS100-hardware-09.png)
 
 </center>
 
@@ -23,7 +23,7 @@ title: MMS100 Hardware Manual
 
 <center>
 
-![gateway-MMS100-hardware-03](/img/gateway-MMS100-hardware-03.png)
+![gateway-MMS100-hardware-23](/img/gateway-MMS100-hardware-23.png)
 
 </center>
 
@@ -38,7 +38,7 @@ locates into the DIN rail easily and the montage is completed.
 
 <center>
 
-![gateway-MMS100-hardware-04](/img/gateway-MMS100-hardware-04.png)
+![gateway-MMS100-hardware-10](/img/gateway-MMS100-hardware-10.png)
 
 </center>
 
@@ -48,7 +48,7 @@ the device is removed from the DIN Rail and the demounting is completed.
 
 <center>
 
-![gateway-mbs100-hardware-05](/img/gateway-mbs100-hardware-05.png)
+![gateway-MMS100-hardware-11](/img/gateway-MMS100-hardware-11.png)
 
 </center>
 
@@ -58,7 +58,15 @@ the device is removed from the DIN Rail and the demounting is completed.
 
 <center>
 
-![gateway-MMS100-hardware-06](/img/gateway-MMS100-hardware-06.png)
+![gateway-MMS100-hardware-12](/img/gateway-MMS100-hardware-12.png)
+
+</center>
+
+### RS485 Serial Port
+
+<center>
+
+![gateway-MMS100-hardware-13](/img/gateway-MMS100-hardware-13.png)
 
 </center>
 
@@ -66,6 +74,6 @@ the device is removed from the DIN Rail and the demounting is completed.
 
 <center>
 
-![gateway-MMS100-hardware-07](/img/gateway-MMS100-hardware-07.png)
+![gateway-MMS100-hardware-14](/img/gateway-MMS100-hardware-14.png)
 
 </center>

@@ -9,13 +9,13 @@ title: MMS100 Donanım Klavuzu
 
 <center>
 
-![gateway-MMS100-hardware-01](/img/gateway-MMS100-hardware-01.png)
+![gateway-MMS100-hardware-15](/img/gateway-MMS100-hardware-15.png)
 
 </center>
 
 <center>
 
-![gateway-MMS100-hardware-02](/img/gateway-MMS100-hardware-02.png)
+![gateway-MMS100-hardware-16](/img/gateway-MMS100-hardware-16.png)
 
 </center>
 
@@ -23,7 +23,7 @@ title: MMS100 Donanım Klavuzu
 
 <center>
 
-![gateway-MMS100-hardware-03](/img/gateway-MMS100-hardware-03.png)
+![gateway-MMS100-hardware-22](/img/gateway-MMS100-hardware-22.png)
 
 </center>
 
@@ -39,7 +39,7 @@ ve montaj tamamlanır.
 
 <center>
 
-![gateway-MMS100-hardware-04](/img/gateway-MMS100-hardware-04.png)
+![gateway-MMS100-hardware-17](/img/gateway-MMS100-hardware-17.png)
 
 </center>
 
@@ -49,7 +49,7 @@ Cihazın demontajı için öncelikle yayın esnekliği kullanılarak tornavida v
 
 <center>
 
-![gateway-mbs100-hardware-05](/img/gateway-mbs100-hardware-05.png)
+![gateway-MMS100-hardware-18](/img/gateway-MMS100-hardware-18.png)
 
 </center>
 
@@ -59,7 +59,15 @@ Cihazın demontajı için öncelikle yayın esnekliği kullanılarak tornavida v
 
 <center>
 
-![gateway-MMS100-hardware-06](/img/gateway-MMS100-hardware-06.png)
+![gateway-MMS100-hardware-19](/img/gateway-MMS100-hardware-19.png)
+
+</center>
+
+### RS485 Seri Port
+
+<center>
+
+![gateway-MMS100-hardware-20](/img/gateway-MMS100-hardware-20.png)
 
 </center>
 
@@ -67,6 +75,6 @@ Cihazın demontajı için öncelikle yayın esnekliği kullanılarak tornavida v
 
 <center>
 
-![gateway-MMS100-hardware-07](/img/gateway-MMS100-hardware-07.png)
+![gateway-MMS100-hardware-21](/img/gateway-MMS100-hardware-21.png)
 
 </center>

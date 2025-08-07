@@ -10,13 +10,13 @@ title: MBS100 Donanım Klavuzu
 
 <center>
 
-![gateway-mbs100-hardware-01](/img/gateway-mbs100-hardware-01.png)
+![gateway-mbs100-hardware-16](/img/gateway-mbs100-hardware-16.png)
 
 </center>
 
 <center>
 
-![gateway-mbs100-hardware-02](/img/gateway-mbs100-hardware-02.png)
+![gateway-mbs100-hardware-17](/img/gateway-mbs100-hardware-17.png)
 
 </center>
 
@@ -24,7 +24,7 @@ title: MBS100 Donanım Klavuzu
 
 <center>
 
-![gateway-mbs100-hardware-03](/img/gateway-mbs100-hardware-03.png)
+![gateway-mbs100-hardware-24](/img/gateway-mbs100-hardware-24.png)
 
 </center>
 
@@ -42,7 +42,7 @@ ve montaj tamamlanır.
 
 <center>
 
-![gateway-mbs100-hardware-04](/img/gateway-mbs100-hardware-04.png)
+![gateway-mbs100-hardware-18](/img/gateway-mbs100-hardware-18.png)
 
 </center>
 
@@ -53,7 +53,7 @@ Cihazın demontajı için öncelikle yayın esnekliği kullanılarak tornavida v
 
 <center>
 
-![gateway-mbs100-hardware-05](/img/gateway-mbs100-hardware-05.png)
+![gateway-mbs100-hardware-19](/img/gateway-mbs100-hardware-19.png)
 
 </center>
 
@@ -63,7 +63,7 @@ Cihazın demontajı için öncelikle yayın esnekliği kullanılarak tornavida v
 
 <center>
 
-![gateway-mbs100-hardware-06](/img/gateway-mbs100-hardware-06.png)
+![gateway-mbs100-hardware-20](/img/gateway-mbs100-hardware-20.png)
 
 </center>
 
@@ -71,7 +71,7 @@ Cihazın demontajı için öncelikle yayın esnekliği kullanılarak tornavida v
 
 <center>
 
-![gateway-mbs100-hardware-07](/img/gateway-mbs100-hardware-07.png)
+![gateway-mbs100-hardware-21](/img/gateway-mbs100-hardware-21.png)
 
 </center>
 
@@ -79,6 +79,6 @@ Cihazın demontajı için öncelikle yayın esnekliği kullanılarak tornavida v
 
 <center>
 
-![gateway-mbs100-hardware-08](/img/gateway-mbs100-hardware-08.png)
+![gateway-mbs100-hardware-22](/img/gateway-mbs100-hardware-22.png)
 
 </center>
