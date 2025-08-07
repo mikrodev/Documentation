@@ -3,7 +3,7 @@ title: MBS100 Hardware Manual
 ---
 ## MBS100 General Information
 
-[MBS100 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/01/MIKRODEV_HM_MBS100_en.pdf)
+[MBS100 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2025/08/MIKRODEV_HM_MBS100_en.pdf)
 
 ### Physical Interfaces
 

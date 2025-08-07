@@ -3,7 +3,7 @@ title: SC100 Hardware Manual
 ---
 ## SC100 General Information
 
-[SC100 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/01/MIKRODEV_HM_SC100_en.pdf)
+[SC100 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2025/08/MIKRODEV_HM_SC100_en.pdf)
 
 ### Physical Interfaces
 

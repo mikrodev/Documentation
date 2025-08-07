@@ -4,7 +4,7 @@ title: MBS100 Donanım Klavuzu
 
 ## MBS100 Genel Bilgiler
 
-[MBS100 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2023/01/MIKRODEV_HM_MBS100.pdf)
+[MBS100 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2025/08/MIKRODEV_HM_MBS100.pdf)
 
 ### Fiziksel Arayüzler
 

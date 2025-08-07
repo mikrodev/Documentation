@@ -3,7 +3,7 @@ title: MMS100 Donanım Klavuzu
 ---
 ## MMS100 Genel Bilgiler
 
-[MMS100 Hardware Manual](https://www.mikrodev.com/en/docs/MbusModbusGateway/hardware_manual/MIKRODEV_HM_MMS100_en.pdf)
+[MMS100 Hardware Manual](https://www.mikrodev.com/wp-content/uploads/2025/08/MIKRODEV_HM_MMS100.pdf)
 
 ### Fiziksel Arayüzler
 

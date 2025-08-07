@@ -1,5 +1,5 @@
 ---
-title: "DNP3 Application Notes"
+title: "DNP3 Uygulama Notu"
 ---
 
 ## DNP3 Slave

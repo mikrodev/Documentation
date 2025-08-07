@@ -687,7 +687,7 @@ The Administrator and Technician users can access the file upload page.
 
 <center>
 
-![webserver61](/img/webserver61.png)
+![webserver102](/img/webserver102.png)
 ***<center>Figure 54: Upload Manager Page</center>***
 
 </center>
