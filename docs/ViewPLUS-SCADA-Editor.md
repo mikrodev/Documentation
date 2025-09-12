@@ -2,6 +2,8 @@
 title: ViewPLUS SCADA Editor
 ---
 
+[ViewPLUS SCADA User Manual](https://www.mikrodev.com/wp-content/uploads/2025/08/ViewPLUS_Scada_SM_062025_v1.1_EN.pdf)
+
 ## Introduction
 
 ### What is SCADA?

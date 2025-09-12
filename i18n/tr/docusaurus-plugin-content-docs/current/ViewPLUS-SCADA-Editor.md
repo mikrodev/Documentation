@@ -2,6 +2,8 @@
 title: ViewPLUS SCADA Editor
 ---
 
+[ViewPLUS SCADA Kullanım Kılavuzu](https://www.mikrodev.com/wp-content/uploads/2025/08/ViewPLUS_Scada_SM_062025_v1.1.pdf)
+
 ## BAŞLANGIÇ
 
 ### SCADA NEDİR?

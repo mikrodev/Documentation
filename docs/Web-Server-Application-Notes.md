@@ -167,17 +167,32 @@ All user types except guest and operator users defined via the Web Server Interf
 
 ### Users Page
 
-Under the user management page, there are 2 tabs: active and inactive. You can switch between tabs by clicking on the names active and inactive at the top of the page. When clicked, the text of the active tab becomes dark gray.
+Starting from Web Server 1.1.50, user management on the Users page can be performed in two different ways.
 
-Only the Administrator user can access this page.
+1. **Local User Management**
 
-By clicking on the pen icon to the right of the usernames, personal information can be edited, and users can be set as active or inactive. Active users are listed in the active tab, while inactive users are listed in the other tab.
+Usernames, passwords, e-mail addresses, and access IPs can be defined.     
+Roles: Administrator, Operator, Technician, Guest.
 
-To delete registered users, click on the eraser icon located here.
+2.	**LDAP-based User Management**
+
+LDAP client settings can be configured in the LDAP Configuration section located under the Users tab.
+
+When the LDAP method is selected, authentication and authorization are carried out through the LDAP directory server.
+
+At the bottom of the user management page, there are three tabs: Active, Inactive, and LDAP. By clicking on these tabs, users can switch between the lists of locally defined active and inactive users, as well as the users authenticated through the LDAP server.
+
+When a name is clicked, the text of the active tab becomes dark gray.  
+
+Only the Administrator user can access this page. 
+
+By clicking on the pencil icon to the right of the user names, personal information can be edited, and users can be set as active or inactive. 
+
+Users selected as active are listed in the active tab, while inactive users are listed in the other tab. To delete registered users, click on the eraser icon located here. 
 
 <center>
 
-![webserver12](/img/webserver12.png)
+![webserver109](/img/webserver109.png)
 ***<center>Figure 12: User Table</center>***
 
 </center>
@@ -241,6 +256,77 @@ Different permissions for the created users are set from the permission options 
 
 </center>
 
+#### LDAP Configuration
+
+Starting from Web Server 1.1.50, LDAP-based authentication is supported in the Users page. With this feature, user logins can be performed using accounts stored in an LDAP directory instead of local user accounts.
+
+<center>
+
+![webserver103](/img/webserver103.png)
+***<center>Figure 18: LDAP Configuration Screen</center>***
+
+</center>
+
+When the LDAP tab is selected in the Users page, the following parameters are displayed:
+
+<center>
+
+![webserver104](/img/webserver104.png)
+
+</center>
+
+##### Role - Group Mapping 
+
+User roles in the Web Server are automatically assigned based on LDAP group memberships.
+
+<center>
+
+![webserver105](/img/webserver105.png)
+
+</center>
+
+#####	Certificate Requirements
+
+If LDAPS (636) or StartTLS (389) is used, the CA or intermediate CA certificate of the LDAP server must be uploaded to the device.
+
+The certificate upload is performed in the Upload Manager → LDAP Certificate Upload section.
+
+The LDAP URL must use a DNS name; IP addresses cannot be used for certificate validation.
+
+##### Test Connection
+
+After the configuration is completed, the Test Connection button in the LDAP tab can be used to verify the connection.
+
+The test output displays.      
+* Connection status (successful / failed)      
+* User bind result      
+* Groups the user belongs to
+
+<center>
+
+![webserver104](/img/webserver104.png)
+***<center>Figure 19: Test Connection Ouput</center>***
+
+</center>
+
+##### LDAP Login Flow
+
+When logging in with LDAP credentials, the Web Server follows the steps below.
+1.	The username and password are entered on the login page.     
+2.	The Web Server connects to the LDAP server to perform authentication.     
+3.	If authentication is successful, the user’s role is assigned based on group memberships.     
+4.	If authentication fails, an error message is displayed to the user.     
+
+##### LDAP Troubleshooting 
+
+The following error codes may be displayed when problems occur during LDAP connection.
+
+<center>
+
+![webserver107](/img/webserver107.png)
+
+</center>
+
 ### Interfaces Page
 
 The Interfaces page contains a table where the device's network settings are configured. The Ethernet, GSM, and Wifi settings of the device can be edited from this table.
@@ -248,7 +334,7 @@ The Interfaces page contains a table where the device's network settings are con
 <center>
 
 ![webserver83](/img/webserver83.png)
-***<center>Figure 18: Interfaces Page</center>***
+***<center>Figure 20: Interfaces Page</center>***
 
 </center>
 
@@ -261,7 +347,7 @@ The Administrator and Technician users can access this page.
 <center>
 
 ![webserver84](/img/webserver84.png)
-***<center>Figure 19: Ethernet Settings</center>***
+***<center>Figure 21: Ethernet Settings</center>***
 
 </center>
 
@@ -270,7 +356,7 @@ To configure the network for the desired Ethernet port, go to the corresponding 
 <center>
 
 ![webserver85](/img/webserver85.png)
-***<center>Figure 20: Ethernet Network Configuration Settings</center>***
+***<center>Figure 22: Ethernet Network Configuration Settings</center>***
 
 </center>
 
@@ -283,7 +369,7 @@ The Administrator and Technician users can access this page.
 <center>
 
 ![webserver21](/img/webserver21.png)
-***<center>Figure 21: GSM Settings</center>***
+***<center>Figure 23: GSM Settings</center>***
 
 </center>
 
@@ -294,7 +380,7 @@ Enter the APN, Username, and Password information in the opened GSM APN configur
 <center>
 
 ![webserver22](/img/webserver22.png)
-***<center>Figure 22: GSM APN Configuration Screen</center>***
+***<center>Figure 24: GSM APN Configuration Screen</center>***
 
 </center>
 
@@ -307,7 +393,7 @@ The Administrator and Technician users can access this page.
 <center>
 
 ![webserver23](/img/webserver23.png)
-***<center>Figure 23: Wifi Settings</center>***
+***<center>Figure 25: Wifi Settings</center>***
 
 </center>
 
@@ -318,7 +404,7 @@ To connect to the device as a **Client** via Wifi, select the Client option from
 <center>
 
 ![webserver24](/img/webserver24.png)
-***<center>Figure 24: Wifi Client Configuration Screen</center>***
+***<center>Figure 26: Wifi Client Configuration Screen</center>***
 
 </center>
 
@@ -327,7 +413,7 @@ To connect to the device as a **Hotspot** via Wifi, select the Hotspot option fr
 <center>
 
 ![webserver25](/img/webserver25.png)
-***<center>Figure 25: Wifi HotSpot Configuration Screen</center>***
+***<center>Figure 27: Wifi HotSpot Configuration Screen</center>***
 
 </center>
 
@@ -336,7 +422,7 @@ The Wifi feature of the device can be turned off via the Web Server Interface. C
 <center>
 
 ![webserver26](/img/webserver26.png)
-***<center>Figure 26: Turning Off the Device's Wifi Feature</center>***
+***<center>Figure 28: Turning Off the Device's Wifi Feature</center>***
 
 </center>
 
@@ -355,7 +441,7 @@ OpenVPN Auto Mode is a mode that automatically starts the VPN when the system bo
 <center>
 
 ![webserver27](/img/webserver27.png)
-***<center>Figure 27: OpenVPN x509 Certificate Upload</center>***
+***<center>Figure 29: OpenVPN x509 Certificate Upload</center>***
 
 </center>
 
@@ -368,7 +454,7 @@ After the certificates are uploaded, the necessary fields are filled in from the
 <center>
 
 ![webserver28](/img/webserver28.png)
-***<center>Figure 28: Add OpenVPN Page</center>***
+***<center>Figure 30: Add OpenVPN Page</center>***
 
 </center>
 
@@ -377,7 +463,7 @@ Added connections can be viewed in the "Connection" section, and these connectio
 <center>
 
 ![webserver92](/img/webserver92.png)
-***<center>Figure 29: OpenVPN Connections Page</center>***
+***<center>Figure 31: OpenVPN Connections Page</center>***
 
 </center>
 
@@ -388,7 +474,7 @@ OpenVPN Client Mode allows the client to establish a secure and encrypted tunnel
 <center>
 
 ![webserver31](/img/webserver31.png)
-***<center>Figure 30: OpenVPN Client Certificate Upload Screen</center>***
+***<center>Figure 32: OpenVPN Client Certificate Upload Screen</center>***
 
 </center>
 
@@ -399,7 +485,7 @@ The same encryption and authentication algorithms set during server setup are en
 <center>
 
 ![webserver32](/img/webserver32.png)
-***<center>Figure 31: OpenVPN Client Configuration Settings</center>***
+***<center>Figure 33: OpenVPN Client Configuration Settings</center>***
 
 </center>
 
@@ -408,7 +494,7 @@ The same encryption and authentication algorithms set during server setup are en
 <center>
 
 ![webserver93](/img/webserver93.png)
-***<center>Figure 32: OpenVPN Client Connection Status</center>***
+***<center>Figure 34: OpenVPN Client Connection Status</center>***
 
 </center>
 
@@ -421,7 +507,7 @@ OpenVPN Server Mode is the mode that allows the VPN server to function as a cent
 <center>
 
 ![webserver35](/img/webserver35.png)
-***<center>Figure 33: Certificate and Key Upload Screen for OpenVPN Server Mode</center>***
+***<center>Figure 35: Certificate and Key Upload Screen for OpenVPN Server Mode</center>***
 
 </center>
 
@@ -430,7 +516,7 @@ To run VPN in Server mode, server certificates must be generated on the machine 
 <center>
 
 ![webserver36](/img/webserver36.png)
-***<center>Figure 34: Server Configuration</center>***
+***<center>Figure 36: Server Configuration</center>***
 
 </center>
 
@@ -439,7 +525,7 @@ The same encryption and authentication algorithms set during server setup are en
 <center>
 
 ![webserver94](/img/webserver94.png)
-***<center>Figure 35: OpenVPN Server Mode Connection Page</center>***
+***<center>Figure 37: OpenVPN Server Mode Connection Page</center>***
 
 </center>
 
@@ -454,7 +540,7 @@ Only the Administrator user can access this page.
 <center>
 
 ![webserver39](/img/webserver39.png)
-***<center>Figure 36: IPSec Page</center>***
+***<center>Figure 38: IPSec Page</center>***
 
 </center>
 
@@ -467,7 +553,7 @@ After configuring the phase1 and phase2 settings with the same values for both d
 <center>
 
 ![webserver40](/img/webserver40.png)
-***<center>Figure 37: IPSEC Configuration Page</center>***
+***<center>Figure 39: IPSEC Configuration Page</center>***
 
 </center>
 
@@ -484,7 +570,7 @@ Only the Administrator user can access this page.
 <center>
 
 ![webserver41](/img/webserver41.png)
-***<center>Figure 38: Firewall Page</center>***
+***<center>Figure 40: Firewall Page</center>***
 
 </center>
 
@@ -497,7 +583,7 @@ Fill in the necessary fields according to the filtering rule you want to create 
 <center>
 
 ![webserver95](/img/webserver95.png)
-***<center>Figure 39: Firewall Input Rule</center>***
+***<center>Figure 41: Firewall Input Rule</center>***
 
 </center>
 
@@ -516,7 +602,7 @@ In this configuration, a Modbus TCP/IP connection is established over port 510 o
 <center>
 
 ![webserver44](/img/webserver44.png)
-***<center>Figure 40: Network Connection and Access Control</center>***
+***<center>Figure 42: Network Connection and Access Control</center>***
 
 </center>
 
@@ -525,7 +611,7 @@ In this configuration, a Modbus TCP/IP connection is established over port 510 o
 <center>
 
 ![webserver96](/img/webserver96.png)
-***<center>Figure 41: Firewall Output Rule</center>***
+***<center>Figure 43: Firewall Output Rule</center>***
 
 </center>
 
@@ -538,7 +624,7 @@ For the connection to be successful, a connection must be established from 192.1
 <center>
 
 ![webserver47](/img/webserver47.png)
-***<center>Figure 42: Firewall Forward Connection Page</center>***
+***<center>Figure 44: Firewall Forward Connection Page</center>***
 
 </center>
 
@@ -557,7 +643,7 @@ This configuration enhances security by ensuring that only authorized devices ca
 <center>
 
 ![webserver49](/img/webserver49.png)
-***<center>Figure 43: Network Connection and Access Control</center>***
+***<center>Figure 45: Network Connection and Access Control</center>***
 
 </center>
 
@@ -570,7 +656,7 @@ Only the Administrator user can access this page.
 <center>
 
 ![webserver50](/img/webserver50.png)
-***<center>Figure 44: NAT Page</center>***
+***<center>Figure 46: NAT Page</center>***
 
 </center>
 
@@ -587,7 +673,7 @@ For example, the internet traffic of a device with the IP address 192.168.1.10 c
 <center>
 
 ![webserver89](/img/webserver89.png)
-***<center>Figure 45: Network Configuration of the Device to be Connected to the Internet</center>***
+***<center>Figure 47: Network Configuration of the Device to be Connected to the Internet</center>***
 
 </center>
 
@@ -604,14 +690,14 @@ For the DM50 device to access the internet using a PPP connection, the Gateway a
 <center>
 
 ![webserver53](/img/webserver53.png)
-***<center>Figure 46: Port Forwarding Configuration with DNAT Rule</center>***
+***<center>Figure 48: Port Forwarding Configuration with DNAT Rule</center>***
 
 </center>
 
 <center>
 
 ![webserver89](/img/webserver89.png)
-***<center>Figure 47: Device Network Configuration</center>***
+***<center>Figure 49: Device Network Configuration</center>***
 
 </center>
 
@@ -623,7 +709,7 @@ Only the Administrator user can access this page.
 <center>
 
 ![webserver55](/img/webserver55.png)
-***<center>Figure 48: Bridge Page</center>***
+***<center>Figure 50: Bridge Page</center>***
 
 </center>
 
@@ -632,7 +718,7 @@ To add a new bridge rule, click on "Add Bridge Rule". Continue with the "Add Bri
 <center>
 
 ![webserver56](/img/webserver56.png)
-***<center>Figure 49: Add Bridge Rule Page</center>***
+***<center>Figure 51: Add Bridge Rule Page</center>***
 
 </center>
 
@@ -646,7 +732,7 @@ Only the Administrator user can access this page.
 <center>
 
 ![webserver57](/img/webserver57.png)
-***<center>Figure 50: Port Forwarding Page</center>***
+***<center>Figure 52: Port Forwarding Page</center>***
 
 </center>
 
@@ -657,7 +743,7 @@ After making the necessary adjustments, click on "Save & Apply" at the bottom of
 <center>
 
 ![webserver58](/img/webserver58.png)
-***<center>Figure 51: Port Forwarding Configuration Page</center>***
+***<center>Figure 53: Port Forwarding Configuration Page</center>***
 
 </center>
 
@@ -668,27 +754,28 @@ In the example described here, external network traffic arriving at port 4124 is
 <center>
 
 ![webserver59](/img/webserver59.png)
-***<center>Figure 52: Port Forwarding Configuration</center>***
+***<center>Figure 54: Port Forwarding Configuration</center>***
 
 </center>
 
 <center>
 
 ![webserver90](/img/webserver90.png)
-***<center>Figure 53: Device TCP Connection Settings</center>***
+***<center>Figure 55: Device TCP Connection Settings</center>***
 
 </center>
 
 ### Upload Manager Page
 
-Firmware, project, and SSL certificate uploads to the DM50 device from the Web Server Interface without using the Telediagram program are performed from this page. The last update date and time information of file uploads made via the Web Server Interface is located in the history tab on this page.
+Firmware, project, and SSL certificate uploads to the DM50 device from the Web Server interface can be performed on this page without using the Telediagram program. The date and time of the last file uploads performed via the Web Server interface are shown in the History tab.
 
-The Administrator and Technician users can access the file upload page.
+Starting from Web Server 1.1.50, the Upload Manager also includes an LDAP certificate upload feature. With this feature, the device can establish a secure TLS connection by uploading the CA/intermediate CA certificates of the LDAP server.         
+The Upload Manager page can be accessed by Administrator and Technician users.
 
 <center>
 
-![webserver102](/img/webserver102.png)
-***<center>Figure 54: Upload Manager Page</center>***
+![webserver116](/img/webserver116.png)
+***<center>Figure 56: Upload Manager Page</center>***
 
 </center>
 
@@ -697,6 +784,8 @@ The Administrator and Technician users can access the file upload page.
 *   Firmware updates for the device are performed from the firmware upload section. The core file to be uploaded is accepted.
 
 *   Updates of SSL certificates are made from the update SSL certificate section. The extension of the files to be uploaded must be ".crt, .pem".
+
+*	LDAP Certificate Upload (new in 1.1.50): LDAP server CA or intermediate CA certificates can be uploaded here. These certificates allow the device to establish a secure LDAP connection over TLS. The file extensions must be “.crt” or “.pem”.
 
 To upload a file to the device, click select file under the file type to be uploaded and select the relevant file. After selecting the appropriate file, click on the upload option on the right side.
 
@@ -721,7 +810,7 @@ Protocol logs for which logging is turned on here are displayed in the protocol 
 <center>
 
 ![webserve97](/img/webserver97.png)
-***<center>Figure 55: Device Logs Settings Tab</center>***
+***<center>Figure 57: Device Logs Settings Tab</center>***
 
 </center>
 
@@ -732,7 +821,7 @@ System logs belonging to the device are monitored from this tab. The system logs
 <center>
 
 ![webserver63](/img/webserver63.png)
-***<center>Figure 56: System Logs Tab</center>***
+***<center>Figure 58: System Logs Tab</center>***
 
 </center>
 
@@ -759,7 +848,7 @@ The displayed logs can be exported in ".txt" format with the export option.
 <center>
 
 ![webserver64](/img/webserver64.png)
-***<center>Figure 57: Protocol Logs Tab</center>***
+***<center>Figure 59: Protocol Logs Tab</center>***
 
 </center>
 
@@ -770,7 +859,7 @@ From the SD Card Logs tab, as long as an SD card is inserted in the device, the 
 <center>
 
 ![webserver65](/img/webserver65.png)
-***<center>Figure 58: SD Card Logs Tab</center>***
+***<center>Figure 60: SD Card Logs Tab</center>***
 
 </center>
 
@@ -783,7 +872,7 @@ Only the Administrator user can access [this page](https://docs.mikrodev.com/doc
 <center>
 
 ![webserver66](/img/webserver66.png)
-***<center>Figure 59: Terminal Page</center>***
+***<center>Figure 61: Terminal Page</center>***
 
 </center>
 
@@ -800,7 +889,7 @@ The displayed block parameters can be exported in CSV format with the export opt
 <center>
 
 ![webserver98](/img/webserver98.png)
-***<center>Figure 60: Real-Time Logics Page</center>***
+***<center>Figure 62: Real-Time Logics Page</center>***
 
 </center>
 
@@ -815,7 +904,7 @@ Value assignments are made from the value section located to the right of the re
 <center>
 
 ![webserver99](/img/webserver99.png)
-***<center>Figure 61: Sending Value to Block Tag Label</center>***
+***<center>Figure 63: Sending Value to Block Tag Label</center>***
 
 </center>
 
@@ -826,7 +915,7 @@ This is a page that all users logged into the web server can access and edit the
 <center>
 
 ![webserver100](/img/webserver100.png)
-***<center>Figure 62: Account Preferences Page</center>***
+***<center>Figure 64: Account Preferences Page</center>***
 
 </center>
 
@@ -839,7 +928,7 @@ All users defined in the Web Server Interface can access this page.
 <center>
 
 ![webserver101](/img/webserver101.png)
-***<center>Figure 63: Application Settings Page</center>***
+***<center>Figure 65: Application Settings Page</center>***
 
 </center>
 
@@ -856,7 +945,7 @@ Operators can only access the DM50 web server interface from the IPs defined for
 <center>
 
 ![webserver86](/img/webserver86.png)
-***<center>Figure 64: IP's Access is Denied Warning</center>***
+***<center>Figure 66: IP's Access is Denied Warning</center>***
 
 </center>
 
@@ -889,6 +978,6 @@ You can securely log out of the web server interface by clicking on the user ico
 <center>
 
 ![webserver87](/img/webserver87.png)
-***<center>Figure 65: Logging Out of the Web Server Interface</center>***
+***<center>Figure 67: Logging Out of the Web Server Interface</center>***
 
 </center>

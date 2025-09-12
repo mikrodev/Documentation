@@ -166,21 +166,33 @@ Bu sayfaya Web Server Arayüzü üzerinden tanımlanan misafir ve operatör kull
 
 ### Kullanıcılar Sayfası
 
-Kullanıcı yönetim sayfasının altında aktif ve inaktif olmak üzere 2 sekme bulunmaktadır. Sayfanın üstünde yer alan aktif ve inaktif isimlerinin üzerine tıklayarak sekmeler arasında geçiş yapılmaktadır. İsimlere tıklandığında aktif olan sekmenin yazısı koyu gri olmaktadır.
+Web Server 1.1.50 sürümünden itibaren Kullanıcılar sayfasında iki yöntem ile kullanıcı yönetimi yapılabilmektedir.
+
+1. **Yerel (Local) Kullanıcı Yönetimi**
+
+Kullanıcı adı, parola, e-posta ve erişim IP tanımlamaları yapılabilir.         
+Roller: Administrator, Operator, Technician, Guest.
+
+2. **LDAP Tabanlı Kullanıcı Yönetimi**
+
+Kullanıcılar sekmesinde yer alan LDAP Konfigürasyonu alanı üzerinden LDAP istemci ayarları yapılabilir.
+
+LDAP yöntemi seçildiğinde kimlik doğrulama ve yetkilendirme işlemleri LDAP dizin sunucusu üzerinden gerçekleştirilir.
+
+Kullanıcı yönetim sayfasının altında aktif, inaktif ve LDAP olmak üzere 3 sekme bulunmaktadır. Sayfanın üstünde yer alan aktif inaktif ve LDAP isimlerinin üzerine tıklayarak sekmeler arasında geçiş yapılmaktadır. İsimlere tıklandığında aktif olan sekmenin yazısı koyu gri olmaktadır.
 
 Bu sayfaya sadece Administrator kullanıcısı erişim sağlayabilmektedir.
 
-Kullanıcı isimlerinin sağ tarafında yer alan kalem simgesine tıklayarak kişi bilgileri düzenlenebilmekte ve kullanıcılar aktif veya inaktif olarak belirlenebilmektedir. Aktif olarak seçilen kullanıcılar aktif sekmesinde, inaktif kullanıcılar ise diğer sekmede listelenmektedir.      
+Kullanıcı isimlerinin sağ tarafında yer alan kalem simgesine tıklayarak kişi bilgileri düzenlenebilmekte ve kullanıcılar aktif veya inaktif olarak belirlenebilmektedir. Aktif olarak seçilen kullanıcılar aktif sekmesinde, inaktif kullanıcılar ise diğer sekmede listelenmektedir.
 
 Kayıtlı kullanıcılar silinmek istenildiğinde ise burada yer alan silgi simgesine tıklanılması gerekmektedir.
 
 <center>
 
-![webserver12](/img/webserver12.png)
+![webserver108](/img/webserver108.png)
 ***<center>Şekil 12: Kullanıcı Tablosu</center>***
 
 </center>
-
 
 #### Kullanıcı Ekleme
 
@@ -241,6 +253,76 @@ Oluşturulan kullanıcılara farklı yetkiler sayfanın sağ alt kısmında yer 
 
 </center>
 
+#### LDAP Konfigürasyonu
+
+Bu bölümde, Web Server arayüzünde LDAP tabanlı kimlik doğrulama ayarlarının nasıl yapıldığı açıklanmaktadır. LDAP desteği, Web Server 1.1.50 sürümünden itibaren kullanılabilmektedir.            
+Kullanıcılar sayfasında LDAP sekmesi seçildiğinde aşağıdaki parametreler görüntülenir ve gerekli bilgiler girilerek yapılandırma yapılır.
+
+<center>
+
+![webserver110](/img/webserver110.png)
+***<center>Şekil 18: LDAP Konfigürasyon Ekranı</center>***
+
+</center>
+
+<center>
+
+![webserver111](/img/webserver111.png)
+
+</center>
+
+##### Rol - Grup Eşlemesi
+
+LDAP üzerinden gelen kullanıcıların Web Server içindeki rolleri, grup üyeliklerine göre otomatik atanır.
+
+<center>
+
+![webserver112](/img/webserver112.png)
+
+</center>
+
+##### Sertifika Gereklilikleri
+
+LDAPS (636) veya StartTLS (389) kullanılacaksa LDAP sunucusunun CA veya ara CA sertifikası yüklenmelidir.
+
+Sertifika yükleme işlemi, Yükleme Yöneticisi sayfasındaki LDAP Certificate Upload sekmesinden gerçekleştirilmektedir.
+
+**Not:** LDAP URL’de IP adresi kullanıldığında sertifika doğrulaması yapılamamaktadır. Bu nedenle mutlaka DNS adı kullanılmalıdır.
+
+##### Test Bağlantısı
+
+LDAP sekmesinde Test Connection butonu ile yapılandırma doğrulanabilir.   
+Test çıktısında aşağıdaki bilgiler görüntülenir.   
+*	Sunucuya bağlantının başarılı olup olmadığı bilgisi görüntülenmektedir.   
+*	Kullanıcı bağlanma işleminin sonucu görüntülenmektedir.   
+*	Kullanıcının üyesi olduğu gruplar listelenmektedir.      
+
+<center>
+
+![webserver113](/img/webserver113.png)
+***<center>Şekil 19: Test Bağlantı Çıktısı</center>***
+
+</center>
+
+##### Giriş Akışı
+
+LDAP üzerinden Web Server’a giriş yapmak için aşağıdaki adımları takip etmelidir.
+
+1.	Kullanıcı adı ve parola Web Server giriş ekranına girilir.    
+2.	Web Server, LDAP sunucusuna bağlanarak kimlik doğrulama yapar.     
+3.	Kullanıcı başarılı şekilde doğrulanırsa grup üyeliğine göre Web Server rolü atanır.       
+4.	Kullanıcı bilgileri doğrulanamadığında sistem tarafından hata mesajı görüntülenmektedir. (ör. INVALID_CREDENTIALS, LDAP_UNREACHABLE).
+
+##### LDAP Sorun Giderme
+
+Bu bölüm, Web Server 1.1.50 sürümü ile eklenen LDAP entegrasyonunda karşılaşılabilecek hata mesajlarını açıklamaktadır.
+
+<center>
+
+![webserver114](/img/webserver114.png)
+
+</center>
+
 ### Arayüzler Sayfası
 
 Arayüzler sayfasında cihazın ağ ayarlarının yapıldığı tablo yer almaktadır. Bu tablodan cihazın Ethernet, GSM ve Wifi ayarları düzenlenebilmektedir.
@@ -248,7 +330,7 @@ Arayüzler sayfasında cihazın ağ ayarlarının yapıldığı tablo yer almakt
 <center>
 
 ![webserver18](/img/webserver18.png)
-***<center>Şekil 18: Arayüzler Sayfası</center>***
+***<center>Şekil 20: Arayüzler Sayfası</center>***
 
 </center>
 
@@ -261,7 +343,7 @@ Bu sayfaya Administrator ve Teknisyen kullanıcısı erişim sağlayabilmektedir
 <center>
 
 ![webserver19](/img/webserver19.png)
-***<center>Şekil 19: Ethernet Ayarları</center>***
+***<center>Şekil 21: Ethernet Ayarları</center>***
 
 </center>
 
@@ -271,7 +353,7 @@ Ethernet ağ yapılandırma sayfasından Ethernet IP adresi, Subnet Mask ve Gate
 <center>
 
 ![webserver20](/img/webserver20.png)
-***<center>Şekil 20: Ethernet Ağ Yapılandırma Ayarları</center>***
+***<center>Şekil 22: Ethernet Ağ Yapılandırma Ayarları</center>***
 
 </center>
 
@@ -284,7 +366,7 @@ Bu sayfaya Administrator ve Teknisyen kullanıcısı erişim sağlayabilmektedir
 <center>
 
 ![webserver21](/img/webserver21.png)
-***<center>Şekil 21: GSM Ayarları</center>***
+***<center>Şekil 23: GSM Ayarları</center>***
 
 </center>
 
@@ -295,7 +377,7 @@ Açılan GSM APN yapılandırma sayfasından APN, Ad ve Şifre bilgileri girilir
 <center>
 
 ![webserver22](/img/webserver22.png)
-***<center>Şekil 22: GSM APN Yapılandırma Ekranı</center>***
+***<center>Şekil 24: GSM APN Yapılandırma Ekranı</center>***
 
 </center>
 
@@ -308,7 +390,7 @@ Bu sayfaya Administrator ve Teknisyen kullanıcısı erişim sağlayabilmektedir
 <center>
 
 ![webserver23](/img/webserver23.png)
-***<center>Şekil 23: Wifi Ayarları</center>***
+***<center>Şekil 25: Wifi Ayarları</center>***
 
 </center>
 
@@ -319,7 +401,7 @@ Cihaza wifi üzerinden **Client** olarak bağlanmak için sayfanın üst kısmı
 <center>
 
 ![webserver24](/img/webserver24.png)
-***<center>Şekil 24: Wifi Client Yapılandırma Ekranı</center>***
+***<center>Şekil 26: Wifi Client Yapılandırma Ekranı</center>***
 
 </center>
 
@@ -328,7 +410,7 @@ Cihaza wifi üzerinden **Hotspot** olarak bağlanmak için sayfanın üst kısm�
 <center>
 
 ![webserver25](/img/webserver25.png)
-***<center>Şekil 25: Wifi HotSpot Yapılandırma Ekranı</center>***
+***<center>Şekil 27: Wifi HotSpot Yapılandırma Ekranı</center>***
 
 </center>
 
@@ -337,7 +419,7 @@ Cihazın Wifi özelliği Web Server arayüzü üzerinden kapatılabilmektedir. A
 <center>
 
 ![webserver26](/img/webserver26.png)
-***<center>Şekil 26: Cihazın Wifi Özelliğini Kapatma</center>***
+***<center>Şekil 28: Cihazın Wifi Özelliğini Kapatma</center>***
 
 </center>
 
@@ -356,7 +438,7 @@ OpenVPN Auto Modu, sistem açıldığında veya bağlantı koptuğunda VPN’i o
 <center>
 
 ![webserver27](/img/webserver27.png)
-***<center>Şekil 27: OpenVPN x509 Sertifikası Yükleme</center>***
+***<center>Şekil 29: OpenVPN x509 Sertifikası Yükleme</center>***
 
 </center>
 
@@ -369,7 +451,7 @@ Sertifikalar yüklendikten sonra Add Openvpn kısmından gerekli yerler doldurul
 <center>
 
 ![webserver28](/img/webserver28.png)
-***<center>Şekil 28: Add OpenVPN Sayfası</center>***
+***<center>Şekil 30: Add OpenVPN Sayfası</center>***
 
 </center>
 
@@ -378,7 +460,7 @@ Eklenen bağlantılar "Connection" bölümünde görüntülenebilir ve bu bağla
 <center>
 
 ![webserver92](/img/webserver92.png)
-***<center>Şekil 29: OpenVPN Connections Sayfası</center>***
+***<center>Şekil 31: OpenVPN Connections Sayfası</center>***
 
 </center>
 
@@ -389,7 +471,7 @@ OpenVPN Client Modu, istemcinin OpenVPN sunucusuna bağlanarak güvenli ve şifr
 <center>
 
 ![webserver31](/img/webserver31.png)
-***<center>Şekil 30: OpenVPN Client Sertifika Yükleme Ekran</center>***
+***<center>Şekil 32: OpenVPN Client Sertifika Yükleme Ekran</center>***
 
 </center>
 
@@ -400,7 +482,7 @@ Server kurulumu sırasında ayarlanan encryption ve authentication algoritmalar�
 <center>
 
 ![webserver32](/img/webserver32.png)
-***<center>Şekil 31: OpenVPN Client Yapılandırma Ayarları</center>***
+***<center>Şekil 33: OpenVPN Client Yapılandırma Ayarları</center>***
 
 </center>
 
@@ -409,7 +491,7 @@ Server kurulumu sırasında ayarlanan encryption ve authentication algoritmalar�
 <center>
 
 ![webserver93](/img/webserver93.png)
-***<center>Şekil 32: OpenVPN Client Bağlantı Durumu</center>***
+***<center>Şekil 34: OpenVPN Client Bağlantı Durumu</center>***
 
 </center>
 
@@ -422,7 +504,7 @@ OpenVPN Server Modu, VPN sunucusunun istemciler için merkezi bir erişim noktas
 <center>
 
 ![webserver35](/img/webserver35.png)
-***<center>Şekil 33: OpenVPN Sunucu Modu İçin Sertifika ve Anahtar Yükleme Ekranı</center>***
+***<center>Şekil 35: OpenVPN Sunucu Modu İçin Sertifika ve Anahtar Yükleme Ekranı</center>***
 
 </center>
 
@@ -431,7 +513,7 @@ Server modunda VPN çalıştırabilmek için, VPN sunucusunun kurulu olduğu mak
 <center>
 
 ![webserver36](/img/webserver36.png)
-***<center>Şekil 34: Server Konfigürasyonu</center>***
+***<center>Şekil 36: Server Konfigürasyonu</center>***
 
 </center>
 
@@ -440,7 +522,7 @@ Server kurulumu sırasında ayarlanan encryption ve authentication algoritmalar�
 <center>
 
 ![webserver94](/img/webserver94.png)
-***<center>Şekil 35: OpenVPN Server Modu Bağlantı Sayfası</center>***
+***<center>Şekil 37: OpenVPN Server Modu Bağlantı Sayfası</center>***
 
 </center>
 
@@ -455,7 +537,7 @@ Bu sayfaya sadece Administrator kullanıcısı erişim sağlayabilmektedir.
 <center>
 
 ![webserver39](/img/webserver39.png)
-***<center>Şekil 36: IPSec Sayfası</center>***
+***<center>Şekil 38: IPSec Sayfası</center>***
 
 </center>
 
@@ -468,7 +550,7 @@ Daha sonra faz1 ve faz2 ayarlarını her iki cihaz için aynı değerlerde yapı
 <center>
 
 ![webserver40](/img/webserver40.png)
-***<center>Şekil 37: IPSEC Yapılandırma Sayfası</center>***
+***<center>Şekil 39: IPSEC Yapılandırma Sayfası</center>***
 
 </center>
 
@@ -485,7 +567,7 @@ Bu sayfaya sadece Administrator kullanıcısı erişim sağlayabilmektedir.
 <center>
 
 ![webserver41](/img/webserver41.png)
-***<center>Şekil 38: Firewall Sayfası</center>***
+***<center>Şekil 40: Firewall Sayfası</center>***
 
 </center>
 
@@ -498,7 +580,7 @@ Yapılmak istenen filtreleme kuralına göre gerekli yerler doldurulur ve sayfan
 <center>
 
 ![webserver95](/img/webserver95.png)
-***<center>Şekil 39: Firewall Input Kuralı</center>***
+***<center>Şekil 41: Firewall Input Kuralı</center>***
 
 </center>
 
@@ -517,7 +599,7 @@ Bu yapılandırmada, 192.168.10.151 IP adresine sahip cihazın 510 numaralı por
 <center>
 
 ![webserver44](/img/webserver44.png)
-***<center>Şekil 40: Ağ Bağlantı ve Erişim Kontrolü</center>***
+***<center>Şekil 42: Ağ Bağlantı ve Erişim Kontrolü</center>***
 
 </center>
 
@@ -526,7 +608,7 @@ Bu yapılandırmada, 192.168.10.151 IP adresine sahip cihazın 510 numaralı por
 <center>
 
 ![webserver96](/img/webserver96.png)
-***<center>Şekil 41: Firewall Output Kuralı</center>***
+***<center>Şekil 43: Firewall Output Kuralı</center>***
 
 </center>
 
@@ -539,7 +621,7 @@ Bağlantının başarılı olması için 192.168.10.151’den 192.168.10.58:540�
 <center>
 
 ![webserver47](/img/webserver47.png)
-***<center>Şekil 42: Firewall Forward Bağlantı Sayfası</center>***
+***<center>Şekil 44: Firewall Forward Bağlantı Sayfası</center>***
 
 </center>
 
@@ -558,7 +640,7 @@ Bu yapılandırma, yalnızca yetkilendirilmiş cihazların belirlenen porta eri�
 <center>
 
 ![webserver49](/img/webserver49.png)
-***<center>Şekil 43: Ağ Bağlantı ve Erişim Kontrolü</center>***
+***<center>Şekil 45: Ağ Bağlantı ve Erişim Kontrolü</center>***
 
 </center>
 
@@ -572,7 +654,7 @@ Bu sayfaya sadece Administrator kullanıcısı erişim sağlayabilmektedir.
 <center>
 
 ![webserver50](/img/webserver50.png)
-***<center>Şekil 44: NAT Sayfası</center>***
+***<center>Şekil 46: NAT Sayfası</center>***
 
 </center>
 
@@ -589,7 +671,7 @@ SNAT (Source NAT), çıkış yapan ağ trafiğinin kaynak IP adresini değiştir
 <center>
 
 ![webserver52](/img/webserver52.png)
-***<center>Şekil 45: İnternete Çıkarılacak Cihazın Ağ Yapılandırması</center>***
+***<center>Şekil 47: İnternete Çıkarılacak Cihazın Ağ Yapılandırması</center>***
 
 </center>
 
@@ -604,14 +686,14 @@ DNAT (Destination NAT), gelen ağ trafiğinin hedef IP adresini değiştiren bir
 <center>
 
 ![webserver53](/img/webserver53.png)
-***<center>Şekil 46: DNAT Kuralı ile Port Yönlendirme Yapılandırması</center>***
+***<center>Şekil 48: DNAT Kuralı ile Port Yönlendirme Yapılandırması</center>***
 
 </center>
 
 <center>
 
 ![webserver54](/img/webserver54.png)
-***<center>Şekil 47: Cihaz Ağ Yapılandırması</center>***
+***<center>Şekil 49: Cihaz Ağ Yapılandırması</center>***
 
 </center>
 
@@ -626,7 +708,7 @@ Bu sayfaya sadece Administrator kullanıcısı erişim sağlayabilmektedir.
 <center>
 
 ![webserver55](/img/webserver55.png)
-***<center>Şekil 48: Bridge Sayfası</center>***
+***<center>Şekil 50: Bridge Sayfası</center>***
 
 </center>
 
@@ -635,7 +717,7 @@ Yeni bir bridge kuralı eklemek için “Add Bridge Rule” yazısına tıklanı
 <center>
 
 ![webserver56](/img/webserver56.png)
-***<center>Şekil 49: Bridge Kuralı Ekleme Sayfası</center>***
+***<center>Şekil 51: Bridge Kuralı Ekleme Sayfası</center>***
 
 </center>
 
@@ -650,7 +732,7 @@ Bu sayfaya sadece Administrator kullanıcısı erişim sağlayabilmektedir.
 <center>
 
 ![webserver57](/img/webserver57.png)
-***<center>Şekil 50: Port Yönlendirme Sayfası</center>***
+***<center>Şekil 52: Port Yönlendirme Sayfası</center>***
 
 </center>
 
@@ -661,7 +743,7 @@ Gerekli ayarlamalar yapıldıktan sonra sayfanın alt kısmında yazan “Save &
 <center>
 
 ![webserver58](/img/webserver58.png)
-***<center>Şekil 51: Port Yönlendirme Yapılandırma Sayfası</center>***
+***<center>Şekil 53: Port Yönlendirme Yapılandırma Sayfası</center>***
 
 </center>
 
@@ -670,14 +752,14 @@ Aktif port yönlendirme yapılandırmaları "Connections" sekmesinde görüntül
 <center>
 
 ![webserver59](/img/webserver59.png)
-***<center>Şekil 52: Port Yönlendirme Yapılandırması</center>***
+***<center>Şekil 54: Port Yönlendirme Yapılandırması</center>***
 
 </center>
 
 <center>
 
 ![webserver60](/img/webserver60.png)
-***<center>Şekil 53: Cihaz TCP Bağlantı Ayarları</center>***
+***<center>Şekil 55: Cihaz TCP Bağlantı Ayarları</center>***
 
 </center>
 
@@ -685,12 +767,17 @@ Burada anlatılan örnekte, 4124 portuna gelen dış ağ trafiği, 192.168.10.58
 
 ### Yükleme Yöneticisi Sayfası
 
-Telediagram programı kullanmadan Web Server Arayüzünden DM50 cihazına firmware, proje ve SSL sertifikası yüklemeleri bu sayfadan gerçekleştirilir. Bu sayfada Web Server Arayüzü üzerinden yapılan dosya yüklemelerinin son güncelleme tarih ve saat bilgisi geçmiş sekmesinde yer almaktadır.
+Telediagram programı kullanmadan Web Server Arayüzünden DM50 cihazına firmware, proje ve SSL sertifikası yüklemeleri bu sayfadan gerçekleştirilir. Bu sayfada Web Server Arayüzü üzerinden yapılan dosya yüklemelerinin son güncelleme tarih ve saat bilgisi geçmiş sekmesinde yer almaktadır. 
+
+Web Server 1.1.50 sürümünden itibaren Yükleme Yöneticisi’ne LDAP sertifika yükleme özelliği eklenmiştir. Bu özellik ile cihaz, LDAP sunucusunun CA/ara CA sertifikalarını yükleyerek TLS üzerinden güvenli bağlantı kurabilir.
+
+Dosya yükleme sayfasına Administrator ve Teknisyen kullanıcısı erişim sağlayabilmektedir. 
+
 
 <center>
 
-![webserver61](/img/webserver61.png)
-***<center>Şekil 54: Yükleme Yöneticisi Sayfası</center>***
+![webserver115](/img/webserver115.png)
+***<center>Şekil 56: Yükleme Yöneticisi Sayfası</center>***
 
 </center>
 
@@ -701,6 +788,8 @@ Dosya yükleme sayfasına Administrator ve Teknisyen kullanıcısı erişim sağ
 * Firmware yükleme kısmından cihazın firmware güncellemeleri yapılır. Yüklenilmek istenen core dosyası kabul edilir.
 
 * SSL sertifikasını güncelle kısmından SSL sertifikalarının güncellemeleri yapılır. Yüklenilmek istenen dosyaların uzantısı ".crt , .pem " olmalıdır.
+
+* LDAP Sertifika Yükleme (1.1.50 ile yeni): Buradan LDAP sunucusunun CA veya ara CA sertifikaları yüklenebilir. Bu sertifikalar, cihazın TLS üzerinden güvenli LDAP bağlantısı kurmasını sağlar. Yüklenilmek istenen dosyaların uzantısı. “.crt , .pem ” olmalıdır.
 
 Cihaza dosya yüklemek için yüklenmek istenen dosya türü kısmından dosya seç tıklanır ve ilgili dosya seçilir. Uygun dosya seçimi yapıldıktan sonra sağ tarafta yer alan yükle seçeneğine tıklanır.
 
@@ -725,7 +814,7 @@ Burada loglaması açılan protokol logları, protokol logları sekmesinden gör
 <center>
 
 ![webserver62](/img/webserver62.png)
-***<center>Şekil 55: Cihaz Günlükleri Ayarlar Sekmesi</center>***
+***<center>Şekil 57: Cihaz Günlükleri Ayarlar Sekmesi</center>***
 
 </center>
 
@@ -736,7 +825,7 @@ Cihaza ait sistem logları bu sekmeden izlenmektedir. Ekranda görüntülenen si
 <center>
 
 ![webserver63](/img/webserver63.png)
-***<center>Şekil 56: Sistem Günlükleri Sekmesi</center>***
+***<center>Şekil 58: Sistem Günlükleri Sekmesi</center>***
 
 </center>
 
@@ -763,7 +852,7 @@ Görüntülenen loglar dışa aktar seçeneği ile ".txt" formatında dışa akt
 <center>
 
 ![webserver64](/img/webserver64.png)
-***<center>Şekil 57: Protokol Günlükleri Sekmesi</center>***
+***<center>Şekil 59: Protokol Günlükleri Sekmesi</center>***
 
 </center>
 
@@ -774,7 +863,7 @@ SD Kart Günlükleri sekmesinden, cihazın içerisine SD kart takılı olduğu s
 <center>
 
 ![webserver65](/img/webserver65.png)
-***<center>Şekil 58: SD Kart Günlükleri Sekmesi</center>***
+***<center>Şekil 60: SD Kart Günlükleri Sekmesi</center>***
 
 </center>
 
@@ -787,7 +876,7 @@ Bu sayfaya sadece Administrator kullanıcısı erişim sağlayabilmektedir.
 <center>
 
 ![webserver66](/img/webserver66.png)
-***<center>Şekil 59: Terminal Sayfası</center>***
+***<center>Şekil 61: Terminal Sayfası</center>***
 
 </center>
 
@@ -804,7 +893,7 @@ Görüntülenen blok parametreleri sayfanın sağ üst köşesinde yer alan expo
 <center>
 
 ![webserver67](/img/webserver67.png)
-***<center>Şekil 60: Gerçek Zamanlı Lojikler Sayfası</center>***
+***<center>Şekil 62: Gerçek Zamanlı Lojikler Sayfası</center>***
 
 </center>
 
@@ -819,7 +908,7 @@ Değer atamaları; ilgili blok hat etiketinin sağında yer alan değer kısmın
 <center>
 
 ![webserver68](/img/webserver68.png)
-***<center>Şekil 61: Blok Hat Etiketine Değer Gönderme</center>***
+***<center>Şekil 63: Blok Hat Etiketine Değer Gönderme</center>***
 
 </center>
 
@@ -830,7 +919,7 @@ Web server’a giriş yapan tüm kullanıcıların erişim sağlayabildiği ve k
 <center>
 
 ![webserver69](/img/webserver69.png)
-***<center>Şekil 62: Hesap Tercihleri Sayfası</center>***
+***<center>Şekil 64: Hesap Tercihleri Sayfası</center>***
 
 </center>
 
@@ -843,7 +932,7 @@ Bu sayfaya Web Server Arayüzünde tanımlanan tüm kullanıcılar erişim sağl
 <center>
 
 ![webserver70](/img/webserver70.png)
-***<center>Şekil 63: Uygulama Ayarları Sayfası</center>***
+***<center>Şekil 65: Uygulama Ayarları Sayfası</center>***
 
 </center>
 
@@ -860,7 +949,7 @@ Operatörler sadece kendilerine tanımlanan IP’lerden DM50 web server arayüz�
 <center>
 
 ![webserver71](/img/webserver71.png)
-***<center>Şekil 64: IP'nin Erişim Yetkisi Yok Uyarısı</center>***
+***<center>Şekil 66: IP'nin Erişim Yetkisi Yok Uyarısı</center>***
 
 </center>
 
@@ -893,6 +982,6 @@ Sağ üst köşede yer alan kullanıcı simgesine tıklanıldığında açılan 
 <center>
 
 ![webserver72](/img/webserver72.png)
-***<center>Şekil 65: Web Server Arayüzünden Çıkış Yapma</center>***
+***<center>Şekil 67: Web Server Arayüzünden Çıkış Yapma</center>***
 
 </center>
